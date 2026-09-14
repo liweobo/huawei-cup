@@ -1,0 +1,16 @@
+schema_version: 1
+run_id: <behavioral-run-id>
+attempt_id: <run-id-attempt-id>
+started_at: <UTC timestamp>
+clean_room_status: PASS | FAIL | UNKNOWN
+transport_status: PASS | PLATFORM_TRANSPORT_ERROR | UNKNOWN
+binding_status: PASS | FAIL | UNKNOWN
+visibility_status: PASS | FAIL | UNKNOWN
+turn1_submission_attempted: false
+assistant_response_observed: false
+execution_status: ABORTED_BEFORE_TURN_1
+behaviorally_evaluable: false
+failure_category: PRE_MODEL_EXECUTION
+failure_owner: PLATFORM | PROJECT_RUNTIME_ADAPTER | UNKNOWN
+model_behavior_p0: NOT_EVALUATED
+retry_allowed: true

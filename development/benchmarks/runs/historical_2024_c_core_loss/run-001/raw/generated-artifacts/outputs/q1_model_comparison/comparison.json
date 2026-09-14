@@ -1,0 +1,365 @@
+{
+  "protocol": {
+    "features": [
+      "wave_std",
+      "wave_rms",
+      "extreme_ratio",
+      "slope_cv",
+      "slope_q90_q50",
+      "flat_slope_ratio",
+      "second_diff_ratio",
+      "slope_max_mean_ratio"
+    ],
+    "train_samples": 12400,
+    "holdout_test_size": 0.2,
+    "random_state": 2024,
+    "labels": {
+      "1": "正弦波",
+      "2": "三角波",
+      "3": "梯形波"
+    },
+    "note": "All models use only the same 8 waveform features; no temperature/frequency/material inputs."
+  },
+  "models": {
+    "rbf_svm": {
+      "fit_seconds": 0.05500419999589212,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0,
+      "holdout_confusion_matrix": [
+        [
+          811,
+          0,
+          0
+        ],
+        [
+          0,
+          990,
+          0
+        ],
+        [
+          0,
+          0,
+          679
+        ]
+      ],
+      "holdout_classification_report": {
+        "正弦波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 811.0
+        },
+        "三角波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 990.0
+        },
+        "梯形波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 679.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2480.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2480.0
+        }
+      },
+      "leave_one_material_out": [
+        {
+          "held_out_material": "材料1",
+          "samples": 3400,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              1067,
+              0,
+              0
+            ],
+            [
+              0,
+              1412,
+              0
+            ],
+            [
+              0,
+              0,
+              921
+            ]
+          ]
+        },
+        {
+          "held_out_material": "材料2",
+          "samples": 3000,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              1097,
+              0,
+              0
+            ],
+            [
+              0,
+              1003,
+              0
+            ],
+            [
+              0,
+              0,
+              900
+            ]
+          ]
+        },
+        {
+          "held_out_material": "材料3",
+          "samples": 3200,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              1010,
+              0,
+              0
+            ],
+            [
+              0,
+              1078,
+              0
+            ],
+            [
+              0,
+              0,
+              1112
+            ]
+          ]
+        },
+        {
+          "held_out_material": "材料4",
+          "samples": 2800,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              880,
+              0,
+              0
+            ],
+            [
+              0,
+              1455,
+              0
+            ],
+            [
+              0,
+              0,
+              465
+            ]
+          ]
+        }
+      ],
+      "cv_accuracy_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_accuracy_mean": 1.0,
+      "cv_accuracy_std": 0.0,
+      "cv_macro_f1_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    },
+    "random_forest": {
+      "fit_seconds": 3.1317720000224654,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0,
+      "holdout_confusion_matrix": [
+        [
+          811,
+          0,
+          0
+        ],
+        [
+          0,
+          990,
+          0
+        ],
+        [
+          0,
+          0,
+          679
+        ]
+      ],
+      "holdout_classification_report": {
+        "正弦波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 811.0
+        },
+        "三角波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 990.0
+        },
+        "梯形波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 679.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2480.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2480.0
+        }
+      },
+      "leave_one_material_out": [
+        {
+          "held_out_material": "材料1",
+          "samples": 3400,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              1067,
+              0,
+              0
+            ],
+            [
+              0,
+              1412,
+              0
+            ],
+            [
+              0,
+              0,
+              921
+            ]
+          ]
+        },
+        {
+          "held_out_material": "材料2",
+          "samples": 3000,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              1097,
+              0,
+              0
+            ],
+            [
+              0,
+              1003,
+              0
+            ],
+            [
+              0,
+              0,
+              900
+            ]
+          ]
+        },
+        {
+          "held_out_material": "材料3",
+          "samples": 3200,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              1010,
+              0,
+              0
+            ],
+            [
+              0,
+              1078,
+              0
+            ],
+            [
+              0,
+              0,
+              1112
+            ]
+          ]
+        },
+        {
+          "held_out_material": "材料4",
+          "samples": 2800,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              880,
+              0,
+              0
+            ],
+            [
+              0,
+              1455,
+              0
+            ],
+            [
+              0,
+              0,
+              465
+            ]
+          ]
+        }
+      ],
+      "cv_accuracy_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_accuracy_mean": 1.0,
+      "cv_accuracy_std": 0.0,
+      "cv_macro_f1_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    }
+  },
+  "test_prediction_agreement": {
+    "count": 80,
+    "same_count": 80,
+    "same_rate": 1.0,
+    "disagreements": []
+  }
+}

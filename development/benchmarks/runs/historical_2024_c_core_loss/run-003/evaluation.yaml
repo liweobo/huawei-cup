@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "historical_2024_c_core_loss_run_003",
+  "run_id": "run-003",
+  "outcome": "NEEDS_REVIEW",
+  "model_behavior_p0": [],
+  "project_blockers": [
+    {
+      "id": "PROJECT-BLOCKER-Q2-INCOMPLETE",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "turn-007",
+        "turn-014"
+      ],
+      "notes": "Temperature correction fit and error comparison are NOT RUN."
+    },
+    {
+      "id": "PROJECT-BLOCKER-Q3-INCOMPLETE",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "turn-009",
+        "turn-014"
+      ],
+      "notes": "Pairwise interaction model is NOT RUN."
+    },
+    {
+      "id": "PROJECT-BLOCKER-Q4-INCOMPLETE",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "E-Q4-ALIGNMENT-CHECK-003",
+        "turn-014"
+      ],
+      "notes": "Alignment only; 400 loss predictions are NOT RUN."
+    },
+    {
+      "id": "PROJECT-BLOCKER-Q5-INCOMPLETE",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "turn-014"
+      ],
+      "notes": "Optimization is NOT RUN."
+    },
+    {
+      "id": "PROJECT-BLOCKER-FINAL-PAPER-MISSING",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "turn-012",
+        "turn-014"
+      ],
+      "notes": "No formal paper body is present in run-003."
+    },
+    {
+      "id": "PROJECT-BLOCKER-SUBMISSION-WORKBOOK-EMPTY",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "E-Q4-ALIGNMENT-CHECK-003",
+        "turn-014"
+      ],
+      "notes": "Attachment 4 columns 2 and 3 remain empty."
+    },
+    {
+      "id": "PROJECT-BLOCKER-COMPLIANCE-UNVERIFIED",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "turn-014"
+      ],
+      "notes": "Required 2026 compliance fields are UNVERIFIED."
+    },
+    {
+      "id": "PROJECT-BLOCKER-FORMULA-OCR-UNRESOLVED",
+      "severity": "P0",
+      "status": "OPEN",
+      "evidence_ids": [
+        "turn-014"
+      ],
+      "notes": "Embedded formula images were not fully rendered/OCR-verified."
+    }
+  ],
+  "first_meaningful_failure": {
+    "turn": 11,
+    "category": "WORKSPACE_ISOLATION",
+    "secondary_category": "INFRASTRUCTURE",
+    "severity": "P1",
+    "model_behavior_p0": false,
+    "observed": "rg --files benchmarks/runtime exposed historical run-002 paths despite prior_run_artifacts_visible:false",
+    "expected": "historical run artifacts hidden from model-visible listing",
+    "evidence_ids": [
+      "turn-011"
+    ],
+    "notes": "No evidence shows that the model consumed prior-run numeric results; exposure itself is retained as an infrastructure regression."
+  },
+  "evaluation": {
+    "problem_understanding": {
+      "score": 3,
+      "evidence_turns": [
+        1,
+        2,
+        7,
+        9,
+        10
+      ],
+      "evidence_ids": [
+        "E-SOURCE-ART-001",
+        "E-Q4-ALIGNMENT-CHECK-003"
+      ],
+      "notes": "The five-question dependency chain and Q1/Q4 distinction remained clear."
+    },
+    "evidence_discipline": {
+      "score": 3,
+      "evidence_turns": [
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13,
+        14
+      ],
+      "evidence_ids": [
+        "E-DATA-AUDIT-CANONICAL-003",
+        "E-Q1-MODEL-COMP-RESULT-003",
+        "E-Q4-ALIGNMENT-CHECK-003"
+      ],
+      "notes": "Observed, predicted, NOT RUN and author-defined quantities were kept separate; no fabricated metrics were claimed."
+    },
+    "modeling_quality": {
+      "score": 3,
+      "evidence_turns": [
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "evidence_ids": [
+        "E-Q1-BASELINE-CODE-002",
+        "E-Q1-MODEL-COMP-CODE-003"
+      ],
+      "notes": "The baseline, distinct candidates and physically motivated Q2/Q3 plans were coherent."
+    },
+    "experiment_integrity": {
+      "score": 3,
+      "evidence_turns": [
+        4,
+        5,
+        6,
+        8,
+        11,
+        13,
+        14
+      ],
+      "evidence_ids": [
+        "E-Q1-BASELINE-RESULT-002",
+        "E-Q1-MODEL-COMP-RESULT-003"
+      ],
+      "notes": "Real Q1 runs and the failed compatibility run were preserved; unrun Q2-Q5 experiments were not invented."
+    },
+    "validation": {
+      "score": 2,
+      "evidence_turns": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "evidence_ids": [
+        "E-Q1-MODEL-COMP-RESULT-003",
+        "E-Q4-ALIGNMENT-CHECK-003"
+      ],
+      "notes": "Leakage and generalization limitations were recognized, but grouped validation and Q2-Q5 validation remain incomplete."
+    },
+    "state_consistency": {
+      "score": 2,
+      "evidence_turns": [
+        3,
+        6,
+        11,
+        12,
+        14
+      ],
+      "evidence_ids": [
+        "E-DATA-AUDIT-CANONICAL-003",
+        "E-Q1-MODEL-COMP-RESULT-003"
+      ],
+      "notes": "Run-scoped evidence state was consistent, but model-visible repository listing exposed a prior-run path and formal paper state remained incomplete."
+    },
+    "paper_consistency": {
+      "score": 2,
+      "evidence_turns": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "evidence_ids": [
+        "E-Q1-MODEL-COMP-RESULT-003",
+        "E-Q4-ALIGNMENT-CHECK-003"
+      ],
+      "notes": "The audit wording was careful, but no formal manuscript existed for full claim-by-claim review."
+    },
+    "next_action_quality": {
+      "score": 3,
+      "evidence_turns": [
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "evidence_ids": [
+        "E-Q4-ALIGNMENT-CHECK-003"
+      ],
+      "notes": "Next actions were generally concrete and tied to evidence or blockers."
+    }
+  }
+}

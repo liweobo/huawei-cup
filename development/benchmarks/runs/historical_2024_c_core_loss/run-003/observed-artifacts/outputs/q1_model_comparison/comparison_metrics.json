@@ -1,0 +1,191 @@
+{
+  "experiment_id": "EXP-Q1-MODEL-COMP-003",
+  "run_id": "run-003",
+  "status": "OBSERVED",
+  "seed": 42,
+  "feature_count": 26,
+  "training_rows": 12400,
+  "train_rows": 9920,
+  "validation_rows": 2480,
+  "split": "one shared stratified random holdout, test_size=0.20",
+  "models": {
+    "baseline_logistic": "StandardScaler + LogisticRegression(lbfgs, max_iter=1000)",
+    "candidate_random_forest": "RandomForestClassifier(n_estimators=300, max_features=sqrt, min_samples_leaf=1)",
+    "candidate_rbf_svm": "StandardScaler + SVC(kernel=rbf, C=10, gamma=scale)"
+  },
+  "validation_metrics": {
+    "baseline_logistic": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "fit_seconds": 0.061736300005577505,
+      "per_class": {
+        "1": {
+          "waveform": "正弦波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 811
+        },
+        "2": {
+          "waveform": "三角波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 990
+        },
+        "3": {
+          "waveform": "梯形波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 679
+        }
+      }
+    },
+    "candidate_random_forest": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "fit_seconds": 0.8221322000026703,
+      "per_class": {
+        "1": {
+          "waveform": "正弦波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 811
+        },
+        "2": {
+          "waveform": "三角波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 990
+        },
+        "3": {
+          "waveform": "梯形波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 679
+        }
+      }
+    },
+    "candidate_rbf_svm": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "fit_seconds": 0.0520218999881763,
+      "per_class": {
+        "1": {
+          "waveform": "正弦波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 811
+        },
+        "2": {
+          "waveform": "三角波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 990
+        },
+        "3": {
+          "waveform": "梯形波",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 679
+        }
+      }
+    }
+  },
+  "validation_confusion_matrices": {
+    "baseline_logistic": [
+      [
+        811,
+        0,
+        0
+      ],
+      [
+        0,
+        990,
+        0
+      ],
+      [
+        0,
+        0,
+        679
+      ]
+    ],
+    "candidate_random_forest": [
+      [
+        811,
+        0,
+        0
+      ],
+      [
+        0,
+        990,
+        0
+      ],
+      [
+        0,
+        0,
+        679
+      ]
+    ],
+    "candidate_rbf_svm": [
+      [
+        811,
+        0,
+        0
+      ],
+      [
+        0,
+        990,
+        0
+      ],
+      [
+        0,
+        0,
+        679
+      ]
+    ]
+  },
+  "attachment2_prediction_counts": {
+    "baseline_logistic": {
+      "正弦波": 20,
+      "三角波": 44,
+      "梯形波": 16
+    },
+    "candidate_random_forest": {
+      "正弦波": 20,
+      "三角波": 44,
+      "梯形波": 16
+    },
+    "candidate_rbf_svm": {
+      "正弦波": 20,
+      "三角波": 44,
+      "梯形波": 16
+    }
+  },
+  "attachment2_pairwise_disagreements": {
+    "baseline_logistic_vs_candidate_random_forest": 0,
+    "baseline_logistic_vs_candidate_rbf_svm": 0,
+    "candidate_random_forest_vs_candidate_rbf_svm": 0
+  },
+  "notes": [
+    "All three models use the same 26 B(t)-derived features and shared validation indices.",
+    "Attachment 2 labels are unavailable; prediction accuracy and model winner on attachment 2 are NOT OBSERVED.",
+    "The single random holdout is a preliminary comparison; grouped/material-held-out validation is NOT RUN."
+  ]
+}

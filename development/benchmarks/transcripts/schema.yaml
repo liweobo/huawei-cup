@@ -1,0 +1,76 @@
+schema_version: 3
+required_top_level:
+  - benchmark_id
+  - skill_version
+  - model
+  - date
+  - problem_source
+  - evidence_ledger
+  - turns
+  - model_behavior_p0
+  - project_blockers
+  - outcome
+optional_provenance_fields:
+  - schema_version
+  - active_run_id
+  - active_evidence_set
+  - workspace_manifest
+  - experiment_records
+  - active_projection
+required_turn_fields:
+  - turn_id
+  - user
+  - assistant
+  - actual_route
+  - state_before
+  - state_after
+  - artifacts_provided
+  - tool_calls
+  - claims
+  - evidence_refs
+  - evidence_created
+  - state_changes
+  - risks
+  - blocking_status
+  - next_action
+  - evaluator_notes
+  - protocol_disclosures
+evaluator_only_fields:
+  - expected_route
+  - expected_answer
+  - rubric
+  - score
+  - known_failure
+  - expected_model
+  - ground_truth
+provenance_contract:
+  applies_when: schema_version >= 3
+  observed_result_workflows:
+    - run_experiment
+    - validate_model
+  evidence_types_require_run_id:
+    - CODE_RUN
+    - EXPERIMENT_RESULT
+    - VALIDATION_RESULT
+    - PAPER_CLAIM
+evaluation_dimensions:
+  - problem_understanding
+  - evidence_discipline
+  - modeling_quality
+  - experiment_integrity
+  - validation
+  - state_consistency
+  - paper_consistency
+  - next_action_quality
+outcome_values:
+  - STRUCTURALLY_VALID
+  - EVALUATION_PENDING
+  - PASS
+  - FAIL_P0
+  - FAIL_QUALITY
+  - NEEDS_REVIEW
+  - READY_FOR_RUN_002
+  - READY_FOR_RUN_003
+score_range:
+  minimum: 0
+  maximum: 3

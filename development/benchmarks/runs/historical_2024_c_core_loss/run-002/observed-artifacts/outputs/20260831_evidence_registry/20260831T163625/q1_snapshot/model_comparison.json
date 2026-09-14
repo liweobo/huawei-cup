@@ -1,0 +1,564 @@
+{
+  "feature_pipeline": "same as q1_baseline.py: de-mean/peak-to-peak normalization + FFT/quantile/slope features",
+  "seed": 20240827,
+  "training_rows_after_duplicate_removal": 12399,
+  "duplicate_removed": [
+    {
+      "sheet": "材料3",
+      "row": 908
+    }
+  ],
+  "validation_split": {
+    "type": "same stratified holdout as baseline",
+    "train_rows": 9918,
+    "valid_rows": 2481
+  },
+  "candidates": {
+    "rbf_svm": {
+      "description": "RBF-kernel support vector machine; standardized features; C=10, gamma=scale",
+      "inductive_bias": "smooth nonlinear decision boundary"
+    },
+    "random_forest": {
+      "description": "300-tree random forest; sqrt feature subsampling",
+      "inductive_bias": "bagged axis-aligned decision trees"
+    }
+  },
+  "validation_metrics": {
+    "rbf_svm": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix_rows_true_cols_pred": [
+        [
+          811,
+          0,
+          0
+        ],
+        [
+          0,
+          990,
+          0
+        ],
+        [
+          0,
+          0,
+          680
+        ]
+      ],
+      "per_class": {
+        "正弦波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 811
+        },
+        "三角波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 990
+        },
+        "梯形波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 680
+        }
+      },
+      "fit_seconds": 0.2318533000034222,
+      "predict_seconds": 0.018724900000961497,
+      "model": "rbf_svm"
+    },
+    "random_forest": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix_rows_true_cols_pred": [
+        [
+          811,
+          0,
+          0
+        ],
+        [
+          0,
+          990,
+          0
+        ],
+        [
+          0,
+          0,
+          680
+        ]
+      ],
+      "per_class": {
+        "正弦波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 811
+        },
+        "三角波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 990
+        },
+        "梯形波": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 680
+        }
+      },
+      "fit_seconds": 2.092859700002009,
+      "predict_seconds": 0.22436399999787682,
+      "model": "random_forest"
+    }
+  },
+  "leave_one_material_out_metrics": {
+    "rbf_svm": {
+      "folds": {
+        "材料1": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              1067,
+              0,
+              0
+            ],
+            [
+              0,
+              1412,
+              0
+            ],
+            [
+              0,
+              0,
+              921
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1067
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1412
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 921
+            }
+          }
+        },
+        "材料2": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              1097,
+              0,
+              0
+            ],
+            [
+              0,
+              1003,
+              0
+            ],
+            [
+              0,
+              0,
+              900
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1097
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1003
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 900
+            }
+          }
+        },
+        "材料3": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              1009,
+              0,
+              0
+            ],
+            [
+              0,
+              1078,
+              0
+            ],
+            [
+              0,
+              0,
+              1112
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1009
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1078
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1112
+            }
+          }
+        },
+        "材料4": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              880,
+              0,
+              0
+            ],
+            [
+              0,
+              1455,
+              0
+            ],
+            [
+              0,
+              0,
+              465
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 880
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1455
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 465
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix_rows_true_cols_pred": [
+          [
+            4053,
+            0,
+            0
+          ],
+          [
+            0,
+            4948,
+            0
+          ],
+          [
+            0,
+            0,
+            3398
+          ]
+        ],
+        "per_class": {
+          "正弦波": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4053
+          },
+          "三角波": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4948
+          },
+          "梯形波": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3398
+          }
+        },
+        "fit_seconds": 0.6933728999974846,
+        "predict_seconds": 0.11488850000023376
+      }
+    },
+    "random_forest": {
+      "folds": {
+        "材料1": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              1067,
+              0,
+              0
+            ],
+            [
+              0,
+              1412,
+              0
+            ],
+            [
+              0,
+              0,
+              921
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1067
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1412
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 921
+            }
+          }
+        },
+        "材料2": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              1097,
+              0,
+              0
+            ],
+            [
+              0,
+              1003,
+              0
+            ],
+            [
+              0,
+              0,
+              900
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1097
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1003
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 900
+            }
+          }
+        },
+        "材料3": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              1009,
+              0,
+              0
+            ],
+            [
+              0,
+              1078,
+              0
+            ],
+            [
+              0,
+              0,
+              1112
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1009
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1078
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1112
+            }
+          }
+        },
+        "材料4": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix_rows_true_cols_pred": [
+            [
+              880,
+              0,
+              0
+            ],
+            [
+              0,
+              1455,
+              0
+            ],
+            [
+              0,
+              0,
+              465
+            ]
+          ],
+          "per_class": {
+            "正弦波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 880
+            },
+            "三角波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1455
+            },
+            "梯形波": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 465
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix_rows_true_cols_pred": [
+          [
+            4053,
+            0,
+            0
+          ],
+          [
+            0,
+            4948,
+            0
+          ],
+          [
+            0,
+            0,
+            3398
+          ]
+        ],
+        "per_class": {
+          "正弦波": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4053
+          },
+          "三角波": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4948
+          },
+          "梯形波": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3398
+          }
+        },
+        "fit_seconds": 8.136858199999551,
+        "predict_seconds": 0.9973828999973193
+      }
+    }
+  },
+  "test_prediction_counts": {
+    "rbf_svm": {
+      "正弦波": 20,
+      "三角波": 44,
+      "梯形波": 16
+    },
+    "random_forest": {
+      "正弦波": 20,
+      "三角波": 44,
+      "梯形波": 16
+    }
+  },
+  "test_agreement": {
+    "rbf_svm": {
+      "with_gaussian_naive_bayes": 1.0,
+      "disagreements": 0,
+      "with_other_candidate": 1.0
+    },
+    "random_forest": {
+      "with_gaussian_naive_bayes": 1.0,
+      "disagreements": 0,
+      "with_other_candidate": 1.0
+    }
+  }
+}

@@ -1,0 +1,31 @@
+schema_version: 1
+description: >-
+  Host-side provenance for a launch attempt that failed before a behavioral
+  model turn. These records are not Layer B behavioral run archives.
+required:
+  - run_id
+  - attempt_id
+  - started_at
+  - clean_room_status
+  - transport_status
+  - binding_status
+  - visibility_status
+  - turn1_submission_attempted
+  - assistant_response_observed
+  - execution_status
+  - failure_category
+  - failure_owner
+  - retry_allowed
+statuses:
+  execution_status:
+    - ABORTED_BEFORE_TURN_1
+    - COMPLETED_PRECHECK_ONLY
+  failure_category:
+    - PRE_MODEL_EXECUTION
+    - PLATFORM_TRANSPORT
+    - WORKSPACE_BINDING
+    - VISIBILITY_GATE
+  failure_owner:
+    - PLATFORM
+    - PROJECT_RUNTIME_ADAPTER
+    - UNKNOWN

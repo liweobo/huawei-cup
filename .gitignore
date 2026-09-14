@@ -1,0 +1,38 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local development output
+/dist/
+/development/artifacts/
+/.tmp/
+/tmp/
+/temp/
+/outputs/
+/output/
+/debug/
+/scratch/
+.codex-tmp-*/
+.tmp/
+.temp/
+.cache/
+runtime/*
+!runtime/.gitkeep
+development/benchmarks/runtime/*
+!development/benchmarks/runtime/.gitkeep
+
+# Editor and operating-system files
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini

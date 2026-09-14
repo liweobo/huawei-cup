@@ -1,0 +1,106 @@
+id: evaluation_review_repair_01
+name: Evaluation and simulation paper repair cycle
+kind: synthetic
+source: benchmarks/problems/README.md
+source_status: MISSING
+problem_family: evaluation_simulation_mechanism
+initial_state:
+  domain_context: null
+  selected_problem: synthetic-evaluation
+  current_phase: null
+  status: NOT STARTED
+  p0_risks: []
+expected_route_coverage:
+  - analyze_problem
+  - audit_data
+  - build_baseline
+  - design_model
+  - run_experiment
+  - validate_model
+  - write_paper
+  - reviewer
+  - final_check
+turns:
+  - turn: 1
+    user: 我在做数学建模项目，先分析问题三的指标定义、输入输出和假设。
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+    state_updates:
+      domain_context: mathematical_modeling_competition
+      status: IN PROGRESS
+  - turn: 2
+    user: 附件先检查参数来源、单位和缺失值。
+    expected_trigger: true
+    expected_route: audit_data
+    expected_phase: data
+  - turn: 3
+    user: 先做一个等权评价 baseline。
+    expected_trigger: true
+    expected_route: build_baseline
+    expected_phase: baseline
+  - turn: 4
+    user: 做模型设计，比较评价与仿真候选方案。
+    expected_trigger: true
+    expected_route: design_model
+    expected_phase: modeling
+  - turn: 5
+    user: 按一致协议跑实验并保存记录。
+    expected_trigger: true
+    expected_route: run_experiment
+    expected_phase: experiment
+    state_updates:
+      experiment_status: COMPLETE
+      observed_evidence:
+        - fixture:evaluation-run-record-v1
+    assertions:
+      no_fake_experiment: true
+  - turn: 6
+    user: 检查参数敏感性、不确定性和稳健性。
+    expected_trigger: true
+    expected_route: validate_model
+    expected_phase: validation
+  - turn: 7
+    user: 整理摘要和结果部分。
+    expected_trigger: true
+    expected_route: write_paper
+    expected_phase: writing
+    state_updates:
+      paper_status: DRAFT
+  - turn: 8
+    user: 论文结果和代码对不上，模拟评委找出冲突。
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+    state_updates:
+      p0_risks_add:
+        - paper-code-inconsistency
+      blocked: true
+      status: BLOCKED
+    risk_policy: block
+  - turn: 9
+    user: 按运行记录修复论文数字，重新整理结果部分。
+    expected_trigger: true
+    expected_route: write_paper
+    expected_phase: writing
+  - turn: 10
+    user: 重新审稿，复核论文和代码一致性。
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+    state_updates:
+      p0_risks_resolve:
+        - paper-code-inconsistency
+      blocked: false
+      status: IN PROGRESS
+  - turn: 11
+    user: 提交前做最终检查，但关键规则仍是 UNVERIFIED。
+    expected_trigger: true
+    expected_route: final_check
+    expected_phase: submission
+    state_updates:
+      p0_risks_add:
+        - competition-rules-unverified
+      blocked: true
+      status: BLOCKED
+    risk_policy: block

@@ -1,0 +1,4 @@
+﻿,predicted_1_正弦波,predicted_2_三角波,predicted_3_梯形波
+actual_1_正弦波,811,0,0
+actual_2_三角波,0,990,0
+actual_3_梯形波,0,0,679

@@ -1,0 +1,21 @@
+run_id: run-003
+benchmark_id: historical_2024_c_core_loss
+created_at: '2026-09-02T22:12:31+08:00'
+active_run_id: run-003
+immutable_inputs:
+- path: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\problems\2024\C\raw\数据驱动下磁性元件的磁芯损耗建模.docx
+  sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+- path: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\problems\2024\C\raw\附件一（训练集）.xlsx
+  sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+- path: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\problems\2024\C\raw\附件二（测试集）.xlsx
+  sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+- path: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\problems\2024\C\raw\附件三（测试集）.xlsx
+  sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+- path: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\problems\2024\C\raw\附件四（Excel表）.xlsx
+  sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+writable_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\runtime\historical_2024_c_core_loss\run-003
+prior_run_artifacts_visible: false
+allowed_read_roots:
+- C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\problems\2024\C\raw
+- C:\Users\aaa\Desktop\test\huawei-cup-2026\skill
+allowed_write_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\benchmarks\runtime\historical_2024_c_core_loss\run-003

@@ -1,0 +1,116 @@
+id: prediction_clean_01
+name: Prediction and time-series clean workflow
+kind: synthetic
+source: benchmarks/problems/README.md
+source_status: MISSING
+problem_family: prediction_time_series
+initial_state:
+  domain_context: null
+  selected_problem: null
+  current_phase: null
+  status: NOT STARTED
+  p0_risks: []
+expected_route_coverage:
+  - select_problem
+  - analyze_problem
+  - audit_data
+  - build_baseline
+  - design_model
+  - run_experiment
+  - validate_model
+  - write_paper
+  - reviewer
+  - final_check
+turns:
+  - turn: 1
+    user: 我正在参加数学建模竞赛，A/B/C 三题先选题。
+    expected_trigger: true
+    expected_route: select_problem
+    expected_phase: selection
+    state_updates:
+      domain_context: mathematical_modeling_competition
+      selected_problem: C
+      status: IN PROGRESS
+    note: Establish domain context and select the synthetic C problem.
+  - turn: 2
+    user: 先看问题一到底要求什么。
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+  - turn: 3
+    user: 附件先检查一下。
+    expected_trigger: true
+    expected_route: audit_data
+    expected_phase: data
+    state_updates:
+      data_audit_status: COMPLETE
+  - turn: 4
+    user: 先做一个最简单的 baseline。
+    expected_trigger: true
+    expected_route: build_baseline
+    expected_phase: baseline
+    state_updates:
+      baseline_status: DEFINED
+    assertions:
+      no_fake_experiment: true
+  - turn: 5
+    user: 这个 baseline 不够，比较两个候选模型。
+    expected_trigger: true
+    expected_route: design_model
+    expected_phase: modeling
+    state_updates:
+      primary_model: candidate_a
+  - turn: 6
+    user: 按一致的时间切分跑实验并保存记录。
+    expected_trigger: true
+    expected_route: run_experiment
+    expected_phase: experiment
+    state_updates:
+      experiment_status: COMPLETE
+      observed_evidence:
+        - fixture:prediction-run-record-v1
+    assertions:
+      no_fake_experiment: true
+  - turn: 7
+    user: 检查泛化、敏感性和鲁棒性。
+    expected_trigger: true
+    expected_route: validate_model
+    expected_phase: validation
+    state_updates:
+      validation_status: COMPLETE
+  - turn: 8
+    user: 刚才问题二的假设是不是太强？
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+    note: Nonlinear user interruption returning to problem understanding.
+  - turn: 9
+    user: 帮我整理结果部分。
+    expected_trigger: true
+    expected_route: write_paper
+    expected_phase: writing
+    state_updates:
+      paper_status: DRAFT
+  - turn: 10
+    user: 模拟评委检查论文里的问题。
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+  - turn: 11
+    user: 按评审意见修复后重新整理结果部分。
+    expected_trigger: true
+    expected_route: write_paper
+    expected_phase: writing
+  - turn: 12
+    user: 再审稿一次，确认没有关键漏洞。
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+  - turn: 13
+    user: 提交前做最终检查。
+    expected_trigger: true
+    expected_route: final_check
+    expected_phase: submission
+    state_updates:
+      paper_status: READY
+      status: COMPLETE

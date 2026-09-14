@@ -1,0 +1,788 @@
+{
+  "ledger_type": "paper_number_evidence",
+  "generated_at_utc": "2026-08-26T12:05:29.736294+00:00",
+  "scope": "Numbers discussed so far for Q1, Q2 and Q4 alignment. No Q4 loss prediction run has been completed.",
+  "source_files": {
+    "training_attachment1": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件一（训练集）.xlsx",
+      "exists": true,
+      "sha256": "c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc",
+      "bytes": 107702460
+    },
+    "test_attachment2": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件二（测试集）.xlsx",
+      "exists": true,
+      "sha256": "b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c",
+      "bytes": 890928
+    },
+    "test_attachment3": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件三（测试集）.xlsx",
+      "exists": true,
+      "sha256": "8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a",
+      "bytes": 4341620
+    },
+    "template_attachment4": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件四（Excel表）.xlsx",
+      "exists": true,
+      "sha256": "d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8",
+      "bytes": 14973
+    },
+    "problem_docx": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\数据驱动下磁性元件的磁芯损耗建模.docx",
+      "exists": true,
+      "sha256": "3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8",
+      "bytes": 743935
+    }
+  },
+  "runs": {
+    "attachment1_data_audit": {
+      "script": {
+        "path": "C:\\Users\\aaa\\Desktop\\test\\audit_attachment1.py",
+        "exists": true,
+        "sha256": "604be060cd6a41c753e7d2a25773771e6ff0bc319e3f35a88b539ca47e2983c7",
+        "bytes": 10778
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\attachment1_audit.json",
+          "exists": true,
+          "sha256": "cddfa2b73afaba42e7737ed7c18829e377618723e0afd93ab1e3e5bd89eb2eb0",
+          "bytes": 48457
+        },
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\attachment1_anomalies.csv",
+          "exists": true,
+          "sha256": "7b4956e489602e3070ca51ea0fae7038990d383c7b721729f554ac1c0b458c43",
+          "bytes": 15424
+        }
+      ],
+      "actual_total_rows": 12400,
+      "missing_cells": 0,
+      "non_numeric_expected": 0,
+      "invalid_temperature": 0,
+      "frequency_outside_stated_range": 163,
+      "nonpositive_loss": 0,
+      "duplicate_full_rows": 1,
+      "per_material": [
+        {
+          "material": "材料1",
+          "rows": 3400,
+          "temperature_counts": {
+            "25": 861,
+            "50": 845,
+            "70": 843,
+            "90": 851
+          },
+          "wave_counts": {
+            "正弦波": 1067,
+            "三角波": 1412,
+            "梯形波": 921
+          },
+          "frequency_outside_stated_range": 0
+        },
+        {
+          "material": "材料2",
+          "rows": 3000,
+          "temperature_counts": {
+            "25": 813,
+            "50": 727,
+            "70": 746,
+            "90": 714
+          },
+          "wave_counts": {
+            "正弦波": 1097,
+            "三角波": 1003,
+            "梯形波": 900
+          },
+          "frequency_outside_stated_range": 78
+        },
+        {
+          "material": "材料3",
+          "rows": 3200,
+          "temperature_counts": {
+            "25": 850,
+            "50": 801,
+            "70": 754,
+            "90": 795
+          },
+          "wave_counts": {
+            "正弦波": 1010,
+            "三角波": 1078,
+            "梯形波": 1112
+          },
+          "frequency_outside_stated_range": 85
+        },
+        {
+          "material": "材料4",
+          "rows": 2800,
+          "temperature_counts": {
+            "25": 720,
+            "50": 697,
+            "70": 687,
+            "90": 696
+          },
+          "wave_counts": {
+            "正弦波": 880,
+            "三角波": 1455,
+            "梯形波": 465
+          },
+          "frequency_outside_stated_range": 0
+        }
+      ]
+    },
+    "q1_baseline": {
+      "script": {
+        "path": "C:\\Users\\aaa\\Desktop\\test\\q1_baseline.py",
+        "exists": true,
+        "sha256": "6a650f7e1eeb7a98706a24fe21a6570801da6adaa61046ab03cf9e6c5f194a2e",
+        "bytes": 11182
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q1_baseline\\metrics.json",
+          "exists": true,
+          "sha256": "dc2882f64a51c50a5bc1e3cc5b373a169b564f71b4a075bf6bd88c79f28534d1",
+          "bytes": 4332
+        },
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q1_baseline\\attachment2_predictions.csv",
+          "exists": true,
+          "sha256": "8a8024194aa09692ba841479c2e401d5ac79797fbd3c4f4659dc68859b7f1044",
+          "bytes": 1646
+        },
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q1_baseline\\tree_rules.txt",
+          "exists": true,
+          "sha256": "9473f33376531e1331e9d741b11099a98eaf1cd114947b88d93b0706c79d9910",
+          "bytes": 292
+        }
+      ],
+      "actual_training_samples": 12400,
+      "actual_test_samples": 80,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0
+    },
+    "q1_model_comparison": {
+      "script": {
+        "path": "C:\\Users\\aaa\\Desktop\\test\\q1_compare_models.py",
+        "exists": true,
+        "sha256": "db95c6a0393354dbafd56f1457bfd50dbedce97717e0d5a700ea51f96383478e",
+        "bytes": 8157
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q1_model_comparison\\comparison.json",
+          "exists": true,
+          "sha256": "a682531e6f9c67cdb75a63b9eb885f7950f92a681dd78140ec5fe207c7d25dcd",
+          "bytes": 7496
+        },
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q1_model_comparison\\attachment2_model_predictions.csv",
+          "exists": true,
+          "sha256": "c0b7ecbba222ef6b60aa5b1273c1883ac8053d8b33e2c991f9fa506f19e5c5a6",
+          "bytes": 2305
+        }
+      ],
+      "actual_training_samples": 12400,
+      "actual_test_samples": 80,
+      "models": {
+        "rbf_svm": {
+          "holdout_accuracy": 1.0,
+          "holdout_macro_f1": 1.0,
+          "cv_accuracy_mean": 1.0,
+          "cv_accuracy_std": 0.0,
+          "cv_macro_f1_mean": 1.0,
+          "cv_macro_f1_std": 0.0
+        },
+        "random_forest": {
+          "holdout_accuracy": 1.0,
+          "holdout_macro_f1": 1.0,
+          "cv_accuracy_mean": 1.0,
+          "cv_accuracy_std": 0.0,
+          "cv_macro_f1_mean": 1.0,
+          "cv_macro_f1_std": 0.0
+        }
+      },
+      "test_prediction_counts_rbf_svm": {
+        "正弦波": 20,
+        "三角波": 44,
+        "梯形波": 16
+      },
+      "test_prediction_agreement": {
+        "count": 80,
+        "same_count": 80,
+        "same_rate": 1.0,
+        "disagreements": []
+      }
+    },
+    "q2_validation": {
+      "script": {
+        "path": "C:\\Users\\aaa\\Desktop\\test\\q2_validate_protocol.py",
+        "exists": true,
+        "sha256": "f4e8c3c811991a113630319fbe2f15a4c6ab269589b5a76f76393849c34fb4cf",
+        "bytes": 6803
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q2_validation\\q2_validation.json",
+          "exists": true,
+          "sha256": "ffdbe4654469903fcf5be2abaf9083d948cdc4e6844beb0053c8f8eae4e2c892",
+          "bytes": 45371
+        },
+        {
+          "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\q2_validation\\q2_validation_summary.csv",
+          "exists": true,
+          "sha256": "0bb9141e341dbbf3f1dd763387f7a8ff690b807f90e07b757fd077b52d12f7c0",
+          "bytes": 11721
+        }
+      ],
+      "actual_material1_sine_samples": 1067,
+      "has_timestamp": false,
+      "random_80_20": {
+        "split": "random_80_20",
+        "train_n": 853,
+        "valid_n": 214,
+        "models": {
+          "SE": {
+            "rmse_log": 0.3698103360995329,
+            "mae": 22449.11279221548,
+            "rmse": 46699.216425089406,
+            "smape": 0.3006175308277657,
+            "r2_log": 0.9641308263309607,
+            "median_ape": 0.2818854517061228,
+            "coefficients": [
+              11.053471361564169,
+              1.6071194993853437,
+              2.499428980377251
+            ]
+          },
+          "T1": {
+            "rmse_log": 0.19519555401528252,
+            "mae": 12065.25130039674,
+            "rmse": 26760.87245019911,
+            "smape": 0.1583375492066121,
+            "r2_log": 0.9900068334878512,
+            "median_ape": 0.1406025859640044,
+            "coefficients": [
+              11.454108138250607,
+              1.6532027741799937,
+              2.5108097022027716,
+              -0.7624201839868214
+            ]
+          },
+          "T2": {
+            "rmse_log": 0.18430872284912006,
+            "mae": 12109.236128919358,
+            "rmse": 29612.05962601545,
+            "smape": 0.1502852844106538,
+            "r2_log": 0.9910904645448372,
+            "median_ape": 0.1336552975369935,
+            "coefficients": [
+              11.510264277867272,
+              1.650104838526892,
+              2.5102138305671606,
+              -1.2618646807462113,
+              0.5011321026711495
+            ]
+          },
+          "TI": {
+            "rmse_log": 0.16820829437224075,
+            "mae": 10016.799503690707,
+            "rmse": 23991.06483753869,
+            "smape": 0.12759486871252543,
+            "r2_log": 0.9925790740977475,
+            "median_ape": 0.09547272241901184,
+            "coefficients": [
+              11.494693921061884,
+              1.280125505669461,
+              2.4652321530230266,
+              -0.8521604196188278,
+              0.6950647314097229,
+              0.09351662570110084
+            ]
+          }
+        }
+      },
+      "leave_temperature": [
+        {
+          "split": "leave_temperature_25",
+          "train_n": 796,
+          "valid_n": 271,
+          "models": {
+            "SE": {
+              "rmse_log": 0.6555065823621361,
+              "mae": 54580.60977063314,
+              "rmse": 97556.39087964273,
+              "smape": 0.5918585058980829,
+              "r2_log": 0.8837070166928759,
+              "median_ape": 0.42701200933766387,
+              "coefficients": [
+                10.890162125240753,
+                1.734250910810172,
+                2.52728250001322
+              ]
+            },
+            "T1": {
+              "rmse_log": 0.3146047657092575,
+              "mae": 15884.36432493067,
+              "rmse": 31908.6111988646,
+              "smape": 0.22253030776353974,
+              "r2_log": 0.9732126352128545,
+              "median_ape": 0.13649159970704916,
+              "coefficients": [
+                11.29391200746414,
+                1.7516437507642355,
+                2.5398352377869506,
+                -0.5724191564393043
+              ]
+            },
+            "T2": {
+              "rmse_log": 0.23078310911132188,
+              "mae": 19845.557101335726,
+              "rmse": 42364.43993725666,
+              "smape": 0.1902848499546695,
+              "r2_log": 0.9855852392891838,
+              "median_ape": 0.1780144680216762,
+              "coefficients": [
+                11.470223350060198,
+                1.752137079734649,
+                2.53962915342457,
+                -1.1577181743632836,
+                0.4215946649878977
+              ]
+            },
+            "TI": {
+              "rmse_log": 0.22331512283041258,
+              "mae": 17351.47624870382,
+              "rmse": 33737.49832743245,
+              "smape": 0.20119452652741154,
+              "r2_log": 0.9865030491513794,
+              "median_ape": 0.18348818973016962,
+              "coefficients": [
+                11.3612528443135,
+                1.2316506460816923,
+                2.480093308311881,
+                -0.6694196626379936,
+                0.7345148718809025,
+                0.09261686056590755
+              ]
+            }
+          }
+        },
+        {
+          "split": "leave_temperature_50",
+          "train_n": 811,
+          "valid_n": 256,
+          "models": {
+            "SE": {
+              "rmse_log": 0.1361404608763187,
+              "mae": 7214.306818176417,
+              "rmse": 16810.048021506867,
+              "smape": 0.10560753941947824,
+              "r2_log": 0.9953821729706457,
+              "median_ape": 0.0813191692592658,
+              "coefficients": [
+                11.037763111376542,
+                1.641031619232225,
+                2.496242972742973
+              ]
+            },
+            "T1": {
+              "rmse_log": 0.16962240063185458,
+              "mae": 13375.764985326467,
+              "rmse": 27897.697552557962,
+              "smape": 0.14991409188507204,
+              "r2_log": 0.9928314777217458,
+              "median_ape": 0.15680445974393759,
+              "coefficients": [
+                11.491345873011284,
+                1.6868717326494476,
+                2.519655525345867,
+                -0.796489671472139
+              ]
+            },
+            "T2": {
+              "rmse_log": 0.1394763071985503,
+              "mae": 7155.907570193948,
+              "rmse": 14377.685473812824,
+              "smape": 0.1150498323327907,
+              "r2_log": 0.9951530994453616,
+              "median_ape": 0.10191497101210127,
+              "coefficients": [
+                11.510308295658442,
+                1.6869420919179001,
+                2.518038418768062,
+                -1.2547348999999282,
+                0.48255324850518355
+              ]
+            },
+            "TI": {
+              "rmse_log": 0.14076691993766988,
+              "mae": 8476.185305146859,
+              "rmse": 17212.963791926,
+              "smape": 0.11794887802678128,
+              "r2_log": 0.9950629850233598,
+              "median_ape": 0.10031865877605195,
+              "coefficients": [
+                11.51718124971988,
+                1.3127714253199658,
+                2.453406875178757,
+                -0.8513580393531717,
+                0.6486201795768223,
+                0.12358859097232791
+              ]
+            }
+          }
+        },
+        {
+          "split": "leave_temperature_70",
+          "train_n": 802,
+          "valid_n": 265,
+          "models": {
+            "SE": {
+              "rmse_log": 0.31631897802597275,
+              "mae": 15866.5483462744,
+              "rmse": 27894.75756039087,
+              "smape": 0.2776853099390748,
+              "r2_log": 0.9741909509392808,
+              "median_ape": 0.3165759821572568,
+              "coefficients": [
+                11.121497557815783,
+                1.5565530479026815,
+                2.4939334117730945
+              ]
+            },
+            "T1": {
+              "rmse_log": 0.21445091183672416,
+              "mae": 5869.786208545107,
+              "rmse": 9409.954011865835,
+              "smape": 0.16843071049690775,
+              "r2_log": 0.9881374706525996,
+              "median_ape": 0.14127351766931887,
+              "coefficients": [
+                11.475116064754623,
+                1.6009010513642379,
+                2.519083043296859,
+                -0.7478568246984352
+              ]
+            },
+            "T2": {
+              "rmse_log": 0.20517677442031168,
+              "mae": 7775.396986823825,
+              "rmse": 16157.374684369592,
+              "smape": 0.14964682438207758,
+              "r2_log": 0.9891412983316447,
+              "median_ape": 0.11724458866445862,
+              "coefficients": [
+                11.523798627349109,
+                1.5981482476089033,
+                2.516284214392058,
+                -1.3086739208740965,
+                0.5420523778702553
+              ]
+            },
+            "TI": {
+              "rmse_log": 0.1942039647228185,
+              "mae": 8943.98482670344,
+              "rmse": 16102.097778519741,
+              "smape": 0.15702267854428067,
+              "r2_log": 0.9902716835484228,
+              "median_ape": 0.14316230467054195,
+              "coefficients": [
+                11.500620599843876,
+                1.286505222288156,
+                2.4657416620508696,
+                -0.8125348297201909,
+                0.6583678823428512,
+                0.12550309313726712
+              ]
+            }
+          }
+        },
+        {
+          "split": "leave_temperature_90",
+          "train_n": 792,
+          "valid_n": 275,
+          "models": {
+            "SE": {
+              "rmse_log": 0.5168073502043102,
+              "mae": 28290.152222175115,
+              "rmse": 47766.52134016818,
+              "smape": 0.43649957656112476,
+              "r2_log": 0.92648227456814,
+              "median_ape": 0.5143270654512833,
+              "coefficients": [
+                11.181646683266655,
+                1.511218422537337,
+                2.4988126106102992
+              ]
+            },
+            "T1": {
+              "rmse_log": 0.3488314546019498,
+              "mae": 21898.13602886282,
+              "rmse": 45903.314099103874,
+              "smape": 0.27423598278585626,
+              "r2_log": 0.9665060801756279,
+              "median_ape": 0.2300057801097478,
+              "coefficients": [
+                11.506050005910616,
+                1.5356066664272607,
+                2.5034281801494025,
+                -0.9166891654552615
+              ]
+            },
+            "T2": {
+              "rmse_log": 0.30519225429820934,
+              "mae": 10481.502732268687,
+              "rmse": 20282.25686352088,
+              "smape": 0.24911619786046293,
+              "r2_log": 0.9743621434757971,
+              "median_ape": 0.22158175685555992,
+              "coefficients": [
+                11.526533642725951,
+                1.5339621741408211,
+                2.502494884316309,
+                -1.3375841791328225,
+                0.6201880551215447
+              ]
+            },
+            "TI": {
+              "rmse_log": 0.271562679846654,
+              "mae": 16202.089915060422,
+              "rmse": 39611.25048200741,
+              "smape": 0.19893828454766502,
+              "r2_log": 0.9797009894164009,
+              "median_ape": 0.13704608223530132,
+              "coefficients": [
+                11.527054049831696,
+                1.2907000533908008,
+                2.466262426160984,
+                -0.9847564541605955,
+                0.671480725957213,
+                0.10425615471620531
+              ]
+            }
+          }
+        }
+      ],
+      "row_order_diagnostic": {
+        "split": "row_order_80_20_diagnostic",
+        "train_n": 853,
+        "valid_n": 214,
+        "models": {
+          "SE": {
+            "rmse_log": 0.4575973408784203,
+            "mae": 29953.725766725238,
+            "rmse": 50084.00181150837,
+            "smape": 0.3879516807704107,
+            "r2_log": 0.941494570864943,
+            "median_ape": 0.42973633641898934,
+            "coefficients": [
+              11.135721752958194,
+              1.6108144437288068,
+              2.5141232145247554
+            ]
+          },
+          "T1": {
+            "rmse_log": 0.37161753489430005,
+            "mae": 21425.61760493815,
+            "rmse": 44246.168478283,
+            "smape": 0.28909710854848797,
+            "r2_log": 0.9614147266457737,
+            "median_ape": 0.24166515727993754,
+            "coefficients": [
+              11.51236202621146,
+              1.5397567795091875,
+              2.5210894104134423,
+              -0.9035565474405844
+            ]
+          },
+          "T2": {
+            "rmse_log": 0.3339004469138631,
+            "mae": 17146.80252056361,
+            "rmse": 35635.32243116172,
+            "smape": 0.2624295814305924,
+            "r2_log": 0.9688496317053633,
+            "median_ape": 0.22530110354844482,
+            "coefficients": [
+              11.52770710112619,
+              1.5515867536608658,
+              2.520554692920058,
+              -1.126701932650485,
+              0.27367085429164517
+            ]
+          },
+          "TI": {
+            "rmse_log": 0.2707733229818222,
+            "mae": 7696.160601250573,
+            "rmse": 17630.61629770996,
+            "smape": 0.18893579348980957,
+            "r2_log": 0.979514765748572,
+            "median_ape": 0.14081193413956977,
+            "coefficients": [
+              11.491153541350862,
+              1.3274894424598311,
+              2.4460460511649385,
+              -0.8233078617171121,
+              0.508048466490839,
+              0.19308042426108527
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "rmse_log": {
+          "SE": {
+            "n": 300,
+            "mean": 0.3558326569084534,
+            "q025": 0.3393441375708951,
+            "median": 0.35591207278045156,
+            "q975": 0.3722280551471596
+          },
+          "T1": {
+            "n": 300,
+            "mean": 0.20872869936413674,
+            "q025": 0.19588409353961342,
+            "median": 0.20845170769876326,
+            "q975": 0.2230605488296964
+          },
+          "T2": {
+            "n": 300,
+            "mean": 0.20067865965173395,
+            "q025": 0.18850323336232866,
+            "median": 0.2002456184532977,
+            "q975": 0.21460984556636933
+          },
+          "TI": {
+            "n": 300,
+            "mean": 0.16793986642673991,
+            "q025": 0.15681109246088867,
+            "median": 0.16753833056237866,
+            "q975": 0.1800211781460186
+          }
+        },
+        "SE_minus_T2_rmse_log": {
+          "n": 300,
+          "mean": 0.15515399725671944,
+          "q025": 0.13639751277076326,
+          "median": 0.15505115467202757,
+          "q975": 0.17145498723458322
+        },
+        "T2_better_fraction": 1.0
+      },
+      "sensitivity": [
+        {
+          "perturbation": "temperature_1C",
+          "metrics": {
+            "SE": {
+              "rmse_log": 0.3698103360995329,
+              "smape": 0.3006175308277657,
+              "r2_log": 0.9641308263309607
+            },
+            "T1": {
+              "rmse_log": 0.19476709666277822,
+              "smape": 0.15741663153378316,
+              "r2_log": 0.9900506556593988
+            },
+            "T2": {
+              "rmse_log": 0.1843870689228227,
+              "smape": 0.14985823795917866,
+              "r2_log": 0.9910828883925037
+            },
+            "TI": {
+              "rmse_log": 0.16903910430996433,
+              "smape": 0.1284521366958782,
+              "r2_log": 0.9925055865810016
+            }
+          }
+        },
+        {
+          "perturbation": "frequency_1pct",
+          "metrics": {
+            "SE": {
+              "rmse_log": 0.3688794170470526,
+              "smape": 0.2992696010821305,
+              "r2_log": 0.9643111851049433
+            },
+            "T1": {
+              "rmse_log": 0.19577873117550473,
+              "smape": 0.15838821750768856,
+              "r2_log": 0.9899470320009977
+            },
+            "T2": {
+              "rmse_log": 0.18495673051791744,
+              "smape": 0.1494149426907415,
+              "r2_log": 0.9910277046646767
+            },
+            "TI": {
+              "rmse_log": 0.1699241326162698,
+              "smape": 0.12874313435288995,
+              "r2_log": 0.9924269050067833
+            }
+          }
+        },
+        {
+          "perturbation": "Bm_1pct",
+          "metrics": {
+            "SE": {
+              "rmse_log": 0.36972692231001375,
+              "smape": 0.29976205643471915,
+              "r2_log": 0.9641470056854959
+            },
+            "T1": {
+              "rmse_log": 0.1946179499664707,
+              "smape": 0.15765909724693425,
+              "r2_log": 0.9900658876333518
+            },
+            "T2": {
+              "rmse_log": 0.18365638085140498,
+              "smape": 0.1488496584746816,
+              "r2_log": 0.991153421723017
+            },
+            "TI": {
+              "rmse_log": 0.16866104072565644,
+              "smape": 0.12843991703423085,
+              "r2_log": 0.992539072280502
+            }
+          }
+        }
+      ]
+    },
+    "q4_alignment_only": {
+      "script": {
+        "path": "C:\\Users\\aaa\\Desktop\\test\\verify_q4_alignment.py",
+        "exists": true,
+        "sha256": "8b3c56732dc47e98ef61247ed77863cb05c421d9f4584951b07e5aea0edd0446",
+        "bytes": 5234
+      },
+      "output": {
+        "path": "C:\\Users\\aaa\\Desktop\\test\\q4_alignment_check.json",
+        "exists": true,
+        "sha256": "83d5fb039a3da29fa914c962e3e4e989802375ccf4d93d8ca8f6f3ea947ccea9",
+        "bytes": 4502
+      },
+      "attachment3_cached_ids_1_to_400": true,
+      "attachment4_cached_ids_1_to_400": true,
+      "attachment4_col3_currently_empty": true,
+      "q4_loss_predictions_present": false
+    }
+  },
+  "paper_write_status": {
+    "can_write_q1_metrics": true,
+    "can_write_q1_attachment2_counts_and_selected_predictions": true,
+    "can_write_q2_validation_numbers": true,
+    "can_write_q4_alignment_mapping": true,
+    "can_write_q4_loss_predictions": false,
+    "blocked_q4_reason": "No q4 loss-prediction model has been run; existing attachment2_model_predictions.csv is Q1 classification output and must not be copied into Q4 column C."
+  },
+  "revised_results_draft": {
+    "file": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\revised_results_section.md",
+      "exists": true,
+      "sha256": "fe5744ed107114e7d22de71a546adc8eb501fb1cfab1a9a0e2740484a2a2b90c",
+      "bytes": 6751
+    },
+    "status": "safe_draft_only_no_final_manuscript_present",
+    "numeric_scope": "Only numbers from attachment1_audit.json, Q1 outputs, and q2_validation.json are retained; Q3/Q4/Q5 numerical results are explicitly omitted."
+  }
+}

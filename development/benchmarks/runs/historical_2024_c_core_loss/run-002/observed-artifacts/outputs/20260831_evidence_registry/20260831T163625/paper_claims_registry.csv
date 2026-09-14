@@ -1,0 +1,34 @@
+﻿claim_id,section,description,status,expected_from_prior_analysis,actual_from_current_run,record,json_pointer
+Q1-001,Q1,Clean training rows,verified,12399,12399,q1_baseline,/training_rows_after_duplicate_removal
+Q1-002,Q1,Gaussian NB holdout accuracy,verified,1.0,1.0,q1_baseline,/candidate_validation_metrics/gaussian_naive_bayes/accuracy
+Q1-003,Q1,Gaussian NB holdout macro F1,verified,1.0,1.0,q1_baseline,/candidate_validation_metrics/gaussian_naive_bayes/macro_f1
+Q1-004,Q1,Gaussian NB leave-one-material accuracy,verified,1.0,1.0,q1_baseline,/leave_one_material_out_metrics/gaussian_naive_bayes/aggregate/accuracy
+Q1-005,Q1,RBF-SVM holdout accuracy,verified,1.0,1.0,q1_comparison,/validation_metrics/rbf_svm/accuracy
+Q1-006,Q1,Random forest holdout accuracy,verified,1.0,1.0,q1_comparison,/validation_metrics/random_forest/accuracy
+Q1-007,Q1,RBF-SVM leave-one-material accuracy,verified,1.0,1.0,q1_comparison,/leave_one_material_out_metrics/rbf_svm/aggregate/accuracy
+Q1-008,Q1,Random forest leave-one-material accuracy,verified,1.0,1.0,q1_comparison,/leave_one_material_out_metrics/random_forest/aggregate/accuracy
+Q1-009,Q1,Test sine count,verified,20,20,q1_comparison,/test_prediction_counts/rbf_svm/正弦波
+Q1-010,Q1,Test triangle count,verified,44,44,q1_comparison,/test_prediction_counts/rbf_svm/三角波
+Q1-011,Q1,Test trapezoid count,verified,16,16,q1_comparison,/test_prediction_counts/rbf_svm/梯形波
+Q1-012,Q1,Candidate agreement on 80 test samples,verified,1.0,1.0,q1_comparison,/test_agreement/rbf_svm/with_other_candidate
+Q2-001,Q2,Material1 sine sample count,verified,1067,1067,q2,/sample_count
+Q2-002,Q2,SE repeated-split MAPE,verified,0.3291511436035553,0.3291511436035553,q2,/random_stratified_50_repeats/SE/MAPE/mean
+Q2-003,Q2,Linear temperature repeated-split MAPE,verified,0.1687979253107534,0.1687979253107534,q2,/random_stratified_50_repeats/linearT/MAPE/mean
+Q2-004,Q2,Quadratic temperature repeated-split MAPE,verified,0.16164447236535204,0.16164447236535204,q2,/random_stratified_50_repeats/quadraticT/MAPE/mean
+Q2-005,Q2,Interaction model repeated-split MAPE,verified,0.12926035908793337,0.12926035908793332,q2,/random_stratified_50_repeats/interactions/MAPE/mean
+Q2-006,Q2,SE unseen-frequency MAPE,verified,0.32473914538513265,0.32473914538513265,q2,/unseen_frequency_group_cv/SE/MAPE/mean
+Q2-007,Q2,Linear temperature unseen-frequency MAPE,verified,0.17513120856552475,0.17513120856552475,q2,/unseen_frequency_group_cv/linearT/MAPE/mean
+Q2-008,Q2,Quadratic temperature unseen-frequency MAPE,verified,0.16833749139761212,0.16833749139761212,q2,/unseen_frequency_group_cv/quadraticT/MAPE/mean
+Q2-009,Q2,Interaction model unseen-frequency MAPE,verified,0.137945023104263,0.137945023104263,q2,/unseen_frequency_group_cv/interactions/MAPE/mean
+Q2-010,Q2,Linear gamma per C,verified,-0.011857064562093735,-0.011857064562093735,q2,/linear_temperature_inference/gamma_per_C
+Q2-011,Q2,Linear factor 90C versus 25C,verified,0.4626848174579582,0.4626848174579582,q2,/linear_temperature_inference/factor_90_vs_25
+Q2-012,Q2,Bm definition median relative difference,verified,0.0015641285638175364,0.0015641285638175364,q2,/Bm_definition_relative_difference/median
+Q2-013,Q2,Bm definition max relative difference,verified,0.010712499522593767,0.010712499522593767,q2,/Bm_definition_relative_difference/max
+Q3-001,Q3,Raw training rows,verified,12400,12400,q3,/raw_total_rows
+Q3-002,Q3,Complete factor cells,verified,48,48,q3,/expected_factor_cells
+Q3-003,Q3,Minimum raw cell count,verified,63,63,q3,/raw_cell_count_minmax/0
+Q3-004,Q3,Maximum raw cell count,verified,445,445,q3,/raw_cell_count_minmax/1
+Q4-001,Q4,Attachment3 sample rows,verified,400,400,q4_alignment,/attachment3_rows
+Q4-002,Q4,Attachment4 result rows,verified,400,400,q4_alignment,/attachment4_rows
+Q4-003,Q4,Existing Q1 results in column B,verified,80,80,q4_alignment,/q1_result_col2_nonblank
+Q4-004,Q4,Q4 prediction cells currently populated,verified,0,0,q4_alignment,/q1_result_col3_nonblank

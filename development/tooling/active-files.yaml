@@ -1,0 +1,7 @@
+schema_version: 1
+active_run_id: ACTIVE_RUN_ID
+files:
+  - artifact_id: ART-Q1-EXP001-METRICS-1
+    path: outputs/metrics.json
+    sha256: SHA256
+    status: ACTIVE

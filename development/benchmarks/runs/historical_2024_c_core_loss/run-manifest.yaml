@@ -1,0 +1,43 @@
+benchmark_id: historical_2024_c_core_loss
+skill_version: V2.6 Phase 6
+git_commit: UNKNOWN
+model: UNKNOWN
+model_configuration: UNKNOWN
+run_date: 2026-08-26
+problem_source:
+  status: ACCEPTED
+  artifact_origin: USER_PROVIDED
+  official_provenance: UNKNOWN
+  reference: benchmarks/problems/2024/C/source.yaml
+artifact_sha256:
+  - artifact_id: ART-001
+    sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+  - artifact_id: ART-002
+    sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+  - artifact_id: ART-003
+    sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+  - artifact_id: ART-004
+    sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+  - artifact_id: ART-005
+    sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+turn_script_version: 1
+fresh_conversation: true
+tools_available: UNKNOWN
+internet_available: true
+python_available: true
+real_layer_b_run: EXECUTED
+run_ids:
+  - run-001
+  - run-002
+postmortem_status: COMPLETE
+latest_run_outcome: NEEDS_REVIEW
+model_behavior_p0_count: 0
+project_blocker_count: 6
+status: READY_FOR_RUN_003
+notes:
+  - run-001 is a real user-provided Layer B run with a retained transcript, canonical raw inputs, and curated evidence; original transfer-archive metadata is preserved in its manifest.
+  - run-002 is a real user-provided Layer B run with a structured transcript, selected observed evidence, and a verified evidence ledger; original transfer-archive metadata is preserved in its manifest.
+  - Runtime route, tool-call, model, and state metadata not present in the retained transcripts remain UNKNOWN/NOT_OBSERVED.
+  - run-001 and run-002 outcomes are NEEDS_REVIEW; project blockers are kept separate from model-behavior P0.
+  - run-002 identified protocol-provenance and workspace-isolation failures; the next run must use the same 14-turn blind script and a fresh run-scoped workspace.
+  - run-003 has not been executed.

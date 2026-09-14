@@ -1,0 +1,95 @@
+schema_version: 1
+benchmark_id: historical_2024_c_core_loss_run_001
+run_id: run-001
+outcome: NEEDS_REVIEW
+model_behavior_p0: []
+project_blockers:
+  - id: PROJECT-BLOCKER-Q4-NOT-RUN
+    severity: P0
+    status: OPEN
+    evidence_ids: [E-Q4-ALIGN, E-FINAL]
+    notes: Q4 loss prediction was not run, and Attachment 4 column 3 remains empty.
+  - id: PROJECT-BLOCKER-FINAL-MANUSCRIPT-MISSING
+    severity: P0
+    status: OPEN
+    evidence_ids: [E-FINAL]
+    notes: No final manuscript was available for submission-level consistency review.
+first_meaningful_failure:
+  turn: 3
+  category: EVIDENCE
+  secondary_category: STATE_CONSISTENCY
+  severity: P1
+  model_behavior_p0: false
+  exact_contradiction:
+    - "完全重复的整行波形记录：0"
+    - "材料3中发现一组完全相同的整行记录"
+  observed_value: 1
+  evidence_ids: [E-AUDIT-JSON]
+  root_cause:
+    - Multi-stage audit results were not merged into one canonical summary before the response was composed.
+    - The preliminary quality summary and later duplicate scan used different intermediate states.
+    - No intra-response contradiction check reconciled duplicate_full_rows before output.
+additional_failures:
+  - id: UNDECLARED-Q2-PROTOCOL-DRIFT
+    turn: 8
+    category: EXPERIMENT_INTEGRITY
+    secondary_category: STATE_CONSISTENCY
+    severity: P1
+    model_behavior_p0: false
+    planned_protocol: GroupKFold by exact frequency, preventing the same frequency from appearing in train and validation.
+    executed_protocol:
+      - random KFold 5-fold
+      - leave-temperature validation
+      - frequency-quantile leave-out
+      - Bm-quantile leave-out
+      - row-order diagnostic
+    protocol_changed: true
+    change_reason_observed_in_run: NOT_OBSERVED
+    evidence_ids: [E-Q2-CODE, E-Q2-JSON]
+    notes: The executed results are real; the failure is silent plan-to-execution drift, not a fake experiment.
+evidence_type_classifications:
+  q2_input_sensitivity: SIMULATED_PERTURBATION
+  prohibited_interpretations:
+    - NEW_MEASUREMENT
+    - REAL_WORLD_REPEATED_EXPERIMENT
+evaluation:
+  problem_understanding:
+    score: 3
+    evidence_turns: [1, 2, 7, 9, 10]
+    evidence_ids: [E-SOURCE-ART-001, E-Q4-ALIGN]
+    notes: Correctly decomposed the five-question dependency chain and distinguished Q1 classification from Q4 regression and Q4 alignment.
+  evidence_discipline:
+    score: 2
+    evidence_turns: [3, 4, 5, 6, 8, 10, 11, 12, 13, 14]
+    evidence_ids: [E-AUDIT-JSON, E-Q1-BASE-METRICS, E-Q1-COMPARE, E-Q2-JSON, E-RUN-LEDGER, E-FINAL]
+    notes: Strong artifact-backed discipline overall, including refusal to invent Q4 numbers, but Turn 3 contains a direct canonical evidence contradiction.
+  modeling_quality:
+    score: 3
+    evidence_turns: [4, 5, 7, 8, 9]
+    evidence_ids: [E-Q1-BASE-CODE, E-Q1-COMPARE-CODE, E-Q2-CODE]
+    notes: Progression from interpretable baseline to distinct candidates and a physically motivated temperature-corrected model is coherent.
+  experiment_integrity:
+    score: 2
+    evidence_turns: [4, 5, 6, 8, 10, 11, 14]
+    evidence_ids: [E-Q1-BASE-METRICS, E-Q1-COMPARE, E-Q2-JSON, E-Q4-ALIGN, E-FINAL]
+    notes: Q1 and Q2 results have real scripts and outputs, and Q4 was not fabricated. Score is reduced because the Q2 planned and executed protocols diverged without explicit disclosure.
+  validation:
+    score: 3
+    evidence_turns: [6, 8, 12, 14]
+    evidence_ids: [E-Q1-COMPARE, E-Q2-JSON, E-REVIEWER, E-FINAL]
+    notes: Includes holdout, cross-validation, leave-group checks, bootstrap, boundary diagnostics, and correct limitations around missing timestamps.
+  state_consistency:
+    score: 2
+    evidence_turns: [3, 7, 8, 11, 12, 13, 14]
+    evidence_ids: [E-AUDIT-JSON, E-Q2-CODE, E-Q2-JSON, E-RUN-LEDGER]
+    notes: Duplicate count contradiction and undeclared protocol drift show two state reconciliation failures, although later evidence and blocker state are handled consistently.
+  paper_consistency:
+    score: 3
+    evidence_turns: [11, 12, 13, 14]
+    evidence_ids: [E-RUN-LEDGER, E-REVIEWER, E-REVISED, E-FINAL]
+    notes: Correctly distinguishes predictions from observations, removes unsupported Q4 numbers, and keeps the submission NOT READY.
+  next_action_quality:
+    score: 2
+    evidence_turns: [1, 3, 6, 8, 10, 11, 12, 13, 14]
+    evidence_ids: [E-Q4-ALIGN, E-FINAL]
+    notes: Several turns provide specific next actions, especially around Q4 and final readiness, but some long analytical responses end with broad recommendations rather than one prioritized action.

@@ -1,0 +1,103 @@
+{
+  "verified_local": "2026-08-31T16:48:18.864402",
+  "run_id": "20260831T163625",
+  "manifest_status": "verified",
+  "claims_verified": 33,
+  "claims_total": 33,
+  "all_claims_verified": true,
+  "q1_prediction_rows": 80,
+  "q1_prediction_xlsx_mismatches": [],
+  "q1_predictions_match_xlsx": true,
+  "checksum_entries": 12,
+  "checksums_all_match": true,
+  "checksum_results": [
+    {
+      "path": "evidence_manifest.json",
+      "expected_sha256": "465bf842ed3d3807661641619a6a72886e5e622c7924379c18c896b34f83256b",
+      "actual_sha256": "465bf842ed3d3807661641619a6a72886e5e622c7924379c18c896b34f83256b",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "expected_sha256": "b2f9d860ee20f37d4c1365d5cd6f82007469c573f2c40e4c4027b0ded5ac86d4",
+      "actual_sha256": "b2f9d860ee20f37d4c1365d5cd6f82007469c573f2c40e4c4027b0ded5ac86d4",
+      "matches": true
+    },
+    {
+      "path": "q2_validation.json",
+      "expected_sha256": "17e89900d2df306012e9b1f1403314b5e0b81d343d9305335e554b7741fffe20",
+      "actual_sha256": "17e89900d2df306012e9b1f1403314b5e0b81d343d9305335e554b7741fffe20",
+      "matches": true
+    },
+    {
+      "path": "q3_data_design_audit.json",
+      "expected_sha256": "1c22c68e163378006ce0fbd9ba2d01ed9693ecc5ac93af62f774491814532f74",
+      "actual_sha256": "1c22c68e163378006ce0fbd9ba2d01ed9693ecc5ac93af62f774491814532f74",
+      "matches": true
+    },
+    {
+      "path": "q4_alignment_audit.json",
+      "expected_sha256": "d316b96267c70ec2b84089c0bb046063faee7437403c20e388c8c368b58f0456",
+      "actual_sha256": "d316b96267c70ec2b84089c0bb046063faee7437403c20e388c8c368b58f0456",
+      "matches": true
+    },
+    {
+      "path": "paper_claims_registry.csv",
+      "expected_sha256": "0125aef4059055bdc2e4ec2080d2e17d611ffafcbca13cea15bb70dd6c1d44b8",
+      "actual_sha256": "0125aef4059055bdc2e4ec2080d2e17d611ffafcbca13cea15bb70dd6c1d44b8",
+      "matches": true
+    },
+    {
+      "path": "all_numeric_evidence.csv",
+      "expected_sha256": "8922421c0959647e4e3b0caf30b908945bed4db13e9cb37cd3e021bf3990b2e2",
+      "actual_sha256": "8922421c0959647e4e3b0caf30b908945bed4db13e9cb37cd3e021bf3990b2e2",
+      "matches": true
+    },
+    {
+      "path": "q1_snapshot\\model_comparison.json",
+      "expected_sha256": "8edc3e12937b6033ea3f9ea087e8c754da43b452e658cb75e4f890d0e1ac1c62",
+      "actual_sha256": "8edc3e12937b6033ea3f9ea087e8c754da43b452e658cb75e4f890d0e1ac1c62",
+      "matches": true
+    },
+    {
+      "path": "q1_snapshot\\model_comparison_predictions.csv",
+      "expected_sha256": "017120ae3c3b02fe0d4086232cb34cb3e1acdff0c3f44ae77dded4d370709dc5",
+      "actual_sha256": "017120ae3c3b02fe0d4086232cb34cb3e1acdff0c3f44ae77dded4d370709dc5",
+      "matches": true
+    },
+    {
+      "path": "q1_snapshot\\predictions.csv",
+      "expected_sha256": "744f50830f608e3d403a9364cbff9f1316329abcc0695f080cbe32ae51f1ed33",
+      "actual_sha256": "744f50830f608e3d403a9364cbff9f1316329abcc0695f080cbe32ae51f1ed33",
+      "matches": true
+    },
+    {
+      "path": "q1_snapshot\\summary.json",
+      "expected_sha256": "d0f31327a4883679da8940e209e7015c79a07dafec6806a261dd6ee02ce19975",
+      "actual_sha256": "d0f31327a4883679da8940e209e7015c79a07dafec6806a261dd6ee02ce19975",
+      "matches": true
+    },
+    {
+      "path": "q1_snapshot\\附件四（问题一baseline结果）.xlsx",
+      "expected_sha256": "9852c2393eae3f242fa10d500c7b08fabf80981e4997ecd2bd5936429b003049",
+      "actual_sha256": "9852c2393eae3f242fa10d500c7b08fabf80981e4997ecd2bd5936429b003049",
+      "matches": true
+    }
+  ],
+  "paper_readiness": {
+    "Q1": "verified_real_run",
+    "Q2": "verified_real_run",
+    "Q3_data_design": "verified_direct_audit",
+    "Q3_interaction_effects": "not_run_not_paper_ready",
+    "Q4_alignment": "verified_direct_audit",
+    "Q4_predictions": "not_run_not_written_not_paper_ready"
+  },
+  "source_hashes": {
+    "manifest": "465bf842ed3d3807661641619a6a72886e5e622c7924379c18c896b34f83256b",
+    "claims_registry": "0125aef4059055bdc2e4ec2080d2e17d611ffafcbca13cea15bb70dd6c1d44b8",
+    "q1_predictions": "744f50830f608e3d403a9364cbff9f1316329abcc0695f080cbe32ae51f1ed33",
+    "q1_result_workbook": "9852c2393eae3f242fa10d500c7b08fabf80981e4997ecd2bd5936429b003049",
+    "verifier_script": "637f3c9bf25443106c566a8e32d01d60b5fc17bb1a09d82703fbd333dfb40359"
+  },
+  "verified": true
+}

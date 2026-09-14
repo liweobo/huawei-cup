@@ -1,0 +1,33 @@
+schema_version: 1
+run_id: run-004
+attempt_id: run-004-attempt-001
+started_at: '2026-09-04T08:28:33+00:00'
+clean_room_status: PASS
+transport_status: PLATFORM_TRANSPORT_ERROR
+binding_status: FAIL
+visibility_status: PREPARED_ROOT_PASS_ACTUAL_ROOT_UNBOUND
+prepared_clean_room_root: 'C:\Users\aaa\AppData\Local\Temp\huawei-cup-benchmark\run-004'
+actual_model_root: 'C:\Users\aaa\Documents\Codex\2026-09-04\c-users-aaa-appdata-local-temp-huawei-cup-benchmark-run-004'
+binding_mode: UNBOUND
+missing_runtime_paths:
+  - skill/
+  - scripts/
+  - templates/
+  - input/
+  - workspace/
+turn1_submission_attempted: true
+assistant_response_observed: false
+execution_status: ABORTED_BEFORE_TURN_1
+behaviorally_evaluable: false
+failure_category: PRE_MODEL_EXECUTION
+failure_owner: PLATFORM
+subcategories:
+  - PLATFORM_TRANSPORT
+  - WORKSPACE_BINDING
+model_behavior_p0: NOT_EVALUATED
+retry_allowed: true
+retry_run_id: run-004
+notes:
+  - The prepared clean room passed its own visibility and input hash gates.
+  - The platform-created cwd contained only outputs/ and work/ and was not an equivalent runtime mirror.
+  - No model response or behavioral transcript was produced.

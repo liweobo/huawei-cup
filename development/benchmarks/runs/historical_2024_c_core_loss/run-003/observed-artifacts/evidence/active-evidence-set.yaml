@@ -1,0 +1,8 @@
+active_run_id: run-003
+active_evidence_set:
+  Q1:
+    run_id: run-003
+    experiment_id: EXP-Q1-MODEL-COMP-003
+    artifact: outputs/q1_model_comparison/comparison_metrics.json
+    json_path: validation_metrics
+    status: AVAILABLE

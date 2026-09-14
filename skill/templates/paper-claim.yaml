@@ -1,0 +1,10 @@
+claim_id: CLAIM-Q1-METRIC
+question: Q1
+value: null
+historical_evidence_reference: false
+evidence_ref:
+  run_id: ACTIVE_RUN_ID
+  experiment_id: EXP-Q1-001
+  artifact_id: ART-Q1-EXP001-METRICS-1
+  artifact: outputs/metrics.json
+  json_path: metrics/primary

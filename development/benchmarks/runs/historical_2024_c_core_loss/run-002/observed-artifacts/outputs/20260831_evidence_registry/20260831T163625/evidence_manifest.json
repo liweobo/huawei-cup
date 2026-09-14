@@ -1,0 +1,176 @@
+{
+  "run_id": "20260831T163625",
+  "status": "verified",
+  "started_local": "2026-08-31T16:36:25.675957",
+  "finished_local": "2026-08-31T16:43:58.547960",
+  "timezone": "Asia/Shanghai",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.2",
+    "openpyxl": "3.1.5",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0"
+  },
+  "inputs": {
+    "training": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件一（训练集）.xlsx",
+      "size_bytes": 107702460,
+      "mtime_local": "2024-09-16T18:53:52",
+      "sha256": "c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc"
+    },
+    "q1_test": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件二（测试集）.xlsx",
+      "size_bytes": 890928,
+      "mtime_local": "2024-08-21T11:16:47.708000",
+      "sha256": "b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c"
+    },
+    "q4_test": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件三（测试集）.xlsx",
+      "size_bytes": 4341620,
+      "mtime_local": "2024-09-16T20:40:37.687400",
+      "sha256": "8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a"
+    },
+    "result_template": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\附件四（Excel表）.xlsx",
+      "size_bytes": 14973,
+      "mtime_local": "2024-08-31T21:45:05.922200",
+      "sha256": "d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8"
+    },
+    "problem_statement": {
+      "path": "C:\\Users\\aaa\\Desktop\\text\\pressure-test\\数据驱动下磁性元件的磁芯损耗建模.docx",
+      "size_bytes": 743935,
+      "mtime_local": "2024-09-13T22:18:35.115445",
+      "sha256": "3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8"
+    }
+  },
+  "scripts": {
+    "evidence_audit.py": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\evidence_audit.py",
+      "size_bytes": 32831,
+      "mtime_local": "2026-08-31T16:35:36.224610",
+      "sha256": "3c957793ae00c3b5cda40dfe77ba5564f2e1ebf1b50d8d5b5b2f3fc75bfd6418"
+    },
+    "q1_baseline.py": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260827_q1_baseline\\q1_baseline.py",
+      "size_bytes": 9264,
+      "mtime_local": "2026-08-27T10:46:12.430978",
+      "sha256": "738f85f5ef1656659c820670137a2f564984b1603629ab4713b6b493fc46f7f0"
+    },
+    "compare_models.py": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260827_q1_baseline\\compare_models.py",
+      "size_bytes": 7153,
+      "mtime_local": "2026-08-27T12:17:06.597605",
+      "sha256": "48d59acf8bc0ea9aeab0f130704d7fe2fd77ac8961ff0378f886130eac6debb5"
+    }
+  },
+  "q1_run_commands": [
+    {
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260827_q1_baseline\\q1_baseline.py"
+      ],
+      "cwd": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260827_q1_baseline",
+      "started_local": "2026-08-31T16:36:25.988817",
+      "finished_local": "2026-08-31T16:38:52.031921",
+      "elapsed_seconds": 146.03811150000183,
+      "exit_code": 0,
+      "stdout": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_baseline.stdout.log",
+      "stderr": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_baseline.stderr.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260827_q1_baseline\\compare_models.py"
+      ],
+      "cwd": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260827_q1_baseline",
+      "started_local": "2026-08-31T16:38:52.031921",
+      "finished_local": "2026-08-31T16:41:42.973009",
+      "elapsed_seconds": 170.93655359999684,
+      "exit_code": 0,
+      "stdout": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_compare.stdout.log",
+      "stderr": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_compare.stderr.log"
+    }
+  ],
+  "records": {
+    "q1_baseline": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\summary.json",
+    "q1_comparison": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\model_comparison.json",
+    "q2": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q2_validation.json",
+    "q3": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q3_data_design_audit.json",
+    "q4_alignment": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q4_alignment_audit.json"
+  },
+  "outputs": {
+    "q2_validation.json": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q2_validation.json",
+      "size_bytes": 19644,
+      "mtime_local": "2026-08-31T16:43:58.501688",
+      "sha256": "17e89900d2df306012e9b1f1403314b5e0b81d343d9305335e554b7741fffe20"
+    },
+    "q3_data_design_audit.json": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q3_data_design_audit.json",
+      "size_bytes": 2589,
+      "mtime_local": "2026-08-31T16:43:58.504416",
+      "sha256": "1c22c68e163378006ce0fbd9ba2d01ed9693ecc5ac93af62f774491814532f74"
+    },
+    "q4_alignment_audit.json": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q4_alignment_audit.json",
+      "size_bytes": 3003,
+      "mtime_local": "2026-08-31T16:43:58.506517",
+      "sha256": "d316b96267c70ec2b84089c0bb046063faee7437403c20e388c8c368b58f0456"
+    },
+    "paper_claims_registry.csv": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\paper_claims_registry.csv",
+      "size_bytes": 4021,
+      "mtime_local": "2026-08-31T16:43:58.510879",
+      "sha256": "0125aef4059055bdc2e4ec2080d2e17d611ffafcbca13cea15bb70dd6c1d44b8"
+    },
+    "all_numeric_evidence.csv": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\all_numeric_evidence.csv",
+      "size_bytes": 249974,
+      "mtime_local": "2026-08-31T16:43:58.529382",
+      "sha256": "8922421c0959647e4e3b0caf30b908945bed4db13e9cb37cd3e021bf3990b2e2"
+    },
+    "model_comparison.json": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\model_comparison.json",
+      "size_bytes": 12784,
+      "mtime_local": "2026-08-31T16:41:42.613925",
+      "sha256": "8edc3e12937b6033ea3f9ea087e8c754da43b452e658cb75e4f890d0e1ac1c62"
+    },
+    "model_comparison_predictions.csv": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\model_comparison_predictions.csv",
+      "size_bytes": 12606,
+      "mtime_local": "2026-08-31T16:41:42.618299",
+      "sha256": "017120ae3c3b02fe0d4086232cb34cb3e1acdff0c3f44ae77dded4d370709dc5"
+    },
+    "predictions.csv": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\predictions.csv",
+      "size_bytes": 2787,
+      "mtime_local": "2026-08-31T16:38:51.941791",
+      "sha256": "744f50830f608e3d403a9364cbff9f1316329abcc0695f080cbe32ae51f1ed33"
+    },
+    "summary.json": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\summary.json",
+      "size_bytes": 13555,
+      "mtime_local": "2026-08-31T16:38:51.946930",
+      "sha256": "d0f31327a4883679da8940e209e7015c79a07dafec6806a261dd6ee02ce19975"
+    },
+    "附件四（问题一baseline结果）.xlsx": {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\outputs\\20260831_evidence_registry\\20260831T163625\\q1_snapshot\\附件四（问题一baseline结果）.xlsx",
+      "size_bytes": 8486,
+      "mtime_local": "2026-08-27T10:39:22.448528",
+      "sha256": "9852c2393eae3f242fa10d500c7b08fabf80981e4997ecd2bd5936429b003049"
+    }
+  },
+  "claims_verified": 33,
+  "claims_total": 33,
+  "all_claims_verified": true,
+  "paper_readiness": {
+    "Q1": "verified_real_run",
+    "Q2": "verified_real_run",
+    "Q3_data_design": "verified_direct_audit",
+    "Q3_interaction_effects": "not_run_not_paper_ready",
+    "Q4_alignment": "verified_direct_audit",
+    "Q4_predictions": "not_run_not_written_not_paper_ready"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "visibility": "EVALUATOR_ONLY",
+  "benchmark_id": "historical_2024_c_core_loss_run_003",
+  "run_id": "run-003",
+  "status": "VERIFIED_OBSERVED_ARTIFACTS",
+  "evidence": [
+    {
+      "evidence_id": "E-SOURCE-ART-001",
+      "type": "USER_PROVIDED_ARTIFACT",
+      "source": "source.yaml",
+      "source_artifact_id": "ART-001",
+      "created_at_turn": 1,
+      "artifact": "benchmarks/problems/2024/C/raw/数据驱动下磁性元件的磁芯损耗建模.docx",
+      "sha256": "3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8",
+      "claim_supported": "problem_statement",
+      "status": "AVAILABLE"
+    },
+    {
+      "evidence_id": "E-SOURCE-ART-002",
+      "type": "USER_PROVIDED_ARTIFACT",
+      "source": "source.yaml",
+      "source_artifact_id": "ART-002",
+      "created_at_turn": 1,
+      "artifact": "benchmarks/problems/2024/C/raw/附件一（训练集）.xlsx",
+      "sha256": "c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc",
+      "claim_supported": "training_data",
+      "status": "AVAILABLE"
+    },
+    {
+      "evidence_id": "E-SOURCE-ART-003",
+      "type": "USER_PROVIDED_ARTIFACT",
+      "source": "source.yaml",
+      "source_artifact_id": "ART-003",
+      "created_at_turn": 1,
+      "artifact": "benchmarks/problems/2024/C/raw/附件二（测试集）.xlsx",
+      "sha256": "b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c",
+      "claim_supported": "test_waveform_classification",
+      "status": "AVAILABLE"
+    },
+    {
+      "evidence_id": "E-SOURCE-ART-004",
+      "type": "USER_PROVIDED_ARTIFACT",
+      "source": "source.yaml",
+      "source_artifact_id": "ART-004",
+      "created_at_turn": 1,
+      "artifact": "benchmarks/problems/2024/C/raw/附件三（测试集）.xlsx",
+      "sha256": "8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a",
+      "claim_supported": "test_core_loss_prediction",
+      "status": "AVAILABLE"
+    },
+    {
+      "evidence_id": "E-SOURCE-ART-005",
+      "type": "USER_PROVIDED_ARTIFACT",
+      "source": "source.yaml",
+      "source_artifact_id": "ART-005",
+      "created_at_turn": 1,
+      "artifact": "benchmarks/problems/2024/C/raw/附件四（Excel表）.xlsx",
+      "sha256": "d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8",
+      "claim_supported": "answer_template",
+      "status": "AVAILABLE"
+    },
+    {
+      "evidence_id": "E-Q1-BASELINE-CODE-002",
+      "type": "CODE_RUN",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-BASELINE-002",
+      "artifact_id": "CODE-Q1-BASELINE-002",
+      "artifact": "observed-artifacts/work/q1_baseline.py",
+      "sha256": "b7f5a43c6f5101603c7152d1b0aa196b3d6bbca5af8d9ad66651d59ba0f9f23b",
+      "status": "AVAILABLE",
+      "claim_supported": "Reproducible Q1 baseline feature extraction and logistic-regression classifier code."
+    },
+    {
+      "evidence_id": "E-Q1-BASELINE-RESULT-002",
+      "type": "EXPERIMENT_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-BASELINE-002",
+      "artifact_id": "OUT-Q1-BASELINE-METRICS-002",
+      "artifact": "observed-artifacts/outputs/q1_baseline/metrics.json",
+      "sha256": "32b4c67bc22ec8a98d76ea6ee077504fa173f1ff60e821136d17266fdd3f9cab",
+      "status": "AVAILABLE",
+      "claim_supported": "Observed validation metrics from the fixed stratified 8:2 holdout."
+    },
+    {
+      "evidence_id": "E-Q1-BASELINE-PREDICTIONS-002",
+      "type": "EXPERIMENT_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-BASELINE-002",
+      "artifact_id": "OUT-Q1-BASELINE-PREDICTIONS-002",
+      "artifact": "observed-artifacts/outputs/q1_baseline/attachment2_predictions.csv",
+      "sha256": "7af3b67f5888ac7b93841eb845ef2d421df9ec330a9937d1fd99f15362a3c307",
+      "status": "AVAILABLE",
+      "claim_supported": "Observed waveform predictions for all 80 attachment-2 samples; no ground-truth accuracy available."
+    },
+    {
+      "evidence_id": "E-Q1-BASELINE-CONFUSION-002",
+      "type": "VALIDATION_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-BASELINE-002",
+      "artifact_id": "OUT-Q1-BASELINE-CONFUSION-002",
+      "artifact": "observed-artifacts/outputs/q1_baseline/validation_confusion_matrix.csv",
+      "sha256": "14f07ec962daf08276bea0d22d0a451201640c9bc7d43bd6866710ef4cd6ec96",
+      "status": "AVAILABLE",
+      "claim_supported": "Validation confusion matrix for Q1 baseline."
+    },
+    {
+      "evidence_id": "E-Q1-BASELINE-FEATURES-002",
+      "type": "CODE_RUN",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-BASELINE-002",
+      "artifact_id": "OUT-Q1-BASELINE-FEATURES-002",
+      "artifact": "observed-artifacts/outputs/q1_baseline/feature_names.json",
+      "sha256": "7e5ff7d49793b81625698b80b1ffeabc67df3ee2632e51a3263dc9349d63ca8f",
+      "status": "AVAILABLE",
+      "claim_supported": "Names of the 26 baseline features used by the classifier."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-CODE-003",
+      "type": "CODE_RUN",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "CODE-Q1-MODEL-COMP-003",
+      "artifact": "observed-artifacts/work/q1_model_comparison.py",
+      "sha256": "7e34f0f8c6456ce8fa80bf95ce932727e96ce78dacaf03223e9aca78c9ef8081",
+      "status": "AVAILABLE",
+      "claim_supported": "Reproducible comparison of logistic regression, random forest and RBF SVM under one protocol."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-RESULT-003",
+      "type": "EXPERIMENT_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "OUT-Q1-MODEL-COMP-METRICS-003",
+      "artifact": "observed-artifacts/outputs/q1_model_comparison/comparison_metrics.json",
+      "sha256": "17e59616b9a9fb9b1df8065f005747be2d7f239df941965001a350f6df07f436",
+      "status": "AVAILABLE",
+      "claim_supported": "Observed validation metrics, confusion matrices and attachment-2 prediction counts for all compared models."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-TABLE-003",
+      "type": "EXPERIMENT_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "OUT-Q1-MODEL-COMP-TABLE-003",
+      "artifact": "observed-artifacts/outputs/q1_model_comparison/model_comparison_table.csv",
+      "sha256": "c6002c45223c0f305e251dfc6d8e4402a2f780220a3d325a372512baaa45ff65",
+      "status": "AVAILABLE",
+      "claim_supported": "Compact side-by-side comparison table of accuracy, macro metrics and fit time."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-PREDICTIONS-003",
+      "type": "EXPERIMENT_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "OUT-Q1-MODEL-COMP-PREDICTIONS-003",
+      "artifact": "observed-artifacts/outputs/q1_model_comparison/attachment2_candidate_predictions.csv",
+      "sha256": "b4fe0e20d2cc555ae3549e8160ac390e5ac1e40fbc83fbfcda487dcd8c70a39f",
+      "status": "AVAILABLE",
+      "claim_supported": "Three model predictions for all 80 attachment-2 samples and pairwise disagreement audit."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-CONFUSION-LOGISTIC-003",
+      "type": "VALIDATION_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "OUT-Q1-MODEL-COMP-CONFUSION-LOGISTIC-003",
+      "artifact": "observed-artifacts/outputs/q1_model_comparison/baseline_logistic_confusion_matrix.csv",
+      "sha256": "14f07ec962daf08276bea0d22d0a451201640c9bc7d43bd6866710ef4cd6ec96",
+      "status": "AVAILABLE",
+      "claim_supported": "Logistic baseline validation confusion matrix."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-CONFUSION-RF-003",
+      "type": "VALIDATION_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "OUT-Q1-MODEL-COMP-CONFUSION-RF-003",
+      "artifact": "observed-artifacts/outputs/q1_model_comparison/candidate_random_forest_confusion_matrix.csv",
+      "sha256": "14f07ec962daf08276bea0d22d0a451201640c9bc7d43bd6866710ef4cd6ec96",
+      "status": "AVAILABLE",
+      "claim_supported": "Random forest validation confusion matrix."
+    },
+    {
+      "evidence_id": "E-Q1-MODEL-COMP-CONFUSION-SVM-003",
+      "type": "VALIDATION_RESULT",
+      "run_id": "run-003",
+      "experiment_id": "EXP-Q1-MODEL-COMP-003",
+      "artifact_id": "OUT-Q1-MODEL-COMP-CONFUSION-SVM-003",
+      "artifact": "observed-artifacts/outputs/q1_model_comparison/candidate_rbf_svm_confusion_matrix.csv",
+      "sha256": "14f07ec962daf08276bea0d22d0a451201640c9bc7d43bd6866710ef4cd6ec96",
+      "status": "AVAILABLE",
+      "claim_supported": "RBF SVM validation confusion matrix."
+    },
+    {
+      "evidence_id": "E-DATA-AUDIT-RAW-A1-003",
+      "type": "DATA_AUDIT",
+      "run_id": "run-003",
+      "artifact_id": "AUDIT-ATTACHMENT1-RAW-003",
+      "artifact": "observed-artifacts/work/audit_attachment1.json",
+      "sha256": "04964d80188d42d37f4f29bf71a135fd487b9539bb0846ac29adad9cdf01fcd2",
+      "status": "AVAILABLE",
+      "claim_supported": "Direct read-only data_audit.py output for all four training sheets in attachment 1."
+    },
+    {
+      "evidence_id": "E-DATA-AUDIT-CANONICAL-003",
+      "type": "DATA_AUDIT",
+      "run_id": "run-003",
+      "artifact_id": "AUDIT-CANONICAL-SUMMARY-003",
+      "artifact": "observed-artifacts/work/data-audit-summary.json",
+      "sha256": "d62e5e2bb1a89166a695f071aafcad5036a20772eb83d06db02f8f29710a2edb",
+      "status": "AVAILABLE",
+      "claim_supported": "Canonical attachment audit summary with source hashes, dimensions, missing cells, duplicate rows, frequency boundaries and distribution counts."
+    },
+    {
+      "evidence_id": "E-DATA-AUDIT-REPORT-A1-003",
+      "type": "DATA_AUDIT",
+      "run_id": "run-003",
+      "artifact_id": "AUDIT-ATTACHMENT1-REPORT-003",
+      "artifact": "observed-artifacts/work/attachment1-data-inspection.md",
+      "sha256": "57d331e490f3b8b0d0ad297c0f492575c19d1a05d9c356ed39655a6de3023ae9",
+      "status": "AVAILABLE",
+      "claim_supported": "Human-readable attachment 1 structure, distribution and anomaly-candidate summary derived from the canonical audit."
+    },
+    {
+      "evidence_id": "E-Q4-ALIGNMENT-CHECK-003",
+      "type": "OUTPUT_ALIGNMENT_CHECK",
+      "run_id": "run-003",
+      "artifact_id": "AUDIT-Q4-ID-ALIGNMENT-003",
+      "artifact": "observed-artifacts/work/q4-output-alignment-check.md",
+      "sha256": "9e2bd94e4c5e54656092e827f22a8c7df1383c3f126d0470e3a90c65fcfd6569",
+      "status": "AVAILABLE",
+      "claim_supported": "Read-only verification that attachment 3 and attachment 4 sample IDs match row-by-row and the prediction columns are blank before writing."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+schema_version: 1
+visibility: EVALUATOR_ONLY
+source_artifact: source.yaml
+benchmark_id: historical_2024_c_core_loss
+status: SOURCE_PACKAGE_READY_FOR_REAL_RUN
+evidence:
+  - evidence_id: E-ART-001
+    type: PROBLEM_FACT
+    source: ART-001
+    created_at_turn: 1
+    artifact: raw/数据驱动下磁性元件的磁芯损耗建模.docx
+    claim_supported: Problem title, five explicit questions, and statement definitions.
+    status: AVAILABLE
+  - evidence_id: E-ART-002
+    type: USER_PROVIDED_DATA
+    source: ART-002
+    created_at_turn: 3
+    artifact: raw/附件一（训练集）.xlsx
+    claim_supported: Training workbook structure and observed dimensions.
+    status: AVAILABLE
+  - evidence_id: E-ART-003
+    type: USER_PROVIDED_DATA
+    source: ART-003
+    created_at_turn: 6
+    artifact: raw/附件二（测试集）.xlsx
+    claim_supported: Waveform-classification test inputs.
+    status: AVAILABLE
+  - evidence_id: E-ART-004
+    type: USER_PROVIDED_DATA
+    source: ART-004
+    created_at_turn: 10
+    artifact: raw/附件三（测试集）.xlsx
+    claim_supported: Core-loss-prediction test inputs without verified target values.
+    status: AVAILABLE
+  - evidence_id: E-ART-005
+    type: USER_PROVIDED_DATA
+    source: ART-005
+    created_at_turn: 10
+    artifact: raw/附件四（Excel表）.xlsx
+    claim_supported: Supplied answer template columns.
+    status: AVAILABLE
+  - evidence_id: E-CODE-RUN-NOT-CREATED
+    type: CODE_RUN
+    source: NONE
+    created_at_turn: null
+    artifact: null
+    claim_supported: The source package contains no model-run result; the separate run-001 archive records the first real Layer B execution.
+    status: NOT_CREATED

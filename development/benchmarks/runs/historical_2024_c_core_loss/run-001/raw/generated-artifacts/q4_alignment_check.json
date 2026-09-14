@@ -1,0 +1,231 @@
+{
+  "attachment3": {
+    "rows": 400,
+    "columns": 1029,
+    "header_id": "序号",
+    "first_ids_formula": [
+      1,
+      "=A2+1",
+      "=A3+1",
+      "=A4+1",
+      "=A5+1"
+    ],
+    "last_ids_formula": [
+      "=A396+1",
+      "=A397+1",
+      "=A398+1",
+      "=A399+1",
+      "=A400+1"
+    ],
+    "first_ids_cached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "last_ids_cached": [
+      396,
+      397,
+      398,
+      399,
+      400
+    ],
+    "first_meta": [
+      [
+        1,
+        25,
+        56320,
+        "材料1",
+        "正弦波"
+      ],
+      [
+        "=A2+1",
+        25,
+        79460,
+        "材料1",
+        "正弦波"
+      ],
+      [
+        "=A3+1",
+        25,
+        89080,
+        "材料1",
+        "正弦波"
+      ],
+      [
+        "=A4+1",
+        25,
+        99950,
+        "材料1",
+        "正弦波"
+      ],
+      [
+        "=A5+1",
+        25,
+        99950,
+        "材料1",
+        "正弦波"
+      ]
+    ],
+    "last_meta": [
+      [
+        "=A396+1",
+        90,
+        141270,
+        "材料4",
+        "梯形波"
+      ],
+      [
+        "=A397+1",
+        90,
+        141270,
+        "材料4",
+        "梯形波"
+      ],
+      [
+        "=A398+1",
+        90,
+        158750,
+        "材料4",
+        "梯形波"
+      ],
+      [
+        "=A399+1",
+        90,
+        177900,
+        "材料4",
+        "梯形波"
+      ],
+      [
+        "=A400+1",
+        90,
+        199190,
+        "材料4",
+        "梯形波"
+      ]
+    ]
+  },
+  "attachment4": {
+    "rows": 400,
+    "columns": 3,
+    "headers": [
+      "序号",
+      "附件二（80个样品）励磁波形分类结果",
+      "附件三（400个样品）磁芯损耗预测结果"
+    ],
+    "first_ids_formula": [
+      1,
+      "=A2+1",
+      "=A3+1",
+      "=A4+1",
+      "=A5+1"
+    ],
+    "last_ids_formula": [
+      "=A396+1",
+      "=A397+1",
+      "=A398+1",
+      "=A399+1",
+      "=A400+1"
+    ],
+    "first_ids_cached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "last_ids_cached": [
+      396,
+      397,
+      398,
+      399,
+      400
+    ],
+    "result_col2_nonempty_cached": 0,
+    "result_col3_nonempty_cached": 0
+  },
+  "prediction_file": {
+    "rows": 80,
+    "first_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "last_ids": [
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "first_values": [
+      {
+        "sample_id": "1",
+        "rbf_svm_id": "2",
+        "random_forest_id": "2"
+      },
+      {
+        "sample_id": "2",
+        "rbf_svm_id": "2",
+        "random_forest_id": "2"
+      },
+      {
+        "sample_id": "3",
+        "rbf_svm_id": "2",
+        "random_forest_id": "2"
+      },
+      {
+        "sample_id": "4",
+        "rbf_svm_id": "2",
+        "random_forest_id": "2"
+      },
+      {
+        "sample_id": "5",
+        "rbf_svm_id": "2",
+        "random_forest_id": "2"
+      }
+    ],
+    "last_values": [
+      {
+        "sample_id": "76",
+        "rbf_svm_id": "1",
+        "random_forest_id": "1"
+      },
+      {
+        "sample_id": "77",
+        "rbf_svm_id": "1",
+        "random_forest_id": "1"
+      },
+      {
+        "sample_id": "78",
+        "rbf_svm_id": "1",
+        "random_forest_id": "1"
+      },
+      {
+        "sample_id": "79",
+        "rbf_svm_id": "1",
+        "random_forest_id": "1"
+      },
+      {
+        "sample_id": "80",
+        "rbf_svm_id": "1",
+        "random_forest_id": "1"
+      }
+    ]
+  },
+  "checks": {
+    "attachment3_cached_ids_are_row_order_1_to_400": true,
+    "attachment4_cached_ids_are_row_order_1_to_400": true,
+    "attachment4_formula_ids_match_expected_pattern": true,
+    "prediction_file_ids_are_1_to_80": true,
+    "q4_attachment3_and_attachment4_rows_match": true,
+    "q4_intended_write_mapping": "prediction for attachment3 sample_id=i -> attachment4 row=i+1, column C",
+    "current_attachment4_is_unmodified_for_q4": true,
+    "no_prediction_file_can_be_used_for_q4": "The checked prediction file contains Q1 waveform labels for attachment2, not Q4 losses for attachment3.",
+    "q4_loss_predictions_present": false,
+    "q4_warning": "Do not write q1_model_comparison/attachment2_model_predictions.csv into column C; it is the wrong dataset and wrong target."
+  }
+}

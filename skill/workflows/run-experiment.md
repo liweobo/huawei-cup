@@ -1,0 +1,58 @@
+# Run Experiment
+
+## Purpose
+
+用一致、可追踪协议运行和比较 Baseline、主模型与改进模型。
+
+## Preconditions
+
+模型、数据切分、指标和运行环境已定义；真实运行已获授权。
+
+## Required Reads
+
+- [`../rules/experiment.md`](../rules/experiment.md)
+- [`../rules/evidence.md`](../rules/evidence.md)
+- [`../references/imbalanced-classification.md`](../references/imbalanced-classification.md)
+- [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（运行 ordinal 候选或等级指标时）
+- [`../references/group-validation.md`](../references/group-validation.md)（存在重复实体或 group-aware validation 时）
+
+## Inputs
+
+模型实现、数据版本、特征、参数范围、随机种子和评估协议。
+
+## Task Anchor
+
+限定本轮实验问题、模型数、预算、主要指标和停止条件。
+
+## Steps
+
+1. 确认 `workspace-manifest.yaml` 中的 `ACTIVE_RUN_ID` 和唯一 `allowed_write_root`；没有 run-scoped workspace 时不得生成实验文件。
+2. 从 [`../templates/experiment-record.yaml`](../templates/experiment-record.yaml) 创建结构化记录，先写 `planned_protocol` 和 `status: PLANNED`。
+3. 对涉及时间可得性、未来预测或纵向聚合的任务，先建立并通过 Temporal Availability Contract；必须在聚合前调用 temporal availability gate，确认 `feature_cutoff <= target_horizon`，并记录被排除的未来行。契约不是 `PASS` 时禁止生成 longitudinal features 或相应 OBSERVED metrics。重复实体必须明确 prediction setting；面向新实体时，先检查 group/类别可行性，再选择 splitter 并验证每 fold `overlap_count = 0`。任何 group leakage 都使 validation result `INVALIDATED`。二分类不平衡时先运行多数类基线，再按同一 split/metric 比较无权重与 `class_weight="balanced"` 等候选。ordinal 任务先验证等级顺序和最少类别样本数，再按同一 repeated CV 协议运行中位等级 baseline、nominal baseline 与 ordinal candidate，报告 MAE、RMSE、QWK、Accuracy、Within-One-Level Accuracy 和 fold 波动。预处理、特征选择、PCA、聚类、subgroup boundary、插补和重采样必须在训练 fold 内拟合，阈值只能用 validation 选择，不能读取 test labels。然后运行 Baseline，再运行主模型；每次改进尽量只改变一个可解释因素。全部产物写入 active run 的 `work/`、`outputs/` 或 `experiment-records/`，并在 Evidence Ledger 中登记稳定 `artifact_id`、路径和 SHA256。
+4. 运行前将 group 契约、实际 split IDs 和逐 fold fit provenance 通过 `apply_group_gate()` 写入 `group_structure`/`group_scope`；新实体泛化的实体交集非空必须 `INVALIDATED`。记录 `groups_used`、`group_key`、`split_strategy`、实际 `n_splits`、每 fold train/validation group IDs 与 counts、`overlap_count`。同实体新记录与同实体未来按各自 scope 检查，不要求错误的实体互斥；ENTITY_TIME 则必须独立通过 group 与 temporal gate。
+5. 运行后把真实 split、模型、敏感性、鲁棒性和指标写入 `executed_protocol`；用 [`../scripts/runtime_provenance.py`](../scripts/runtime_provenance.py) 自动计算 protocol diff。仅用于诊断的 row-random 结果不进入正式模型选择；最终全训练实体 curve fit 与 grouped CV 分开记录。
+6. 若协议变化，填写原因、可比性和 `protocol_change_disclosure`；通过 validation gate 后才能在用户回答中接受 OBSERVED 数字。
+7. 保存日志、预测/决策输出、指标、图表路径、失败信息和 run-bound evidence IDs。
+8. 报告绝对指标、相对变化、多种子/重采样波动与失败案例，并根据 Done When 决定 Keep/Reject。
+
+## Checks
+
+是否存在通过校验的 Experiment Record？纵向特征是否在 temporal filtering 之后才聚合？是否记录 post-horizon 排除数量？Evidence Ledger 是否登记全部生成 artifact？配置能否复现？全部路径是否属于 ACTIVE_RUN_ID？如果计划与执行协议不同，
+是否自动识别并显式披露变化原因？敏感性扰动是否标记为
+`SIMULATED_PERTURBATION`？最好结果是否只是单次偶然？
+
+## Outputs
+
+`experiment-record.yaml`、结果表、失败日志、run-bound evidence、Keep/Reject 结论和下一实验假设。
+
+## Stop Conditions
+
+数据泄漏、指标实现错误、不可行解或运行与论文数字冲突时立即停止并修复。
+
+## Handoff
+
+交付可复现命令、数据/代码版本、最佳真实结果、Evidence Ledger 和未解决异常。
+
+## Common Failure Modes
+
+跑出好结果却忘记参数；只报最好种子；失败结果消失；测试集参与调参。

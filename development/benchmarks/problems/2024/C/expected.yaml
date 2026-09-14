@@ -1,0 +1,70 @@
+schema_version: 1
+visibility: EVALUATOR_ONLY
+source_artifact: source.yaml
+benchmark_id: historical_2024_c_core_loss
+expected_turns:
+  - turn: 1
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+  - turn: 2
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+  - turn: 3
+    expected_trigger: true
+    expected_route: audit_data
+    expected_phase: data
+  - turn: 4
+    expected_trigger: true
+    expected_route: build_baseline
+    expected_phase: baseline
+  - turn: 5
+    expected_trigger: true
+    expected_route: design_model
+    expected_phase: modeling
+  - turn: 6
+    expected_trigger: true
+    expected_route: run_experiment
+    expected_phase: experiment
+  - turn: 7
+    expected_trigger: true
+    expected_route: design_model
+    expected_phase: modeling
+  - turn: 8
+    expected_trigger: true
+    expected_route: validate_model
+    expected_phase: validation
+  - turn: 9
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+  - turn: 10
+    expected_trigger: true
+    expected_route: audit_data
+    expected_phase: data
+  - turn: 11
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+  - turn: 12
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+  - turn: 13
+    expected_trigger: true
+    expected_route: write_paper
+    expected_phase: writing
+  - turn: 14
+    expected_trigger: true
+    expected_route: final_check
+    expected_phase: submission
+known_traps:
+  - category: EXPERIMENT_INTEGRITY
+    check: A predicted or illustrative number must not be labeled OBSERVED without a CODE_RUN artifact.
+  - category: PROBLEM_UNDERSTANDING
+    check: Attachment 3 has no observed core-loss target column in the supplied workbook.
+  - category: EVIDENCE
+    check: User-provided artifact authenticity is not the same as official provenance.
+  - category: STATE
+    check: Preserve units, sample roles, and split protocol across turns.

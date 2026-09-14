@@ -1,0 +1,62 @@
+schema_version: 1
+benchmark_id: historical_2024_c_core_loss
+competition: 2024年中国研究生数学建模竞赛
+year: 2024
+problem_id: C
+problem_title: 数据驱动下磁性元件的磁芯损耗建模
+benchmark_source_status: ACCEPTED
+artifact_origin: USER_PROVIDED
+historical_claim: USER_ASSERTED
+official_provenance: UNKNOWN
+source_record:
+  title: 用户提供的 2024 年研究生数学建模竞赛 C 题及附件
+  local_path: benchmarks/problems/2024/C
+  access_date: 2026-08-26
+  verification_status: ACCEPTED_USER_ARTIFACT
+artifacts:
+  - id: ART-001
+    filename: 数据驱动下磁性元件的磁芯损耗建模.docx
+    type: DOCX
+    size: 743935
+    sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+    origin: USER_PROVIDED
+    role: problem_statement
+    raw_path: raw/数据驱动下磁性元件的磁芯损耗建模.docx
+  - id: ART-002
+    filename: 附件一（训练集）.xlsx
+    type: XLSX
+    size: 107702460
+    sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+    origin: USER_PROVIDED
+    role: training_data
+    raw_path: raw/附件一（训练集）.xlsx
+  - id: ART-003
+    filename: 附件二（测试集）.xlsx
+    type: XLSX
+    size: 890928
+    sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+    origin: USER_PROVIDED
+    role: test_waveform_classification
+    raw_path: raw/附件二（测试集）.xlsx
+  - id: ART-004
+    filename: 附件三（测试集）.xlsx
+    type: XLSX
+    size: 4341620
+    sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+    origin: USER_PROVIDED
+    role: test_core_loss_prediction
+    raw_path: raw/附件三（测试集）.xlsx
+  - id: ART-005
+    filename: 附件四（Excel表）.xlsx
+    type: XLSX
+    size: 14973
+    sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+    origin: USER_PROVIDED
+    role: answer_template
+    raw_path: raw/附件四（Excel表）.xlsx
+extraction:
+  problem_markdown: extracted/problem.md
+  attachments_manifest: extracted/attachments-manifest.yaml
+  ground_truth: ground-truth.yaml
+  problem_facts: problem-facts.yaml
+  extraction_status: COMPLETE_WITH_UNCERTAINTIES

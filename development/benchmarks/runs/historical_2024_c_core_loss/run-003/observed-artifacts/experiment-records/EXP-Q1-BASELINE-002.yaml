@@ -1,0 +1,61 @@
+schema_version: 1
+experiment_id: EXP-Q1-BASELINE-002
+run_id: run-003
+created_at: '2026-09-03T00:10:00+08:00'
+problem: historical_2024_c_core_loss
+question: Q1
+status: OBSERVED
+updated_by_workflow: run_experiment
+planned_protocol:
+  task: three-class waveform classification
+  features: 1024-point B(t) sequence -> normalized distribution, first-difference, second-difference and plateau features
+  model: StandardScaler + multinomial LogisticRegression(lbfgs, max_iter=1000; default multiclass behavior)
+  validation:
+    method: stratified random holdout
+    test_size: 0.2
+    random_seed: 42
+  test_usage: attachment2 only for final prediction, not model selection
+executed_protocol:
+  task: three-class waveform classification
+  features: 1024-point B(t) sequence -> normalized distribution, first-difference, second-difference and plateau features
+  model: StandardScaler + multinomial LogisticRegression(lbfgs, max_iter=1000; default multiclass behavior)
+  validation:
+    method: stratified random holdout
+    test_size: 0.2
+    random_seed: 42
+  test_usage: attachment2 only for final prediction, not model selection
+protocol_changed: false
+change_reason: ''
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+  - ART-002
+  - ART-003
+code_artifacts:
+  - CODE-Q1-BASELINE-002
+output_artifacts:
+  - OUT-Q1-BASELINE-METRICS-002
+  - OUT-Q1-BASELINE-CONFUSION-002
+  - OUT-Q1-BASELINE-PREDICTIONS-002
+  - OUT-Q1-BASELINE-FEATURES-002
+random_seed: 42
+metrics:
+  accuracy: 1.0
+  balanced_accuracy: 1.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  training_rows: 12400
+  train_rows: 9920
+  validation_rows: 2480
+  feature_count: 26
+  attachment2_prediction_counts:
+    1_正弦波: 20
+    2_三角波: 44
+    3_梯形波: 16
+evidence_ids:
+  - E-Q1-BASELINE-CODE-002
+  - E-Q1-BASELINE-RESULT-002
+  - E-Q1-BASELINE-PREDICTIONS-002
+  - E-Q1-BASELINE-CONFUSION-002
+  - E-Q1-BASELINE-FEATURES-002

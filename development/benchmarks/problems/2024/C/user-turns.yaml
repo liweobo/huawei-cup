@@ -1,0 +1,52 @@
+schema_version: 1
+visibility: MODEL_VISIBLE
+benchmark_id: historical_2024_c_core_loss
+provided_artifacts:
+  - raw/数据驱动下磁性元件的磁芯损耗建模.docx
+  - raw/附件一（训练集）.xlsx
+  - raw/附件二（测试集）.xlsx
+  - raw/附件三（测试集）.xlsx
+  - raw/附件四（Excel表）.xlsx
+turns:
+  - turn: 1
+    user_message: 我正在做 2024 年研究生数学建模 C 题，题目和四个附件都发给你了，先帮我整体梳理这道题。
+    provided_artifacts: [raw/数据驱动下磁性元件的磁芯损耗建模.docx, raw/附件一（训练集）.xlsx, raw/附件二（测试集）.xlsx, raw/附件三（测试集）.xlsx, raw/附件四（Excel表）.xlsx]
+  - turn: 2
+    user_message: 先看问题一到底要做什么，输入、输出和评价方式分别是什么？
+    provided_artifacts: []
+  - turn: 3
+    user_message: 先检查一下附件一的数据结构、缺失值、异常值和几个材料的分布。
+    provided_artifacts: [raw/附件一（训练集）.xlsx]
+  - turn: 4
+    user_message: 问题一先别上复杂模型，把最简单能跑通的波形分类 baseline 做出来。
+    provided_artifacts: []
+  - turn: 5
+    user_message: 这个 baseline 不够的话，再比较两个真正不同的候选分类模型。
+    provided_artifacts: []
+  - turn: 6
+    user_message: 用附件一训练、附件二测试，跑完以后告诉我这个数字是实际算出来的，还是只是举例。
+    provided_artifacts: [raw/附件一（训练集）.xlsx, raw/附件二（测试集）.xlsx]
+  - turn: 7
+    user_message: 问题二里的 Steinmetz 方程怎么和温度因素接起来？先把假设和比较协议说清楚。
+    provided_artifacts: []
+  - turn: 8
+    user_message: 这个结果真的可信吗？时间切分、泛化和敏感性要怎么检查？
+    provided_artifacts: []
+  - turn: 9
+    user_message: 问题三只讨论温度、波形和材料两两之间的协同影响，应该怎么组织分析？
+    provided_artifacts: []
+  - turn: 10
+    user_message: 问题四的预测结果写入附件四之前，再确认一下预测列和样本序号没有错位。
+    provided_artifacts: [raw/附件三（测试集）.xlsx, raw/附件四（Excel表）.xlsx]
+  - turn: 11
+    user_message: 写进论文之前，确认所有数字都能对应到一次真实运行和一个证据记录。
+    provided_artifacts: []
+  - turn: 12
+    user_message: 模拟评委检查一下论文里有没有把预测值写成实测值，或者把题目没说的约束当成事实。
+    provided_artifacts: []
+  - turn: 13
+    user_message: 按评审意见修正结果部分，但不要改动没有证据支持的数字。
+    provided_artifacts: []
+  - turn: 14
+    user_message: 提交前做最终检查；如果还有未解决的 P0 风险就明确告诉我不能 READY。
+    provided_artifacts: [raw/附件四（Excel表）.xlsx]

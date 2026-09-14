@@ -1,0 +1,10 @@
+|--- extreme_ratio <= 0.382324
+|   |--- wave_std <= 0.300250
+|   |   |--- class: 2
+|   |--- wave_std >  0.300250
+|   |   |--- wave_rms <= 0.305179
+|   |   |   |--- class: 3
+|   |   |--- wave_rms >  0.305179
+|   |   |   |--- class: 3
+|--- extreme_ratio >  0.382324
+|   |--- class: 1

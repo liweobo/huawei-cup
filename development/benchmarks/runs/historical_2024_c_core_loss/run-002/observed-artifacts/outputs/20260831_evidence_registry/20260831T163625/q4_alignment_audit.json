@@ -1,0 +1,125 @@
+{
+  "status": "alignment_verified_predictions_not_run_or_written",
+  "attachment3_rows": 400,
+  "attachment4_rows": 400,
+  "attachment3_ids_are_1_to_400": true,
+  "attachment4_ids_are_1_to_400": true,
+  "q1_result_ids_are_1_to_400": true,
+  "rowwise_id_match": true,
+  "attachment4_original_col2_nonblank": 0,
+  "attachment4_original_col3_nonblank": 0,
+  "q1_result_col2_nonblank": 80,
+  "q1_result_col3_nonblank": 0,
+  "sequence_formula_first5": [
+    1,
+    "=A2+1",
+    "=A3+1",
+    "=A4+1",
+    "=A5+1"
+  ],
+  "sequence_formula_last5": [
+    "=A396+1",
+    "=A397+1",
+    "=A398+1",
+    "=A399+1",
+    "=A400+1"
+  ],
+  "prediction_target_range": "Sheet1!C2:C401",
+  "sample_to_excel_row_rule": "excel_row = sample_id + 1",
+  "special_mapping": [
+    {
+      "sample_id": 16,
+      "excel_row": 17,
+      "target_cell": "C17",
+      "temperature": 50,
+      "frequency": 199500,
+      "material": "材料1",
+      "waveform": "正弦波"
+    },
+    {
+      "sample_id": 76,
+      "excel_row": 77,
+      "target_cell": "C77",
+      "temperature": 25,
+      "frequency": 158750,
+      "material": "材料1",
+      "waveform": "梯形波"
+    },
+    {
+      "sample_id": 98,
+      "excel_row": 99,
+      "target_cell": "C99",
+      "temperature": 90,
+      "frequency": 112180,
+      "material": "材料1",
+      "waveform": "梯形波"
+    },
+    {
+      "sample_id": 126,
+      "excel_row": 127,
+      "target_cell": "C127",
+      "temperature": 70,
+      "frequency": 158510,
+      "material": "材料2",
+      "waveform": "正弦波"
+    },
+    {
+      "sample_id": 168,
+      "excel_row": 169,
+      "target_cell": "C169",
+      "temperature": 25,
+      "frequency": 396820,
+      "material": "材料2",
+      "waveform": "三角波"
+    },
+    {
+      "sample_id": 230,
+      "excel_row": 231,
+      "target_cell": "C231",
+      "temperature": 25,
+      "frequency": 50020,
+      "material": "材料3",
+      "waveform": "正弦波"
+    },
+    {
+      "sample_id": 271,
+      "excel_row": 272,
+      "target_cell": "C272",
+      "temperature": 90,
+      "frequency": 125890,
+      "material": "材料3",
+      "waveform": "三角波"
+    },
+    {
+      "sample_id": 338,
+      "excel_row": 339,
+      "target_cell": "C339",
+      "temperature": 25,
+      "frequency": 70780,
+      "material": "材料4",
+      "waveform": "三角波"
+    },
+    {
+      "sample_id": 348,
+      "excel_row": 349,
+      "target_cell": "C349",
+      "temperature": 50,
+      "frequency": 89200,
+      "material": "材料4",
+      "waveform": "三角波"
+    },
+    {
+      "sample_id": 379,
+      "excel_row": 380,
+      "target_cell": "C380",
+      "temperature": 50,
+      "frequency": 89210,
+      "material": "材料4",
+      "waveform": "梯形波"
+    }
+  ],
+  "q4_predictions": {
+    "status": "not_run",
+    "note": "No question-four loss predictions are claimed or written yet."
+  }
+}

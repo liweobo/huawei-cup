@@ -1,0 +1,8 @@
+# Preserve original bytes, including frozen benchmark evidence.
+* -text
+
+# Large original inputs and frozen audit outputs are stored with Git LFS.
+development/benchmarks/problems/2024/C/raw/附件一（训练集）.xlsx filter=lfs diff=lfs merge=lfs -text
+development/benchmarks/runs/historical_2024_c_core_loss/run-003/observed-artifacts/work/audit_attachment1.json filter=lfs diff=lfs merge=lfs -text
+development/benchmarks/runs/historical_2024_c_core_loss/run-003/observed-artifacts/work/audit_attachment2.json filter=lfs diff=lfs merge=lfs -text
+development/benchmarks/runs/historical_2024_c_core_loss/run-003/observed-artifacts/work/audit_attachment3.json filter=lfs diff=lfs merge=lfs -text

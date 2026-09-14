@@ -1,0 +1,4 @@
+﻿model,accuracy,balanced_accuracy,macro_precision,macro_recall,macro_f1,fit_seconds
+baseline_logistic,1.0,1.0,1.0,1.0,1.0,0.061736300005577505
+candidate_random_forest,1.0,1.0,1.0,1.0,1.0,0.8221322000026703
+candidate_rbf_svm,1.0,1.0,1.0,1.0,1.0,0.0520218999881763

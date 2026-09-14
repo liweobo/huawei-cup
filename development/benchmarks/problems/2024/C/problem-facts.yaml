@@ -1,0 +1,76 @@
+schema_version: 1
+visibility: EVALUATOR_ONLY
+source_artifact: source.yaml
+facts:
+  observed_files:
+    - filename: 数据驱动下磁性元件的磁芯损耗建模.docx
+      role: problem_statement
+      artifact_id: ART-001
+    - filename: 附件一（训练集）.xlsx
+      role: training_data
+      artifact_id: ART-002
+    - filename: 附件二（测试集）.xlsx
+      role: test_waveform_classification
+      artifact_id: ART-003
+    - filename: 附件三（测试集）.xlsx
+      role: test_core_loss_prediction
+      artifact_id: ART-004
+    - filename: 附件四（Excel表）.xlsx
+      role: answer_template
+      artifact_id: ART-005
+  workbook_dimensions:
+    attachment_1:
+      sheets: 4
+      rows_by_sheet: [3401, 3001, 3201, 2801]
+      columns_observed: 1028
+    attachment_2:
+      rows: 81
+      columns_observed: 1028
+    attachment_3:
+      rows: 401
+      columns_observed: 1029
+    attachment_4:
+      sheet1_rows: 401
+      sheet1_columns: 3
+  existing_columns:
+    training:
+      - temperature
+      - frequency
+      - core_loss_density
+      - excitation_waveform
+      - flux_density_samples
+    attachment_2:
+      - sample_id
+      - temperature
+      - frequency
+      - core_material
+      - flux_density_samples
+    attachment_3:
+      - sample_id
+      - temperature
+      - frequency
+      - core_material
+      - excitation_waveform
+      - flux_density_samples
+    attachment_4:
+      - sample_id
+      - waveform_classification_result
+      - core_loss_prediction
+  observed_value_domains:
+    temperature_statement_values_celsius: [25, 50, 70, 90]
+    frequency_statement_range_hz: [50000, 500000]
+    waveform_labels: [sinusoidal, triangular, trapezoidal]
+    materials: [material_1, material_2, material_3, material_4]
+    flux_density_sample_count_statement: 1024
+  absent_or_not_verified:
+    - No official provenance metadata.
+    - No precomputed correct labels for Attachment 2.
+    - No precomputed correct core-loss predictions for Attachment 3.
+    - No verified best model or benchmark score.
+    - No calendar date range for observations.
+  hallucination_traps:
+    - Do not invent a fifth material.
+    - Do not claim a target column exists in Attachment 3.
+    - Do not claim the official source URL or official hash was supplied.
+    - Do not call any predicted value observed without a CODE_RUN artifact.
+    - Do not treat the task's example model families as the required answer.

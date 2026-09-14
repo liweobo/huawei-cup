@@ -1,0 +1,57 @@
+schema_version: 1
+visibility: EVALUATOR_ONLY
+source_artifact: source.yaml
+benchmark_id: historical_2023_e_hemorrhagic_stroke
+competition:
+  year: 2023
+  problem_id: E
+  problem_title: 出血性脑卒中临床智能诊疗建模
+  status: FACT
+question_count:
+  value: 3
+  status: FACT
+explicit_questions:
+  - id: Q1
+    statement: Reconstruct 48-hour hematoma-expansion labels and times, then predict expansion probabilities for all patients from first-imaging features.
+    status: FACT
+  - id: Q2
+    statement: Fit overall and subgroup edema trajectories and analyze treatment associations and the joint hematoma-edema-treatment relationship.
+    status: FACT
+  - id: Q3
+    statement: Predict ordered 90-day mRS in baseline-only and follow-up-information scenarios and analyze prognostic associations.
+    status: FACT
+given_data:
+  items:
+    - ART-001
+    - ART-002
+    - ART-004
+    - ART-005
+    - ART-006
+    - ART-007
+    - ART-008
+  status: FACT
+dataset_groups:
+  training: sub001-sub100
+  test_baseline_only: sub101-sub130
+  test_follow_up_available: sub131-sub160
+  status: FACT
+explicit_constraints:
+  - Q1 expansion threshold is absolute increase >= 6 mL OR relative increase >= 33%.
+  - Q1b and Q3a use first-imaging information only.
+  - Q3b uses follow-up information for sub001-sub100 and sub131-sub160.
+  - mRS is an ordered 0-6 outcome.
+  status: FACT
+time_semantics:
+  onset_to_first_imaging: Table 1 field, hours
+  serial_to_timestamp: Appendix 1 lookup required
+  serial_number_is_timestamp: false
+  status: FACT
+units:
+  - hematoma_and_edema_volume: 10^-3 ml as stated in the problem
+  - time: hours from onset for modeling curves and expansion timing
+  - blood_pressure: mmHg
+  status: FACT
+unknown_fields:
+  - Official provenance and official download URL were not supplied.
+  - Causal treatment effects are not identified by the observational package alone.
+  - Best model family, best score, and validated clinical deployment threshold are not supplied.

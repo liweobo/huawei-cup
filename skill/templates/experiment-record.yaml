@@ -1,0 +1,30 @@
+schema_version: 1
+experiment_id: EXP-QUESTION-001
+run_id: ACTIVE_RUN_ID
+created_at: YYYY-MM-DDTHH:MM:SSZ
+problem: problem-id
+question: Q1
+status: PLANNED
+updated_by_workflow: design_model
+# Longitudinal prediction only:
+# temporal_scope:
+#   target_horizon:
+#   feature_cutoff:
+#   post_horizon_records_excluded: 0
+#   temporal_gate_status: UNVERIFIED
+# Add invalidation_reason only when status is INVALIDATED.
+planned_protocol:
+  validation: []
+executed_protocol:
+  validation: []
+protocol_changed: false
+change_reason: ""
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+# These fields contain stable artifact_id values from the run evidence ledger.
+input_artifacts: []
+code_artifacts: []
+output_artifacts: []
+random_seed: null
+metrics: {}
+evidence_ids: []

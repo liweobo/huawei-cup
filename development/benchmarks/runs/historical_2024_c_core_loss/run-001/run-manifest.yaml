@@ -1,0 +1,44 @@
+benchmark_id: historical_2024_c_core_loss
+run_id: run-001
+skill_version_at_run: V2.3 Phase 3
+postmortem_version: V2.4 Phase 4
+git_commit: UNKNOWN
+model: UNKNOWN
+model_configuration: UNKNOWN
+run_date: 2026-08-26
+fresh_conversation: true
+runtime_metadata_status: PARTIALLY_OBSERVED
+actual_route_events: NOT_OBSERVED
+tool_call_events: NOT_OBSERVED
+state_snapshots: NOT_OBSERVED
+problem_source:
+  status: ACCEPTED
+  artifact_origin: USER_PROVIDED
+  official_provenance: UNKNOWN
+  reference: benchmarks/problems/2024/C/source.yaml
+raw_archive:
+  result_txt:
+    path: raw/result.txt
+    bytes: 49577
+    sha256: b16aba0b0112e2be1da2e22d71021394c2d5975ef27bc23b8fdb096ba4fec697
+  original_archive:
+    original_path: raw/test.zip
+    bytes: 113550814
+    sha256: 8a4c8e15274955bbb8d52fb2c9f172284b4716a406bc4c548389e42049a33f11
+    status: REMOVED_AFTER_CANONICALIZATION
+    archive_removed_after_canonicalization: true
+  generated_artifacts:
+    path: raw/generated-artifacts
+    authority: CURATED_EVIDENCE_PROJECTION_OF_ORIGINAL_TRANSFER_ARCHIVE
+    status: RETAINED_LEDGER_REFERENCED_FILES_ONLY
+    note: The original Windows transfer archive was audited against canonical raw inputs and removed. Only files referenced by the Run-001 evidence ledger and postmortem regression remain here; canonical problem raw inputs remain under benchmarks/problems/2024/C/raw/.
+archive_removed_after_canonicalization: true
+immutable_raw: true
+structured_transcript: transcript.yaml
+normalized_evidence_ledger: evidence-ledger.yaml
+evaluation: evaluation.yaml
+postmortem: postmortem.md
+model_behavior_p0_count: 0
+project_blocker_count: 2
+outcome: NEEDS_REVIEW
+status: READY_FOR_RUN_002

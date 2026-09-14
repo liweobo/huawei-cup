@@ -1,0 +1,1 @@
+function_call_output requires call_id on HTTP requests; continuation via previous_response_id is only supported on Responses WebSocket v2

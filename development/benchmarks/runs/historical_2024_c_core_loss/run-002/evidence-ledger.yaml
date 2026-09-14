@@ -1,0 +1,212 @@
+schema_version: 2
+visibility: EVALUATOR_ONLY
+benchmark_id: historical_2024_c_core_loss_run_002
+run_id: run-002
+active_observed_evidence_run: 20260831T163625
+status: VERIFIED_OBSERVED_ARTIFACTS
+evidence:
+- evidence_id: E-R2-RAW-RESULT
+  type: RUN_ARCHIVE
+  run_id: run-002
+  source: run-002
+  created_at_turn: null
+  artifact: transcript.yaml
+  sha256: bd4c4bd21030513a0ea4833cee715898bdfd2d087f4196e8d5c348bfef856495
+  claim_supported: Structured transcript retained after transfer-archive canonicalization.
+  status: AVAILABLE
+- evidence_id: E-R2-SOURCE-ART-001
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-001
+  source_artifact_id: ART-001
+  created_at_turn: 1
+  artifact: benchmarks/problems/2024/C/raw/数据驱动下磁性元件的磁芯损耗建模.docx
+  sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+  claim_supported: problem_statement
+  status: AVAILABLE
+- evidence_id: E-R2-SOURCE-ART-002
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-002
+  source_artifact_id: ART-002
+  created_at_turn: 3
+  artifact: benchmarks/problems/2024/C/raw/附件一（训练集）.xlsx
+  sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+  claim_supported: training_data
+  status: AVAILABLE
+- evidence_id: E-R2-SOURCE-ART-003
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-003
+  source_artifact_id: ART-003
+  created_at_turn: 4
+  artifact: benchmarks/problems/2024/C/raw/附件二（测试集）.xlsx
+  sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+  claim_supported: test_waveform_classification
+  status: AVAILABLE
+- evidence_id: E-R2-SOURCE-ART-004
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-004
+  source_artifact_id: ART-004
+  created_at_turn: 10
+  artifact: benchmarks/problems/2024/C/raw/附件三（测试集）.xlsx
+  sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+  claim_supported: test_core_loss_prediction
+  status: AVAILABLE
+- evidence_id: E-R2-SOURCE-ART-005
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-005
+  source_artifact_id: ART-005
+  created_at_turn: 10
+  artifact: benchmarks/problems/2024/C/raw/附件四（Excel表）.xlsx
+  sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+  claim_supported: answer_template
+  status: AVAILABLE
+- evidence_id: E-R2-AUDIT
+  type: DATA_AUDIT_RESULT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 3
+  artifact: observed-artifacts/attachment1_audit.json
+  sha256: cddfa2b73afaba42e7737ed7c18829e377618723e0afd93ab1e3e5bd89eb2eb0
+  claim_supported: Canonical audit records duplicate_full_rows=1.
+  status: AVAILABLE
+- evidence_id: E-R2-Q1-BASE-CODE
+  type: CODE_RUN
+  run_id: run-002
+  source: run-002
+  created_at_turn: 4
+  artifact: observed-artifacts/outputs/20260827_q1_baseline/q1_baseline.py
+  sha256: 738f85f5ef1656659c820670137a2f564984b1603629ab4713b6b493fc46f7f0
+  claim_supported: Q1 baseline implementation used by the evidence registry.
+  status: AVAILABLE
+  experiment_id: EXP-Q1-001
+- evidence_id: E-R2-Q1-BASE
+  type: EXPERIMENT_RESULT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 4
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/q1_snapshot/summary.json
+  sha256: d0f31327a4883679da8940e209e7015c79a07dafec6806a261dd6ee02ce19975
+  claim_supported: Latest selected Q1 baseline run.
+  status: AVAILABLE
+  experiment_id: EXP-Q1-001
+- evidence_id: E-R2-Q1-PRED
+  type: EXPERIMENT_RESULT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 4
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/q1_snapshot/predictions.csv
+  sha256: 744f50830f608e3d403a9364cbff9f1316329abcc0695f080cbe32ae51f1ed33
+  claim_supported: Latest Q1 Attachment 2 predictions.
+  status: AVAILABLE
+  experiment_id: EXP-Q1-001
+- evidence_id: E-R2-Q1-COMPARE-CODE
+  type: CODE_RUN
+  run_id: run-002
+  source: run-002
+  created_at_turn: 5
+  artifact: observed-artifacts/outputs/20260827_q1_baseline/compare_models.py
+  sha256: 48d59acf8bc0ea9aeab0f130704d7fe2fd77ac8961ff0378f886130eac6debb5
+  claim_supported: Q1 model comparison implementation.
+  status: AVAILABLE
+  experiment_id: EXP-Q1-002
+- evidence_id: E-R2-Q1-COMPARE
+  type: EXPERIMENT_RESULT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 5
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/q1_snapshot/model_comparison.json
+  sha256: 8edc3e12937b6033ea3f9ea087e8c754da43b452e658cb75e4f890d0e1ac1c62
+  claim_supported: Latest selected Q1 candidate comparison.
+  status: AVAILABLE
+  experiment_id: EXP-Q1-002
+- evidence_id: E-R2-Q2-CODE
+  type: CODE_RUN
+  run_id: run-002
+  source: run-002
+  created_at_turn: 8
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/evidence_audit.py
+  sha256: 3c957793ae00c3b5cda40dfe77ba5564f2e1ebf1b50d8d5b5b2f3fc75bfd6418
+  claim_supported: Script that generated the registered Q2 validation artifact.
+  status: AVAILABLE
+  experiment_id: EXP-Q2-001
+- evidence_id: E-R2-Q2-RESULT
+  type: VALIDATION_RESULT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 8
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/q2_validation.json
+  sha256: 17e89900d2df306012e9b1f1403314b5e0b81d343d9305335e554b7741fffe20
+  claim_supported: Observed expanded Q2 validation protocol and results.
+  status: AVAILABLE
+  experiment_id: EXP-Q2-001
+- evidence_id: E-R2-Q3-AUDIT
+  type: DATA_VALIDATION
+  run_id: run-002
+  source: run-002
+  created_at_turn: 11
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/q3_data_design_audit.json
+  sha256: 1c22c68e163378006ce0fbd9ba2d01ed9693ecc5ac93af62f774491814532f74
+  claim_supported: Q3 data/design audit; interaction experiment not run.
+  status: AVAILABLE
+- evidence_id: E-R2-Q4-ALIGN
+  type: DATA_VALIDATION
+  run_id: run-002
+  source: run-002
+  created_at_turn: 10
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/q4_alignment_audit.json
+  sha256: d316b96267c70ec2b84089c0bb046063faee7437403c20e388c8c368b58f0456
+  claim_supported: Q4 alignment only; no loss predictions.
+  status: AVAILABLE
+- evidence_id: E-R2-REGISTRY
+  type: EVIDENCE_REGISTRY
+  run_id: run-002
+  source: run-002
+  created_at_turn: 11
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/evidence_manifest.json
+  sha256: 465bf842ed3d3807661641619a6a72886e5e622c7924379c18c896b34f83256b
+  claim_supported: Latest selected evidence run 20260831T163625.
+  status: AVAILABLE
+- evidence_id: E-R2-POSTVERIFY
+  type: DATA_VALIDATION
+  run_id: run-002
+  source: run-002
+  created_at_turn: 11
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/post_run_verification.json
+  sha256: 182a007d9d37e3b88f1d4564c221dc6aa8c19fa3640bb343b9e12c6c914dcfd3
+  claim_supported: Latest evidence registry post-run verification.
+  status: AVAILABLE
+- evidence_id: E-R2-CLAIMS
+  type: EVIDENCE_REGISTRY
+  run_id: run-002
+  source: run-002
+  created_at_turn: 11
+  artifact: observed-artifacts/outputs/20260831_evidence_registry/20260831T163625/paper_claims_registry.csv
+  sha256: 0125aef4059055bdc2e4ec2080d2e17d611ffafcbca13cea15bb70dd6c1d44b8
+  claim_supported: Latest numeric paper-claim registry.
+  status: AVAILABLE
+- evidence_id: E-R2-REVIEW
+  type: REVIEW_REPORT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 12
+  artifact: observed-artifacts/reviewer_evidence_audit.md
+  sha256: f1eee164c8049fa198f228c9525ed66304fac25da68c3c6615b7d522f544f4c1
+  claim_supported: Reviewer detected old/new evidence mixing.
+  status: AVAILABLE
+- evidence_id: E-R2-REVISED
+  type: PAPER_DRAFT
+  run_id: run-002
+  source: run-002
+  created_at_turn: 13
+  artifact: observed-artifacts/revised_results_section.md
+  sha256: 24308dd68d8fecd209bfc979f05d4328699781a395a8812384361c3a26187187
+  claim_supported: Results section repaired to use evidence run 20260831T163625.
+  status: AVAILABLE
+- evidence_id: E-R2-FINAL
+  type: SUBMISSION_CHECK
+  run_id: run-002
+  source: run-002
+  created_at_turn: 14
+  artifact: observed-artifacts/final_submission_check.md
+  sha256: e27258b5e115c38f13e56bf00e829f2e445d3668dfeb2d9d2d3b72890f3f8a8f
+  claim_supported: Final check returned NOT READY.
+  status: AVAILABLE

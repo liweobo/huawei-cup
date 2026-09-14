@@ -1,0 +1,96 @@
+schema_version: 1
+run_id: run-004
+benchmark_id: historical_2024_c_core_loss
+skill_version: V2.6 Phase 6
+skill_hash: 126b360d15b8c4e5615561cf72814ab45675cdc9911d4874e5a6c8cad032ab55
+canonical_skill_hash: 126b360d15b8c4e5615561cf72814ab45675cdc9911d4874e5a6c8cad032ab55
+runtime_allowlist:
+  skill:
+  - skill/references/clean-room-runtime.md
+  - skill/references/evaluation-metrics.md
+  - skill/references/gotchas.md
+  - skill/references/index.md
+  - skill/references/innovation-patterns.md
+  - skill/references/model-selection.md
+  - skill/references/models/classification-clustering.md
+  - skill/references/models/evaluation.md
+  - skill/references/models/index.md
+  - skill/references/models/mechanism.md
+  - skill/references/models/optimization.md
+  - skill/references/models/prediction.md
+  - skill/references/models/simulation-network.md
+  - skill/references/problem-taxonomy.md
+  - skill/references/trigger-boundary.md
+  - skill/routing.yaml
+  - skill/rules/competition.md
+  - skill/rules/evidence.md
+  - skill/rules/experiment.md
+  - skill/rules/index.md
+  - skill/rules/modeling.md
+  - skill/SKILL.md
+  - skill/workflows/analyze-problem.md
+  - skill/workflows/audit-data.md
+  - skill/workflows/build-baseline.md
+  - skill/workflows/design-model.md
+  - skill/workflows/final-check.md
+  - skill/workflows/index.md
+  - skill/workflows/reviewer.md
+  - skill/workflows/run-experiment.md
+  - skill/workflows/select-problem.md
+  - skill/workflows/validate-model.md
+  - skill/workflows/write-paper.md
+  templates:
+  - templates/active-evidence-set.yaml
+  - templates/active-files.yaml
+  - templates/competition-state.md
+  - templates/experiment-record.md
+  - templates/experiment-record.yaml
+  - templates/handoff.md
+  - templates/paper-claim.yaml
+  - templates/reviewer-report.md
+  - templates/source-record.md
+  - templates/task-anchor.md
+  - templates/workspace-manifest.yaml
+  scripts:
+  - scripts/__init__.py
+  - scripts/data_audit.py
+  - scripts/metrics.py
+  - scripts/plotting.py
+  - scripts/robustness.py
+  - scripts/runtime_provenance.py
+  - scripts/sensitivity.py
+input_artifacts:
+- source_artifact_id: ART-001
+  clean_room_path: input/数据驱动下磁性元件的磁芯损耗建模.docx
+  canonical_sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+  runtime_sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+  transfer: hardlink
+- source_artifact_id: ART-002
+  clean_room_path: input/附件一（训练集）.xlsx
+  canonical_sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+  runtime_sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+  transfer: hardlink
+- source_artifact_id: ART-003
+  clean_room_path: input/附件二（测试集）.xlsx
+  canonical_sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+  runtime_sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+  transfer: hardlink
+- source_artifact_id: ART-004
+  clean_room_path: input/附件三（测试集）.xlsx
+  canonical_sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+  runtime_sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+  transfer: hardlink
+- source_artifact_id: ART-005
+  clean_room_path: input/附件四（Excel表）.xlsx
+  canonical_sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+  runtime_sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+  transfer: hardlink
+model_visible_root: .
+writable_root: workspace
+developer_repository_visible: false
+prior_runs_visible: false
+evaluator_files_visible: false
+visibility_scan:
+  status: PASS
+  visible_file_count: 59
+  forbidden_matches: []

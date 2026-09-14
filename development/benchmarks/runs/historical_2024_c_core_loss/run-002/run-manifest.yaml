@@ -1,0 +1,61 @@
+schema_version: 1
+benchmark_id: historical_2024_c_core_loss
+run_id: run-002
+skill_version_at_run: V2.4 Phase 4
+postmortem_version: V2.5 Phase 5
+model: UNKNOWN
+model_configuration: UNKNOWN
+run_date: 2026-08-31
+fresh_conversation: true
+runtime_metadata_status: PARTIALLY_OBSERVED
+actual_route_events: NOT_OBSERVED
+tool_call_events: NOT_OBSERVED
+state_snapshots: NOT_OBSERVED
+problem_source:
+  status: ACCEPTED
+  artifact_origin: USER_PROVIDED
+  official_provenance: UNKNOWN
+  reference: benchmarks/problems/2024/C/source.yaml
+raw_archive:
+  result_txt:
+    original_path: raw/result.txt
+    bytes: 42483
+    sha256: c75f7539def7371c5191f25869d9040b39d0a37add0e357c73b36abb038a342d
+    status: NOT_RETAINED_AFTER_CANONICALIZATION
+  desktop_zip:
+    original_path: raw/Desktop.zip
+    bytes: 438044594
+    sha256: f3caabe1cb538d81d319ac677eeb039e7feba4774ab3fc9768ad6e36c1764eef
+    status: NOT_RETAINED_AFTER_CANONICALIZATION
+  canonical_transcript:
+    path: transcript.yaml
+    bytes: 55758
+    sha256: bd4c4bd21030513a0ea4833cee715898bdfd2d087f4196e8d5c348bfef856495
+    status: RETAINED
+archive_removed_after_canonicalization: true
+immutable_raw: true
+structured_transcript: transcript.yaml
+normalized_evidence_ledger: evidence-ledger.yaml
+evaluation: evaluation.yaml
+postmortem: postmortem.md
+observed_artifacts: observed-artifacts/
+postmortem_reconstructions:
+  - analysis/reconstructed-q2-experiment-record.yaml
+  - analysis/reconstructed-workspace-manifest.yaml
+model_behavior_p0_count: 0
+project_blocker_count: 6
+outcome: NEEDS_REVIEW
+status: READY_FOR_RUN_003
+run_002_regression_status:
+  canonical_audit_contradiction: PASS
+  protocol_drift_disclosure: PARTIAL_FAIL
+  fake_experiment: PASS
+  q1_evidence_integrity: PASS
+  q2_evidence_integrity: PASS
+  unsupported_q4_numbers: PASS
+  final_blocker_behavior: PASS
+  artifact_workspace_isolation: FAIL
+notes:
+  - The supplied Run-002 transfer archive metadata is retained, but no recoverable raw/result.txt or Desktop.zip exists in the current workspace; the structured transcript and selected observed evidence are the canonical retained record.
+  - Runtime experiment record and isolated writable root were absent during the real run; postmortem reconstructions are clearly labeled.
+  - Run-003 is not executed; it must use the exact frozen 14-turn script and a fresh run-scoped workspace.

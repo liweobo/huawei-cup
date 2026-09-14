@@ -1,0 +1,131 @@
+id: optimization_recovery_01
+name: Optimization feasibility failure and recovery
+kind: synthetic
+source: benchmarks/problems/README.md
+source_status: MISSING
+problem_family: optimization_decision
+initial_state:
+  domain_context: null
+  selected_problem: synthetic-optimization
+  current_phase: null
+  status: NOT STARTED
+  p0_risks: []
+expected_route_coverage:
+  - analyze_problem
+  - audit_data
+  - build_baseline
+  - design_model
+  - run_experiment
+  - validate_model
+  - write_paper
+  - reviewer
+  - final_check
+turns:
+  - turn: 1
+    user: 我在做数学建模竞赛，先拆题，明确优化目标和约束。
+    expected_trigger: true
+    expected_route: analyze_problem
+    expected_phase: problem_analysis
+    state_updates:
+      domain_context: mathematical_modeling_competition
+      status: IN PROGRESS
+  - turn: 2
+    user: 附件先检查单位、字段和决策时点。
+    expected_trigger: true
+    expected_route: audit_data
+    expected_phase: data
+  - turn: 3
+    user: 附件字段含义还没确认，可能造成数据泄漏，先停一下。
+    expected_trigger: true
+    expected_route: audit_data
+    expected_phase: data
+    state_updates:
+      p0_risks_add:
+        - unknown-field-semantics
+      blocked: true
+      status: BLOCKED
+    risk_policy: block
+  - turn: 4
+    user: 字段定义已核验，解除阻塞，先做规则基线。
+    expected_trigger: true
+    expected_route: build_baseline
+    expected_phase: baseline
+    state_updates:
+      p0_risks_resolve:
+        - unknown-field-semantics
+      blocked: false
+      status: IN PROGRESS
+      baseline_status: DEFINED
+  - turn: 5
+    user: 做模型选择，比较候选优化模型。
+    expected_trigger: true
+    expected_route: design_model
+    expected_phase: modeling
+  - turn: 6
+    user: 按同一目标函数和约束跑实验。
+    expected_trigger: true
+    expected_route: run_experiment
+    expected_phase: experiment
+    state_updates:
+      experiment_status: COMPLETE
+      observed_evidence:
+        - fixture:optimization-run-record-v1
+    assertions:
+      no_fake_experiment: true
+  - turn: 7
+    user: 最优解违反约束，先检查可行性。
+    expected_trigger: true
+    expected_route: validate_model
+    expected_phase: validation
+    state_updates:
+      p0_risks_add:
+        - infeasible-solution
+      blocked: true
+      status: BLOCKED
+    risk_policy: block
+  - turn: 8
+    user: 重新设计模型，把可行性约束显式加入。
+    expected_trigger: true
+    expected_route: design_model
+    expected_phase: modeling
+  - turn: 9
+    user: 修复约束后重新跑实验并记录配置。
+    expected_trigger: true
+    expected_route: run_experiment
+    expected_phase: experiment
+    state_updates:
+      observed_evidence:
+        - fixture:optimization-run-record-v2
+  - turn: 10
+    user: 重新验证全部约束和鲁棒性。
+    expected_trigger: true
+    expected_route: validate_model
+    expected_phase: validation
+    state_updates:
+      p0_risks_resolve:
+        - infeasible-solution
+      blocked: false
+      status: IN PROGRESS
+      validation_status: COMPLETE
+  - turn: 11
+    user: 做敏感性分析，检查参数扰动后是否稳定。
+    expected_trigger: true
+    expected_route: validate_model
+    expected_phase: validation
+  - turn: 12
+    user: 把可行方案、决策建议和局限写进论文。
+    expected_trigger: true
+    expected_route: write_paper
+    expected_phase: writing
+  - turn: 13
+    user: 模拟评委检查优化可行性证据。
+    expected_trigger: true
+    expected_route: reviewer
+    expected_phase: review
+  - turn: 14
+    user: 提交前做最终检查。
+    expected_trigger: true
+    expected_route: final_check
+    expected_phase: submission
+    state_updates:
+      status: COMPLETE

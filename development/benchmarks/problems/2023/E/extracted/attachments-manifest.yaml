@@ -1,0 +1,27 @@
+schema_version: 1
+source_artifact: ../source.yaml
+attachments:
+  - artifact_id: ART-004
+    filename: 表1-患者列表及临床信息.xlsx
+    role: clinical_data
+    expected_sheet: 患者信息
+  - artifact_id: ART-005
+    filename: 表2-患者影像信息血肿及水肿的体积及位置.xlsx
+    role: longitudinal_volume_location_data
+    expected_sheet: Data
+  - artifact_id: ART-006
+    filename: 表3-患者影像信息血肿及水肿的形状及灰度分布.xlsx
+    role: longitudinal_shape_intensity_data
+    expected_sheets: [ED, Hemo, Sheet1]
+  - artifact_id: ART-007
+    filename: 表4-答案文件.xlsx
+    role: answer_template
+    expected_sheet: Sheet1
+  - artifact_id: ART-008
+    filename: 附表1-检索表格-流水号vs时间.xlsx
+    role: serial_to_time_lookup
+    expected_sheet: Sheet1
+uncertainties:
+  - Exact target and dataset-group values are confirmed from workbook headers during the run audit.
+  - Table 2 stores repeated imaging in a wide layout and Table 3 stores feature rows in long layout; join coverage must be audited by serial number.
+  - Treatment associations are observational and do not by themselves identify causal effects.

@@ -1,0 +1,85 @@
+schema_version: 1
+benchmark_id: historical_2023_e_hemorrhagic_stroke
+competition: 2023年中国研究生数学建模竞赛
+year: 2023
+problem_id: E
+problem_title: 出血性脑卒中临床智能诊疗建模
+benchmark_source_status: ACCEPTED
+artifact_origin: USER_PROVIDED
+historical_claim: USER_ASSERTED
+official_provenance: UNKNOWN
+source_record:
+  title: 用户提供的2023年研究生数学建模竞赛E题及附件
+  local_path: benchmarks/problems/2023/E
+  access_date: 2026-09-08
+  verification_status: ACCEPTED_USER_ARTIFACT
+artifacts:
+  - id: ART-001
+    filename: 出血性脑卒中临床智能诊疗建模.docx
+    type: DOCX
+    size: 259469
+    sha256: 380ADB38C89F2331103021B22925E906E072D48428E8A5FDAC0843364FE2DA31
+    origin: USER_PROVIDED
+    role: problem_statement
+    raw_path: raw/出血性脑卒中临床智能诊疗建模.docx
+  - id: ART-002
+    filename: 附件2-相关概念.docx
+    type: DOCX
+    size: 633619
+    sha256: 63E3D21C88591475A8AEC74A8FAB27D81A7460F4A6FAE6A990E3D5E86EBA9A8B
+    origin: USER_PROVIDED
+    role: concept_note
+    raw_path: raw/附件2-相关概念.docx
+  - id: ART-003
+    filename: 数据.rar
+    type: RAR
+    size: 735867
+    sha256: 9AB7C9CF47ED4C77BA026741D794066A0CEEE1A5CAD865A30DB84EA6B23415AE
+    origin: USER_PROVIDED
+    role: original_archive
+    raw_path: raw/数据.rar
+  - id: ART-004
+    filename: 表1-患者列表及临床信息.xlsx
+    type: XLSX
+    size: 27621
+    sha256: B085EE1D27EB816CBD22D13D7487E24067164A332FF8C813F0B3D1D4FDFE3069
+    origin: USER_PROVIDED_EXTRACTED
+    role: clinical_data
+    raw_path: raw/表1-患者列表及临床信息.xlsx
+  - id: ART-005
+    filename: 表2-患者影像信息血肿及水肿的体积及位置.xlsx
+    type: XLSX
+    size: 187530
+    sha256: 9937B800EFFFE0B503717F8183C9EEE50670B158594B3655E1D0498BB686AC50
+    origin: USER_PROVIDED_EXTRACTED
+    role: longitudinal_volume_location_data
+    raw_path: raw/表2-患者影像信息血肿及水肿的体积及位置.xlsx
+  - id: ART-006
+    filename: 表3-患者影像信息血肿及水肿的形状及灰度分布.xlsx
+    type: XLSX
+    size: 514778
+    sha256: 35254B2884FE1445750FAB506927F78D1FF696B0F230DA3B448408E459838A1C
+    origin: USER_PROVIDED_EXTRACTED
+    role: longitudinal_shape_intensity_data
+    raw_path: raw/表3-患者影像信息血肿及水肿的形状及灰度分布.xlsx
+  - id: ART-007
+    filename: 表4-答案文件.xlsx
+    type: XLSX
+    size: 13811
+    sha256: D5F9B067C0B28757A539A8FDBB66714D79865DF89F4B1AFC06CED28FDACFB2AC
+    origin: USER_PROVIDED_EXTRACTED
+    role: answer_template
+    raw_path: raw/表4-答案文件.xlsx
+  - id: ART-008
+    filename: 附表1-检索表格-流水号vs时间.xlsx
+    type: XLSX
+    size: 31264
+    sha256: 9C46DB788D1EE2893E4BA62B0EFED7EF828BADFC7AD1D84DFEA5E39544FAF711
+    origin: USER_PROVIDED_EXTRACTED
+    role: serial_to_time_lookup
+    raw_path: raw/附表1-检索表格-流水号vs时间.xlsx
+extraction:
+  problem_markdown: extracted/problem.md
+  attachments_manifest: extracted/attachments-manifest.yaml
+  problem_facts: problem-facts.yaml
+  extraction_status: COMPLETE_TEXT_AND_WORKBOOKS_PENDING_AUDIT

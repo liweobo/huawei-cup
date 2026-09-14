@@ -1,0 +1,58 @@
+schema_version: 1
+record_origin: POSTMORTEM_RECONSTRUCTION
+runtime_artifact_present_at_turn_8: false
+experiment_id: EXP-Q2-001
+run_id: run-002
+created_at: '2026-09-01T00:00:00+08:00'
+problem: historical_2024_c_core_loss
+question: Q2
+status: OBSERVED
+updated_by_workflow: validate_model
+planned_protocol:
+  validation:
+  - type: stratified_holdout
+    test_size: 0.2
+    seed: fixed_not_observed
+  - type: leave_one_temperature_out
+    levels:
+    - 25
+    - 50
+    - 70
+    - 90
+executed_protocol:
+  validation:
+  - type: repeated_stratified_holdout
+    repeats: 50
+    seed: 20240827
+  - type: unseen_frequency_group
+  - type: leave_one_temperature_out
+    levels:
+    - 25
+    - 50
+    - 70
+    - 90
+  - type: row_order_stress
+    interpretation: diagnostic_not_time_split
+  sensitivity:
+  - type: Bm_definition
+  - type: robust_regression
+  - type: temperature_model_family
+    models:
+    - linear
+    - quadratic
+    - interaction
+protocol_changed: true
+change_reason: NOT_RECORDED_AS_STRUCTURED_RUNTIME_FIELD
+comparable_to_original_plan: false
+protocol_change_disclosure: null
+input_artifacts:
+- ART-002
+code_artifacts:
+- E-R2-Q2-CODE
+output_artifacts:
+- E-R2-Q2-RESULT
+random_seed: 20240827
+metrics: See E-R2-Q2-RESULT
+evidence_ids:
+- E-R2-Q2-CODE
+- E-R2-Q2-RESULT

@@ -1,0 +1,8 @@
+# Python >= 3.10
+numpy
+pandas
+scikit-learn
+openpyxl
+matplotlib
+pytest
+pyyaml

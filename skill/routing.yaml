@@ -1,0 +1,109 @@
+version: 1
+
+defaults:
+  task_anchor: templates/task-anchor.md
+  competition_state: templates/competition-state.md
+  trigger_policy: candidate_signals_not_keyword_classifier
+
+routes:
+  select_problem:
+    purpose: 比较多个赛题并选择最容易形成完整建模闭环的题目。
+    triggers: ["选题", "A题还是B题", "哪道题", "多个赛题", "题目比较"]
+    workflow: workflows/select-problem.md
+    required_reads:
+      - rules/competition.md
+      - references/problem-taxonomy.md
+
+  analyze_problem:
+    purpose: 拆解题意、输入输出、约束和子问题依赖。
+    triggers: ["分析赛题", "拆题", "问题分析", "到底让我求什么", "建模思路"]
+    workflow: workflows/analyze-problem.md
+    required_reads:
+      - rules/modeling.md
+      - references/problem-taxonomy.md
+      - references/ordinal-modeling.md
+      - references/group-validation.md
+
+  audit_data:
+    purpose: 审计附件结构、质量、时间因果关系和数据到问题映射。
+    triggers: ["数据分析", "附件", "xlsx", "excel", "csv", "缺失值", "异常值", "数据审计", "数据泄漏", "信息泄漏", "未来信息", "未来数据", "data leakage", "target leakage", "leakage"]
+    workflow: workflows/audit-data.md
+    required_reads:
+      - rules/evidence.md
+      - references/gotchas.md
+      - references/imbalanced-classification.md
+      - references/ordinal-modeling.md
+      - references/group-validation.md
+
+  design_model:
+    purpose: 根据问题结构比较 Baseline 和候选模型族。
+    triggers: ["建模", "模型设计", "模型选择", "候选模型", "预测模型", "评价模型", "优化模型", "用什么模型"]
+    workflow: workflows/design-model.md
+    required_reads:
+      - rules/modeling.md
+      - references/model-selection.md
+      - references/models/index.md
+      - references/gotchas.md
+      - references/imbalanced-classification.md
+      - references/ordinal-modeling.md
+      - references/group-validation.md
+
+  build_baseline:
+    purpose: 建立可运行、可解释、可比较的最小基准。
+    triggers: ["baseline", "基线", "基准模型", "对照模型", "简单模型"]
+    workflow: workflows/build-baseline.md
+    required_reads:
+      - rules/modeling.md
+      - rules/experiment.md
+
+  run_experiment:
+    purpose: 按一致协议运行、记录和比较真实实验。
+    triggers: ["实验", "跑模型", "参数比较", "模型比较", "实验结果"]
+    workflow: workflows/run-experiment.md
+    required_reads:
+      - rules/experiment.md
+      - rules/evidence.md
+      - references/imbalanced-classification.md
+      - references/ordinal-modeling.md
+      - references/group-validation.md
+
+  validate_model:
+    purpose: 验证泛化、可行性、灵敏度和鲁棒性。
+    triggers: ["验证", "模型检验", "误差", "敏感性", "灵敏度", "稳健性", "鲁棒性", "回测", "数据泄漏", "时间序列 shuffle", "shuffle 后划分", "随机划分时间序列", "过拟合", "类别不平衡", "样本不平衡", "98:2", "99:1", "不可行", "约束冲突", "违反约束"]
+    workflow: workflows/validate-model.md
+    required_reads:
+      - rules/experiment.md
+      - references/evaluation-metrics.md
+      - references/gotchas.md
+      - references/imbalanced-classification.md
+      - references/ordinal-modeling.md
+      - references/group-validation.md
+
+  write_paper:
+    purpose: 把已验证证据组织为论文段落、图表和摘要。
+    triggers: ["论文", "摘要", "问题重述", "结果分析", "写作"]
+    workflow: workflows/write-paper.md
+    required_reads:
+      - rules/evidence.md
+      - references/innovation-patterns.md
+      - references/gotchas.md
+
+  reviewer:
+    purpose: 以网评专家视角按 P0-P3 寻找可证实的问题。
+    triggers: ["审稿", "模拟评委", "检查论文", "找漏洞", "reviewer", "论文结果和代码不一致", "表格和正文不一致", "摘要和正文不一致", "单位不一致"]
+    workflow: workflows/reviewer.md
+    required_reads:
+      - rules/modeling.md
+      - rules/evidence.md
+      - references/gotchas.md
+      - references/imbalanced-classification.md
+      - references/ordinal-modeling.md
+      - references/group-validation.md
+
+  final_check:
+    purpose: 在提交前检查完成度、一致性、证据和合规状态。
+    triggers: ["提交检查", "最终检查", "final check", "提交前", "能否提交", "摘要和正文不一致", "表格和正文不一致", "单位不一致"]
+    workflow: workflows/final-check.md
+    required_reads:
+      - rules/competition.md
+      - references/competition/2026-rules.md

@@ -1,0 +1,92 @@
+schema_version: 1
+visibility: EVALUATOR_ONLY
+source_artifact: source.yaml
+competition:
+  year: 2024
+  problem_id: C
+  problem_title: 数据驱动下磁性元件的磁芯损耗建模
+  status: FACT
+question_count:
+  value: 5
+  status: FACT
+explicit_questions:
+  - id: Q1
+    statement: Classify excitation waveforms using Attachment 1 and fill Attachment 4 column 2 for Attachment 2.
+    status: FACT
+  - id: Q2
+    statement: Construct and compare a temperature-aware correction to the Steinmetz equation.
+    status: FACT
+  - id: Q3
+    statement: Analyze independent and pairwise synergistic effects of temperature, waveform, and material.
+    status: FACT
+  - id: Q4
+    statement: Build a data-driven core-loss prediction model and fill Attachment 4 column 3 for Attachment 3.
+    status: FACT
+  - id: Q5
+    statement: Optimize core-loss and the frequency-times-flux-density-peak transmission-energy proxy.
+    status: FACT
+given_data:
+  items:
+    - "Attachment 1 training tables for four anonymized materials."
+    - "Attachment 2 waveform-classification test samples."
+    - "Attachment 3 core-loss-prediction test samples."
+    - "Attachment 4 answer template."
+  status: FACT
+attachments:
+  items:
+    - ART-001
+    - ART-002
+    - ART-003
+    - ART-004
+    - ART-005
+  status: FACT
+units:
+  items:
+    - temperature: °C
+    - frequency: Hz
+    - core_loss_density: W/m³
+    - flux_density: T
+  status: FACT
+explicit_constraints:
+  items:
+    - Q1 classification output uses 1=sinusoidal, 2=triangular, 3=trapezoidal.
+    - Q1 result is written to Attachment 4 column 2 and source filename is retained.
+    - Q4 predictions are written to Attachment 4 column 3 and retained to one decimal place.
+    - Q5 transmission-energy proxy is frequency multiplied by flux-density peak.
+  status: FACT
+explicit_objectives:
+  items:
+    - Predict or analyze core-loss density.
+    - Q5 minimize core loss while maximizing the stated transmission-energy proxy.
+  status: FACT
+defined_terms:
+  items:
+    - core-loss density
+    - Steinmetz equation
+    - excitation waveform
+    - magnetic flux density
+    - transmission-energy proxy
+  status: FACT
+time_ranges:
+  value: One sampled excitation period per training row; no calendar date range is stated in the extracted text.
+  status: UNKNOWN
+required_outputs:
+  items:
+    - Q1 waveform labels and counts plus selected sample table.
+    - Q2 correction equation and error comparison.
+    - Q3 factor and pairwise interaction analysis.
+    - Q4 prediction model, accuracy/generalization analysis, and Attachment 3 predictions.
+    - Q5 optimization conditions and interpretation.
+  status: FACT
+interpretations:
+  - value: Q1 is a supervised waveform-classification task.
+    status: INTERPRETATION
+  - value: Q4 is a supervised regression/generalization task.
+    status: INTERPRETATION
+  - value: Q5 is a multi-objective or constrained decision problem.
+    status: INTERPRETATION
+unknown_fields:
+  items:
+    - Official provenance and official download URL were not provided.
+    - Exact displayed equation glyphs and some figure details require raw DOCX inspection.
+    - No ground-truth model family or best score is provided by the artifact.

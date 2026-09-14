@@ -1,0 +1,54 @@
+schema_version: 1
+source_artifact: ../source.yaml
+attachments:
+  - artifact_id: ART-002
+    filename: 附件一（训练集）.xlsx
+    role: training_data
+    observed_sheets:
+      - name: 材料1
+        data_rows: 3400
+        columns: 1028
+      - name: 材料2
+        data_rows: 3000
+        columns: 1028
+      - name: 材料3
+        data_rows: 3200
+        columns: 1028
+      - name: 材料4
+        data_rows: 2800
+        columns: 1028
+    observed_header_shape: 温度、频率、磁芯损耗、励磁波形、磁通密度采样列
+    note: Workbook sheet names are preserved as supplied; display encoding may vary by locale.
+  - artifact_id: ART-003
+    filename: 附件二（测试集）.xlsx
+    role: test_waveform_classification
+    observed_sheets:
+      - name: 测试集
+        data_rows: 80
+        columns: 1028
+    observed_header_shape: 样本序号、温度、频率、磁芯材料、磁通密度采样列（不含励磁波形标签）
+  - artifact_id: ART-004
+    filename: 附件三（测试集）.xlsx
+    role: test_core_loss_prediction
+    observed_sheets:
+      - name: 测试集
+        data_rows: 400
+        columns: 1029
+    observed_header_shape: 样本序号、温度、频率、磁芯材料、磁通密度采样列
+  - artifact_id: ART-005
+    filename: 附件四（Excel表）.xlsx
+    role: answer_template
+    observed_sheets:
+      - name: Sheet1
+        data_rows: 400
+        columns: 3
+        headers: 样本序号、附件二波形分类结果、附件三磁芯损耗预测结果
+      - name: Sheet2
+        data_rows: 0
+        columns: 1
+      - name: Sheet3
+        data_rows: 0
+        columns: 1
+uncertainties:
+  - The题面 states sample columns 5–1029/5–1029, while workbook dimensions observed through the bundled reader vary by attachment; preserve workbook dimensions as observed and re-check before any write.
+  - Exact formula glyphs and embedded figures in the DOCX are not fully represented by paragraph text extraction.

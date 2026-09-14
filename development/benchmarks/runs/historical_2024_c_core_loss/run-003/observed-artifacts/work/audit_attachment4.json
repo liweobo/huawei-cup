@@ -1,0 +1,158 @@
+{
+  "file": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\benchmarks\\problems\\2024\\C\\raw\\附件四（Excel表）.xlsx",
+  "format": "xlsx",
+  "audit_parameters": {
+    "near_constant_threshold": 0.95,
+    "correlation_threshold": 0.9,
+    "imbalance_warning_ratio": 10.0
+  },
+  "sheets": {
+    "Sheet1": {
+      "shape": [
+        400,
+        3
+      ],
+      "columns": {
+        "序号": {
+          "dtype": "int64",
+          "kind": "numeric",
+          "sample_count": 400,
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 400,
+          "summary": {
+            "mean": 200.5,
+            "50%": 200.5,
+            "std": 115.61430130683084,
+            "min": 1.0,
+            "25%": 100.75,
+            "75%": 300.25,
+            "max": 400.0
+          },
+          "iqr_outlier_count": 0
+        },
+        "附件二（80个样品）励磁波形分类结果": {
+          "dtype": "float64",
+          "kind": "numeric",
+          "sample_count": 0,
+          "missing_count": 400,
+          "missing_rate": 1.0,
+          "unique_count": 0,
+          "summary": {
+            "mean": null,
+            "50%": null,
+            "std": null,
+            "min": null,
+            "25%": null,
+            "75%": null,
+            "max": null
+          }
+        },
+        "附件三（400个样品）磁芯损耗预测结果": {
+          "dtype": "float64",
+          "kind": "numeric",
+          "sample_count": 0,
+          "missing_count": 400,
+          "missing_rate": 1.0,
+          "unique_count": 0,
+          "summary": {
+            "mean": null,
+            "50%": null,
+            "std": null,
+            "min": null,
+            "25%": null,
+            "75%": null,
+            "max": null
+          }
+        }
+      },
+      "duplicate_rows": 0,
+      "correlation": {
+        "序号": {
+          "序号": 1.0,
+          "附件二（80个样品）励磁波形分类结果": null,
+          "附件三（400个样品）磁芯损耗预测结果": null
+        },
+        "附件二（80个样品）励磁波形分类结果": {
+          "序号": null,
+          "附件二（80个样品）励磁波形分类结果": null,
+          "附件三（400个样品）磁芯损耗预测结果": null
+        },
+        "附件三（400个样品）磁芯损耗预测结果": {
+          "序号": null,
+          "附件二（80个样品）励磁波形分类结果": null,
+          "附件三（400个样品）磁芯损耗预测结果": null
+        }
+      },
+      "risk_prompts": [
+        "constant_or_empty: 附件三（400个样品）磁芯损耗预测结果",
+        "constant_or_empty: 附件二（80个样品）励磁波形分类结果",
+        "missing_review: 附件三（400个样品）磁芯损耗预测结果 has missing values",
+        "missing_review: 附件二（80个样品）励磁波形分类结果 has missing values"
+      ],
+      "leakage_prompts": [
+        "Check whether time/ID/label-after-event fields are available at prediction time.",
+        "Check whether preprocessing was fit using only the training portion."
+      ],
+      "unit_prompts": [
+        "Confirm units across numeric fields and source files before modelling."
+      ],
+      "possible_id_columns": [
+        "序号"
+      ],
+      "constant_columns": [
+        "附件三（400个样品）磁芯损耗预测结果",
+        "附件二（80个样品）励磁波形分类结果"
+      ],
+      "near_constant_columns": [],
+      "class_distribution": {},
+      "imbalance_ratio": {},
+      "high_correlation_pairs": [],
+      "time_columns": [],
+      "is_monotonic": {},
+      "duplicate_timestamps": {}
+    },
+    "Sheet2": {
+      "shape": [
+        0,
+        0
+      ],
+      "columns": {},
+      "duplicate_rows": 0,
+      "correlation": {},
+      "risk_prompts": [
+        "empty_data: table has no rows"
+      ],
+      "possible_id_columns": [],
+      "constant_columns": [],
+      "near_constant_columns": [],
+      "class_distribution": {},
+      "imbalance_ratio": {},
+      "high_correlation_pairs": [],
+      "time_columns": [],
+      "is_monotonic": {},
+      "duplicate_timestamps": {}
+    },
+    "Sheet3": {
+      "shape": [
+        0,
+        0
+      ],
+      "columns": {},
+      "duplicate_rows": 0,
+      "correlation": {},
+      "risk_prompts": [
+        "empty_data: table has no rows"
+      ],
+      "possible_id_columns": [],
+      "constant_columns": [],
+      "near_constant_columns": [],
+      "class_distribution": {},
+      "imbalance_ratio": {},
+      "high_correlation_pairs": [],
+      "time_columns": [],
+      "is_monotonic": {},
+      "duplicate_timestamps": {}
+    }
+  }
+}

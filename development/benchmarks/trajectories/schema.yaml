@@ -1,0 +1,43 @@
+schema_version: 2
+required_trajectory_fields:
+  - id
+  - name
+  - kind
+  - source
+  - source_status
+  - problem_family
+  - initial_state
+  - turns
+allowed_kind:
+  - historical
+  - synthetic
+allowed_problem_family:
+  - prediction_time_series
+  - optimization_decision
+  - evaluation_simulation_mechanism
+  - classification_prediction_optimization
+allowed_source_status:
+  - ACCEPTED
+  - VERIFIED
+  - MISSING
+  - UNVERIFIED
+required_turn_fields:
+  - turn
+  - user
+  - expected_trigger
+  - expected_route
+  - expected_phase
+optional_turn_fields:
+  - state_updates
+  - assertions
+  - risk_policy
+  - note
+state_update_operations:
+  - p0_risks_add
+  - p0_risks_resolve
+  - completed_routes_add
+notes:
+  - Synthetic fixtures validate Layer A only and never count as historical coverage.
+  - ACCEPTED historical fixtures require a local source.yaml with USER_PROVIDED artifacts and matching raw-file SHA256 hashes.
+  - ACCEPTED does not assert official provenance; VERIFIED is reserved for independently verified sources.
+  - Experiment numbers are allowed only when a fixture explicitly provides observed_evidence.

@@ -1,0 +1,39 @@
+schema_version: 1
+experiment_id: EXP-Q1-BASELINE-001
+run_id: run-003
+created_at: '2026-09-03T00:00:00+08:00'
+problem: historical_2024_c_core_loss
+question: Q1
+status: FAILED
+updated_by_workflow: run_experiment
+planned_protocol:
+  task: three-class waveform classification
+  features: 1024-point B(t) sequence -> normalized distribution, first-difference, second-difference and plateau features
+  model: StandardScaler + multinomial LogisticRegression(lbfgs, max_iter=1000)
+  validation:
+    method: stratified random holdout
+    test_size: 0.2
+    random_seed: 42
+  test_usage: attachment2 only for final prediction, not model selection
+executed_protocol:
+  task: three-class waveform classification
+  features: 1024-point B(t) sequence -> normalized distribution, first-difference, second-difference and plateau features
+  model: StandardScaler + multinomial LogisticRegression(lbfgs, max_iter=1000)
+  validation:
+    method: stratified random holdout
+    test_size: 0.2
+    random_seed: 42
+  test_usage: attachment2 only for final prediction, not model selection
+protocol_changed: false
+change_reason: ''
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+  - ART-002
+  - ART-003
+code_artifacts: []
+output_artifacts: []
+random_seed: 42
+metrics: {}
+evidence_ids: []
+failure_reason: 'Runtime compatibility error: installed scikit-learn rejects LogisticRegression(multi_class=...). No observed metrics or predictions were produced.'

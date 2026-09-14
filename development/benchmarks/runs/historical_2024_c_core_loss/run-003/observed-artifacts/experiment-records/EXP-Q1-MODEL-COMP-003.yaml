@@ -1,0 +1,84 @@
+schema_version: 1
+experiment_id: EXP-Q1-MODEL-COMP-003
+run_id: run-003
+created_at: '2026-09-03T20:30:00+08:00'
+problem: historical_2024_c_core_loss
+question: Q1
+status: OBSERVED
+updated_by_workflow: run_experiment
+planned_protocol:
+  task: compare two genuinely different Q1 candidate classifiers against the existing logistic baseline
+  features: same 26 B(t)-derived features as EXP-Q1-BASELINE-002
+  models:
+    baseline_logistic: StandardScaler + LogisticRegression(lbfgs, max_iter=1000)
+    candidate_random_forest: RandomForestClassifier(n_estimators=300, max_features=sqrt, min_samples_leaf=1)
+    candidate_rbf_svm: StandardScaler + SVC(kernel=rbf, C=10, gamma=scale)
+  validation:
+    method: one shared stratified random holdout
+    test_size: 0.2
+    random_seed: 42
+  test_usage: attachment2 only for final prediction and disagreement analysis, not model selection
+executed_protocol:
+  task: compare two genuinely different Q1 candidate classifiers against the existing logistic baseline
+  features: same 26 B(t)-derived features as EXP-Q1-BASELINE-002
+  models:
+    baseline_logistic: StandardScaler + LogisticRegression(lbfgs, max_iter=1000)
+    candidate_random_forest: RandomForestClassifier(n_estimators=300, max_features=sqrt, min_samples_leaf=1)
+    candidate_rbf_svm: StandardScaler + SVC(kernel=rbf, C=10, gamma=scale)
+  validation:
+    method: one shared stratified random holdout
+    test_size: 0.2
+    random_seed: 42
+  test_usage: attachment2 only for final prediction and disagreement analysis, not model selection
+protocol_changed: false
+change_reason: ''
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+  - ART-002
+  - ART-003
+  - CODE-Q1-BASELINE-002
+code_artifacts:
+  - CODE-Q1-MODEL-COMP-003
+output_artifacts:
+  - OUT-Q1-MODEL-COMP-METRICS-003
+  - OUT-Q1-MODEL-COMP-TABLE-003
+  - OUT-Q1-MODEL-COMP-PREDICTIONS-003
+  - OUT-Q1-MODEL-COMP-CONFUSION-LOGISTIC-003
+  - OUT-Q1-MODEL-COMP-CONFUSION-RF-003
+  - OUT-Q1-MODEL-COMP-CONFUSION-SVM-003
+random_seed: 42
+metrics:
+  baseline_logistic:
+    accuracy: 1.0
+    balanced_accuracy: 1.0
+    macro_precision: 1.0
+    macro_recall: 1.0
+    macro_f1: 1.0
+    fit_seconds: 0.061736300005577505
+  candidate_random_forest:
+    accuracy: 1.0
+    balanced_accuracy: 1.0
+    macro_precision: 1.0
+    macro_recall: 1.0
+    macro_f1: 1.0
+    fit_seconds: 0.8221322000026703
+  candidate_rbf_svm:
+    accuracy: 1.0
+    balanced_accuracy: 1.0
+    macro_precision: 1.0
+    macro_recall: 1.0
+    macro_f1: 1.0
+    fit_seconds: 0.0520218999881763
+  attachment2_pairwise_disagreements:
+    baseline_logistic_vs_candidate_random_forest: 0
+    baseline_logistic_vs_candidate_rbf_svm: 0
+    candidate_random_forest_vs_candidate_rbf_svm: 0
+evidence_ids:
+  - E-Q1-MODEL-COMP-CODE-003
+  - E-Q1-MODEL-COMP-RESULT-003
+  - E-Q1-MODEL-COMP-TABLE-003
+  - E-Q1-MODEL-COMP-PREDICTIONS-003
+  - E-Q1-MODEL-COMP-CONFUSION-LOGISTIC-003
+  - E-Q1-MODEL-COMP-CONFUSION-RF-003
+  - E-Q1-MODEL-COMP-CONFUSION-SVM-003

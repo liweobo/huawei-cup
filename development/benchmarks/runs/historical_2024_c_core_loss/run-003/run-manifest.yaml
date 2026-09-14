@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "historical_2024_c_core_loss",
+  "run_id": "run-003",
+  "skill_version_at_run": "V2.5 Phase 5",
+  "postmortem_version": "V2.5 Phase 5",
+  "model": "UNKNOWN",
+  "model_configuration": "UNKNOWN",
+  "run_date": "2026-09-04",
+  "fresh_conversation": true,
+  "runtime_metadata_status": "PARTIALLY_OBSERVED",
+  "frozen_user_script_sha256": "5a72ea2f32f19e50f2242d2a0a0a3b746176ba8c300188764bf22b7f6a1ee377",
+  "problem_source": {
+    "status": "ACCEPTED",
+    "artifact_origin": "USER_PROVIDED",
+    "official_provenance": "UNKNOWN",
+    "reference": "benchmarks/problems/2024/C/source.yaml"
+  },
+  "raw_inputs": [
+    {
+      "artifact_id": "ART-001",
+      "path": "benchmarks/problems/2024/C/raw/数据驱动下磁性元件的磁芯损耗建模.docx",
+      "sha256": "3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8",
+      "size": 743935
+    },
+    {
+      "artifact_id": "ART-002",
+      "path": "benchmarks/problems/2024/C/raw/附件一（训练集）.xlsx",
+      "sha256": "c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc",
+      "size": 107702460
+    },
+    {
+      "artifact_id": "ART-003",
+      "path": "benchmarks/problems/2024/C/raw/附件二（测试集）.xlsx",
+      "sha256": "b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c",
+      "size": 890928
+    },
+    {
+      "artifact_id": "ART-004",
+      "path": "benchmarks/problems/2024/C/raw/附件三（测试集）.xlsx",
+      "sha256": "8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a",
+      "size": 4341620
+    },
+    {
+      "artifact_id": "ART-005",
+      "path": "benchmarks/problems/2024/C/raw/附件四（Excel表）.xlsx",
+      "sha256": "d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8",
+      "size": 14973
+    }
+  ],
+  "runtime_snapshot": {
+    "path": "observed-artifacts",
+    "status": "FROZEN_COPY_OF_RUNTIME_WORKSPACE",
+    "source": "benchmarks/runtime/historical_2024_c_core_loss/run-003",
+    "includes_raw_turn_logs": true
+  },
+  "structured_transcript": "transcript.yaml",
+  "normalized_evidence_ledger": "evidence-ledger.yaml",
+  "active_evidence_set": "observed-artifacts/evidence/active-evidence-set.yaml",
+  "workspace_manifest": "observed-artifacts/workspace-manifest.yaml",
+  "experiment_records": "observed-artifacts/experiment-records/",
+  "paper": "observed-artifacts/paper/",
+  "outcome": "NEEDS_REVIEW",
+  "submission_status": "NOT_READY",
+  "model_behavior_p0_count": 0,
+  "project_blocker_count": 8,
+  "workspace_isolation": "FAIL",
+  "prior_run_artifacts_visible": false,
+  "observed_repo_listing_exposed_run_002": true,
+  "turn_capture": {
+    "turns_1_to_11": "runtime work JSONL retained",
+    "turns_12_to_14": "thread history retained in canonical transcript; raw per-turn JSONL not emitted"
+  },
+  "notes": [
+    "Turn 001 did not emit turn.completed; its last completed agent message is retained in transcript and the raw log is preserved.",
+    "The model-visible repo listing exposed a historical run-002 path even though the workspace manifest declared prior_run_artifacts_visible:false.",
+    "No evidence indicates that prior-run numerical results were consumed; the exposure remains an isolation regression.",
+    "No Q2-Q5 experiment results, final paper, or populated Attachment 4 were created in this run."
+  ]
+}

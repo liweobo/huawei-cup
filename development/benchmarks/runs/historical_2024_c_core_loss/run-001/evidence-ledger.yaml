@@ -1,0 +1,211 @@
+schema_version: 1
+visibility: EVALUATOR_ONLY
+benchmark_id: historical_2024_c_core_loss_run_001
+run_id: run-001
+status: VERIFIED_OBSERVED_ARTIFACTS
+evidence:
+- evidence_id: E-RUN001-RAW-RESULT
+  type: RUN_ARCHIVE
+  source: run-001
+  created_at_turn: null
+  artifact: raw/result.txt
+  sha256: b16aba0b0112e2be1da2e22d71021394c2d5975ef27bc23b8fdb096ba4fec697
+  claim_supported: Frozen verbatim Layer B result transcript.
+  status: AVAILABLE
+- evidence_id: E-SOURCE-ART-001
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-001
+  source_artifact_id: ART-001
+  created_at_turn: 1
+  artifact: benchmarks/problems/2024/C/raw/数据驱动下磁性元件的磁芯损耗建模.docx
+  sha256: 3268b0b7a1a3ccc5e72cc1490f7389063a7df35e35d307228e952504054e1ec8
+  claim_supported: Problem statement supplied by the user.
+  status: AVAILABLE
+- evidence_id: E-SOURCE-ART-002
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-002
+  source_artifact_id: ART-002
+  created_at_turn: 3
+  artifact: benchmarks/problems/2024/C/raw/附件一（训练集）.xlsx
+  sha256: c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc
+  claim_supported: Training workbook supplied by the user.
+  status: AVAILABLE
+- evidence_id: E-SOURCE-ART-003
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-003
+  source_artifact_id: ART-003
+  created_at_turn: 6
+  artifact: benchmarks/problems/2024/C/raw/附件二（测试集）.xlsx
+  sha256: b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c
+  claim_supported: Waveform classification test workbook supplied by the user.
+  status: AVAILABLE
+- evidence_id: E-SOURCE-ART-004
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-004
+  source_artifact_id: ART-004
+  created_at_turn: 10
+  artifact: benchmarks/problems/2024/C/raw/附件三（测试集）.xlsx
+  sha256: 8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a
+  claim_supported: Core-loss prediction test workbook supplied by the user.
+  status: AVAILABLE
+- evidence_id: E-SOURCE-ART-005
+  type: USER_PROVIDED_ARTIFACT
+  source: ART-005
+  source_artifact_id: ART-005
+  created_at_turn: 10
+  artifact: benchmarks/problems/2024/C/raw/附件四（Excel表）.xlsx
+  sha256: d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8
+  claim_supported: Answer template supplied by the user.
+  status: AVAILABLE
+- evidence_id: E-AUDIT-CODE
+  type: CODE_RUN
+  source: run-001
+  created_at_turn: 3
+  artifact: raw/generated-artifacts/audit_attachment1.py
+  sha256: 604be060cd6a41c753e7d2a25773771e6ff0bc319e3f35a88b539ca47e2983c7
+  claim_supported: Audit script executed for Attachment 1.
+  status: AVAILABLE
+- evidence_id: E-AUDIT-JSON
+  type: DATA_AUDIT_RESULT
+  source: run-001
+  created_at_turn: 3
+  artifact: raw/generated-artifacts/attachment1_audit.json
+  sha256: cddfa2b73afaba42e7737ed7c18829e377618723e0afd93ab1e3e5bd89eb2eb0
+  claim_supported: Canonical Attachment 1 audit metrics, including duplicate_full_rows=1.
+  status: AVAILABLE
+- evidence_id: E-AUDIT-ANOMALIES
+  type: DATA_AUDIT_RESULT
+  source: run-001
+  created_at_turn: 3
+  artifact: raw/generated-artifacts/attachment1_anomalies.csv
+  sha256: 7b4956e489602e3070ca51ea0fae7038990d383c7b721729f554ac1c0b458c43
+  claim_supported: Attachment 1 anomaly candidates.
+  status: AVAILABLE
+- evidence_id: E-Q1-BASE-CODE
+  type: CODE_RUN
+  source: run-001
+  created_at_turn: 4
+  artifact: raw/generated-artifacts/q1_baseline.py
+  sha256: 6a650f7e1eeb7a98706a24fe21a6570801da6adaa61046ab03cf9e6c5f194a2e
+  claim_supported: Q1 baseline script.
+  status: AVAILABLE
+- evidence_id: E-Q1-BASE-METRICS
+  type: EXPERIMENT_RESULT
+  source: run-001
+  created_at_turn: 4
+  artifact: raw/generated-artifacts/outputs/q1_baseline/metrics.json
+  sha256: dc2882f64a51c50a5bc1e3cc5b373a169b564f71b4a075bf6bd88c79f28534d1
+  claim_supported: Q1 baseline observed metrics and predictions.
+  status: AVAILABLE
+- evidence_id: E-Q1-BASE-PRED
+  type: EXPERIMENT_RESULT
+  source: run-001
+  created_at_turn: 4
+  artifact: raw/generated-artifacts/outputs/q1_baseline/attachment2_predictions.csv
+  sha256: 8a8024194aa09692ba841479c2e401d5ac79797fbd3c4f4659dc68859b7f1044
+  claim_supported: Q1 baseline Attachment 2 predictions.
+  status: AVAILABLE
+- evidence_id: E-Q1-BASE-RULES
+  type: MODEL_ARTIFACT
+  source: run-001
+  created_at_turn: 4
+  artifact: raw/generated-artifacts/outputs/q1_baseline/tree_rules.txt
+  sha256: 9473f33376531e1331e9d741b11099a98eaf1cd114947b88d93b0706c79d9910
+  claim_supported: Q1 baseline decision-tree rules.
+  status: AVAILABLE
+- evidence_id: E-Q1-COMPARE-CODE
+  type: CODE_RUN
+  source: run-001
+  created_at_turn: 5
+  artifact: raw/generated-artifacts/q1_compare_models.py
+  sha256: db95c6a0393354dbafd56f1457bfd50dbedce97717e0d5a700ea51f96383478e
+  claim_supported: Q1 candidate comparison script.
+  status: AVAILABLE
+- evidence_id: E-Q1-COMPARE
+  type: EXPERIMENT_RESULT
+  source: run-001
+  created_at_turn: 5
+  artifact: raw/generated-artifacts/outputs/q1_model_comparison/comparison.json
+  sha256: a682531e6f9c67cdb75a63b9eb885f7950f92a681dd78140ec5fe207c7d25dcd
+  claim_supported: Q1 candidate comparison metrics and agreement.
+  status: AVAILABLE
+- evidence_id: E-Q1-COMPARE-PRED
+  type: EXPERIMENT_RESULT
+  source: run-001
+  created_at_turn: 5
+  artifact: raw/generated-artifacts/outputs/q1_model_comparison/attachment2_model_predictions.csv
+  sha256: c0b7ecbba222ef6b60aa5b1273c1883ac8053d8b33e2c991f9fa506f19e5c5a6
+  claim_supported: Q1 candidate predictions; not Q4 loss predictions.
+  status: AVAILABLE
+- evidence_id: E-Q2-CODE
+  type: CODE_RUN
+  source: run-001
+  created_at_turn: 8
+  artifact: raw/generated-artifacts/q2_validate_protocol.py
+  sha256: f4e8c3c811991a113630319fbe2f15a4c6ab269589b5a76f76393849c34fb4cf
+  claim_supported: Q2 validation script; executed protocol is observed from this artifact.
+  status: AVAILABLE
+- evidence_id: E-Q2-JSON
+  type: VALIDATION_RESULT
+  source: run-001
+  created_at_turn: 8
+  artifact: raw/generated-artifacts/outputs/q2_validation/q2_validation.json
+  sha256: ffdbe4654469903fcf5be2abaf9083d948cdc4e6844beb0053c8f8eae4e2c892
+  claim_supported: Q2 validation metrics, split records, bootstrap and sensitivity.
+  status: AVAILABLE
+- evidence_id: E-Q2-SUMMARY
+  type: VALIDATION_RESULT
+  source: run-001
+  created_at_turn: 8
+  artifact: raw/generated-artifacts/outputs/q2_validation/q2_validation_summary.csv
+  sha256: 0bb9141e341dbbf3f1dd763387f7a8ff690b807f90e07b757fd077b52d12f7c0
+  claim_supported: Q2 validation summary table.
+  status: AVAILABLE
+- evidence_id: E-Q4-ALIGN-CODE
+  type: CODE_RUN
+  source: run-001
+  created_at_turn: 10
+  artifact: raw/generated-artifacts/verify_q4_alignment.py
+  sha256: 8b3c56732dc47e98ef61247ed77863cb05c421d9f4584951b07e5aea0edd0446
+  claim_supported: Q4 alignment-only script.
+  status: AVAILABLE
+- evidence_id: E-Q4-ALIGN
+  type: DATA_VALIDATION
+  source: run-001
+  created_at_turn: 10
+  artifact: raw/generated-artifacts/q4_alignment_check.json
+  sha256: 83d5fb039a3da29fa914c962e3e4e989802375ccf4d93d8ca8f6f3ea947ccea9
+  claim_supported: Attachment 3/4 row alignment; no Q4 loss prediction.
+  status: AVAILABLE
+- evidence_id: E-RUN-LEDGER
+  type: EVIDENCE_LEDGER
+  source: run-001
+  created_at_turn: 11
+  artifact: raw/generated-artifacts/evidence_ledger.json
+  sha256: 0474c647e06f1ea7feee6aebc8c80c8721c3a90ffb5de941870ffff2d9c7d8da
+  claim_supported: Raw run evidence ledger generated during the run.
+  status: AVAILABLE
+- evidence_id: E-REVIEWER
+  type: REVIEW_REPORT
+  source: run-001
+  created_at_turn: 12
+  artifact: raw/generated-artifacts/reviewer_evidence_audit.md
+  sha256: f1eee164c8049fa198f228c9525ed66304fac25da68c3c6615b7d522f544f4c1
+  claim_supported: Reviewer evidence audit.
+  status: AVAILABLE
+- evidence_id: E-REVISED
+  type: PAPER_DRAFT
+  source: run-001
+  created_at_turn: 13
+  artifact: raw/generated-artifacts/revised_results_section.md
+  sha256: fe5744ed107114e7d22de71a546adc8eb501fb1cfab1a9a0e2740484a2a2b90c
+  claim_supported: Revised results section with unsupported Q4 numbers removed.
+  status: AVAILABLE
+- evidence_id: E-FINAL
+  type: SUBMISSION_CHECK
+  source: run-001
+  created_at_turn: 14
+  artifact: raw/generated-artifacts/final_submission_check.md
+  sha256: e27258b5e115c38f13e56bf00e829f2e445d3668dfeb2d9d2d3b72890f3f8a8f
+  claim_supported: Final check reporting NOT READY because project blockers remain.
+  status: AVAILABLE

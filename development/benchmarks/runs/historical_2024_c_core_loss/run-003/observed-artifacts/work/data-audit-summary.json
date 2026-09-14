@@ -1,0 +1,597 @@
+{
+  "run_id": "run-003",
+  "generated_at": "2026-09-02",
+  "status": "REAL_RUN_READ_ONLY_AUDIT",
+  "source_files": [
+    {
+      "key": "attachment1_training",
+      "file": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\benchmarks\\problems\\2024\\C\\raw\\附件一（训练集）.xlsx",
+      "sha256": "c16aee712bc0ad480b5285f17fa7fa57a5e22a1901d4a6adb0a1eb83ecfb7ffc",
+      "sheets": [
+        {
+          "name": "材料1",
+          "rows": 3400,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "三角波": 1412,
+            "正弦波": 1067,
+            "梯形波": 921
+          },
+          "temperature_counts": {
+            "25": 861,
+            "50": 845,
+            "70": 843,
+            "90": 851
+          },
+          "frequency_min": 50020.0,
+          "frequency_max": 446410.0,
+          "loss_min": 684.0462375,
+          "loss_median": 44323.28435,
+          "loss_max": 3616132.536
+        },
+        {
+          "name": "材料2",
+          "rows": 3000,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "正弦波": 1097,
+            "三角波": 1003,
+            "梯形波": 900
+          },
+          "temperature_counts": {
+            "25": 813,
+            "50": 727,
+            "70": 746,
+            "90": 714
+          },
+          "frequency_min": 49990.0,
+          "frequency_max": 501180.0,
+          "loss_min": 415.6131139,
+          "loss_median": 55545.23637,
+          "loss_max": 2750045.773
+        },
+        {
+          "name": "材料3",
+          "rows": 3200,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 1,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "梯形波": 1112,
+            "三角波": 1078,
+            "正弦波": 1010
+          },
+          "temperature_counts": {
+            "25": 850,
+            "50": 801,
+            "70": 754,
+            "90": 795
+          },
+          "frequency_min": 49990.0,
+          "frequency_max": 501180.0,
+          "loss_min": 739.3340863,
+          "loss_median": 61055.740115,
+          "loss_max": 3525389.296
+        },
+        {
+          "name": "材料4",
+          "rows": 2800,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "三角波": 1455,
+            "正弦波": 880,
+            "梯形波": 465
+          },
+          "temperature_counts": {
+            "25": 720,
+            "50": 697,
+            "70": 687,
+            "90": 696
+          },
+          "frequency_min": 50010.0,
+          "frequency_max": 446690.0,
+          "loss_min": 452.2277116,
+          "loss_median": 25284.38441,
+          "loss_max": 2322456.147
+        }
+      ]
+    },
+    {
+      "key": "attachment2_test_waveform",
+      "file": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\benchmarks\\problems\\2024\\C\\raw\\附件二（测试集）.xlsx",
+      "sha256": "b46a4bf69331a41d4cf6190c97906914619c76335bef43ef37ba148cd99fc66c",
+      "sheets": [
+        {
+          "name": "测试集",
+          "rows": 80,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "序号",
+            "温度，oC",
+            "频率，Hz",
+            "磁芯材料",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "material_counts": {
+            "材料1": 20,
+            "材料2": 20,
+            "材料3": 20,
+            "材料4": 20
+          },
+          "temperature_counts": {
+            "25": 21,
+            "50": 18,
+            "70": 24,
+            "90": 17
+          },
+          "frequency_min": 50020.0,
+          "frequency_max": 501180.0
+        }
+      ]
+    },
+    {
+      "key": "attachment3_test_loss",
+      "file": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\benchmarks\\problems\\2024\\C\\raw\\附件三（测试集）.xlsx",
+      "sha256": "8c403b8d7717e42567ec7c6dec204feff87023b83d45b87ec0c983c53a2d929a",
+      "sheets": [
+        {
+          "name": "测试集",
+          "rows": 400,
+          "columns": 1029,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "序号",
+            "温度，oC",
+            "频率，Hz",
+            "磁芯材料",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "..."
+          ],
+          "material_counts": {
+            "材料1": 100,
+            "材料2": 100,
+            "材料3": 100,
+            "材料4": 100
+          },
+          "temperature_counts": {
+            "25": 120,
+            "50": 97,
+            "70": 89,
+            "90": 94
+          },
+          "frequency_min": 50020.0,
+          "frequency_max": 501180.0,
+          "waveform_counts": {
+            "三角波": 153,
+            "正弦波": 143,
+            "梯形波": 104
+          }
+        }
+      ]
+    },
+    {
+      "key": "attachment4_template",
+      "file": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\benchmarks\\problems\\2024\\C\\raw\\附件四（Excel表）.xlsx",
+      "sha256": "d8fdffdf63839f7b40d5dd87be6923af04ad1d52180072a47c5b4df70832c1c8",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 400,
+          "columns": 3,
+          "missing_cells": 800,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "序号",
+            "附件二（80个样品）励磁波形分类结果",
+            "附件三（400个样品）磁芯损耗预测结果"
+          ]
+        },
+        {
+          "name": "Sheet2",
+          "rows": 0,
+          "columns": 0,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0
+        },
+        {
+          "name": "Sheet3",
+          "rows": 0,
+          "columns": 0,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0
+        }
+      ]
+    }
+  ],
+  "canonical_data_audit": {
+    "attachment1_training": {
+      "total_rows": 12400,
+      "max_columns": 1028,
+      "missing_cells": 0,
+      "invalid_rows": 0,
+      "duplicate_full_rows": 1,
+      "frequency_boundary_rows": 170,
+      "frequency_outside_nominal_rows": 163,
+      "anomaly_rows_scalar_iqr_candidate": 1528,
+      "unresolved_questions": [
+        "确认 1024 个采样点是否严格覆盖一个完整周期且首尾点是否重复",
+        "确认预测/回填时对温度、频率、材料和波形的可获得时点"
+      ],
+      "sheets": [
+        {
+          "name": "材料1",
+          "rows": 3400,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "三角波": 1412,
+            "正弦波": 1067,
+            "梯形波": 921
+          },
+          "temperature_counts": {
+            "25": 861,
+            "50": 845,
+            "70": 843,
+            "90": 851
+          },
+          "frequency_min": 50020.0,
+          "frequency_max": 446410.0,
+          "loss_min": 684.0462375,
+          "loss_median": 44323.28435,
+          "loss_max": 3616132.536
+        },
+        {
+          "name": "材料2",
+          "rows": 3000,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "正弦波": 1097,
+            "三角波": 1003,
+            "梯形波": 900
+          },
+          "temperature_counts": {
+            "25": 813,
+            "50": 727,
+            "70": 746,
+            "90": 714
+          },
+          "frequency_min": 49990.0,
+          "frequency_max": 501180.0,
+          "loss_min": 415.6131139,
+          "loss_median": 55545.23637,
+          "loss_max": 2750045.773
+        },
+        {
+          "name": "材料3",
+          "rows": 3200,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 1,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "梯形波": 1112,
+            "三角波": 1078,
+            "正弦波": 1010
+          },
+          "temperature_counts": {
+            "25": 850,
+            "50": 801,
+            "70": 754,
+            "90": 795
+          },
+          "frequency_min": 49990.0,
+          "frequency_max": 501180.0,
+          "loss_min": 739.3340863,
+          "loss_median": 61055.740115,
+          "loss_max": 3525389.296
+        },
+        {
+          "name": "材料4",
+          "rows": 2800,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "温度，oC",
+            "频率，Hz",
+            "磁芯损耗，w/m3",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "waveform_counts": {
+            "三角波": 1455,
+            "正弦波": 880,
+            "梯形波": 465
+          },
+          "temperature_counts": {
+            "25": 720,
+            "50": 697,
+            "70": 687,
+            "90": 696
+          },
+          "frequency_min": 50010.0,
+          "frequency_max": 446690.0,
+          "loss_min": 452.2277116,
+          "loss_median": 25284.38441,
+          "loss_max": 2322456.147
+        }
+      ]
+    },
+    "attachment2_test_waveform": {
+      "total_rows": 80,
+      "max_columns": 1028,
+      "missing_cells": 0,
+      "invalid_rows": 0,
+      "duplicate_full_rows": 0,
+      "frequency_boundary_rows": 2,
+      "frequency_outside_nominal_rows": 2,
+      "anomaly_rows_scalar_iqr_candidate": 0,
+      "unresolved_questions": [
+        "确认 1024 个采样点是否严格覆盖一个完整周期且首尾点是否重复",
+        "确认预测/回填时对温度、频率、材料和波形的可获得时点"
+      ],
+      "sheets": [
+        {
+          "name": "测试集",
+          "rows": 80,
+          "columns": 1028,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "序号",
+            "温度，oC",
+            "频率，Hz",
+            "磁芯材料",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "3",
+            "..."
+          ],
+          "material_counts": {
+            "材料1": 20,
+            "材料2": 20,
+            "材料3": 20,
+            "材料4": 20
+          },
+          "temperature_counts": {
+            "25": 21,
+            "50": 18,
+            "70": 24,
+            "90": 17
+          },
+          "frequency_min": 50020.0,
+          "frequency_max": 501180.0
+        }
+      ]
+    },
+    "attachment3_test_loss": {
+      "total_rows": 400,
+      "max_columns": 1029,
+      "missing_cells": 0,
+      "invalid_rows": 0,
+      "duplicate_full_rows": 0,
+      "frequency_boundary_rows": 2,
+      "frequency_outside_nominal_rows": 2,
+      "anomaly_rows_scalar_iqr_candidate": 0,
+      "unresolved_questions": [
+        "确认 1024 个采样点是否严格覆盖一个完整周期且首尾点是否重复",
+        "确认预测/回填时对温度、频率、材料和波形的可获得时点"
+      ],
+      "sheets": [
+        {
+          "name": "测试集",
+          "rows": 400,
+          "columns": 1029,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "序号",
+            "温度，oC",
+            "频率，Hz",
+            "磁芯材料",
+            "励磁波形",
+            "0（磁通密度B，T）",
+            "1",
+            "2",
+            "..."
+          ],
+          "material_counts": {
+            "材料1": 100,
+            "材料2": 100,
+            "材料3": 100,
+            "材料4": 100
+          },
+          "temperature_counts": {
+            "25": 120,
+            "50": 97,
+            "70": 89,
+            "90": 94
+          },
+          "frequency_min": 50020.0,
+          "frequency_max": 501180.0,
+          "waveform_counts": {
+            "三角波": 153,
+            "正弦波": 143,
+            "梯形波": 104
+          }
+        }
+      ]
+    },
+    "attachment4_template": {
+      "total_rows": 400,
+      "max_columns": 3,
+      "missing_cells": 800,
+      "invalid_rows": 0,
+      "duplicate_full_rows": 0,
+      "frequency_boundary_rows": 0,
+      "frequency_outside_nominal_rows": 0,
+      "anomaly_rows_scalar_iqr_candidate": 0,
+      "unresolved_questions": [
+        "中文字段显示编码需以原始工作簿界面复核",
+        "确认预测/回填时对温度、频率、材料和波形的可获得时点"
+      ],
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 400,
+          "columns": 3,
+          "missing_cells": 800,
+          "duplicate_full_rows": 0,
+          "header_preview": [
+            "序号",
+            "附件二（80个样品）励磁波形分类结果",
+            "附件三（400个样品）磁芯损耗预测结果"
+          ]
+        },
+        {
+          "name": "Sheet2",
+          "rows": 0,
+          "columns": 0,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0
+        },
+        {
+          "name": "Sheet3",
+          "rows": 0,
+          "columns": 0,
+          "missing_cells": 0,
+          "duplicate_full_rows": 0
+        }
+      ]
+    }
+  },
+  "field_mapping": {
+    "attachment1_training": {
+      "position_1": "温度 (°C)",
+      "position_2": "频率 (Hz)",
+      "position_3": "磁芯损耗 (W/m^3)",
+      "position_4": "励磁波形",
+      "position_5_to_1028": "磁通密度 B 的 1024 个等间距采样点 (T)"
+    },
+    "attachment2_test_waveform": {
+      "position_1": "样本序号",
+      "position_2": "温度 (°C)",
+      "position_3": "频率 (Hz)",
+      "position_4": "磁芯材料",
+      "position_5_to_1028": "磁通密度 B 的 1024 个等间距采样点 (T)"
+    },
+    "attachment3_test_loss": {
+      "position_1": "样本序号",
+      "position_2": "温度 (°C)",
+      "position_3": "频率 (Hz)",
+      "position_4": "磁芯材料",
+      "position_5": "励磁波形",
+      "position_6_to_1029": "磁通密度 B 的 1024 个等间距采样点 (T)"
+    },
+    "attachment4_template": {
+      "column_1": "样本序号",
+      "column_2": "附件二 80 个样品的励磁波形分类结果",
+      "column_3": "附件三 400 个样品的磁芯损耗预测"
+    }
+  },
+  "notes": [
+    "脚本的 ID/高相关/IQR 输出均为候选提示，不是自动删除或变换规则。",
+    "frequency_boundary_rows 定义为频率 <= 50000 Hz 或 >= 500000 Hz 的行；频率越界另行统计。",
+    "anomaly_rows 定义为在可标量列（温度、频率、磁芯损耗；测试集无损耗）中至少一列触发 1.5*IQR 候选的行，仅作复核提示。"
+  ]
+}
