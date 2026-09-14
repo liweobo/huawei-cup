@@ -17,3 +17,5 @@
 15. 重复实体任务必须先确定 `validation_unit` 和 prediction setting；面向新实体时所有同一 entity 的记录进入同一 fold，train/validation entity overlap 必须为 0。Group leakage 会使 validation result `INVALIDATED`；PCA、缩放、聚类和 subgroup boundary 也只能在 training groups 内拟合。
 16. 新实体、同实体新记录、同实体未来和新实体未来的 scope 不可互换；GROUP 与 TIME 独立校验。通过 `apply_group_gate()` 保存 Group Structure Contract 和真实 fold IDs，再通过 experiment validator；记录必须能重算实体交集。未知 scope 不得默认 ROW；类别分层不能破坏 group separation，fold feasibility 必须在模型运行前检查。
 17. `FIT_RESIDUAL` 只描述训练拟合；`VALIDATION_ERROR` 才描述相应 holdout 泛化。正式选模使用同一合法 group-aware 协议，最终可用全部训练 entities 重拟合曲线；row-random 泄漏对照不能参与选模。相关重复观测的 bootstrap 优先按 entity 抽样，不把行数当独立样本数。
+18. 观察性措施分析先描述实体级暴露支持、初始特征、结局和 co-occurrence，再在同一样本比较 crude / adjusted association。记录 Association Analysis Contract 与实际调整项；通过 `association_analysis.apply_association_gate()` 接入 Experiment Record，处理后调整、未来/结局泄漏和不支持的因果等级不能发布为有效结果。
+19. 纵向关联估计必须处理实体依赖，区间不得假定每行独立；若另外声称预测泛化仍需合法 Group / Temporal validation。稀有措施标 `ESTIMATE_UNSTABLE`；propensity 仅按条件选用，重叠、极端权重、ESS 和 balance 检查不能省略，也不等于因果识别。

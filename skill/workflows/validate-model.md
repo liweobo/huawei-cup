@@ -32,10 +32,11 @@
 3. 按任务读取指标原则；分类先检查类别分布，激活 Class imbalance metric trap。明显不平衡时必须比较多数类基线，并报告 ROC-AUC、PR-AUC（附正类流行率）、Macro F1、Balanced Accuracy、少数类 Recall、Precision、F1 和 Specificity；概率任务补充 Brier score 与校准说明。Accuracy 不能作为唯一或主要选模依据。若使用决策阈值，只能在 validation/inner validation 选择并在 test 前冻结。
 4. ordinal 任务复核 `ordered_levels` 与 `ordering_source`，确认每 fold 覆盖全部等级、概率归一化且累计阈值概率单调；回归取整必须显式标记 approximation。与 Baseline 比较泛化指标、失败案例和实际意义；优化额外检查全部约束。
 5. 纵向曲线分别保存全训练拟合的 `FIT_RESIDUAL` 与完整实体留出的 `VALIDATION_ERROR`，最终全量重拟合不能替代 grouped model selection。PCA、缩放、聚类和 subgroup boundary 记录实际 fit 输入 IDs，验证其仅来自当前 training fold；验证实体仅按训练规则分配亚组。bootstrap 存在重复实体时优先以 entity 为单位，保留抽中实体全部观测；不能把 correlated rows 视为独立 n 或把 fold 标准差写成置信区间。
-6. 灵敏度：用 `scripts/sensitivity.py` 对关键参数做 `θ × (1 ± δ)` 或有依据的非对称扰动；baseline 为 0 时只解释绝对变化，除非显式提供有领域含义的 normalization scale。
-7. 鲁棒性：用 `scripts/robustness.py` 运行用户定义的命名情景，比较参数、噪声、样本、种子、极端情景或初值变化是否改变结论；该脚本是 scenario runner，不自动生成这些扰动。
-8. 把实际验证完整写入 `executed_protocol`，由 [`../scripts/runtime_provenance.py`](../scripts/runtime_provenance.py) 自动计算 `protocol_changed`。变化时填写 reason、可比性和用户披露；校验通过后才能把记录标为 `OBSERVED`。
-9. 所有 validation evidence 绑定当前 `run_id` 和 `experiment_id`，并明确适用边界、断裂证据链和待补数据。
+6. 关联分析先读取 [`observational-association.md`](../references/observational-association.md)，复核 assignment、处理前证据、暴露时间和 estimand，确认 crude / adjusted 在同一样本上比较；变化只解释为关联或可能混杂。纵向估计按 entity 处理依赖，稀有措施标 `ESTIMATE_UNSTABLE`；若使用 propensity 检查 overlap、极端权重、每侧 ESS 和前后 balance。不存在可靠识别时，不得用模型收敛、显著系数或 balance 通过来升级因果 claim。
+7. 灵敏度：用 `scripts/sensitivity.py` 对关键参数做 `θ × (1 ± δ)` 或有依据的非对称扰动；baseline 为 0 时只解释绝对变化，除非显式提供有领域含义的 normalization scale。
+8. 鲁棒性：用 `scripts/robustness.py` 运行用户定义的命名情景，比较参数、噪声、样本、种子、极端情景或初值变化是否改变结论；该脚本是 scenario runner，不自动生成这些扰动。
+9. 把实际验证完整写入 `executed_protocol`，由 [`../scripts/runtime_provenance.py`](../scripts/runtime_provenance.py) 自动计算 `protocol_changed`。变化时填写 reason、可比性和用户披露；校验通过后才能把记录标为 `OBSERVED`。
+10. 所有 validation evidence 绑定当前 `run_id` 和 `experiment_id`，并明确适用边界、断裂证据链和待补数据。
 
 ## Checks
 

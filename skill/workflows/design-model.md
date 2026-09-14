@@ -36,8 +36,9 @@
 5. 存在重复实体时先按 A/B/C/D 明确 prediction setting 与 ROW/ENTITY/TIME/ENTITY_TIME；新实体泛化必须将 group separation 置于完美 stratification 之上。在实例化 splitter 前检查独立 group 数、group size 和每个等级出现在哪些 groups；再检查实际 folds 的类别覆盖。训练 fold 缺等级应拒绝或改用合法协议，不能通过拆 group 修复。无时间外推的静态重复数据只激活 group gate。模型排名只能来自相同合法验证协议，row-random 与 grouped 的分数不得跨协议选优。
 6. 二分类样本明显不平衡时，先纳入多数类基线；比较正则化 Logistic 与少量容量受控候选，并在同一协议下比较无权重和 `class_weight="balanced"`（若模型支持）。Accuracy 不能单独决定主模型，候选必须同时检查 PR-AUC、Balanced Accuracy、少数类 Recall、Precision、F1 和 Specificity。
 7. 目标是 ordinal 时，先定义中位等级/最常见等级 baseline，再比较 nominal multinomial 与低容量 cumulative ordinal 候选；连续回归后取整只能标为 approximation，不作为正式 ordinal 模型。折数不得超过最少类别计数。
-8. 选择主模型、保底模型和改进假设；改进必须对应可观测缺陷。
-9. 若声称创新，激活 `innovation-patterns.md` 与 Gotchas 的 Fake innovation 检查。
+8. 对措施关系题先读取 [`observational-association.md`](../references/observational-association.md)，明确 estimand 和 claim_level；用同一样本的 `outcome ~ exposure` 与加少量处理前 confounders 的模型区分 crude / adjusted association。纵向结果选简单 mixed model、GEE、entity-clustered regression 或合法实体摘要；按题意加入少量 time × exposure，未知暴露时序只能解释 trajectory association。稀有或共现措施不做巨大组合搜索，propensity 不是默认要求。
+9. 选择主模型、保底模型和改进假设；改进必须对应可观测缺陷。预先指定的关联估计不冒充预测选模；若比较新实体预测能力，仍使用合法 grouped validation。
+10. 若声称创新，激活 `innovation-patterns.md` 与 Gotchas 的 Fake innovation 检查。
 
 ## Checks
 

@@ -31,6 +31,7 @@
 5. 摘要写研究对象、各问题方法、关键真实数字、验证、结论和真正创新；禁用无证据的“效果较好”。
 6. 创新点回答原问题、修改内容、合理性、改善位置和实验支持；激活 Fake innovation 检查。
 7. 核对摘要、正文、表格、图、代码、单位和 active evidence version；生成的 Paper Claim 必须使 `Claim -> Evidence -> Artifact` 仍可解析。
+8. 观察性关联先读取 [`observational-association.md`](../references/observational-association.md)，同时交代分配机制、暴露时序、实体数/观测数、处理前调整依据和 crude / adjusted 结果。Paper Claim 增补 `text` 原句及 association_contract，检查 `UNSUPPORTED_CAUSAL_CLAIM`；使用“与……相关”“调整后仍观察到……关联”。把未知暴露时序、初始测量的时序限制、稀有组和共现措施写入结果解释，不能用统计显著性替换因果识别。
 
 ## Checks
 

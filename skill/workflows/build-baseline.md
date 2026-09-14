@@ -27,6 +27,7 @@
 2. 按与主模型相同的切分和指标真实运行，记录配置和产物。
 3. 检查结果是否足以发现数据/指标/代码错误。
 4. 写明主模型预期改善的具体指标或约束表现。
+5. 措施关系题先读取 [`observational-association.md`](../references/observational-association.md)，以描述性组间比较和 crude association 作为比较基准，再在同一完整病例上加入少量已验证的处理前变量。系数变化不能称作“效果改善”；重复观测按 entity 处理依赖，并保留暴露时序与 claim_level 边界。
 
 ## Checks
 

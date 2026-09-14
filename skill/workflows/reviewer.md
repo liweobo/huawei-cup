@@ -35,6 +35,7 @@
 6. 对 ordinal 结果核验等级顺序来源、距离感知指标、稀疏等级的 fold 覆盖和概率合法性；未声明的回归取整或不同协议比较属于验证缺陷。
 7. 先核对预测场景：声称新实体泛化却对重复观测做 random row split，要求真实 fold entity IDs；有重叠则报告 `P0 GROUP_LEAKAGE`、`INVALIDATED`，不能只 warning。未提供 ID 证据时报告 GROUP_LEAKAGE 风险并保持 UNVERIFIED。把全部 longitudinal rows 宣称为独立 n，报告 `PSEUDOREPLICATION / DEPENDENCE ISSUE`。同实体未来场景允许实体重叠，但时间 gate 仍须单独通过。检查 `FIT_RESIDUAL` 是否被冒充 `VALIDATION_ERROR`、PCA/缩放/聚类/分组边界的实际 fit rows 是否仅在 training fold、row bootstrap 是否错误宣称独立不确定性。不同 split 协议的模型分数不能直接排名。
 8. 对不平衡二分类复核类别分布、多数类基线、分层/组/时间验证、fold 波动、PR-AUC 相对正类流行率、少数类 Recall 与阈值来源。若任务重视少数类而候选少数类 Recall 为 0，即使 Accuracy 很高也不能标为 `VALID FINAL MODEL`；若 test labels 参与阈值选择，或 SMOTE/特征选择/PCA/插补/缩放在 split/CV 前拟合，报告 `P0 DATA_LEAKAGE`。
+9. 观察性关系题先读取 [`observational-association.md`](../references/observational-association.md)，复核 Association Analysis Contract：病情/需求/风险影响措施分配的混杂、处理前 confounder 证据、暴露时序、实体依赖、稀有措施及共现。把处理后变量作为普通 confounder 或把 outcome 放入 propensity model 属于分析失效。无可靠识别却写“导致”“使得”“有效降低”“增加风险”等因果表述，报告 `P1 UNSUPPORTED_CAUSAL_CLAIM` 并将该 Claim `INVALIDATED`；使用 `association_analysis.review_association_claim()` 辅助检查，同时逐条审查上下文。未知时序只能报告 association / trajectory association；randomization、matching、IPTW 或调整回归的名称本身不能替代设计证据。
 10. 对照 ACTIVE_EVIDENCE_SET 和 Evidence Ledger 检查每个 Paper Claim 的 `run_id/experiment_id/artifact_id`。引用其他 run 且未标为 historical 时报告 `STALE_EVIDENCE_REFERENCE`；主动发现并阻止旧证据混用属于 Reviewer 正确行为，不是 model-behavior P0。
 
 ## Checks

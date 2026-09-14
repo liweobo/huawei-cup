@@ -98,6 +98,19 @@ def validate_experiment_record(record: dict[str, Any] | None) -> list[str]:
         errors.append(f"protocol_changed must be computed as {changed}")
     if changed and not str(record.get("change_reason", "")).strip():
         errors.append("change_reason is required when normalized protocols differ")
+    association_protocol = any(
+        isinstance(record.get(name), dict) and record[name].get("association_analysis")
+        for name in ("planned_protocol", "executed_protocol")
+    )
+    if association_protocol or "association_contract" in record or "association_scope" in record:
+        try:
+            from .association_analysis import association_scope_errors
+        except ImportError:  # pragma: no cover - direct CLI
+            from association_analysis import association_scope_errors
+        errors.extend(association_scope_errors(record.get("association_contract"), record.get("association_scope")))
+        association_scope = record.get("association_scope")
+        if status == "OBSERVED" and (not isinstance(association_scope, dict) or association_scope.get("gate_status") != "PASS"):
+            errors.append("OBSERVED association requires association gate PASS")
     temporal_scope = record.get("temporal_scope")
     if temporal_scope is not None:
         errors.extend(temporal_scope_errors(temporal_scope))
@@ -322,10 +335,21 @@ def validate_active_evidence_set(data: dict[str, Any], active_run_id: str) -> li
 def validate_paper_claim(claim: dict[str, Any], active_set: dict[str, Any], active_run_id: str) -> list[str]:
     """Reject stale or inactive evidence versions in paper claims."""
     errors: list[str] = []
+    if "association_contract" in claim:
+        try:
+            from .association_analysis import review_association_claim
+        except ImportError:  # pragma: no cover - direct CLI
+            from association_analysis import review_association_claim
+        claim_text = claim.get("text", claim.get("claim", ""))
+        if not isinstance(claim_text, str) or not claim_text.strip():
+            errors.append("ASSOCIATION_CLAIM_TEXT_REQUIRED: include the actual paper sentence")
+        else:
+            reviewed = review_association_claim(claim_text, claim["association_contract"])
+            errors.extend(item["code"] for item in reviewed["findings"])
     question = str(claim.get("question", ""))
     reference = claim.get("evidence_ref")
     if not isinstance(reference, dict):
-        return ["paper claim requires structured evidence_ref"]
+        return errors + ["paper claim requires structured evidence_ref"]
     ref_run = reference.get("run_id")
     if ref_run != active_run_id and not claim.get("historical_evidence_reference"):
         errors.append("STALE_EVIDENCE_REFERENCE: paper claim references another run")

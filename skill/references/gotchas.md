@@ -32,6 +32,12 @@
 
 **Activation**：`audit-data`、`design-model`、`run-experiment`、`validate-model` 和 `reviewer` 发现重复实体时建立 Group Structure Contract。面向新实体泛化必须使用 group-aware splitter，检查每 fold `overlap_count = 0`；row split、row bootstrap 或 in-sample residual 不得冒充 entity-level validation evidence。若同时存在时间边界，独立执行 Temporal Availability Gate。
 
+## Confounding by indication and post-exposure adjustment
+
+**Failure**：措施接受组结局更差便声称措施有害；把首次测量自动视为处理前变量；把全随访响应加入 adjustment，再把系数称为效应。
+
+**Activation**：`audit-data`、`design-model`、`run-experiment`、`validate-model`、`write-paper` 和 `reviewer` 遇到非随机措施关系题时，读取 [`observational-association.md`](observational-association.md)。先建 Association Analysis Contract，核验处理前信息与暴露时序、描述实体级支持和共现，再比较粗/调整后关联。未知时序只能作限定清楚的关联；无可靠识别的因果表述报 `UNSUPPORTED_CAUSAL_CLAIM`。
+
 ## Fake innovation
 
 **Failure**：把使用 XGBoost、TOPSIS、LSTM 或遗传算法本身当作创新。
