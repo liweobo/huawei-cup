@@ -1,0 +1,84 @@
+[
+  {
+    "idea": "prediction_feature_selection",
+    "appears_in_n_papers": 9,
+    "total_reviewed": 10,
+    "source_ids": [
+      "P01",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10"
+    ],
+    "interpretation": "Occurrence evidence only; no claim of validation-safe performance benefit."
+  },
+  {
+    "idea": "baseline_retained_with_followup",
+    "appears_in_n_papers": 8,
+    "total_reviewed": 10,
+    "source_ids": [
+      "P01",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P08",
+      "P09",
+      "P10"
+    ],
+    "interpretation": "Occurrence evidence only; no claim of validation-safe performance benefit."
+  },
+  {
+    "idea": "explicit_input_comparison",
+    "appears_in_n_papers": 4,
+    "total_reviewed": 10,
+    "source_ids": [
+      "P01",
+      "P06",
+      "P07",
+      "P09"
+    ],
+    "interpretation": "Occurrence evidence only; no claim of validation-safe performance benefit."
+  },
+  {
+    "idea": "q2_curve_candidate_comparison",
+    "appears_in_n_papers": 8,
+    "total_reviewed": 10,
+    "source_ids": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P06",
+      "P07",
+      "P09",
+      "P10"
+    ],
+    "interpretation": "Occurrence evidence only; no claim of validation-safe performance benefit."
+  },
+  {
+    "idea": "entity_trajectory_shape_grouping",
+    "appears_in_n_papers": 2,
+    "total_reviewed": 10,
+    "source_ids": [
+      "P06",
+      "P10"
+    ],
+    "interpretation": "Occurrence evidence only; no claim of validation-safe performance benefit."
+  },
+  {
+    "idea": "q3_time_summary_engineering",
+    "appears_in_n_papers": 3,
+    "total_reviewed": 10,
+    "source_ids": [
+      "P01",
+      "P05",
+      "P06"
+    ],
+    "interpretation": "Occurrence evidence only; no claim of validation-safe performance benefit."
+  }
+]

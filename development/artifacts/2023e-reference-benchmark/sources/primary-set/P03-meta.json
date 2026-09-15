@@ -1,0 +1,30 @@
+{
+  "source_id": "P03",
+  "filename": "E23103530067.pdf",
+  "url": "https://github.com/zhanwen/MathModel/blob/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/E/E23103530067.pdf",
+  "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/E/E23103530067.pdf",
+  "repository_commit": "cd5be91735ebf11d5ee52eb170e86a6d07131977",
+  "github_blob_sha": "93b421652c067f132f184b66315f57eb3e8bb344",
+  "sha256": "832ce085bf76e77e99333a3d0d1e291ea4d434340c819d6286471a5cabb94311",
+  "bytes": 7149082,
+  "content_type": "application/octet-stream",
+  "accessed_at": "2026-09-15T01:03:58.537988+00:00",
+  "raw_file": "P03.pdf",
+  "page_count": 85,
+  "extracted_characters": 71108,
+  "pages_with_lt100_characters": [
+    1,
+    35,
+    45,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85
+  ],
+  "text_file": "P03.txt",
+  "pages_file": "P03-pages.json",
+  "text_extractor": "PDFium via pypdfium2; fixes CJK encoding that pypdf did not decode",
+  "extracted_at": "2026-09-15T01:06:31.923496+00:00"
+}

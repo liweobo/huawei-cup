@@ -1,0 +1,26 @@
+{
+  "source_id": "P02",
+  "filename": "E23102550019.pdf",
+  "url": "https://github.com/zhanwen/MathModel/blob/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/E/E23102550019.pdf",
+  "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/E/E23102550019.pdf",
+  "repository_commit": "cd5be91735ebf11d5ee52eb170e86a6d07131977",
+  "github_blob_sha": "ae4242edb470cfff1d710ce5ae374bd67f836e19",
+  "sha256": "7111ae76a0a000ae0667979809bb38eef9ce74f9a05dfbdfaae39cb50889d563",
+  "bytes": 10360788,
+  "content_type": "application/octet-stream",
+  "accessed_at": "2026-09-15T01:04:04.607765+00:00",
+  "raw_file": "P02.pdf",
+  "page_count": 68,
+  "extracted_characters": 49261,
+  "pages_with_lt100_characters": [
+    1,
+    36,
+    39,
+    42,
+    43
+  ],
+  "text_file": "P02.txt",
+  "pages_file": "P02-pages.json",
+  "text_extractor": "PDFium via pypdfium2; fixes CJK encoding that pypdf did not decode",
+  "extracted_at": "2026-09-15T01:06:30.958264+00:00"
+}

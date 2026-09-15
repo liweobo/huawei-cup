@@ -1,172 +1,177 @@
 # 2023E Excellent-Solution Post-hoc Benchmark
 
-日期：2026-09-15（北京时间）。当前仓库提交：cce0a80d03aef5ec69713cac5afa85cb154933b7。
-
-**Final Decision: GENERALIZABLE_GAP_FOUND**  
-**reference_quality: MEDIUM**  
-**Top-1: VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION**
-
-当前Skill的泄漏防护、序数建模和观察性关联纪律已有明确优势；已保存方案在特征组设计、信息增量比较与完整建模交付方面仍不足。本轮没有证据支持按模型名称替换方法，也没有证据支持“获奖方案普遍采用完整轨迹聚类”。
+结论：**GENERALIZABLE_GAP_FOUND**。Top-1为 **VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION（有验证依据的特征集设计与增量消融）**。当前方案具备较严格的行为正确性防护，但输入表示的系统比较和竞赛建模交付深度仍不足。本轮没有修改Skill、训练模型或更换历史结果。
 
 ## 1. Reference Sources
 
-[Source Ledger](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/source-ledger.md)记录每个来源的作者、URL、奖项核验、发表状态、全文范围与置信度；[Source Notes](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/source-notes.md)提供具体页码/源码行号。
+按用户指定 [GitHub E题目录](https://github.com/zhanwen/MathModel/tree/master/国赛论文/2023年优秀论文/E) 枚举全部10份PDF，固定commit为 `cd5be91735ebf11d5ee52eb170e86a6d07131977`；下载文件逐一核对Git blob SHA1、字节数和SHA256。共821页完整文件，10篇均审读九小问的相关正文方法、结果、验证和局限。
 
-- R-A01：竞赛官网最终获奖名单；R-A04：西安交大官方获奖新闻。
-- R-B01/R-B04：两篇正式发表的曲线、静态亚组及治疗关联研究；与同题结构高度一致，数据版本未完全核实。
-- R-B02：正式发表的Q1/Q2文章，主要作为方法缺陷对照。
-- R-B03/R-B07：作者公开完整参赛稿、LaTeX及可静态审查的代码。
-- R-B08：作者公开原参赛PDF；与作者后来复盘改进的代码分开。
-- R-B05：部分MATLAB实现，仅辅助；R-B06主要题面转录，排除出核心比较。
-- R-C01：南昌大学论文封面，与官方一等奖记录匹配，正文不可获得。
+| ID | Filename | Institution | Pages | 官方奖项 |
+| --- | --- | --- | --- | --- |
+| P01 | E23100650012.pdf | 天津师范大学 | 59 | 一等奖，数模之星提名 |
+| P02 | E23102550019.pdf | 东华大学 | 68 | 一等奖 |
+| P03 | E23103530067.pdf | 浙江工商大学 | 85 | 一等奖 |
+| P04 | E23103570015.pdf | 安徽大学 | 138 | 一等奖 |
+| P05 | E23104030073.pdf | 南昌大学 | 60 | 一等奖 |
+| P06 | E23105330424.pdf | 中南大学 | 115 | 一等奖 |
+| P07 | E23106730076.pdf | 云南大学 | 109 | 一等奖 |
+| P08 | E23106980022.pdf | 西安交通大学 | 53 | 一等奖，数模之星季军 |
+| P09 | E23107030070.pdf | 西安建筑科技大学 | 73 | 一等奖 |
+| P10 | E23900310014.pdf | 清华大学/深圳国际研究生院 | 61 | 一等奖 |
+
+标题、作者、全部来源字段、官方名单行号、原始URL及文件校验见 [source-ledger.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/source-ledger.md)。九十个分问的逐篇记录见 [source-notes.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/source-notes.md)。页码均指含封面的物理PDF页码。
 
 ## 2. Source Reliability
 
-**NO VERIFIED FULL AWARD PAPER AVAILABLE**：本次未获得能核验为一/二/三等奖的完整论文。南昌大学队号23104030073及三名队员与官方E题名单第10行匹配，奖项为一等奖，但文档站只提供可读封面；不能推断其方案。R-B03文字层队号23118450049在官方表第5043行是成功参与奖，不能包装成优秀奖项。R-B05/R-B08自述三等奖未能独立核验；R-B07奖级UNKNOWN。官方优秀作品WPS集合需要登录。
+**reference_quality: HIGH**；**FULL_TEXT_COVERAGE: 10/10**；**award_levels_verified: 10**。团队编号、学校、作者与 [官方最终获奖名单](https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=8e7956d9a59d455ebd3866f46b155c60) 的E题sheet匹配。GitHub目录是参考集合，奖项结论来自官方附件，二者独立。
 
-因此本轮采用官方信息、正式发表研究、作者公开方案组成REFERENCE SET，可信度MEDIUM。来源真实性、奖项真实性、方法有效性是三件事。没有把第三方标题或GitHub星数当奖项证明，也没有把获奖当ground truth。
+HIGH表示全文和身份可追踪，不是所有统计结果可靠，也不保证转载文件与正式提交稿逐字一致。完整审读覆盖相关正文；通用算法推导/背景略读，长附录择项静态审查，没有运行下载代码或声称逐行验证821页。关键公式和代码截图经Poppler可视核查。
+
+上一轮较弱reference set及其报告原样保存在prior-pass-6e5d1b6；旧版“未获得可核验获奖全文”的状态已被本轮新证据更新，不沿用旧限制或自动继承旧结论。
 
 ## 3. Current Skill Solution
 
-[冻结摘要](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/current-skill-solution.md)在首次外部检索前形成，SHA256由[current-solution-freeze.json](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/current-solution-freeze.json)记录。以下事实均来自既有产物。
+[当前方案摘要](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/current-skill-solution.md) 在深入读取本轮主集合前，于2026-09-15 01:01:57 UTC冻结，SHA256为 `14b72d5801fdf3afd976bf0040eeb12ff2f0e31266c0733b8f0b1bb098c57aa4`。仅使用I01–I14现有产物。上轮外部参考阅读已经披露，本轮不是新的盲跑。
 
-| 子问 | 已保存方案与结果 | 主要限制 |
-| --- | --- | --- |
-| Q1a | 时间恢复+48h、6mL/33%规则；23阳性/77阴性 | 4人48h内没有随访却编码0；不是确定无事件 |
-| Q1b | 首次临床/影像多视图，Logistic/浅RF；原Logistic AUC0.575381 | 当前升级重复CV数值没有持久副本；无特征组消融 |
-| Q2a | 二次Ridge；100人450行；grouped RMSE26.229155mL，R²−0.012561 | 固定单一曲线，尚未解释足够个体/时间差异 |
-| Q2b | 首次ED三分位，34/33/33；fold内边界和曲线 | 是baseline，未验证多维/形态表示价值 |
-| Q2c | 7措施crude/adjusted WLS、实体聚类CI、time interaction | 治疗时间未知，部分稀有比较不稳定，非因果 |
-| Q2d | HM/ED变化、时间、少量治疗和基线的联合条件关联 | 没有lag/因果方向或跨设定稳定性证明 |
-| Q3a | 原nominal MAE1.53、QWK0.230461；当前有ordinal候选/重复CV | 升级ordinal数值未持久化，不能声称更准 |
-| Q3b | 90天过滤后体积first/last/max/change/slope；原corrected MAE1.42、QWK0.342714 | 未保留Q3a完整首次影像视图；非固定早期landmark |
-| Q3c | 有claim语言约束 | 未找到独立mRS因素分析的持久输出 |
+原2023E run仍为 **BLIND RUN / DIAGNOSTIC ONLY**；后续Temporal、Imbalance、Ordinal、Group、Association定向升级单独列明。原run没有完整投稿论文、答案表或独立Q3c因素排序，不能把通用规则已具备写成这些交付已经完成。
 
-重要范围限制：原run明确为BLIND RUN / DIAGNOSTIC ONLY，后续是定向能力升级；未找到完整比赛论文、最终答案表或完整主模型选择产物。本轮不将这些局部证据反向美化为已完成的优秀论文。
+当前概要：Q1时间规则+小样本分类；Q2二次曲线、baseline ED三分位、等实体权关联回归；Q3首次多视图与随访摘要，新增ordinal候选及时间边界。I09/I10升级数值仅stdout输出，本轮未找到持久副本；不补造、不重训来补数。
 
 ## 4. Q1 Comparison
 
-Q1a的主体规则达到合理水平：当前用发病偏移恢复小时数，6mL对应原始单位6000，两个扩张阈值为OR，取≤48h内首次观测命中，593个影像流水号时间映射均覆盖。R-B07实现也使用相同核心规则。R-B08注意到流水号不一致和4个晚随访病例，但把48.90h手动改为48.00h；R-B02遗漏6mL条件并混淆首次检查与发病。参考并不是标签答案。
+Q1a基本正确性达到合理水平：onset偏移、首次HM基准、6mL/33% OR、≤48h和首次观测命中均可追踪，23/100阳性，593/593流水号时间映射。4例窗口内无随访仍记0是限制；首次观察命中也不是精确生物学发生时点。P05取最大值时点、P08公式逻辑不一致、P10相邻差公式，不应反过来替换当前规则。
 
-当前仍需说明4名无48h内随访者的可观测性，且“第一次检查发现”不同于扩张精确起点。这里只记录，不改原标签。
+Q1b当前已经使用临床、体积/部位、形状和灰度特征，并非只有原始临床字段。既有logistic盲跑AUC0.575381、Recall0.217391，RF AUC0.467532，显示保守基线尚不强；这些不是升级重复CV成绩。参考中P06 AUC0.7031也不完美，P08最终选择Logistic，说明不能把“Logistic较弱”当算法定论。
 
-Q1b不能按accuracy比较。当前已纳入首次体积、位置比例、形状/灰度和临床字段；短板并非完全没用影像特征。原预测成绩较弱，原因判断是：小样本/类别不平衡有支持；**有证据的可改进方向是特征组及维度比较不足**；遗漏某模型族尚无可比证据；参考全量SMOTE、训练评价等会造成更乐观数字，但无法分摊全部分数差距。详见[逐题矩阵](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/comparison-matrix.md)。
+低分原因判断 **E：多种因素共同作用**。n=100、阳性23和高维冗余是数据难度；特征表示/筛选比较不足有直接证据；参考验证较弱或泄漏又使分数更乐观。没有同数据同协议实验，不能量化A/B/C/D各自贡献，也不能断言换boosting就改善。可学P01/P07/P09的输入比较思想，不复制其验证缺陷。
 
 ## 5. Q2 Comparison
 
-Q2a：R-B01比较二次/三次/高斯，R-B04用双高斯，R-B08比较多种曲线；R-B07提出ID混合效应和序列方法。当前仅固定二次Ridge，缺少针对曲线形状、峰值/回落与个体差异的充分论证。负的pooled grouped R²说明目前未展现有用的新实体预测能力；它不单独证明换曲线必有收益，time-only总体均值本就不能解释全部个体差异。R-B07加入首次ED后已是不同条件模型，也不能与time-only曲线共榜。
+Q2a当前固定二次Ridge的合法grouped RMSE为26.229155mL、MAE19.801187mL、R²−0.012561；最终fit residual RMSE25.965972mL。独立实体误差与训练残差分开是优势，固定曲线却没有足够选型证据。8篇有明确曲线族/阶数比较，P09还讨论非负和不合理远期峰；这些提示应评估形态与候选，不能据其fit RMSE6.90直接判当前更差。
 
-FIT_RESIDUAL与VALIDATION_ERROR必须区分：既有最终全体拟合残差RMSE25.965972mL，合法grouped OOF RMSE26.229155mL；row-random为26.344805mL且共享实体，INVALIDATED。本次row分数没有更好，不能捏造泄漏乐观程度。选定方法后在全部训练实体上最终拟合是正常流程。
+Q2b是明确薄弱点：首次ED三分位34/33/33是合理baseline，fold内边界和baseline赋组安全，但相同起点不同走势无法区分。只有P06与P10明确构造实体时间形状；三篇静态、两篇观测单位有问题、三篇表示不充分。结论是“表示充分性未验证”，不是“优秀论文普遍要求DTW”。
 
-Q2b：首次ED三分位是合理、可部署的baseline，但不足以证明已发现进展异质性。多数参考实际按静态临床特征聚类；B07增加重要性选择与部分变化信息，B03声称各次体积但未清楚处理对齐。参考没有建立“完整trajectory shape聚类普遍更优”的证据。本轮发现的是**表征选择与合法分组收益比较缺失**，不是必须增加DTW或特定聚类算法。
+Q2c当前crude/adjusted、time×treatment、CR1实体区间、暴露时序UNKNOWN与稀有治疗标记，较多参考更审慎。P09认识重复测量且称mixed effects，但实际表比较不同量纲变量均值差，不能证明其实现优于当前WLS。P03/P04等也有因果局限意识，应逐条评价而非一概否定参考。
 
-Q2c：当前先审计prevalence/共现/初始差异，明确暴露时点UNKNOWN，比较同样本crude/adjusted并按实体处理依赖。它比多篇参考直接ANOVA/t检验/末次变化→疗效的解释更严格，是SKILL ADVANTAGE。仍不能排除急性严重程度及共同治疗混杂。
-
-Q2d：当前HM变化每10mL对应ED变化的adjusted条件关联为3.639mL，名义95%CI[1.604,5.675]；这是同次测量关联，不是因果或lag作用。参考多为成对相关/曲线参数关系；B07提ACF/PACF，但没有可信的不规则访视lag识别证明。本轮不足以推荐复杂动态模型。
+Q2d当前同次HM变化每10mL的adjusted ED关联3.639mL，nominal CI[1.604,5.675]；这是限定设定中的条件关联。P01案例图提示滞后，其他多是均值/变化相关，没有共同的可靠lag/joint模型证据。当前不能称方向性动态关系或稳定治疗效果已被识别；本轮不增加复杂动态或因果框架。
 
 ## 6. Q3 Comparison
 
-Q3a：当前正式ordinal候选和MAE/RMSE/QWK/Within-One-Level更贴近mRS性质。B03/B08并非完全没有顺序意识，但主要用nominal分类或回归后取整；不能仅因模型不同扣分。当前升级后数值缺持久副本，所以只能确认能力和协议，不能宣称ordinal已经提高成绩。
+Q3a的ordinal概率候选、MAE/RMSE/QWK/Within-One和稀少等级可行性是 **SKILL STRENGTH**，但升级后效果没有持久分数证明。参考也并非全无等级意识：P06有邻近命中，P05回归取整，P07在Q3c使用累积有序Logit；该模型的汇总加权有问题，也不能等同Q3a预测。
 
-Q3b：当前Temporal Gate排除了>90天记录，原9行/8人的失效证据保留；聚合后一实体一行的row CV等价于entity CV。参考B03/B07/B08未给可核验cutoff；前5次或前2次并不是90天过滤。统一标REFERENCE LEAKAGE RISK，确切>90天使用仍UNVERIFIED；不套用当前方案的9条记录数量。
+Q3b最直接差距是：当前clinical+HM/ED摘要没有保留Q3a完整首次shape/intensity/location。8/10参考明确在基线上增加随访，P09明确21+105→126→28，P06用小样本低维摘要并前后比较。当前已有slope，不是完全不懂轨迹；但信息丢失和输入同时变更使随访收益无法干净归因。
 
-更直接的当前缺项是Q3b没有延续Q3a完整首次shape/intensity/location矩阵，导致“加随访”的效果与“删首次视图”混杂。B03明确保留静态分支后融合随访，B07/B08也注重多视图/特征筛选。可学的是保持信息基线并做受控比较，无需照搬LSTM。
+Temporal Gate继续是硬标准。当前先过滤>2160h，原9行/8人泄漏仍失效；各参考Q3b未建立可核验cutoff，统一标REFERENCE LEAKAGE RISK，不宣称每篇实际都使用了90天后记录。当前90day上界本身仍不等于统一早期landmark预测。
 
-Q3c：参考有相关图、重要性表或岭回归系数；当前未找到mRS专属因素输出，构成交付弱项。当前因果措辞纪律值得保留，但不能替代实际因素分析；Q2的ED关联不等于Q3c答案。
+Q3c参考有因素图/检验/重要性和解释，当前缺独立mRS排序产物。此处是实际交付缺项；不能用Q2的ED关联替代，也不因参考建议详尽就接受importance→causal risk factor。
 
-## 7. Validation Comparison
+## 7. Reference Consensus
 
-[详细协议对照](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/validation-comparison.md)。
+[完整统计定义与排除规则](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/reference-consensus.md)：
 
-当前的真实实体零重叠、fold内预处理/亚组边界、90天前过滤、失效结果保留、类别与序数指标，是明确SKILL ADVANTAGE。B03公开源码确认全量SMOTE/缩放先于CV；B07 Q3b确认全量PCA后才split；部分Q2分组收益只来自训练拟合。这些分数不能作为优秀性能标准。
+- 9/10有明确预测特征筛选/降维。
+- 8/10明确Q3b保留baseline再加followup。
+- 4/10有输入变体/筛选方案的显式比较：P01、P06、P07、P09。
+- 8/10有明确Q2a曲线族或阶数候选比较。
+- 2/10明确实体时间形状分组：P06、P10。
+- 3/10明确Q3b时间导向摘要：P01、P05、P06。
+- 0/10证实完整的新实体Q2 grouped CV及Q3b逐条目标前cutoff。
 
-优势不覆盖一切：当前未保存升级后全部数值，没有外部验证或可靠性曲线，fold标准差不是置信区间，association名义CI不是稳健/因果证明。描述性聚类可以对完整训练数据拟合；只有把它当新实体/未来验证时才必须额外满足对应gate。所有外部数值对比结论均为NOT DIRECTLY COMPARABLE。
+出现次数不证明正确性；最后两个0表示审读未建立证据，不是复现证明全部泄漏。
 
-## 8. Feature Engineering Comparison
+## 8. Validation Comparison
 
-[详细特征对照](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/feature-engineering-comparison.md)。
+**SKILL ADVANTAGE**：fold内预处理、实体零重叠、时间可得性、失效证据保留、残差与预测误差分开、适当的不平衡/序数指标。
 
-当前已经有多表join、血压拆分、影像比例/形状/灰度、体积变化和斜率，并非“只喂原始字段”。实际遗漏是：缺少少量任务驱动的特征集合、冗余/容量比较、保持共同基线的新增信息消融。B08针对n=100、p=73明确做缩减；B07比较all vs top10；B03保留静态+时序视图。这些独立方案支持应验证信息表示，不支持照抄特征名单或筛选阈值。
+当前Q2 row-random RMSE26.344805，反而略高于grouped26.229155；仍因实体重叠被INVALIDATED。不得为了展示泄漏乐观而改变这个事实。重复CV协议、Brier等存在，也不能声称校准曲线、bootstrap或完整稳健性结果已经产生。
 
-## 9. Modeling Depth Comparison
+外部分数全部 **NOT DIRECTLY COMPARABLE**。P01训练评分、P07 split前SMOTE、P09标签来源与正文/附录不符、P10跨模型不同切分，均限制结论。详见 [validation-comparison.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/validation-comparison.md)。
 
-当前方案的安全边界深于多数已读参考，但部分模型停在baseline，尚未形成完整的“为什么这样表示数据—选择怎样的模型—新增信息带来什么收益”的论证。
+## 9. Feature Engineering Comparison
 
-创新分三类：A，可迁移的特征表示、多视图保留和验证内消融值得学习；B，特定脑区/临床严重程度组合属于本题或专业领域；C，无同协议验证收益的群智能优化、网络叠加或模型改名不能算应增加的能力。高容量模型在约100个独立实体上的风险必须与收益共同判断。
+当前已具备字段整合、radiomics、变化/slope和非线性时间项。真正缺少的是：围绕输入信息源和时间窗口组织少量表示假设，保留原baseline，固定样本和合法协议，验证特征组增量/删组而非只比较模型名。
 
-## 10. Paper Quality Comparison
+P01的表示消融、P06的基线+随访摘要、P07两套筛选交叉比较、P09保留基线的前后比较独立支持这个思想。它们的分数不被采纳为无泄漏收益证据。详见 [feature-engineering-comparison.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/feature-engineering-comparison.md)。
 
-[论文要素对照](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/paper-quality-comparison.md)覆盖摘要、重述、假设、符号、构建/求解、图表、评价、优缺点、创新与实际解释。
+## 10. Trajectory Modeling Comparison
 
-没有完整Skill论文可逐段比较，不能给不存在的摘要打分。参考的曲线参数表、特征消融表、因素解释使交付更完整；参考中的训练成绩包装、未经支持的因果假设和图表口径混乱应拒绝。本轮不修改write-paper，也不把诊断阶段没写论文认定为通用写作能力已被证伪。
+P06不等长序列标准化→插值→DTW距离矩阵→普通KMeans，是距离轮廓表示，不能叫直接优化DTW中心；P10用初/中/末斜率构造三维表示。两者都比单baseline包含更多形状，但未来轨迹参与回顾性分组不等于可在baseline预测新实体。
 
-## 11. Skill Strengths
+Q3b可借鉴低维时间摘要候选，不机械添加peak/AUC/curvature、functional clustering或大RNN。某个表示是否有信息，要在合法观察窗口下比较。详见 [trajectory-comparison.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/trajectory-comparison.md)。
 
-- 时间、实体与预测场景相互独立地约束评价；有可追溯失败和有效结果。
-- 不平衡分类不以多数类accuracy取胜；ordinal目标有匹配的模型候选和误差指标。
-- 观察性措施分析保留混杂、时序和依赖限制，不把治疗组差异写成疗效。
-- 低容量baseline、实际运行和数据来源可查；不编造未持久化数字。
+## 11. Modeling Depth Comparison
 
-## 12. Skill Weaknesses
+当前强项是估计目标与数据边界纪律；薄弱点是候选表示、曲线选型证据、亚组画像、输入增量归因以及Q3c结果完整性。
 
-- 缺少可追溯的特征组比较，Q3b共同基线缺失尤其明确。
-- Q2总体曲线和分组目前只展示简单baseline，未充分解释进展异质性或证明改进。
-- 原Q1/Q3预测分数弱；升级后成绩不可从持久产物确认。不能用规则成熟遮盖结果不足。
-- Q1可观测性边界、Q3c独立因素输出与完整论文交付仍有本题缺项。
+创新A类（可迁移）包括问题驱动表示、保留基线做增量、验证隔离的对照；B类是具体脑区/病理指标；C类是没有同协议收益的算法组合。下一阶段只考虑A类中的一个明确缺口。当前已有baseline/模型比较/变量创新原则，不能把所有执行不足都包装成新模块需求。
 
-## 13. Reference Weaknesses
+## 12. Paper Quality Comparison
 
-- 全量SMOTE、缩放/PCA先于split；训练或内部调参成绩冒充外部泛化。
-- 缺少实体独立/明确cutoff证据；时序模型名称不能代替真实时间输入和split核验。
-- 观察性相关、t检验、ANOVA或importance推导治疗有效/有害。
-- 手动把48.90h改48h、遗漏阈值/时间基准、把MAE汇总称RMSE或残差单位不一致。
-- 部分奖项/完整方案不可核验；B02摘要包含正文没有的Q3内容。
+参考具有完整摘要、假设、符号、流程图、模型、结果和讨论；P06/P10的趋势画像、P01消融和P09域内特征解释提升了建模可读性。部分长篇通用推导、失真指标和过强医学建议并不值得学。
 
-这些问题按原文/代码证据与风险级别分别记录，不推断作者动机，也不借参考缺陷宣布Skill整体“优秀”。
+当前没有完整投稿稿，不能给不存在的摘要或结果图高评价；其代码、契约和失效历史的可追溯性较强。Q3c与论文完成度差距先归为实际run交付不足，不直接证明write-paper缺新规则。[paper-quality-comparison.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/paper-quality-comparison.md)逐项记录，workflow未改。
 
-## 14. Generalizable Gaps
+## 13. Skill Strengths
 
-[完整分类与Top-1证据](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/generalizable-gaps.md)。
+明确独立单位与预测边界；不把450条记录当450个独立样本；不平衡/ordinal指标与baseline；fold内学习；Group+Temporal独立gate；残差与OOF区分；未知治疗时间、稀有组与confounding纪律。行为正确性优势应保留，不以模仿参考换高分。
 
-唯一推荐G1是VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION。具体临床变量、4个标签可观测性病例和本题未完成的因素交付归G2；模型名字、未证实的轨迹算法/lag优势归G3；参考泄漏和因果越界归G4。
+## 14. Skill Weaknesses
 
-当前Skill已经有“特征选择应在fold内”的行为规则。缺口是建模指导和验证实绩的深度：选择哪些有理由的特征组，如何保留共同基线，如何区分表示收益和模型容量收益。
+已有预测证据尚不强，升级数值部分未留档；Q2固定二次式与静态亚组的充分性未比较；Q3b没有沿用完整基线输入；Q3c无独立结果；没有完整竞赛论文或验证全面的模型解释。不用测试全PASS或方法规范来掩盖这些建模和交付限制。
 
-## 15. Problem-Specific Differences
+## 15. Reference Weaknesses
 
-本题特殊的HM/ED含义、脑区比例、治疗前严重程度、流水号冲突和检查时点例外，不应成为通用Skill硬编码。Q3c及论文的补齐是本题交付工作。对于HM–ED滞后关系，只有合适时序与访视支持时才有研究意义，本轮没有证据把它升为通用必修。
+确认实例：P07 p78先SMOTE再split；P08 p20更换正类计数且F1矛盾；P08 p27残差比值；P04 p97 MAE/RMSE/MSE不一致；P10 pp22–23绝对残差为负；P09 p41混合模型名下比较不同量纲均值；P01/P09附录训练评分。
 
-## 16. Top-1 Recommended Skill Improvement
+另有全随访cutoff风险、过强因果建议、观测/实体混淆、测试标签来源或预处理隔离不清。确认缺陷与未验证风险分开，详见 [reference-weaknesses.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/reference-weaknesses.md)。
 
-- **gap_name:** VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION
-- **evidence:** 当前Q1/Q3缺特征组比较；Q3b删除Q3a部分首次影像视图；Q2b只比较一维baseline的合法性。
-- **reference_support:** B07 all/top10比较，B08去共线性与小样本降维，B03静态+时序信息保留；均有明确原文/源码位置，均不拿其分数证明优越。
-- **why_generalizable:** 小样本多变量、多来源融合、阶段信息的增量评估普遍存在于临床、机器、用户、城市、企业和实验数据。
-- **why_current_skill_is_insufficient:** 已有安全gate不能替代特征设计和受控消融；本题没有证明现有表示充分利用可用信息。
-- **recommended_next_phase:** 只围绕这项能力，在同一目标、实体、cutoff、fold与指标下比较少量预先说明理由的特征组和fold内筛选；不预设复杂方案获胜，不复制论文参数。
+## 16. Generalizable Gaps
 
-此建议是下一阶段候选，非已实施改进，也不保证将来分数提高。轨迹聚类暂不选Top-1，因为参考主要静态分组且无可靠同协议优势证据。
+仅一个G1：**VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION**。事实链为当前Q3b丢完整基线、Q1/Q3输入组比较缺失、Q2b单一表示，加多篇参考的结构化输入/增量比较思想。
 
-## 17. Current Skill Level on 2023E
+只读检查当前设计workflow、模型族和innovation参考：已有宽泛变量构造与同协议原则，尚未形成特征组保留/增量/删组对照的具体流程。诊断是操作能力不足，不是“完全不懂特征工程”。[generalizable-gaps.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/generalizable-gaps.md)逐项核对七个G1条件和G1–G4分类。
 
-| 范围 | 判断 | 具体依据 |
+## 17. Problem-Specific Differences
+
+脑区合并、临床分箱、具体HM–ED滞后与病理峰值属于G2。Logistic/boosting、WLS/mixed、Gaussian/spline不同本身属于G3。参考泄漏和因果/指标问题属G4。
+
+完整trajectory-clustering模块没有多数共识；深度融合/大型序列模型收益未验证；robustness/sensitivity本轮不解决也不另列Top-1。Q3c及论文未完成属于已存在交付要求的执行差距，不自动扩展Skill。
+
+## 18. Top-1 Recommended Skill Improvement
+
+- gap_name: VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION
+- evidence: I01/I09/I10的输入集不连续与未保存组比较；I07的单表示分组。
+- reference_consensus: 9/10选择/降维，8/10保留baseline，4/10显式输入比较；具体页码见第7节。
+- why_generalizable: 静态高维、多源融合、设备/用户重复记录、城市/公司面板均需要表达与增量价值判断。
+- why_current_skill_is_insufficient: 模型族对比及泄漏gate不能自动防止合法信息丢失，也不能说明某表示为何有用。
+- expected_competition_impact: 减少信息丢失，改善可解释的建模论证和收益归因；预测提升幅度UNKNOWN，不能承诺。
+- recommended_next_phase: 人工确认后，仅验证特征集设计与合法增量消融；在固定时点、样本、fold和受控模型上比较baseline与少量表示，允许负结果，不回填历史run。
+
+## 19. Current Skill Level on 2023E
+
+| Scope | Level | Evidence |
 | --- | --- | --- |
-| Q1 | ADEQUATE | 标签主体规则和首次信息/不平衡验证合理；4例可观测性和原AUC/Recall弱，未达到强预测证据 |
-| Q2 | WEAK | Association纪律较强，但总体曲线和亚组建模仍为baseline；grouped R²负、没有表征/曲线的合法改进比较；不是所有Q2分析都无效 |
-| Q3 | WEAK | 有ordinal/temporal优势，但升级数值缺持久证据、Q3b融合不完整、Q3c无独立输出 |
-| Overall | NEEDS_MODELING_IMPROVEMENT | 行为正确性不等于完成高质量比赛建模；共同特征基线、表示比较和问题交付尚不足 |
+| Q1 | ADEQUATE | 标签/时间规则可追溯，多视图及不平衡验证合理；预测表现与特征组收益不足，4例观测窗口限制 |
+| Q2 | WEAK | Q2c/d关联纪律较强，但整体曲线R²接近0且未选型、Q2b静态表示未证明充分，核心轨迹建模深度不足 |
+| Q3 | WEAK | ordinal/time纪律较强，但Q3b丢基线，升级分数未留档，Q3c独立因素结果缺失 |
+| Overall | NEEDS_MODELING_IMPROVEMENT | 安全可靠的流程基础已经存在，输入表示和竞赛交付的质量证据仍不足 |
 
-这些判断针对已展示的方案，置信度MEDIUM；不是奖项预测，也不是对全体获奖论文的排名。
+这些等级不是以参考训练accuracy打分，不表示获奖论文逐项都更好。
 
-## 18. Final Decision
+## 20. Final Decision
 
-**B. GENERALIZABLE_GAP_FOUND**
+**GENERALIZABLE_GAP_FOUND**
 
-存在一个值得进入下一阶段验证和修复的通用能力缺口：**在合法验证内设计特征组，并通过同协议消融确认增量价值**。本轮不选择“没有任何值得立即修复的通用缺陷”。
+**2023E_REFERENCE_BENCHMARK_COMPLETE**
 
-**Completion: 2023E_REFERENCE_BENCHMARK_COMPLETE**  
-**reference_quality: MEDIUM**  
-**top_generalizable_gap: VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION**  
-**recommended_next_action:** 下一阶段仅验证并补齐特征组设计与消融比较能力，保留既有Temporal、Group、Ordinal、Imbalance与Association边界。
+- reference_quality: HIGH
+- papers_discovered: 10
+- papers_fully_reviewed: 10（相关正文九小问完整审读；长附录择项审查）
+- award_levels_verified: 10
+- overall_skill_level: NEEDS_MODELING_IMPROVEMENT
+- top_generalizable_gap: VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION
+- recommended_next_action: 等待人工判断是否开展“特征集设计与合法增量消融”这一单一候选修复。
 
-冻结文件及原摘要校验见[integrity-verification.json](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/integrity-verification.json)，机器可读完成记录见[completion.json](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/completion.json)。本轮只写独立artifact，保留gitignore；未重训模型、运行旧建模测试来补数、替换历史结果、修改Skill或启动下一阶段。
+[completion.json](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/completion.json)和[integrity-verification.json](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/integrity-verification.json)记录最终状态与文件边界核查。本轮未重跑训练/回归；此前226 pytest和20 harness通过只作历史行为证据。Skill、routing、历史benchmark、冻结模型与失败证据按哈希保护；报告仅写本artifact目录，gitignore不变。
+
+**STOP。等待人工判断，不自动修改Skill或进入下一开发阶段。**

@@ -1,84 +1,505 @@
-# Reference Reading Notes and Evidence Anchors
+# Primary Paper Review Notes
 
-以下是事后阅读记录，不属于原 BLIND RUN。页码一律是下载PDF的物理页码；LaTeX/源码使用本地忠实文本副本行号。CONFIRMED 指原文或源码明确展示；RISK / UNVERIFIED 指缺少足以核实实际执行的证据。未运行任何外部代码。
+POST_HOC REFERENCE；物理PDF页码（含封面）。方法/结果全文审读的范围见source-ledger；论文自报分数未经复现，全部跨论文性能比较为NOT DIRECTLY COMPARABLE。
 
-## R-B01 — 已发表的曲线与亚组分析
+## P01 — E23100650012.pdf
 
-[原文PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B01.pdf)；[DOI](https://doi.org/10.12677/mos.2024.135465)。
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P01.pdf)
 
-- PDF pp.2–5：100人、发病至影像小时数、ED体积散点；比较二次、三次和一维高斯曲线，依靠拟合图选择高斯。没有独立实体留出成绩。不能把“曲线更贴近散点”当泛化提升。
-- p.6：聚类输入明列年龄、性别及病史/生活史等静态变量；K-means四组。p.5的“9个不同特征类型变化趋势”不能读成九维纵向形态表示。
-- pp.7–9：将拟合高斯参数用于多因素ANOVA，并比较HM/ED参数的Spearman相关。它提供“把曲线压缩成可解释参数”的思路，但未证明参数在稀疏随访下可稳定辨识。
-- p.8、p.9结论将统计关联引向“更有效的方法”，没有干预时序或混杂识别证据。UNSUPPORTED_CAUSAL_CLAIM。
-- 可学的是曲线形式比较、参数化解释与多维分组思路；不能采纳其因果解释，也不能确认高斯一定优于当前二次模型。
+正文范围：2–48；附录抽查页：[55, 56, 57, 58, 59]。
 
-## R-B02 — 正文覆盖范围与明显方法缺陷
+### Q1a
 
-[原文PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B02.pdf)；[DOI](https://doi.org/10.12677/aam.2025.141027)。
+pp.12–13: onset offset + repeat image time; 6 mL OR 33%; first observed hit; 23/100. Table sub077 time 4.119 differs from current minimum; no label identity assumption.
 
-- pp.3–5：正文用首次与随访1的相对变化 >33%、两次检查间隔≤48h判断；未保留6mL的OR条件。模型假设还将首次检查等同发病。与本轮Q1标签定义不等价。
-- p.6：写前100预测后60，再将后60当训练集预测前100；没有真实测试标签或独立验证证明。
-- pp.7–9：将时间字段截取前八位；436点做线性拟合；Q2b把合并后的y值分成五个等频箱。不能证明这是每患者唯一的进展亚组，也没有时间基准正确性证据。
-- pp.11–12：由相关性的符号直接写治疗减小/增加水肿，甚至出现正相关解释成减小。UNSUPPORTED_CAUSAL_CLAIM，且方向解释有矛盾。
-- 全16页正文只有Q1/Q2，摘要中的mRS、XGBoost/LightGBM没有对应Q3方法与结果。不得把摘要承诺当实际成果。
-- 此文只作参考质量反例，不支撑Skill必须增加某个模型。
+### Q1b
 
-## R-B03 — 完整公开参赛稿与静态代码核验
+pp.9–20: variance 72→69, Spearman union-find redundancy, onset-delay weight exp/power, model/representation/parameter ablation table. Appendix pp.55–56 fits and predicts train_x; reported very small errors cannot be trusted as OOF.
 
-[论文仓库](https://github.com/spiritysdx/CPGMCM_2023)；[可读LaTeX](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B03-tex-read-only.txt)。官方名单仅对应成功参与奖，不能称一等奖/优秀获奖论文。
+### Q2a
 
-- Q1a，LaTeX L178–224：六种函数按同一患者拟合R²选优，再求48h阈值根。这是拟合/插值推断事件时间，区别于首次观察到满足阈值的时间；不能当标签ground truth。
-- Q1b，L333–396：80/20、网格搜索、10/15折、SMOTE、F1选择。表中MLP AUC=0.7591、F1=0.7533只是作者报告值。
-- [Q1b代码L105](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B03-q12-code-read-only.txt:105)全表缩放，L113–114、L158–161先SMOTE后split；L266–281直接在已重采样矩阵上GridSearchCV/cross_val_score。CONFIRMED PREPROCESSING/RESAMPLING LEAKAGE IN PUBLIC CODE；不再把这些分数当可信对照。
-- Q2a，L449–474：发病置零，高斯曲线；逐次残差observed−fitted，最终每人填残差绝对值之和。其量纲/聚合权重与Skill pooled OOF RMSE不同。
-- Q2b，L538–564：声称使用年龄、性别、各次ED值，比较四种聚类、3–5簇；未明确不规则时间对齐、缺访处理或形态距离。公开[q22代码L113](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B03-q22-code-read-only.txt:113)另拼接临床/治疗列，再按列位置取输入；[搜索代码L25](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B03-q22-search-code-read-only.txt:25)重复全样本搜索并以全样本silhouette选结果。不能只凭“K-means”称其完成了可信trajectory clustering。没有新实体分组/曲线OOF检验。
-- Q2c/d，L604、L650、L678、L756：7项措施与28组合，趋势为相邻增减方向计数，GLM/ANOVA。作者讨论了共线性/因果边界，但后文仍宣称某治疗效果最好；没有可靠识别支持。
-- Q3a/b，L891、L1015明确先SMOTE后分训练/测试；L968–1008保留静态信息并另建带时间间隔的LSTM后融合。思路是模态保留和时间信息表示，不等于证明其高容量模型必要。
-- Q3b：原文使用“所有影像结果”，没有可核验的90天或固定landmark截断。REFERENCE LEAKAGE RISK；本轮未核实其最终模型实际纳入了哪几条>90天记录，不能把Skill的9条/8人直接套给该论文。
-- Q3c，摘要L35–36与L1099之后：区分有序/无序变量，统计检验和相关性；使用SMOTE后的样本作推断的独立性不成立。承认部分序数意识；未见正式ordinal预测损失或QWK验证。
+pp.22–25: time-only linear/RF/GBDT/tree; claims 5-fold 80/20; Appendix p.59 training score. Sparse early time data acknowledged; tree jaggedness not physiologic discovery.
 
-## R-B04 — 神经网络和静态FCM
+### Q2b
 
-[原文PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B04.pdf)；[DOI](https://doi.org/10.12677/mos.2025.143212)。
+pp.28–31: clinical table includes 90-day mRS and E–W variables; spectral grouping 61/18/21; not trajectory-shape clustering; 4 cluster-family comparison, silhouette/DB, portraits.
 
-- pp.4–7：72输入的ISSA-BP，训练/“测试集2”AUC称在0.85–0.95，“测试集1”为0.59。真实测试标签来源及独立验证协议不充分，不能与Skill OOF AUC排名。
-- pp.7–10：总体双高斯曲线；FCM五组输入是年龄、性别、病史、治疗等静态信息，非完整trajectory shape。
-- p.10给各组高斯参数，是可解释输出形式；未给grouped validation。
-- pp.10–11：ANOVA被解释为治疗效果，结论和部分不显著检验不一致。不能据此降低Skill的观察性证据标准。
+### Q2c
 
-## R-B05 / R-B06 — 辅助或排除材料
+pp.32–36: within/between-subgroup treatment counts and 3 cases; episode timing inferred, unsupported efficacy narratives.
 
-- R-B05 [Q2a源码](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B05-Q2_1_2-read-only.txt)用分数幂多项式、每人平均绝对残差；[Q2b源码](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B05-Q2_2_2-read-only.txt)含高阶log多项式和17参数有理函数。未读取到可核验的分组发现/验证或完整论文；复杂度本身不是优点。作者自述三等奖，UNKNOWN。
-- R-B06 [README快照](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B06-page.txt)主要是题面转录，排除出建模优劣结论。
+### Q2d
 
-## R-B07 — 特征筛选、混合模型与序列方案
+pp.36–38: HM/ED corr 0.47 and 3 case plots interpreted as lag; no lag estimator or uncertainty; weak correlation does not exclude linear relation.
 
-[论文仓库](https://github.com/ydchen0806/23yansaiE)；[可读LaTeX](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-tex-read-only.txt)。奖项UNKNOWN。
+### Q3a
 
-- Q1a，[代码L31](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-q1_a-code-read-only.txt:31)使用6mL/33% OR及发病偏移加和≤48h，论文23阳性，与Skill同数量；数量一致不证明全部实现一致。
-- Q1b，LaTeX L393–427：临床、体积/位置、影像特征，23%阳性，重采样，RF/LightGBM与集成。声称99%不可作泛化证据。[代码L21–32](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-q1_b_model-code-read-only.txt:21)先复制阳性再由AutoML内部划分；L56输出训练集accuracy。存在重复实体进入内部验证的风险。
-- Q2a，LaTeX L579–637：混合效应+BiLSTM/CEEMD，报告拟合RMSE25670.456原单位。[代码L71](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-q2_a-code-read-only.txt:71)确有ID随机截距模型。后续L157–171全量缩放、随机row split后又在全体X/y上评价；新实体泛化未成立。BiLSTM输入另加首次ED，不等于Skill的time-only总体曲线。
-- Q2b，LaTeX L659–711：按ED预测特征重要性选10变量，含HM体积、delta_ED、位置、时点等，K-means四组，比较多个组数。不是经过验证的全轨迹形态聚类。
-- [Q2b代码L55–78](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-q2_b-code-read-only.txt:55)在first_data合并表上选特征/聚类，再拟合全部组内行；L104–105在训练X/y上评价。L106、L115先逐点平方开根再均值，其汇总实际为MAE，而论文表称RMSE；数值来源与指标定义不能直接对齐。
-- Q2c/d，LaTeX L775–787：将独立样本t检验称“因果推断模型”，提出ACF/PACF，却没有不规则访视和时序方向的充分核验。仅t检验不支持因果，ACF名称不证明捕获了HM→ED的滞后关系。
-- Q3a，LaTeX L943–964：80/20按ID；全变量vs前10变量的DeepForest测试accuracy0.45→0.55、训练0.85→0.87。可学的是把特征删减作为显式比较；不能照搬筛选阈值或声称10变量保证优越。
-- Q3b，LaTeX L966–1003：带时间间隔、随访影像的LSTM，作者表称测试accuracy0.975。[代码L55–67](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-q3_b-code-read-only.txt:55)按ID组序列、截前5次、展平、全量PCA后才split，CONFIRMED UNSUPERVISED PREPROCESSING LEAKAGE。代码未见90天过滤；前5次不是时间cutoff，REFERENCE LEAKAGE RISK（确切>90天使用未核实）。展平PCA后传2D输入，不能只凭LSTM名称保证保留每患者时间轴；此代码也不足以复现论文所称两轮top10比较。
-- Q3c，LaTeX L1005–1143、[源码L30](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B07-q3_c_LightGBM-code-read-only.txt:30)：相关性、重要性表、临床解释。其优点是给出可核查因素输出；特征importance及置换波动不是因果证据，也不替代实体级不确定性。
+pp.39–43: 103→67 features, Borderline-SMOTE, nominal stacking, fivefold; reports precision/recall with ambiguous averaging; cannot establish resampling isolation.
 
-## R-B08 — 明确的降维思想与边界反例
+### Q3b
 
-[原参赛PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/R-B08.pdf)；[仓库](https://github.com/TCPtcp/Prediction-of-Hemorrhagic-Stroke-Risk)。作者自述三等奖，队号/身份无法官方匹配。README明确代码经过2025复盘，本轮只以原PDF判断原方案。
+pp.43–45: retain baseline, add 5 temporal/volume summaries (recovery duration, HM/ED maxima, expansion durations). Same-model before/after table; no verified time cutoff; imports HM threshold for ED without justification.
 
-- PDF pp.7–8：核对sub074流水号，并列出4名48h内没有复查的患者；却把sub052的48.90h手动改成48.00h。这不是合法观测边界处理。当前Skill也不能把这4人的“未观察到扩张”升级为已证实阴性。
-- pp.8–15：n=100、p=73，先按Spearman p<0.1筛至7变量，再70/30切分，比较RF/NN/SVM。表称RF测试accuracy0.8、F1=0.775。描述顺序提示全量筛选泄漏风险；F1平均方式不明，公式Recall还出现TN，不能按正类F1直接比较。
-- pp.18–24：总体三次多项式；静态个人/病史混合类型两步聚类四组，BIC/轮廓评价，再比较线性、多项式、指数、高斯。组别34/17/31/18人；非轨迹形态聚类。各组拟合R²仅约0.13–0.22，原文自身也不是“优秀预测性能”证据。
-- p.24：明确治疗实际时点未知；随后却将末次−首次体积下降认作治疗有效。这正说明时序意识不能替代claim gate。
-- pp.31–35：保留前两次随访、去共线性/相关筛选、12指标、RF分类；承认mRS顺序并尝试回归取整，最后仍选nominal分类。没有QWK/Within-One-Level；Q3a与Q3b分数未清楚拆开，也没有90天cutoff证据。
-- pp.35–40：相关图、岭回归系数、临床建议；比没有Q3c输出更完整，但没有验证解释稳定性；单个“输入都为1”的预测不能证明模型质量。
+### Q3c
 
-## What the evidence does and does not establish
+pp.45–48: PCA in predicted expansion subgroup; suggests factors/clinical advice. Not fully aligned to mRS-specific explanation; PCA variance is not target importance.
 
-1. 多个独立来源展示曲线候选比较、去冗余/特征筛选、多个特征的患者分组和明确的因素输出，这些是可借鉴的建模工作。
-2. 未找到足以证明DTW、functional clustering或growth mixture优于baseline分组的可信同题结果。大多数已读来源使用静态特征；不能制造“获奖论文普遍使用完整轨迹”的共识。
-3. 当前方案缺少特征组消融的证据是直接可查的；参考支持的是开展此类比较的必要性，不是任何一组数字的可信优越性。
-4. 本轮没有同数据版本、同目标定义、同预测场景、同split、同指标口径且无泄漏的跨方案数值对照。所有外部成绩均为作者报告、NOT DIRECTLY COMPARABLE。
+### Evidence caveats
+
+- TRAINING_EVALUATION_CONFIRMED，PDF pp.55,56,59。
+- OUTCOME_IN_GROUP_DISCOVERY_CONFIRMED，PDF pp.28。90-day mRS is clustering input; retrospective description possible, prospective subgroup assignment not validated.
+- REFERENCE_LEAKAGE_RISK，PDF pp.43,44。Future/90-day cutoff absent; actual post90 rows unverified.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.34,35,36,38。
+
+## P02 — E23102550019.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P02.pdf)
+
+正文范围：2–48；附录抽查页：[]。
+
+### Q1a
+
+pp8–10: onset offset+followup delay,≥6mL OR≥33%, earliest≤48h; serial/duplicate-person repair claims not independently accepted.
+
+### Q1b
+
+pp10–14: explicitly changes target to unrestricted expansion; Bernoulli/GaussianNB by feature type, linear probability fusion on100. No independently validated score.
+
+### Q2a
+
+pp14–18: LOESS vs exp(a*t²+b*t+c), rise-fall rationale, fit residual only.
+
+### Q2b
+
+pp18–24: unfolds observations and repeats clinical features including90daymRS; says duplication increases chance same-person rows remain together. KMeans3 groups32/61/7; entity consistency not guaranteed.
+
+### Q2c
+
+pp24–30: min adjacent slope perperson,7treatmentregression,80/20; assumes treatment begins firstscan, therapies independent and sole cause ofEDchanges; unsupported efficacy ranks.
+
+### Q2d
+
+pp30–33:130followupentities, analogousHM/EDtreatmentregression,correlation.3052; no baselineadjustment/lag.
+
+### Q3a
+
+pp33–37: tree/RF/XGBregressors, chooses tree byMSE, displays same100trainingpatients; independent score provenance absent.
+
+### Q3b
+
+pp37–40: unfolds visits into rows with patientattributes/target,tree,group/timeboundary absent.
+
+### Q3c
+
+pp40–47:104features domainPearsonheatmaps; pp44–45 reversesmRSseverity direction; unsupported advice.
+
+### Evidence caveats
+
+- TARGET_DEFINITION_DIFFERENCE，PDF pp.10。
+- OUTCOME_IN_GROUP_DISCOVERY_CONFIRMED，PDF pp.18。
+- PSEUDOREPLICATION_AND_ENTITY_ASSIGNMENT_RISK，PDF pp.18,19,38。
+- EXPOSURE_TIMING_ASSUMED_AND_CAUSAL_CLAIMS，PDF pp.8,24,27,28,29,30。
+- MRSSCALE_DIRECTION_ERROR，PDF pp.44,45。
+
+## P03 — E23103530067.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P03.pdf)
+
+正文范围：2–79；附录抽查页：[]。
+
+### Q1a
+
+pp9–11: onsetoffset≤48h,baseline6mL OR33%,chronologicalstop.
+
+### Q1b
+
+pp12–26: retain biologicallyplausibleoutliers,BP/agecoding,MI40→RF20,5fold4models. p25tableLightGBM.800>RF.775 buttextcallsRFbest; selectionisolationunverified.
+
+### Q2a
+
+pp26–38: polynomial2–5,piecewise/Hermite,GaussianR².1004; chooses firstvisitresidual foranswer; nogroupedOOF.
+
+### Q2b
+
+pp39–49: clinical/history+time/volume Kmeans/FCM; FCM266+100+84'patients'=450rows for100people. Notconfirmedentityshapegrouping.
+
+### Q2c
+
+pp49–51: RFholdoutpermutation; positiveimportance erroneouslyinterpretedbeneficialtreatmentdirection.
+
+### Q2d
+
+pp51–55: corr,Gaussianmixturelikefit,ANOVA,permutation; p53explicitcorrelation≠causation; nolagmodel.
+
+### Q3a
+
+pp55–64: RFselection,nominal.15–.35accuracy,MLKNNfails,regressorCARTMSE2.23; distance-awaremetricbutnoformalordinal.
+
+### Q3b
+
+pp64–68: allfollowupwide+baseline,missingindicators,sameCARTMSE2.197; nocutoff;replace/addindicatorwordingconflicts.
+
+### Q3c
+
+pp68–77: domaincorrelation/ANOVA;p71recognizesindicationseverity;p76stillrecommendsefficacy; uncertainty/externalvalidationfuture.
+
+### Evidence caveats
+
+- PSEUDOREPLICATION_CONFIRMED_IN_REPORT，PDF pp.46,47。
+- PREPROCESSING_ISOLATION_UNVERIFIED，PDF pp.16,24,25。
+- REFERENCE_LEAKAGE_RISK，PDF pp.64,65,66,67。No cutoff; actualpost90notreproduced.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.51,76。Explicitcaveats pp53,71 also exist.
+
+## P04 — E23103570015.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P04.pdf)
+
+正文范围：2–116; generic literature pp105–109 skimmed；附录抽查页：[]。
+
+### Q1a
+
+pp7–19:serial/time,missingvolumezero,ORthreshold;p12writes|Vlater−Vfirst|,timeoriginimplementationunclear.
+
+### Q1b
+
+pp19–36:clinical/HMimaging,correlation+GBDT,randomsearchCVearlystopclaims,validation95.2%;p20unlabeled101–160testlabelprovenanceunclear.
+
+### Q2a
+
+pp37–45:days,4SDlongfollowuppatientremoval,OLS1–7/LAR/Gaussian2–5comparisons,extrapolationrationale; finalcurveinconsistent(thirdGaussianvsfirstLARresidual); entitymeansignedresidual,nogroupedCV.
+
+### Q2b
+
+pp45–52:sequentialEDvolumeKmeans4(6/39/20/35),silhouette/DB/CH; timealignment/shapeinputunderspecified.
+
+### Q2c
+
+pp52–62:end/baselineratio→binary,prevalence6rare,interactiontheory,CRITIC/PCAweights; noadjustedassociation/identification.
+
+### Q2d
+
+pp62–71:cooccurrence,baselinevolumes,endratios,tree/RFimportance,trainingfit; nolag.
+
+### Q3a
+
+pp72–92:clinicalHM/EDcorrelation/PCA,depth/leaf/pruningCV,decisiontree; PCAloadingsmislabeledmRSrelation; nominal/regressioncriteria mixed.
+
+### Q3b
+
+pp92–98:allfollowupwide+clinical,missingindicators,standardization,baselinefeature reuse,SVRkernelCV;nopredictioncutoff; finalMAE.8125>RMSE.7136 andMSE.6742 inconsistent.
+
+### Q3c
+
+pp98–116:literature+domainwise stepwiselinear,VIF/DW/ANOVA; causalcaveatspp76/78/80/84 coexistwithefficacypp113; mRSdirection/PCAimportanceerrors.
+
+### Evidence caveats
+
+- METRIC_INTERNAL_INCONSISTENCY，PDF pp.97。
+- REFERENCE_LEAKAGE_RISK，PDF pp.20,93。Testlabelprovenance andfirst/allimagescopeunclear;nopredictioncutoff.
+- PCA_IMPORTANCE_MISINTERPRETATION，PDF pp.80,81,82,83,84。
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.53,63,113,114。
+- Q1A_DIRECTIONAL_THRESHOLD_AMBIGUITY，PDF pp.12。
+
+## P05 — E23104030073.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P05.pdf)
+
+正文范围：2–50；附录抽查页：[]。
+
+### Q1a
+
+pp13–15:onsettime≤48h,baselineORthreshold butusesmaximumvolumeandmaxtime−firstscan,notfirstcrossingfromonset.
+
+### Q1b
+
+pp10–18:fullsampleMinMax/outliermeanreplacement,greyselection15/51,CNNonstaticvariables; splitclaimedbutfoldisolationunverified;RMSE.43109/MAE.34281 onprobability notfullclassmetrics.
+
+### Q2a
+
+pp19–21:explicitlydiscards>48hEDaswithoutvalue;fifthpolynomialR².4854,95%coefficientintervals; targetwindowdifferent,nogroupCV.
+
+### Q2b
+
+pp21–30:PCAclinical→age/systolic/diastolic,Kmeans5on160;staticnottrajectory; polynomial/Fouriercurves andfitmetrics.
+
+### Q2c
+
+pp30–32:entitymeanadjacentslope,seven-treatmentOLS,R².4316;dependenceaggregatedbutnoconfounder/timingchecks.
+
+### Q2d
+
+pp32–35:HM/EDmeanadjacentslopesandtreatmentSpearman;nojointlagmodel,causaltherapyinterpretation.
+
+### Q3a
+
+pp36–40:grey53→15,BPnet80first/20last,1000epochs;explicitmRSordered andclippedrounding,notformalordinalprobability.
+
+### Q3b
+
+pp40–42:ratio×volume for10regions,eachregionadjacentslopeaveraged;retainclinical+baselineimaging,72→20grey,BP;actualtemporalfeatureengineeringbutnocutoff or cleanablationmetrics.
+
+### Q3c
+
+pp42–49:72featuregreygradientranking,clinicaladvice;greyassociationclaimedcausal pp44;small-samplelimit.
+
+### Evidence caveats
+
+- Q1A_MAXIMUM_NOT_FIRST_CROSSING，PDF pp.14。
+- Q2_WINDOW_CHANGED_TO_48H，PDF pp.19。
+- PREPROCESSING_ISOLATION_UNVERIFIED，PDF pp.11,13,17。
+- REFERENCE_LEAKAGE_RISK，PDF pp.40,41。No90daycutoff;actualpost90notreproduced.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.35,44。
+
+## P06 — E23105330424.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P06.pdf)
+
+正文范围：2–59 (result tables identified separately)；附录抽查页：[72, 74, 76, 77, 78, 82, 85, 88, 95, 97, 102, 103, 104, 106, 107, 112, 113]。
+
+### Q1a
+
+pp.11–12: body screens 48h after first scan, then adds onset offset; reports 32/160 rather than current23/100. Time origin/label population not equivalent.
+
+### Q1b
+
+pp.13–20: 74 features→RF top15, repeat oversampling, seven/three split + grid search; reports recall .4375/AUC .7031. Preprocessing/sampling before split risk; not every excellent paper reports near-perfect score.
+
+### Q2a
+
+pp.25–27: 435 (not450) points, large-time/volume removal based on maxima, polynomial degrees3/4/5; fourth chosen; signed residual sum per entity; no grouped OOF.
+
+### Q2b
+
+pp.27–35: explicitly nonuniform unequal-length sequences, per-entity x/y Z-score, DTW-distance KMeans5; rise/fall/turning-shape portraits, inverse normalization to residual scale. Uses full entity trajectory to scale/assign; descriptive, not new-entity prospective validation. Appendixpp84–86 confirms interpolation to8points, fastdtw between sequences, then ordinaryKMeans on rows of distance_matrix; not a DTW-barycenter KMeans objective.
+
+### Q2c
+
+pp.35–38: early/mid/late ordinal bins, Cochran-Armitage, treatment co-occurrence; several p>.05 marked significant, treatment timing/causal claims unsupported.
+
+### Q2d
+
+pp.38–40:130entities, per-person mean/max HM/ED, treatment prevalence, MWU/Spearman/Pearson; entity summaries but no adjusted confounding or lag model.
+
+### Q3a
+
+pp.44–48: repeat oversampling before seven/three split, Spearman74→55, XGBoost regression; ordered distance awareness and near-hit metric; metric standard deviation mislabel and hyperparameter inconsistency.
+
+### Q3b
+
+pp.49–51: explicitly rejects large sequence nets for ~100 independent patients; retains baseline and adds recency-weighted average, Integrated Slope, terminal/prior-maximum Hua ratio for short irregular series; table compares baseline versus added followup. No verified 90d cutoff; paper's MSE percentage arithmetic not accepted.
+
+### Q3c
+
+pp.51–53: Spearman factor portraits and clinical recommendations; correlations overinterpreted as therapy improvement.
+
+### Evidence caveats
+
+- REFERENCE_LEAKAGE_RISK，PDF pp.14,18,44,97,107。Full preprocessing/resampling precedes split; code different scaler fits for train/test; some CV in appendix commented.
+- REFERENCE_LEAKAGE_RISK，PDF pp.49,50,51。No verifiable prediction cutoff; whole-trajectory summaries and normalizers are retrospective.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.37,38,52。
+- P_VALUE_CLAIM_CONTRADICTION，PDF pp.37。
+- DISTANCE_PROFILE_NOT_DTW_KMEANS，PDF pp.84,85,86。Valid as an explicitly named distance-profile embedding candidate, not direct DTW-centroid objective; normalization can erase amplitude/time scale.
+
+## P07 — E23106730076.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P07.pdf)
+
+正文范围：2–74; generic derivations skimmed；附录抽查页：[78]。
+
+### Q1a
+
+pp11–12: onset offset and chronological baseline threshold; text22 positives conflicts with24 table entries; label identity not assumed.
+
+### Q1b
+
+pp13–19: SMOTE and five families XGB/MLP/LGBM/SVC/LR, reports XGB AUC .85. Appendix p78 confirms fit_resample before train_test_split; comparison contaminated.
+
+### Q2a
+
+pp20–25: piecewise polynomial degrees2/3/4 and break counts5/10/20/40; degree4 with5 breaks by mean residual18.86; signed residuals, no entity-held-out evaluation.
+
+### Q2b
+
+pp28–33:15 static clinical/history/treatment fields, PCA then KMeans4 over160people, counts25/45/47/43. Not trajectory-shape grouping.
+
+### Q2c
+
+pp34–39: grey association and129entity deterioration summaries; volume decreases interpreted as efficacy without treatment timing or baseline adjustment.
+
+### Q2d
+
+pp40–46: entity mean HM/ED with7treatments in R lm; called Logistics in prose; R² HM .1789/ED .1088, ED overall p .144 acknowledged. No adjusted confounding.
+
+### Q3a
+
+pp47–58: variance+MI versus distance correlation+RFE,10features each,4models andgrid/randomsearch=16combinations,6model voting. Explicit input/model comparison but no nested-isolation evidence; .89 predicting first100 not established OOF.
+
+### Q3b
+
+p58: all followup input claimed, no clear representation or prediction cutoff; score provenance insufficient.
+
+### Q3c
+
+pp59–72: Fisher, Levene, correlation and formal cumulative ordinal logit via MASS::polr with parallelism check. pp62/67 regress aggregated mRS×location×category cells using mean volume as frequency weight; huge pseudo-sample uncertainty not patient-level ordinal prediction. Levene tests variance, not mean/prognostic effect. Advice and domain portraits extensive.
+
+### Evidence caveats
+
+- RESAMPLING_BEFORE_SPLIT_CONFIRMED，PDF pp.78。
+- REFERENCE_LEAKAGE_RISK，PDF pp.58。Prediction cutoff absent; actual post90 usage not reproduced.
+- PSEUDOREPLICATION_AND_WEIGHTING_ISSUE，PDF pp.62,67,68。
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.34,39。
+
+## P08 — E23106980022.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P08.pdf)
+
+正文范围：2–50；附录抽查页：[51, 52, 53]。
+
+### Q1a
+
+pp9–11: prose specifies onset48h,baseline6mL OR33%. Visualp9 equation4.1 usesAND,4.2 omits time inequality. Confirmed document inconsistency; actual implementation not reconstructed.
+
+### Q1b
+
+pp12–20:clinical19→6RF,bilaterallocation10→4LightGBM,shape/intensity23→10;80/20,LogisticchosenoverRF/SVM;p20swapspositiveclassmetrics,F1tablecontradiction.
+
+### Q2a
+
+pp21–27: duplicate-time average, hours/mL, five stages polynomial/Gaussian, prediction bands. Visual p27 confirms prediction−observation then residual1/residual2 despite prose0/1; not common residual statistic; no groupedCV.
+
+### Q2b
+
+pp28–32:Kmeans4(6/35/34/25)claimedtrends,actualrepresentation/alignmentunspecified.
+
+### Q2c
+
+pp33–35:endpointrelativechange/time→5progressionlevels,RF/grey,efficacyoverreach.
+
+### Q2d
+
+pp36–38:endchanges+treatmentlinear,HM–EDquadratic; nolag.
+
+### Q3a
+
+pp39–42:104variables,sixselectionmethodsvote3/4threshold,RF;noformalordinalprediction.
+
+### Q3b
+
+pp43–44:visitcolumns≥40%coverage,multiple/KNNimputation,selectionRF,trainingaccuracy.45;nopredictioncutoff.
+
+### Q3c
+
+pp45–49:explicitorderedmRS,chi-square/Spearman,smallpoweracknowledged;adviceexceedsnonsignificance.
+
+### Evidence caveats
+
+- METRIC_DEFINITION_PROBLEM，PDF pp.20。
+- REFERENCE_LEAKAGE_RISK，PDF pp.12,13,14,43,44。Preprocessisolationandcutoffunverified;actualpost90notreproduced.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.34,35,48。
+- RESIDUAL_DEFINITION_INCONSISTENCY，PDF pp.27。
+
+## P09 — E23107030070.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P09.pdf)
+
+正文范围：2–67；附录抽查页：[71, 72, 73]。
+
+### Q1a
+
+pp11–13: onset offset, baseline6mL OR33%, chronological first hit; claimed serial correction not independently adopted; no in-window observation encoded0.
+
+### Q1b
+
+pp14–21:74clinical/imaging→18factor scores; LR/RF,80/20 plus5fold claim. RF evaluation table includes160(128/32) with unverified test labels. Appendix p71 instead LR90/10 and RF fitfirst100/predictfirst100; reads separate160label file.
+
+### Q2a
+
+pp22–27: onset hours; LOESS2kernels,degree7,doubleGaussian; discusses negative extrapolation and peak location. Reports fitRMSE6.90, not OOF; signed mean entity residual, no groupedCV.
+
+### Q2b
+
+pp28–37: DBSCAN/KMeans4 with100entity memberships, compares subgroupGaussian fit. Actual clustering representation/time alignment unreported; appendix p72 consumes preassigned group sheets, does not establish shape algorithm. Do not label pooled-row clustering as confirmed.
+
+### Q2c
+
+pp38–41: explicitly recognizes irregular repeat-measure dependence and proposes mixed effects. Actual random-effect unit/covariance not reported; table7-1 compares means of binary treatment/time/ED columns of incompatible units, not treatment×time coefficients. p40 notices severity-driven assignment; p41 still infers treatment efficacy.
+
+### Q2d
+
+pp42–44: baseline160entity HM/ED Pearson .659; claims longitudinal mixed effects asQ2c without random-effect details; no validated lag/joint model; causal therapy statements.
+
+### Q3a
+
+pp45–58:104→21 viagrey/RF/XGB top30 pairwise intersections union; BP/GBDT/XGB compare80/20 and5fold claims, XGB testaccuracy.867. Isolation not established; appendixp73 shows differentmodelsLR/tree/RF/SVM.
+
+### Q3b
+
+pp59–63: explicitly preservesQ3a21features, adds lastvisit105→126→28features; same3model comparison to assess added information; BPtestaccuracy.906. No90daycutoff; same model families not proof samefolds/nestedselection.
+
+### Q3c
+
+pp64–65: Pearson28features and domain explanation, correctmRSdirection, importance not causal; ratiointerpretation and therapyadvice unsupported.
+
+### Evidence caveats
+
+- TRAINING_EVALUATION_CONFIRMED，PDF pp.71。
+- TEST_LABEL_PROVENANCE_UNVERIFIED，PDF pp.18,20,71。
+- MIXED_EFFECT_IMPLEMENTATION_UNVERIFIED，PDF pp.38,41。
+- NONCOMMENSURATE_MEAN_DIFFERENCES，PDF pp.41。
+- REFERENCE_LEAKAGE_RISK，PDF pp.59,61。Last visit without cutoff; actualpost90notreproduced.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.41,43,44。
+- BODY_APPENDIX_MODEL_MISMATCH，PDF pp.56,73。
+
+## P10 — E23900310014.pdf
+
+[完整PDF](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/sources/primary-set/P10.pdf)
+
+正文范围：2–45；附录抽查页：[]。
+
+### Q1a
+
+pp11–13: dependence acknowledged. Visual p13 formula uses adjacent differences while prose says baseline; strict<48; threshold6×10^-3 inconsistent with raw10^-3mL units unless additional conversion, not evidenced. Formula defect not proof which code generated labels.
+
+### Q1b
+
+pp14–19:age/BPbins,71→40PCA99%,fillcomparison;LogisticKfoldvsRF/XGB80/20,76/85/90%notcommonprotocol.
+
+### Q2a
+
+pp20–23: logtime,RBFvs spline. Visual pp22–23 confirm perentity absolute residualmean followed by table spline−44.20, an internal inconsistency. No groupedOOF.
+
+### Q2b
+
+pp24–28:initial/middle/finalslopes→3D→MeanShift4rise/fall/stable/peakgroups;RBFfit20.15→13.24,insampleonly.
+
+### Q2c
+
+pp28–31:treatmenttreepredictsdiscoveredgroups,70/30accuracy46.7%;importance,recognizes6rare;nogroupdiscoveryisolation/baselineadjustment.
+
+### Q2d
+
+pp31–35:entitymean/endpointchangeSpearman,bars,.588/.53correlations; noticesindicationimbalancebutclaimsefficacy.
+
+### Q3a
+
+pp36–37:clinical+baselineimagingonehot/PCA,RF/XGBgridtest20/35%;callsmRSordinalbutnominalpredictors.
+
+### Q3b
+
+pp37–41:baseline+allimaging wideXGB vs3DRNN,zero-padding,104input64hidden7softmax5000epochs;50/98%claimed,testlearningcurve/splitunclear,nocutoff.
+
+### Q3c
+
+pp41–44:Spearmanradar,small-sampleanomaliesrecognized;therapyadviceexceedsidentification;interpretabilitylimitation.
+
+### Evidence caveats
+
+- NONCOMPARABLE_MODEL_PROTOCOLS，PDF pp.19。
+- REFERENCE_LEAKAGE_RISK，PDF pp.38,39,40。Nocutoff,testcurve5000epochs,selectionindependenceunclear;actualtesttuningnotproven.
+- REFERENCE_CAUSAL_CLAIM_WEAKNESS，PDF pp.33,43。
+- ABSOLUTE_RESIDUAL_NEGATIVE_TABLE，PDF pp.22,23。
+- Q1A_FORMULA_PROSE_MISMATCH，PDF pp.13。
+
+## Visual verification
+
+Poppler渲染并查看：P08 pp9/20/27；P10 pp13/22/23；P04 p97；P06 p51；P09 pp41/71/72/73。P09附录为截图，正文文本提取不能替代这些可视核查；其Q2代码读取已分组工作表，不能据此确定聚类输入表示。P06 pp84–86可读附录静态确认插值→DTW距离矩阵→普通KMeans；未执行。

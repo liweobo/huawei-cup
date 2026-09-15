@@ -1,113 +1,47 @@
 {
   "status": "2023E_REFERENCE_BENCHMARK_COMPLETE",
-  "phase": "2023E Excellent-Solution Post-hoc Benchmark",
-  "evidence_class": "POST_HOC REFERENCE",
-  "repository": "https://github.com/liweobo/huawei-cup",
-  "baseline_git_head": "cce0a80d03aef5ec69713cac5afa85cb154933b7",
-  "baseline_class": "BLIND RUN / DIAGNOSTIC ONLY, plus separately preserved targeted capability upgrades",
-  "current_solution_frozen_at": "2026-09-14T14:58:13.929441+00:00",
-  "current_solution_sha256": "6f23b7c380d8a1002ee49196039268aae55dccfb6001ee75da3125a92b489415",
-  "final_decision": "GENERALIZABLE_GAP_FOUND",
-  "reference_quality": "MEDIUM",
-  "reference_set": {
-    "ledger_entries": 12,
-    "full_text_solution_papers_read": 6,
-    "verified_full_first_second_or_third_prize_papers_available": 0,
-    "award_full_text_status": "NO VERIFIED FULL AWARD PAPER AVAILABLE",
-    "award_caveat": "R-C01 first-prize identity verified, cover only. R-B03 full text verified only as a successful participation award. R-B05/R-B08 third-prize claims unverified.",
-    "core_method_references": [
-      "R-B01",
-      "R-B03",
-      "R-B04",
-      "R-B07",
-      "R-B08"
-    ],
-    "additional_method_quality_counterexample": "R-B02"
-  },
-  "top_generalizable_gap": "VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION",
-  "gap_name_zh": "在合法验证内设计特征组，并通过同协议消融验证增量价值",
-  "gap_evidence": [
-    "Q3b does not retain the complete Q3a first-image shape/intensity/location feature matrix, confounding added follow-up information with removed baseline information.",
-    "No persisted controlled feature-set or dimensionality ablation comparison for current Q1/Q3 modeling.",
-    "Q2b uses baseline ED tertiles without a controlled representation comparison; this does not establish a need for any specific trajectory-clustering algorithm."
-  ],
-  "reference_support": [
-    "R-B07 LaTeX lines 943–964: all-features versus top-10 comparison.",
-    "R-B08 original PDF pages 8–10 and 31–35: small-sample dimensionality, redundancy, and feature selection.",
-    "R-B03 LaTeX line 968 onward: preserve static information and add a longitudinal view."
-  ],
-  "claim_limit": "Reference scores are NOT DIRECTLY COMPARABLE; no new experiment here establishes that feature selection, fusion, or a more complex model improves predictive performance.",
-  "why_generalizable": "Controlled assessment of feature groups, redundant variables, and incremental information applies across small-sample multivariable and multi-source modeling tasks.",
-  "recommended_next_action": "下一阶段仅验证并补齐特征组设计与同协议消融比较能力，保留全部既有证据边界。",
-  "skill_level": {
+  "phase": "POST_HOC_COMPARISON",
+  "completed_at_utc": "2026-09-15T02:34:48.080312+00:00",
+  "reference_quality": "HIGH",
+  "papers_discovered": 10,
+  "papers_downloaded": 10,
+  "papers_fully_reviewed": 10,
+  "full_text_pages_available": 821,
+  "full_text_coverage": "10/10",
+  "full_review_definition": "All nine relevant question methods/results, validation and limitations in main texts; generic derivations/background skimmed; selected appendix static/visual checks. Not line-by-line verification of all 821 pages; no paper code execution.",
+  "award_levels_verified": 10,
+  "award_level": "All ten FIRST_PRIZE; P01 additionally star nomination, P08 star third place.",
+  "primary_source_commit": "cd5be91735ebf11d5ee52eb170e86a6d07131977",
+  "question_levels": {
     "Q1": "ADEQUATE",
     "Q2": "WEAK",
-    "Q3": "WEAK",
-    "Overall": "NEEDS_MODELING_IMPROVEMENT"
+    "Q3": "WEAK"
   },
-  "deliverables": [
-    "source-ledger.md",
-    "current-skill-solution.md",
-    "comparison-matrix.md",
-    "validation-comparison.md",
-    "feature-engineering-comparison.md",
-    "paper-quality-comparison.md",
-    "generalizable-gaps.md",
-    "REPORT.md",
-    "completion.json"
+  "overall_skill_level": "NEEDS_MODELING_IMPROVEMENT",
+  "top_generalizable_gap": "VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION",
+  "generalizable_gaps": [
+    "VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION"
   ],
-  "additional_evidence": [
-    "source-notes.md",
-    "before-sha256.json",
-    "current-solution-freeze.json",
-    "integrity-verification.json",
-    "sources/"
-  ],
-  "artifact_sha256": {
-    "source-ledger.md": "3a7e15e9403691d2ccb5fe63be81621da51c9358344c1424e2eb7864acd8ccde",
-    "current-skill-solution.md": "6f23b7c380d8a1002ee49196039268aae55dccfb6001ee75da3125a92b489415",
-    "comparison-matrix.md": "d1f3e93635252ce88554ff542947650f0ab1bba0f71ce46c20657a15b48cfd19",
-    "validation-comparison.md": "3c5b83e0adeff88dea92cfcd6998bc608dfc8c48289b929d1198afb517a1f51d",
-    "feature-engineering-comparison.md": "013c8c05e16badd8279bda932c1d1f35bf71e45d3471c4872b88a2db0b02ef7f",
-    "paper-quality-comparison.md": "5fb4578642e3079476ad03eb8e9ee48d605914a72575833be2c6681a892734e6",
-    "generalizable-gaps.md": "a6c26c6fbc4812292a8fe4c1a92c38a08acf4bfb2bdd0e0f34e950a7d7f31a60",
-    "REPORT.md": "7ad7b7960368ce7d795cba812a4502eaeb06cf9eab6da9e898e3480bbe264bcb",
-    "source-notes.md": "f0b62d249422c2045e2f183348429c88ae876877d012e21223ccefffc9d1fb59",
-    "before-sha256.json": "5ac4905513d2f9a7feeb4a4c5c17bb82ad4e64efd3bba2897d19ffc94e502fcd",
-    "current-solution-freeze.json": "f47bc350c83a7e25091ca26678a3dab99b886eef2a68d036ddb288acc3ebd332"
+  "final_decision": "GENERALIZABLE_GAP_FOUND",
+  "recommended_next_action": "等待人工判断是否开展特征集设计与合法增量消融这一单一候选修复。",
+  "next_phase_started": false,
+  "skill_modified": false,
+  "routing_modified": false,
+  "routes": 10,
+  "historical_results_modified": false,
+  "models_trained": 0,
+  "paper_code_executed": false,
+  "tests_executed_this_phase": false,
+  "historical_test_evidence_only": {
+    "pytest_passed": 226,
+    "harness_passed": 20,
+    "note": "Previously recorded behavior evidence; not new test execution and not predictive-performance proof."
   },
-  "verification": {
-    "protected_files_checked": 385,
-    "protected_files_unchanged": 385,
-    "frozen_summary_unchanged": true,
-    "tracked_worktree_clean": true,
-    "git_head_unchanged": true,
-    "artifacts_remain_gitignored": true,
-    "source_raw_hashes_verified": 65,
-    "integrity_status": "PASS",
-    "markdown_local_links_checked": 85,
-    "integrity_verification_sha256": "0539085dc1992993185ea76c92a474ce62dcc360ebe03a8450b543297f915bec"
-  },
-  "test_execution": {
-    "existing_regression_suites_rerun": false,
-    "models_retrained": false,
-    "downloaded_code_executed": false,
-    "checks_in_this_phase": "Read-only hashes, source metadata, document coverage, local links, and Git state.",
-    "historical_test_evidence": "Prior observational-association completion records 226 pytest and 20 harness passes; these are historical behavioral checks, not fresh runs or proof of modeling quality.",
-    "historical_test_evidence_path": "development/artifacts/observational-association/completion.json"
-  },
-  "scope_preserved": {
-    "skill_modified": false,
-    "routing_modified": false,
-    "tests_modified": false,
-    "historical_benchmarks_modified": false,
-    "frozen_2023e_results_modified": false,
-    "reference_content_added_to_blind_run": false,
-    "models_retrained_or_replaced": false,
-    "new_runtime_or_infrastructure_created": false,
-    "gitignore_modified": false,
-    "automatic_next_phase_started": false
-  },
-  "stop_after_this_phase": true,
-  "completed_at_utc": "2026-09-14T16:15:13.624467+00:00"
+  "comparable_external_performance_pairs": 0,
+  "external_metric_comparison": "NOT DIRECTLY COMPARABLE",
+  "current_solution_freeze_sha256": "14b72d5801fdf3afd976bf0040eeb12ff2f0e31266c0733b8f0b1bb098c57aa4",
+  "prior_reference_reading_disclosed": true,
+  "prior_pass_preserved": "prior-pass-6e5d1b6",
+  "report": "REPORT.md",
+  "stop_condition": "STOP; wait for human judgment; do not modify Skill automatically."
 }

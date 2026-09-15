@@ -1,0 +1,27 @@
+{
+  "source_id": "P09",
+  "filename": "E23107030070.pdf",
+  "url": "https://github.com/zhanwen/MathModel/blob/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/E/E23107030070.pdf",
+  "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/国赛论文/2023年优秀论文/E/E23107030070.pdf",
+  "repository_commit": "cd5be91735ebf11d5ee52eb170e86a6d07131977",
+  "accessed_at": "2026-09-15T01:06:46.293786+00:00",
+  "access_timestamp_note": "Raw-file write time; successful download preceded text-extraction recovery.",
+  "github_blob_sha": "790602a8d78b6fe45687eb2fd9fc025b54f67663",
+  "sha256": "d99c0cb9b31c99f936581611e05b388bd686a629c56343ec3ed8a3f3317918ee",
+  "bytes": 4523029,
+  "raw_file": "P09.pdf",
+  "page_count": 73,
+  "extracted_characters": 82507,
+  "pages_with_lt100_characters": [
+    1,
+    9,
+    70,
+    71,
+    72,
+    73
+  ],
+  "text_file": "P09.txt",
+  "pages_file": "P09-pages.json",
+  "text_extractor": "PDFium via pypdfium2; fixes CJK encoding that pypdf did not decode",
+  "extracted_at": "2026-09-15T01:06:46.884029+00:00"
+}

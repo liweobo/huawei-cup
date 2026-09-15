@@ -1,47 +1,58 @@
-# Generalizable Gaps — one recommendation
+# Generalizable Gaps
 
-**Decision: GENERALIZABLE_GAP_FOUND**
+**Final decision: GENERALIZABLE_GAP_FOUND**
 
-**Top-1: VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION**
+只确认一个G1并作为Top-1。其他差异分别属于题目改进、方法不同、参考缺陷或当前run完成度问题；本轮不实施。
 
-中文：在合法验证内设计特征组，并验证筛选、变换与新增信息的增量价值。
+## G1 — VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION
 
-这是对当前已展示建模过程的诊断，不是从一道题证明Skill永久不会做特征工程。它也不是“Logistic不如XGBoost”或“获奖论文用LSTM所以必须加LSTM”。
+- gap_name: VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION
+- 中文：有验证依据的特征集设计与增量消融。
+- evidence: 冻结摘要I01/I09/I10：Q1/Q3a已有多视图，但没有保存特征组比较；Q3b未合并Q3a的完整首次shape/intensity/location，同时增加随访，无法干净解释增量价值；I07 Q2b只有首次ED一维分组，未比较表示。
+- reference_consensus: 9/10明确预测特征筛选或降维；8/10明确Q3b保留baseline并加随访；4/10有输入变体/筛选方案的显式比较（P01 p19、P06 p51、P07 pp47–58、P09 pp59–62）。严格验证收益未获证明。轨迹形状聚类仅2/10，不以其为多数共识。
+- why_generalizable: 同时适用于静态多信息源、高维小样本、设备/用户重复测量、城市/公司面板及实验轨迹；要解决的是如何表达可用信息以及判断新增信息是否有用，不依赖HM/ED/医学实体。
+- why_current_skill_is_insufficient: 已有“构造变量”“同协议比较”和fold隔离的宽泛原则；只读设计workflow及模型族未见可执行的特征组保留/增量/删组对照过程。Q3b信息丢失和Q1/Q2b缺比较表明仅靠模型族比较尚不足。不是说Skill没有任何feature engineering能力。
+- expected_competition_impact: 避免合法信息无故丢失，让特征构造形成可说明、可否决的证据；有望改善预测、亚组解释和创新论证。**没有可比实验，不能承诺分数提升或给提升百分比。**
+- recommended_next_phase: 经人工判断后，只验证这个特征集设计与消融候选：固定合法样本、时点、fold与受控模型，比较baseline、baseline+少量有依据表示及必要删组；保留负结果。不得把本次参考成绩回填历史run。
 
-## Classification
+## G1七条件核对
 
-| Category | 发现 | 证据与处理 |
-| --- | --- | --- |
-| G1 — Generalizable Skill Gap | 缺少任务对齐的特征组设计、保留共同基线的增量比较，以及fold内特征筛选的实际消融证据 | I01/I09/I10；Q3b删掉Q3a首次影像视图；B07/B08显式讨论维度/特征比较，B03保留静态信息融合随访。唯一Top-1 |
-| G2 — Problem-Specific Improvement | 本题4名48h无随访者的标签可观测性说明、流水号异常、HM–ED特定关系与临床特征含义 | I04/I05与B08 pp.7–8；应在本题新分析中补充，不改冻存标签。本轮不提医学专用模块 |
-| G2 — Problem-Specific Improvement | 补齐本题Q3c因素表、完整九问叙事和最终论文；记录Q1/Q3升级指标缺少持久副本 | I09/I10只打印stdout、I12/I14明确诊断阶段。是本次交付/证据缺项；不能据此直接认定需要新增解释算法或修改write-paper |
-| G3 — Reference Difference Only | Logistic/ordinal vs RF/NN/DeepForest；单条二次 vs Gaussian/混合模型；是否使用propensity | 没有同数据/同目标/同split可比结果，不能按模型名认定落后 |
-| G3 — Reference Difference Only | 完整trajectory clustering、DTW、functional clustering、growth mixture作为必修能力 | B01/B04/B08主要静态分组；B03对齐/表示不明；B07多维含变化量而非可靠完整形态分组。当前baseline有局限，但参考不足以把特定轨迹算法列为优先缺口 |
-| G3 — Reference Difference Only | ACF/PACF、复杂动态HM→ED模型、更多校准/敏感性图 | 未见可信滞后识别或同协议收益。校准、uncertainty/robustness仍是已知不足，本轮证据不足以改排为新的Top-1；本轮不实施 |
-| G4 — Reference Weakness | 全量SMOTE/PCA/缩放先于切分；训练拟合被当验证；簇数反复在全体数据择优 | B03 Q1源码；B07 Q2/Q3源码。原文/代码证据定位见source-notes |
-| G4 — Reference Weakness | 不核实治疗时序/混杂便声称“治疗有效/有害”，importance外推临床因果 | B01/B02/B03/B04/B07/B08都有不同程度问题；Skill纪律应保留 |
-| G4 — Reference Weakness | 48.90h改48h、遗漏6mL或发病偏移、残差口径/指标名混淆、奖级未经证实 | B08 pp.7–8，B02 pp.3–5，B07 Q2b代码；来源台账严格区分奖项身份与方法质量 |
+| Condition | Evidence / boundary |
+| --- | --- |
+| 1 当前确有不足 | 完整基线在Q3b缺失；Q1/Q3未保存输入组对照；Q2b仅单表示 |
+| 2 多reference明确支持 | P01/P06/P07/P09四篇比较思想，加8篇baseline保留；不是单篇偏好 |
+| 3 显著影响竞赛质量 | 信息是否丢失、随访贡献能否归因、分群能否解释是核心建模问题；量化收益尚待未来验证 |
+| 4 不依赖医学 | feature groups、时间摘要与表示对照适用于任何实体/量测 |
+| 5 可迁移 | 静态表格、多视图、稀疏纵向/面板等多个数据结构 |
+| 6 可形成清晰原则 | 保留基线，少量问题驱动表示，隔离选择，同协议增量/删组，允许无收益 |
+| 7 非单篇偏好 | 9/10选择、8/10增量信息、4/10显式比较；不指定grey/DTW/PCA/XGB |
 
-G3表示“本轮没有证据仅因方法不同认定通用缺口”，不表示现有所有模型已经最优。Q2b的表示不足作为G1的一个实例保留，但不扩展成第二个模块。
+判断置信度：来源/事实HIGH，通用缺口诊断MEDIUM–HIGH；实际预测收益UNKNOWN。本轮多篇证据独立支持这一结论，即使与上一轮候选同名，也不是继承旧结论。旧报告完整保留，新增参考没有进入历史模型。
 
-## Top-1 dossier
+## G2 — Problem-Specific Improvement
 
-- **gap_name:** VALIDATION_SAFE_FEATURE_SET_DESIGN_AND_ABLATION
-- **evidence:** 当前Q1/Q3a已有临床、体积/位置、形状/灰度，但定向比较主要改变模型/类别权重/ordinal形式，没有保存特征组贡献或筛选收益；Q3b改为clinical+体积聚合，没有延续Q3a完整首次影像矩阵，因此既有Q3a→Q3b分数变化同时含新增与删除信息；Q2b只用首次ED一维分组，没有多维表征比较。
-- **reference_support:** R-B07原文L943–964明确all features vs top10；R-B08 PDF pp.8–10、31–35说明小样本高维/共线性及特征筛选；R-B03 L968明确保留静态视图再加入时序视图。这些来自多个独立公开方案。其成绩不具可比性，所以只支持建模思想的重要性，不支持其数值或具体筛选规则。
-- **why_generalizable:** 小样本多变量、不同来源特征融合、随访/阶段数据带来的增量比较，常见于设备状态、城市经济、用户行为、政策/教育、实验科学。变量数量、冗余和可得时间会影响泛化、解释和稳定性；无需临床字段名也能定义和验证。
-- **why_current_skill_is_insufficient:** 现有Skill已经要求预处理/特征选择在fold内、模型比较同协议；并非没有安全规则。问题是缺少将原始字段转化为少量有任务理由的候选表示、保持共同特征基线、用可追溯消融判断收益的操作深度；本题实际产物反复停在拼表/简单汇总。纯容量控制与更严格切分不能替代对信息表示的比较。
-- **recommended_next_phase:** 仅研究并验证上述一项能力；保留原始baseline，在同一合法预测场景、实体集合、cutoff和fold下，比较少量有解释的特征组及fold内缩减方案，保存组贡献和失败结果。先验证设计能识别冗余/遗漏信息，再做小范围真实题定向对照；无增益时应保留简单模型。
-- **claim_limit:** 本轮没有训练或消融，不能保证未来指标提高，也不能称当前方案已被某获奖模型数值击败。缺口结论置信度MEDIUM；它足以支持下一阶段的受控验证，不支持直接加入任何参考算法。
+| Item | Why not a generic Skill requirement |
+| --- | --- |
+| 特定脑区合并、临床分箱、区域比例×体积 | 通用的量纲/表示原则有价值；具体医学组合需领域支持 |
+| HM–ED的具体滞后、病理峰值和治疗时序 | 时间间隔、采样和临床机制决定；参考没有一致可验证lag模型 |
+| 48h窗口无随访者的标签/删失策略 | 当前确有4例限制；本轮记录，不从不同论文标签倒推标准答案 |
 
-## 为什么它排在第一
+## G3 — Reference Difference Only / evidence insufficient for new G1
 
-1. 同时影响Q1概率预测、Q3有序预测和Q2分组的建模质量；已有数据都能利用。
-2. Q3b的共同基线缺失是确定性证据，Q1/Q3的特征比较空白能从现有测试/产物核实。
-3. 跨领域价值明确，且可以在已有Temporal/Group/Ordinal/Imbalance规则下真实验证。
-4. 不依赖单篇论文、不依赖奖级、不依赖不可比高分；B07/B08侧重筛选，B03侧重多视图保留，指向同一信息表示问题。
-5. 相比直接建轨迹聚类、因果ML或更多优化算法，问题范围更清楚；本轮没有可靠证据将后者列为首选。
+| Item | Decision |
+| --- | --- |
+| Logistic vs RF/XGB/CNN | 名称不决定优劣；P08本就选Logistic；外部成绩不可比 |
+| 等实体WLS+聚类区间 vs mixed/GEE | 正确估计单位和estimand比模型名重要；不要求为了模仿改模型 |
+| Gaussian/spline/LOESS vs二次曲线 | 当前选型证据不足，但已有模型比较原则；本轮不另建曲线模型目录 |
+| 完整trajectory clustering专门模块 | 仅P06/P10明确；可作为唯一G1的表示候选，未证明需要独立模块 |
+| 深度多模态融合/序列网络 | baseline保留是强证据；深度架构收益未证实，不要求升级 |
+| Robustness/sensitivity / uncertainty | 此题实际证据不足，既有workflow存在；reference未建立明确共同优势，不抢占Top-1 |
+| Q3c无独立结果、论文未完成 | 属当前run交付缺项；不能自动证明通用解释/写作能力全无，记录但不另立模块 |
 
-## Stop boundary
+## G4 — Reference Weakness
 
-本轮只生成独立对标artifact。没有改Skill、routing、历史结果，也没有实施任何上述建议；不会自动进入下一阶段。
+训练评价、split前重采样、观测单位混淆、无cutoff、残差/指标矛盾、importance当效应、混合模型名与结果对象不一致，详见 [reference-weaknesses.md](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/reference-weaknesses.md)。这些不应进入Skill。
+
+## 推荐边界
+
+下一阶段最多一个候选；不同时开发轨迹聚类、复杂融合、因果推断和robustness系统。此阶段 **STOP**：无Skill、routing、runtime script、历史结果修改；等待人工决定是否值得修复。

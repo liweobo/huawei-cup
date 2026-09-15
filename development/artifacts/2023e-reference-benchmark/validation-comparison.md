@@ -1,42 +1,39 @@
 # Validation Design Comparison
 
-本页区分行为正确性与建模质量。证据入口：[冻结方案](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/current-skill-solution.md)、[参考原文定位](C:/Users/aaa/Desktop/test/huawei-cup-2026/development/artifacts/2023e-reference-benchmark/source-notes.md)。严谨协议提高可信度，并不自动提高预测成绩。
+范围：已冻结独立run及其定向升级，对比P01–P10参赛稿。参考数字均为作者报告，本轮不复现，不用不可比分数判输赢。
 
-| 维度 | 当前Skill已有证据 | 已读参考材料 | 判断 |
+| Aspect | Current Skill evidence | References | Assessment |
 | --- | --- | --- | --- |
-| 样本单位 | Q1/Q3聚合后一实体一行；Q2为100实体/450行 | B01/B04多为总体曲线拟合；B07 Q2有mixedlm但后续row split；B08用患者静态表分组 | 重复观测不能当450独立人。不能对所有静态表机械要求GroupKFold |
-| Holdout / K-fold | 原Q1 5-fold、Q3 4-fold；升级测试代码为5×2 / 4×2重复分层CV | B03 80/20+10/15折调参；B07/B08多为单次80/20或70/30，部分训练精度 | 协议更可追溯是SKILL ADVANTAGE；升级数字缺持久副本仍是证据限制 |
-| Grouped validation | Q2a实际5折80/20实体，overlap全部0；Q2b分界和曲线fit IDs被检查 | 未找到可核验的新实体OOF曲线/分组评价；B07 Q2a代码随机拆行并评价全体 | SKILL ADVANTAGE；mixed model名称不等于完成grouped预测验证 |
-| 时间可得性 | Q3聚合前过滤>2160h；原9行/8人泄漏证据保留失效 | B03“全部影像”；B07截前5次，B08前2次；未给90天/统一cutoff证明 | REFERENCE LEAKAGE RISK。没有断言参考必定用了同样9条；90天过滤也不证明Skill具有固定早期landmark能力 |
-| 预处理与无监督步骤 | 插补/缩放在CV pipeline；Q2b每fold单独学习分界 | B03 Q1全量缩放/SMOTE先于CV；B07 Q3b全量PCA先于split | 确认的代码泄漏不能降格为一般warning；这些分数不得作为可信基准 |
-| 分组发现 | 验证者只用预测时可得baseline赋组；baseline回预测不计未来分数 | B03/B07全体选择特征/簇并拟合；B01/B04/B08仅作全体描述 | 全数据描述性聚类本身不自动叫泄漏；只有冒充新实体/未来验证才违法。回顾性形态描述与可部署赋组必须分开 |
-| Model selection | 要求同scope/split/metrics；实际曲线仍是固定候选，非充分方法比较 | B03调参后在同一CV矩阵报分；B07特征/簇数主要靠拟合误差 | Skill的比较规则正确，但建模候选与表征比较仍不足；不能把规则存在当实验已完成 |
-| 类别不平衡 | PR-AUC、少数类Recall、Balanced Accuracy、多数类baseline；fold内处理 | B03使用SMOTE但顺序错误；B08的F1汇总/Recall口径不清 | SKILL ADVANTAGE；高accuracy不代表识别扩张 |
-| Ordinal | cumulative ordinal及MAE/RMSE/QWK/Within-One-Level协议 | B03/B08有顺序意识；B07仍nominal交叉熵；多只报accuracy | SKILL ADVANTAGE是目标与指标对齐，未证明升级模型实际更准 |
-| 概率/校准 | Q1测试定义Brier等；未保存可靠性曲线或外部校准结果 | 已读来源没有充分校准证据；将神经网络输出缩至0–1不等于校准 | 双方都不能宣称概率已可靠校准 |
-| 估计不确定性 | association按实体CR1、t(99)名义CI；group bootstrap规则存在，未进行本轮bootstrap | B08给曲线参数95%CI，B07有importance波动；未见统一实体抽样CI | 确认相关结构是优势；名义CI不证明因果/多重检验控制，CV折间std不是CI |
-| Robustness / sensitivity | 已明确留后续阶段，未声称完成 | B07有特征数量/簇数量图，但多基于同一拟合数据 | 记录范围及不足，不把“有敏感性图”当稳健性证明；本轮不实施 |
+| Training fit vs validation | I07独立保存FIT_RESIDUAL与VALIDATION_ERROR | Q2主要fit residual；P01附录pp55–56/59、P09附录p71明确有训练集评分 | **SKILL ADVANTAGE**：能区分拟合与泛化；不代表泛化已经好 |
+| Holdout | 当前Q1/Q3使用重复CV协议 | P05/P06/P08/P09等单次70/30、80/20或其他比例；有些正文称CV而实现不一致 | 样本小，单次高分不足以建立优越性 |
+| K-fold / repeated CV | I09 Q1 5×2；I10 Q3 4×2、最少等级4人；升级分数stdout未持久化 | 多篇提K-fold；P10 p19 Logistic Kfold、RF/XGB holdout混比 | Skill协议较完整；不能用代码存在代替升级性能结果 |
+| Grouped CV | I07 Q2a每fold80/20实体，overlap全0；Q2b训练fold内边界 | 0/10建立了同等级可核验的新实体Q2验证 | **SKILL ADVANTAGE**；仅未报告时标unverified，不断言group leakage已发生 |
+| Temporal validation | I01/I10先排除>2160h再聚合；历史9行/8人泄漏失效保留 | 0/10明确证明Q3b逐记录目标前cutoff；P09取last、P02展开、P10全序列 | **SKILL ADVANTAGE**；当前90day上界仍不等于统一早期landmark或前瞻验证 |
+| Preprocessing isolation | 当前插补、缩放、编码在fold；新group gate含PCA/聚类 | P07 p78确认SMOTE先于split；其他全量筛选/缩放常未交代隔离 | 既有gate不得因参考高分放松 |
+| Calibration | Q1指标协议含Brier；无持久化校准曲线与决策阈值结果 | 主集合没有可核验的系统性校准验证报告；输出概率不等于校准 | 双方证据不足，不宣称Skill已完成calibration |
+| Confidence interval | I08按实体CR1与t(99)的nominal区间 | P04/P05/P09曲线参数区间；P08预测带；其独立性假设未核验 | 不同区间目标不可混比；Skill的聚类区间也不是因果区间 |
+| Bootstrap / effective n | Group-aware能力要求相关重复记录按实体；未见此次Q2/Q3完整bootstrap产物 | 未建立可核验的实体bootstrap方案；P07按均体积加权序数汇总有伪样本量风险 | 规则优势与本题实际不确定性证据应分开 |
+| Sensitivity / uncertainty | 已有通用workflow，但2023E建模仍未完成整体robustness/sensitivity | 多篇有局限/参数扫描/曲线阶数对照；没有形成可直接比较的完整稳定性协议 | 不将调参自动当稳健性；本轮不修复，也不选为Top-1 |
 
-## 既有Q2a row-vs-group对照
+## 已有Q2a row-vs-group事实
 
-本轮仅读取之前的I07，未重训。相同time-only二次Ridge、100实体450行：
-
-| 原有协议 | pooled OOF MAE (mL) | RMSE (mL) | R² | 可信状态 |
+| Protocol | RMSE mL | MAE mL | R² | Usage |
 | --- | --- | --- | --- | --- |
-| Patient/entity-grouped 5-fold | 19.801187 | 26.229155 | −0.012561 | 合法新实体评价，仍显示预测能力弱 |
-| Row-random 5-fold | 本页不额外补数 | 26.344805 | −0.021510 | INVALIDATED；每fold重叠实体58/60/58/62/59 |
-| 全100实体最终拟合 | 不作为OOF成绩 | 25.965972 | 不作为OOF成绩 | FIT_RESIDUAL |
+| Row-random | 26.344805 | 见I07原始结果，不补造 | −0.021510 | INVALIDATED对照；每fold共享58/60/58/62/59实体 |
+| Patient-grouped | 26.229155 | 19.801187 | −0.012561 | 正式新实体评价；五fold全零重叠 |
+| Full-data final fit residual | 25.965972 | 非外部验证 | 非外部验证 | 题目所需FIT_RESIDUAL |
 
-这次row-random没有更优RMSE，不能捏造“泄漏必然让本次分数大幅上升”。禁止该协议的理由是独立性失效，而非分数方向。最终拟合残差也不等于验证误差。
+本次row随机分数没有更好。不能为了证明泄漏危害而改写结果，也不能因差值小就允许实体重叠。合法性和实际乐观幅度是两个判断。
 
-## 数值是否可以排名
+## Numeric comparability register
 
-全部外部对照为 **NOT DIRECTLY COMPARABLE**：
+| Proposed comparison | Decision | Why |
+| --- | --- | --- |
+| Skill旧Q1 AUC0.575381 vs P06 AUC0.7031/P07 AUC0.85 | NOT DIRECTLY COMPARABLE | 原/升级版本不同，cohort/标签/切分/重采样不同；P07存在split前SMOTE |
+| Skill grouped RMSE26.229mL vs P09 fitRMSE6.90 | NOT DIRECTLY COMPARABLE | 独立实体OOF vs训练拟合；输入筛选、残差和数据版本未一致 |
+| Skill Q3 nominal MAE1.42/QWK0.342714 vs P06/P09 accuracy或P10 RNN98% | NOT DIRECTLY COMPARABLE | 指标、输入、cutoff、样本/验证与模型版本不同 |
+| Skill Q3a→Q3b已有分数差 | 不能干净归因为新增随访 | Q3b同时丢失完整基线影像特征集；不是固定输入基线的增量比较 |
+| P06 baseline→followup或P09同模型前后结果 | 可记录作者内部比较思想；不接受为已验证改进幅度 | 是否相同fold、选择隔离、时间边界未证实 |
+| 模型A row CV vs模型B group CV | 禁止排名 | validation estimand不一致 |
 
-- B03 Q1目标由曲线求根，且SMOTE先于CV。
-- B07 Q1报告训练/内部评价；Q2加入首次ED，评价包含训练数据；Q2b某代码路径将MAE称为RMSE。
-- B01/B04/B08曲线主要报告拟合；残差可能是每人绝对和、均值或不同缩放单位。
-- B07/B08 Q3缺一致cutoff、同fold和完整预处理隔离证据；B08未清楚区分Q3a/b指标；不能与Skill corrected OOF/QWK相比。
-- 即使文件来源都是2023E，也还需要处理后的数据、标签、可用时间及metric aggregation相同，才有数值优劣意义。
-
-当前Skill的Brier/ordinal升级指标只在既往测试stdout输出，未找到持久副本。本轮不复跑填补；旧套件通过仅证明行为回归，当作历史证据引用。
+本轮没有找到满足三项可比条件的外部性能对。没有推算“差多少分”或预计提升百分比。
