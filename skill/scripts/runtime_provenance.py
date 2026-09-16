@@ -98,6 +98,16 @@ def validate_experiment_record(record: dict[str, Any] | None) -> list[str]:
         errors.append(f"protocol_changed must be computed as {changed}")
     if changed and not str(record.get("change_reason", "")).strip():
         errors.append("change_reason is required when normalized protocols differ")
+    feature_protocol = any(
+        isinstance(record.get(name), dict) and record[name].get("feature_set_comparison")
+        for name in ("planned_protocol", "executed_protocol")
+    )
+    if feature_protocol or "feature_set_contract" in record or "feature_set" in record:
+        try:
+            from .feature_sets import feature_set_errors
+        except ImportError:  # pragma: no cover - direct CLI
+            from feature_sets import feature_set_errors
+        errors.extend(feature_set_errors(record))
     association_protocol = any(
         isinstance(record.get(name), dict) and record[name].get("association_analysis")
         for name in ("planned_protocol", "executed_protocol")
@@ -335,6 +345,19 @@ def validate_active_evidence_set(data: dict[str, Any], active_run_id: str) -> li
 def validate_paper_claim(claim: dict[str, Any], active_set: dict[str, Any], active_run_id: str) -> list[str]:
     """Reject stale or inactive evidence versions in paper claims."""
     errors: list[str] = []
+    if "feature_set_evidence" in claim:
+        try:
+            from .feature_sets import review_feature_claim
+        except ImportError:  # pragma: no cover - direct CLI
+            from feature_sets import review_feature_claim
+        evidence = claim["feature_set_evidence"]
+        if not isinstance(evidence, dict) or not isinstance(evidence.get("candidate"), dict) or not claim.get("text"):
+            errors.append("FEATURE_PROVENANCE_INCOMPLETE: feature claim requires text and candidate record")
+        else:
+            checked = review_feature_claim(claim["text"], candidate=evidence["candidate"],
+                parent=evidence.get("parent"), contrast=evidence.get("contrast", "increment"),
+                paired_evidence=evidence.get("paired_evidence"))
+            errors.extend(checked["findings"])
     if "association_contract" in claim:
         try:
             from .association_analysis import review_association_claim

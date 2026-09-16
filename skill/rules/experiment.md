@@ -6,6 +6,7 @@
 4. 随机算法固定并报告种子；重要结论使用多种子、重采样或区间检查稳定性。
 5. 测试集不用于选模型或调参；无法保留独立测试集时明确验证局限。
 6. 失败实验也要记录原因，禁止只保留最好一次运行。
+   特征组无明确增益也是有效结果；按需遵守 [`feature-set-design.md`](../references/feature-set-design.md)，在相同样本、folds、模型和政策下比较，保留合法 baseline、明确删除原因和逐 fold paired deltas。不可将样本组成或模型变化解释为信息增益。
 7. 指标必须与误差代价和题目目标一致；报告边界情况与不可定义值。
 8. `planned_protocol` 与 `executed_protocol` 使用稳定的结构化类型、参数和分组定义；`protocol_changed` 由 normalized protocol 自动比较生成，不由模型自行判断。
 9. `protocol_changed: true` 时必须填写 `change_reason` 和 `comparable_to_original_plan`。状态为 `OBSERVED` 时还必须写入 `protocol_change_disclosure`，向用户说明原计划、实际执行、变化原因和新旧结果是否可直接比较。

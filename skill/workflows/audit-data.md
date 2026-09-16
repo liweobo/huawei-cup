@@ -76,6 +76,8 @@ status: PASS  # PASS / FAIL / UNVERIFIED
 `last`、`max`、`mean`、`slope`、`change`、rolling 或 cumulative 特征。任何超过
 cutoff 的观测进入聚合都会使实验 `INVALIDATED`；被排除的行数和受影响实体数要写入报告。
 
+多源、多阶段或高维输入时按需读取 [`feature-set-design.md`](../references/feature-set-design.md)，建立 Feature Set Contract；按来源/语义/时间组织信息组，列明合法 baseline、候选增量组、实际列、派生公式、可用时点与排除理由。字段数/样本数及各组缺失覆盖进入审计。
+
 ## Checks
 
 missing / duplicate / outlier 是否复核？时间顺序与 leakage 是否检查？是否把 ID、类别或相关性候选当成自动删除指令？单位和时间频率是否一致？

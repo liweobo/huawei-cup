@@ -38,6 +38,8 @@
 9. 把实际验证完整写入 `executed_protocol`，由 [`../scripts/runtime_provenance.py`](../scripts/runtime_provenance.py) 自动计算 `protocol_changed`。变化时填写 reason、可比性和用户披露；校验通过后才能把记录标为 `OBSERVED`。
 10. 所有 validation evidence 绑定当前 `run_id` 和 `experiment_id`，并明确适用边界、断裂证据链和待补数据。
 
+评估信息增益时按需读取 [`feature-set-design.md`](../references/feature-set-design.md)，核对 same-sample、baseline retention、固定 folds/model/policies 和 fold-safe selection。按指标方向报告 paired mean/median delta、标准差与 sign consistency；小而不稳定的差异记 NO_CLEAR_INCREMENTAL_VALUE。维度和缺失成本上升但无明确收益时允许选择简单集合。
+
 ## Checks
 
 验证产生的新数字是否更新了 Experiment Record？路径是否属于 active run？是否只看训练拟合？是否存在 data leakage？协议变化是否披露？灵敏度/鲁棒性扰动是否有题意？

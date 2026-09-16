@@ -38,6 +38,8 @@
 9. 观察性关系题先读取 [`observational-association.md`](../references/observational-association.md)，复核 Association Analysis Contract：病情/需求/风险影响措施分配的混杂、处理前 confounder 证据、暴露时序、实体依赖、稀有措施及共现。把处理后变量作为普通 confounder 或把 outcome 放入 propensity model 属于分析失效。无可靠识别却写“导致”“使得”“有效降低”“增加风险”等因果表述，报告 `P1 UNSUPPORTED_CAUSAL_CLAIM` 并将该 Claim `INVALIDATED`；使用 `association_analysis.review_association_claim()` 辅助检查，同时逐条审查上下文。未知时序只能报告 association / trajectory association；randomization、matching、IPTW 或调整回归的名称本身不能替代设计证据。
 10. 对照 ACTIVE_EVIDENCE_SET 和 Evidence Ledger 检查每个 Paper Claim 的 `run_id/experiment_id/artifact_id`。引用其他 run 且未标为 historical 时报告 `STALE_EVIDENCE_REFERENCE`；主动发现并阻止旧证据混用属于 Reviewer 正确行为，不是 model-behavior P0。
 
+出现特征筛选或新增信息增益声明时按需读取 [`feature-set-design.md`](../references/feature-set-design.md)，用 `review_feature_claim()` 核查受控证据。静默删 baseline/换样本/换 folds 或模型报 UNCONTROLLED_FEATURE_SET_COMPARISON；全数据先筛选再 CV 报 FEATURE_SELECTION_LEAKAGE；无依据大组合选最高分报 FEATURE_SET_SEARCH_OVERFIT_RISK；来源、时点或构造不全报 FEATURE_PROVENANCE_INCOMPLETE。
+
 ## Checks
 
 是否用作者意图替代证据？是否先列 P0/P1？无法核验处是否标 `[需要验证]`？

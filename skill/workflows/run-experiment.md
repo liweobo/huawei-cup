@@ -36,6 +36,8 @@
 8. 保存日志、预测/决策输出、指标、图表路径、失败信息和 run-bound evidence IDs。
 9. 报告绝对指标、相对变化、多种子/重采样波动与失败案例，并根据 Done When 决定 Keep/Reject。
 
+特征集比较按需读取 [`feature-set-design.md`](../references/feature-set-design.md)，运行前将 `feature_set_comparison: true`、合同与 `feature_set` 扩展写入记录，先过 `feature_sets.audit_feature_comparison()`。复用实际 sample/fold IDs，逐 fold 保存 pipeline fit IDs；运行后过 feature gate，保存全部候选（含负结果）的配对指标。
+
 ## Checks
 
 是否存在通过校验的 Experiment Record？纵向特征是否在 temporal filtering 之后才聚合？是否记录 post-horizon 排除数量？Evidence Ledger 是否登记全部生成 artifact？配置能否复现？全部路径是否属于 ACTIVE_RUN_ID？如果计划与执行协议不同，
