@@ -42,6 +42,8 @@
 
 若当前优化问题的 feasibility 取决于 evolving system state，先读取 [`stateful-scheduling.md`](../references/stateful-scheduling.md) 并建立 Stateful Scheduling Contract。正式 Improved / Primary candidate 必须是 `STATE_COUPLED`，或使用经验证的 `SEQUENCE_WITH_FEASIBLE_DECODER`；没有 decoder 的 `SEQUENCE_ONLY` 保持 `STATE_SEARCH_UNVERIFIED`。
 
+若已有合法 feasible incumbent、没有 exact OPTIMAL proof、但 solution quality 可通过离散决策改变改善，再读取 [`structured-improvement.md`](../references/structured-improvement.md) 并建立 Structured Improvement Contract。定义少量 move families，记录 decision_component、rationale、realization、feasibility check、真实 objective evaluator、acceptance、incumbent rule、budget 和 stopping rule。不要因为算法名称新增 GA/SA/PSO/CP-SAT 模块。
+
 扩展信息场景按需读取 [`feature-set-design.md`](../references/feature-set-design.md)：保留合法 baseline，预先设计少量 B → B+G 与必要 Full−G 对照；固定样本、folds、模型与超参数/预处理政策。删除 baseline 显式记录原因，但该比较不能解释为纯增量价值。
 
 ## Checks

@@ -32,6 +32,7 @@
 3. P2：图表解释、符号一致、章节逻辑、公式说明。
 4. P3：语言、排版、图表美化和术语统一。
    Stateful scheduling 另查三类错误：动态状态决定可行性却先优化理想排列再映射，报告 `STATE_FEASIBILITY_DECOUPLED`；硬约束非法动作只加大 penalty，报告 `HARD_CONSTRAINT_AS_PENALTY`；用抽象排列 surrogate 证明最佳调度，报告 `SURROGATE_OBJECTIVE_AS_FINAL`。合法 `SEQUENCE_WITH_FEASIBLE_DECODER` 不应被仅因使用排列而否定。
+   Structured improvement 另查：有可行解却只重复随机生成完整解，报告 `UNSTRUCTURED_OPTIMIZATION_SEARCH`；非法 neighbor 仅靠 penalty 留下，报告 `INFEASIBLE_NEIGHBOR_AS_VALID`；surrogate 更新 incumbent，报告 `SURROGATE_IMPROVEMENT_CLAIM`；声称提高却没有 baseline/incumbent 对比，报告 `IMPROVEMENT_EVIDENCE_MISSING`；没有 stopping rule 或 budget，报告 `SEARCH_BUDGET_UNSPECIFIED`。
 5. 对时间数据、分类不平衡指标和创新声明逐条激活 Gotchas；对纵向预测沿 `target_time -> feature availability -> aggregation window` 复核 Temporal Availability Contract。任何 `feature time > allowed cutoff` 或先聚合后过滤都报告 `P0 FUTURE_INFORMATION_LEAKAGE`，给出证据位置、影响、最小修复和复核标准。
 6. 对 ordinal 结果核验等级顺序来源、距离感知指标、稀疏等级的 fold 覆盖和概率合法性；未声明的回归取整或不同协议比较属于验证缺陷。
 7. 先核对预测场景：声称新实体泛化却对重复观测做 random row split，要求真实 fold entity IDs；有重叠则报告 `P0 GROUP_LEAKAGE`、`INVALIDATED`，不能只 warning。未提供 ID 证据时报告 GROUP_LEAKAGE 风险并保持 UNVERIFIED。把全部 longitudinal rows 宣称为独立 n，报告 `PSEUDOREPLICATION / DEPENDENCE ISSUE`。同实体未来场景允许实体重叠，但时间 gate 仍须单独通过。检查 `FIT_RESIDUAL` 是否被冒充 `VALIDATION_ERROR`、PCA/缩放/聚类/分组边界的实际 fit rows 是否仅在 training fold、row bootstrap 是否错误宣称独立不确定性。不同 split 协议的模型分数不能直接排名。
