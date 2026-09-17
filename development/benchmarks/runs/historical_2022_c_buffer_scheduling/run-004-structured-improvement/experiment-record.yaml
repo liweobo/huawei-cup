@@ -1,0 +1,66 @@
+experiment_id: EXP-2022C-STRUCTURED-IMPROVEMENT-001
+benchmark_id: historical_2022_c_buffer_scheduling
+run_id: historical_2022_c_buffer_scheduling/run-004-structured-improvement
+status: OBSERVED
+purpose: Validate feasibility-preserving structured improvement on frozen 2022C.
+planned_protocol:
+  problem_type: STRUCTURED_IMPROVEMENT
+  objective_direction: MAXIMIZE
+  incumbent_source: run-002 feasible best-found
+  incumbent_feasible: true
+  decision_structure:
+    - vehicle sequence positions
+  move_families:
+    - name: adjacent_swap
+      decision_component: vehicle sequence positions
+      rationale: changes pair and block structure before real PBS decoding
+      applicability: adjacent source-order vehicles
+      expected_effect: improve O1/O2 while preserving PBS hard constraints
+  candidate_realization: complete frozen PBS event loop
+  feasibility_check: hard event-state invariants and zero-violation result
+  objective_evaluator: detailed_scores on realized schedule
+  acceptance_rule: accept only feasible candidate with greater weighted score
+  incumbent_update_rule: monotone feasible incumbent
+  search_budget:
+    max_evaluations: 24 per scenario
+  stopping_rule: max evaluations reached or no remaining move
+  deterministic: true
+  random_seed: null
+executed_protocol:
+  same_as_plan: true
+  command: python -B development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-004-structured-improvement/structured-improvement-regression.py
+  Q1:
+    evaluated_moves: 24
+    feasible_moves: 24
+    accepted_moves: 0
+    incumbent_updates: 0
+    termination_reason: max evaluations reached
+    runtime_seconds: 12.237716999999975
+  Q2:
+    evaluated_moves: 24
+    feasible_moves: 24
+    accepted_moves: 0
+    incumbent_updates: 0
+    termination_reason: max evaluations reached
+    runtime_seconds: 12.658287300000666
+results:
+  initial_incumbent_score:
+    Q1: 53.367
+    Q2: 53.643
+  final_incumbent_score:
+    Q1: 53.367
+    Q2: 53.643
+  objective_improved: false
+  result_status: NO_REAL_INSTANCE_IMPROVEMENT
+  hard_violations: 0
+feasibility_audit: work/feasibility-audit.json
+code_artifacts:
+  - structured-improvement-regression.py
+  - audit-structured-results.py
+  - frozen_model_copy.py
+output_artifacts:
+  - outputs/result41.xlsx
+  - outputs/result42.xlsx
+  - outputs/q1/search-trace.json
+  - outputs/q2/search-trace.json
+  - work/comparison.json

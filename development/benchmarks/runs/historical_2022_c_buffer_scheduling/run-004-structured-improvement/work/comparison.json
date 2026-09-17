@@ -1,0 +1,29 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-004-structured-improvement",
+  "source_model_sha256": "be7b0e1ccd489f24d0bc6c121b3bdcaf267e2aa25ee58582a20bd8c4984703d6",
+  "results": {
+    "Q1": {
+      "initial_incumbent_score": 53.367000000000004,
+      "final_incumbent_score": 53.367000000000004,
+      "objective_improved": false,
+      "evaluated_moves": 24,
+      "feasible_moves": 24,
+      "accepted_moves": 0,
+      "incumbent_updates": 0,
+      "hard_violations": 0,
+      "runtime_seconds": 12.237716999999975
+    },
+    "Q2": {
+      "initial_incumbent_score": 53.643,
+      "final_incumbent_score": 53.643,
+      "objective_improved": false,
+      "evaluated_moves": 24,
+      "feasible_moves": 24,
+      "accepted_moves": 0,
+      "incumbent_updates": 0,
+      "hard_violations": 0,
+      "runtime_seconds": 12.658287300000666
+    }
+  }
+}

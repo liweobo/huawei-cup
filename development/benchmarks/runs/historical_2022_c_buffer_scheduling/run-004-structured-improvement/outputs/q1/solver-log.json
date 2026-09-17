@@ -1,0 +1,22 @@
+{
+  "candidate_representation": "STATE_COUPLED",
+  "structured_improvement": true,
+  "move_families": [
+    {
+      "name": "adjacent_swap",
+      "decision_component": "vehicle sequence positions",
+      "rationale": "changes pair/block structure before real PBS decoding",
+      "applicability": "adjacent source-order vehicles",
+      "expected_effect": "improve O1/O2 while preserving hard PBS constraints"
+    }
+  ],
+  "initial_incumbent_score": 53.367000000000004,
+  "final_incumbent_score": 53.367000000000004,
+  "evaluated_moves": 24,
+  "feasible_moves": 24,
+  "accepted_moves": 0,
+  "incumbent_updates": 0,
+  "termination_reason": "max evaluations reached",
+  "runtime_seconds": 12.237716999999975,
+  "hard_violations": 0
+}

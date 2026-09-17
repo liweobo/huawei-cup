@@ -1,0 +1,36 @@
+{
+  "run_id": "run-004-structured-improvement",
+  "results": [
+    {
+      "workbook": "result41.xlsx",
+      "sha256": "ef3ad7950503f4c5abdcb0aa4b5be1d6ab4bfd3616301bc9ce1b44b5ce357a73",
+      "dimensions": [
+        318,
+        3568
+      ],
+      "violations": {
+        "code": 0,
+        "position": 0,
+        "receipt": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE"
+    },
+    {
+      "workbook": "result42.xlsx",
+      "sha256": "a376ae2df5bbcc4c547fbdd41f4e1e4b17847a4c567ba4e37b7f9fee57ab1e71",
+      "dimensions": [
+        318,
+        3592
+      ],
+      "violations": {
+        "code": 0,
+        "position": 0,
+        "receipt": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE"
+    }
+  ],
+  "all_feasible": true
+}
