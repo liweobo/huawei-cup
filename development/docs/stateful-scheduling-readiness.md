@@ -85,3 +85,24 @@ and state coupling; it is not a claim of better solution quality.
 - 2024C frozen assets are not modified.
 - 2023E frozen/reference assets are not modified.
 - No 2022C excellent solution or answer was accessed.
+
+## Final Status
+
+```text
+STATEFUL_SCHEDULING_SEARCH_READY
+generic_tests: PASS
+2022c_postfix_regression: PASS
+candidate_representation: STATE_COUPLED
+formal_candidate_feasible: YES
+hard_violations: 0
+old_weighted_score: 53.367 / 53.643
+new_weighted_score: 51.801 / 53.058
+old_O1: 0 / 0
+new_O1: 0 / 0
+objective_improved: NO
+state_coupling_verified: YES
+run_002_unchanged: YES
+historical_assets_unchanged: YES
+full_tests: 265 passed
+skill_only_self_contained: PASS
+```
