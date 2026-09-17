@@ -1,0 +1,13 @@
+{
+  "candidate_representation": "STATE_COUPLED",
+  "feasibility_mode": "BY_CONSTRUCTION",
+  "legal_actions": "dispatcher.legal_delivery_actions() on current state",
+  "transition": "same complete frozen run-002 event loop",
+  "random_seed": null,
+  "runtime_seconds": 0.43756809999831603,
+  "feasible": true,
+  "hard_violations": 0,
+  "completion_time": 3876,
+  "return_use_count": 0,
+  "weighted_score": 53.058
+}

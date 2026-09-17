@@ -1,0 +1,32 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-003-postfix",
+  "source_model_sha256": "be7b0e1ccd489f24d0bc6c121b3bdcaf267e2aa25ee58582a20bd8c4984703d6",
+  "stateful_model_copy_sha256": "22b7be3d5ebd22d6148790f8e013351dd62be181fcaf6f7ccfe9db5926d543fc",
+  "results": [
+    {
+      "scenario": "Q1",
+      "candidate_representation": "STATE_COUPLED",
+      "feasible": true,
+      "hard_violations": 0,
+      "weighted_score": 51.801,
+      "objective_1": 0.0,
+      "objective_2": 80.0,
+      "objective_3": 94.0,
+      "objective_4": 90.01,
+      "runtime_seconds": 0.444204899999022
+    },
+    {
+      "scenario": "Q2",
+      "candidate_representation": "STATE_COUPLED",
+      "feasible": true,
+      "hard_violations": 0,
+      "weighted_score": 53.058,
+      "objective_1": 0.0,
+      "objective_2": 80.0,
+      "objective_3": 100.0,
+      "objective_4": 90.58,
+      "runtime_seconds": 0.43756809999831603
+    }
+  ]
+}

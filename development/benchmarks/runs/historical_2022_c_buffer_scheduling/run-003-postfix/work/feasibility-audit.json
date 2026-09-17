@@ -1,0 +1,36 @@
+{
+  "run_id": "run-003-postfix",
+  "results": [
+    {
+      "workbook": "result31.xlsx",
+      "sha256": "73cb3b688e06d5d4e82e5854c87287b7e68705a21145760de0a271ad0e7f8e0d",
+      "dimensions": [
+        318,
+        3934
+      ],
+      "violations": {
+        "code": 0,
+        "position": 0,
+        "receipt": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE"
+    },
+    {
+      "workbook": "result32.xlsx",
+      "sha256": "26c20a1aa0a0dbcfa4bf62a56fb9c8d19989567dcbaac86892f462a62a9d2b12",
+      "dimensions": [
+        318,
+        3877
+      ],
+      "violations": {
+        "code": 0,
+        "position": 0,
+        "receipt": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE"
+    }
+  ],
+  "all_feasible": true
+}

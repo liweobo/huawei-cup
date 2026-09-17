@@ -1,0 +1,47 @@
+experiment_id: EXP-2022C-POSTFIX-001
+benchmark_id: historical_2022_c_buffer_scheduling
+run_id: historical_2022_c_buffer_scheduling/run-003-postfix
+status: OBSERVED
+purpose: Validate the stateful scheduling search contract on the frozen 2022C PBS problem.
+planned_protocol:
+  problem_type: STATEFUL_SCHEDULING
+  candidate_representation: STATE_COUPLED
+  feasibility_mode: BY_CONSTRUCTION
+  legal_actions: current PBS dispatcher state
+  transition: complete frozen run-002 event loop
+  incumbent_selection: feasible realized objective only
+  comparison: run-002 feasible best-found
+executed_protocol:
+  same_as_plan: true
+  command: python -B development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-003-postfix/postfix-regression.py
+  runtime_seconds:
+    Q1: 0.444204899999022
+    Q2: 0.43756809999831603
+  random_seed: null
+  time_limit_seconds: null
+objective:
+  old:
+    Q1: 53.367
+    Q2: 53.643
+  new:
+    Q1: 51.801
+    Q2: 53.058
+  new_O1:
+    Q1: 0.0
+    Q2: 0.0
+feasibility:
+  Q1: PASS
+  Q2: PASS
+  hard_violations: 0
+independent_audit: work/feasibility-audit.json
+code_artifacts:
+  - frozen_model_copy.py
+  - postfix-regression.py
+  - audit-postfix.py
+output_artifacts:
+  - outputs/result31.xlsx
+  - outputs/result32.xlsx
+  - outputs/q1-state-coupled/solver-log.json
+  - outputs/q2-state-coupled/solver-log.json
+  - work/comparison.json
+  - work/feasibility-audit.json
