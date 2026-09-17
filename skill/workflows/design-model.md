@@ -40,6 +40,8 @@
 9. 选择主模型、保底模型和改进假设；改进必须对应可观测缺陷。预先指定的关联估计不冒充预测选模；若比较新实体预测能力，仍使用合法 grouped validation。
 10. 若声称创新，激活 `innovation-patterns.md` 与 Gotchas 的 Fake innovation 检查。
 
+若当前优化问题的 feasibility 取决于 evolving system state，先读取 [`stateful-scheduling.md`](../references/stateful-scheduling.md) 并建立 Stateful Scheduling Contract。正式 Improved / Primary candidate 必须是 `STATE_COUPLED`，或使用经验证的 `SEQUENCE_WITH_FEASIBLE_DECODER`；没有 decoder 的 `SEQUENCE_ONLY` 保持 `STATE_SEARCH_UNVERIFIED`。
+
 扩展信息场景按需读取 [`feature-set-design.md`](../references/feature-set-design.md)：保留合法 baseline，预先设计少量 B → B+G 与必要 Full−G 对照；固定样本、folds、模型与超参数/预处理政策。删除 baseline 显式记录原因，但该比较不能解释为纯增量价值。
 
 ## Checks

@@ -12,6 +12,7 @@
 | 多指标排序 | 等权分数 | evaluation | 权重/标准化敏感度、排名稳定 |
 | 线性资源分配 | 规则/贪心 | optimization | 可行性、目标、资源守恒 |
 | 离散逻辑调度 | 规则/贪心 | optimization | 约束、gap、运行时间 |
+| 动态资源/队列/缓冲调度 | 规则/贪心 | optimization + stateful-scheduling | legal actions、transition、hard invariants、真实 objective |
 | 连续机理/动态 | 简化方程/差分 | mechanism | 参数识别、轨迹、守恒 |
 | 随机风险/网络 | 确定性情景/直接距离 | simulation-network | 收敛、扰动、可达性 |
 
