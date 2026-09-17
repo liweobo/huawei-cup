@@ -1,0 +1,41 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "phase": "excellent_solution_posthoc_benchmark",
+  "status": "2022C_REFERENCE_BENCHMARK_COMPLETE",
+  "reference_collection": {
+    "directory_url": "https://github.com/zhanwen/MathModel/tree/master/国赛论文/2022年优秀论文/C",
+    "papers_discovered": 7,
+    "papers_fully_reviewed": 6,
+    "papers_partially_reviewed": 1,
+    "award_levels_verified": 0
+  },
+  "current_solution": {
+    "blind_best_found": {
+      "Q1": 53.367,
+      "Q2": 53.643,
+      "O1": [0, 0]
+    },
+    "postfix_state_coupled": {
+      "Q1": 51.801,
+      "Q2": 53.058,
+      "O1": [0, 0],
+      "hard_violations": [0, 0],
+      "state_coupling_verified": true
+    }
+  },
+  "levels": {
+    "formulation": "STRONG",
+    "feasibility": "STRONG",
+    "search_validity": "STRONG",
+    "solution_quality": "WEAK",
+    "overall": "NEEDS_OPTIMIZATION_IMPROVEMENT"
+  },
+  "top_generalizable_gap": "FEASIBILITY_PRESERVING_STRUCTURED_IMPROVEMENT",
+  "final_decision": "GENERALIZABLE_OPTIMIZATION_GAP_FOUND",
+  "skill_modified": false,
+  "run_002_modified": false,
+  "run_003_postfix_modified": false,
+  "excellent_solution_ground_truth_used": false,
+  "numerical_ranking_claim": "NOT_DIRECTLY_COMPARABLE",
+  "recommended_next_phase": "Add a contract-level feasibility-preserving structured improvement principle after human review; do not add a solver platform or tune specifically for 2022C."
+}
