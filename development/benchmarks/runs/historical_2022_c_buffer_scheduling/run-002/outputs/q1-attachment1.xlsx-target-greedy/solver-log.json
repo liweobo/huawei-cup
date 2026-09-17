@@ -1,0 +1,18 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-002",
+  "scenario": "Q1",
+  "strategy": "target-sequence + deterministic adjacent-swap heuristic",
+  "random_seed": null,
+  "time_limit_seconds": null,
+  "runtime_seconds": 0.6372011999992537,
+  "input_sha256": "6e972f0a62f61e88bec60d36d2f63c79060d88146ce3844198ea7c32cad93459",
+  "vehicle_count": 318,
+  "target_weighted_score_at_ideal_time": 56.4,
+  "simulated_score": 53.471999999999994,
+  "feasible": true,
+  "violations": [],
+  "completion_time": 4062,
+  "return_use_count": 0,
+  "termination": "completed"
+}

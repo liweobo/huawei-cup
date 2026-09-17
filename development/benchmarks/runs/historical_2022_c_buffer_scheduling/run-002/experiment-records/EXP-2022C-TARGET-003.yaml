@@ -1,0 +1,29 @@
+experiment_id: EXP-2022C-TARGET-003
+benchmark_id: historical_2022_c_buffer_scheduling
+run_id: historical_2022_c_buffer_scheduling/run-002
+status: OBSERVED
+purpose: Test a score-aware target sequence with deterministic adjacent-swap search before simulation.
+planned_protocol:
+  scenario: Q1
+  attachment: attachment1.xlsx
+  strategy: target-sequence + adjacent swaps
+  random_seed: null
+  time_limit_seconds: null
+executed_protocol:
+  same_as_plan: true
+  command: python -B code/optimize_schedule.py
+  actual_runtime_seconds: 0.6372011999992537
+results:
+  feasible: true
+  violations: 0
+  weighted_score: 53.472
+  completion_time: 4062
+  return_use_count: 0
+  interpretation: >
+    The target sequence was not fully realizable by the physical PBS
+    simulator. This is a useful negative result: optimizing a sequence score
+    without coupling every move to the lane state does not solve the
+    scheduling problem.
+evidence:
+  solver_log: outputs/q1-attachment1.xlsx-target-greedy/solver-log.json
+  search_record: outputs/q1-attachment1.xlsx-target-greedy/search-record.json

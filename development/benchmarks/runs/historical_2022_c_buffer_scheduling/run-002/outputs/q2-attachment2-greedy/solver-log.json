@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-002",
+  "scenario": "Q2",
+  "strategy": "greedy",
+  "solver": "deterministic discrete-event heuristic",
+  "version": "run-002-v1",
+  "random_seed": null,
+  "time_limit_seconds": null,
+  "termination": "completed",
+  "runtime_seconds": 0.4287194999997155,
+  "input_sha256": "e379230b44ec24fff254515d1ddcf1489fdc6adc596c03434212ea015521460b",
+  "vehicle_count": 318,
+  "event_count": 6360,
+  "return_use_count": 0,
+  "completion_time": 3876,
+  "objective_values": {
+    "objective_1": 0.0,
+    "objective_2": 80.0,
+    "objective_3": 100.0,
+    "objective_4": 90.58
+  },
+  "weighted_score": 53.058,
+  "feasible": true,
+  "violations": []
+}

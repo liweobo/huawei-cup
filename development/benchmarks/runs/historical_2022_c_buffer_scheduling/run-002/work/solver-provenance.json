@@ -1,0 +1,10 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "2.5.2",
+  "openpyxl": "3.1.5",
+  "solver": "in-repo deterministic discrete-event heuristic",
+  "random_seed": null,
+  "time_limit": null
+}

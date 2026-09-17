@@ -1,0 +1,71 @@
+{
+  "source_status": "ACCEPTED",
+  "independently_official_verified": false,
+  "reason": "User-authorized mirror; raw files match GitHub blob SHA1 and size, OOXML CRC verified.",
+  "directory_url": "https://github.com/zhanwen/MathModel/tree/master/国赛试题/2022年研究生数学建模竞赛试题/C",
+  "listing_api_url": "https://api.github.com/repos/zhanwen/MathModel/contents/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C?ref=master",
+  "accessed_at": "2026-09-16T08:07:01.018245+00:00",
+  "excellent_solutions_accessed": false,
+  "files": [
+    {
+      "source_artifact_id": "INPUT-01",
+      "path": "raw/汽车制造公司涂装-总装缓存区调序调度优化问题.docx",
+      "filename": "汽车制造公司涂装-总装缓存区调序调度优化问题.docx",
+      "source_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C/%E6%B1%BD%E8%BD%A6%E5%88%B6%E9%80%A0%E5%85%AC%E5%8F%B8%E6%B6%82%E8%A3%85-%E6%80%BB%E8%A3%85%E7%BC%93%E5%AD%98%E5%8C%BA%E8%B0%83%E5%BA%8F%E8%B0%83%E5%BA%A6%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98.docx",
+      "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2022年研究生数学建模竞赛试题/C/汽车制造公司涂装-总装缓存区调序调度优化问题.docx",
+      "sha256": "157226574e34a5a02fc805ff1c0db400a2e28aa3c40c63a75582fd27f83e7c55",
+      "git_blob_sha1": "d11123561801c4f15e308b55b72ff97a7f4e24b8",
+      "bytes": 388087,
+      "zip_crc": "PASS",
+      "required_ooxml_part": "word/document.xml"
+    },
+    {
+      "source_artifact_id": "INPUT-02",
+      "path": "raw/附件1.xlsx",
+      "filename": "附件1.xlsx",
+      "source_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C/%E9%99%84%E4%BB%B61.xlsx",
+      "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2022年研究生数学建模竞赛试题/C/附件1.xlsx",
+      "sha256": "6e972f0a62f61e88bec60d36d2f63c79060d88146ce3844198ea7c32cad93459",
+      "git_blob_sha1": "3ad2e09e579bf65c0435789e101fd7d2c9a0d9e5",
+      "bytes": 15262,
+      "zip_crc": "PASS",
+      "required_ooxml_part": "xl/workbook.xml"
+    },
+    {
+      "source_artifact_id": "INPUT-03",
+      "path": "raw/附件2.xlsx",
+      "filename": "附件2.xlsx",
+      "source_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C/%E9%99%84%E4%BB%B62.xlsx",
+      "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2022年研究生数学建模竞赛试题/C/附件2.xlsx",
+      "sha256": "e379230b44ec24fff254515d1ddcf1489fdc6adc596c03434212ea015521460b",
+      "git_blob_sha1": "c5747522b104cc1fb2c2814feeec2ab215a76be7",
+      "bytes": 15402,
+      "zip_crc": "PASS",
+      "required_ooxml_part": "xl/workbook.xml"
+    },
+    {
+      "source_artifact_id": "INPUT-04",
+      "path": "raw/附件3.xlsx",
+      "filename": "附件3.xlsx",
+      "source_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C/%E9%99%84%E4%BB%B63.xlsx",
+      "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2022年研究生数学建模竞赛试题/C/附件3.xlsx",
+      "sha256": "44b2f6d99ef57f1792fc7205716c1bcdf49d183dbd5e014bc5bb01e19a63eb37",
+      "git_blob_sha1": "a297c0a708cdaf88769614f01b9b5dc177d01535",
+      "bytes": 10138,
+      "zip_crc": "PASS",
+      "required_ooxml_part": "xl/workbook.xml"
+    },
+    {
+      "source_artifact_id": "INPUT-05",
+      "path": "raw/附件4.xlsx",
+      "filename": "附件4.xlsx",
+      "source_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C/%E9%99%84%E4%BB%B64.xlsx",
+      "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2022年研究生数学建模竞赛试题/C/附件4.xlsx",
+      "sha256": "adaca8aeeb3bf85b8928506d511cb691d1717d9ad3451a0756116a052c600679",
+      "git_blob_sha1": "50d1da619d1269949833614935d5eb0cba75219d",
+      "bytes": 9196,
+      "zip_crc": "PASS",
+      "required_ooxml_part": "xl/workbook.xml"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "source_status": "ACCEPTED",
+  "source_constraint": "Only the user-specified GitHub directory was used for the problem statement and attachments.",
+  "directory_url": "https://github.com/zhanwen/MathModel/tree/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2022%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/C",
+  "listed_files": [
+    "汽车制造公司涂装-总装缓存区调序调度优化问题.docx",
+    "附件1.xlsx",
+    "附件2.xlsx",
+    "附件3.xlsx",
+    "附件4.xlsx"
+  ],
+  "files": [
+    {
+      "artifact_id": "SRC-001",
+      "canonical_name": "汽车制造公司涂装-总装缓存区调序调度优化问题.docx",
+      "run_001_path": "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-001/raw/汽车制造公司涂装-总装缓存区调序调度优化问题.docx",
+      "run_002_mirror": "inputs-raw/problem.docx",
+      "sha256": "157226574e34a5a02fc805ff1c0db400a2e28aa3c40c63a75582fd27f83e7c55",
+      "bytes": 388087,
+      "integrity": "PASS"
+    },
+    {
+      "artifact_id": "SRC-002",
+      "canonical_name": "附件1.xlsx",
+      "run_001_path": "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-001/raw/附件1.xlsx",
+      "run_002_mirror": "inputs-raw/attachment1.xlsx",
+      "sha256": "6e972f0a62f61e88bec60d36d2f63c79060d88146ce3844198ea7c32cad93459",
+      "bytes": 15262,
+      "integrity": "PASS"
+    },
+    {
+      "artifact_id": "SRC-003",
+      "canonical_name": "附件2.xlsx",
+      "run_001_path": "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-001/raw/附件2.xlsx",
+      "run_002_mirror": "inputs-raw/attachment2.xlsx",
+      "sha256": "e379230b44ec24fff254515d1ddcf1489fdc6adc596c03434212ea015521460b",
+      "bytes": 15402,
+      "integrity": "PASS"
+    },
+    {
+      "artifact_id": "SRC-004",
+      "canonical_name": "附件3.xlsx",
+      "run_001_path": "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-001/raw/附件3.xlsx",
+      "run_002_mirror": "inputs-raw/attachment3.xlsx",
+      "sha256": "44b2f6d99ef57f1792fc7205716c1bcdf49d183dbd5e014bc5bb01e19a63eb37",
+      "bytes": 10138,
+      "integrity": "PASS"
+    },
+    {
+      "artifact_id": "SRC-005",
+      "canonical_name": "附件4.xlsx",
+      "run_001_path": "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-001/raw/附件4.xlsx",
+      "run_002_mirror": "inputs-raw/attachment4.xlsx",
+      "sha256": "adaca8aeeb3bf85b8928506d511cb691d1717d9ad3451a0756116a052c600679",
+      "bytes": 9196,
+      "integrity": "PASS"
+    }
+  ],
+  "statement_extraction": {
+    "path": "run-001/extracted/problem.txt",
+    "method": "OOXML word/document.xml text extraction",
+    "note": "Numbers split by Word runs were normalized manually only in problem-facts.md; the extracted statement remains byte-preserved."
+  },
+  "provenance_limits": {
+    "independently_official_verified": false,
+    "reason": "The chosen GitHub directory is treated as the authorized historical-problem mirror. It is not claimed to be the competition organiser's original host."
+  },
+  "excellent_solutions_accessed": false,
+  "solution_lookup_performed": false
+}

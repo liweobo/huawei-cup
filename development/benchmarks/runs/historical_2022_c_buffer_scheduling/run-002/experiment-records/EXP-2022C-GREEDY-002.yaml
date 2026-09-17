@@ -1,0 +1,31 @@
+experiment_id: EXP-2022C-GREEDY-002
+benchmark_id: historical_2022_c_buffer_scheduling
+run_id: historical_2022_c_buffer_scheduling/run-002
+status: OBSERVED
+purpose: Compare a deterministic score-aware greedy policy under the same event rules.
+planned_protocol:
+  scenario: [Q1, Q2]
+  attachments: [attachment1.xlsx, attachment2.xlsx]
+  strategy: greedy
+  simulator: code/pbs_model.py
+executed_protocol:
+  same_as_plan: true
+  command: python -B code/run_experiments.py
+  random_seed: null
+  time_limit_seconds: null
+results:
+  all_scenarios_feasible: true
+  score_table:
+    q1-attachment1-greedy: 53.088
+    q1-attachment2-greedy: 53.088
+    q2-attachment1-greedy: 53.058
+    q2-attachment2-greedy: 53.058
+  best_found_selection:
+    Q1: source-order
+    Q2: source-order
+evidence:
+  results_json: work/experiment-results.json
+  feasibility_audit: work/feasibility-audit.json
+limitations:
+  - The greedy policy did not improve the stated weighted objective on the full instances.
+  - Its best result is retained as a failed candidate, not hidden.

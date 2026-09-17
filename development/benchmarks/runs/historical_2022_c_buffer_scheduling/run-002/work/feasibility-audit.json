@@ -1,0 +1,159 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-002",
+  "results": [
+    {
+      "workbook": "result11.xlsx",
+      "sha256": "fddfb03986958b280e98227750413b2caa3cb0f0d72a0473facb7b1a1c573a73",
+      "dimensions": {
+        "vehicles": 318,
+        "seconds": 3568,
+        "first_second": 0,
+        "last_second": 3567
+      },
+      "checks": {
+        "allowed_region_codes": 1134624,
+        "single_position_occupancy": 28927,
+        "vehicle_id_uniqueness": 318,
+        "initial_paint_exit": 318,
+        "final_assembly_receipt": 318,
+        "completion_time_definition": 318
+      },
+      "violations": {
+        "matrix_dimensions": 0,
+        "allowed_region_codes": 0,
+        "single_position_occupancy": 0,
+        "vehicle_id_uniqueness": 0,
+        "initial_paint_exit": 0,
+        "final_assembly_receipt": 0,
+        "completion_time_definition": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE",
+      "examples": {
+        "matrix_dimensions": [],
+        "allowed_region_codes": [],
+        "single_position_occupancy": [],
+        "vehicle_id_uniqueness": [],
+        "initial_paint_exit": [],
+        "final_assembly_receipt": [],
+        "completion_time_definition": []
+      }
+    },
+    {
+      "workbook": "result12.xlsx",
+      "sha256": "b8dd2d4ec05574597ebe4d5359c9a0bfe3d0fbc94c0c3ebb716dcdc006d55862",
+      "dimensions": {
+        "vehicles": 318,
+        "seconds": 3568,
+        "first_second": 0,
+        "last_second": 3567
+      },
+      "checks": {
+        "allowed_region_codes": 1134624,
+        "single_position_occupancy": 28927,
+        "vehicle_id_uniqueness": 318,
+        "initial_paint_exit": 318,
+        "final_assembly_receipt": 318,
+        "completion_time_definition": 318
+      },
+      "violations": {
+        "matrix_dimensions": 0,
+        "allowed_region_codes": 0,
+        "single_position_occupancy": 0,
+        "vehicle_id_uniqueness": 0,
+        "initial_paint_exit": 0,
+        "final_assembly_receipt": 0,
+        "completion_time_definition": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE",
+      "examples": {
+        "matrix_dimensions": [],
+        "allowed_region_codes": [],
+        "single_position_occupancy": [],
+        "vehicle_id_uniqueness": [],
+        "initial_paint_exit": [],
+        "final_assembly_receipt": [],
+        "completion_time_definition": []
+      }
+    },
+    {
+      "workbook": "result21.xlsx",
+      "sha256": "0f8a40df1e41feafd3241ec8ffc192f43dba980af0aa45b0bd42980539a1f324",
+      "dimensions": {
+        "vehicles": 318,
+        "seconds": 3592,
+        "first_second": 0,
+        "last_second": 3591
+      },
+      "checks": {
+        "allowed_region_codes": 1142256,
+        "single_position_occupancy": 29834,
+        "vehicle_id_uniqueness": 318,
+        "initial_paint_exit": 318,
+        "final_assembly_receipt": 318,
+        "completion_time_definition": 318
+      },
+      "violations": {
+        "matrix_dimensions": 0,
+        "allowed_region_codes": 0,
+        "single_position_occupancy": 0,
+        "vehicle_id_uniqueness": 0,
+        "initial_paint_exit": 0,
+        "final_assembly_receipt": 0,
+        "completion_time_definition": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE",
+      "examples": {
+        "matrix_dimensions": [],
+        "allowed_region_codes": [],
+        "single_position_occupancy": [],
+        "vehicle_id_uniqueness": [],
+        "initial_paint_exit": [],
+        "final_assembly_receipt": [],
+        "completion_time_definition": []
+      }
+    },
+    {
+      "workbook": "result22.xlsx",
+      "sha256": "394788dedee03ede30bf91b785e0c5a9a5258d471f19a29ae526369f9068a52a",
+      "dimensions": {
+        "vehicles": 318,
+        "seconds": 3592,
+        "first_second": 0,
+        "last_second": 3591
+      },
+      "checks": {
+        "allowed_region_codes": 1142256,
+        "single_position_occupancy": 29834,
+        "vehicle_id_uniqueness": 318,
+        "initial_paint_exit": 318,
+        "final_assembly_receipt": 318,
+        "completion_time_definition": 318
+      },
+      "violations": {
+        "matrix_dimensions": 0,
+        "allowed_region_codes": 0,
+        "single_position_occupancy": 0,
+        "vehicle_id_uniqueness": 0,
+        "initial_paint_exit": 0,
+        "final_assembly_receipt": 0,
+        "completion_time_definition": 0
+      },
+      "total_hard_violations": 0,
+      "status": "FEASIBLE",
+      "examples": {
+        "matrix_dimensions": [],
+        "allowed_region_codes": [],
+        "single_position_occupancy": [],
+        "vehicle_id_uniqueness": [],
+        "initial_paint_exit": [],
+        "final_assembly_receipt": [],
+        "completion_time_definition": []
+      }
+    }
+  ],
+  "all_feasible": true
+}

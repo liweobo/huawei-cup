@@ -1,0 +1,29 @@
+schema_version: 2
+isolation_mode: repository_scoped_blind_run
+benchmark_id: historical_2022_c_buffer_scheduling
+run_id: historical_2022_c_buffer_scheduling/run-002
+active_run_id: historical_2022_c_buffer_scheduling/run-002
+created_at: "2026-09-17T00:00:00+08:00"
+allowed_write_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2022_c_buffer_scheduling\run-002
+writable_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2022_c_buffer_scheduling\run-002
+allowed_read_roots:
+  - C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2022_c_buffer_scheduling\run-001
+  - C:\Users\aaa\Desktop\test\huawei-cup-2026\skill
+developer_repository_visible: true
+prior_run_artifacts_visible: true
+visibility_note: The prior acquisition run is visible. It contains only raw inputs, provenance, extraction and a before-integrity snapshot; no model or numerical result is used from it.
+frozen_skill:
+  head: 5a22cadd67fd4052de80abaf9e8b0de9a6b08193
+  git_tree: 7ab25e144b214969f987df18d8357eb210f2b35d
+  content_sha256: b32a1f8b952820f5fb5fbbc2025c160a7cf6607f3fc34ecaa58e08d9ba138525
+immutable_inputs:
+  - path: ../../historical_2022_c_buffer_scheduling/run-001/raw/汽车制造公司涂装-总装缓存区调序调度优化问题.docx
+    sha256: pending-verification
+  - path: ../../historical_2022_c_buffer_scheduling/run-001/raw/附件1.xlsx
+    sha256: pending-verification
+  - path: ../../historical_2022_c_buffer_scheduling/run-001/raw/附件2.xlsx
+    sha256: pending-verification
+  - path: ../../historical_2022_c_buffer_scheduling/run-001/raw/附件3.xlsx
+    sha256: pending-verification
+  - path: ../../historical_2022_c_buffer_scheduling/run-001/raw/附件4.xlsx
+    sha256: pending-verification

@@ -1,0 +1,63 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-002",
+  "selection_rule": "highest weighted score among feasible candidates under identical problem definition",
+  "results": [
+    {
+      "scenario": "Q1",
+      "attachment": "attachment1.xlsx",
+      "selected_strategy": "source-order",
+      "feasible": true,
+      "hard_violations": 0,
+      "completion_time": 3567,
+      "return_use_count": 0,
+      "objective_1": 0.0,
+      "objective_2": 80.0,
+      "objective_3": 100.0,
+      "objective_4": 93.67,
+      "weighted_score": 53.367000000000004
+    },
+    {
+      "scenario": "Q1",
+      "attachment": "attachment2.xlsx",
+      "selected_strategy": "source-order",
+      "feasible": true,
+      "hard_violations": 0,
+      "completion_time": 3567,
+      "return_use_count": 0,
+      "objective_1": 0.0,
+      "objective_2": 80.0,
+      "objective_3": 100.0,
+      "objective_4": 93.67,
+      "weighted_score": 53.367000000000004
+    },
+    {
+      "scenario": "Q2",
+      "attachment": "attachment1.xlsx",
+      "selected_strategy": "source-order",
+      "feasible": true,
+      "hard_violations": 0,
+      "completion_time": 3591,
+      "return_use_count": 0,
+      "objective_1": 0.0,
+      "objective_2": 81.0,
+      "objective_3": 100.0,
+      "objective_4": 93.43,
+      "weighted_score": 53.643
+    },
+    {
+      "scenario": "Q2",
+      "attachment": "attachment2.xlsx",
+      "selected_strategy": "source-order",
+      "feasible": true,
+      "hard_violations": 0,
+      "completion_time": 3591,
+      "return_use_count": 0,
+      "objective_1": 0.0,
+      "objective_2": 81.0,
+      "objective_3": 100.0,
+      "objective_4": 93.43,
+      "weighted_score": 53.643
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "benchmark_id": "historical_2022_c_buffer_scheduling",
+  "run_id": "run-002",
+  "generated_at": "2026-09-17T06:00:00Z",
+  "source_files": [
+    {
+      "sha256": "157226574e34a5a02fc805ff1c0db400a2e28aa3c40c63a75582fd27f83e7c55",
+      "role": "problem statement"
+    },
+    {
+      "sha256": "6e972f0a62f61e88bec60d36d2f63c79060d88146ce3844198ea7c32cad93459",
+      "role": "attachment 1"
+    },
+    {
+      "sha256": "e379230b44ec24fff254515d1ddcf1489fdc6adc596c03434212ea015521460b",
+      "role": "attachment 2"
+    },
+    {
+      "sha256": "44b2f6d99ef57f1792fc7205716c1bcdf49d183dbd5e014bc5bb01e19a63eb37",
+      "role": "attachment 3"
+    },
+    {
+      "sha256": "adaca8aeeb3bf85b8928506d511cb691d1717d9ad3451a0756116a052c600679",
+      "role": "attachment 4"
+    }
+  ],
+  "primary_outputs": [
+    "outputs/result11.xlsx",
+    "outputs/result12.xlsx",
+    "outputs/result21.xlsx",
+    "outputs/result22.xlsx"
+  ],
+  "reports": [
+    "source-provenance.json",
+    "problem-facts.md",
+    "data-audit-summary.md",
+    "mathematical-model.md",
+    "REPORT.md",
+    "work/feasibility-audit.json",
+    "work/experiment-results.json",
+    "work/selected-results.json",
+    "work/solver-provenance.json"
+  ],
+  "code": [
+    "code/audit_data.py",
+    "code/inspect_inputs.py",
+    "code/pbs_model.py",
+    "code/run_experiments.py",
+    "code/audit_results.py",
+    "code/optimize_schedule.py",
+    "code/verify_small_exact.py"
+  ],
+  "retained_trace_note": >
+    Full event traces are retained only as non-primary reproducibility logs.
+    The formal answer files are the four result workbooks; the independent
+    audit reads those files rather than trusting solver status.
+}

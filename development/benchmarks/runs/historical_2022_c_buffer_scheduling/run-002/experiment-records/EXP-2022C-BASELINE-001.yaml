@@ -1,0 +1,30 @@
+experiment_id: EXP-2022C-BASELINE-001
+benchmark_id: historical_2022_c_buffer_scheduling
+run_id: historical_2022_c_buffer_scheduling/run-002
+status: OBSERVED
+purpose: Establish a feasible source-order baseline for each Q1/Q2 and attachment pair.
+planned_protocol:
+  scenario: [Q1, Q2]
+  attachments: [attachment1.xlsx, attachment2.xlsx]
+  strategy: source-order
+  simulator: code/pbs_model.py
+  feasibility: independent workbook audit after export
+executed_protocol:
+  same_as_plan: true
+  command: python -B code/run_experiments.py
+  random_seed: null
+  time_limit_seconds: null
+results:
+  all_scenarios_feasible: true
+  score_table:
+    q1-attachment1-source-order: 53.367
+    q1-attachment2-source-order: 53.367
+    q2-attachment1-source-order: 53.643
+    q2-attachment2-source-order: 53.643
+evidence:
+  results_json: work/experiment-results.json
+  solver_provenance: work/solver-provenance.json
+  feasibility_audit: work/feasibility-audit.json
+limitations:
+  - The baseline is feasible but has objective 1 score zero on the full real data.
+  - It does not use the return lane.
