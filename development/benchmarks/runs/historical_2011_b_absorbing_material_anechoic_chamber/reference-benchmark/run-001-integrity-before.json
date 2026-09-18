@@ -1,0 +1,302 @@
+{
+  "captured_at": "2026-09-18T11:29:57.1443174Z",
+  "git_head": "991e8aa93f1383f5ae94f5ba90d6d02c5d9f91b1",
+  "skill_tree_hash": "ea0be7810800d452c1703407becc9b45a5e51722",
+  "files": [
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/REPORT.md",
+      "sha256": "762cb87342098d02c1cbf641633196a4decb5d5f9115af93414b9b2427a58fa9",
+      "bytes": 8371
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/assumptions.md",
+      "sha256": "0cea227be0ecc382b84a9de698eb56f1be61abe4048c79801ab38f7281cb276f",
+      "bytes": 3572
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/bootstrap.py",
+      "sha256": "22994a96a949b04f855d1ce4c114ba1d4fbd2a90baaa76a6d005aba022e0e270",
+      "bytes": 4484
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/extract_source.py",
+      "sha256": "9bd6e3542518695fcb8f467a16ae4bcd7ac57b175eaf689ec64293248951dfca",
+      "bytes": 1598
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/extract_wmf.py",
+      "sha256": "912a440c717726df5a967016cf6058e43b5631582e79bf7f6f8f122d74f1d3f3",
+      "bytes": 1445
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/fetch_domain.py",
+      "sha256": "e09428e7a01c03087c001bf2c8642f924e49aa749dc48ef1a401049f8933c6ba",
+      "bytes": 2032
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/plot_results.py",
+      "sha256": "8ce2ea40ca874cbd74e331807ef1307cd0e02430deae9f88791a3a0d4b5d414e",
+      "bytes": 2345
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/prepare_experiment.py",
+      "sha256": "1bd1af90595bc15132067757a09a357c41028735df4af3383374259b97be5729",
+      "bytes": 3428
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/code/simulate.py",
+      "sha256": "f6574ddda8d257cffee71ee90634cee3a2ed9048528866fa183d96326941354c",
+      "bytes": 20071
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/domain-sources.md",
+      "sha256": "47ee1cebd91b384f8dad542008c343b67489bf0386236ac9abb2d64a5e8a2530",
+      "bytes": 1736
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/evidence-ledger.md",
+      "sha256": "7ce8cc3ffadcc8b209128ca22ca529a0e8abbab293d147f57d70d2a570cd57b9",
+      "bytes": 1339
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/experiment-records/EXP-2011B-GEOMETRIC-001.yaml",
+      "sha256": "f5d064d066846a626ec8d3e6d6cd2238f3c34b771641aac90216f5aafad9c8ab",
+      "bytes": 5914
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/ole-inventory.json",
+      "sha256": "080b42c33877756c9c8ad8f24dcb3a6d2f376a055d16e4a18873b1a672234353",
+      "bytes": 32475
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-1.png",
+      "sha256": "921fe075a73979fc44e9d5d7d28d44e3998450603d9a218b274a58808426d4c4",
+      "bytes": 340509
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-2.png",
+      "sha256": "d9214fce4985ddb8e0b9c8bb12e50516afb3ba12d001606cd08ddedce85cc0b5",
+      "bytes": 347033
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-3.png",
+      "sha256": "9b32b3c9ef301549a080a2340d006dfc3828e733dac15cb697323af594223948",
+      "bytes": 272909
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-4.png",
+      "sha256": "4905602dd2c9e7cfc2feb4e7111fe27c55c5ba5eb2fe2e38f47ce1af83c8d17a",
+      "bytes": 361112
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-5.png",
+      "sha256": "e2ab11890110a27c25e524f4e30d5fe1e13bd7fcb1db8689b68e064461786de2",
+      "bytes": 357815
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-6.png",
+      "sha256": "600f5ddf9daa583ec626b0cbb0fa7ecd6dee6956c4cd28ebb177ea80719d8511",
+      "bytes": 282338
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/page-7.png",
+      "sha256": "09e4d48f64f41541373185d7a0d3f7c1221387b10870d0a097ace25fe51aee65",
+      "bytes": 130901
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/parser-text.txt",
+      "sha256": "dece5546ad17059620318f6a0e910367f329c4e54b6c6fc0b895a8dfa271b6ac",
+      "bytes": 17321
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/raw-main-stream.txt",
+      "sha256": "7bf789e7e0ffd602dc24e5087b2c62599b938e3b4ecbce741312f9adeab98fa8",
+      "bytes": 32569
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/extraction/wmf-inventory.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/implementation-log.md",
+      "sha256": "c598d794c64e1c85b42249ebb344eb7bf6b733728ee7694c4a036a0a3bbad46d",
+      "bytes": 291
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/mathematical-model.md",
+      "sha256": "25487ff80a816fe3924f87c146ae787537206904b50c5acc66a83bd3be37d15c",
+      "bytes": 7936
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/numerical-checks.md",
+      "sha256": "44aac18f8c0306a5389de1afc3c545237f9f9a101da576bbe38cd270ce3a7531",
+      "bytes": 1561
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/physical-checks.json",
+      "sha256": "8589138d5f62cdab82b456faabcad6ad436298126c20f665627e59ceaa30b6ad",
+      "bytes": 1240
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q1-landing-convergence.csv",
+      "sha256": "7bd40006dde5ae6aa6f1944c4bfcad874037c0881dd13b930965d4975f2a48ca",
+      "bytes": 793
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q1-ray-traces.json",
+      "sha256": "14689bc39617b5116a1ef87628f34e7ec4f588fb0c7af57e31b5addbac85290a",
+      "bytes": 26172
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q1-scenarios.csv",
+      "sha256": "2e66bf1694b812f4d01f46ee40a7a665f4652c366381769c5b3e9e9172829828",
+      "bytes": 18964
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-area-convergence.csv",
+      "sha256": "a6abf95491304961f658ee634635c91128752a90e74495a999c8deeea442f856",
+      "bytes": 1329
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-extrema.json",
+      "sha256": "f91c848df311050f49d6a1ee2f978f73ca2d331236425ff7f7be225f917a39f8",
+      "bytes": 1241
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-order-convergence.csv",
+      "sha256": "6de81d76b7f47b2d0ee5455dbc2e2f2b93ab0334cf7c5ad1fc0834851e0b226d",
+      "bytes": 3349
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-sensitivity.json",
+      "sha256": "adfff22fd82ed6ea4b94fd5a6be03f242233d05356ee154062161058e75b3781",
+      "bytes": 3411
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-shell-coefficients.csv",
+      "sha256": "dc21e1dfb55a444acb916a00f811adb2990cddf71a8774873b6cbf2cd480305a",
+      "bytes": 75375
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-time-certificate.csv",
+      "sha256": "347008a0e74a7a23c058b98b5b4bc4381be72e329e273b1ed63d2fd887207563",
+      "bytes": 88955
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-time-certificate.json",
+      "sha256": "147f33c81078d9d2394f299929888580cbcb5174b9bded2b94f43f58b94e1330",
+      "bytes": 588
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/q2-time-curves.csv",
+      "sha256": "8c4621c814a8fbadfc2e5f396f7053706f11c8c31c872e20903f9d60fa0bdb0d",
+      "bytes": 22087
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/run.log",
+      "sha256": "2e4b4d87b443101978a4674f8a8344f7bf76db433be3aca0c2f117ecaad3f645",
+      "bytes": 3327
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/summary.json",
+      "sha256": "a33e4bd16272f484dcd62baf01783b96f89b08185a3b587c7ab0968c6170c2f8",
+      "bytes": 2515
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/outputs/verification/image-vs-explicit-paths.json",
+      "sha256": "5551141627db7cfb0fbb2dc8acc008a6db84bfbcd0eb132681c4b5d81f3fd6b8",
+      "bytes": 5033
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/parameters.json",
+      "sha256": "70779b1b12892c06265ea778004069502465d70cdbc55405d204b3e6c33023f1",
+      "bytes": 505
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/physical-sanity-checks.md",
+      "sha256": "f6da54a7e1d24d732c4fdc7ca5c03dc9b58e5ed8c6b695a7298746661cf16697",
+      "bytes": 1775
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/problem-facts.md",
+      "sha256": "21815db4e3445561a69e66ce759953e987fdd24c2f80b8325f8fad8b3c2d29a4",
+      "bytes": 7070
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/quantity-ledger.md",
+      "sha256": "85f480be1256c7dc4f4ba442da7968015fda46906d13d79470c99e86d1d9bb49",
+      "bytes": 4414
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/results/README.md",
+      "sha256": "f473c5963dd588d973fe00836a33341e4693581342e4110b2e30ab6fecfa6811",
+      "bytes": 521
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/results/figures/q2-gamma-vs-time.png",
+      "sha256": "be86fd443d3f8c2a8741f525c6c018e9abd845f6df2396e47cbcf42cc43aa65c",
+      "bytes": 58413
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/results/figures/q2-order-convergence.png",
+      "sha256": "d68bc73a75c018e88a28bc56740b49d887aa58a36208b4e3120066d682a2e4c9",
+      "bytes": 57486
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/results/figures/q2-requirement-margin.png",
+      "sha256": "1f93c5e1c74c4296005651954f3a6d771d00f3c8fb5a7ff3c99eda44342fd1a2",
+      "bytes": 54927
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/review/reviewer-report.md",
+      "sha256": "e6f04c76dc1dce6c1b890189e58c50e5731e8144c78bcf9e0fb06d0f37d5a584",
+      "bytes": 2737
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/route-log.md",
+      "sha256": "f0982fe66666a641dccc8057eed3afa9ddcc999c6891a8937e017e0f8fd9c344",
+      "bytes": 1576
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/source-provenance/directory-listing.json",
+      "sha256": "0637312f31e699314f27de8326fd5a278ed11afbb44b44bf0740ae7e822d722c",
+      "bytes": 8755
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/source-provenance/domain-retrieval.json",
+      "sha256": "d35b9dd832075892459a48bf583ea8e837c804bb137ed7a4de962459a183931c",
+      "bytes": 10259
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/source-provenance/facts-freeze.json",
+      "sha256": "efe51b5ed7b7d94458dcfc275995b11e71e0a9d9739d8d4f0e96e84088e7840a",
+      "bytes": 535
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/source-provenance/integrity-after.json",
+      "sha256": "a08037f9b69b3470aa8a62dce2ac6323fda2cc5104b56687a9d8a95d5ea0cb74",
+      "bytes": 2261
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/source-provenance/integrity-before.json",
+      "sha256": "c00342ea32c83841220e27a1684d8d7e57485a518b1278bf3b073914692a1555",
+      "bytes": 75989
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/source-provenance/source.json",
+      "sha256": "c8936825cfa56c7cdfdfa3ccb7fe12e3d85e21eb0c3d5d3e8b8ed431f25abec0",
+      "bytes": 1401
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/task-anchor.md",
+      "sha256": "0f473a6e6c6d4b0229d271c6b2f5ebbe7e25bac821e9a5330d6dc6c39d469cb2",
+      "bytes": 1499
+    },
+    {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber/run-001/workspace-manifest.yaml",
+      "sha256": "182f56a5bbfa2a24576d8cbea173516db40bf443b8f21e826be29ac5ad667b41",
+      "bytes": 1573
+    }
+  ]
+}

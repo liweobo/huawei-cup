@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-09-18",
+  "git_head_before_commit": "991e8aa93f1383f5ae94f5ba90d6d02c5d9f91b1",
+  "skill_tree_hash": "ea0be7810800d452c1703407becc9b45a5e51722",
+  "run_001_files_checked": 59,
+  "run_001_hash_mismatches": 0,
+  "tracked_frozen_asset_diff": [],
+  "temporary_reference_pdfs_committed": false,
+  "temporary_extraction_cache_committed": false,
+  "notes": "The repository also contained pre-existing untracked 2022C output files; they were not modified or staged by this benchmark."
+}
