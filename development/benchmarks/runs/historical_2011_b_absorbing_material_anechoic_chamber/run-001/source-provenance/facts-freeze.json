@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-09-17T09:03:56.382373+00:00",
+  "files": {
+    "problem-facts.md": "21815db4e3445561a69e66ce759953e987fdd24c2f80b8325f8fad8b3c2d29a4",
+    "quantity-ledger.md": "85f480be1256c7dc4f4ba442da7968015fda46906d13d79470c99e86d1d9bb49",
+    "assumptions.md": "0cea227be0ecc382b84a9de698eb56f1be61abe4048c79801ab38f7281cb276f",
+    "mathematical-model.md": "25487ff80a816fe3924f87c146ae787537206904b50c5acc66a83bd3be37d15c",
+    "parameters.json": "d5d8e3d76b950d9bab3999c2b5aa2a84a4c82662372a0099cc9950e6e506dac0"
+  }
+}

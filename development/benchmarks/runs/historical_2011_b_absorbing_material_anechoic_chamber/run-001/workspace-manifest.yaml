@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "historical_2011_b_absorbing_material_anechoic_chamber",
+  "run_id": "run-001",
+  "allowed_write_root": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2011_b_absorbing_material_anechoic_chamber\\run-001",
+  "allowed_read_roots": [
+    "source",
+    "extraction",
+    "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill"
+  ],
+  "immutable_inputs": [
+    {
+      "path": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2011_b_absorbing_material_anechoic_chamber\\run-001\\source\\2011B题吸波材料与微波暗室问题的数学建模.doc",
+      "sha256": "c44d22cb08b5f868357b0fdbd7bdaec1db4b7db1208f40e8324c5eb0716ede89"
+    }
+  ],
+  "status": "MODELS_FROZEN",
+  "note": "JSON is valid YAML. Historical assets read only for hashing and regression; no historical solutions consumed.",
+  "created_at": "2026-09-17T09:03:56.382373+00:00",
+  "active_run_id": "run-001",
+  "writable_root": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2011_b_absorbing_material_anechoic_chamber\\run-001",
+  "isolation_mode": "user_authorized_repository_scoped",
+  "prior_run_artifacts_visible": true,
+  "developer_repository_visible": true,
+  "evaluator_files_visible": true,
+  "isolation_disclosure": "Existing development repository is visible to root audit and regression; no clean-room claim. User explicitly selected this benchmark run directory. Only current source/domain inputs consumed for modeling."
+}

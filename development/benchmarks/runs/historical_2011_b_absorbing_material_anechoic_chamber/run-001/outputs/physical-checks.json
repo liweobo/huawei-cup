@@ -1,0 +1,43 @@
+{
+  "q1_max_norm_error": 3.3306690738754696e-16,
+  "q1_max_plane_error_m": 1.7763568394002505e-15,
+  "q1_max_equal_angle_error": 1.6653345369377348e-16,
+  "q1_max_ridge_component_error": 0.0,
+  "q1_max_power_balance_error": 2.220446049250313e-16,
+  "q1_max_3d_projection_identity_error": 5.551115123125783e-17,
+  "right_angle_wedge": {
+    "bounces": 2,
+    "computed_weight": 0.12500000000000003,
+    "expected_weight": 0.125,
+    "exit_u": [
+      0.0,
+      0.0,
+      1.0000000000000004
+    ]
+  },
+  "zero_reflectivity_wedge_weight": 0.0,
+  "scale_invariant_wedge": {
+    "counts": [
+      5,
+      5,
+      5
+    ],
+    "weights": [
+      0.003819167059350734,
+      0.003819167059350734,
+      0.003819167059350734
+    ]
+  },
+  "q2_max_time_symmetry_error": 2.220446049250313e-16,
+  "q2_zero_reflectivity_gamma": 0.0,
+  "q2_reflectivity_monotone": true,
+  "q2_order_monotone": true,
+  "q2_all_coefficients_nonnegative": true,
+  "q2_center_direct_exact_error": 5.421010862427522e-20,
+  "q2_source_scale_cancellation_error": 0.0,
+  "image_path_check_passed": true,
+  "image_count_formula_passed": true,
+  "corner_policy": "EDGE_UNDEFINED",
+  "grazing_reflectivity_limit": 3.061616997868383e-17,
+  "normal_incidence_reflectivity": 0.5
+}

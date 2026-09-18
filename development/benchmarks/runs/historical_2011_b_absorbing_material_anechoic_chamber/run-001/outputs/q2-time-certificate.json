@@ -1,0 +1,14 @@
+{
+  "rho": 0.05,
+  "derivative_bound_per_radian": 0.8026630840600952,
+  "coarse_max": 0.029737286797847096,
+  "margin": 0.0002627132021529033,
+  "intervals": 2400,
+  "max_sampled_gamma": 0.02973730510639216,
+  "time_discretization_upper": 0.00013133544000994385,
+  "bounce_tail_upper": 1.6547528706002922e-12,
+  "observed_quadrature_delta": 6.9284855630513675e-15,
+  "all_time_upper_for_quadrature_model": 0.02986864054805686,
+  "passed": true,
+  "scope": "Analytic time and bounce bound for nq=3 quadrature; finite-area error separately refined, not certified by the empirical delta."
+}

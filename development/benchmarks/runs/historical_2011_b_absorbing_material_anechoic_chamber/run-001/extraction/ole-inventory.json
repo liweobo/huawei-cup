@@ -1,0 +1,1698 @@
+[
+  {
+    "path": "\u0001CompObj",
+    "bytes": 117
+  },
+  {
+    "path": "\u0005DocumentSummaryInformation",
+    "bytes": 400
+  },
+  {
+    "path": "\u0005SummaryInformation",
+    "bytes": 456
+  },
+  {
+    "path": "1Table",
+    "bytes": 15794
+  },
+  {
+    "path": "Data",
+    "bytes": 1561191
+  },
+  {
+    "path": "MsoDataStore/ÍIÒZBKÌÎRUÖÁECVMBÏÙÛKÐ==/Item",
+    "bytes": 205
+  },
+  {
+    "path": "MsoDataStore/ÍIÒZBKÌÎRUÖÁECVMBÏÙÛKÐ==/Properties",
+    "bytes": 341
+  },
+  {
+    "path": "ObjectPool/_1368205229/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1368205229/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1368205229/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1368205229/Equation Native",
+    "bytes": 264
+  },
+  {
+    "path": "ObjectPool/_1370780969/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370780969/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370780969/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370780969/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1370785872/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370785872/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370785872/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370785872/Equation Native",
+    "bytes": 268
+  },
+  {
+    "path": "ObjectPool/_1370785931/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370785931/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370785931/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370785931/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1370867496/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370867496/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370867496/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370867496/Equation Native",
+    "bytes": 284
+  },
+  {
+    "path": "ObjectPool/_1370867606/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370867606/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370867606/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370867606/Equation Native",
+    "bytes": 284
+  },
+  {
+    "path": "ObjectPool/_1370869074/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370869074/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370869074/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370869074/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1370869230/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370869230/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370869230/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370869230/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1370869361/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370869361/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370869361/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370869361/Equation Native",
+    "bytes": 310
+  },
+  {
+    "path": "ObjectPool/_1370870049/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370870049/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370870049/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370870049/Equation Native",
+    "bytes": 427
+  },
+  {
+    "path": "ObjectPool/_1370870135/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370870135/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370870135/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370870135/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1370870375/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370870375/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370870375/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370870375/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1370870476/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370870476/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370870476/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370870476/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1370873670/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370873670/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370873670/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370873670/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1370873712/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370873712/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370873712/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370873712/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1370874830/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1370874830/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1370874830/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1370874830/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1371042983/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371042983/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371042983/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371042983/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1371043062/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371043062/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371043062/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371043062/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371044093/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371044093/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371044093/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371044093/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371301249/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371301249/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371301249/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371301249/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1371301843/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371301843/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371301843/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371301843/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1371355624/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371355624/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371355624/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371355624/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371355644/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371355644/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371355644/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371355644/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371355666/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371355666/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371355666/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371355666/Equation Native",
+    "bytes": 264
+  },
+  {
+    "path": "ObjectPool/_1371444510/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371444510/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371444510/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371444510/Equation Native",
+    "bytes": 293
+  },
+  {
+    "path": "ObjectPool/_1371445514/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445514/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445514/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445514/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371445549/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445549/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445549/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445549/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1371445622/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445622/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445622/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445622/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1371445663/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445663/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445663/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445663/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371445697/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445697/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445697/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445697/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1371445744/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445744/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445744/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445744/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1371445765/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445765/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445765/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445765/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1371445807/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445807/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445807/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445807/Equation Native",
+    "bytes": 337
+  },
+  {
+    "path": "ObjectPool/_1371445857/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445857/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445857/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445857/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1371445985/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371445985/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371445985/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371445985/Equation Native",
+    "bytes": 378
+  },
+  {
+    "path": "ObjectPool/_1371447280/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371447280/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371447280/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371447280/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371447292/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371447292/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371447292/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371447292/Equation Native",
+    "bytes": 293
+  },
+  {
+    "path": "ObjectPool/_1371447445/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371447445/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371447445/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371447445/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371449472/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371449472/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371449472/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371449472/Equation Native",
+    "bytes": 394
+  },
+  {
+    "path": "ObjectPool/_1371463722/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371463722/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371463722/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371463722/Equation Native",
+    "bytes": 294
+  },
+  {
+    "path": "ObjectPool/_1371478154/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478154/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478154/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478154/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371478164/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478164/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478164/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478164/Equation Native",
+    "bytes": 406
+  },
+  {
+    "path": "ObjectPool/_1371478186/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478186/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478186/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478186/Equation Native",
+    "bytes": 358
+  },
+  {
+    "path": "ObjectPool/_1371478209/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478209/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478209/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478209/Equation Native",
+    "bytes": 393
+  },
+  {
+    "path": "ObjectPool/_1371478424/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478424/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478424/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478424/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371478437/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478437/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478437/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478437/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371478588/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478588/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478588/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478588/Equation Native",
+    "bytes": 321
+  },
+  {
+    "path": "ObjectPool/_1371478635/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478635/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478635/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478635/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1371478686/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478686/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478686/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478686/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1371478700/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478700/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478700/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478700/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1371478724/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478724/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478724/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478724/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1371478747/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371478747/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371478747/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371478747/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371559162/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371559162/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371559162/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371559162/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371561711/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371561711/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371561711/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371561711/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1371726556/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371726556/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371726556/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371726556/Equation Native",
+    "bytes": 261
+  },
+  {
+    "path": "ObjectPool/_1371729077/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371729077/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371729077/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371729077/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371729101/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371729101/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371729101/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371729101/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1371906831/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371906831/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371906831/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371906831/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1371906843/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371906843/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371906843/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371906843/Equation Native",
+    "bytes": 266
+  },
+  {
+    "path": "ObjectPool/_1371906881/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371906881/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371906881/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371906881/Equation Native",
+    "bytes": 304
+  },
+  {
+    "path": "ObjectPool/_1371906900/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371906900/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371906900/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371906900/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1371909985/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371909985/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371909985/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371909985/Equation Native",
+    "bytes": 277
+  },
+  {
+    "path": "ObjectPool/_1371910006/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371910006/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371910006/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371910006/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1371989513/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1371989513/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1371989513/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1371989513/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1372255698/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1372255698/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1372255698/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1372255698/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1376223990/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376223990/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376223990/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376223990/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1376224009/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376224009/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376224009/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376224009/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1376308806/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376308806/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376308806/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376308806/Equation Native",
+    "bytes": 280
+  },
+  {
+    "path": "ObjectPool/_1376309437/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376309437/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376309437/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376309437/Equation Native",
+    "bytes": 597
+  },
+  {
+    "path": "ObjectPool/_1376309710/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376309710/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376309710/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376309710/Equation Native",
+    "bytes": 329
+  },
+  {
+    "path": "ObjectPool/_1376309793/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376309793/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376309793/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376309793/Equation Native",
+    "bytes": 305
+  },
+  {
+    "path": "ObjectPool/_1376309832/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376309832/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376309832/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376309832/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1376309886/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376309886/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376309886/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376309886/Equation Native",
+    "bytes": 355
+  },
+  {
+    "path": "ObjectPool/_1376310006/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376310006/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376310006/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376310006/Equation Native",
+    "bytes": 269
+  },
+  {
+    "path": "ObjectPool/_1376310444/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376310444/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376310444/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376310444/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1376311551/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376311551/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376311551/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376311551/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1376311564/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376311564/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376311564/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376311564/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1376311866/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376311866/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376311866/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376311866/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1376311892/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376311892/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376311892/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376311892/Equation Native",
+    "bytes": 282
+  },
+  {
+    "path": "ObjectPool/_1376311930/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376311930/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376311930/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376311930/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1376312552/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376312552/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376312552/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376312552/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1376312560/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376312560/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376312560/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376312560/Equation Native",
+    "bytes": 282
+  },
+  {
+    "path": "ObjectPool/_1376312567/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1376312567/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1376312567/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1376312567/Equation Native",
+    "bytes": 403
+  },
+  {
+    "path": "ObjectPool/_1377268131/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377268131/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377268131/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377268131/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1377322580/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377322580/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377322580/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377322580/Equation Native",
+    "bytes": 264
+  },
+  {
+    "path": "ObjectPool/_1377322657/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377322657/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377322657/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377322657/Equation Native",
+    "bytes": 299
+  },
+  {
+    "path": "ObjectPool/_1377328511/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377328511/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377328511/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377328511/Equation Native",
+    "bytes": 265
+  },
+  {
+    "path": "ObjectPool/_1377328722/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377328722/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377328722/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377328722/Equation Native",
+    "bytes": 275
+  },
+  {
+    "path": "ObjectPool/_1377329075/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377329075/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377329075/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377329075/Equation Native",
+    "bytes": 261
+  },
+  {
+    "path": "ObjectPool/_1377329089/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377329089/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377329089/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377329089/Equation Native",
+    "bytes": 261
+  },
+  {
+    "path": "ObjectPool/_1377585603/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377585603/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377585603/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377585603/Equation Native",
+    "bytes": 260
+  },
+  {
+    "path": "ObjectPool/_1377586186/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377586186/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377586186/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377586186/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1377586386/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377586386/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377586386/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377586386/Equation Native",
+    "bytes": 270
+  },
+  {
+    "path": "ObjectPool/_1377588079/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377588079/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377588079/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377588079/Equation Native",
+    "bytes": 265
+  },
+  {
+    "path": "ObjectPool/_1377973838/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1377973838/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1377973838/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1377973838/Equation Native",
+    "bytes": 311
+  },
+  {
+    "path": "ObjectPool/_1378000525/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378000525/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378000525/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378000525/Equation Native",
+    "bytes": 270
+  },
+  {
+    "path": "ObjectPool/_1378000856/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378000856/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378000856/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378000856/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1378002847/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378002847/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378002847/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378002847/Equation Native",
+    "bytes": 259
+  },
+  {
+    "path": "ObjectPool/_1378003146/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378003146/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378003146/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378003146/Equation Native",
+    "bytes": 254
+  },
+  {
+    "path": "ObjectPool/_1378008878/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378008878/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378008878/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378008878/Equation Native",
+    "bytes": 318
+  },
+  {
+    "path": "ObjectPool/_1378009391/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378009391/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378009391/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378009391/Equation Native",
+    "bytes": 255
+  },
+  {
+    "path": "ObjectPool/_1378009400/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378009400/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378009400/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378009400/Equation Native",
+    "bytes": 271
+  },
+  {
+    "path": "ObjectPool/_1378027032/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378027032/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378027032/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378027032/Equation Native",
+    "bytes": 366
+  },
+  {
+    "path": "ObjectPool/_1378027300/\u0001CompObj",
+    "bytes": 105
+  },
+  {
+    "path": "ObjectPool/_1378027300/\u0001Ole",
+    "bytes": 20
+  },
+  {
+    "path": "ObjectPool/_1378027300/\u0003ObjInfo",
+    "bytes": 6
+  },
+  {
+    "path": "ObjectPool/_1378027300/Equation Native",
+    "bytes": 294
+  },
+  {
+    "path": "WordDocument",
+    "bytes": 47154
+  }
+]

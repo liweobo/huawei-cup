@@ -1,0 +1,97 @@
+{
+  "run_id": "run-001",
+  "experiment_id": "EXP-2011B-GEOMETRIC-001",
+  "q1_scenarios": 144,
+  "q1_status": "PARAMETRIC_COMPLETE",
+  "q2_extrema": [
+    {
+      "rho": 0.5,
+      "min_time_s": 0.0,
+      "min_gamma": 0.39245848581727455,
+      "grid81_min": 0.3924584858172854,
+      "grid161_min": 0.39245848578204423,
+      "grid81_max": 0.39485912950126967,
+      "grid161_max": 0.39485912946700924,
+      "optimizer_success": true,
+      "optimizer_nfev": 36,
+      "candidates": [
+        [
+          3.9999998801867243,
+          0.39245848621913687
+        ],
+        [
+          0.0,
+          0.39245848581727455
+        ],
+        [
+          4.0,
+          0.39245848581727455
+        ],
+        [
+          2.0,
+          0.3948591295013663
+        ]
+      ]
+    },
+    {
+      "rho": 0.05,
+      "min_time_s": 2.0000000000035967,
+      "min_gamma": 0.02966884688006348,
+      "grid81_min": 0.029668846880063493,
+      "grid161_min": 0.029668846880063493,
+      "grid81_max": 0.029737286797847096,
+      "grid161_max": 0.029737291253301837,
+      "optimizer_success": true,
+      "optimizer_nfev": 25,
+      "candidates": [
+        [
+          1.9999996802352453,
+          0.029668846880063483
+        ],
+        [
+          0.0,
+          0.02973047680259145
+        ],
+        [
+          4.0,
+          0.02973047680259145
+        ],
+        [
+          2.0,
+          0.02966884688007043
+        ],
+        [
+          2.0000000000035967,
+          0.02966884688006348
+        ]
+      ]
+    }
+  ],
+  "time_certificate": {
+    "rho": 0.05,
+    "derivative_bound_per_radian": 0.8026630840600952,
+    "coarse_max": 0.029737286797847096,
+    "margin": 0.0002627132021529033,
+    "intervals": 2400,
+    "max_sampled_gamma": 0.02973730510639216,
+    "time_discretization_upper": 0.00013133544000994385,
+    "bounce_tail_upper": 1.6547528706002922e-12,
+    "observed_quadrature_delta": 6.9284855630513675e-15,
+    "all_time_upper_for_quadrature_model": 0.02986864054805686,
+    "passed": true,
+    "scope": "Analytic time and bounce bound for nq=3 quadrature; finite-area error separately refined, not certified by the empirical delta."
+  },
+  "physical_checks_passed": true,
+  "limitations": [
+    "geometrical power-sum model only",
+    "no independent measurements",
+    "effective material values not calibrated",
+    "quadrature error assessed by refinement"
+  ],
+  "duration_seconds": 39.25258549999853,
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_status": "USER_DESIGNATED_HISTORICAL_MIRROR",
+  "official_origin_independently_verified": false,
+  "directory_url": "https://github.com/zhanwen/MathModel/tree/master/国赛试题/2011年研究生数学建模竞赛试题",
+  "api_url": "https://api.github.com/repos/zhanwen/MathModel/contents/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2011%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98?ref=master",
+  "file_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2011%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/2011B%E9%A2%98%E5%90%B8%E6%B3%A2%E6%9D%90%E6%96%99%E4%B8%8E%E5%BE%AE%E6%B3%A2%E6%9A%97%E5%AE%A4%E9%97%AE%E9%A2%98%E7%9A%84%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.doc",
+  "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2011年研究生数学建模竞赛试题/2011B题吸波材料与微波暗室问题的数学建模.doc",
+  "git_blob_sha": "02ddbe988aa8205e8493d46253f34e8641ae01b5",
+  "sha256": "c44d22cb08b5f868357b0fdbd7bdaec1db4b7db1208f40e8324c5eb0716ede89",
+  "bytes": 1773056,
+  "retrieved_utc": "2026-09-17T08:24:54.649925+00:00",
+  "excellent_solutions_accessed": false,
+  "scope": "Only the specified 2011 problem directory listing and exact target DOC were requested."
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "nominal_rho": 0.5,
+    "label": "SIMULATED_PERTURBATION",
+    "result": {
+      "baseline": 0.39485912950126967,
+      "normalization_scale": null,
+      "relative_change_defined": true,
+      "stability_threshold": 0.1,
+      "results": [
+        {
+          "parameter": "rho",
+          "delta": 0.05,
+          "direction": "down",
+          "value": 0.475,
+          "result": 0.3680379232046299,
+          "absolute_change": -0.026821206296639755,
+          "relative_change": -0.06792601283023776,
+          "relative_change_defined": true,
+          "stable": true
+        },
+        {
+          "parameter": "rho",
+          "delta": 0.05,
+          "direction": "up",
+          "value": 0.525,
+          "result": 0.4227941907547197,
+          "absolute_change": 0.027935061253450022,
+          "relative_change": 0.07074690482333193,
+          "relative_change_defined": true,
+          "stable": true
+        },
+        {
+          "parameter": "rho",
+          "delta": 0.1,
+          "direction": "down",
+          "value": 0.45,
+          "result": 0.34225496967076285,
+          "absolute_change": -0.052604159830506814,
+          "relative_change": -0.13322259991037555,
+          "relative_change_defined": true,
+          "stable": false
+        },
+        {
+          "parameter": "rho",
+          "delta": 0.1,
+          "direction": "up",
+          "value": 0.55,
+          "result": 0.45192688864098546,
+          "absolute_change": 0.05706775913971579,
+          "relative_change": 0.1445268828196925,
+          "relative_change_defined": true,
+          "stable": false
+        }
+      ],
+      "stability_judgement": "sensitive"
+    }
+  },
+  {
+    "nominal_rho": 0.05,
+    "label": "SIMULATED_PERTURBATION",
+    "result": {
+      "baseline": 0.029737286797847096,
+      "normalization_scale": null,
+      "relative_change_defined": true,
+      "stability_threshold": 0.1,
+      "results": [
+        {
+          "parameter": "rho",
+          "delta": 0.05,
+          "direction": "down",
+          "value": 0.0475,
+          "result": 0.02821381795233843,
+          "absolute_change": -0.0015234688455086666,
+          "relative_change": -0.05123092956883215,
+          "relative_change_defined": true,
+          "stable": true
+        },
+        {
+          "parameter": "rho",
+          "delta": 0.05,
+          "direction": "up",
+          "value": 0.052500000000000005,
+          "result": 0.03126472360983817,
+          "absolute_change": 0.0015274368119910717,
+          "relative_change": 0.05136436361442545,
+          "relative_change_defined": true,
+          "stable": true
+        },
+        {
+          "parameter": "rho",
+          "delta": 0.1,
+          "direction": "down",
+          "value": 0.045000000000000005,
+          "result": 0.026694318971194092,
+          "absolute_change": -0.0030429678266530036,
+          "relative_change": -0.10232836127044741,
+          "relative_change_defined": true,
+          "stable": false
+        },
+        {
+          "parameter": "rho",
+          "delta": 0.1,
+          "direction": "up",
+          "value": 0.05500000000000001,
+          "result": 0.03279614549444914,
+          "absolute_change": 0.0030588586966020445,
+          "relative_change": 0.10286273651648334,
+          "relative_change_defined": true,
+          "stable": false
+        }
+      ],
+      "stability_judgement": "sensitive"
+    }
+  }
+]

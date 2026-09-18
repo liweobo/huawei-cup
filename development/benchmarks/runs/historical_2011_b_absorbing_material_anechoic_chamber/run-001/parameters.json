@@ -1,0 +1,39 @@
+{
+  "B": 18.0,
+  "H": 14.0,
+  "L": 15.0,
+  "b": 1.0,
+  "R": 14.0,
+  "s": 0.3,
+  "beta_deg": 45.0,
+  "T": 4.0,
+  "rho_values": [
+    0.5,
+    0.05
+  ],
+  "initial_intensity_normalization": 1.0,
+  "q1_half_angles_deg": [
+    10.0,
+    15.0,
+    30.0,
+    45.0
+  ],
+  "q1_incidence_deg": [
+    0.0,
+    30.0,
+    60.0
+  ],
+  "q1_azimuth_deg": [
+    0.0,
+    45.0,
+    90.0
+  ],
+  "q1_entry_fractions": [
+    0.1,
+    0.3,
+    0.7,
+    0.9
+  ],
+  "q1_normalized_height_m": 1.0,
+  "q1_illustrative_rho": 0.5
+}
