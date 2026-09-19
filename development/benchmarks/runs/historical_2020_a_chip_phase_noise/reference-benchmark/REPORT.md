@@ -53,7 +53,6 @@ The frozen Skill solution has clear advantages: source provenance, ambiguity pre
 `GENERALIZABLE_SIGNAL_PROCESSING_GAP_FOUND`
 
 This report only diagnoses the gap. It does not modify `skill/`, does not alter `run-001`, and does not rerun Q1-Q4.
-
 ## 29. Repository Environment Notes
 
 The existing `DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING` remains recorded. The known `.tmp/github-publish-checkout` module mismatch and the pre-existing 2022C unfinished marker were not modified in this benchmark. Reference PDFs, extraction text, rendered PNGs, and work files remain local and uncommitted.
