@@ -1,0 +1,100 @@
+{
+  "run_id": "run-002-closure-gate",
+  "cases": [
+    {
+      "case": "A_fully_closed_ode",
+      "closure_status": "CLOSED_FOR_UNIQUE_NUMERICAL",
+      "allowed_claim_level": "UNIQUE_NUMERICAL_UNDER_MODEL",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "B_missing_initial",
+      "closure_status": "UNVERIFIED",
+      "allowed_claim_level": "NO_FORMAL_RESULT",
+      "reviewer_codes": [
+        "MECHANISM_CLOSURE_UNVERIFIED"
+      ],
+      "pass": true
+    },
+    {
+      "case": "C_parametric_fallback",
+      "closure_status": "PARAMETRIC",
+      "allowed_claim_level": "PARAMETRIC_RESULT",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "D_explicit_scenario",
+      "closure_status": "SCENARIO_ASSUMED",
+      "allowed_claim_level": "SCENARIO_RESULT",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "E_silent_geometry_assumption",
+      "closure_status": "SCENARIO_ASSUMED",
+      "allowed_claim_level": "SCENARIO_RESULT",
+      "reviewer_codes": [
+        "SILENT_CLOSURE_ASSUMPTION"
+      ],
+      "pass": true
+    },
+    {
+      "case": "F_derived_geometry",
+      "closure_status": "CLOSED_FOR_UNIQUE_NUMERICAL",
+      "allowed_claim_level": "UNIQUE_NUMERICAL_UNDER_MODEL",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "G_missing_observation",
+      "closure_status": "UNVERIFIED",
+      "allowed_claim_level": "NO_FORMAL_RESULT",
+      "reviewer_codes": [
+        "MECHANISM_CLOSURE_UNVERIFIED"
+      ],
+      "pass": true
+    },
+    {
+      "case": "H_limited_identifiability",
+      "closure_status": "CLOSED_FOR_UNIQUE_NUMERICAL",
+      "allowed_claim_level": "UNIQUE_NUMERICAL_UNDER_MODEL",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "I_unverified_termination",
+      "closure_status": "UNVERIFIED",
+      "allowed_claim_level": "NO_FORMAL_RESULT",
+      "reviewer_codes": [
+        "MECHANISM_CLOSURE_UNVERIFIED",
+        "TERMINATION_RULE_UNVERIFIED"
+      ],
+      "pass": true
+    },
+    {
+      "case": "J_verified_termination",
+      "closure_status": "CLOSED_FOR_UNIQUE_NUMERICAL",
+      "allowed_claim_level": "UNIQUE_NUMERICAL_UNDER_MODEL",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "K_acknowledged_model_form_uncertainty",
+      "closure_status": "CLOSED_FOR_UNIQUE_NUMERICAL",
+      "allowed_claim_level": "UNIQUE_NUMERICAL_UNDER_MODEL",
+      "reviewer_codes": [],
+      "pass": true
+    },
+    {
+      "case": "L_claim_gate",
+      "closure_status": "PARAMETRIC",
+      "allowed_claim_level": "PARAMETRIC_RESULT",
+      "reviewer_codes": [],
+      "pass": true
+    }
+  ],
+  "passed": true,
+  "case_count": 12
+}

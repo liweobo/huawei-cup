@@ -1,0 +1,22 @@
+{
+  "status": "MECHANISM_MODEL_CLOSURE_READY",
+  "benchmark_id": "historical_2011_b_absorbing_material_anechoic_chamber",
+  "run_id": "run-002-closure-gate",
+  "mechanism_closure_contract": "PASS",
+  "generic_tests": "PASS",
+  "q1_closure_status": "PARAMETRIC",
+  "q1_unique_numerical_claim_allowed": "NO",
+  "q2_closure_status": "CLOSED_FOR_UNIQUE_NUMERICAL",
+  "q2_closure_scope": "DECLARED_SIMPLIFIED_MODEL",
+  "q2_model_form_uncertainty": "YES",
+  "termination_verified": "YES",
+  "silent_assumption_guard": "PASS",
+  "parametric_fallback": "PASS",
+  "scenario_assumption_guard": "PASS",
+  "historical_assets_unchanged": "YES",
+  "routes": 10,
+  "effective_full_tests": "PASS: 290 passed; isolated smoke PASS; harness regressions PASS",
+  "skill_only_self_contained": "PASS",
+  "default_pytest_environment_issue": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING",
+  "recommended_next_action": "Human review only; do not open a second mechanism module in this phase."
+}

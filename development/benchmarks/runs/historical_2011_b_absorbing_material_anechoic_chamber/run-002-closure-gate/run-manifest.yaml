@@ -1,0 +1,13 @@
+schema_version: 1
+run_id: run-002-closure-gate
+benchmark_id: historical_2011_b_absorbing_material_anechoic_chamber
+purpose: targeted regression for mechanism model closure
+status: COMPLETED
+formal_physics_simulation: false
+historical_inputs:
+  run_001: READ_ONLY
+  reference_benchmark: READ_ONLY
+  frozen_historical_assets: READ_ONLY
+outputs:
+  - outputs/results.json
+  - REPORT.md
