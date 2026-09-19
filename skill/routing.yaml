@@ -23,6 +23,7 @@ routes:
       - references/problem-taxonomy.md
       - references/ordinal-modeling.md
       - references/group-validation.md
+      - references/mechanism-closure.md
 
   audit_data:
     purpose: 审计附件结构、质量、时间因果关系和数据到问题映射。
@@ -47,6 +48,7 @@ routes:
       - references/imbalanced-classification.md
       - references/ordinal-modeling.md
       - references/group-validation.md
+      - references/mechanism-closure.md
 
   build_baseline:
     purpose: 建立可运行、可解释、可比较的最小基准。
@@ -66,6 +68,7 @@ routes:
       - references/imbalanced-classification.md
       - references/ordinal-modeling.md
       - references/group-validation.md
+      - references/mechanism-closure.md
 
   validate_model:
     purpose: 验证泛化、可行性、灵敏度和鲁棒性。
@@ -78,6 +81,7 @@ routes:
       - references/imbalanced-classification.md
       - references/ordinal-modeling.md
       - references/group-validation.md
+      - references/mechanism-closure.md
 
   write_paper:
     purpose: 把已验证证据组织为论文段落、图表和摘要。
@@ -87,6 +91,7 @@ routes:
       - rules/evidence.md
       - references/innovation-patterns.md
       - references/gotchas.md
+      - references/mechanism-closure.md
 
   reviewer:
     purpose: 以网评专家视角按 P0-P3 寻找可证实的问题。
@@ -99,6 +104,7 @@ routes:
       - references/imbalanced-classification.md
       - references/ordinal-modeling.md
       - references/group-validation.md
+      - references/mechanism-closure.md
 
   final_check:
     purpose: 在提交前检查完成度、一致性、证据和合规状态。

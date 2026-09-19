@@ -1,0 +1,26 @@
+schema_version: 1
+mechanism_closure:
+  model_name: ""
+  prediction_or_simulation_target: ""
+  closure_scope: ""
+  geometry_requirements: []
+  state_initial_requirements: []
+  boundary_interface_requirements: []
+  forcing_input_requirements: []
+  material_constitutive_requirements: []
+  observation_requirements: []
+  termination_horizon_requirements: []
+  unresolved_requirements: []
+  assumptions_added: []
+  parameterized_requirements: []
+  identifiability_status: UNVERIFIED
+  numerical_termination_verified: false
+  closure_status: UNVERIFIED
+  allowed_claim_level: NO_FORMAL_RESULT
+  model_form_uncertainty:
+    status: NONE
+    acknowledged: false
+    rationale: ""
+    evidence: []
+  evidence: []
+  status: PASS

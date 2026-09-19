@@ -13,6 +13,7 @@
 - [`../rules/evidence.md`](../rules/evidence.md)
 - [`../references/innovation-patterns.md`](../references/innovation-patterns.md)
 - 声称创新时读取 [`../references/gotchas.md`](../references/gotchas.md) 的 Fake innovation。
+- 机制/物理/动态模型读取 [`../references/mechanism-closure.md`](../references/mechanism-closure.md)。
 
 ## Inputs
 
@@ -30,7 +31,7 @@
 4. 每完成模型就同步记录变量、公式、参数来源、算法、结果和局限。
 5. 摘要写研究对象、各问题方法、关键真实数字、验证、结论和真正创新；禁用无证据的“效果较好”。
 6. 创新点回答原问题、修改内容、合理性、改善位置和实验支持；激活 Fake innovation 检查。
-7. 核对摘要、正文、表格、图、代码、单位和 active evidence version；生成的 Paper Claim 必须使 `Claim -> Evidence -> Artifact` 仍可解析。
+7. 核对摘要、正文、表格、图、代码、单位和 active evidence version；生成的 Paper Claim 必须使 `Claim -> Evidence -> Artifact` 仍可解析。机制数字还必须通过 Closure Claim Gate：`PARAMETRIC`、`SCENARIO_ASSUMED`、`PARTIAL` 和 `UNVERIFIED` 结果不能写成唯一数值答案；声明唯一数值时必须同时保留 closure scope、termination evidence 和模型形式不确定性说明。
 8. 观察性关联先读取 [`observational-association.md`](../references/observational-association.md)，同时交代分配机制、暴露时序、实体数/观测数、处理前调整依据和 crude / adjusted 结果。Paper Claim 增补 `text` 原句及 association_contract，检查 `UNSUPPORTED_CAUSAL_CLAIM`；使用“与……相关”“调整后仍观察到……关联”。把未知暴露时序、初始测量的时序限制、稀有组和共现措施写入结果解释，不能用统计显著性替换因果识别。
 
 声称某类信息提升预测时按需读取 [`feature-set-design.md`](../references/feature-set-design.md)，Paper Claim 附 `feature_set_evidence` 并引用当前受控增量/删组实验和 paired folds；没有此证据只能写“模型使用了该信息”，不能写“该信息提升性能”。

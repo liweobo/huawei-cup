@@ -17,6 +17,7 @@
 - [`../references/imbalanced-classification.md`](../references/imbalanced-classification.md)
 - [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（目标有明确等级时）
 - [`../references/group-validation.md`](../references/group-validation.md)（存在重复实体或纵向预测时）
+- [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（候选包含机制、物理或动态模拟时）
 - 只有在模型族确定后，读取对应模型族文件。
 
 ## Inputs
@@ -30,14 +31,14 @@
 ## Steps
 
 1. 先写 Baseline，再提出最多三个有实质差异的候选模型族。
-2. 为每个候选记录目标、适用理由、假设、数据、数学形式、优势、缺点、最大风险、指标、实现/解释成本。
+2. 为每个候选记录目标、适用理由、假设、数据、数学形式、优势、缺点、最大风险、指标、实现/解释成本。机制候选必须先填写 Mechanism Closure Contract。只有 `CLOSED_FOR_UNIQUE_NUMERICAL` 才能声明模型内唯一数值；`PARAMETRIC`、`SCENARIO_ASSUMED`、`PARTIAL` 和 `UNVERIFIED` 必须携带对应 claim level。
 3. 检查模型是否能在现有数据与时间内验证；不能验证的只作为探索方案。
 4. 如果任务涉及时间可得性、未来预测或纵向聚合，先建立并通过 Temporal Availability Contract；在 cutoff 过滤前不得设计或生成 longitudinal aggregate，边界不确定时只能停在 `UNVERIFIED`。重复实体依赖另由 group gate 检查；仅以已知 time 为坐标的描述曲线要明确其不声称日历未来预测。
 5. 存在重复实体时先按 A/B/C/D 明确 prediction setting 与 ROW/ENTITY/TIME/ENTITY_TIME；新实体泛化必须将 group separation 置于完美 stratification 之上。在实例化 splitter 前检查独立 group 数、group size 和每个等级出现在哪些 groups；再检查实际 folds 的类别覆盖。训练 fold 缺等级应拒绝或改用合法协议，不能通过拆 group 修复。无时间外推的静态重复数据只激活 group gate。模型排名只能来自相同合法验证协议，row-random 与 grouped 的分数不得跨协议选优。
 6. 二分类样本明显不平衡时，先纳入多数类基线；比较正则化 Logistic 与少量容量受控候选，并在同一协议下比较无权重和 `class_weight="balanced"`（若模型支持）。Accuracy 不能单独决定主模型，候选必须同时检查 PR-AUC、Balanced Accuracy、少数类 Recall、Precision、F1 和 Specificity。
 7. 目标是 ordinal 时，先定义中位等级/最常见等级 baseline，再比较 nominal multinomial 与低容量 cumulative ordinal 候选；连续回归后取整只能标为 approximation，不作为正式 ordinal 模型。折数不得超过最少类别计数。
 8. 对措施关系题先读取 [`observational-association.md`](../references/observational-association.md)，明确 estimand 和 claim_level；用同一样本的 `outcome ~ exposure` 与加少量处理前 confounders 的模型区分 crude / adjusted association。纵向结果选简单 mixed model、GEE、entity-clustered regression 或合法实体摘要；按题意加入少量 time × exposure，未知暴露时序只能解释 trajectory association。稀有或共现措施不做巨大组合搜索，propensity 不是默认要求。
-9. 选择主模型、保底模型和改进假设；改进必须对应可观测缺陷。预先指定的关联估计不冒充预测选模；若比较新实体预测能力，仍使用合法 grouped validation。
+9. 选择主模型、保底模型和改进假设；改进必须对应可观测缺陷。预先指定的关联估计不冒充预测选模；若比较新实体预测能力，仍使用合法 grouped validation。机制模型还要列出保留/省略的机制、适用 regime 和模型形式不确定性；数值收敛不能替代物理模型闭合或真实性验证。
 10. 若声称创新，激活 `innovation-patterns.md` 与 Gotchas 的 Fake innovation 检查。
 
 若当前优化问题的 feasibility 取决于 evolving system state，先读取 [`stateful-scheduling.md`](../references/stateful-scheduling.md) 并建立 Stateful Scheduling Contract。正式 Improved / Primary candidate 必须是 `STATE_COUPLED`，或使用经验证的 `SEQUENCE_WITH_FEASIBLE_DECODER`；没有 decoder 的 `SEQUENCE_ONLY` 保持 `STATE_SEARCH_UNVERIFIED`。

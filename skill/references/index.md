@@ -12,4 +12,5 @@ References 回答需要哪些知识、候选模型族和常见经验；只在当
 - [`observational-association.md`](observational-association.md)：观察性措施关联、处理前混杂、暴露时序、粗/调整后比较和因果措辞 gate。
 - [`innovation-patterns.md`](innovation-patterns.md)：真实创新与实验支持。
 - [`gotchas.md`](gotchas.md)：真实赛题测试后沉淀的高价值陷阱，须由相关 workflow 激活。
+- [`mechanism-closure.md`](mechanism-closure.md)：机制/物理/动态模型的 closure contract、状态和 claim gate。
 - [`models/index.md`](models/index.md)：模型族路由。

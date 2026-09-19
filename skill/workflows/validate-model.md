@@ -16,6 +16,7 @@
 - [`../references/imbalanced-classification.md`](../references/imbalanced-classification.md)
 - [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（验证有序目标时）
 - [`../references/group-validation.md`](../references/group-validation.md)（验证重复实体或纵向模型时）
+- [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（验证机制、物理或动态模拟时）
 
 ## Inputs
 
@@ -28,7 +29,7 @@
 ## Steps
 
 1. 读取当前实验的 [`../templates/experiment-record.yaml`](../templates/experiment-record.yaml) 实例和 `workspace-manifest.yaml`。若验证会新运行代码、新增 split/敏感性/鲁棒性、修改模型或指标，先把记录改为 `RUNNING`。
-2. 检查切分是否尊重时间、空间、实体和信息可得时点。先明确 validation scope；新实体泛化才强制每 fold entity overlap=0，同实体未来预测允许已有实体历史但必须满足时间约束。纵向时间特征复核 Temporal Availability Contract、`feature_cutoff` 与 `target_horizon`，确认聚合输入先经过 cutoff 过滤。Group Structure Contract 和实际 split IDs 通过 `runtime_provenance.apply_group_gate()` 接入记录；发现 post-horizon 行进入聚合或新实体评估出现重叠，独立报告 `FUTURE_INFORMATION_LEAKAGE` / `GROUP_LEAKAGE` 并 `INVALIDATED`。缺失或未验证契约不得发布 OBSERVED；只通过 group gate 不能代替时间验证。
+2. 检查切分是否尊重时间、空间、实体和信息可得时点。先明确 validation scope；新实体泛化才强制每 fold entity overlap=0，同实体未来预测允许已有实体历史但必须满足时间约束。纵向时间特征复核 Temporal Availability Contract、`feature_cutoff` 与 `target_horizon`，确认聚合输入先经过 cutoff 过滤。Group Structure Contract 和实际 split IDs 通过 `runtime_provenance.apply_group_gate()` 接入记录；发现 post-horizon 行进入聚合或新实体评估出现重叠，独立报告 `FUTURE_INFORMATION_LEAKAGE` / `GROUP_LEAKAGE` 并 `INVALIDATED`。缺失或未验证契约不得发布 OBSERVED；只通过 group gate 不能代替时间验证。机制模型同时复核 Closure Contract：缺失 essential initial state 应降级为 `PARAMETRIC` 或 `UNVERIFIED`；若在声明模型范围内所有条件已闭合，则可为 `CLOSED_FOR_UNIQUE_NUMERICAL`，但仍单独报告模型形式不确定性与物理真实性限制。
 3. 按任务读取指标原则；分类先检查类别分布，激活 Class imbalance metric trap。明显不平衡时必须比较多数类基线，并报告 ROC-AUC、PR-AUC（附正类流行率）、Macro F1、Balanced Accuracy、少数类 Recall、Precision、F1 和 Specificity；概率任务补充 Brier score 与校准说明。Accuracy 不能作为唯一或主要选模依据。若使用决策阈值，只能在 validation/inner validation 选择并在 test 前冻结。
 4. ordinal 任务复核 `ordered_levels` 与 `ordering_source`，确认每 fold 覆盖全部等级、概率归一化且累计阈值概率单调；回归取整必须显式标记 approximation。与 Baseline 比较泛化指标、失败案例和实际意义；优化额外检查全部约束。
    stateful scheduling 额外核验 candidate representation、feasibility mode、legal-action gate、transition invariant、terminal completeness 和 incumbent selection。`SEQUENCE_ONLY` 无 decoder、post-hoc-only 正式候选、surrogate 冒充真实 objective 或 infeasible candidate 击败 feasible incumbent 时，验证状态 `INVALIDATED`。
@@ -38,7 +39,7 @@
 7. 灵敏度：用 `scripts/sensitivity.py` 对关键参数做 `θ × (1 ± δ)` 或有依据的非对称扰动；baseline 为 0 时只解释绝对变化，除非显式提供有领域含义的 normalization scale。
 8. 鲁棒性：用 `scripts/robustness.py` 运行用户定义的命名情景，比较参数、噪声、样本、种子、极端情景或初值变化是否改变结论；该脚本是 scenario runner，不自动生成这些扰动。
 9. 把实际验证完整写入 `executed_protocol`，由 [`../scripts/runtime_provenance.py`](../scripts/runtime_provenance.py) 自动计算 `protocol_changed`。变化时填写 reason、可比性和用户披露；校验通过后才能把记录标为 `OBSERVED`。
-10. 所有 validation evidence 绑定当前 `run_id` 和 `experiment_id`，并明确适用边界、断裂证据链和待补数据。
+10. 所有 validation evidence 绑定当前 `run_id` 和 `experiment_id`，并明确适用边界、断裂证据链和待补数据。机制验证还要分别记录 `MODEL_CLOSURE`、`NUMERICAL_CONVERGENCE` 和 `MODEL_VALIDITY`；其中一个通过不能替代另外两个。
 
 评估信息增益时按需读取 [`feature-set-design.md`](../references/feature-set-design.md)，核对 same-sample、baseline retention、固定 folds/model/policies 和 fold-safe selection。按指标方向报告 paired mean/median delta、标准差与 sign consistency；小而不稳定的差异记 NO_CLEAR_INCREMENTAL_VALUE。维度和缺失成本上升但无明确收益时允许选择简单集合。
 

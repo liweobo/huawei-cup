@@ -16,6 +16,7 @@
 - [`../references/imbalanced-classification.md`](../references/imbalanced-classification.md)
 - [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（审查等级目标或 ordinal 结果时）
 - [`../references/group-validation.md`](../references/group-validation.md)（审查重复实体或纵向验证时）
+- [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（审查机制、物理或动态模拟时）
 
 ## Inputs
 
@@ -30,7 +31,7 @@
 1. P0：未回答题目、数学逻辑错误、错误数据/泄漏、代码论文冲突、单位错误、不可行模型。
 2. P1：无 Baseline、验证不足、选择理由弱、假设不合理、结论缺数字、创新不成立。
 3. P2：图表解释、符号一致、章节逻辑、公式说明。
-4. P3：语言、排版、图表美化和术语统一。
+4. P3：语言、排版、图表美化和术语统一。机制模型逐项检查 Closure Contract 和 allowed claim level；按需报告 `MECHANISM_CLOSURE_UNVERIFIED`、`SILENT_CLOSURE_ASSUMPTION`、`UNSUPPORTED_UNIQUE_NUMERICAL_CLAIM`、`TERMINATION_RULE_UNVERIFIED`、`MODEL_FORM_UNCERTAINTY_IGNORED`。
    Stateful scheduling 另查三类错误：动态状态决定可行性却先优化理想排列再映射，报告 `STATE_FEASIBILITY_DECOUPLED`；硬约束非法动作只加大 penalty，报告 `HARD_CONSTRAINT_AS_PENALTY`；用抽象排列 surrogate 证明最佳调度，报告 `SURROGATE_OBJECTIVE_AS_FINAL`。合法 `SEQUENCE_WITH_FEASIBLE_DECODER` 不应被仅因使用排列而否定。
    Structured improvement 另查：有可行解却只重复随机生成完整解，报告 `UNSTRUCTURED_OPTIMIZATION_SEARCH`；非法 neighbor 仅靠 penalty 留下，报告 `INFEASIBLE_NEIGHBOR_AS_VALID`；surrogate 更新 incumbent，报告 `SURROGATE_IMPROVEMENT_CLAIM`；声称提高却没有 baseline/incumbent 对比，报告 `IMPROVEMENT_EVIDENCE_MISSING`；没有 stopping rule 或 budget，报告 `SEARCH_BUDGET_UNSPECIFIED`。
 5. 对时间数据、分类不平衡指标和创新声明逐条激活 Gotchas；对纵向预测沿 `target_time -> feature availability -> aggregation window` 复核 Temporal Availability Contract。任何 `feature time > allowed cutoff` 或先聚合后过滤都报告 `P0 FUTURE_INFORMATION_LEAKAGE`，给出证据位置、影响、最小修复和复核标准。
