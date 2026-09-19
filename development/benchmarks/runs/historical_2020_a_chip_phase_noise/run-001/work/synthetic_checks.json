@@ -1,0 +1,15 @@
+{
+  "single_tone_peak_hz": 12011718750.0,
+  "single_tone_error_hz": 11718750.0,
+  "two_tone_peak_candidates_hz": [
+    6958007812.5,
+    6994628906.25,
+    7031250000.0,
+    29003906250.0
+  ],
+  "parseval_relative_error": 0.0,
+  "phase_unwrap_rmse_rad": 1.2902618548921095e-16,
+  "dispersion_reconstruction_max_abs": 2.4349091853294375e-15,
+  "frequency_bin_spacing_hz": 36621093.75,
+  "status": "PASS"
+}

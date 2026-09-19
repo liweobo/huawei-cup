@@ -1,0 +1,82 @@
+schema_version: 1
+experiment_id: EXP-2020A-CR-001
+run_id: historical_2020_a_chip_phase_noise/run-001
+created_at: 2026-09-19T00:00:00Z
+problem: historical_2020_a_chip_phase_noise
+question: Q1-Q4
+status: OBSERVED
+updated_by_workflow: validate_model
+planned_protocol:
+  validation:
+    - awgn_reference_rsnr
+    - pilot_period_gate_at_0.3_db
+    - linewidth_dispersion_grid
+    - fixed_point_resource_search
+    - channel_order_sensitivity
+  ber_threshold: 0.01
+  sensitivity_thresholds: [0.001]
+  frame_symbols: 32768
+  sampling_rate_hz: 150000000000.0
+  fft_length: 32768
+  window: none
+  zero_padding: false
+  channel_order: dispersion_then_phase
+  parallelism: 128
+executed_protocol:
+  validation:
+    - awgn_reference_rsnr
+    - pilot_period_gate_at_0.3_db
+    - linewidth_dispersion_grid
+    - fixed_point_resource_search
+    - channel_order_sensitivity
+  ber_threshold: 0.01
+  sensitivity_thresholds: [0.001]
+  frame_symbols: 32768
+  sampling_rate_hz: 150000000000.0
+  fft_length: 32768
+  window: none
+  zero_padding: false
+  channel_order: dispersion_then_phase
+  parallelism: 128
+protocol_changed: false
+change_reason: ""
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+  - source-2020a-docx
+  - source-provenance-json
+code_artifacts:
+  - extract-docx-py
+  - run-blind-simulation-py
+  - recompute-q2-py
+  - order-sensitivity-py
+output_artifacts:
+  - results-summary-json
+  - q1-summary-csv
+  - q2-overhead-grid-csv
+  - q3-candidates-csv
+  - q4-tradeoff-csv
+  - synthetic-checks-json
+  - channel-order-sensitivity-csv
+random_seed: 202009
+metrics:
+  main_ber_threshold: 0.01
+  sensitivity_ber_threshold: 0.001
+  baseline_rsnr_db: 13.819609666638913
+  q1_status: NO_CANDIDATE_PASSES_GATE
+  q1_best_effort_method: linear_smooth3
+  q1_best_effort_period: 107
+  q1_best_effort_ber_at_gate: 0.012954006346076831
+  q1_best_effort_rsnr_cost_db: 0.9825907632530573
+  q2_passing_grid_points: 0
+  q3_robust_feasible_candidates: 0
+  q4_representative_best_effort_resource_u: 266395.0
+evidence_ids:
+  - source-2020a-docx
+  - extracted-docx-structure
+  - synthetic-checks
+  - q1-results
+  - q2-results
+  - q3-results
+  - q4-results
+  - channel-order-sensitivity

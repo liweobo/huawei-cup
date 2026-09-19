@@ -1,0 +1,4 @@
+best_effort_ber,best_effort_period,gate_ber,gate_pass,gate_snr_db,method,period,pilot_overhead
+0.016319523918516824,3,,False,14.119609666638913,linear,,
+0.012954006346076831,107,,False,14.119609666638913,linear_smooth3,,
+0.013747029962662388,91,,False,14.119609666638913,linear_dd,,

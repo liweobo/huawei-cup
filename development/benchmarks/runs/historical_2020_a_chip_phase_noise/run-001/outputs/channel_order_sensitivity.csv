@@ -1,0 +1,11 @@
+channel_order,period,threshold_snr_db_grid,target_ber
+dispersion_then_phase,2,15.0,0.01
+dispersion_then_phase,8,15.0,0.01
+dispersion_then_phase,16,15.0,0.01
+dispersion_then_phase,32,15.0,0.01
+dispersion_then_phase,64,15.0,0.01
+phase_then_dispersion,2,14.5,0.01
+phase_then_dispersion,8,14.5,0.01
+phase_then_dispersion,16,14.5,0.01
+phase_then_dispersion,32,14.5,0.01
+phase_then_dispersion,64,14.5,0.01

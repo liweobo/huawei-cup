@@ -1,0 +1,10 @@
+{
+  "git_head": "96ac0c29cdb5e9de106d803e4c34705e7b0c507f",
+  "branch": "main",
+  "skill_tree_sha256": "0403f67a027da7c342eb6697ce740b08456c7efda7d5f53152548dc9dd1f4a19",
+  "skill_modified_before_run": false,
+  "historical_assets_protected": ["2011B", "2022C", "2023E", "2024C"],
+  "excellent_solutions_accessed": false,
+  "worktree_note": "Pre-existing untracked 2022C outputs were preserved and not used.",
+  "source_provenance": "source/source-provenance.json"
+}
