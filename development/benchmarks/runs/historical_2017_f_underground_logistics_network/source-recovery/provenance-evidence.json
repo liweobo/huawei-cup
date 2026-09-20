@@ -1,0 +1,58 @@
+{
+  "pages": [
+    {
+      "id": "O01",
+      "source_url": "https://cpipc.acge.org.cn/cw/hp/4",
+      "accessed_at": "2026-09-20T12:15:21.462845+00:00",
+      "title": "中国研究生创新实践系列大赛管理平台",
+      "status": "SUCCESS",
+      "page_bytes_sha256": "3643c70e9cad831e4148be78f6cdfd85acd81aa66c2fd242beab0adb56b380a6",
+      "page_bytes": 109294
+    },
+    {
+      "id": "U01",
+      "source_url": "https://lxy.usst.edu.cn/xsycxjs1/list36.psp",
+      "accessed_at": "2026-09-20T12:14:39.150677+00:00",
+      "title": "学术与创新竞赛1",
+      "status": "SUCCESS",
+      "page_bytes_sha256": "71e2fd193ad9c020a4c0047e095917990e6891a18ae522c3371234308a821cba",
+      "page_bytes": 35112,
+      "original_problem_page_link": {
+        "title": "2017年赛题",
+        "url": "https://lxy.usst.edu.cn/2017/0916/c6729a38056/page.htm"
+      }
+    },
+    {
+      "id": "U02",
+      "source_url": "https://lxy.usst.edu.cn/2017/0916/c6729a38056/page.htm",
+      "accessed_at": "2026-09-20T12:15:21.656628+00:00",
+      "title": "2017年赛题",
+      "status": "SUCCESS",
+      "page_bytes_sha256": "4d6591c9557dc12875114e27c125225ac6acd34a9582a34a89143fc82503833d",
+      "page_bytes": 18184,
+      "publisher_displayed": "姜珍珍",
+      "publication_date_displayed": "2017-09-16",
+      "download_link_texts": [
+        "A.zip",
+        "B.rar",
+        "C.rar",
+        "D.rar",
+        "E.rar",
+        "F.rar"
+      ],
+      "f_link": {
+        "title": "F.rar",
+        "url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar"
+      }
+    }
+  ],
+  "download_http": {
+    "status": 200,
+    "content_type": "application/x-rar-compressed",
+    "content_length": 2897538,
+    "last_modified": "Thu, 26 Jul 2018 11:23:26 GMT",
+    "etag": "\"2c3682-571e5394953df\"",
+    "headers_sha256": "dfbeee67da09ee559707cb582d6f946bad6c4fea070557b93db9b491f42484b2"
+  },
+  "metadata_limit": "Displayed publication date, archive member dates and HTTP Last-Modified are distinct observations, not proof of immutable 2017 bytes"
+}

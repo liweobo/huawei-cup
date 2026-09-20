@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-20T12:27:56.363654+00:00",
+  "starting_head": "5a80876ca8289debfe810ad96e1217b3b4f42341",
+  "head_at_check": "5a80876ca8289debfe810ad96e1217b3b4f42341",
+  "protected_file_count": 893,
+  "protected_sha256_recheck": "PASS",
+  "modified_or_missing": [],
+  "new_out_of_scope_files": [],
+  "skill_tree_before": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+  "skill_tree_after": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+  "run001_tree_before": "fc2d5b6f7ba6da3dfe2826e72a60aadd89a12d73",
+  "run001_tree_after": "fc2d5b6f7ba6da3dfe2826e72a60aadd89a12d73",
+  "tracked_diff_outside_source_recovery": [],
+  "run002_exists": false,
+  "scope": "All tracked and nonignored existing untracked files outside new source-recovery directory",
+  "limitation": "Ignored pre-existing caches were not enumerated; no operations targeted them"
+}

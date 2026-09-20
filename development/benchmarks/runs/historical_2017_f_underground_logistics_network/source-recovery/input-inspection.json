@@ -1,0 +1,299 @@
+{
+  "scope": "Source completeness and parser verification only; no graph, routes, node choices or objective computed",
+  "independent_parsers": {
+    "xlrd": "2.0.2",
+    "python-calamine": "0.6.1",
+    "comparisons": [
+      {
+        "sheet": "现状全天OD",
+        "xlrd_dimensions": [
+          115,
+          115
+        ],
+        "calamine_dimensions": [
+          115,
+          115
+        ],
+        "cells_compared": 13225,
+        "mismatches": []
+      },
+      {
+        "sheet": "各区域中心点及面积",
+        "xlrd_dimensions": [
+          115,
+          8
+        ],
+        "calamine_dimensions": [
+          115,
+          6
+        ],
+        "cells_compared": 920,
+        "mismatches": []
+      }
+    ],
+    "status": "PASS"
+  },
+  "identifier_check": {
+    "row_column_coordinate_order_matches": true,
+    "duplicates": 0,
+    "all_ids": [
+      1,
+      2,
+      3,
+      4,
+      791,
+      792,
+      793,
+      794,
+      795,
+      796,
+      797,
+      798,
+      799,
+      800,
+      801,
+      802,
+      803,
+      804,
+      805,
+      806,
+      807,
+      808,
+      809,
+      810,
+      811,
+      812,
+      813,
+      814,
+      815,
+      816,
+      817,
+      818,
+      819,
+      820,
+      821,
+      822,
+      823,
+      824,
+      825,
+      826,
+      827,
+      828,
+      829,
+      830,
+      831,
+      832,
+      833,
+      834,
+      835,
+      836,
+      837,
+      838,
+      839,
+      840,
+      841,
+      842,
+      843,
+      844,
+      845,
+      846,
+      847,
+      848,
+      849,
+      850,
+      851,
+      852,
+      853,
+      854,
+      855,
+      856,
+      857,
+      858,
+      859,
+      860,
+      861,
+      862,
+      863,
+      864,
+      865,
+      866,
+      867,
+      868,
+      869,
+      870,
+      871,
+      872,
+      873,
+      874,
+      875,
+      876,
+      877,
+      878,
+      879,
+      880,
+      881,
+      882,
+      883,
+      884,
+      885,
+      886,
+      887,
+      888,
+      889,
+      890,
+      891,
+      892,
+      893,
+      894,
+      895,
+      896,
+      897,
+      898,
+      899,
+      900
+    ],
+    "region_ids": [
+      791,
+      900
+    ],
+    "region_count": 110,
+    "park_ids": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "od": {
+    "data_range": "B2:DK115",
+    "matrix_shape": [
+      114,
+      114
+    ],
+    "numeric_finite_nonnegative_cells": 12996,
+    "missing_cells": 0,
+    "zero_cells": 1040,
+    "positive_cells": 11956,
+    "asymmetric_unordered_pairs": 5607,
+    "diagonal_nonzero_count": 2,
+    "unit": "tonnes",
+    "unit_source": "byte-identical original .doc final attachment paragraph",
+    "time_basis": "full day",
+    "time_basis_source": "sheet title: 现状全天OD",
+    "orientation": "column-origin -> row-destination",
+    "orientation_source": "original .doc: 横轴对纵轴的发货量",
+    "orientation_witness": {
+      "F2": {
+        "origin": 791,
+        "destination": 1,
+        "value": 487.798
+      },
+      "B6": {
+        "origin": 1,
+        "destination": 791,
+        "value": 504.0
+      }
+    },
+    "nonzero_diagonal_entries": [
+      {
+        "id": 895,
+        "value": 2.92
+      },
+      {
+        "id": 896,
+        "value": 0.52
+      }
+    ],
+    "diagonal_policy": "Preserve original values; future run must explain intra-region treatment, not silently zero them"
+  },
+  "attributes": {
+    "header_range": "A1:F1",
+    "headers": [
+      "区域编号",
+      "区域面积（平方公里）",
+      "区域面积（平方米）",
+      "中心点X（米）",
+      "中心点Y（米）",
+      "交通拥堵指数"
+    ],
+    "label_range": "A2:A115",
+    "coordinate_range": "D2:E115",
+    "coordinate_pairs": 114,
+    "coordinate_unit": "metre",
+    "coordinate_origin": "NOT_STATED",
+    "crs": "NOT_STATED",
+    "projection": "NOT_STATED",
+    "region_area_ranges": [
+      "B6:B115",
+      "C6:C115"
+    ],
+    "area_count": 110,
+    "area_units": [
+      "km^2",
+      "m^2"
+    ],
+    "area_conversion_max_absolute_error_m2": 0.0,
+    "congestion_range": "F6:F115",
+    "congestion_count": 110,
+    "congestion_min": 1.33,
+    "congestion_max": 11.54,
+    "park_area_and_congestion": "12 original blanks in B2:C5 and F2:F5; not filled or treated as zero",
+    "formatted_empty_columns": "G:H contain no values"
+  },
+  "park_correspondence": [
+    {
+      "id": 1,
+      "coordinate_cells": "D2:E2",
+      "x_m": 139382.3437,
+      "y_m": 146047.0951,
+      "od_row": 2,
+      "od_column": "B",
+      "map_label": "1"
+    },
+    {
+      "id": 2,
+      "coordinate_cells": "D3:E3",
+      "x_m": 157688.4185,
+      "y_m": 148489.031,
+      "od_row": 3,
+      "od_column": "C",
+      "map_label": "2"
+    },
+    {
+      "id": 3,
+      "coordinate_cells": "D4:E4",
+      "x_m": 149441.1622,
+      "y_m": 167278.6394,
+      "od_row": 4,
+      "od_column": "D",
+      "map_label": "3"
+    },
+    {
+      "id": 4,
+      "coordinate_cells": "D5:E5",
+      "x_m": 131764.713,
+      "y_m": 162103.0925,
+      "od_row": 5,
+      "od_column": "E",
+      "map_label": "4"
+    }
+  ],
+  "biff_record_counts": {
+    "FORMULA_0x0006": 0,
+    "EXTERNNAME_0x0023": 0,
+    "SUPBOOK_0x01ae": 1,
+    "SUPBOOK_payload_hex": "02000104"
+  },
+  "map": {
+    "filename": "地图.jpg",
+    "width": 2780,
+    "height": 1579,
+    "metric_pixel_calibration_performed": false,
+    "visual_inspection": "Full original image plus three native-resolution crops inspected; labels 791-900 and four blue labels 1-4 readable",
+    "observed_legend": "No printed semantic legend, north arrow, scale bar or CRS identified",
+    "park_semantics": "SOURCE_CROSS_REFERENCE_INFERENCE: four separate blue labels 1-4, four park statement in .doc, matching coordinate/OD keys, area and index only for 791-900",
+    "park_semantics_confidence": "HIGH; not a verbatim printed blue-marker legend",
+    "boundary_geometry": "Raster region boundaries present; no vector polygons recovered or fabricated",
+    "metric_distance_source": "Numeric metre coordinates in XLS only; image pixels and JPEG DPI are not engineering distances"
+  }
+}

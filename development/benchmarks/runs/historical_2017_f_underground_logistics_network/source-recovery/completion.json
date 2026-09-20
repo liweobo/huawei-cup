@@ -1,0 +1,20 @@
+{
+  "marker": "2017F_SOURCE_RECOVERY_COMPLETE",
+  "original_doc_verified": "YES",
+  "essential_attachment_set": "COMPLETE",
+  "official_source_found": "NO",
+  "official_source_found_definition": "No organizer-hosted original attachment package recovered; current organizer platform was checked",
+  "trusted_mirror_found": "YES",
+  "solution_sources_used": "NO",
+  "excellent_solutions_accessed": "NO",
+  "run_001_modified": "NO",
+  "skill_modified": "NO",
+  "run_002_started": false,
+  "final_decision": "ORIGINAL_SOURCE_RECOVERED",
+  "recommended_next_action": "run a new source-complete blind run without excellent papers",
+  "execution_gate": "WAIT_FOR_HUMAN_REVIEW; run-002-source-complete not created",
+  "frozen_blind_run_status": "BLIND_RUN_PARTIAL",
+  "generalizable_gap_candidate": "NONE",
+  "skill_conclusion": "NETWORK_CAPABILITY_NOT_FULLY_TESTED_DUE_TO_SOURCE_INCOMPLETENESS",
+  "skill_conclusion_scope": "Retains run-001 capability conclusion. Recovery resolves source availability, but is not a new capability test."
+}

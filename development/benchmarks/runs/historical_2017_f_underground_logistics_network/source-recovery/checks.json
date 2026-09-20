@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-09-20T12:27:56.654222+00:00",
+  "historical_artifact_test": {
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "development/harness/historical_artifact_test.py"
+    ],
+    "exit_code": 0,
+    "checks_passed": 27,
+    "checks_total": 27,
+    "stdout": "PASS | USER_PROVIDED source registers\nPASS | historical trajectory has accepted source\nPASS | all registered raw artifacts exist\nPASS | manifest SHA256 values are valid\nPASS | extracted artifacts exist\nPASS | extracted manifest references source/raw artifacts\nPASS | ground-truth.yaml is valid YAML\nPASS | ground-truth.yaml references source artifact\nPASS | problem-facts.yaml is valid YAML\nPASS | problem-facts.yaml references source artifact\nPASS | expected.yaml is valid YAML\nPASS | expected.yaml references source artifact\nPASS | evidence-ledger.yaml is valid YAML\nPASS | evidence-ledger.yaml references source artifact\nPASS | blind user script contains no evaluator-only fields\nPASS | missing/hash-mismatch artifact fails\nPASS | missing raw artifact fails\nPASS | valid blind transcript structure\nPASS | duplicate turn ID fails\nPASS | missing evidence reference fails\nPASS | duplicate evidence ID fails\nPASS | experiment claim without CODE_RUN fails\nPASS | unresolved P0 plus READY fails\nPASS | evaluator-only field in blind turn fails\nPASS | artifact hash mismatch in evidence fails\nPASS | model-behavior P0 overrides high rubric scores\nPASS | project blocker does not become model-behavior P0\n\nHistorical Artifact Test: PASS (27/27 checks)\n",
+    "stderr": "",
+    "temporary_write_scope": "source-recovery/work"
+  },
+  "protected_file_count": 893,
+  "historical_hash_integrity": "PASS",
+  "skill_diff": "EMPTY",
+  "run001_diff": "EMPTY",
+  "source_hashes": [
+    {
+      "id": "C01",
+      "sha256": "8f8dc68c9049b4c565009dd3af3f959b7ae00f9579c0936baa344794b259f022",
+      "status": "PASS"
+    },
+    {
+      "id": "C01-ZIP",
+      "sha256": "34beef8fad48cc340c437d6c110e4f5326946d130282a22953ddad0666ad352d",
+      "status": "PASS"
+    },
+    {
+      "id": "C01-DOC",
+      "sha256": "7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719",
+      "status": "PASS"
+    },
+    {
+      "id": "C01-XLS",
+      "sha256": "15f306257b78632d74576bcc3ccda03e69c8affc098a92dba183ae8f94a207ab",
+      "status": "PASS"
+    },
+    {
+      "id": "C01-MAP",
+      "sha256": "30ee09fb69ae9e79506280a8e32e108bda35b6ddc53f1892e52dc28c6cf23d96",
+      "status": "PASS"
+    }
+  ],
+  "manifest_structure": "PASS",
+  "json_parse": "PASS",
+  "independent_xls_readers": "PASS_ZERO_CELL_MISMATCHES",
+  "model_regressions": "NOT_RUN_SOURCE_RECOVERY_ONLY",
+  "default_pytest": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING_NOT_RETESTED",
+  "git_delivery_checks": "Run staged and committed modes after prepare; results reported in final delivery, not inferred by this precommit file"
+}

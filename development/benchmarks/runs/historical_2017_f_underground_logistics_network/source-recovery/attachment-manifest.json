@@ -1,0 +1,305 @@
+{
+  "benchmark_id": "historical_2017_f_underground_logistics_network",
+  "stage": "source-recovery",
+  "frozen_at": "2026-09-20T12:24:23.279953+00:00",
+  "starting_head": "5a80876ca8289debfe810ad96e1217b3b4f42341",
+  "source_page": "https://lxy.usst.edu.cn/2017/0916/c6729a38056/page.htm",
+  "files": [
+    {
+      "path": "work/downloads/F.rar",
+      "filename": "F.rar",
+      "bytes": 2897538,
+      "sha256": "8f8dc68c9049b4c565009dd3af3f959b7ae00f9579c0936baa344794b259f022",
+      "magic_hex": "526172211a0700cf907300000d000000",
+      "id": "C01",
+      "file_type": "RAR 4 archive",
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "host": "lxy.usst.edu.cn",
+      "source_type": "INSTITUTIONAL_ORIGINAL_PROBLEM_MIRROR",
+      "provenance_class": "MIRRORED_ORIGINAL_CANDIDATE",
+      "download_date": "2026-09-20T12:16:11.131219+00:00",
+      "download_date_basis": "Outer F.rar download; members extracted locally without re-saving their content",
+      "claimed_origin": "USST College of Science page titled 2017年赛题, published 2017-09-16; no organizer signature claimed",
+      "why_considered_original": "Linked among A-F original problem packages on university domain; nested doc matches known Git blob exactly; map and workbook cover original attachment description",
+      "confidence": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL",
+      "parent_id": null,
+      "archive_member": null,
+      "committed": false,
+      "retention": "Local original bytes under ignored work/; metadata-only Git delivery"
+    },
+    {
+      "path": "work/rar/F/2017年中国研究生数学建模竞赛F题.zip",
+      "filename": "2017年中国研究生数学建模竞赛F题.zip",
+      "bytes": 2603620,
+      "sha256": "34beef8fad48cc340c437d6c110e4f5326946d130282a22953ddad0666ad352d",
+      "magic_hex": "504b0304140000000800467b2d4b20cf",
+      "id": "C01-ZIP",
+      "file_type": "ZIP archive",
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "host": "lxy.usst.edu.cn",
+      "source_type": "INSTITUTIONAL_ORIGINAL_PROBLEM_MIRROR",
+      "provenance_class": "MIRRORED_ORIGINAL_CANDIDATE",
+      "download_date": "2026-09-20T12:16:11.131219+00:00",
+      "download_date_basis": "Outer F.rar download; members extracted locally without re-saving their content",
+      "claimed_origin": "USST College of Science page titled 2017年赛题, published 2017-09-16; no organizer signature claimed",
+      "why_considered_original": "Linked among A-F original problem packages on university domain; nested doc matches known Git blob exactly; map and workbook cover original attachment description",
+      "confidence": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL",
+      "parent_id": "C01",
+      "archive_member": "F/2017年中国研究生数学建模竞赛F题.zip",
+      "committed": false,
+      "retention": "Local original bytes under ignored work/; metadata-only Git delivery"
+    },
+    {
+      "path": "work/zip/2017年中国研究生数学建模竞赛F题.doc",
+      "filename": "2017年中国研究生数学建模竞赛F题.doc",
+      "bytes": 2579456,
+      "sha256": "7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719",
+      "magic_hex": "d0cf11e0a1b11ae10000000000000000",
+      "id": "C01-DOC",
+      "file_type": "OLE Compound File / Word .doc",
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "host": "lxy.usst.edu.cn",
+      "source_type": "INSTITUTIONAL_ORIGINAL_PROBLEM_MIRROR",
+      "provenance_class": "MIRRORED_ORIGINAL_CANDIDATE",
+      "download_date": "2026-09-20T12:16:11.131219+00:00",
+      "download_date_basis": "Outer F.rar download; members extracted locally without re-saving their content",
+      "claimed_origin": "USST College of Science page titled 2017年赛题, published 2017-09-16; no organizer signature claimed",
+      "why_considered_original": "Linked among A-F original problem packages on university domain; nested doc matches known Git blob exactly; map and workbook cover original attachment description",
+      "confidence": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL",
+      "parent_id": "C01-ZIP",
+      "archive_member": "2017年中国研究生数学建模竞赛F题.doc",
+      "committed": false,
+      "retention": "Local original bytes under ignored work/; metadata-only Git delivery",
+      "archive_metadata": {
+        "filename": "2017年中国研究生数学建模竞赛F题.doc",
+        "bytes": 2579456,
+        "compressed_bytes": 2522569,
+        "crc32": "bcf3cf20",
+        "timestamp_no_timezone": [
+          2017,
+          9,
+          13,
+          15,
+          26,
+          12
+        ],
+        "flags": 0
+      },
+      "git_blob_sha": "c2dd56c208cf3c7f80f2e52ff1f58ee0a758166f",
+      "equivalence_to_frozen_run001": "IDENTICAL_COPY"
+    },
+    {
+      "path": "work/zip/现状OD数据及其他数据.xls",
+      "filename": "现状OD数据及其他数据.xls",
+      "bytes": 259072,
+      "sha256": "15f306257b78632d74576bcc3ccda03e69c8affc098a92dba183ae8f94a207ab",
+      "magic_hex": "d0cf11e0a1b11ae10000000000000000",
+      "id": "C01-XLS",
+      "file_type": "OLE Compound File / Excel BIFF8 .xls",
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "host": "lxy.usst.edu.cn",
+      "source_type": "INSTITUTIONAL_ORIGINAL_PROBLEM_MIRROR",
+      "provenance_class": "MIRRORED_ORIGINAL_CANDIDATE",
+      "download_date": "2026-09-20T12:16:11.131219+00:00",
+      "download_date_basis": "Outer F.rar download; members extracted locally without re-saving their content",
+      "claimed_origin": "USST College of Science page titled 2017年赛题, published 2017-09-16; no organizer signature claimed",
+      "why_considered_original": "Linked among A-F original problem packages on university domain; nested doc matches known Git blob exactly; map and workbook cover original attachment description",
+      "confidence": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL",
+      "parent_id": "C01-ZIP",
+      "archive_member": "现状OD数据及其他数据.xls",
+      "committed": false,
+      "retention": "Local original bytes under ignored work/; metadata-only Git delivery",
+      "archive_metadata": {
+        "filename": "现状OD数据及其他数据.xls",
+        "bytes": 259072,
+        "compressed_bytes": 80489,
+        "crc32": "9e4a5993",
+        "timestamp_no_timezone": [
+          2017,
+          9,
+          13,
+          14,
+          47,
+          52
+        ],
+        "flags": 0
+      },
+      "internal_metadata": {
+        "codepage": "936",
+        "author": "b'dell'",
+        "last_saved_by": "b'AutoBVT'",
+        "create_time": "2017-07-05 02:56:18",
+        "last_saved_time": "2017-09-13 03:32:39",
+        "creating_application": "b'Microsoft Excel'",
+        "security": "0",
+        "codepage_doc": "936",
+        "scale_crop": "False",
+        "heading_pairs": "[b'\\xb9\\xa4\\xd7\\xf7\\xb1\\xed', 2]",
+        "titles_of_parts": "[b'\\xcf\\xd6\\xd7\\xb4\\xc8\\xab\\xcc\\xecOD', b'\\xb8\\xf7\\xc7\\xf8\\xd3\\xf2\\xd6\\xd0\\xd0\\xc4\\xb5\\xe3\\xbc\\xb0\\xc3\\xe6\\xbb\\xfd']",
+        "links_dirty": "False",
+        "shared_doc": "False",
+        "hlinks_changed": "False",
+        "version": "1048576"
+      },
+      "ole_streams": [
+        [
+          "\u0005DocumentSummaryInformation"
+        ],
+        [
+          "\u0005SummaryInformation"
+        ],
+        [
+          "Workbook"
+        ]
+      ],
+      "worksheets": [
+        {
+          "name": "现状全天OD",
+          "rows": 115,
+          "cols": 115,
+          "visibility": 0
+        },
+        {
+          "name": "各区域中心点及面积",
+          "rows": 115,
+          "cols": 8,
+          "visibility": 0
+        }
+      ]
+    },
+    {
+      "path": "work/rar/F/地图.jpg",
+      "filename": "地图.jpg",
+      "bytes": 404751,
+      "sha256": "30ee09fb69ae9e79506280a8e32e108bda35b6ddc53f1892e52dc28c6cf23d96",
+      "magic_hex": "ffd8ffe000104a464946000101010090",
+      "id": "C01-MAP",
+      "file_type": "JPEG image",
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "host": "lxy.usst.edu.cn",
+      "source_type": "INSTITUTIONAL_ORIGINAL_PROBLEM_MIRROR",
+      "provenance_class": "MIRRORED_ORIGINAL_CANDIDATE",
+      "download_date": "2026-09-20T12:16:11.131219+00:00",
+      "download_date_basis": "Outer F.rar download; members extracted locally without re-saving their content",
+      "claimed_origin": "USST College of Science page titled 2017年赛题, published 2017-09-16; no organizer signature claimed",
+      "why_considered_original": "Linked among A-F original problem packages on university domain; nested doc matches known Git blob exactly; map and workbook cover original attachment description",
+      "confidence": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL",
+      "parent_id": "C01",
+      "archive_member": "F/地图.jpg",
+      "committed": false,
+      "retention": "Local original bytes under ignored work/; metadata-only Git delivery",
+      "image_metadata": {
+        "size": [
+          2780,
+          1579
+        ],
+        "format": "JPEG",
+        "mode": "RGB",
+        "jpeg_dpi": [
+          144,
+          144
+        ]
+      }
+    }
+  ],
+  "completeness": [
+    {
+      "input": "freight_region_map",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-MAP"
+      ],
+      "evidence": "Original raster boundaries and numbered points; not vector GIS"
+    },
+    {
+      "input": "region_identifiers",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS",
+        "C01-MAP"
+      ],
+      "evidence": "110 region IDs 791-900, exact match across OD axes and attribute rows"
+    },
+    {
+      "input": "directed_od_matrix",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS",
+        "C01-DOC"
+      ],
+      "evidence": "114x114 full-day tonnes; column-origin to row-destination"
+    },
+    {
+      "input": "region_centre_coordinates",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS"
+      ],
+      "evidence": "110 region and four park X/Y pairs in metres"
+    },
+    {
+      "input": "region_areas",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS"
+      ],
+      "evidence": "110 numeric values in both km^2 and m^2"
+    },
+    {
+      "input": "congestion_coefficients",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS",
+        "C01-DOC"
+      ],
+      "evidence": "110 supplied traffic congestion indices; no additional proportionality coefficient inferred"
+    },
+    {
+      "input": "four_park_locations_identifiers",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS",
+        "C01-MAP",
+        "C01-DOC"
+      ],
+      "evidence": "IDs 1-4 cross-referenced from four-park statement, blue markers and matching numeric table"
+    },
+    {
+      "input": "park_to_od_correspondence",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-XLS",
+        "C01-MAP"
+      ],
+      "evidence": "1-4 map to OD rows 2-5, columns B-E, coordinate rows 2-5"
+    },
+    {
+      "input": "other_required_referenced_attachments",
+      "status": "PRESENT",
+      "source_ids": [
+        "C01-DOC",
+        "C01-XLS",
+        "C01-MAP"
+      ],
+      "evidence": "All attachment classes named in final original paragraph are present; optional additional data are not a missing named file"
+    }
+  ],
+  "essential_attachment_set": "COMPLETE",
+  "final_decision": "ORIGINAL_SOURCE_RECOVERED",
+  "acceptance": "Trusted institutional mirror accepted for a future blind run, not OFFICIAL_DIRECT and not a Skill readiness result",
+  "copy_comparison": {
+    "original_doc": "IDENTICAL_COPY",
+    "new_xls_and_map": "Single institutional candidate; independent copy equivalence not asserted",
+    "conflicting_copies_observed": false
+  },
+  "zip_crc_check": "PASS",
+  "preservation": "No source workbook, image or document re-saved; hashes freeze exact downloaded/member bytes",
+  "retention_policy": "Metadata/report-only commit as requested; source URL, member paths, sizes and SHA256 permit exact-byte retrieval. Local originals retained in ignored work/. No browser/extraction cache or binary payload staged.",
+  "unresolved_not_missing_attachments": [
+    "CRS, origin and projection unspecified",
+    "Raster has no printed scale/legend; no pixel-derived coordinates",
+    "Park areas and congestion not supplied; not required as region attributes under the four separate-park interpretation",
+    "Two nonzero OD diagonal entries preserved",
+    "Future modelling must distinguish original congestion indices from any derived coefficients"
+  ]
+}
