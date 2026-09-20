@@ -71,3 +71,26 @@ def test_skill_self_contained(tmp_path: Path) -> None:
         text=True,
     )
     assert import_result.returncode == 0, import_result.stderr
+
+    # The ordered-protocol fix must survive isolation: sequences stay order
+    # sensitive and mapping keys stay canonical, without the development tree.
+    behavior_result = subprocess.run(
+        [
+            sys.executable,
+            "-B",
+            "-c",
+            (
+                "from scripts.runtime_provenance import protocols_differ; "
+                "assert protocols_differ(['a','b','c'], ['b','a','c']) is True; "
+                "assert protocols_differ({'x':1,'y':2}, {'y':2,'x':1}) is False; "
+                "assert protocols_differ(('p','q'), ('q','p')) is True; "
+                "assert protocols_differ(['a','b'], ['a','b']) is False; "
+                "print('ok')"
+            ),
+        ],
+        cwd=isolated,
+        env={**__import__("os").environ, "PYTHONPATH": str(isolated), "PYTHONDONTWRITEBYTECODE": "1"},
+        capture_output=True,
+        text=True,
+    )
+    assert behavior_result.returncode == 0, behavior_result.stderr

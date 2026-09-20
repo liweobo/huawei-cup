@@ -86,9 +86,14 @@ def main() -> int:
     check("A validate_model accepts a complete observed record", not observed_result_errors("validate_model", valid_record), failures)
 
     check("B normalized protocol diff detects expanded validation", protocols_differ(valid_record["planned_protocol"], valid_record["executed_protocol"]), failures)
+    key_reordered = copy.deepcopy(valid_record["planned_protocol"])
+    key_reordered["validation"] = [
+        {key: stage[key] for key in reversed(list(stage))} for stage in key_reordered["validation"]
+    ]
+    check("B protocol identity ignores mapping key ordering", not protocols_differ(valid_record["planned_protocol"], key_reordered), failures)
     reordered = copy.deepcopy(valid_record["planned_protocol"])
     reordered["validation"].reverse()
-    check("B protocol identity ignores list ordering", not protocols_differ(valid_record["planned_protocol"], reordered), failures)
+    check("B protocol identity detects sequence reordering", protocols_differ(valid_record["planned_protocol"], reordered), failures)
 
     no_reason = copy.deepcopy(valid_record)
     no_reason["change_reason"] = ""

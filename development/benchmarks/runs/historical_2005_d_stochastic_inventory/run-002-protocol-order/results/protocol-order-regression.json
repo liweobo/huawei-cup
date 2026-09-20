@@ -1,0 +1,58 @@
+{
+  "benchmark_id": "historical_2005_d_stochastic_inventory",
+  "run": "run-002-protocol-order",
+  "purpose": "ORDERED_PROTOCOL_NORMALIZATION_READY targeted regression; does not re-solve 2005D",
+  "reads": {
+    "frozen_probe": "development\\benchmarks\\runs\\historical_2005_d_stochastic_inventory\\run-001\\validation\\ordered-protocol-probe.json",
+    "frozen_record": "development\\benchmarks\\runs\\historical_2005_d_stochastic_inventory\\run-001\\experiment-record.yaml"
+  },
+  "planned_order": [
+    "integrate demand and holding on open interval",
+    "receive and top up at arrival",
+    "review/order at event time"
+  ],
+  "changed_order": [
+    "receive and top up at arrival",
+    "integrate demand and holding on open interval",
+    "review/order at event time"
+  ],
+  "old_expected_protocol_changed": true,
+  "old_observed_protocol_changed_before_fix": false,
+  "new_protocols_differ": true,
+  "detection_fixed": true,
+  "production_protocol_self_compare_changed": false,
+  "production_event_order": [
+    "integrate demand and holding on open interval",
+    "receive and top up at arrival",
+    "review/order at event time"
+  ],
+  "production_order_reversal_detected": true,
+  "frozen_record_planned_vs_executed_changed": true,
+  "frozen_record_protocol_changed_field": true,
+  "recomputed_protocol_changed": true,
+  "frozen_record_still_validates": true,
+  "frozen_record_validator_errors": [],
+  "tiny_event_counterexample_effect": {
+    "initial_inventory": 0,
+    "demand_during_previous_interval": 1,
+    "receipt_at_interval_end": 1,
+    "correct": {
+      "fulfilled": 0,
+      "lost": 1,
+      "end_inventory": 1
+    },
+    "receipt_moved_before_interval": {
+      "fulfilled": 1,
+      "lost": 0,
+      "end_inventory": 0
+    }
+  },
+  "status": "PASS",
+  "checks": {
+    "new_protocols_differ_is_true": true,
+    "production_self_compare_unchanged": true,
+    "production_order_reversal_detected": true,
+    "recomputed_matches_frozen_field": true,
+    "frozen_record_still_validates": true
+  }
+}
