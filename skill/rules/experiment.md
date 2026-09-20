@@ -8,7 +8,7 @@
 6. 失败实验也要记录原因，禁止只保留最好一次运行。
    特征组无明确增益也是有效结果；按需遵守 [`feature-set-design.md`](../references/feature-set-design.md)，在相同样本、folds、模型和政策下比较，保留合法 baseline、明确删除原因和逐 fold paired deltas。不可将样本组成或模型变化解释为信息增益。
 7. 指标必须与误差代价和题目目标一致；报告边界情况与不可定义值。
-8. `planned_protocol` 与 `executed_protocol` 使用稳定的结构化类型、参数和分组定义；`protocol_changed` 由 normalized protocol 自动比较生成，不由模型自行判断。
+8. `planned_protocol` 与 `executed_protocol` 使用稳定的结构化类型、参数和分组定义；`protocol_changed` 由 normalized protocol 自动比较生成，不由模型自行判断。protocol identity 中 mapping 只按 key canonicalize（key 顺序无语义），而 sequence（list/tuple）默认 order-sensitive：事件阶段、预处理步骤、变换、验证步骤的顺序可能改变结果，必须原样保留；若某集合确实无序，由 producer 以 deterministic order 写出，不要让 provenance 猜测字段语义。
 9. `protocol_changed: true` 时必须填写 `change_reason` 和 `comparable_to_original_plan`。状态为 `OBSERVED` 时还必须写入 `protocol_change_disclosure`，向用户说明原计划、实际执行、变化原因和新旧结果是否可直接比较。
 10. 所有代码、模型、预测、指标、验证结果和 Experiment Record 必须写入 `ACTIVE_RUN_ID` 的 `allowed_write_root`；不得把共享桌面或旧 run 输出目录当 active workspace。
 11. `SIMULATED_PERTURBATION`、重采样和诊断分析不等同于新增实测或重复实验。

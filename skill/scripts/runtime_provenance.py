@@ -5,7 +5,6 @@ from __future__ import annotations
 import argparse
 import copy
 import hashlib
-import json
 from pathlib import Path
 from typing import Any
 
@@ -49,12 +48,18 @@ def sha256(path: Path) -> str:
 
 
 def normalize_protocol(value: Any) -> Any:
-    """Return a stable protocol identity independent of map/list ordering."""
+    """Return a stable protocol identity independent of mapping-key order while preserving sequence order.
+
+    Mappings carry no key-order semantics, so their keys are canonicalized. Sequences
+    (lists and tuples) do carry order semantics: reordering stages, transforms, event
+    steps or validation steps can change the result, so element order is preserved.
+    Producers that emit a genuinely unordered collection must sort it deterministically
+    before recording, because this function must not guess collection semantics.
+    """
     if isinstance(value, dict):
         return {str(key): normalize_protocol(value[key]) for key in sorted(value, key=str)}
     if isinstance(value, list):
-        normalized = [normalize_protocol(item) for item in value]
-        return sorted(normalized, key=lambda item: json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(",", ":")))
+        return [normalize_protocol(item) for item in value]
     if isinstance(value, tuple):
         return normalize_protocol(list(value))
     return value

@@ -13,6 +13,8 @@ updated_by_workflow: design_model
 #   post_horizon_records_excluded: 0
 #   temporal_gate_status: UNVERIFIED
 # Add invalidation_reason only when status is INVALIDATED.
+# protocol identity: mapping key order is ignored; sequence (list) order is significant,
+# so record ordered stages in the order they were actually planned or executed.
 planned_protocol:
   validation: []
 executed_protocol:
