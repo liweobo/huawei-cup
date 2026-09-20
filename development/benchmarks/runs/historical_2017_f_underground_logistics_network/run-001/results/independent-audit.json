@@ -1,0 +1,275 @@
+{
+  "status": "PASS",
+  "scope": "SYNTHETIC_CODE_VALIDATION_ONLY",
+  "saved_network_results_reconstructed": 33,
+  "source_od_pairs": 6,
+  "asymmetric_od_entries": 6,
+  "rows": [
+    {
+      "result": "baseline",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "primary",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "redundant",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-0",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-1",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-2",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-3",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-4",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-5",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-6",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "candidate-7",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-0",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-1",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-2",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-3",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-4",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-5",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-6",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-7",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-8",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-9",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-10",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-11",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-12",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-13",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-14",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-15",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-16",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-17",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-18",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-19",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-20",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    },
+    {
+      "result": "failure-21",
+      "counts_connectivity_reachability": "PASS",
+      "conservation": "PASS",
+      "capacity_components": "PASS",
+      "objective_reconstruction": "PASS",
+      "max_flow_residual": 0.0
+    }
+  ],
+  "official_network": "NOT_AVAILABLE",
+  "daily_operational_feasibility": "NOT_VERIFIED"
+}

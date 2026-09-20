@@ -1,0 +1,15 @@
+active_run_id: run-001
+active_evidence_set:
+  SYNTHETIC_VALIDATION:
+    run_id: run-001
+    experiment_id: EXP-2017F-ORACLE-001
+    artifact_ids:
+    - INPUT-ORACLE
+    - CODE-ORACLE
+    - CODE-INDEPENDENT-AUDIT
+    - RESULT-SUMMARY
+    - RESULT-BASELINE
+    - RESULT-PRIMARY
+    - RESULT-ORACLE
+    - RESULT-INDEPENDENT-AUDIT
+    claim_scope: SYNTHETIC_CODE_VALIDATION_ONLY; no official Q1-Q4 numeric evidence

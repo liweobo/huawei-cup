@@ -1,0 +1,19 @@
+PASS | direct binding passes
+PASS | managed mirror passes with equivalent hashes
+PASS | managed mirror checks every visible file
+PASS | managed mirror writable workspace passes
+PASS | empty managed root fails
+PASS | missing Skill fails
+PASS | missing input fails
+PASS | evaluator artifact fails actual-root scan
+PASS | runtime hash mismatch fails
+PASS | developer repository root is rejected
+PASS | valid function call pair passes
+PASS | orphan function output fails
+PASS | missing call_id fails
+PASS | wrong call_id fails
+PASS | unknown provider capability is not guessed
+PASS | known transport capability preflight passes
+PASS | failed preflight blocks Turn 1
+
+Runtime Binding Regression: PASS (17/17 checks)

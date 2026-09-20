@@ -1,0 +1,679 @@
+{
+  "scope": "SYNTHETIC_CODE_VALIDATION",
+  "selected_edges": [
+    "PA-A",
+    "PB-B",
+    "A-sA",
+    "B-sB",
+    "C-sC",
+    "A-B",
+    "B-C"
+  ],
+  "node_count": 8,
+  "physical_edge_count": 7,
+  "directed_arc_count": 14,
+  "components": 1,
+  "component_members": [
+    [
+      "P_A",
+      "P_B",
+      "A",
+      "B",
+      "C",
+      "sA",
+      "sB",
+      "sC"
+    ]
+  ],
+  "isolated_nodes": [],
+  "weight_symmetry_pass": true,
+  "directed_od_symmetry": false,
+  "routes": [
+    {
+      "commodity": 0,
+      "origin": "P_A",
+      "destination": "sC",
+      "tonnes_per_day": 600,
+      "nodes": [
+        "P_A",
+        "A",
+        "B",
+        "C",
+        "sC"
+      ],
+      "km": 9.10555127546399,
+      "tonne_km_per_day": 5463.330765278393
+    },
+    {
+      "commodity": 1,
+      "origin": "sC",
+      "destination": "P_A",
+      "tonnes_per_day": 100,
+      "nodes": [
+        "sC",
+        "C",
+        "B",
+        "A",
+        "P_A"
+      ],
+      "km": 9.10555127546399,
+      "tonne_km_per_day": 910.5551275463989
+    },
+    {
+      "commodity": 2,
+      "origin": "P_B",
+      "destination": "sA",
+      "tonnes_per_day": 300,
+      "nodes": [
+        "P_B",
+        "B",
+        "A",
+        "sA"
+      ],
+      "km": 5.5,
+      "tonne_km_per_day": 1650.0
+    },
+    {
+      "commodity": 3,
+      "origin": "sA",
+      "destination": "P_B",
+      "tonnes_per_day": 40,
+      "nodes": [
+        "sA",
+        "A",
+        "B",
+        "P_B"
+      ],
+      "km": 5.5,
+      "tonne_km_per_day": 220.0
+    },
+    {
+      "commodity": 4,
+      "origin": "sB",
+      "destination": "sC",
+      "tonnes_per_day": 200,
+      "nodes": [
+        "sB",
+        "B",
+        "C",
+        "sC"
+      ],
+      "km": 4.60555127546399,
+      "tonne_km_per_day": 921.110255092798
+    },
+    {
+      "commodity": 5,
+      "origin": "sC",
+      "destination": "sB",
+      "tonnes_per_day": 50,
+      "nodes": [
+        "sC",
+        "C",
+        "B",
+        "sB"
+      ],
+      "km": 4.60555127546399,
+      "tonne_km_per_day": 230.2775637731995
+    }
+  ],
+  "unreachable_od": [],
+  "flow_conservation": [
+    {
+      "commodity": 0,
+      "node_id": "P_A",
+      "out_minus_in": 600.0,
+      "source_sink_rhs": 600,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "P_B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "C",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "sA",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "sB",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 0,
+      "node_id": "sC",
+      "out_minus_in": -600.0,
+      "source_sink_rhs": -600,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "P_A",
+      "out_minus_in": -100.0,
+      "source_sink_rhs": -100,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "P_B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "C",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "sA",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "sB",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 1,
+      "node_id": "sC",
+      "out_minus_in": 100.0,
+      "source_sink_rhs": 100,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "P_A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "P_B",
+      "out_minus_in": 300.0,
+      "source_sink_rhs": 300,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "C",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "sA",
+      "out_minus_in": -300.0,
+      "source_sink_rhs": -300,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "sB",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 2,
+      "node_id": "sC",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "P_A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "P_B",
+      "out_minus_in": -40.0,
+      "source_sink_rhs": -40,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "C",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "sA",
+      "out_minus_in": 40.0,
+      "source_sink_rhs": 40,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "sB",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 3,
+      "node_id": "sC",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "P_A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "P_B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "C",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "sA",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "sB",
+      "out_minus_in": 200.0,
+      "source_sink_rhs": 200,
+      "residual": 0.0
+    },
+    {
+      "commodity": 4,
+      "node_id": "sC",
+      "out_minus_in": -200.0,
+      "source_sink_rhs": -200,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "P_A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "P_B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "A",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "B",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "C",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "sA",
+      "out_minus_in": 0.0,
+      "source_sink_rhs": 0.0,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "sB",
+      "out_minus_in": -50.0,
+      "source_sink_rhs": -50,
+      "residual": 0.0
+    },
+    {
+      "commodity": 5,
+      "node_id": "sC",
+      "out_minus_in": 50.0,
+      "source_sink_rhs": 50,
+      "residual": 0.0
+    }
+  ],
+  "max_conservation_residual": 0.0,
+  "edges": [
+    {
+      "edge_id": "PA-A",
+      "u": "P_A",
+      "v": "A",
+      "meaning": "PARK_PRIMARY",
+      "length_km": 1.0,
+      "flow_u_v_tonnes_day": 600.0,
+      "flow_v_u_tonnes_day": 100.0,
+      "design_directional_flow": 600.0,
+      "directional_running_capacity_tonnes_day": 43200,
+      "capital_yuan": 400000000.0,
+      "daily_transport_yuan": 700.0,
+      "hard_capacity_pass": true
+    },
+    {
+      "edge_id": "PB-B",
+      "u": "P_B",
+      "v": "B",
+      "meaning": "PARK_PRIMARY",
+      "length_km": 1.0,
+      "flow_u_v_tonnes_day": 300.0,
+      "flow_v_u_tonnes_day": 40.0,
+      "design_directional_flow": 300.0,
+      "directional_running_capacity_tonnes_day": 43200,
+      "capital_yuan": 400000000.0,
+      "daily_transport_yuan": 340.0,
+      "hard_capacity_pass": true
+    },
+    {
+      "edge_id": "A-sA",
+      "u": "A",
+      "v": "sA",
+      "meaning": "LOCAL",
+      "length_km": 0.5,
+      "flow_u_v_tonnes_day": 300.0,
+      "flow_v_u_tonnes_day": 40.0,
+      "design_directional_flow": 300.0,
+      "directional_running_capacity_tonnes_day": 21600,
+      "capital_yuan": 150000000.0,
+      "daily_transport_yuan": 170.0,
+      "hard_capacity_pass": true
+    },
+    {
+      "edge_id": "B-sB",
+      "u": "B",
+      "v": "sB",
+      "meaning": "LOCAL",
+      "length_km": 0.5,
+      "flow_u_v_tonnes_day": 50.0,
+      "flow_v_u_tonnes_day": 200.0,
+      "design_directional_flow": 200.0,
+      "directional_running_capacity_tonnes_day": 21600,
+      "capital_yuan": 150000000.0,
+      "daily_transport_yuan": 125.0,
+      "hard_capacity_pass": true
+    },
+    {
+      "edge_id": "C-sC",
+      "u": "C",
+      "v": "sC",
+      "meaning": "LOCAL",
+      "length_km": 0.5,
+      "flow_u_v_tonnes_day": 800.0,
+      "flow_v_u_tonnes_day": 150.0,
+      "design_directional_flow": 800.0,
+      "directional_running_capacity_tonnes_day": 21600,
+      "capital_yuan": 150000000.0,
+      "daily_transport_yuan": 475.0,
+      "hard_capacity_pass": true
+    },
+    {
+      "edge_id": "A-B",
+      "u": "A",
+      "v": "B",
+      "meaning": "BACKBONE",
+      "length_km": 4.0,
+      "flow_u_v_tonnes_day": 640.0,
+      "flow_v_u_tonnes_day": 400.0,
+      "design_directional_flow": 640.0,
+      "directional_running_capacity_tonnes_day": 21600,
+      "capital_yuan": 1200000000.0,
+      "daily_transport_yuan": 4160.0,
+      "hard_capacity_pass": true
+    },
+    {
+      "edge_id": "B-C",
+      "u": "B",
+      "v": "C",
+      "meaning": "BACKBONE",
+      "length_km": 3.605551275463989,
+      "flow_u_v_tonnes_day": 800.0,
+      "flow_v_u_tonnes_day": 150.0,
+      "design_directional_flow": 800.0,
+      "directional_running_capacity_tonnes_day": 21600,
+      "capital_yuan": 1081665382.6391966,
+      "daily_transport_yuan": 3425.2737116907897,
+      "hard_capacity_pass": true
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "P_A",
+      "node_type": "PARK",
+      "ground_exchange_tonnes_day": 0,
+      "ground_limit_tonnes_day": null,
+      "ground_capacity_pass": true,
+      "departures": 8,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 0
+    },
+    {
+      "node_id": "P_B",
+      "node_type": "PARK",
+      "ground_exchange_tonnes_day": 0,
+      "ground_limit_tonnes_day": null,
+      "ground_capacity_pass": true,
+      "departures": 4,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 0
+    },
+    {
+      "node_id": "A",
+      "node_type": "PRIMARY",
+      "ground_exchange_tonnes_day": 0,
+      "ground_limit_tonnes_day": 4000,
+      "ground_capacity_pass": true,
+      "departures": 26,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 150000000.0
+    },
+    {
+      "node_id": "B",
+      "node_type": "PRIMARY",
+      "ground_exchange_tonnes_day": 0,
+      "ground_limit_tonnes_day": 4000,
+      "ground_capacity_pass": true,
+      "departures": 33,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 150000000.0
+    },
+    {
+      "node_id": "C",
+      "node_type": "PRIMARY",
+      "ground_exchange_tonnes_day": 0,
+      "ground_limit_tonnes_day": 4000,
+      "ground_capacity_pass": true,
+      "departures": 24,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 150000000.0
+    },
+    {
+      "node_id": "sA",
+      "node_type": "SECONDARY",
+      "ground_exchange_tonnes_day": 340,
+      "ground_limit_tonnes_day": 3000,
+      "ground_capacity_pass": true,
+      "departures": 1,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 100000000.0
+    },
+    {
+      "node_id": "sB",
+      "node_type": "SECONDARY",
+      "ground_exchange_tonnes_day": 250,
+      "ground_limit_tonnes_day": 3000,
+      "ground_capacity_pass": true,
+      "departures": 5,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 100000000.0
+    },
+    {
+      "node_id": "sC",
+      "node_type": "SECONDARY",
+      "ground_exchange_tonnes_day": 950,
+      "ground_limit_tonnes_day": 3000,
+      "ground_capacity_pass": true,
+      "departures": 4,
+      "dispatch_limit": 90,
+      "dispatch_capacity_pass": true,
+      "capital_yuan": 100000000.0
+    }
+  ],
+  "hierarchy_audit": [
+    {
+      "node_id": "sA",
+      "own_primary": "A",
+      "foreign_primary_bypasses": []
+    },
+    {
+      "node_id": "sB",
+      "own_primary": "B",
+      "foreign_primary_bypasses": []
+    },
+    {
+      "node_id": "sC",
+      "own_primary": "C",
+      "foreign_primary_bypasses": []
+    }
+  ],
+  "capacity_feasibility": true,
+  "static_feasible": true,
+  "daily_operational_clearing": "NOT_VERIFIED",
+  "engineering_constructability": "NOT_APPLICABLE_SYNTHETIC",
+  "capital_yuan": 4281665382.6391964,
+  "depreciation_yuan_day": 117305.90089422456,
+  "transport_yuan_day": 9395.27371169079,
+  "objective_yuan_day": 126701.17460591535,
+  "route_vs_arc_cost_residual": 0.0,
+  "od_reachable_fraction": 1.0,
+  "demand_reachable_fraction": 1.0,
+  "unreachable_demand_tonnes_day": 0,
+  "failure_scope": "NORMAL"
+}

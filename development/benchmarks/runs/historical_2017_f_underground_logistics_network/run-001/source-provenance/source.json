@@ -1,0 +1,13 @@
+{
+  "accessed_at": "2026-09-20T11:27:06.803616+00:00",
+  "source_directory": "https://api.github.com/repos/zhanwen/MathModel/contents/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2017%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98",
+  "original_name": "2017年中国研究生数学建模竞赛F题.doc",
+  "download_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2017年研究生数学建模竞赛试题/2017年中国研究生数学建模竞赛F题.doc",
+  "git_blob_sha": "c2dd56c208cf3c7f80f2e52ff1f58ee0a758166f",
+  "sha256": "7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719",
+  "bytes": 2579456,
+  "retained_source": "source\\2017F_地下物流系统网络.doc",
+  "fresh_download_matches_preexisting_source": true,
+  "directory_listing_error": null,
+  "scope": "Only authorized problem directory metadata and exact problem .doc downloaded; no solutions accessed"
+}

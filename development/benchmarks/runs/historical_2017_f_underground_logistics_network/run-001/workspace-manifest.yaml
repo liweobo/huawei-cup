@@ -1,0 +1,21 @@
+schema_version: 2
+isolation_mode: repository_scoped_blind_run
+run_id: run-001
+benchmark_id: historical_2017_f_underground_logistics_network
+created_at: '2026-09-20T11:34:08.419273+00:00'
+active_run_id: run-001
+immutable_inputs:
+- source_artifact_id: SOURCE-DOC
+  path: source/2017F_地下物流系统网络.doc
+  sha256: 7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719
+writable_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-001
+allowed_write_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-001
+prior_run_artifacts_visible: false
+developer_repository_visible: true
+evaluator_files_visible: true
+allowed_read_roots:
+- skill
+- input
+scope_note: Not a platform clean room. input aliases this run's source/inputs. Historical
+  bytes hashed only for integrity; development tests are harness-only, never modeling
+  evidence.

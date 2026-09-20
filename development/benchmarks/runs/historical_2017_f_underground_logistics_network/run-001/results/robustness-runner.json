@@ -1,0 +1,18 @@
+{
+  "baseline_scenario": "normal",
+  "baseline_value": 7687.048579006303,
+  "results": [
+    {
+      "scenario": "normal",
+      "value": 7687.048579006303,
+      "absolute_change": 0.0,
+      "relative_change": 0.0
+    },
+    {
+      "scenario": "P_A_to_sC_50_percent_surge",
+      "value": 9218.713961645499,
+      "absolute_change": 1531.6653826391957,
+      "relative_change": 0.19925272578896497
+    }
+  ]
+}

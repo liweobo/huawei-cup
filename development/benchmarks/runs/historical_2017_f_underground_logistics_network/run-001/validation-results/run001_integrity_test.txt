@@ -1,0 +1,12 @@
+PASS | result.txt exists
+PASS | result.txt byte count matches manifest
+PASS | result.txt SHA256 matches manifest
+PASS | original transfer archive metadata is retained
+PASS | transfer archive is marked removed after canonicalization
+PASS | canonical problem raw inputs match source manifest
+PASS | all retained evidence ledger entries resolve with SHA256
+PASS | curated evidence projection retains required run artifacts
+PASS | raw archive is marked immutable
+PASS | run-001 outcome remains NEEDS_REVIEW
+
+Run-001 Integrity Test: PASS (10/10 checks)

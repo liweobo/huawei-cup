@@ -1,0 +1,274 @@
+{
+  "source_sha256": "7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719",
+  "table_stream": "1Table",
+  "streams": [
+    {
+      "path": [
+        "\u0001CompObj"
+      ],
+      "bytes": 110,
+      "sha256": "c4d5a73c17d4f0903bfbffe6bba276111c8baf89b1b417566a5bb8f1a7ef83be"
+    },
+    {
+      "path": [
+        "\u0005DocumentSummaryInformation"
+      ],
+      "bytes": 4096,
+      "sha256": "90e8f290625af999c86b7c8407134a0f223532380490162267d5ce0534605dc1"
+    },
+    {
+      "path": [
+        "\u0005SummaryInformation"
+      ],
+      "bytes": 4096,
+      "sha256": "a82d619b470a3f8bbebcf006f48a4a21f05c5e1d73c2c375742e7dc584c09136"
+    },
+    {
+      "path": [
+        "1Table"
+      ],
+      "bytes": 15469,
+      "sha256": "8000a49fd901db90873dd61e15be7902d899759e79f42135d06a1e0bf58c77aa"
+    },
+    {
+      "path": [
+        "Data"
+      ],
+      "bytes": 2497045,
+      "sha256": "e7376d8cf4f08f3623b17e4b00bcc017d7bf86bc0160e72c26f416fa68390aee"
+    },
+    {
+      "path": [
+        "MsoDataStore",
+        "ËÎÛÙÜÌÐÅ4EÚF2Ë5ÈßSÑNVQ==",
+        "Item"
+      ],
+      "bytes": 310,
+      "sha256": "cee00958fa124ee7b45fb89ddc13f6f1579a03ff80147670ef477bd7d9530aa6"
+    },
+    {
+      "path": [
+        "MsoDataStore",
+        "ËÎÛÙÜÌÐÅ4EÚF2Ë5ÈßSÑNVQ==",
+        "Properties"
+      ],
+      "bytes": 341,
+      "sha256": "cbdbeaa113edc5d8ad96b88af22b07c9ca88b76d6c91077462d73c5481bd51d2"
+    },
+    {
+      "path": [
+        "WordDocument"
+      ],
+      "bytes": 33336,
+      "sha256": "fe8924448aec6589c08df67cf082441e62121e501b15e71ae2c30b3a05497b03"
+    }
+  ],
+  "pieces": [
+    {
+      "cp_start": 0,
+      "cp_end": 2048,
+      "fc": 2048,
+      "compressed": false
+    },
+    {
+      "cp_start": 2048,
+      "cp_end": 2304,
+      "fc": 6144,
+      "compressed": false
+    },
+    {
+      "cp_start": 2304,
+      "cp_end": 4509,
+      "fc": 14848,
+      "compressed": false
+    }
+  ],
+  "characters": 4509,
+  "piece_table_text_sha256": "b50d172e8d6147d79437b92e8c01b28f7b5a02039685ea5d3e66df6bda7ff6dc",
+  "binary_embedded_object_streams": [],
+  "status": "EXTRACTION_UNVERIFIED",
+  "independent_engine": "Aspose.Words for Python 26.9.0 (evaluation)",
+  "page_count": 6,
+  "paragraphs": 71,
+  "tables": 0,
+  "fields": [
+    {
+      "type": "88",
+      "code": " HYPERLINK \"https://products.aspose.com/words/temporary-license/\" ",
+      "result": "https://products.aspose.com/words/temporary-license/"
+    },
+    {
+      "type": "34",
+      "code": " = 1 \\* GB3 ",
+      "result": "①"
+    },
+    {
+      "type": "34",
+      "code": " = 2 \\* GB3 ",
+      "result": "②"
+    },
+    {
+      "type": "34",
+      "code": " = 3 \\* GB3 ",
+      "result": "③"
+    },
+    {
+      "type": "34",
+      "code": " = 4 \\* GB3 ",
+      "result": "④"
+    },
+    {
+      "type": "34",
+      "code": " = 5 \\* GB3 ",
+      "result": "⑤"
+    },
+    {
+      "type": "34",
+      "code": " = 6 \\* GB3 ",
+      "result": "⑥"
+    },
+    {
+      "type": "34",
+      "code": " = 1 \\* GB3 ",
+      "result": "①"
+    },
+    {
+      "type": "34",
+      "code": " = 2 \\* GB3 ",
+      "result": "②"
+    },
+    {
+      "type": "34",
+      "code": " = 3 \\* GB3 ",
+      "result": "③"
+    },
+    {
+      "type": "34",
+      "code": " = 4 \\* GB3 ",
+      "result": "④"
+    },
+    {
+      "type": "34",
+      "code": " = 1 \\* GB3 ",
+      "result": "①"
+    },
+    {
+      "type": "34",
+      "code": " = 2 \\* GB3 ",
+      "result": "②"
+    },
+    {
+      "type": "33",
+      "code": "PAGE   \\* MERGEFORMAT",
+      "result": "6"
+    }
+  ],
+  "shapes": [
+    {
+      "index": 0,
+      "name": "Picture 4",
+      "has_image": true,
+      "shape_type": "75",
+      "text": "",
+      "anchor_paragraph": "      \r",
+      "bytes": 573570,
+      "sha256": "12669887d50e50f14638c330f04b6b37900f961bbfee6769b8c3876972738098",
+      "image_type": "6",
+      "present_in_original_data_stream": true,
+      "provenance": "ORIGINAL_SOURCE"
+    },
+    {
+      "index": 1,
+      "name": "图片 1",
+      "has_image": true,
+      "shape_type": "75",
+      "text": "",
+      "anchor_paragraph": "      \r",
+      "bytes": 576501,
+      "sha256": "8b02a4946a02696d54ce0fab721f8b0844cc053555a95a5882f24ee0ee6a5bcb",
+      "image_type": "6",
+      "present_in_original_data_stream": true,
+      "provenance": "ORIGINAL_SOURCE"
+    },
+    {
+      "index": 2,
+      "name": "图片 1",
+      "has_image": true,
+      "shape_type": "75",
+      "text": "",
+      "anchor_paragraph": "      \r",
+      "bytes": 353860,
+      "sha256": "e6e287121aaf093b7f89228f0ffe9da290c48537a6d1c1bb169c4e4bb2eb8b19",
+      "image_type": "6",
+      "present_in_original_data_stream": true,
+      "provenance": "ORIGINAL_SOURCE"
+    },
+    {
+      "index": 3,
+      "name": "图片 3",
+      "has_image": true,
+      "shape_type": "75",
+      "text": "",
+      "anchor_paragraph": "      \r",
+      "bytes": 373755,
+      "sha256": "a288ec3b0d4ce5c8247e9d126668eef30923b8cd9a425ba5217b80bc64470da6",
+      "image_type": "6",
+      "present_in_original_data_stream": true,
+      "provenance": "ORIGINAL_SOURCE"
+    },
+    {
+      "index": 4,
+      "name": "",
+      "has_image": false,
+      "shape_type": "202",
+      "text": "演进过程示意\r",
+      "anchor_paragraph": "演进过程示意\r整体网络\r\r"
+    },
+    {
+      "index": 5,
+      "name": "",
+      "has_image": false,
+      "shape_type": "202",
+      "text": "整体网络\r",
+      "anchor_paragraph": "演进过程示意\r整体网络\r\r"
+    },
+    {
+      "index": 6,
+      "name": "",
+      "has_image": true,
+      "shape_type": "75",
+      "text": "",
+      "anchor_paragraph": "演进过程示意\r整体网络\r\r",
+      "bytes": 135636,
+      "sha256": "706599dfff1ffb2de5ed3a9a3356a4783841ff830922c5a458a9a4d83d8907f3",
+      "image_type": "6",
+      "present_in_original_data_stream": true,
+      "provenance": "ORIGINAL_SOURCE"
+    },
+    {
+      "index": 7,
+      "name": "",
+      "has_image": true,
+      "shape_type": "75",
+      "text": "",
+      "anchor_paragraph": "\r",
+      "bytes": 8818,
+      "sha256": "ff0ba8e6f56b061fac6f1112c43c2c14d9b54153204b140af9e1fa40c6104b34",
+      "image_type": "6",
+      "present_in_original_data_stream": false,
+      "provenance": "RENDERER_GENERATED_OR_UNVERIFIED"
+    }
+  ],
+  "piece_visible_contained_in_engine": false,
+  "engine_visible_contained_in_piece": false,
+  "render_pdf_sha256": "2b59b4502b7f66064712d9a0d7ad582f4bb9bea96c0bc4ae5d72e132cf0a139b",
+  "visible_paragraph_check": {
+    "checked": 57,
+    "unmatched": [],
+    "status": "PASS"
+  },
+  "original_image_count": 5,
+  "renderer_added_image_count": 1,
+  "rendered_page_count": 6,
+  "rendered_text_sha256": "5f0c8d40dc2e7cc733c19ff0b9a3cdced12aab85044fa1de8a5ce49b4127096c"
+}

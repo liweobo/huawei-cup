@@ -1,0 +1,30 @@
+[
+  {
+    "check": "default-pytest",
+    "classification": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING",
+    "raw_local_log": "validation-results/default-pytest.txt",
+    "raw_log_sha256": "47045a56b3c0a4eee50631c778c9246240eb1e63c53a2c1a148d073560526818",
+    "raw_log_bytes": 27737,
+    "representative_lines": [
+      "import file mismatch:",
+      "  C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\.tmp\\github-publish-checkout\\development\\harness\\adversarial_trigger_test.py",
+      "!!!!!!!!!!!!!!!!!! Interrupted: 44 errors during collection !!!!!!!!!!!!!!!!!!!"
+    ],
+    "repair_attempted": false,
+    "raw_log_commit_policy": "EXCLUDED_LOCAL_CACHE; representative evidence retained here"
+  },
+  {
+    "check": "smoke_test",
+    "classification": "EXISTING_SMOKE_FAILURES_PRESERVED",
+    "raw_local_log": "validation-results/smoke_test.txt",
+    "raw_log_sha256": "8a58f1cabe3b58c61cd05da29ce217ff43f2dce6d6c0534542fa81fd031101e4",
+    "raw_log_bytes": 99223,
+    "representative_lines": [
+      "- unfinished placeholder in: development\\benchmarks\\runs\\historical_2022_c_buffer_scheduling\\run-002\\REPORT.md",
+      "- duplicate markdown content: ['skill\\\\SKILL.md', 'development\\\\benchmarks\\\\runs\\\\historical_2005_d_stochastic_inventory\\\\run-001\\\\work\\\\pytest\\\\test_skill_self_contained0\\\\skill\\\\SKILL.md']",
+      "- duplicate markdown content: ['development\\\\benchmarks\\\\runs\\\\historical_2020_a_chip_phase_noise\\\\run-001\\\\algorithm-contract.md', 'development\\\\benchmarks\\\\runs\\\\historical_2020_a_chip_phase_noise\\\\reference-benchmark\\\\work\\\\frozen-run-001\\\\algorithm-contract.md']"
+    ],
+    "repair_attempted": false,
+    "raw_log_commit_policy": "EXCLUDED_LOCAL_CACHE; representative evidence retained here"
+  }
+]

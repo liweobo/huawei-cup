@@ -1,0 +1,60 @@
+schema_version: 1
+experiment_id: EXP-2017F-ORACLE-001
+run_id: run-001
+created_at: '2026-09-20T11:34:08.419273+00:00'
+problem: historical_2017_f_underground_logistics_network
+question: Q1-Q4 input-boundary and synthetic algorithm verification
+status: PLANNED
+updated_by_workflow: design_model
+planned_protocol:
+  scope: SYNTHETIC_CODE_VALIDATION_ONLY
+  real_instance_status: MISSING_REQUIRED_ATTACHMENTS
+  stages:
+  - audit_synthetic_od
+  - manual_directed_path_oracle
+  - baseline_tree
+  - enumerate_three_backbone_build_decisions
+  - flow_capacity_objective_audit
+  - single_tunnel_removal
+  - directional_demand_surge
+  - annual_growth_bound
+  candidate_subsets: 8
+  routing: scipy.sparse.csgraph.dijkstra_positive_weights
+  objective: yuan_per_day_transport_plus_1_percent_annual_depreciation_over_365_days
+  validation:
+  - node_edge_counts
+  - asymmetric_od
+  - connected_components
+  - own_primary_mediation
+  - od_reachability
+  - per_commodity_conservation
+  - directional_capacity
+  - node_dispatch
+  - objective_reconstruction
+  - manual_paths
+  - all_single_edge_failures
+  failure_model: remove_one_physical_tunnel_both_directions
+  sensitivity:
+    surge_od: P_A->sC
+    factor: 1.5
+    classification: GENERIC_SENSITIVITY_SCENARIO
+  growth:
+    rate: 0.05
+    years:
+    - 0
+    - 8
+    - 30
+  randomness: NONE
+executed_protocol: {}
+change_reason: Execution has not started
+comparable_to_original_plan: false
+protocol_change_disclosure: null
+input_artifacts:
+- INPUT-ORACLE
+code_artifacts:
+- CODE-ORACLE
+output_artifacts: []
+random_seed: null
+metrics: {}
+evidence_ids: []
+protocol_changed: true

@@ -1,0 +1,222 @@
+{
+  "scope": "SYNTHETIC_CODE_VALIDATION",
+  "node_count": 8,
+  "nodes": [
+    {
+      "node_id": "P_A",
+      "node_meaning": "Artificial P_A",
+      "node_type": "PARK",
+      "coordinate_km": [
+        -1,
+        0
+      ],
+      "primary": "A",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "P_B",
+      "node_meaning": "Artificial P_B",
+      "node_type": "PARK",
+      "coordinate_km": [
+        5,
+        0
+      ],
+      "primary": "B",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "A",
+      "node_meaning": "Artificial A",
+      "node_type": "PRIMARY",
+      "coordinate_km": [
+        0,
+        0
+      ],
+      "primary": "A",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "B",
+      "node_meaning": "Artificial B",
+      "node_type": "PRIMARY",
+      "coordinate_km": [
+        4,
+        0
+      ],
+      "primary": "B",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "C",
+      "node_meaning": "Artificial C",
+      "node_type": "PRIMARY",
+      "coordinate_km": [
+        2,
+        3
+      ],
+      "primary": "C",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "sA",
+      "node_meaning": "Artificial sA",
+      "node_type": "SECONDARY",
+      "coordinate_km": [
+        0,
+        -0.5
+      ],
+      "primary": "A",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "sB",
+      "node_meaning": "Artificial sB",
+      "node_type": "SECONDARY",
+      "coordinate_km": [
+        4,
+        -0.5
+      ],
+      "primary": "B",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "node_id": "sC",
+      "node_meaning": "Artificial sC",
+      "node_type": "SECONDARY",
+      "coordinate_km": [
+        2,
+        3.5
+      ],
+      "primary": "C",
+      "source": "SCENARIO_ASSUMED"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "edge_id": "PA-A",
+      "u": "P_A",
+      "v": "A",
+      "edge_meaning": "PARK_PRIMARY",
+      "mandatory": true,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "PB-B",
+      "u": "P_B",
+      "v": "B",
+      "edge_meaning": "PARK_PRIMARY",
+      "mandatory": true,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "A-sA",
+      "u": "A",
+      "v": "sA",
+      "edge_meaning": "LOCAL",
+      "mandatory": true,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "B-sB",
+      "u": "B",
+      "v": "sB",
+      "edge_meaning": "LOCAL",
+      "mandatory": true,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "C-sC",
+      "u": "C",
+      "v": "sC",
+      "edge_meaning": "LOCAL",
+      "mandatory": true,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "A-B",
+      "u": "A",
+      "v": "B",
+      "edge_meaning": "BACKBONE",
+      "mandatory": false,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "B-C",
+      "u": "B",
+      "v": "C",
+      "edge_meaning": "BACKBONE",
+      "mandatory": false,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "edge_id": "A-C",
+      "u": "A",
+      "v": "C",
+      "edge_meaning": "BACKBONE",
+      "mandatory": false,
+      "construction_rule": "Explicit artificial eligible corridor, not generated from a distance threshold",
+      "direction": "paired_directed_arcs",
+      "source": "SCENARIO_ASSUMED"
+    }
+  ],
+  "od": [
+    {
+      "origin": "P_A",
+      "destination": "sC",
+      "demand": 600,
+      "unit": "tonne/day",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "origin": "sC",
+      "destination": "P_A",
+      "demand": 100,
+      "unit": "tonne/day",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "origin": "P_B",
+      "destination": "sA",
+      "demand": 300,
+      "unit": "tonne/day",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "origin": "sA",
+      "destination": "P_B",
+      "demand": 40,
+      "unit": "tonne/day",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "origin": "sB",
+      "destination": "sC",
+      "demand": 200,
+      "unit": "tonne/day",
+      "source": "SCENARIO_ASSUMED"
+    },
+    {
+      "origin": "sC",
+      "destination": "sB",
+      "demand": 50,
+      "unit": "tonne/day",
+      "source": "SCENARIO_ASSUMED"
+    }
+  ],
+  "geometry": "Artificial Cartesian plane in km; Euclidean length equals tunnel length by explicit test definition",
+  "capacity_scope": "Static necessary throughput limits only; not daily operational clearing or empty-vehicle balance"
+}

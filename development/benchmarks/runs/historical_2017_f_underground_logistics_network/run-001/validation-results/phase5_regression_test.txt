@@ -1,0 +1,18 @@
+PASS | A validate_model observed result requires Experiment Record
+PASS | A validate_model accepts a complete observed record
+PASS | B normalized protocol diff detects expanded validation
+PASS | B protocol identity ignores mapping key ordering
+PASS | B protocol identity detects sequence reordering
+PASS | C changed protocol requires reason
+PASS | D observed changed protocol requires user disclosure
+PASS | E workspace initializer creates an isolated valid manifest
+PASS | E current-run artifact path is accepted
+PASS | E artifact outside ACTIVE_RUN_ID is rejected
+PASS | F stale paper evidence from another run is rejected
+PASS | G active evidence set is structurally valid
+PASS | G paper claim from active evidence set is accepted
+PASS | run-produced evidence binds run_id and experiment_id
+PASS | run-produced evidence without run_id is rejected
+PASS | H incomplete Q3/Q4/Q5 block final READY
+
+Phase 5 Regression Test: PASS (15/15 checks)

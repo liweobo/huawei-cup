@@ -1,0 +1,95 @@
+schema_version: 1
+experiment_id: EXP-2017F-ORACLE-001
+run_id: run-001
+created_at: '2026-09-20T11:34:08.419273+00:00'
+problem: historical_2017_f_underground_logistics_network
+question: Q1-Q4 input-boundary and synthetic algorithm verification
+status: OBSERVED
+updated_by_workflow: validate_model
+planned_protocol: &id001
+  scope: SYNTHETIC_CODE_VALIDATION_ONLY
+  real_instance_status: MISSING_REQUIRED_ATTACHMENTS
+  stages:
+  - audit_synthetic_od
+  - manual_directed_path_oracle
+  - baseline_tree
+  - enumerate_three_backbone_build_decisions
+  - flow_capacity_objective_audit
+  - single_tunnel_removal
+  - directional_demand_surge
+  - annual_growth_bound
+  candidate_subsets: 8
+  routing: scipy.sparse.csgraph.dijkstra_positive_weights
+  objective: yuan_per_day_transport_plus_1_percent_annual_depreciation_over_365_days
+  validation:
+  - node_edge_counts
+  - asymmetric_od
+  - connected_components
+  - own_primary_mediation
+  - od_reachability
+  - per_commodity_conservation
+  - directional_capacity
+  - node_dispatch
+  - objective_reconstruction
+  - manual_paths
+  - all_single_edge_failures
+  failure_model: remove_one_physical_tunnel_both_directions
+  sensitivity:
+    surge_od: P_A->sC
+    factor: 1.5
+    classification: GENERIC_SENSITIVITY_SCENARIO
+  growth:
+    rate: 0.05
+    years:
+    - 0
+    - 8
+    - 30
+  randomness: NONE
+executed_protocol: *id001
+change_reason: ''
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+- INPUT-ORACLE
+code_artifacts:
+- CODE-ORACLE
+- CODE-INDEPENDENT-AUDIT
+output_artifacts:
+- RESULT-SUMMARY
+- RESULT-BASELINE
+- RESULT-PRIMARY
+- RESULT-ORACLE
+- RESULT-INDEPENDENT-AUDIT
+random_seed: null
+metrics:
+  scope: SYNTHETIC_CODE_VALIDATION_ONLY
+  solver_status: OPTIMAL_WITHIN_ENUMERATED_SYNTHETIC_STATIC_MODEL
+  proof: All 8 backbone subsets enumerated; every connected subset's independent shortest
+    routes satisfies static capacities, hence its shortest-route lower bound is feasible.
+    All physical node positions/types/local links fixed. No operational optimum claimed.
+  node_count: 8
+  candidate_physical_edges: 8
+  od_pairs: 6
+  build_binary_variables: 3
+  subsets_enumerated: 8
+  feasible_subsets: 4
+  disconnected_subsets: 4
+  capacity_rejected_connected_subsets: 0
+  baseline_objective_yuan_day: 126701.17460591535
+  primary_objective_yuan_day: 121750.90516197597
+  absolute_improvement_yuan_day: 4950.269443939382
+  primary_backbone:
+  - B-C
+  - A-C
+  manual_oracle: PASS
+  all_conservation_audits: PASS
+  all_objective_reconstructions: PASS
+  failure_cases: 22
+  real_instance_completed: false
+  python: 3.12.10
+  scipy: 1.18.1
+  numpy: 2.5.2
+  independent_saved_result_audit: PASS
+evidence_ids:
+- EVIDENCE-SYNTHETIC-001
+protocol_changed: false

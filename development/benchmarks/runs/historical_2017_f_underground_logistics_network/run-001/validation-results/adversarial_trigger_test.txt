@@ -1,0 +1,2 @@
+Adversarial Trigger Test: 25/25 passed
+false positives=0, false negatives=0

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "nodes": 4,
+  "arcs": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      9
+    ],
+    [
+      2,
+      0,
+      8
+    ]
+  ],
+  "manual_expected_0_to_2": 5,
+  "manual_expected_2_to_0": 8,
+  "isolated_node": 3,
+  "weak_components": 2,
+  "independent_floyd_check": "PASS"
+}

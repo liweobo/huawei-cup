@@ -1,0 +1,28 @@
+{
+  "scope": "SYNTHETIC_CODE_VALIDATION_ONLY",
+  "solver_status": "OPTIMAL_WITHIN_ENUMERATED_SYNTHETIC_STATIC_MODEL",
+  "proof": "All 8 backbone subsets enumerated; every connected subset's independent shortest routes satisfies static capacities, hence its shortest-route lower bound is feasible. All physical node positions/types/local links fixed. No operational optimum claimed.",
+  "node_count": 8,
+  "candidate_physical_edges": 8,
+  "od_pairs": 6,
+  "build_binary_variables": 3,
+  "subsets_enumerated": 8,
+  "feasible_subsets": 4,
+  "disconnected_subsets": 4,
+  "capacity_rejected_connected_subsets": 0,
+  "baseline_objective_yuan_day": 126701.17460591535,
+  "primary_objective_yuan_day": 121750.90516197597,
+  "absolute_improvement_yuan_day": 4950.269443939382,
+  "primary_backbone": [
+    "B-C",
+    "A-C"
+  ],
+  "manual_oracle": "PASS",
+  "all_conservation_audits": "PASS",
+  "all_objective_reconstructions": "PASS",
+  "failure_cases": 22,
+  "real_instance_completed": false,
+  "python": "3.12.10",
+  "scipy": "1.18.1",
+  "numpy": "2.5.2"
+}

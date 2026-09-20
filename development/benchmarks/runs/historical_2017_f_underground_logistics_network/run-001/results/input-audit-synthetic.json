@@ -1,0 +1,131 @@
+{
+  "file": "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-001\\inputs\\oracle-od.csv",
+  "format": "csv",
+  "audit_parameters": {
+    "near_constant_threshold": 0.95,
+    "correlation_threshold": 0.9,
+    "imbalance_warning_ratio": 10.0,
+    "classification_target": null
+  },
+  "sheets": {
+    "<csv>": {
+      "shape": [
+        6,
+        3
+      ],
+      "columns": {
+        "origin": {
+          "dtype": "str",
+          "kind": "categorical",
+          "sample_count": 6,
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 5,
+          "top_values": {
+            "sC": 2,
+            "P_A": 1,
+            "P_B": 1,
+            "sA": 1,
+            "sB": 1
+          }
+        },
+        "destination": {
+          "dtype": "str",
+          "kind": "categorical",
+          "sample_count": 6,
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 5,
+          "top_values": {
+            "sC": 2,
+            "P_A": 1,
+            "sA": 1,
+            "P_B": 1,
+            "sB": 1
+          }
+        },
+        "tonnes_per_day": {
+          "dtype": "int64",
+          "kind": "numeric",
+          "sample_count": 6,
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "unique_count": 6,
+          "summary": {
+            "mean": 215.0,
+            "50%": 150.0,
+            "std": 212.95539439046854,
+            "min": 40.0,
+            "25%": 62.5,
+            "75%": 275.0,
+            "max": 600.0
+          },
+          "iqr_outlier_count": 1
+        }
+      },
+      "duplicate_rows": 0,
+      "correlation": {},
+      "risk_prompts": [
+        "outlier_review: tonnes_per_day has 1 IQR outliers"
+      ],
+      "leakage_prompts": [
+        "Check whether time/ID/label-after-event fields are available at prediction time.",
+        "Check whether preprocessing was fit using only the training portion."
+      ],
+      "unit_prompts": [
+        "Confirm units across numeric fields and source files before modelling."
+      ],
+      "possible_id_columns": [
+        "tonnes_per_day"
+      ],
+      "constant_columns": [],
+      "near_constant_columns": [],
+      "class_distribution": {
+        "origin": {
+          "sC": 2,
+          "P_A": 1,
+          "P_B": 1,
+          "sA": 1,
+          "sB": 1
+        },
+        "destination": {
+          "sC": 2,
+          "P_A": 1,
+          "sA": 1,
+          "P_B": 1,
+          "sB": 1
+        }
+      },
+      "imbalance_ratio": {
+        "origin": 2.0,
+        "destination": 2.0
+      },
+      "high_correlation_pairs": [],
+      "time_columns": [],
+      "is_monotonic": {},
+      "duplicate_timestamps": {},
+      "group_structure": {
+        "entity_key": null,
+        "candidate_entity_keys": [],
+        "candidate_structures": {},
+        "n_entities": null,
+        "n_rows": 6,
+        "min_rows_per_entity": null,
+        "median_rows_per_entity": null,
+        "max_rows_per_entity": null,
+        "repeated_entities": 0,
+        "task": "",
+        "target": "",
+        "aggregated_from_repeated": false,
+        "entity_key_source": "NONE_DETECTED",
+        "prediction_setting": "INDEPENDENT_ROWS",
+        "validation_unit": "ROW",
+        "group_independence_required": false,
+        "temporal_gate_required": false,
+        "status": "PASS",
+        "reason": "",
+        "unit_of_analysis": "ROW"
+      }
+    }
+  }
+}

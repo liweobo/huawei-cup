@@ -1,0 +1,46 @@
+run_id: run-001
+benchmark_id: historical_2017_f_underground_logistics_network
+skill_head: dfcf471d8e32506e81c8b4a6ff8a44e2a57ac7d0
+skill_tree: 2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6
+isolation: repository_scoped_blind_run_not_platform_clean_room
+workflows:
+  - route: analyze_problem
+    action: Decomposed all four subproblems and froze 34 facts, dependency, units and unresolved inputs.
+    status: EXECUTED_INPUT_INCOMPLETE
+    artifacts: [problem-facts.md, task-anchor.md]
+  - route: audit_data
+    action: Fresh source download/hash, independent legacy extraction/render, image and embedded-object audit, missing-attachment check; existing data_audit on explicitly synthetic OD.
+    status: EXECUTED_REAL_INPUT_BLOCKER_IDENTIFIED
+    artifacts: [source-provenance/source.json, source-provenance/extraction-audit.json, results/canonical-input-audit.json, results/input-audit-synthetic.json]
+  - route: design_model
+    action: Conditional node/corridor/flow formulation and comparison; original formal model confirmation stopped at missing-input gate.
+    status: EXECUTED_PARAMETRIC_ONLY
+    artifacts: [model.md, graph-ledger.md, demand-ledger.md, assumptions.md, experiment-record-planned.yaml]
+  - route: build_baseline
+    action: Real computation of legal synthetic tree baseline, with capacity/reachability/cost checks.
+    status: EXECUTED_SYNTHETIC_ONLY_ORIGINAL_NOT_RUN
+    artifacts: [baseline.md, results/baseline.json]
+  - route: run_experiment
+    action: Exhaustive three-binary backbone experiment, routing, named surge and all single-tunnel removals.
+    status: OBSERVED_SYNTHETIC_ONLY
+    artifacts: [code/run_oracle.py, experiment-record.yaml, results/summary.json]
+  - route: validate_model
+    action: Manual directed oracle and independent saved-file reconstruction of 33 networks; source growth diagnostic and repository regressions.
+    status: PASS_SYNTHETIC_PARTIAL_ORIGINAL
+    artifacts: [code/independent_audit.py, results/independent-audit.json, validation.md, network-audit.md]
+  - route: reviewer
+    action: Reviewed source/model/results/claims; no full competition manuscript; identified missing-instance blocker and rejected unsupported gap attribution.
+    status: EXECUTED_SCOPE_LIMITED_REVIEW
+    artifacts: [reviewer-report.md, REPORT.md, completion.json]
+activation_boundaries:
+  optimization: ACTIVE_STATIC_SYNTHETIC_EXACT_ENUMERATION_AND_CONDITIONAL_REAL_FORMULATION
+  network_reference: ACTIVE
+  stochastic: NOT_ACTIVATED
+  stateful_scheduling: NOT_ACTIVATED_NO_DYNAMIC_ACTION_SEARCH_EXECUTED
+  structured_improvement: NOT_ACTIVATED_EXACT_SMALL_INSTANCE_ENUMERATION
+  spectral: NOT_APPLICABLE
+  temporal_prediction: NOT_APPLICABLE_GIVEN_GROWTH_SCENARIO_NOT_LEARNED_FORECAST
+  ordinal_and_classification: NOT_APPLICABLE
+  group_validation: NOT_APPLICABLE
+  mechanism_simulation: NOT_ACTIVATED_OPERATIONAL_SIMULATION_NOT_RUN
+next_highest_value_action: STOP_FOR_HUMAN_REVIEW

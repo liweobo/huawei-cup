@@ -1,0 +1,26 @@
+{
+  "scope": "ORIGINAL_PROBLEM_INPUT_AUDIT",
+  "source_documents": 1,
+  "original_source_images": 5,
+  "native_word_tables": 0,
+  "embedded_data_files": 0,
+  "original_od_table_received": false,
+  "original_coordinate_table_received": false,
+  "total_rows": null,
+  "missing_cells": null,
+  "invalid_rows": null,
+  "duplicate_full_rows": null,
+  "frequency_boundary_rows": null,
+  "anomaly_rows": null,
+  "unresolved_questions": [
+    "missing numbered regional map",
+    "missing directed OD and time basis",
+    "missing coordinates/areas/CRS",
+    "missing congestion coefficients",
+    "missing park identifier/location mapping"
+  ],
+  "graph_instantiated": false,
+  "source_integrity": "PASS",
+  "body_extraction": "PASS",
+  "map_semantics": "EXTRACTION_UNVERIFIED"
+}

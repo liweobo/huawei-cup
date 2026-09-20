@@ -1,0 +1,10 @@
+PASS | COMPLETE is not allowed
+PASS | blocked=true requires
+PASS | BLOCKED status must
+PASS | experiment COMPLETE requires
+PASS | historical coverage requires
+PASS | experiment numbers require
+PASS | final_check to select_problem requires a new risk
+PASS | new P0 risk permits problem reselection
+
+Trajectory Safety Test: 8/8 passed

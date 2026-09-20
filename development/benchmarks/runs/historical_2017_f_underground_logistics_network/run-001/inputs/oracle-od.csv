@@ -1,0 +1,7 @@
+origin,destination,tonnes_per_day
+P_A,sC,600
+sC,P_A,100
+P_B,sA,300
+sA,P_B,40
+sB,sC,200
+sC,sB,50

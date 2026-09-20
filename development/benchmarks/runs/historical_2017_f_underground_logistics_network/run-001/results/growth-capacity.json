@@ -1,0 +1,21 @@
+{
+  "scope": "SOURCE_DERIVED_CAPACITY_DIAGNOSTIC",
+  "assumption": "t=0 base, constant capacity, same demand growth everywhere",
+  "demand_multipliers": {
+    "0": 1.0,
+    "8": 1.477455443789063,
+    "30": 4.321942375150668
+  },
+  "station_departures_per_day_upper_bound": 90,
+  "five_t_vehicle_tonnes_day_4_to_8_carriages": [
+    1800,
+    3600
+  ],
+  "ten_t_vehicle_tonnes_day_4_to_8_carriages": [
+    3600,
+    7200
+  ],
+  "saturation_formula": "first integer t>=0 with D0*(1.05**t)>C; enumerate at equality to avoid floating rounding",
+  "real_network_saturation_year": null,
+  "daily_clearing_verified": false
+}
