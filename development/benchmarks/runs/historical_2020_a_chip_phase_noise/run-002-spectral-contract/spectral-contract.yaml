@@ -1,0 +1,61 @@
+spectral_convention:
+  active: true
+  signal_name: "2020A run-001 complex symbol / dispersion block"
+  signal_type: COMPLEX
+  sample_domain: DISCRETE
+  sampling_rate: 150000000000.0
+  sampling_interval: 6.666666666666667e-12
+  sample_count: 32768
+  observation_duration: 2.1845333333333334e-7
+  time_unit: s
+  frequency_unit: Hz
+  formula_frequency_unit: Hz
+  angular_frequency_used: false
+  frequency_conversion: ""
+  transform_type: FFT
+  transform_length: 32768
+  transform_axis: 0
+  actual_transform_axis: 0
+  transform_normalization:
+    forward: "NumPy default unscaled DFT"
+    inverse: "NumPy default inverse divided by N"
+  transform_provenance:
+    library: numpy
+    function: "numpy.fft.fft / numpy.fft.ifft / numpy.fft.fftfreq"
+    parameters: "n=N; d=1/Fs"
+    input_shape: "(N,)"
+    dtype: complex128
+  frequency_grid_definition: "numpy.fft.fftfreq(N, d=1/Fs), two-sided Hz grid"
+  negative_frequency_ordering: "unshifted bins; indices after the positive half are negative"
+  one_or_two_sided: TWO_SIDED
+  window: none
+  window_normalization: not_applicable
+  leakage_checked: true
+  zero_padding: false
+  zero_padding_resolution_claim: false
+  amplitude_quantity: "complex time-domain symbol amplitude"
+  absolute_spectral_claim: false
+  power_definition: "|x|^2 for complex signal power"
+  psd_used: false
+  asd_used: false
+  psd_definition: ""
+  psd_unit: ""
+  bandwidth_normalization: ""
+  phase_representation: "wrapped angle; explicit unwrap for pilot interpolation"
+  unwrap_used: true
+  phase_unwrap_validated: true
+  phase_unwrap_condition: "run-001 known phase sequence synthetic check"
+  bin_spacing: 4577636.71875
+  claimed_resolution: "not claimed; physical resolution is limited by observation and block/model assumptions"
+  resolution_basis: "observation duration and dispersion model/block assumptions"
+  resolution_equals_bin_spacing: false
+  target_frequency_max: null
+  aliasing_checked: NOT_CLAIMED
+  anti_aliasing_mechanism: ""
+  source_band_constraint: ""
+  validation_evidence:
+    - "run-001/work/synthetic_checks.json: Parseval"
+    - "run-001/work/synthetic_checks.json: dispersion inverse reconstruction"
+    - "run-001/work/synthetic_checks.json: phase unwrap"
+    - "run-001/work/runtime-provenance.json: FFT length and normalization"
+  status: SPECTRAL_CONVENTION_VERIFIED

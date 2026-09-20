@@ -1,0 +1,51 @@
+{
+  "status": "2020A_SPECTRAL_CONTRACT_TARGETED_REGRESSION_COMPLETE",
+  "contract_status": "SPECTRAL_CONVENTION_VERIFIED",
+  "reviewer_codes": [],
+  "sampling_identity": {
+    "sampling_rate": 150000000000.0,
+    "sampling_interval": 6.666666666666666e-12,
+    "sample_count": 32768,
+    "observation_duration": 2.1845333333333332e-07,
+    "transform_length": 32768,
+    "checks": {
+      "dt_equals_inverse_sampling_rate": true,
+      "duration_equals_n_dt": true,
+      "bin_spacing_equals_fs_over_transform_length": true,
+      "complete": true
+    },
+    "errors": []
+  },
+  "frequency_grid_matches_numpy_fftfreq": true,
+  "negative_frequency_examples_hz": [
+    4577636.71875,
+    -75000000000.0,
+    -74995422363.28125,
+    -4577636.71875
+  ],
+  "fft_ifft_reconstruction_max_abs": 1.1322097734007353e-15,
+  "dispersion_reconstruction_max_abs": 1.7422013638940487e-15,
+  "parseval_relative_error": 1.1579426030428907e-16,
+  "complex_power_1_plus_1j": 2.0000000000000004,
+  "phase_unwrap_max_second_difference": 3.552713678800501e-15,
+  "psd_used": false,
+  "bin_spacing_hz": 4577636.71875,
+  "resolution_claim": "not claimed",
+  "runtime_evidence": {
+    "frame_n": 32768,
+    "fft_length": 32768,
+    "normalization": "numpy default fft/ifft",
+    "window": "none",
+    "zero_padding": false
+  },
+  "frozen_2020a_status": "BLIND_RUN_PARTIAL",
+  "ber_threshold_provenance": "REFERENCE_CONSENSUS_ONLY",
+  "channel_order_provenance": "REFERENCE_CONSENSUS_ONLY",
+  "dispersion_convention": "MIXED_REFERENCES",
+  "frozen_input_sha256": {
+    "run-001/REPORT.md": "e5894b9e33bf4d8725b819d4dda5c923e05501ba1159a9ed7416a06df16376a3",
+    "run-001/signal-ledger.md": "ea5f67255085454a4c68508b2b5b4d3ecfc21bc9cb7f7908fd2c365e0ee75c5a",
+    "run-001/work/runtime-provenance.json": "56482a29bf7ad5691885d920f927f6846ca97a2edfbfd5e7256d03294c5917e6",
+    "reference-benchmark/completion.json": "9155056da5dcd3c08c37367f898ae5f1d36415fd1611c5e3775d6be3eb0fef2f"
+  }
+}
