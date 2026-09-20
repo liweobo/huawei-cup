@@ -1,0 +1,57 @@
+spectral_convention:
+  active: true
+  signal_name: ""
+  signal_type: REAL  # REAL | COMPLEX
+  sample_domain: DISCRETE  # DISCRETE | CONTINUOUS_SAMPLED
+  sampling_rate: null
+  sampling_interval: null
+  sample_count: null
+  observation_duration: null
+  time_unit: ""
+  frequency_unit: Hz  # Hz or rad/s; record conversions explicitly
+  formula_frequency_unit: ""
+  angular_frequency_used: false
+  frequency_conversion: ""
+  transform_type: FFT  # DFT | FFT | IFFT | FREQUENCY_DOMAIN_FILTER | OTHER
+  transform_length: null
+  transform_axis: 0
+  actual_transform_axis: null
+  transform_normalization:
+    forward: "library default or explicit formula"
+    inverse: "library default or explicit formula"
+  transform_provenance:
+    library: ""
+    function: ""
+    parameters: ""
+    input_shape: ""
+    dtype: ""
+  frequency_grid_definition: ""
+  negative_frequency_ordering: ""
+  one_or_two_sided: TWO_SIDED
+  window: none
+  window_normalization: ""
+  leakage_checked: false
+  zero_padding: false
+  zero_padding_resolution_claim: false
+  amplitude_quantity: ""
+  absolute_spectral_claim: false
+  power_definition: ""
+  psd_used: false
+  asd_used: false
+  psd_definition: ""
+  psd_unit: ""
+  bandwidth_normalization: ""
+  phase_representation: ""
+  unwrap_used: false
+  phase_unwrap_validated: false
+  phase_unwrap_condition: ""
+  bin_spacing: null
+  claimed_resolution: ""
+  resolution_basis: ""
+  resolution_equals_bin_spacing: false
+  target_frequency_max: null
+  aliasing_checked: false
+  anti_aliasing_mechanism: ""
+  source_band_constraint: ""
+  validation_evidence: []
+  status: SPECTRAL_CONVENTION_UNVERIFIED

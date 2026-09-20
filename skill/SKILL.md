@@ -41,6 +41,10 @@ metadata:
 11. **等级目标必须有明确顺序来源。** 区分 nominal、ordinal 和 continuous；有序任务使用距离感知指标并与同协议 baseline 比较，不能因标签是整数就自动当作 ordinal 或连续量。
 12. **重复实体必须按正确独立单位验证。** 面向新实体泛化时同一 entity 不得跨 train/validation；组泄漏、伪重复和把拟合残差当泛化误差都必须显式区分。
 
+## Spectral Activation Boundary
+
+当任务实际进入采样信号、DFT/FFT/IFFT、频域滤波或卷积、传递函数、复基带、相位、PSD/ASD、频域振幅/功率或时频变换时，激活 [`references/spectral-conventions.md`](references/spectral-conventions.md) 和 [`scripts/spectral_conventions.py`](scripts/spectral_conventions.py)。contract 要求显式记录采样恒等式、Hz/rad/s、FFT 物理频率映射、负频率顺序、正反变换归一化、复功率、单双边谱、窗与泄漏、zero padding、bin spacing 与真实分辨率、混叠和相位 unwrap。普通回归、分类、优化和未使用频域的时间序列不填写这些字段；PSD/ASD 只有在实际报告密度时才激活。
+
 # Task Anchor
 
 复杂工作流开始前创建或确认 [`templates/task-anchor.md`](templates/task-anchor.md)。Task Anchor 只约束当前任务：Goal、Boundaries、Inputs、Done When、Risks。

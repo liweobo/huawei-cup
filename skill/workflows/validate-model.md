@@ -17,6 +17,7 @@
 - [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（验证有序目标时）
 - [`../references/group-validation.md`](../references/group-validation.md)（验证重复实体或纵向模型时）
 - [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（验证机制、物理或动态模拟时）
+- [`../references/spectral-conventions.md`](../references/spectral-conventions.md)（验证实际使用采样或频域量时）
 
 ## Inputs
 
@@ -29,6 +30,7 @@
 ## Steps
 
 1. 读取当前实验的 [`../templates/experiment-record.yaml`](../templates/experiment-record.yaml) 实例和 `workspace-manifest.yaml`。若验证会新运行代码、新增 split/敏感性/鲁棒性、修改模型或指标，先把记录改为 `RUNNING`。
+   若结果包含频域量，先审查 Spectral Convention Contract 和 reviewer guards，再解释峰值、振幅、功率或密度。
 2. 检查切分是否尊重时间、空间、实体和信息可得时点。先明确 validation scope；新实体泛化才强制每 fold entity overlap=0，同实体未来预测允许已有实体历史但必须满足时间约束。纵向时间特征复核 Temporal Availability Contract、`feature_cutoff` 与 `target_horizon`，确认聚合输入先经过 cutoff 过滤。Group Structure Contract 和实际 split IDs 通过 `runtime_provenance.apply_group_gate()` 接入记录；发现 post-horizon 行进入聚合或新实体评估出现重叠，独立报告 `FUTURE_INFORMATION_LEAKAGE` / `GROUP_LEAKAGE` 并 `INVALIDATED`。缺失或未验证契约不得发布 OBSERVED；只通过 group gate 不能代替时间验证。机制模型同时复核 Closure Contract：缺失 essential initial state 应降级为 `PARAMETRIC` 或 `UNVERIFIED`；若在声明模型范围内所有条件已闭合，则可为 `CLOSED_FOR_UNIQUE_NUMERICAL`，但仍单独报告模型形式不确定性与物理真实性限制。
 3. 按任务读取指标原则；分类先检查类别分布，激活 Class imbalance metric trap。明显不平衡时必须比较多数类基线，并报告 ROC-AUC、PR-AUC（附正类流行率）、Macro F1、Balanced Accuracy、少数类 Recall、Precision、F1 和 Specificity；概率任务补充 Brier score 与校准说明。Accuracy 不能作为唯一或主要选模依据。若使用决策阈值，只能在 validation/inner validation 选择并在 test 前冻结。
 4. ordinal 任务复核 `ordered_levels` 与 `ordering_source`，确认每 fold 覆盖全部等级、概率归一化且累计阈值概率单调；回归取整必须显式标记 approximation。与 Baseline 比较泛化指标、失败案例和实际意义；优化额外检查全部约束。

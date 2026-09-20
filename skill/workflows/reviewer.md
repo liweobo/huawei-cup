@@ -17,6 +17,7 @@
 - [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（审查等级目标或 ordinal 结果时）
 - [`../references/group-validation.md`](../references/group-validation.md)（审查重复实体或纵向验证时）
 - [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（审查机制、物理或动态模拟时）
+- [`../references/spectral-conventions.md`](../references/spectral-conventions.md)（审查实际使用采样或频域量时）
 
 ## Inputs
 

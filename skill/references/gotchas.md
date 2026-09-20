@@ -56,6 +56,12 @@
 
 **Activation**：`final-check` 必须读取 `references/competition/2026-rules.md`，关键项为 `UNVERIFIED` 或 `OUTDATED` 时不得判 READY。
 
+## Spectral convention and normalization
+
+**Failure**：频谱结果没有定义 `Fs`、`dt`、FFT 物理频率映射、正负频率顺序、变换归一化、复功率、相位约定或 bin spacing 与真实分辨率的区别；zero padding 被当成新的物理信息；PSD/ASD 没有单位或带宽归一化。
+
+**Activation**：`analyze-problem`、`audit-data`、`design-model`、`run-experiment`、`validate-model` 和 `reviewer` 遇到采样信号、DFT/FFT/IFFT、频域运算、复基带、相位、频谱密度或时频变换时，加载 [`spectral-conventions.md`](spectral-conventions.md) 并填写 contract。普通表格任务不激活。使用 `scripts/spectral_conventions.py` 检查采样恒等式和 reviewer guards；PSD/ASD 元数据仅在实际声称 density 时要求。
+
 ## Workflow promise exceeds script capability
 
 **Failure**：Workflow 声称工具会自动发现风险，但脚本实际上只能输出候选或运行用户提供的场景。

@@ -18,6 +18,7 @@
 - [`../references/ordinal-modeling.md`](../references/ordinal-modeling.md)（目标有明确等级时）
 - [`../references/group-validation.md`](../references/group-validation.md)（存在重复实体或纵向预测时）
 - [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（候选包含机制、物理或动态模拟时）
+- [`../references/spectral-conventions.md`](../references/spectral-conventions.md)（候选实际使用采样或频域量时）
 - 只有在模型族确定后，读取对应模型族文件。
 
 ## Inputs

@@ -13,4 +13,5 @@ References 回答需要哪些知识、候选模型族和常见经验；只在当
 - [`innovation-patterns.md`](innovation-patterns.md)：真实创新与实验支持。
 - [`gotchas.md`](gotchas.md)：真实赛题测试后沉淀的高价值陷阱，须由相关 workflow 激活。
 - [`mechanism-closure.md`](mechanism-closure.md)：机制/物理/动态模型的 closure contract、状态和 claim gate。
+- [`spectral-conventions.md`](spectral-conventions.md)：采样、频率轴、变换归一化、复功率、相位和按需 PSD/ASD 的轻量 contract。
 - [`models/index.md`](models/index.md)：模型族路由。

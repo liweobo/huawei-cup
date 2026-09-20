@@ -64,7 +64,7 @@ def test_skill_self_contained(tmp_path: Path) -> None:
     )
     assert compile_result.returncode == 0, compile_result.stderr
     import_result = subprocess.run(
-        [sys.executable, "-B", "-c", "import scripts.data_audit, scripts.metrics, scripts.temporal_availability, scripts.runtime_provenance, scripts.group_validation, scripts.stateful_scheduling, scripts.structured_improvement, scripts.mechanism_closure"],
+        [sys.executable, "-B", "-c", "import scripts.data_audit, scripts.metrics, scripts.temporal_availability, scripts.runtime_provenance, scripts.group_validation, scripts.stateful_scheduling, scripts.structured_improvement, scripts.mechanism_closure, scripts.spectral_conventions"],
         cwd=isolated,
         env={**__import__("os").environ, "PYTHONPATH": str(isolated), "PYTHONDONTWRITEBYTECODE": "1"},
         capture_output=True,
