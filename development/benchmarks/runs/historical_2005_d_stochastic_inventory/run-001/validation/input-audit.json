@@ -1,0 +1,107 @@
+{
+  "total_rows": 140,
+  "missing_cells": 0,
+  "invalid_rows": 0,
+  "duplicate_full_rows": "NOT_APPLICABLE: repeated durations are valid observations",
+  "frequency_boundary_rows": "NOT_APPLICABLE",
+  "anomaly_rows": "NONE_REMOVED",
+  "items": [
+    {
+      "product": 1,
+      "n": 36,
+      "missing": 0,
+      "negative": 0,
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0
+      ],
+      "counts": [
+        2,
+        4,
+        5,
+        15,
+        5,
+        3,
+        1,
+        1
+      ],
+      "mean": 2.9722222222222223,
+      "sample_sd": 1.5210167860651844,
+      "lag1_correlation": -0.11363992264458926,
+      "ordered_half_means": [
+        3.111111111111111,
+        2.8333333333333335
+      ],
+      "scope": "Ordered observations; repeated values are legitimate delivery durations, not duplicate records to delete"
+    },
+    {
+      "product": 2,
+      "n": 43,
+      "missing": 0,
+      "negative": 0,
+      "values": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "counts": [
+        2,
+        23,
+        12,
+        5,
+        1
+      ],
+      "mean": 2.5348837209302326,
+      "sample_sd": 0.8549251487509169,
+      "lag1_correlation": -0.050956316403646305,
+      "ordered_half_means": [
+        2.380952380952381,
+        2.6818181818181817
+      ],
+      "scope": "Ordered observations; repeated values are legitimate delivery durations, not duplicate records to delete"
+    },
+    {
+      "product": 3,
+      "n": 61,
+      "missing": 0,
+      "negative": 0,
+      "values": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "counts": [
+        27,
+        20,
+        8,
+        3,
+        2,
+        1
+      ],
+      "mean": 1.9508196721311475,
+      "sample_sd": 1.1608363293791926,
+      "lag1_correlation": 0.47432187524449015,
+      "ordered_half_means": [
+        1.8,
+        2.096774193548387
+      ],
+      "scope": "Ordered observations; repeated values are legitimate delivery durations, not duplicate records to delete"
+    }
+  ],
+  "unresolved_questions": [
+    "Population tail support",
+    "Serial dependence and stationarity",
+    "Source c4 unit conflict"
+  ]
+}

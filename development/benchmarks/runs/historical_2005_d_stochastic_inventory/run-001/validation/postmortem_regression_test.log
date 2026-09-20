@@ -1,0 +1,9 @@
+PASS | canonical audit summary preserves duplicate_full_rows=1
+PASS | contradictory duplicate count is rejected
+PASS | consistent canonical duplicate count is accepted
+PASS | unchanged protocol is valid
+PASS | undeclared protocol drift is rejected
+PASS | declared protocol drift is accepted
+PASS | sensitivity perturbation remains simulated
+
+Postmortem Regression Test: PASS (7/7 checks)

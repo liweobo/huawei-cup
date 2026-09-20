@@ -1,0 +1,14 @@
+PASS | prior run paths are excluded
+PASS | evaluator files are excluded
+PASS | raw input hash matches canonical source
+PASS | runtime skill identity is hash-verifiable
+PASS | pre-run visibility report passes
+PASS | generated path inside workspace is accepted
+PASS | developer repository path is rejected for writes
+PASS | previous run output is rejected by visibility gate
+PASS | active evidence set is bound to current run
+PASS | canonicalization preserves selected output
+PASS | clean room can be removed after canonicalization
+PASS | canonicalization manifest is retained
+
+Clean-room Regression Test: PASS (13/13 checks)

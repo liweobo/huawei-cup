@@ -1,0 +1,102 @@
+{
+  "benchmark_id": "historical_2005_d_stochastic_inventory",
+  "run": "run-001",
+  "skill_modified": false,
+  "excellent_solutions_accessed": false,
+  "source": {
+    "repository": "zhanwen/MathModel",
+    "path": "国赛试题/2005年研究生数学建模竞赛试题/仓库容量有限条件下的随机存贮模型（D）.doc",
+    "git_blob_sha": "cc7540cbfa71e42d5a8809e933a3856e3c924197",
+    "sha256": "164ec41eb17115f9ae7c64a0f0c7244759353c82e29e498f98f091c0ce88565d",
+    "size_bytes": 110080,
+    "blob_sha_matches_declared": true,
+    "sha256_recomputed_after_run": "PENDING",
+    "external_attachments": "NONE",
+    "extraction_method": "OLE piece table for body text; 76 equation objects rendered to preview and transcribed with Word CHPX/PICF position binding",
+    "extraction_quality": {
+      "body_text": "RELIABLE",
+      "equations": "RELIABLE for all 76 objects, each previewed and transcribed",
+      "tables": "RELIABLE, no numeric table left unmapped",
+      "page_layout": "EXTRACTION_UNVERIFIED"
+    },
+    "word_com_conversion": "FAILED REGDB_E_CLASSNOTREG (0x80040154); environment limitation, not a source defect"
+  },
+  "evidence_items": [
+    {
+      "id": "EV-01",
+      "claim": "Q1 states a single item with fixed daily sales, random replenishment lead time, fixed order quantity top-up to Q, own plus rented warehouse, lost-sale penalty, and asks for the optimal reorder point.",
+      "evidence": "source-provenance/problem-transcription.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "EV-02",
+      "claim": "Q2 provides 36, 43 and 61 ordered delivery-time observations for three products.",
+      "evidence": "validation/input-audit.json; three independent counts agree",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "EV-03",
+      "claim": "Q4 fixes volumes 0.05/0.04/0.10, Q0=6, Q=10 and lead time Uniform(1,3).",
+      "evidence": "source-provenance/problem-transcription.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "EV-04",
+      "claim": "The source defines c4 inconsistently across sub-questions (per unit lost sale vs per box-day vs per volume-day).",
+      "evidence": "cost-ledger.md SOURCE_UNIT_CONFLICT",
+      "status": "VERIFIED, resolved by explicit dual interpretation rather than silent choice"
+    },
+    {
+      "id": "EV-05",
+      "claim": "Q3 requires joint ordering of multiple products with a common random arrival and allocation of limited own capacity.",
+      "evidence": "source-provenance/problem-transcription.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "EV-06",
+      "claim": "Q5 is open-ended: random sales plus changing ordering environment.",
+      "evidence": "source-provenance/problem-transcription.txt",
+      "status": "VERIFIED"
+    }
+  ],
+  "experiment_items": [
+    {
+      "id": "EX-01",
+      "name": "analytic renewal-reward primary model",
+      "artifact": "results/single.json, results/joint.json",
+      "status": "RAN"
+    },
+    {
+      "id": "EX-02",
+      "name": "event-path simulation cross-check",
+      "artifact": "validation/model-checks.json",
+      "status": "RAN, agrees with analytic benchmark"
+    },
+    {
+      "id": "EX-03",
+      "name": "Q5 static vs adaptive policy with common random numbers",
+      "artifact": "results/q5.json",
+      "status": "RAN"
+    },
+    {
+      "id": "EX-04",
+      "name": "q1 deterministic special case and one-period exact expectation",
+      "artifact": "results/environment.json, validation/model-checks.json",
+      "status": "RAN"
+    },
+    {
+      "id": "EX-05",
+      "name": "sensitivity on capacity, cost and lead-time distribution",
+      "artifact": "results/sensitivity.json, validation/dependent-lead-sensitivity.json, validation/boundary-sensitivity.json",
+      "status": "RAN"
+    }
+  ],
+  "gap_candidate": {
+    "name": "ORDERED_PROTOCOL_NORMALIZATION_FALSE_NEGATIVE",
+    "artifact": "validation/ordered-protocol-probe.json",
+    "level": "P1",
+    "affects_this_problem_directly": false,
+    "affects_problem_class": true,
+    "generic": true
+  }
+}

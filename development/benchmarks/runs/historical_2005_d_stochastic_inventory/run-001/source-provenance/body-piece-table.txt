@@ -1,0 +1,71 @@
+2005年全国部分高校研究生数学建模竞赛D题  
+仓库容量有限条件下的随机存贮管理
+
+工厂生产需定期地定购各种原料，商家销售要成批地购进各种商品。无论是原料或商品，都有一个怎样存贮的问题。存得少了无法满足需求，影响利润；存得太多，存贮费用就高。因此说存贮管理是降低成本、提高经济效益的有效途径和方法。
+问题1 某商场销售的某种商品。市场上这种商品的销售速率假设是不变的，记为 EMBED Equation.3  ；每次进货的订货费为常数 EMBED Equation.3  与商品的数量和品种无关；使用自己的仓库存贮商品时，单位商品每天的存贮费用记为 EMBED Equation.3  ，由于自己的仓库容量有限，超出时需要使用租借的仓库存贮商品，单位商品每天的存贮费用记为 EMBED Equation.3  ，且 EMBED Equation.3  ；允许商品缺货，但因缺货而减少销售要造成损失，单位商品的损失记为 EMBED Equation.3  ；每次订货，设货物在 EMBED Equation.3  天后到达，交货时间 EMBED Equation.3  是随机的；自己的仓库用于存贮该商品的最大容量为 EMBED Equation.3  ，每次到货后使这种商品的存贮量 EMBED Equation.3  补充到固定值 EMBED Equation.3  为止，且 EMBED Equation.3  ；在销售过程中每当存贮量 EMBED Equation.3  降到 EMBED Equation.3  时即开始订货。 请你给出求使总损失费用达到最低的订货点 EMBED Equation.3  （最优订货点）的数学模型。
+问题2 以下是来自某个大型超市的关于三种商品的真实数据：
+商品一：康师傅精装巧碗香菇炖鸡面
+ EMBED Equation.3  =12盒/天；
+ EMBED Equation.3  =10元；
+ EMBED Equation.3  =0.01元/盒.天；
+ EMBED Equation.3  =0.02元/盒.天；
+ EMBED Equation.3  =0.95元/盒.天；
+ EMBED Equation.3  =40盒；
+ EMBED Equation.3  =60盒，
+共有连续的36次订货后到达时间天数记录如下：
+3 3 7 1 2 3 3 0 3 4 6 3 1 4 3 3 2 5 2 3 2 5 3 2 3 3 0 3 4 3 1 4 5 4 3 1。
+
+商品二：心相印手帕纸10小包装
+ EMBED Equation.3  =15盒/天；
+ EMBED Equation.3  =10元；
+ EMBED Equation.3  =0.03元/盒.天；
+ EMBED Equation.3  =0.04元/盒.天；
+ EMBED Equation.3  =1.50元/盒.天；
+ EMBED Equation.3  =40盒；
+ EMBED Equation.3  =60盒，
+共有连续的43次订货后到达天数记录如下：
+4 2 3 3 2 2 2 2 2 2 2 2 3 2 1 2 4 3 2 3 2 2 4 2 3 4 3 3 2 3 2 3 2 2 1 3 2 5 3 2 4 2 2 。
+
+商品三：中汇香米5KG装 
+ EMBED Equation.3  =20袋/天；
+ EMBED Equation.3  =10元；
+ EMBED Equation.3  =0.06元/袋.天；
+ EMBED Equation.3  =0.08元/袋.天；
+ EMBED Equation.3  =1.25元/袋.天；
+ EMBED Equation.3  =20袋；
+ EMBED Equation.3  =40袋，
+共有连续的61次订货后到达天数记录如下：
+3 4 4 2 3 3 2 2 1 2 1 1 1 2 1 1 1 1 1 1 2 2 5 1 1 1 2 1 1 1 1 1 1 2 2 1 2 2 3 3 1 2 2 1 2 2 1 2 1 2 1 1 2 3 2 5 6 3 4 3 1。
+按你的模型分别计算出这三种商品各自相应的最优订货点 EMBED Equation.3  。
+问题3 问题1是只有一种商品需要定货的情形。实际上常遇到在库存容量有限的情况下，有多种商品需要同时订货的情形，这时需考虑充分利用存贮体积的问题。设有 EMBED Equation.3  种商品需要订货，它们每次一同从一个供应站订货，每次进货的订货费为常数 EMBED Equation.3  与商品的数量和品种无关；订购的货物同时到达，到货天数 EMBED Equation.3  如问题1所述是随机的。这 EMBED Equation.3  种商品的销售速率分别为 EMBED Equation.3  （袋或盒/天） EMBED Equation.3  ，每袋（或盒）的体积分别为 EMBED Equation.3   EMBED Equation.3  。使用自己的仓库和租借的仓库时单位体积商品每天的存贮费分别记成 EMBED Equation.3  和 EMBED Equation.3   EMBED Equation.3  ，单位体积商品每天的缺货损失记成 EMBED Equation.3   EMBED Equation.3  ，自己的仓库用于存贮这 EMBED Equation.3  种商品的总体积容量为 EMBED Equation.3  ，每次到货后这 EMBED Equation.3  种商品的存贮量总体积补充到固定体积容量 EMBED Equation.3  为止，且 EMBED Equation.3  。每当这 EMBED Equation.3  种商品的存贮量总体积 EMBED Equation.3  降到 EMBED Equation.3  时即开始订货。试通过建立数学模型说明应如何确定最优订货点 EMBED Equation.3  和自己的仓库用于存贮这 EMBED Equation.3  种商品的各自体积容量 EMBED Equation.3   EMBED Equation.3  以及在订货到达时使这 EMBED Equation.3  种商品各自存贮量补充到的固定体积 EMBED Equation.3    EMBED Equation.3  ，才能使总损失费用达到最低？
+问题4 如果把问题2中的三种商品按问题3的方法同时订货，其中 EMBED Equation.3  立方米， EMBED Equation.3  立方米， EMBED Equation.3  立方米，自己的仓库用于存贮这3种商品的总体积容量 EMBED Equation.3  立方米，每次到货后这3种商品的存贮量总体积补充到固定体积容量 EMBED Equation.3  立方米为止，且该供应站从接到订货通知到货物送达商场的天数 EMBED Equation.3  服从在1天到3天之间的均匀分布。其余数据同问题2中相应的商品中所列出的数据。试按问题3的模型求出这3种商品的最优订货点 EMBED Equation.3  和自己的仓库用于存贮这3种商品的各自体积容量 EMBED Equation.3   EMBED Equation.3  以及在订货到达时使这3种商品各自存贮量补充到的固定体积 EMBED Equation.3    EMBED Equation.3  。
+问题5商品的销售经常是随机的、订货情况在一段时间后是会发生变化的，相应地商家就应该调整订货和存贮策略。你们能否对此建立数学模型加以讨论。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

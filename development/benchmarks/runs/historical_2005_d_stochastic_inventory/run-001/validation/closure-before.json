@@ -1,0 +1,23 @@
+{
+  "valid_schema": true,
+  "schema_errors": [],
+  "closure_status": "SCENARIO_ASSUMED",
+  "allowed_claim_level": "SCENARIO_RESULT",
+  "claimed_level": null,
+  "claim_allowed": true,
+  "identifiability_status": "LIMITED",
+  "numerical_termination_verified": false,
+  "reviewer_codes": [
+    "TERMINATION_RULE_UNVERIFIED"
+  ],
+  "essential_requirements": [
+    "capacity",
+    "initial_state",
+    "top_up",
+    "lead_law",
+    "demand",
+    "shortage_cost",
+    "objective",
+    "horizon"
+  ]
+}

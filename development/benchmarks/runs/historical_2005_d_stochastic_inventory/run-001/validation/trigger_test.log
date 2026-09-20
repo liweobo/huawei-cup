@@ -1,0 +1,46 @@
+PASS | 2026华为杯建模 -> trigger=True
+PASS | 研究生数学建模选题 -> trigger=True
+PASS | 数模附件分析 -> trigger=True
+PASS | 华为杯模型选择 -> trigger=True
+PASS | 数学建模论文审稿 -> trigger=True
+PASS | 数模提交检查 -> trigger=True
+PASS | 研究生数学建模模型验证 -> trigger=True
+PASS | 华为杯先分析赛题 -> trigger=True
+PASS | 数模数据审计 -> trigger=True
+PASS | 数学建模竞赛灵敏度分析 -> trigger=True
+PASS | 华为杯鲁棒性检查 -> trigger=True
+PASS | 数模论文找漏洞 -> trigger=True
+PASS | 帮我求这个积分 -> trigger=False
+PASS | 随机森林是什么 -> trigger=False
+PASS | Python报错怎么解决 -> trigger=False
+PASS | 翻译这一段论文 -> trigger=False
+PASS | 普通线性代数问题 -> trigger=False
+PASS | 一般统计学知识问答 -> trigger=False
+PASS | XGBoost 的原理是什么 -> trigger=False
+PASS | 帮我修复 pandas KeyError -> trigger=False
+PASS | 把这篇英文论文翻译成中文 -> trigger=False
+PASS | 解释一下 TOPSIS -> trigger=False
+PASS | 普通回归作业怎么做 -> trigger=False
+PASS | 证明这个矩阵是正定的 -> trigger=False
+PASS | 帮我看一下附件 -> trigger=False, route=audit_data
+PASS | 分析一下这个 CSV -> trigger=False, route=audit_data
+PASS | 模型选择怎么做？ -> trigger=False, route=design_model
+PASS | 机器学习模型选择怎么做？ -> trigger=False
+PASS | 怎么做交叉验证？ -> trigger=False, route=validate_model
+PASS | 帮我写一篇机器学习论文 -> trigger=False, route=write_paper
+PASS | 随机森林和 XGBoost 哪个好？ -> trigger=False
+PASS | 做一下敏感性分析 -> trigger=False, route=validate_model
+PASS | 我有一个优化问题 -> trigger=False
+PASS | 我在做数学建模竞赛，帮我分析问题三 -> trigger=True, route=analyze_problem
+PASS | 我在做数学建模竞赛，问题三到底要求什么？ -> trigger=True, route=analyze_problem
+PASS | 数模国赛这道题应该怎么拆？ -> trigger=True, route=analyze_problem
+PASS | MCM Problem C 怎么建模？ -> trigger=True, route=design_model
+PASS | 我正在参加数学建模比赛，先分析题意 -> trigger=True, route=analyze_problem
+PASS | 这是我们的数模赛题附件 -> trigger=True, route=audit_data
+PASS | 数学建模比赛进入模型验证阶段了 -> trigger=True, route=validate_model
+PASS | 我们已经做完 baseline，下一步做什么？ -> trigger=True
+PASS | 我在做数学建模竞赛，先分析题意，不要建模 -> trigger=True, route=analyze_problem
+PASS | 我不是在做数学建模，只是想了解随机森林 -> trigger=False
+PASS | 我不是在做数模，只是想写一篇机器学习论文 -> trigger=False
+
+Trigger Boundary Test: 44/44 passed

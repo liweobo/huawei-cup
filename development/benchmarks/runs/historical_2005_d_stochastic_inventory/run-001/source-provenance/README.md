@@ -1,0 +1,13 @@
+# Original-source provenance and extraction audit
+
+The only problem-specific network requests were the user-authorized original-problem directory listing and its exact Git blob. URLs, directory entries, blob SHA, SHA256 and byte count are in `source.json`. The original 110080-byte DOC is preserved unchanged. The document title says “随机存贮管理”; the supplied filename says “随机存贮模型”. Both are preserved.
+
+Legacy format: OLE Compound File, WordDocument/1Table piece table, with Equation.3 OLE objects. Word COM conversion failed with REGDB_E_CLASSNOTREG; no installed Word renderer or bundled LibreOffice was available. No full-page layout-render claim is made.
+
+Extraction: `extract-ole.py` decodes the actual Word piece table, preserving equation field markers. `extract-wmf.py` recovers the zlib-compressed WMF equation previews in the Data stream. `map-equations.py` follows CHPX FKP `sprmCPicLocation` offsets for **all 76 inline equation occurrences**, binding the text position to the exact PICF preview. Thus preview order is verified, not inferred from filenames. All 76 were visually inspected in `equation-previews/equation-contact-sheet.png`; the readable transcription is in `equations.json` and inserted into `problem-transcription.txt` with stable EQ locators. Raw native equations are recoverable from the retained original; generated stream fragments are excluded from Git.
+
+Body quality: complete Q1-Q5, intact Chinese text and three numeric lead-time lists. Counts independently match 36, 43 and 61. There are no table-cell terminators in the extracted main text: the data are paragraphs/lists, not a separate numeric table. The parameter table in problem-facts.md is an audit reconstruction, not a claim that the source contains a Word table. No referenced external attachment, figure, missing equation or missing numeric table was found. The allowed directory has no D-specific attachment file. Document pagination/layout is EXTRACTION_UNVERIFIED, but no decision-relevant equation or numeric table remains EXTRACTION_UNVERIFIED.
+
+Important source inconsistency: Q1 defines c4 as loss per unsold unit; Q2 prints yuan/item.day, and Q3 says per-volume per-day shortage loss. Extraction cannot resolve this semantic conflict. It is retained as SOURCE_UNIT_CONFLICT, with separate explicit model interpretations.
+
+Reproduction: run acquire.py only in a fresh run (it refuses to overwrite the initial integrity snapshot); install olefile 0.47 in the ignored extraction-deps directory, run extract-ole.py, extract-wmf.py, render-equations.ps1, map-equations.py, then prepare.py. The documented Word failure is not a required successful extraction step. `prepare.py` is initialization only and must not overwrite a completed experiment record.

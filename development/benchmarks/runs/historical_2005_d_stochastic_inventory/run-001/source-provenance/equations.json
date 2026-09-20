@@ -1,0 +1,382 @@
+[
+  {
+    "id": "EQ001",
+    "text": "r",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ002",
+    "text": "c_1",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ003",
+    "text": "c_2",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ004",
+    "text": "c_3",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ005",
+    "text": "c_2 <= c_3",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ006",
+    "text": "c_4",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ007",
+    "text": "X",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ008",
+    "text": "X",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ009",
+    "text": "Q_0",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ010",
+    "text": "q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ011",
+    "text": "Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ012",
+    "text": "Q_0 < Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ013",
+    "text": "q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ014",
+    "text": "L",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ015",
+    "text": "L*",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ016",
+    "text": "r",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ017",
+    "text": "c_1",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ018",
+    "text": "c_2",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ019",
+    "text": "c_3",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ020",
+    "text": "c_4",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ021",
+    "text": "Q_0",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ022",
+    "text": "Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ023",
+    "text": "r",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ024",
+    "text": "c_1",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ025",
+    "text": "c_2",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ026",
+    "text": "c_3",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ027",
+    "text": "c_4",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ028",
+    "text": "Q_0",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ029",
+    "text": "Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ030",
+    "text": "r",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ031",
+    "text": "c_1",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ032",
+    "text": "c_2",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ033",
+    "text": "c_3",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ034",
+    "text": "c_4",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ035",
+    "text": "Q_0",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ036",
+    "text": "Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ037",
+    "text": "L*",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ038",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ039",
+    "text": "c_1",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ040",
+    "text": "X",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ041",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ042",
+    "text": "r_i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ043",
+    "text": "(i=1,2,...,m)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ044",
+    "text": "v_i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ045",
+    "text": "(i=1,2,...,m)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ046",
+    "text": "c_2i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ047",
+    "text": "c_3i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ048",
+    "text": "(i=1,2,...,m)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ049",
+    "text": "c_4i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ050",
+    "text": "(i=1,2,...,m)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ051",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ052",
+    "text": "Q_0",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ053",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ054",
+    "text": "Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ055",
+    "text": "Q_0 < Q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ056",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ057",
+    "text": "q",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ058",
+    "text": "L",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ059",
+    "text": "L*",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ060",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ061",
+    "text": "Q_0i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ062",
+    "text": "(i=1,2,...,m)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ063",
+    "text": "m",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ064",
+    "text": "Q_i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ065",
+    "text": "(i=1,2,...,m)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ066",
+    "text": "v_1 = 0.05",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ067",
+    "text": "v_2 = 0.04",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ068",
+    "text": "v_3 = 0.10",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ069",
+    "text": "Q_0 = 6",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ070",
+    "text": "Q = 10",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ071",
+    "text": "X",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ072",
+    "text": "L*",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ073",
+    "text": "Q_0i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ074",
+    "text": "(i=1,2,3)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ075",
+    "text": "Q_i",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  },
+  {
+    "id": "EQ076",
+    "text": "(i=1,2,3)",
+    "status": "VERIFIED_PREVIEW_AND_POSITION"
+  }
+]

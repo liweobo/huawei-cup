@@ -1,0 +1,215 @@
+EEEEEE.EEE.............................................................. [ 23%]
+........................................................................ [ 47%]
+........................................................................ [ 70%]
+........................................................................ [ 94%]
+.................                                                        [100%]
+=================================== ERRORS ====================================
+_____ ERROR at setup of test_all_seven_exposures_audited_at_entity_level ______
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+_______ ERROR at setup of test_q2c_crude_adjusted_and_timing_boundaries _______
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+__________ ERROR at setup of test_q2d_small_joint_model_and_hm_roles __________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+_ ERROR at setup of test_temporal_sources_and_clustered_uncertainty_have_provenance _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+____________ ERROR at setup of test_q2_causal_wording_and_records _____________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+____ ERROR at setup of test_targeted_outputs_have_matching_evidence_hashes ____
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+_ ERROR at setup of test_q2a_same_model_row_vs_grouped_and_final_residual_scope _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("grouped-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_group_validation_q2.py:346: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/grouped-q2-targeted0')
+
+    def run_targeted(output):
+        output = Path(output).resolve()
+        if any(output.is_relative_to(PROJECT / area) for area in ("skill", "development/benchmarks")):
+>           raise ValueError("targeted outputs must not enter Skill or historical evidence")
+E           ValueError: targeted outputs must not enter Skill or historical evidence
+
+development\tests\test_2023e_group_validation_q2.py:231: ValueError
+_ ERROR at setup of test_q2b_training_discovery_and_known_baseline_assignment _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("grouped-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_group_validation_q2.py:346: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/grouped-q2-targeted0')
+
+    def run_targeted(output):
+        output = Path(output).resolve()
+        if any(output.is_relative_to(PROJECT / area) for area in ("skill", "development/benchmarks")):
+>           raise ValueError("targeted outputs must not enter Skill or historical evidence")
+E           ValueError: targeted outputs must not enter Skill or historical evidence
+
+development\tests\test_2023e_group_validation_q2.py:231: ValueError
+__ ERROR at setup of test_targeted_evidence_records_and_hashes_are_traceable __
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...chmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("grouped-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_group_validation_q2.py:346: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2005_d_stochastic_inventory/run-001/work/pytest/grouped-q2-targeted0')
+
+    def run_targeted(output):
+        output = Path(output).resolve()
+        if any(output.is_relative_to(PROJECT / area) for area in ("skill", "development/benchmarks")):
+>           raise ValueError("targeted outputs must not enter Skill or historical evidence")
+E           ValueError: targeted outputs must not enter Skill or historical evidence
+
+development\tests\test_2023e_group_validation_q2.py:231: ValueError
+=========================== short test summary info ===========================
+ERROR development/tests/test_2023e_association_q2.py::test_all_seven_exposures_audited_at_entity_level
+ERROR development/tests/test_2023e_association_q2.py::test_q2c_crude_adjusted_and_timing_boundaries
+ERROR development/tests/test_2023e_association_q2.py::test_q2d_small_joint_model_and_hm_roles
+ERROR development/tests/test_2023e_association_q2.py::test_temporal_sources_and_clustered_uncertainty_have_provenance
+ERROR development/tests/test_2023e_association_q2.py::test_q2_causal_wording_and_records
+ERROR development/tests/test_2023e_association_q2.py::test_targeted_outputs_have_matching_evidence_hashes
+ERROR development/tests/test_2023e_group_validation_q2.py::test_q2a_same_model_row_vs_grouped_and_final_residual_scope
+ERROR development/tests/test_2023e_group_validation_q2.py::test_q2b_training_discovery_and_known_baseline_assignment
+ERROR development/tests/test_2023e_group_validation_q2.py::test_targeted_evidence_records_and_hashes_are_traceable
+296 passed, 9 errors in 94.58s (0:01:34)

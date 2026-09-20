@@ -1,0 +1,34 @@
+[
+  {
+    "epsilon": 1.0,
+    "L": 39.0,
+    "cost": 11.441863990167967,
+    "fill": 0.7894305612453911,
+    "exact_math_stockout_probability": 0.5573770491803278,
+    "warning": "Do not round L to Q and preserve the same stockout probability"
+  },
+  {
+    "epsilon": 0.01,
+    "L": 39.99,
+    "cost": 11.365500404938233,
+    "fill": 0.7982281852130336,
+    "exact_math_stockout_probability": 0.5573770491803278,
+    "warning": "Do not round L to Q and preserve the same stockout probability"
+  },
+  {
+    "epsilon": 1e-06,
+    "L": 39.999999,
+    "cost": 11.364705961828966,
+    "fill": 0.7983193186145049,
+    "exact_math_stockout_probability": 0.5573770491803278,
+    "warning": "Do not round L to Q and preserve the same stockout probability"
+  },
+  {
+    "epsilon": 1e-09,
+    "L": 39.999999999,
+    "cost": 11.36470588243242,
+    "fill": 0.7983193277219758,
+    "exact_math_stockout_probability": 0.5573770491803278,
+    "warning": "Do not round L to Q and preserve the same stockout probability"
+  }
+]

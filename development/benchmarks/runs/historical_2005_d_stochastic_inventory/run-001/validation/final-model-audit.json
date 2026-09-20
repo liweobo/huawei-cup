@@ -1,0 +1,58 @@
+{
+  "status": "PASS_WITH_DECLARED_SCOPE",
+  "cost_capacity_service_checks": [
+    {
+      "product": 1,
+      "policy": "baseline",
+      "component_error": 4.440892098500626e-16,
+      "pass_": true
+    },
+    {
+      "product": 1,
+      "policy": "primary",
+      "component_error": 0.0,
+      "pass_": true
+    },
+    {
+      "product": 2,
+      "policy": "baseline",
+      "component_error": 0.0,
+      "pass_": true
+    },
+    {
+      "product": 2,
+      "policy": "primary",
+      "component_error": 8.881784197001252e-16,
+      "pass_": true
+    },
+    {
+      "product": 3,
+      "policy": "baseline",
+      "component_error": 0.0,
+      "pass_": true
+    },
+    {
+      "product": 3,
+      "policy": "primary",
+      "component_error": 0.0,
+      "pass_": true
+    },
+    {
+      "product": "joint",
+      "policy": "baseline",
+      "component_error": 0.0,
+      "pass_": true
+    },
+    {
+      "product": "joint",
+      "policy": "primary",
+      "component_error": 1.7763568394002505e-15,
+      "pass_": true
+    }
+  ],
+  "q5_conservation_pass": true,
+  "dependent_lead_sensitivity": true,
+  "event_order_guard": "REPRODUCED_FALSE_NEGATIVE; primary implementation was not altered",
+  "rice_open_boundary": "cost infimum, not attained L<Q optimum; integer admissible optimum L=39",
+  "discrete_uniform_sensitivity_service": "ESTIMATE_UNSTABLE at numerical support boundary; do not interpret reported tiny-positive shortage as reliable service probability"
+}

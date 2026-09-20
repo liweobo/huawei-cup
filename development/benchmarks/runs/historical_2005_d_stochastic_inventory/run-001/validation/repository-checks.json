@@ -1,0 +1,233 @@
+[
+  {
+    "check": "default_pytest",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "exit_code": 2,
+    "seconds": 11.885210275650024,
+    "log": "validation/default_pytest.log"
+  },
+  {
+    "check": "development_tests",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "development/tests",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2005_d_stochastic_inventory\\run-001\\work\\pytest"
+    ],
+    "exit_code": 1,
+    "seconds": 95.92434024810791,
+    "log": "validation/development_tests.log"
+  },
+  {
+    "check": "smoke_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/smoke_test.py"
+    ],
+    "exit_code": 1,
+    "seconds": 2.4485061168670654,
+    "log": "validation/smoke_test.log"
+  },
+  {
+    "check": "routing_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/routing_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.1494314670562744,
+    "log": "validation/routing_test.log"
+  },
+  {
+    "check": "trigger_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/trigger_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.4782555103302002,
+    "log": "validation/trigger_test.log"
+  },
+  {
+    "check": "adversarial_trigger_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/adversarial_trigger_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.2330160140991211,
+    "log": "validation/adversarial_trigger_test.log"
+  },
+  {
+    "check": "behavior_contract_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/behavior_contract_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.33377957344055176,
+    "log": "validation/behavior_contract_test.log"
+  },
+  {
+    "check": "trajectory_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/trajectory_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.8005471229553223,
+    "log": "validation/trajectory_test.log"
+  },
+  {
+    "check": "trajectory_safety_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/trajectory_safety_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.29561901092529297,
+    "log": "validation/trajectory_safety_test.log"
+  },
+  {
+    "check": "historical_artifact_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/historical_artifact_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 4.659959316253662,
+    "log": "validation/historical_artifact_test.log"
+  },
+  {
+    "check": "postmortem_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/postmortem_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.2542860507965088,
+    "log": "validation/postmortem_regression_test.log"
+  },
+  {
+    "check": "problem_facts_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/problem_facts_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 68.46512913703918,
+    "log": "validation/problem_facts_test.log"
+  },
+  {
+    "check": "run001_integrity_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/run001_integrity_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.8643035888671875,
+    "log": "validation/run001_integrity_test.log"
+  },
+  {
+    "check": "run002_integrity_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/run002_integrity_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.6783027648925781,
+    "log": "validation/run002_integrity_test.log"
+  },
+  {
+    "check": "run003_integrity_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/run003_integrity_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 18.79061985015869,
+    "log": "validation/run003_integrity_test.log"
+  },
+  {
+    "check": "run_attempt_integrity_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/run_attempt_integrity_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.24227309226989746,
+    "log": "validation/run_attempt_integrity_test.log"
+  },
+  {
+    "check": "clean_room_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/clean_room_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.502145528793335,
+    "log": "validation/clean_room_regression_test.log"
+  },
+  {
+    "check": "temporal_availability_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/temporal_availability_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.7391471862792969,
+    "log": "validation/temporal_availability_regression_test.log"
+  },
+  {
+    "check": "runtime_binding_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/runtime_binding_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.3911666870117188,
+    "log": "validation/runtime_binding_regression_test.log"
+  },
+  {
+    "check": "portable_runtime_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/portable_runtime_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 35.629149436950684,
+    "log": "validation/portable_runtime_regression_test.log"
+  },
+  {
+    "check": "repository_packaging_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/repository_packaging_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.0531013011932373,
+    "log": "validation/repository_packaging_regression_test.log"
+  },
+  {
+    "check": "phase5_regression_test",
+    "command": [
+      "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "development/harness/phase5_regression_test.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.3332483768463135,
+    "log": "validation/phase5_regression_test.log"
+  }
+]

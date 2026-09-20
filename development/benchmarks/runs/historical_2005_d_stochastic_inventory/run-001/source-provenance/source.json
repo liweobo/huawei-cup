@@ -1,0 +1,45 @@
+{
+  "source_tree": "https://github.com/zhanwen/MathModel/tree/master/国赛试题/2005年研究生数学建模竞赛试题",
+  "file_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2005%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/%E4%BB%93%E5%BA%93%E5%AE%B9%E9%87%8F%E6%9C%89%E9%99%90%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E9%9A%8F%E6%9C%BA%E5%AD%98%E8%B4%AE%E6%A8%A1%E5%9E%8B%EF%BC%88D%EF%BC%89.doc",
+  "raw_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2005年研究生数学建模竞赛试题/仓库容量有限条件下的随机存贮模型（D）.doc",
+  "directory_api": "https://api.github.com/repos/zhanwen/MathModel/contents/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2005%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98?ref=master",
+  "blob_api": "https://api.github.com/repos/zhanwen/MathModel/git/blobs/cc7540cbfa71e42d5a8809e933a3856e3c924197",
+  "blob_sha": "cc7540cbfa71e42d5a8809e933a3856e3c924197",
+  "sha256": "164ec41eb17115f9ae7c64a0f0c7244759353c82e29e498f98f091c0ce88565d",
+  "bytes": 110080,
+  "original_file": "仓库容量有限条件下的随机存贮模型（D）.doc",
+  "access_date": "2026-09-20",
+  "directory_entries": [
+    {
+      "name": ".DS_Store",
+      "sha": "d1c2018c733b1123fa16547a38076d12d71004d3",
+      "type": "file"
+    },
+    {
+      "name": "仓库容量有限条件下的随机存贮模型（D）.doc",
+      "sha": "cc7540cbfa71e42d5a8809e933a3856e3c924197",
+      "type": "file"
+    },
+    {
+      "name": "出租车模型及数据（C）.doc",
+      "sha": "6b825c33cff500fa0bec7e88827b0a194dc53d6b",
+      "type": "file"
+    },
+    {
+      "name": "空中加油（B）.doc",
+      "sha": "6fec3f29507c0823546a3d769e91cb5609e4ce30",
+      "type": "file"
+    },
+    {
+      "name": "高速公路行车时间的估计A1(英文）.doc",
+      "sha": "cb5bd8ae4aaa65bfe15fbc3bb45b83b1f11b3d1c",
+      "type": "file"
+    },
+    {
+      "name": "高速公路行车时间的估计A2（英文）.doc",
+      "sha": "82ab2150fd0a1583731c6242c0b4a577d8023671",
+      "type": "file"
+    }
+  ],
+  "excellent_solutions_accessed": false
+}

@@ -1,0 +1,16 @@
+PASS | Run-003 archive metadata files exist
+PASS | all YAML/JSON archive files are parseable
+PASS | documented truncated capture tail: observed-artifacts\work\turn-001.jsonl:702
+PASS | retained raw JSONL turn logs parse, allowing documented Turn-001 tail
+PASS | manifest binds benchmark and active run
+PASS | manifest retains NEEDS_REVIEW / NOT_READY outcome
+PASS | workspace isolation regression is explicitly retained
+PASS | transcript uses schema version 3 and active run-003
+PASS | transcript contains exactly 14 captured turns
+PASS | evaluation has all eight dimensions
+PASS | 21 evidence entries resolve and match SHA256
+PASS | all transcript and claim evidence refs resolve
+PASS | Active Evidence Set is non-empty and run-003-only
+PASS | no consumed evidence entry belongs to an older run
+
+Run-003 Integrity Test: PASS (11/11 checks)

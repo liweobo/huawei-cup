@@ -1,0 +1,35 @@
+{
+  "scope": "SCENARIO: circular block lead dependence, fixed empirical marginal",
+  "block_length": 4,
+  "R": 256,
+  "N": 1024,
+  "cost": {
+    "R": 256,
+    "mean": 11.358641365385392,
+    "se": 0.013481564645827275,
+    "ci95": [
+      11.332091977630249,
+      11.385190753140535
+    ]
+  },
+  "iid_cost": {
+    "R": 256,
+    "mean": 11.365707364320137,
+    "se": 0.011210429943834524,
+    "ci95": [
+      11.343630546139183,
+      11.387784182501091
+    ]
+  },
+  "analytic_long_run_cost": 11.364705961828966,
+  "audit": {
+    "max_conservation_error": 0.0,
+    "max_own": 20.0,
+    "max_rented": 20.0,
+    "capacity_violations": 0,
+    "nonnegative_violations": 0,
+    "one_order_and_arrival_per_cycle": true
+  },
+  "event_count": 146422,
+  "event_interval": "No iid binomial interval: leads within blocks are dependent"
+}

@@ -1,0 +1,115 @@
+PASS | trajectory=historical_2024_c_core_loss | turn=1
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=historical_2024_c_core_loss | turn=2
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=historical_2024_c_core_loss | turn=3
+  trigger=True route=audit_data phase=data
+PASS | trajectory=historical_2024_c_core_loss | turn=4
+  trigger=True route=build_baseline phase=baseline
+PASS | trajectory=historical_2024_c_core_loss | turn=5
+  trigger=True route=design_model phase=modeling
+PASS | trajectory=historical_2024_c_core_loss | turn=6
+  trigger=True route=run_experiment phase=experiment
+PASS | trajectory=historical_2024_c_core_loss | turn=7
+  trigger=True route=design_model phase=modeling
+PASS | trajectory=historical_2024_c_core_loss | turn=8
+  trigger=True route=validate_model phase=validation
+PASS | trajectory=historical_2024_c_core_loss | turn=9
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=historical_2024_c_core_loss | turn=10
+  trigger=True route=audit_data phase=data
+PASS | trajectory=historical_2024_c_core_loss | turn=11
+  trigger=True route=reviewer phase=review
+PASS | trajectory=historical_2024_c_core_loss | turn=12
+  trigger=True route=reviewer phase=review
+PASS | trajectory=historical_2024_c_core_loss | turn=13
+  trigger=True route=write_paper phase=writing
+PASS | trajectory=historical_2024_c_core_loss | turn=14
+  trigger=True route=final_check phase=submission
+PASS | trajectory=evaluation_review_repair_01 | turn=1
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=evaluation_review_repair_01 | turn=2
+  trigger=True route=audit_data phase=data
+PASS | trajectory=evaluation_review_repair_01 | turn=3
+  trigger=True route=build_baseline phase=baseline
+PASS | trajectory=evaluation_review_repair_01 | turn=4
+  trigger=True route=design_model phase=modeling
+PASS | trajectory=evaluation_review_repair_01 | turn=5
+  trigger=True route=run_experiment phase=experiment
+PASS | trajectory=evaluation_review_repair_01 | turn=6
+  trigger=True route=validate_model phase=validation
+PASS | trajectory=evaluation_review_repair_01 | turn=7
+  trigger=True route=write_paper phase=writing
+PASS | trajectory=evaluation_review_repair_01 | turn=8
+  trigger=True route=reviewer phase=review
+PASS | trajectory=evaluation_review_repair_01 | turn=9
+  trigger=True route=write_paper phase=writing
+PASS | trajectory=evaluation_review_repair_01 | turn=10
+  trigger=True route=reviewer phase=review
+PASS | trajectory=evaluation_review_repair_01 | turn=11
+  trigger=True route=final_check phase=submission
+PASS | trajectory=prediction_clean_01 | turn=1
+  trigger=True route=select_problem phase=selection
+PASS | trajectory=prediction_clean_01 | turn=2
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=prediction_clean_01 | turn=3
+  trigger=True route=audit_data phase=data
+PASS | trajectory=prediction_clean_01 | turn=4
+  trigger=True route=build_baseline phase=baseline
+PASS | trajectory=prediction_clean_01 | turn=5
+  trigger=True route=design_model phase=modeling
+PASS | trajectory=prediction_clean_01 | turn=6
+  trigger=True route=run_experiment phase=experiment
+PASS | trajectory=prediction_clean_01 | turn=7
+  trigger=True route=validate_model phase=validation
+PASS | trajectory=prediction_clean_01 | turn=8
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=prediction_clean_01 | turn=9
+  trigger=True route=write_paper phase=writing
+PASS | trajectory=prediction_clean_01 | turn=10
+  trigger=True route=reviewer phase=review
+PASS | trajectory=prediction_clean_01 | turn=11
+  trigger=True route=write_paper phase=writing
+PASS | trajectory=prediction_clean_01 | turn=12
+  trigger=True route=reviewer phase=review
+PASS | trajectory=prediction_clean_01 | turn=13
+  trigger=True route=final_check phase=submission
+PASS | trajectory=optimization_recovery_01 | turn=1
+  trigger=True route=analyze_problem phase=problem_analysis
+PASS | trajectory=optimization_recovery_01 | turn=2
+  trigger=True route=audit_data phase=data
+PASS | trajectory=optimization_recovery_01 | turn=3
+  trigger=True route=audit_data phase=data
+PASS | trajectory=optimization_recovery_01 | turn=4
+  trigger=True route=build_baseline phase=baseline
+PASS | trajectory=optimization_recovery_01 | turn=5
+  trigger=True route=design_model phase=modeling
+PASS | trajectory=optimization_recovery_01 | turn=6
+  trigger=True route=run_experiment phase=experiment
+PASS | trajectory=optimization_recovery_01 | turn=7
+  trigger=True route=validate_model phase=validation
+PASS | trajectory=optimization_recovery_01 | turn=8
+  trigger=True route=design_model phase=modeling
+PASS | trajectory=optimization_recovery_01 | turn=9
+  trigger=True route=run_experiment phase=experiment
+PASS | trajectory=optimization_recovery_01 | turn=10
+  trigger=True route=validate_model phase=validation
+PASS | trajectory=optimization_recovery_01 | turn=11
+  trigger=True route=validate_model phase=validation
+PASS | trajectory=optimization_recovery_01 | turn=12
+  trigger=True route=write_paper phase=writing
+PASS | trajectory=optimization_recovery_01 | turn=13
+  trigger=True route=reviewer phase=review
+PASS | trajectory=optimization_recovery_01 | turn=14
+  trigger=True route=final_check phase=submission
+
+Trajectory Benchmark Metrics (Layer A)
+Trigger Accuracy: 52/52 (100.0%)
+Route Accuracy: 52/52 (100.0%)
+Context Retention: 48/48 (100.0%)
+Transition Accuracy: 48/48 (100.0%)
+Risk Detection: 4/4 (100.0%)
+Route Coverage: 10/10 (analyze_problem, audit_data, build_baseline, design_model, final_check, reviewer, run_experiment, select_problem, validate_model, write_paper)
+Longest Stable Trajectory: 14 turns
+Historical Benchmark Coverage: 1 ACCEPTED/VERIFIED historical trajectories
+Trajectory Benchmark: PASS (4 trajectories, 52 turns)

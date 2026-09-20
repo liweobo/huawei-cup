@@ -1,0 +1,37 @@
+[
+  {
+    "check": "manual single-cycle cost",
+    "lead": 1.0,
+    "expected": 33.0,
+    "actual": 33.0,
+    "pass_": true
+  },
+  {
+    "check": "manual single-cycle cost",
+    "lead": 5.0,
+    "expected": 57.0,
+    "actual": 57.0,
+    "pass_": true
+  },
+  {
+    "check": "zero lead / long lead / exact enumeration",
+    "penalty": "lost",
+    "max_error": 0.0,
+    "pass_": true
+  },
+  {
+    "check": "zero lead / long lead / exact enumeration",
+    "penalty": "exposure",
+    "max_error": 0.0,
+    "pass_": true
+  },
+  {
+    "check": "finite 3-day deterministic oracle incl terminal pending receipt",
+    "cost_per_day": 11.0,
+    "pass_": true
+  },
+  {
+    "check": "hard infeasible policies rejected",
+    "pass_": true
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "probe_kind": "actual frozen-Skill function audit; NOT an executed production protocol change",
+  "planned_order": [
+    "integrate demand and holding on open interval",
+    "receive and top up at arrival",
+    "review/order at event time"
+  ],
+  "changed_execution_order": [
+    "receive and top up at arrival",
+    "integrate demand and holding on open interval",
+    "review/order at event time"
+  ],
+  "expected_protocol_changed": true,
+  "observed_protocol_changed": false,
+  "validator_errors": [],
+  "tiny_event_counterexample": {
+    "initial_inventory": 0,
+    "demand_during_previous_interval": 1,
+    "receipt_at_interval_end": 1,
+    "correct": {
+      "fulfilled": 0,
+      "lost": 1,
+      "end_inventory": 1
+    },
+    "receipt_moved_before_interval": {
+      "fulfilled": 1,
+      "lost": 0,
+      "end_inventory": 0
+    }
+  },
+  "impact": "The normalizer treats every list as an unordered set-like sequence, so causally different event protocols compare equal. Production event order is correct and verified directly.",
+  "executed_counterexample": {
+    "correct_integrate_then_receive": {
+      "end_inventory": 1.0,
+      "fulfilled": 0.0,
+      "lost": 1.0,
+      "cost": 5.0,
+      "conservation_pass": true
+    },
+    "wrong_receive_then_integrate": {
+      "end_inventory": 0.0,
+      "fulfilled": 1.0,
+      "lost": 0.0,
+      "cost": 0.0,
+      "conservation_pass": true
+    }
+  }
+}

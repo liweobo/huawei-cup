@@ -1,0 +1,26 @@
+{
+  "protected_paths": {
+    "development/benchmarks/runs/historical_2020_a_chip_phase_noise/run-001": {
+      "head_tree_present": true,
+      "worktree_modified_tracked": false
+    },
+    "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber": {
+      "head_tree_present": true,
+      "worktree_modified_tracked": false
+    },
+    "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-001": {
+      "head_tree_present": true,
+      "worktree_modified_tracked": false
+    },
+    "development/benchmarks/runs/historical_2022_c_buffer_scheduling/run-002": {
+      "head_tree_present": true,
+      "worktree_modified_tracked": false
+    },
+    "development/benchmarks/runs/historical_2024_c_core_loss": {
+      "head_tree_present": true,
+      "worktree_modified_tracked": false
+    }
+  },
+  "tracked_diff_in_protected_paths": "",
+  "frozen_assets_unmodified": true
+}

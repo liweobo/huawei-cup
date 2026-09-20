@@ -1,0 +1,7 @@
+work/
+__pycache__/
+.pytest_cache/
+source-provenance/embedded/
+source-provenance/equation-previews/*.wmf
+source-provenance/equation-previews/*.bin
+source-provenance/*.pdf

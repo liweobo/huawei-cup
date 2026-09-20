@@ -1,0 +1,650 @@
+{
+  "streams": [
+    {
+      "name": "\u0001CompObj",
+      "bytes": 102,
+      "sha256": "0754a31a60ff44df54312be28ab466784e7dd18b143589ed4d24b8418696b2d9"
+    },
+    {
+      "name": "\u0005DocumentSummaryInformation",
+      "bytes": 320,
+      "sha256": "ceeb004b34b19ebd7947874e11d072e35f276107159719f1be8af15d9019995c"
+    },
+    {
+      "name": "\u0005SummaryInformation",
+      "bytes": 440,
+      "sha256": "815e98648307d7ffeb2d206f92b50bd0081010a7f625b18f2581297b1c1acd6e"
+    },
+    {
+      "name": "1Table",
+      "bytes": 10880,
+      "sha256": "85ebf50563699b1760cf8a966b87a3da1499566c8a9c17a2da3fc349328d621b"
+    },
+    {
+      "name": "Data",
+      "bytes": 39820,
+      "sha256": "c36c3171afea3469771389c30105968b92790b7a315bec5118f35d9d3f59e46d"
+    },
+    {
+      "name": "ObjectPool/_1170936135/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936135/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936135/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936135/Equation Native",
+      "bytes": 41,
+      "sha256": "313e1f8dca11acd51a95d29f56ab63766ec76bb4ca17f494bb6a6baa60f5b203"
+    },
+    {
+      "name": "ObjectPool/_1170936224/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936224/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936224/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936224/Equation Native",
+      "bytes": 54,
+      "sha256": "bf0ddb4f2bd1a267460a8cefb030300aeda9e004aae50d3ab11b3c532c1a5ff3"
+    },
+    {
+      "name": "ObjectPool/_1170936395/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936395/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936395/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936395/Equation Native",
+      "bytes": 54,
+      "sha256": "afbb36819687ad633c0358458a7cb650d2c89fac1f75743eb13d139d1cd9ee11"
+    },
+    {
+      "name": "ObjectPool/_1170936528/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936528/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936528/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936528/Equation Native",
+      "bytes": 54,
+      "sha256": "a4d4fd4369f0723b0c91faf180f1bd7794a2f7e7424679e5f63b77ece9b16158"
+    },
+    {
+      "name": "ObjectPool/_1170936569/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936569/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936569/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936569/Equation Native",
+      "bytes": 76,
+      "sha256": "79c7c42c0d4b8927f5135a35e4156525f4aeff3ede77aee44d80d880ad0495f8"
+    },
+    {
+      "name": "ObjectPool/_1170936741/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936741/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936741/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936741/Equation Native",
+      "bytes": 54,
+      "sha256": "554ed3aa6160ca2092d907f0d1555d54e2db92d772134e6aa6e9385e04ac9f57"
+    },
+    {
+      "name": "ObjectPool/_1170936816/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936816/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936816/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936816/Equation Native",
+      "bytes": 54,
+      "sha256": "d2acf43b01ec394f18399d56714484ed97f4df63347160a02bffb67b735974b6"
+    },
+    {
+      "name": "ObjectPool/_1170936923/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936923/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936923/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936923/Equation Native",
+      "bytes": 41,
+      "sha256": "73930906cf1c5c9d27784f26f825f41700ba7abb50bd3eed1b14c68b80b41982"
+    },
+    {
+      "name": "ObjectPool/_1170936963/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170936963/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170936963/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170936963/Equation Native",
+      "bytes": 63,
+      "sha256": "ecf6d2072bda960973bc03e0bc5a77a2f1e7ccf5c1bb326f9e9c12aa7886bd74"
+    },
+    {
+      "name": "ObjectPool/_1170937071/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1170937071/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1170937071/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1170937071/Equation Native",
+      "bytes": 41,
+      "sha256": "ef92e6dc153170f7a2ec2a2607158ecf64bd6d5283123bcd191479a689ad4f53"
+    },
+    {
+      "name": "ObjectPool/_1179658920/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1179658920/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1179658920/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1179658920/Equation Native",
+      "bytes": 41,
+      "sha256": "8cb74ac42fac2ee30fcf88966efe0b9daa066205819afa7cc6350d963a76cf1d"
+    },
+    {
+      "name": "ObjectPool/_1187077320/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1187077320/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1187077320/\u0003ObjInfo",
+      "bytes": 4,
+      "sha256": "1112da16eb081d8d3dedf4cfb31fb10f96d713988136da3dc00e9f0c8def0e0e"
+    },
+    {
+      "name": "ObjectPool/_1187077320/Equation Native",
+      "bytes": 41,
+      "sha256": "9cb23d4baec4693c296830ce206722d9faf3dfb6ca8adcfb74d763f80d27ad09"
+    },
+    {
+      "name": "ObjectPool/_1187077549/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1187077549/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1187077549/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1187077549/Equation Native",
+      "bytes": 54,
+      "sha256": "4edd7f0ae18e4729e2230be20976c81579b46668dbe5ebdb609f086eb6819eb1"
+    },
+    {
+      "name": "ObjectPool/_1187077609/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1187077609/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1187077609/\u0003ObjInfo",
+      "bytes": 4,
+      "sha256": "1112da16eb081d8d3dedf4cfb31fb10f96d713988136da3dc00e9f0c8def0e0e"
+    },
+    {
+      "name": "ObjectPool/_1187077609/Equation Native",
+      "bytes": 89,
+      "sha256": "d89bf550827bb38f43bc4c5668bd77763bd3c0730c406b9e86c914b436dd6b39"
+    },
+    {
+      "name": "ObjectPool/_1187077746/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1187077746/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1187077746/\u0003ObjInfo",
+      "bytes": 4,
+      "sha256": "1112da16eb081d8d3dedf4cfb31fb10f96d713988136da3dc00e9f0c8def0e0e"
+    },
+    {
+      "name": "ObjectPool/_1187077746/Equation Native",
+      "bytes": 58,
+      "sha256": "a91bdfd4c4fa17be3a46e5322be1ab0a570a59da560dc3ba95c77672ff67e069"
+    },
+    {
+      "name": "ObjectPool/_1187077803/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1187077803/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1187077803/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1187077803/Equation Native",
+      "bytes": 58,
+      "sha256": "51059674eae47e378b21116886e19841533dc1a9155a009023ed9eb8321098a0"
+    },
+    {
+      "name": "ObjectPool/_1187077910/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1187077910/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1187077910/\u0003ObjInfo",
+      "bytes": 4,
+      "sha256": "1112da16eb081d8d3dedf4cfb31fb10f96d713988136da3dc00e9f0c8def0e0e"
+    },
+    {
+      "name": "ObjectPool/_1187077910/Equation Native",
+      "bytes": 58,
+      "sha256": "6b535e0d6046228ba09a1a1d97fe12758208ca635f0d79c1ac7a5767dc85af04"
+    },
+    {
+      "name": "ObjectPool/_1188110246/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "c949fdf8b99bdf552bb27c795baf0508b3b993234d28443a0897af4e50c09244"
+    },
+    {
+      "name": "ObjectPool/_1188110246/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1188110246/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1188110246/Equation Native",
+      "bytes": 276,
+      "sha256": "842a6b4eea7990ebf0f2b25167fe4b1024287f6106e550c8126c24f2d9d90f5f"
+    },
+    {
+      "name": "ObjectPool/_1188110703/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "c949fdf8b99bdf552bb27c795baf0508b3b993234d28443a0897af4e50c09244"
+    },
+    {
+      "name": "ObjectPool/_1188110703/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1188110703/\u0003ObjInfo",
+      "bytes": 4,
+      "sha256": "1112da16eb081d8d3dedf4cfb31fb10f96d713988136da3dc00e9f0c8def0e0e"
+    },
+    {
+      "name": "ObjectPool/_1188110703/Equation Native",
+      "bytes": 295,
+      "sha256": "a863449192e2195fa943dd70aec3b5e5961de1b1a331dd407829f7ac477273cf"
+    },
+    {
+      "name": "ObjectPool/_1188110725/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "c949fdf8b99bdf552bb27c795baf0508b3b993234d28443a0897af4e50c09244"
+    },
+    {
+      "name": "ObjectPool/_1188110725/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1188110725/\u0003ObjInfo",
+      "bytes": 4,
+      "sha256": "1112da16eb081d8d3dedf4cfb31fb10f96d713988136da3dc00e9f0c8def0e0e"
+    },
+    {
+      "name": "ObjectPool/_1188110725/Equation Native",
+      "bytes": 295,
+      "sha256": "a863449192e2195fa943dd70aec3b5e5961de1b1a331dd407829f7ac477273cf"
+    },
+    {
+      "name": "ObjectPool/_1281677654/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1281677654/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1281677654/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1281677654/Equation Native",
+      "bytes": 41,
+      "sha256": "bcf21544c49ed3eeab83b9614f6f81a4361d9acd253bb4b4f0683b2c52906eaf"
+    },
+    {
+      "name": "ObjectPool/_1281677692/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1281677692/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1281677692/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1281677692/Equation Native",
+      "bytes": 54,
+      "sha256": "8e3037169338574a18ea37dd2a244b26e48ea516c077bfa1ae0aaaebc8b20d37"
+    },
+    {
+      "name": "ObjectPool/_1282755839/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282755839/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282755839/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282755839/Equation Native",
+      "bytes": 54,
+      "sha256": "b363ff9b70a356125efeb3abacd917eac64105d388a770cd2717810ad0342784"
+    },
+    {
+      "name": "ObjectPool/_1282756310/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282756310/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282756310/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282756310/Equation Native",
+      "bytes": 75,
+      "sha256": "ad10aa7dce88e02bfac6eed21b0e08ffd0e8cfbd15e15efbb7a73bf1669c450b"
+    },
+    {
+      "name": "ObjectPool/_1282756422/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282756422/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282756422/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282756422/Equation Native",
+      "bytes": 75,
+      "sha256": "7041296b39a47dcd0d5b93335cf5f46ec21daae17c05302f664dc3167e535e7f"
+    },
+    {
+      "name": "ObjectPool/_1282756470/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282756470/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282756470/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282756470/Equation Native",
+      "bytes": 75,
+      "sha256": "9e0ee37e544b9742118300cb8afc67d3fc302da1b75fd8bca3fb88e95f48d090"
+    },
+    {
+      "name": "ObjectPool/_1282756868/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282756868/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282756868/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282756868/Equation Native",
+      "bytes": 63,
+      "sha256": "e7df7006c075be8294ed7fa760910a425831608ee0c0e789dfa2933cfc9e32c9"
+    },
+    {
+      "name": "ObjectPool/_1282756883/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282756883/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282756883/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282756883/Equation Native",
+      "bytes": 53,
+      "sha256": "b39e01de2fed8f86ed6a362fe0fa94d4d235f5b447a982c413811e976702c4cc"
+    },
+    {
+      "name": "ObjectPool/_1282757394/\u0001CompObj",
+      "bytes": 105,
+      "sha256": "bb03894137705839d13b6293683f29cf47d2bdd858f1fa60cc156f98205e22f8"
+    },
+    {
+      "name": "ObjectPool/_1282757394/\u0001Ole",
+      "bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47"
+    },
+    {
+      "name": "ObjectPool/_1282757394/\u0003ObjInfo",
+      "bytes": 6,
+      "sha256": "2a28fd2343a5d14da03ba37ac840cbb0ae87ea4c491a579c07498896f1e46676"
+    },
+    {
+      "name": "ObjectPool/_1282757394/Equation Native",
+      "bytes": 54,
+      "sha256": "46632c760361551287bce954f267cede5cbd89695d395c3cb1e9a82657b90b24"
+    },
+    {
+      "name": "WordDocument",
+      "bytes": 24626,
+      "sha256": "64b97c7abf3830e1d43594aff8ad919b49a1e027dc7d465129fa6daed4882a46"
+    }
+  ],
+  "pieces": [
+    {
+      "start": 0,
+      "end": 512,
+      "offset": 2048,
+      "compressed": false
+    },
+    {
+      "start": 512,
+      "end": 1024,
+      "offset": 3072,
+      "compressed": false
+    },
+    {
+      "start": 1024,
+      "end": 1280,
+      "offset": 4096,
+      "compressed": false
+    },
+    {
+      "start": 1280,
+      "end": 1792,
+      "offset": 4608,
+      "compressed": false
+    },
+    {
+      "start": 1792,
+      "end": 3536,
+      "offset": 14336,
+      "compressed": false
+    }
+  ],
+  "flags": 21240,
+  "fcClx": 9675,
+  "lcbClx": 69,
+  "ccpText": 3508
+}

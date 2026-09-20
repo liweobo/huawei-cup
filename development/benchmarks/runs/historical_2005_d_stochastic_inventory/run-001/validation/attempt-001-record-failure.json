@@ -1,0 +1,18 @@
+{
+  "status": "POST_RUN_RECORD_SCHEMA_REJECTED",
+  "error": "protocol_change_disclosure requires planned_summary and executed_summary",
+  "cause": "Run-local author used planned/executed field names; current Skill correctly rejected the record",
+  "skill_gap": false,
+  "numbers_published_as_observed": false,
+  "source_sha256": "50415fdc5c6c62eaf8ee473827da35e3e0113c7727218e16097ddfd30b6fe70f",
+  "source_sha256_note": "This hash was captured mid-extraction, before the final transcription was frozen, and matches no artifact in the completed run. It is NOT the source document hash. The authoritative source hash is 164ec41eb17115f9ae7c64a0f0c7244759353c82e29e498f98f091c0ce88565d in source-provenance/source.json, unchanged across the run.",
+  "authoritative_source_sha256": "164ec41eb17115f9ae7c64a0f0c7244759353c82e29e498f98f091c0ce88565d",
+  "outputs_before_retry": {
+    "environment.json": "dbc06a6315eba700b91d8087dbf3f68baa8eb0c9b39736c18e2f0d0546b6a3f9",
+    "joint.json": "b9d43822a5f7e8abefd0985c012af0e75ee5f3737f0e6c230917af7feb12f099",
+    "q5.json": "824cd8675e3999ff248fe408a8e4df447a97ffa5dfa9ccc001a314d54767f0b0",
+    "sensitivity.json": "59dfa094017f2663d792d3cc3218137f29d35535697106f0a7425322e11fbbaa",
+    "single.json": "8b71c4e258e41f21908aae43909011dbaf8c1f463d617ee9be7189bc32a542bc"
+  },
+  "resolution": "Correct only disclosure field names, rerun deterministically, retain this failure audit"
+}
