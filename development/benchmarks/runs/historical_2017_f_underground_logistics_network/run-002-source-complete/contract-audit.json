@@ -1,0 +1,120 @@
+{
+  "workspace": {
+    "status": "LEGACY_STRICT_ISOLATION_REJECTED",
+    "errors": [
+      "prior_run_artifacts_visible must be false",
+      "prior benchmark run archives cannot be model-visible read roots"
+    ],
+    "disposition": "logical boundary retained; no claim of clean-room certification"
+  },
+  "original_improvement_schema": {
+    "status": "IMPROVEMENT_CONTRACT_INCOMPLETE",
+    "errors": [
+      "missing contract fields: ['decision_structure', 'objective_evaluator', 'problem_type']",
+      "problem_type must be STRUCTURED_IMPROVEMENT",
+      "move_families[0] missing fields: ['applicability', 'description', 'expected_effect']",
+      "search_budget requires iterations, evaluations, or time"
+    ],
+    "objective_direction": "MINIMIZE",
+    "eligible_for_formal_improvement": false
+  },
+  "normalized_improvement_contract": {
+    "status": "PASS",
+    "objective_direction": "MINIMIZE",
+    "incumbent_source": "q1-primary",
+    "incumbent_feasible": true,
+    "move_families": [
+      {
+        "name": "delete_park_tunnel",
+        "decision_component": "physical_build_selection",
+        "description": "remove one physical tunnel and both arcs; solve fixed-design LP",
+        "rationale": "reduce high tunnel depreciation only when full realized cost decreases",
+        "applicability": "statically feasible incumbent, eligible park links, unchanged service policy",
+        "expected_effect": "lower capital, possibly longer commodity paths"
+      }
+    ],
+    "candidate_realization": "fixed-design multicommodity LP",
+    "feasibility_check": "flow, line, reserved station calls, hierarchy and connectivity",
+    "acceptance_rule": "strictly lower realized total daily cost and static feasibility",
+    "incumbent_update_rule": "monotone minimum",
+    "search_budget": {
+      "max_evaluations": 8,
+      "time_limit_seconds": 480
+    },
+    "stopping_rule": "budgeted candidate list exhausted",
+    "deterministic": true,
+    "problem_type": "STRUCTURED_IMPROVEMENT",
+    "decision_structure": "physical park-tunnel selection with coupled continuous commodity rerouting",
+    "objective_evaluator": "saved physical capital plus routing/access cost, yuan/day",
+    "normalization_scope": "retrospective schema normalization; not a pre-run contract claim"
+  },
+  "normalized_improvement_schema": {
+    "status": "PASS",
+    "errors": [],
+    "objective_direction": "MINIMIZE",
+    "eligible_for_formal_improvement": true
+  },
+  "incumbent_replay": [
+    {
+      "iteration": 1,
+      "updated": true,
+      "objective": 95779118.88557537
+    },
+    {
+      "iteration": 2,
+      "updated": true,
+      "objective": 95388005.36316994
+    },
+    {
+      "iteration": 3,
+      "updated": true,
+      "objective": 95017311.4711493
+    },
+    {
+      "iteration": 4,
+      "updated": true,
+      "objective": 94655243.08683272
+    },
+    {
+      "iteration": 5,
+      "updated": true,
+      "objective": 94293536.03048135
+    },
+    {
+      "iteration": 6,
+      "updated": true,
+      "objective": 93933470.82132557
+    },
+    {
+      "iteration": 7,
+      "updated": true,
+      "objective": 93575168.1307874
+    },
+    {
+      "iteration": 8,
+      "updated": true,
+      "objective": 93223150.21248569
+    }
+  ],
+  "operation_contract": {
+    "valid_schema": true,
+    "schema_errors": [],
+    "closure_status": "SCENARIO_ASSUMED",
+    "allowed_claim_level": "SCENARIO_RESULT",
+    "claimed_level": "SCENARIO_RESULT",
+    "claim_allowed": true,
+    "identifiability_status": "LIMITED",
+    "numerical_termination_verified": true,
+    "reviewer_codes": [],
+    "essential_requirements": [
+      "route_geometry",
+      "initial_release",
+      "fleet_buffer",
+      "handling",
+      "demand",
+      "speed",
+      "kinematics",
+      "horizon"
+    ]
+  }
+}

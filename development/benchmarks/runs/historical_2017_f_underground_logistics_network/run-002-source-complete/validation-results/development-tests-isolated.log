@@ -1,0 +1,39 @@
+......F................................................................. [ 23%]
+........................................................................ [ 47%]
+........................................................................ [ 70%]
+........................................................................ [ 94%]
+.................                                                        [100%]
+================================== FAILURES ===================================
+__________ test_real_q3_preserves_baseline_and_uses_controlled_folds __________
+
+tmp_path = WindowsPath('//?/C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/t1789956765/d/test_real_q3_preserves_baselin0')
+
+    def test_real_q3_preserves_baseline_and_uses_controlled_folds(tmp_path):
+>       summary = execute(tmp_path / "feature-set-design" / "run-001")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_feature_sets.py:335: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('//?/C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/t1789956765/d/test_real_q3_preserves_baselin0/feature-set-design/run-001')
+
+    def execute(output):
+        out = Path(output).resolve()
+        out.mkdir(parents=True, exist_ok=False)
+        created = datetime.now(timezone.utc).isoformat()
+        run_id, benchmark_id = out.name, out.parent.name
+        sources = [*RAW.glob("*.xlsx"), BASELINE_SCRIPT]
+        manifest = dict(run_id=run_id, benchmark_id=benchmark_id, created_at=created, active_run_id=run_id,
+            immutable_inputs=[dict(path=str(p), sha256=sha256(p)) for p in sources], writable_root=str(out), allowed_write_root=str(out),
+            prior_run_artifacts_visible=False, allowed_read_roots=[str(RAW), str(BASELINE_SCRIPT), str(PROJECT/"skill")],
+            mode="TARGETED_CAPABILITY_TEST", historical_helper_reference=str(BASELINE_SCRIPT),
+            note="frozen code reused read-only; no historical results used for model selection; not a blind run")
+>       assert not validate_workspace_manifest(manifest), validate_workspace_manifest(manifest)
+E       AssertionError: ['prior benchmark run archives cannot be model-visible read roots', 'prior benchmark run archives cannot be model-visible read roots', 'prior benchmark run archives cannot be model-visible read roots']
+E       assert not ['prior benchmark run archives cannot be model-visible read roots', 'prior benchmark run archives cannot be model-visible read roots', 'prior benchmark run archives cannot be model-visible read roots']
+E        +  where ['prior benchmark run archives cannot be model-visible read roots', 'prior benchmark run archives cannot be model-visible read roots', 'prior benchmark run archives cannot be model-visible read roots'] = validate_workspace_manifest({'run_id': 'run-001', 'benchmark_id': 'feature-set-design', 'created_at': '2026-09-21T02:13:23.415187+00:00', 'active_run_id': 'run-001', ...})
+
+development\tests\test_2023e_feature_sets.py:278: AssertionError
+=========================== short test summary info ===========================
+FAILED development\tests\test_2023e_feature_sets.py::test_real_q3_preserves_baseline_and_uses_controlled_folds
+1 failed, 304 passed in 107.06s (0:01:47)

@@ -1,0 +1,20 @@
+{
+  "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "seconds": 25.852753099999973,
+  "variables": 273280,
+  "equality_rows": 29280,
+  "inequality_rows": 2476,
+  "commodities": 122,
+  "physical_edges": 1120,
+  "directed_arcs": 2240,
+  "nodes": 240,
+  "cars": 8,
+  "dispatch_limit": 90,
+  "max_flow_balance": 5.9969806898152456e-12,
+  "max_lp_capacity_violation": 1.1368683772161603e-13,
+  "max_station_departures": 84.0,
+  "max_directional_line_departures": 32.0,
+  "static_feasible": true,
+  "daily_clearing": "STATIC_ONLY"
+}

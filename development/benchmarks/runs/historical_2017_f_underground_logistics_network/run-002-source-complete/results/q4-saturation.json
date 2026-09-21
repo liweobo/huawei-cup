@@ -1,0 +1,1896 @@
+{
+  "criterion": "first integer year whose unchanged full-demand routing breaches rounded station/line departures or ground exchange",
+  "t0": "original full-day OD",
+  "first_saturation_year": 2,
+  "years": [
+    {
+      "routed_t_day": 163228.2037394571,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 163403.02,
+      "station_max_departures": 84.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 32,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 1997272.0668797463,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 0,
+      "demand_multiplier": 1.0
+    },
+    {
+      "routed_t_day": 171389.61392643035,
+      "station_local_t_day": 183.55707357023462,
+      "delivered_endpoint_t_day": 171573.17099999997,
+      "station_max_departures": 87.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 33,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2097135.67022373,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 1,
+      "demand_multiplier": 1.05
+    },
+    {
+      "routed_t_day": 179959.094622752,
+      "station_local_t_day": 192.73492724874632,
+      "delivered_endpoint_t_day": 180151.82954999997,
+      "station_max_departures": 92.0,
+      "station_violation_departures": 2.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 35,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2201992.4537349152,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 2,
+      "demand_multiplier": 1.1025
+    },
+    {
+      "routed_t_day": 188957.04935388823,
+      "station_local_t_day": 202.37167361118367,
+      "delivered_endpoint_t_day": 189159.4210275,
+      "station_max_departures": 97.0,
+      "station_violation_departures": 7.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 37,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2312092.0764216636,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 3,
+      "demand_multiplier": 1.1576250000000001
+    },
+    {
+      "routed_t_day": 198404.90182158316,
+      "station_local_t_day": 212.49025729174286,
+      "delivered_endpoint_t_day": 198617.392078875,
+      "station_max_departures": 102.0,
+      "station_violation_departures": 12.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 39,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2427696.6802427457,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 4,
+      "demand_multiplier": 1.2155062500000002
+    },
+    {
+      "routed_t_day": 208325.1469126645,
+      "station_local_t_day": 223.11477015633005,
+      "delivered_endpoint_t_day": 208548.26168281876,
+      "station_max_departures": 106.0,
+      "station_violation_departures": 16.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 41,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2549081.5142548904,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 5,
+      "demand_multiplier": 1.2762815625000004
+    },
+    {
+      "routed_t_day": 218741.4042582955,
+      "station_local_t_day": 234.27050866414658,
+      "delivered_endpoint_t_day": 218975.6747669597,
+      "station_max_departures": 109.0,
+      "station_violation_departures": 19.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 43,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2676535.58996763,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 6,
+      "demand_multiplier": 1.3400956406250004
+    },
+    {
+      "routed_t_day": 229678.4744712111,
+      "station_local_t_day": 245.98403409735388,
+      "delivered_endpoint_t_day": 229924.45850530773,
+      "station_max_departures": 116.0,
+      "station_violation_departures": 26.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 45,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2810362.3694660147,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 7,
+      "demand_multiplier": 1.4071004226562505
+    },
+    {
+      "routed_t_day": 241162.39819477175,
+      "station_local_t_day": 258.2832358022216,
+      "delivered_endpoint_t_day": 241420.6814305731,
+      "station_max_departures": 120.0,
+      "station_violation_departures": 30.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 47,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2950880.487939316,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 8,
+      "demand_multiplier": 1.477455443789063
+    },
+    {
+      "routed_t_day": 253220.5181045089,
+      "station_local_t_day": 271.19739759233266,
+      "delivered_endpoint_t_day": 253491.71550210172,
+      "station_max_departures": 126.0,
+      "station_violation_departures": 36.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 49,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 3098424.51233628,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 9,
+      "demand_multiplier": 1.5513282159785162
+    },
+    {
+      "routed_t_day": 265881.54400973493,
+      "station_local_t_day": 284.75726747194926,
+      "delivered_endpoint_t_day": 266166.30127720686,
+      "station_max_departures": 132.0,
+      "station_violation_departures": 42.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 52,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 3253345.737953099,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 10,
+      "demand_multiplier": 1.628894626777442
+    },
+    {
+      "routed_t_day": 279175.6212102191,
+      "station_local_t_day": 298.9951308455468,
+      "delivered_endpoint_t_day": 279474.61634106725,
+      "station_max_departures": 139.0,
+      "station_violation_departures": 49.0,
+      "ground_violation_t_day": 78.61084460936854,
+      "line_max_departures": 54,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 3416013.0248507494,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 11,
+      "demand_multiplier": 1.7103393581163142
+    },
+    {
+      "routed_t_day": 293134.4022707311,
+      "station_local_t_day": 313.9448873878241,
+      "delivered_endpoint_t_day": 293448.3471581206,
+      "station_max_departures": 144.0,
+      "station_violation_departures": 54.0,
+      "ground_violation_t_day": 232.54138683983638,
+      "line_max_departures": 57,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 3586813.676093283,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 12,
+      "demand_multiplier": 1.79585632602213
+    },
+    {
+      "routed_t_day": 307791.12238426943,
+      "station_local_t_day": 329.6421317572154,
+      "delivered_endpoint_t_day": 308120.7645160266,
+      "station_max_departures": 153.0,
+      "station_violation_departures": 63.0,
+      "ground_violation_t_day": 394.1684561818288,
+      "line_max_departures": 60,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 3766154.3598979474,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 13,
+      "demand_multiplier": 1.8856491423232367
+    },
+    {
+      "routed_t_day": 323180.67850348505,
+      "station_local_t_day": 346.12423834507615,
+      "delivered_endpoint_t_day": 323526.80274182797,
+      "station_max_departures": 158.0,
+      "station_violation_departures": 68.0,
+      "ground_violation_t_day": 563.87687899092,
+      "line_max_departures": 63,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 3954462.077892853,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 14,
+      "demand_multiplier": 1.9799315994393987
+    },
+    {
+      "routed_t_day": 339339.71242865577,
+      "station_local_t_day": 363.43045026233,
+      "delivered_endpoint_t_day": 339703.1428789195,
+      "station_max_departures": 167.0,
+      "station_violation_departures": 77.0,
+      "ground_violation_t_day": 742.0707229404661,
+      "line_max_departures": 66,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 4152185.181787497,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 15,
+      "demand_multiplier": 2.0789281794113688
+    },
+    {
+      "routed_t_day": 356306.69805009034,
+      "station_local_t_day": 381.6019727754464,
+      "delivered_endpoint_t_day": 356688.30002286535,
+      "station_max_departures": 174.0,
+      "station_violation_departures": 84.0,
+      "ground_violation_t_day": 929.1742590874892,
+      "line_max_departures": 69,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 4359794.440876869,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 16,
+      "demand_multiplier": 2.182874588381937
+    },
+    {
+      "routed_t_day": 374122.0329525923,
+      "station_local_t_day": 400.6820714142188,
+      "delivered_endpoint_t_day": 374522.71502400865,
+      "station_max_departures": 184.0,
+      "station_violation_departures": 94.0,
+      "ground_violation_t_day": 1125.6329720418644,
+      "line_max_departures": 73,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 4577784.16292072,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 17,
+      "demand_multiplier": 2.292018317801034
+    },
+    {
+      "routed_t_day": 392828.13460022607,
+      "station_local_t_day": 420.71617498492975,
+      "delivered_endpoint_t_day": 393248.8507752091,
+      "station_max_departures": 191.0,
+      "station_violation_departures": 101.0,
+      "ground_violation_t_day": 1331.9146206439582,
+      "line_max_departures": 76,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 4806673.371066752,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 18,
+      "demand_multiplier": 2.4066192336910857
+    },
+    {
+      "routed_t_day": 412469.5413302371,
+      "station_local_t_day": 441.7519837341763,
+      "delivered_endpoint_t_day": 412911.2933139696,
+      "station_max_departures": 202.0,
+      "station_violation_departures": 112.0,
+      "ground_violation_t_day": 1548.5103516761565,
+      "line_max_departures": 80,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 5047007.039620068,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 19,
+      "demand_multiplier": 2.5269501953756404
+    },
+    {
+      "routed_t_day": 433093.01839674794,
+      "station_local_t_day": 463.8395829208851,
+      "delivered_endpoint_t_day": 433556.8579796681,
+      "station_max_departures": 211.0,
+      "station_violation_departures": 121.0,
+      "ground_violation_t_day": 1775.9358692599635,
+      "line_max_departures": 84,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 5299357.391601087,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 20,
+      "demand_multiplier": 2.653297705144422
+    },
+    {
+      "routed_t_day": 454747.6693165863,
+      "station_local_t_day": 487.0315620669294,
+      "delivered_endpoint_t_day": 455234.7008786516,
+      "station_max_departures": 221.0,
+      "station_violation_departures": 131.0,
+      "ground_violation_t_day": 2014.7326627229631,
+      "line_max_departures": 88,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 5564325.26118113,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 21,
+      "demand_multiplier": 2.7859625904016436
+    },
+    {
+      "routed_t_day": 477485.0527824142,
+      "station_local_t_day": 511.38314017027585,
+      "delivered_endpoint_t_day": 477996.43592258415,
+      "station_max_departures": 231.0,
+      "station_violation_departures": 141.0,
+      "ground_violation_t_day": 2265.4692958591113,
+      "line_max_departures": 92,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 5842541.524240219,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 22,
+      "demand_multiplier": 2.925260719921726
+    },
+    {
+      "routed_t_day": 501359.30542153574,
+      "station_local_t_day": 536.9522971787896,
+      "delivered_endpoint_t_day": 501896.2577187134,
+      "station_max_departures": 243.0,
+      "station_violation_departures": 153.0,
+      "ground_violation_t_day": 2528.742760652067,
+      "line_max_departures": 97,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 6134668.600452214,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 23,
+      "demand_multiplier": 3.0715237559178123
+    },
+    {
+      "routed_t_day": 526427.2706926112,
+      "station_local_t_day": 563.7999120377292,
+      "delivered_endpoint_t_day": 526991.0706046489,
+      "station_max_departures": 255.0,
+      "station_violation_departures": 165.0,
+      "ground_violation_t_day": 2805.1798986846716,
+      "line_max_departures": 102,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 6441402.030474835,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 24,
+      "demand_multiplier": 3.225099943713703
+    },
+    {
+      "routed_t_day": 552748.6342272403,
+      "station_local_t_day": 591.9899076396157,
+      "delivered_endpoint_t_day": 553340.6241348815,
+      "station_max_departures": 268.0,
+      "station_violation_departures": 178.0,
+      "ground_violation_t_day": 3095.4388936189052,
+      "line_max_departures": 107,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 6763472.1319985585,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 25,
+      "demand_multiplier": 3.3863549408993885
+    },
+    {
+      "routed_t_day": 580386.0659386046,
+      "station_local_t_day": 621.5894030215966,
+      "delivered_endpoint_t_day": 581007.6553416256,
+      "station_max_departures": 281.0,
+      "station_violation_departures": 191.0,
+      "ground_violation_t_day": 3400.2108382998485,
+      "line_max_departures": 112,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 7101645.7385984985,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 26,
+      "demand_multiplier": 3.555672687944358
+    },
+    {
+      "routed_t_day": 609405.3692355327,
+      "station_local_t_day": 652.6688731726765,
+      "delivered_endpoint_t_day": 610058.0381087069,
+      "station_max_departures": 296.0,
+      "station_violation_departures": 206.0,
+      "ground_violation_t_day": 3720.2213802148417,
+      "line_max_departures": 118,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 7456728.025528414,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 27,
+      "demand_multiplier": 3.733456322341576
+    },
+    {
+      "routed_t_day": 639875.6376973111,
+      "station_local_t_day": 685.3023168313102,
+      "delivered_endpoint_t_day": 640560.9400141422,
+      "station_max_departures": 309.0,
+      "station_violation_departures": 219.0,
+      "ground_violation_t_day": 4056.232449225585,
+      "line_max_departures": 124,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 7829564.426804847,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 28,
+      "demand_multiplier": 3.920129138458655
+    },
+    {
+      "routed_t_day": 671869.4195821787,
+      "station_local_t_day": 719.567432672876,
+      "delivered_endpoint_t_day": 672588.9870148494,
+      "station_max_departures": 323.0,
+      "station_violation_departures": 233.0,
+      "ground_violation_t_day": 4409.044071686863,
+      "line_max_departures": 130,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 8221042.648145077,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 29,
+      "demand_multiplier": 4.116135595381588
+    },
+    {
+      "routed_t_day": 705462.890561287,
+      "station_local_t_day": 755.5458043065196,
+      "delivered_endpoint_t_day": 706218.4363655921,
+      "station_max_departures": 340.0,
+      "station_violation_departures": 250.0,
+      "ground_violation_t_day": 4779.496275271209,
+      "line_max_departures": 136,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 8632094.78055232,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "year": 30,
+      "demand_multiplier": 4.321942375150668
+    }
+  ],
+  "thirty_year_status": "SATURATES_BEFORE_30_YEARS",
+  "expansion": {
+    "status": "CAPACITY_LOWER_BOUND_NOT_A_FEASIBLE_EXPANSION_DESIGN",
+    "modules": [
+      {
+        "node": "P000",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P001",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P002",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P003",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P004",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P005",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P006",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P007",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P008",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P009",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P010",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P011",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P012",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P013",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P014",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P015",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P016",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P017",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P018",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P019",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P020",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P021",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P022",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P023",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P024",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P025",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P026",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P027",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P028",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P029",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P030",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P031",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P032",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P033",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P034",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P035",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P036",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P037",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P038",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P039",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P040",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P041",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P042",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P043",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P044",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P045",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P046",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P047",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P048",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P049",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P050",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P051",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P052",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P053",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P054",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P055",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P056",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P057",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P058",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P059",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P060",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P061",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P062",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P063",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P064",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P065",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P066",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P067",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P068",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P069",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P070",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P071",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P072",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P073",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P074",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P075",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P076",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P077",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P078",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P079",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P080",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P081",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P082",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P083",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P084",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P085",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P086",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P087",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P088",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P089",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P090",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P091",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P092",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P093",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P094",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P095",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P096",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P097",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P098",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P099",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P100",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P101",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P102",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P103",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P104",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 4,
+        "additional_modules_lower_bound": 3
+      },
+      {
+        "node": "P105",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P106",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P107",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "P108",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P109",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "P110",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P111",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "P112",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "P113",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "P114",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "P115",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "P116",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "P117",
+        "type": "primary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S000",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S001",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S002",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S003",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S004",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S005",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S006",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S007",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S008",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S009",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S010",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S011",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S012",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S013",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S014",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S015",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S016",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S017",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S018",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S019",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S020",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S021",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S022",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S023",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S024",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S025",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S026",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S027",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S028",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S029",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S030",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S031",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S032",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S033",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S034",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S035",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S036",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S037",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S038",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S039",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S040",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S041",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S042",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S043",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S044",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S045",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S046",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S047",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S048",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S049",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S050",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S051",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S052",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S053",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S054",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S055",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S056",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S057",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S058",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S059",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S060",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S061",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S062",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S063",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S064",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S065",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S066",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S067",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S068",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S069",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S070",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S071",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S072",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S073",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S074",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S075",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S076",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S077",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S078",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S079",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S080",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S081",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S082",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S083",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S084",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S085",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S086",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S087",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S088",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S089",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S090",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S091",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S092",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "S093",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S094",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S095",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S096",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S097",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S098",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S099",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S100",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S101",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S102",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S103",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S104",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S105",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S106",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S107",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S108",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S109",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 3,
+        "additional_modules_lower_bound": 2
+      },
+      {
+        "node": "S110",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 2,
+        "additional_modules_lower_bound": 1
+      },
+      {
+        "node": "S111",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S112",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S113",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S114",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S115",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S116",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      },
+      {
+        "node": "S117",
+        "type": "secondary",
+        "parallel_equivalent_station_modules_lower_bound": 1,
+        "additional_modules_lower_bound": 0
+      }
+    ],
+    "additional_modules_lower_bound": 432,
+    "warning": "Requires new node locations/corridors, allocations, fleet and operating timetable. Four-track alone does not increase station dispatch. No30-year feasibility claim."
+  }
+}

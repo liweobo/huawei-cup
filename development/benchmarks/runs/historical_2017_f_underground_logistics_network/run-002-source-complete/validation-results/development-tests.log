@@ -1,0 +1,1810 @@
+EEEEEEFEEE...............................................FFFFF.......... [ 23%]
+........................................................................ [ 47%]
+..........................................................EEEEEEEEEEEEEE [ 70%]
+EEEEEEEEFE..EEEEEEF.......FFFF..FF.....F................................ [ 94%]
+.................                                                        [100%]
+=================================== ERRORS ====================================
+_____ ERROR at setup of test_all_seven_exposures_audited_at_entity_level ______
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+_______ ERROR at setup of test_q2c_crude_adjusted_and_timing_boundaries _______
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+__________ ERROR at setup of test_q2d_small_joint_model_and_hm_roles __________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+_ ERROR at setup of test_temporal_sources_and_clustered_uncertainty_have_provenance _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+____________ ERROR at setup of test_q2_causal_wording_and_records _____________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+____ ERROR at setup of test_targeted_outputs_have_matching_evidence_hashes ____
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("association-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_association_q2.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/association-q2-targeted0')
+
+    def run_targeted(output: Path):
+        output = output.resolve()
+        if any(output.is_relative_to(root.resolve()) for root in [PROJECT / "skill", PROJECT / "development/benchmarks"]):
+>           raise ValueError("targeted artifacts must not enter Skill or frozen historical sources")
+E           ValueError: targeted artifacts must not enter Skill or frozen historical sources
+
+development\tests\test_2023e_association_q2.py:228: ValueError
+_ ERROR at setup of test_q2a_same_model_row_vs_grouped_and_final_residual_scope _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("grouped-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_group_validation_q2.py:346: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/grouped-q2-targeted0')
+
+    def run_targeted(output):
+        output = Path(output).resolve()
+        if any(output.is_relative_to(PROJECT / area) for area in ("skill", "development/benchmarks")):
+>           raise ValueError("targeted outputs must not enter Skill or historical evidence")
+E           ValueError: targeted outputs must not enter Skill or historical evidence
+
+development\tests\test_2023e_group_validation_q2.py:231: ValueError
+_ ERROR at setup of test_q2b_training_discovery_and_known_baseline_assignment _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("grouped-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_group_validation_q2.py:346: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/grouped-q2-targeted0')
+
+    def run_targeted(output):
+        output = Path(output).resolve()
+        if any(output.is_relative_to(PROJECT / area) for area in ("skill", "development/benchmarks")):
+>           raise ValueError("targeted outputs must not enter Skill or historical evidence")
+E           ValueError: targeted outputs must not enter Skill or historical evidence
+
+development\tests\test_2023e_group_validation_q2.py:231: ValueError
+__ ERROR at setup of test_targeted_evidence_records_and_hashes_are_traceable __
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/his...twork/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def targeted(tmp_path_factory):
+        output = tmp_path_factory.mktemp("grouped-q2-targeted")
+>       return run_targeted(output), output
+               ^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_group_validation_q2.py:346: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+output = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/grouped-q2-targeted0')
+
+    def run_targeted(output):
+        output = Path(output).resolve()
+        if any(output.is_relative_to(PROJECT / area) for area in ("skill", "development/benchmarks")):
+>           raise ValueError("targeted outputs must not enter Skill or historical evidence")
+E           ValueError: targeted outputs must not enter Skill or historical evidence
+
+development\tests\test_2023e_group_validation_q2.py:231: ValueError
+__ ERROR at setup of test_export_uses_clean_room_policy_and_canonical_inputs __
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_export_uses_clean_room_po0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_export_uses_clean_room_po0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_export_uses_clean_room_po0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_moved_bundle_validates_without_developer_repository __
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_moved_bundle_validates_wi0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_moved_bundle_validates_wi0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_moved_bundle_validates_wi0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_____ ERROR at setup of test_missing_required_file_fails[skill/SKILL.md] ______
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_missing_required_file_fai0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_missing_required_file_fai0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_missing_required_file_fai0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_missing_required_file_fails[input/attachment3.xlsx] __
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_missing_required_file_fai1')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_missing_required_file_fai1/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_missing_required_file_fai1\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_missing_required_file_fails[skill/scripts/metrics.py] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_missing_required_file_fai2')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_missing_required_file_fai2/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_missing_required_file_fai2\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+___ ERROR at setup of test_modified_input_fails_without_changing_canonical ____
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_modified_input_fails_with0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_modified_input_fails_with0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_modified_input_fails_with0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_evaluator_and_prior_run_leakage_fails[workspace/expected.yaml] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_evaluator_and_prior_run_l0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_evaluator_and_prior_run_leakage_fails[workspace/run-003/metrics.json] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l1')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l1/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_evaluator_and_prior_run_l1\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_evaluator_and_prior_run_leakage_fails[skill/AGENTS.md] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l2')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l2/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_evaluator_and_prior_run_l2\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_evaluator_and_prior_run_leakage_fails[skill/expected.yaml] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l3')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l3/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_evaluator_and_prior_run_l3\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_evaluator_and_prior_run_leakage_fails[skill/result.txt] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l4')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l4/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_evaluator_and_prior_run_l4\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_evaluator_and_prior_run_leakage_fails[benchmarks/runs/evaluation.yaml] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l5')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_evaluator_and_prior_run_l5/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_evaluator_and_prior_run_l5\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_renamed_evaluator_content_is_rejected[expected_route] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_renamed_evaluator_content0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_renamed_evaluator_content0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_renamed_evaluator_content0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_renamed_evaluator_content_is_rejected[known_failure] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_renamed_evaluator_content1')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_renamed_evaluator_content1/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_renamed_evaluator_content1\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_renamed_evaluator_content_is_rejected[evaluator_notes] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_renamed_evaluator_content2')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_renamed_evaluator_content2/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_renamed_evaluator_content2\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_renamed_evaluator_content_is_rejected[first_meaningful_failure] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_renamed_evaluator_content3')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_renamed_evaluator_content3/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_renamed_evaluator_content3\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_renamed_evaluator_content_is_rejected[model_behavior_p0] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_renamed_evaluator_content4')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_renamed_evaluator_content4/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_renamed_evaluator_content4\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_renamed_evaluator_content_is_rejected[rubric_score] __
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_renamed_evaluator_content5')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_renamed_evaluator_content5/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_renamed_evaluator_content5\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+______ ERROR at setup of test_workspace_policy_and_stale_active_evidence ______
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_workspace_policy_and_stal0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_workspace_policy_and_stal0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_workspace_policy_and_stal0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_post_run_outputs_allowed_but_immutable_changes_fail __
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_post_run_outputs_allowed_0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_post_run_outputs_allowed_0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_post_run_outputs_allowed_0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+___ ERROR at setup of test_manifest_rewrite_cannot_bypass_trusted_snapshot ____
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_manifest_rewrite_cannot_b0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_manifest_rewrite_cannot_b0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_manifest_rewrite_cannot_b0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_______ ERROR at setup of test_zip_hash_and_unpacked_empty_directories ________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_zip_hash_and_unpacked_emp0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_zip_hash_and_unpacked_emp0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_zip_hash_and_unpacked_emp0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+__________ ERROR at setup of test_portable_binding_reuses_v27_gates ___________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_portable_binding_reuses_v0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_portable_binding_reuses_v0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_portable_binding_reuses_v0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_output_export_requires_session_stop_and_preserves_frozen_transfer _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_output_export_requires_se0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_output_export_requires_se0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_output_export_requires_se0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+________ ERROR at setup of test_mutated_runtime_cannot_export_outputs _________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_mutated_runtime_cannot_ex0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_mutated_runtime_cannot_ex0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_mutated_runtime_cannot_ex0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_validator_cli_fails_closed_with_single_status[invalid-yaml] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_validator_cli_fails_close0')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_validator_cli_fails_close0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_validator_cli_fails_close0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_validator_cli_fails_closed_with_single_status[escape-path] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_validator_cli_fails_close1')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_validator_cli_fails_close1/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_validator_cli_fails_close1\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_validator_cli_fails_closed_with_single_status[empty-input-list] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_validator_cli_fails_close2')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_validator_cli_fails_close2/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_validator_cli_fails_close2\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_validator_cli_fails_closed_with_single_status[missing-policy-module] _
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_validator_cli_fails_close3')
+
+    @pytest.fixture
+    def exported(tmp_path: Path):
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_validator_cli_fails_close3/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_validator_cli_fails_close3\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+================================== FAILURES ===================================
+__________ test_real_q3_preserves_baseline_and_uses_controlled_folds __________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_real_q3_preserves_baselin0')
+
+    def test_real_q3_preserves_baseline_and_uses_controlled_folds(tmp_path):
+>       summary = execute(tmp_path / "feature-set-design" / "run-001")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_2023e_feature_sets.py:335: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_2023e_feature_sets.py:279: in execute
+    (out / "workspace-manifest.yaml").write_text(yaml.safe_dump(manifest, allow_unicode=True, sort_keys=False), encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...st-temp-20260921T020934/pytest-dev/test_real_q3_preserves_baselin0/feature-set-design/run-001/workspace-manifest.yaml')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_real_q3_preserves_baselin0\\feature-set-design\\run-001\\workspace-manifest.yaml'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_______ test_prepare_clean_room_excludes_developer_and_evaluator_assets _______
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_prepare_clean_room_exclud0')
+
+    def test_prepare_clean_room_excludes_developer_and_evaluator_assets(tmp_path: Path) -> None:
+>       repo, source, hashes = fake_repo(tmp_path)
+                               ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_clean_room.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_clean_room.py:56: in fake_repo
+    (repo / "templates" / name).write_text(f"runtime template {name}", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...est-temp-20260921T020934/pytest-dev/test_prepare_clean_room_exclud0/developer-repo/templates/active-evidence-set.yaml')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_prepare_clean_room_exclud0\\developer-repo\\templates\\active-evidence-set.yaml'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_______ test_clean_room_rejects_content_marker_and_previous_run_output ________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_clean_room_rejects_conten0')
+
+    def test_clean_room_rejects_content_marker_and_previous_run_output(tmp_path: Path) -> None:
+>       repo, source, _ = fake_repo(tmp_path)
+                          ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_clean_room.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_clean_room.py:56: in fake_repo
+    (repo / "templates" / name).write_text(f"runtime template {name}", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...est-temp-20260921T020934/pytest-dev/test_clean_room_rejects_conten0/developer-repo/templates/active-evidence-set.yaml')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_clean_room_rejects_conten0\\developer-repo\\templates\\active-evidence-set.yaml'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+________________ test_clean_room_rejects_source_hash_mismatch _________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_clean_room_rejects_source0')
+
+    def test_clean_room_rejects_source_hash_mismatch(tmp_path: Path) -> None:
+>       repo, source, _ = fake_repo(tmp_path)
+                          ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_clean_room.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_clean_room.py:56: in fake_repo
+    (repo / "templates" / name).write_text(f"runtime template {name}", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...est-temp-20260921T020934/pytest-dev/test_clean_room_rejects_source0/developer-repo/templates/active-evidence-set.yaml')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_clean_room_rejects_source0\\developer-repo\\templates\\active-evidence-set.yaml'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+___________________ test_writable_root_and_canonicalization ___________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_writable_root_and_canonic0')
+
+    def test_writable_root_and_canonicalization(tmp_path: Path) -> None:
+>       repo, source, _ = fake_repo(tmp_path)
+                          ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_clean_room.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_clean_room.py:56: in fake_repo
+    (repo / "templates" / name).write_text(f"runtime template {name}", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...est-temp-20260921T020934/pytest-dev/test_writable_root_and_canonic0/developer-repo/templates/active-evidence-set.yaml')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_writable_root_and_canonic0\\developer-repo\\templates\\active-evidence-set.yaml'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+__ test_default_clean_room_is_under_system_temp_and_runtime_files_are_copies __
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_default_clean_room_is_und0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001C8A3E06A20>
+
+    def test_default_clean_room_is_under_system_temp_and_runtime_files_are_copies(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+>       repo, source, _ = fake_repo(tmp_path)
+                          ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_clean_room.py:162: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_clean_room.py:56: in fake_repo
+    (repo / "templates" / name).write_text(f"runtime template {name}", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...est-temp-20260921T020934/pytest-dev/test_default_clean_room_is_und0/developer-repo/templates/active-evidence-set.yaml')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_default_clean_room_is_und0\\developer-repo\\templates\\active-evidence-set.yaml'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+______ test_export_requires_frozen_script_and_preserves_existing_output _______
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_export_requires_frozen_sc0')
+
+    def test_export_requires_frozen_script_and_preserves_existing_output(tmp_path: Path) -> None:
+>       repo, source = tiny_repo(tmp_path)
+                       ^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_portable_runtime.py:196: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_portable_runtime.py:37: in tiny_repo
+    (repo / "skill/scripts" / name).write_text(f"# runtime tool {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...temp-20260921T020934/pytest-dev/test_export_requires_frozen_sc0/developer-repo/skill/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_export_requires_frozen_sc0\\developer-repo\\skill\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+__________________ test_single_top_level_and_cache_exclusion __________________
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...ete/work/test-temp-20260921T020934/pytest-dev/test_single_top_level_and_cach0/huawei-cup-2026/benchmarks/runs/run-003')
+mode = 511, parents = True, exist_ok = True
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 206] 文件名或扩展名太长。: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_single_top_level_and_cach0\\huawei-cup-2026\\benchmarks\\runs\\run-003'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_single_top_level_and_cach0')
+
+    def test_single_top_level_and_cache_exclusion(tmp_path: Path) -> None:
+        repo = tmp_path / "huawei-cup-2026"
+        for relative in ("skill/SKILL.md", "benchmarks/runs/run-003/evaluation.yaml",
+                         "benchmarks/runs/run-003/outputs/metrics.json", ".pytest_cache/state", "scripts/__pycache__/a.pyc",
+                         "skill/stale.pyo", "dist/previous.zip", "outputs/debug.txt"):
+            path = repo / relative
+>           path.parent.mkdir(parents=True, exist_ok=True)
+
+development\tests\test_repository_packaging.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1316: in mkdir
+    self.mkdir(mode, parents=False, exist_ok=exist_ok)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...ete/work/test-temp-20260921T020934/pytest-dev/test_single_top_level_and_cach0/huawei-cup-2026/benchmarks/runs/run-003')
+mode = 511, parents = False, exist_ok = True
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 206] 文件名或扩展名太长。: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_single_top_level_and_cach0\\huawei-cup-2026\\benchmarks\\runs\\run-003'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+________________ test_direct_and_managed_mirror_bindings_pass _________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_direct_and_managed_mirror0')
+
+    def test_direct_and_managed_mirror_bindings_pass(tmp_path: Path) -> None:
+>       prepared, repo = fake_prepared_room(tmp_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_runtime_launch_adapter.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_runtime_launch_adapter.py:41: in fake_prepared_room
+    (repo / "scripts" / name).write_text(f"# script {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis.../test-temp-20260921T020934/pytest-dev/test_direct_and_managed_mirror0/developer-repo/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_direct_and_managed_mirror0\\developer-repo\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_______________ test_empty_mirror_missing_skill_and_input_fail ________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_empty_mirror_missing_skil0')
+
+    def test_empty_mirror_missing_skill_and_input_fail(tmp_path: Path) -> None:
+>       prepared, repo = fake_prepared_room(tmp_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_runtime_launch_adapter.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_runtime_launch_adapter.py:41: in fake_prepared_room
+    (repo / "scripts" / name).write_text(f"# script {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis.../test-temp-20260921T020934/pytest-dev/test_empty_mirror_missing_skil0/developer-repo/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_empty_mirror_missing_skil0\\developer-repo\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_________ test_actual_root_forbidden_artifact_and_hash_mismatch_fail __________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_actual_root_forbidden_art0')
+
+    def test_actual_root_forbidden_artifact_and_hash_mismatch_fail(tmp_path: Path) -> None:
+>       prepared, repo = fake_prepared_room(tmp_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_runtime_launch_adapter.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_runtime_launch_adapter.py:41: in fake_prepared_room
+    (repo / "scripts" / name).write_text(f"# script {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis.../test-temp-20260921T020934/pytest-dev/test_actual_root_forbidden_art0/developer-repo/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_actual_root_forbidden_art0\\developer-repo\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+_________________ test_developer_repository_root_is_rejected __________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_developer_repository_root0')
+
+    def test_developer_repository_root_is_rejected(tmp_path: Path) -> None:
+>       prepared, repo = fake_prepared_room(tmp_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_runtime_launch_adapter.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_runtime_launch_adapter.py:41: in fake_prepared_room
+    (repo / "scripts" / name).write_text(f"# script {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis.../test-temp-20260921T020934/pytest-dev/test_developer_repository_root0/developer-repo/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_developer_repository_root0\\developer-repo\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+____ test_adapter_launch_requires_platform_session_and_never_invokes_model ____
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_adapter_launch_requires_p0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001C8A3C63830>
+
+    def test_adapter_launch_requires_platform_session_and_never_invokes_model(tmp_path: Path, monkeypatch) -> None:
+>       prepared, repo = fake_prepared_room(tmp_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_runtime_launch_adapter.py:138: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_runtime_launch_adapter.py:41: in fake_prepared_room
+    (repo / "scripts" / name).write_text(f"# script {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis.../test-temp-20260921T020934/pytest-dev/test_adapter_launch_requires_p0/developer-repo/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_adapter_launch_requires_p0\\developer-repo\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+________________ test_failed_preflight_never_allows_model_turn ________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_failed_preflight_never_al0')
+
+    def test_failed_preflight_never_allows_model_turn(tmp_path: Path) -> None:
+>       prepared, repo = fake_prepared_room(tmp_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\tests\test_runtime_launch_adapter.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\tests\test_runtime_launch_adapter.py:41: in fake_prepared_room
+    (repo / "scripts" / name).write_text(f"# script {name}\n", encoding="utf-8")
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1047: in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis.../test-temp-20260921T020934/pytest-dev/test_failed_preflight_never_al0/developer-repo/scripts/temporal_availability.py')
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_failed_preflight_never_al0\\developer-repo\\scripts\\temporal_availability.py'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1013: FileNotFoundError
+__________________________ test_skill_self_contained __________________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_skill_self_contained0')
+
+    def test_skill_self_contained(tmp_path: Path) -> None:
+        isolated = tmp_path / "skill"
+>       shutil.copytree(SKILL_SOURCE, isolated)
+
+development\tests\test_skill_self_contained.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\shutil.py:600: in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+entries = [<DirEntry 'references'>, <DirEntry 'routing.yaml'>, <DirEntry 'rules'>, <DirEntry 'scripts'>, <DirEntry 'SKILL.md'>, <DirEntry 'templates'>, ...]
+src = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/skill')
+dst = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-dev/test_skill_self_contained0/skill')
+symlinks = False, ignore = None
+copy_function = <function copy2 at 0x000001C88E702980>
+ignore_dangling_symlinks = False, dirs_exist_ok = False
+
+    def _copytree(entries, src, dst, symlinks, ignore, copy_function,
+                  ignore_dangling_symlinks, dirs_exist_ok=False):
+        if ignore is not None:
+            ignored_names = ignore(os.fspath(src), [x.name for x in entries])
+        else:
+            ignored_names = ()
+    
+        os.makedirs(dst, exist_ok=dirs_exist_ok)
+        errors = []
+        use_srcentry = copy_function is copy2 or copy_function is copy
+    
+        for srcentry in entries:
+            if srcentry.name in ignored_names:
+                continue
+            srcname = os.path.join(src, srcentry.name)
+            dstname = os.path.join(dst, srcentry.name)
+            srcobj = srcentry if use_srcentry else srcname
+            try:
+                is_symlink = srcentry.is_symlink()
+                if is_symlink and os.name == 'nt':
+                    # Special check for directory junctions, which appear as
+                    # symlinks but we want to recurse.
+                    lstat = srcentry.stat(follow_symlinks=False)
+                    if lstat.st_reparse_tag == stat.IO_REPARSE_TAG_MOUNT_POINT:
+                        is_symlink = False
+                if is_symlink:
+                    linkto = os.readlink(srcname)
+                    if symlinks:
+                        # We can't just leave it to `copy_function` because legacy
+                        # code with a custom `copy_function` may rely on copytree
+                        # doing the right thing.
+                        os.symlink(linkto, dstname)
+                        copystat(srcobj, dstname, follow_symlinks=not symlinks)
+                    else:
+                        # ignore dangling symlink if the flag is on
+                        if not os.path.exists(linkto) and ignore_dangling_symlinks:
+                            continue
+                        # otherwise let the copy occur. copy2 will raise an error
+                        if srcentry.is_dir():
+                            copytree(srcobj, dstname, symlinks, ignore,
+                                     copy_function, ignore_dangling_symlinks,
+                                     dirs_exist_ok)
+                        else:
+                            copy_function(srcobj, dstname)
+                elif srcentry.is_dir():
+                    copytree(srcobj, dstname, symlinks, ignore, copy_function,
+                             ignore_dangling_symlinks, dirs_exist_ok)
+                else:
+                    # Will raise a SpecialFileError for unsupported file types
+                    copy_function(srcobj, dstname)
+            # catch the Error from the recursive copytree so that we can
+            # continue with other files
+            except Error as err:
+                errors.extend(err.args[0])
+            except OSError as why:
+                errors.append((srcname, dstname, str(why)))
+        try:
+            copystat(src, dst)
+        except OSError as why:
+            # Copying file access times may fail on Windows
+            if getattr(why, 'winerror', None) is None:
+                errors.append((src, dst, str(why)))
+        if errors:
+>           raise Error(errors)
+E           shutil.Error: [('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\references\\models\\classification-clustering.md', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\references\\models\\classification-clustering.md', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\association_analysis.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\association_analysis.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\data_audit.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\data_audit.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\feature_sets.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\feature_sets.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\group_validation.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\group_validation.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\mechanism_closure.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\mechanism_closure.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\metrics.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\metrics.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\ordinal.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\ordinal.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\plotting.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\plotting.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\robustness.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\robustness.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\runtime_provenance.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\runtime_provenance.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\sensitivity.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\sensitivity.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\spectral_conventions.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\spectral_conventions.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\stateful_scheduling.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\stateful_scheduling.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\structured_improvement.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\structured_improvement.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\temporal_availability.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\temporal_availability.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。'), ('C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\skill\\scripts\\__pycache__\\__init__.cpython-312.pyc', 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev\\test_skill_self_contained0\\skill\\scripts\\__pycache__\\__init__.cpython-312.pyc', '[WinError 3] 系统找不到指定的路径。')]
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\shutil.py:554: Error
+=========================== short test summary info ===========================
+FAILED development/tests/test_2023e_feature_sets.py::test_real_q3_preserves_baseline_and_uses_controlled_folds
+FAILED development/tests/test_clean_room.py::test_prepare_clean_room_excludes_developer_and_evaluator_assets
+FAILED development/tests/test_clean_room.py::test_clean_room_rejects_content_marker_and_previous_run_output
+FAILED development/tests/test_clean_room.py::test_clean_room_rejects_source_hash_mismatch
+FAILED development/tests/test_clean_room.py::test_writable_root_and_canonicalization
+FAILED development/tests/test_clean_room.py::test_default_clean_room_is_under_system_temp_and_runtime_files_are_copies
+FAILED development/tests/test_portable_runtime.py::test_export_requires_frozen_script_and_preserves_existing_output
+FAILED development/tests/test_repository_packaging.py::test_single_top_level_and_cache_exclusion
+FAILED development/tests/test_runtime_launch_adapter.py::test_direct_and_managed_mirror_bindings_pass
+FAILED development/tests/test_runtime_launch_adapter.py::test_empty_mirror_missing_skill_and_input_fail
+FAILED development/tests/test_runtime_launch_adapter.py::test_actual_root_forbidden_artifact_and_hash_mismatch_fail
+FAILED development/tests/test_runtime_launch_adapter.py::test_developer_repository_root_is_rejected
+FAILED development/tests/test_runtime_launch_adapter.py::test_adapter_launch_requires_platform_session_and_never_invokes_model
+FAILED development/tests/test_runtime_launch_adapter.py::test_failed_preflight_never_allows_model_turn
+FAILED development/tests/test_skill_self_contained.py::test_skill_self_contained
+ERROR development/tests/test_2023e_association_q2.py::test_all_seven_exposures_audited_at_entity_level
+ERROR development/tests/test_2023e_association_q2.py::test_q2c_crude_adjusted_and_timing_boundaries
+ERROR development/tests/test_2023e_association_q2.py::test_q2d_small_joint_model_and_hm_roles
+ERROR development/tests/test_2023e_association_q2.py::test_temporal_sources_and_clustered_uncertainty_have_provenance
+ERROR development/tests/test_2023e_association_q2.py::test_q2_causal_wording_and_records
+ERROR development/tests/test_2023e_association_q2.py::test_targeted_outputs_have_matching_evidence_hashes
+ERROR development/tests/test_2023e_group_validation_q2.py::test_q2a_same_model_row_vs_grouped_and_final_residual_scope
+ERROR development/tests/test_2023e_group_validation_q2.py::test_q2b_training_discovery_and_known_baseline_assignment
+ERROR development/tests/test_2023e_group_validation_q2.py::test_targeted_evidence_records_and_hashes_are_traceable
+ERROR development/tests/test_portable_runtime.py::test_export_uses_clean_room_policy_and_canonical_inputs
+ERROR development/tests/test_portable_runtime.py::test_moved_bundle_validates_without_developer_repository
+ERROR development/tests/test_portable_runtime.py::test_missing_required_file_fails[skill/SKILL.md]
+ERROR development/tests/test_portable_runtime.py::test_missing_required_file_fails[input/attachment3.xlsx]
+ERROR development/tests/test_portable_runtime.py::test_missing_required_file_fails[skill/scripts/metrics.py]
+ERROR development/tests/test_portable_runtime.py::test_modified_input_fails_without_changing_canonical
+ERROR development/tests/test_portable_runtime.py::test_evaluator_and_prior_run_leakage_fails[workspace/expected.yaml]
+ERROR development/tests/test_portable_runtime.py::test_evaluator_and_prior_run_leakage_fails[workspace/run-003/metrics.json]
+ERROR development/tests/test_portable_runtime.py::test_evaluator_and_prior_run_leakage_fails[skill/AGENTS.md]
+ERROR development/tests/test_portable_runtime.py::test_evaluator_and_prior_run_leakage_fails[skill/expected.yaml]
+ERROR development/tests/test_portable_runtime.py::test_evaluator_and_prior_run_leakage_fails[skill/result.txt]
+ERROR development/tests/test_portable_runtime.py::test_evaluator_and_prior_run_leakage_fails[benchmarks/runs/evaluation.yaml]
+ERROR development/tests/test_portable_runtime.py::test_renamed_evaluator_content_is_rejected[expected_route]
+ERROR development/tests/test_portable_runtime.py::test_renamed_evaluator_content_is_rejected[known_failure]
+ERROR development/tests/test_portable_runtime.py::test_renamed_evaluator_content_is_rejected[evaluator_notes]
+ERROR development/tests/test_portable_runtime.py::test_renamed_evaluator_content_is_rejected[first_meaningful_failure]
+ERROR development/tests/test_portable_runtime.py::test_renamed_evaluator_content_is_rejected[model_behavior_p0]
+ERROR development/tests/test_portable_runtime.py::test_renamed_evaluator_content_is_rejected[rubric_score]
+ERROR development/tests/test_portable_runtime.py::test_workspace_policy_and_stale_active_evidence
+ERROR development/tests/test_portable_runtime.py::test_post_run_outputs_allowed_but_immutable_changes_fail
+ERROR development/tests/test_portable_runtime.py::test_manifest_rewrite_cannot_bypass_trusted_snapshot
+ERROR development/tests/test_portable_runtime.py::test_zip_hash_and_unpacked_empty_directories
+ERROR development/tests/test_portable_runtime.py::test_portable_binding_reuses_v27_gates
+ERROR development/tests/test_portable_runtime.py::test_output_export_requires_session_stop_and_preserves_frozen_transfer
+ERROR development/tests/test_portable_runtime.py::test_mutated_runtime_cannot_export_outputs
+ERROR development/tests/test_portable_runtime.py::test_validator_cli_fails_closed_with_single_status[invalid-yaml]
+ERROR development/tests/test_portable_runtime.py::test_validator_cli_fails_closed_with_single_status[escape-path]
+ERROR development/tests/test_portable_runtime.py::test_validator_cli_fails_closed_with_single_status[empty-input-list]
+ERROR development/tests/test_portable_runtime.py::test_validator_cli_fails_closed_with_single_status[missing-policy-module]
+15 failed, 252 passed, 38 errors in 50.24s

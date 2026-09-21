@@ -1,0 +1,126 @@
+{
+  "tests": [
+    {
+      "name": "development-tests",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pytest",
+        "development/tests",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-dev"
+      ],
+      "exit_code": 1,
+      "seconds": 52.31136379999225,
+      "log": "validation-results/development-tests.log"
+    },
+    {
+      "name": "network-tests",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pytest",
+        "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\code\\test_network_components.py",
+        "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\code\\test_operation.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-network"
+      ],
+      "exit_code": 1,
+      "seconds": 4.385937099999865,
+      "log": "validation-results/network-tests.log"
+    },
+    {
+      "name": "routing_test",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "development/harness/routing_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.0867544000066118,
+      "log": "validation-results/routing_test.log"
+    },
+    {
+      "name": "behavior_contract_test",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "development/harness/behavior_contract_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3090927000012016,
+      "log": "validation-results/behavior_contract_test.log"
+    },
+    {
+      "name": "trajectory_test",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "development/harness/trajectory_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.595585899995058,
+      "log": "validation-results/trajectory_test.log"
+    },
+    {
+      "name": "trajectory_safety_test",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "development/harness/trajectory_safety_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.24805819999892265,
+      "log": "validation-results/trajectory_safety_test.log"
+    },
+    {
+      "name": "problem_facts_test",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "development/harness/problem_facts_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 69.39250780000293,
+      "log": "validation-results/problem_facts_test.log"
+    },
+    {
+      "name": "historical_artifact_test",
+      "command": [
+        "C:\\Users\\aaa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "development/harness/historical_artifact_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.154967800001032,
+      "log": "validation-results/historical_artifact_test.log"
+    }
+  ],
+  "default_environment_issue": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING",
+  "default_collection": "Not rerun: excluded .tmp checkout and frozen duplicate smoke modules; no repair or deletion",
+  "skill_only_self_contained": "included test_skill_self_contained.py and test_repository_packaging.py in development/tests"
+}

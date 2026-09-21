@@ -1,0 +1,214 @@
+{
+  "stateful": {
+    "problem_type": "STATEFUL_SCHEDULING",
+    "state_variables": [
+      "clock",
+      "ready freight by route leg",
+      "pending arrivals",
+      "delivered mass"
+    ],
+    "resources": [
+      "one station departure per 12 minutes",
+      "park directional arc departure per 2 minutes",
+      "8-car payload"
+    ],
+    "queues_or_buffers": [
+      "unlimited freight queues; unlimited available trains assumed"
+    ],
+    "time_representation": "event time in minutes; arrivals before departures at equal times",
+    "terminal_condition": "stop at 1080 minutes; unfinished mass is not discarded",
+    "legal_action_definition": "dispatch only ready freight on its next saved arc within payload and fixed resource slot",
+    "transition_definition": "remove FIFO freight, enqueue arrival at length/0.81 km/min; transfer delay 0 or12 minutes",
+    "hard_invariants": [
+      "nonnegative mass",
+      "route precedence",
+      "payload",
+      "headway",
+      "dispatch slots",
+      "mass balance"
+    ],
+    "objective_definition": "delivered tonnes by1080; no static-cost optimum or timetable optimality claim",
+    "candidate_representation": "STATE_COUPLED",
+    "search_mode": "two declared deterministic scenarios, no optimized timetable",
+    "decoder_required": false,
+    "feasibility_mode": "BY_CONSTRUCTION",
+    "status": "PASS"
+  },
+  "mechanism_closure": {
+    "model_name": "2017F queue-policy scenarios",
+    "prediction_or_simulation_target": "18-hour delivery",
+    "closure_scope": "declared saved routes, unlimited trains/queues; not calibrated actual operations",
+    "identifiability_status": "LIMITED",
+    "numerical_termination_verified": true,
+    "assumptions_added": [
+      {
+        "name": "initial_release",
+        "reason": "scenario closure, not source fact",
+        "plausible_range": "all routed freight ready at t=0",
+        "result_dependency": "delivery conditional on this simplifying scenario"
+      },
+      {
+        "name": "fleet_buffer",
+        "reason": "scenario closure, not source fact",
+        "plausible_range": "unlimited trains, no empty return constraint, unlimited queues",
+        "result_dependency": "delivery conditional on this simplifying scenario"
+      },
+      {
+        "name": "handling",
+        "reason": "scenario closure, not source fact",
+        "plausible_range": "[0, 12]",
+        "result_dependency": "delivery conditional on this simplifying scenario"
+      },
+      {
+        "name": "kinematics",
+        "reason": "scenario closure, not source fact",
+        "plausible_range": "constant speed; no acceleration/deceleration or switch movement",
+        "result_dependency": "delivery conditional on this simplifying scenario"
+      }
+    ],
+    "model_form_uncertainty": {
+      "status": "PRESENT",
+      "acknowledged": true
+    },
+    "geometry_requirements": [
+      {
+        "name": "route_geometry",
+        "meaning": "route_geometry",
+        "required_for": "queue simulation",
+        "source_type": "DERIVED",
+        "source": "saved primary design/route coordinates",
+        "value_or_parameter": "saved arc lengths",
+        "unit": "km",
+        "status": "RESOLVED",
+        "essential": true,
+        "assumption_reason": ""
+      }
+    ],
+    "state_initial_requirements": [
+      {
+        "name": "initial_release",
+        "meaning": "initial_release",
+        "required_for": "queue simulation",
+        "source_type": "ASSUMED",
+        "source": "A12",
+        "value_or_parameter": "all routed freight ready at t=0",
+        "unit": "tonne",
+        "status": "ASSUMED",
+        "essential": true,
+        "assumption_reason": "scenario closure, not source fact"
+      }
+    ],
+    "boundary_interface_requirements": [
+      {
+        "name": "fleet_buffer",
+        "meaning": "fleet_buffer",
+        "required_for": "queue simulation",
+        "source_type": "ASSUMED",
+        "source": "operating scenario",
+        "value_or_parameter": "unlimited trains, no empty return constraint, unlimited queues",
+        "unit": "trains",
+        "status": "ASSUMED",
+        "essential": true,
+        "assumption_reason": "scenario closure, not source fact"
+      },
+      {
+        "name": "handling",
+        "meaning": "handling",
+        "required_for": "queue simulation",
+        "source_type": "ASSUMED",
+        "source": "sensitivity, not inferred from hourly dispatch",
+        "value_or_parameter": [
+          0,
+          12
+        ],
+        "unit": "minutes per transfer",
+        "status": "ASSUMED",
+        "essential": true,
+        "assumption_reason": "scenario closure, not source fact"
+      }
+    ],
+    "forcing_input_requirements": [
+      {
+        "name": "demand",
+        "meaning": "demand",
+        "required_for": "queue simulation",
+        "source_type": "DERIVED",
+        "source": "original directed OD via saved allocation/routes",
+        "value_or_parameter": "saved route masses",
+        "unit": "tonne/day",
+        "status": "RESOLVED",
+        "essential": true,
+        "assumption_reason": ""
+      }
+    ],
+    "material_constitutive_requirements": [
+      {
+        "name": "speed",
+        "meaning": "speed",
+        "required_for": "queue simulation",
+        "source_type": "GIVEN",
+        "source": "DOC appendix",
+        "value_or_parameter": 13.5,
+        "unit": "m/s",
+        "status": "RESOLVED",
+        "essential": true,
+        "assumption_reason": ""
+      },
+      {
+        "name": "kinematics",
+        "meaning": "kinematics",
+        "required_for": "queue simulation",
+        "source_type": "ASSUMED",
+        "source": "A15",
+        "value_or_parameter": "constant speed; no acceleration/deceleration or switch movement",
+        "unit": "model form",
+        "status": "ASSUMED",
+        "essential": true,
+        "assumption_reason": "scenario closure, not source fact"
+      }
+    ],
+    "termination_horizon_requirements": [
+      {
+        "name": "horizon",
+        "meaning": "horizon",
+        "required_for": "queue simulation",
+        "source_type": "GIVEN",
+        "source": "DOC appendix",
+        "value_or_parameter": 1080,
+        "unit": "minutes",
+        "status": "RESOLVED",
+        "essential": true,
+        "assumption_reason": ""
+      }
+    ]
+  },
+  "stateful_check": {
+    "status": "PASS",
+    "errors": [],
+    "candidate_representation": "STATE_COUPLED",
+    "feasibility_mode": "BY_CONSTRUCTION",
+    "decoder_required": false,
+    "eligible_for_formal_search": true
+  },
+  "closure_check": {
+    "valid_schema": true,
+    "schema_errors": [],
+    "closure_status": "SCENARIO_ASSUMED",
+    "allowed_claim_level": "SCENARIO_RESULT",
+    "claimed_level": "SCENARIO_RESULT",
+    "claim_allowed": true,
+    "identifiability_status": "LIMITED",
+    "numerical_termination_verified": true,
+    "reviewer_codes": [],
+    "essential_requirements": [
+      "route_geometry",
+      "initial_release",
+      "fleet_buffer",
+      "handling",
+      "demand",
+      "speed",
+      "kinematics",
+      "horizon"
+    ]
+  }
+}

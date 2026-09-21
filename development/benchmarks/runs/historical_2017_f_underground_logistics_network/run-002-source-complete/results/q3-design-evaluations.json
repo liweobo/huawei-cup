@@ -1,0 +1,49 @@
+{
+  "position_scenarios": [
+    {
+      "routed_t_day": 163228.2037394571,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 163403.02,
+      "station_max_departures": 84.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 32,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 1970393.3529409221,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "offset_km": 0.125,
+      "total_daily_yuan": 93039952.66074525,
+      "status": "LOCATION_SENSITIVITY_ONLY_NOT_ADOPTED; transfer-ratio nearest-association must be rechecked before adoption"
+    },
+    {
+      "routed_t_day": 163228.2037394571,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 163403.02,
+      "station_max_departures": 84.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 32,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2051269.9351477812,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "offset_km": 0.5,
+      "total_daily_yuan": 93598459.21528085,
+      "status": "LOCATION_SENSITIVITY_ONLY_NOT_ADOPTED; transfer-ratio nearest-association must be rechecked before adoption"
+    }
+  ],
+  "node_count_probe": {
+    "remove_secondary": "S117",
+    "unreallocated_exchange_t_day": 132.77299999999946,
+    "status": "REJECTED_LOST_REQUIRED_SERVICE; no full reallocation search claimed"
+  },
+  "node_level_probe": {
+    "candidate": "demote a primary while retaining incident park links",
+    "status": "REJECTED_HIERARCHY_VIOLATION; secondary-park links not eligible"
+  },
+  "feeder_redundancy_option": {
+    "status": "PROPOSAL_NOT_BUILT_OR_VERIFIED",
+    "scope": "Additional independent feeder corridors would target observed bridge failures; same-parent hierarchy and common-cause failures require separate design"
+  }
+}

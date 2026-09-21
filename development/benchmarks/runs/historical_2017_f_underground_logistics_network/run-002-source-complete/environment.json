@@ -1,0 +1,15 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "networkx": "3.4.2",
+    "xlrd": "2.0.2",
+    "python-calamine": "0.6.1",
+    "matplotlib": "3.11.1",
+    "pytest": "9.1.1",
+    "PyYAML": "6.0.3"
+  },
+  "randomness": "deterministic; no random seed used; HiGHS tie solutions may differ across versions"
+}

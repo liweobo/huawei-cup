@@ -1,0 +1,77 @@
+{
+  "scenarios": [
+    {
+      "routed_t_day": 165158.1403394573,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 165332.95659999998,
+      "station_max_departures": 85.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 32,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2022085.4394743626,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "scenario": "park1_outgoing_x1.1",
+      "source": "ASSUMED_SCENARIO",
+      "rerouting": "retained paths; overload reported, not admitted as feasible design"
+    },
+    {
+      "routed_t_day": 168053.04523945722,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 168227.86149999997,
+      "station_max_departures": 85.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 32,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 2059305.4983662895,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "scenario": "park1_outgoing_x1.25",
+      "source": "ASSUMED_SCENARIO",
+      "rerouting": "retained paths; overload reported, not admitted as feasible design"
+    },
+    {
+      "routed_t_day": 163228.2037394571,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 163403.02,
+      "station_max_departures": 160.0,
+      "station_violation_departures": 70.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 63,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 1997272.0668797463,
+      "static_capacity_pass": false,
+      "daily_clearing": "STATIC_ONLY",
+      "scenario": "train_cars_4",
+      "source": "declared configuration sensitivity within given4-8"
+    },
+    {
+      "routed_t_day": 163228.2037394571,
+      "station_local_t_day": 174.81626054308057,
+      "delivered_endpoint_t_day": 163403.02,
+      "station_max_departures": 84.0,
+      "station_violation_departures": 0.0,
+      "ground_violation_t_day": 0.0,
+      "line_max_departures": 32,
+      "line_violation_departures": 0,
+      "underground_tonne_km_day": 1997272.0668797463,
+      "static_capacity_pass": true,
+      "daily_clearing": "STATIC_ONLY",
+      "scenario": "train_cars_8",
+      "source": "declared configuration sensitivity within given4-8"
+    }
+  ],
+  "park_scope": {
+    "scenario": "apply_90_departures_to_each_park",
+    "maximum_outbound_tonnes_per_park": 7200,
+    "source_outbound_tonnes": [
+      19299.365999999998,
+      18981.112000000005,
+      18684.818,
+      8923.678
+    ],
+    "interpretation": "Alternative dispatch scope; full park diversion impossible under a park-wide7200t/day bound; not the nominal interpretation"
+  }
+}

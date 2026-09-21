@@ -1,0 +1,8 @@
+{
+  "experiment_schema": "PASS",
+  "active_evidence_schema": "PASS",
+  "evidence_bindings": "PASS",
+  "protocol_changed": true,
+  "workspace_strict_isolation": "NOT_PASSED_DISCLOSED",
+  "current_run_only": true
+}

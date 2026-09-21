@@ -1,0 +1,34 @@
+active_run_id: run-002-source-complete
+active_evidence_set:
+  Q1:
+    run_id: run-002-source-complete
+    experiment_id: EXP-2017F-SC-001
+    artifact_id: ART-6fa4e094bb8aebd0
+    evidence_id: EV-2017F-Q1
+    artifact: results/primary/node-results.json
+    status: PARTIAL
+    scope: conditional numerical output, not full-question feasibility
+  Q2:
+    run_id: run-002-source-complete
+    experiment_id: EXP-2017F-SC-001
+    artifact_id: ART-27da1bbff84e0f25
+    evidence_id: EV-2017F-Q2
+    artifact: results/primary/design.json
+    status: PARTIAL
+    scope: conditional numerical output, not full-question feasibility
+  Q3:
+    run_id: run-002-source-complete
+    experiment_id: EXP-2017F-SC-001
+    artifact_id: ART-e71fda753e1fca0a
+    evidence_id: EV-2017F-Q3
+    artifact: results/q3-operations.json
+    status: PARTIAL
+    scope: conditional numerical output, not full-question feasibility
+  Q4:
+    run_id: run-002-source-complete
+    experiment_id: EXP-2017F-SC-001
+    artifact_id: ART-958b2668aefb2bbe
+    evidence_id: EV-2017F-Q4
+    artifact: results/q4-annual.json
+    status: PARTIAL
+    scope: conditional numerical output, not full-question feasibility

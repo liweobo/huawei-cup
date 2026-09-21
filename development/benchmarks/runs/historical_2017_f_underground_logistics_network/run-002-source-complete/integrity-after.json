@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "starting_head": "492d414b542b4cf4567ea7204ef1f146f63bbefd",
+  "current_head": "492d414b542b4cf4567ea7204ef1f146f63bbefd",
+  "prior_files_hashed": 980,
+  "changed_prior_files": [],
+  "protected_trees_before": {
+    "skill": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-001": "fc2d5b6f7ba6da3dfe2826e72a60aadd89a12d73",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/source-recovery": "7657511669a362289c5a3e8e59c46bbb3d6bb4cc"
+  },
+  "protected_trees_after": {
+    "skill": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-001": "fc2d5b6f7ba6da3dfe2826e72a60aadd89a12d73",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/source-recovery": "7657511669a362289c5a3e8e59c46bbb3d6bb4cc"
+  },
+  "outside_run_tracked_diff": [],
+  "source_hash_checks": [
+    {
+      "artifact_id": "C01",
+      "path": "work/source/F.rar",
+      "sha256": "8f8dc68c9049b4c565009dd3af3f959b7ae00f9579c0936baa344794b259f022",
+      "pass_hash": true
+    },
+    {
+      "artifact_id": "C01-ZIP",
+      "path": "work/source/2017\u5e74\u4e2d\u56fd\u7814\u7a76\u751f\u6570\u5b66\u5efa\u6a21\u7ade\u8d5bF\u9898.zip",
+      "sha256": "34beef8fad48cc340c437d6c110e4f5326946d130282a22953ddad0666ad352d",
+      "pass_hash": true
+    },
+    {
+      "artifact_id": "C01-DOC",
+      "path": "work/source/2017\u5e74\u4e2d\u56fd\u7814\u7a76\u751f\u6570\u5b66\u5efa\u6a21\u7ade\u8d5bF\u9898.doc",
+      "sha256": "7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719",
+      "pass_hash": true
+    },
+    {
+      "artifact_id": "C01-XLS",
+      "path": "work/source/\u73b0\u72b6OD\u6570\u636e\u53ca\u5176\u4ed6\u6570\u636e.xls",
+      "sha256": "15f306257b78632d74576bcc3ccda03e69c8affc098a92dba183ae8f94a207ab",
+      "pass_hash": true
+    },
+    {
+      "artifact_id": "C01-MAP",
+      "path": "work/source/\u5730\u56fe.jpg",
+      "sha256": "30ee09fb69ae9e79506280a8e32e108bda35b6ddc53f1892e52dc28c6cf23d96",
+      "pass_hash": true
+    }
+  ],
+  "scope": "All tracked/nonignored pre-existing files, plus every local source-recovery file; hash-only history access",
+  "blind_boundary": "prior histories hash-only; no2017F solution-source reads"
+}

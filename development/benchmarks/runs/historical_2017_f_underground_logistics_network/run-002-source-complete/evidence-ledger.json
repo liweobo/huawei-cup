@@ -1,0 +1,50 @@
+[
+  {
+    "run_id": "run-002-source-complete",
+    "experiment_id": "EXP-2017F-SC-001",
+    "artifact_id": "ART-6fa4e094bb8aebd0",
+    "evidence_id": "EV-2017F-Q1",
+    "artifact": "results/primary/node-results.json",
+    "status": "PARTIAL",
+    "scope": "conditional numerical output, not full-question feasibility",
+    "type": "EXPERIMENT_RESULT",
+    "source": "actual code run",
+    "sha256": "0d71528e013c629cc1f514795b5767c7d9aae7e5462a54f386b7f7381c63a636"
+  },
+  {
+    "run_id": "run-002-source-complete",
+    "experiment_id": "EXP-2017F-SC-001",
+    "artifact_id": "ART-27da1bbff84e0f25",
+    "evidence_id": "EV-2017F-Q2",
+    "artifact": "results/primary/design.json",
+    "status": "PARTIAL",
+    "scope": "conditional numerical output, not full-question feasibility",
+    "type": "EXPERIMENT_RESULT",
+    "source": "actual code run",
+    "sha256": "b2f04523de0708899a1bc28be6c84d8fb11f1d5fb2650bf3b1cce64db23e4023"
+  },
+  {
+    "run_id": "run-002-source-complete",
+    "experiment_id": "EXP-2017F-SC-001",
+    "artifact_id": "ART-e71fda753e1fca0a",
+    "evidence_id": "EV-2017F-Q3",
+    "artifact": "results/q3-operations.json",
+    "status": "PARTIAL",
+    "scope": "conditional numerical output, not full-question feasibility",
+    "type": "EXPERIMENT_RESULT",
+    "source": "actual code run",
+    "sha256": "f660371bce661fc724f0eab7fcae207bedeb752386edf1b4e6997eb043ef4c1e"
+  },
+  {
+    "run_id": "run-002-source-complete",
+    "experiment_id": "EXP-2017F-SC-001",
+    "artifact_id": "ART-958b2668aefb2bbe",
+    "evidence_id": "EV-2017F-Q4",
+    "artifact": "results/q4-annual.json",
+    "status": "PARTIAL",
+    "scope": "conditional numerical output, not full-question feasibility",
+    "type": "EXPERIMENT_RESULT",
+    "source": "actual code run",
+    "sha256": "d4953145e3c962b272c3aab63fcac0f26f3ac2fba4ee719bff04fcf2e128bd9f"
+  }
+]

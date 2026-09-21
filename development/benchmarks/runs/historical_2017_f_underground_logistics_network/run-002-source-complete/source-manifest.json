@@ -1,0 +1,47 @@
+{
+  "run_id": "run-002-source-complete",
+  "source_page": "https://lxy.usst.edu.cn/2017/0916/c6729a38056/page.htm",
+  "files": [
+    {
+      "artifact_id": "C01",
+      "path": "work/source/F.rar",
+      "sha256": "8f8dc68c9049b4c565009dd3af3f959b7ae00f9579c0936baa344794b259f022",
+      "bytes": 2897538,
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "classification": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL"
+    },
+    {
+      "artifact_id": "C01-ZIP",
+      "path": "work/source/2017年中国研究生数学建模竞赛F题.zip",
+      "sha256": "34beef8fad48cc340c437d6c110e4f5326946d130282a22953ddad0666ad352d",
+      "bytes": 2603620,
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "classification": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL"
+    },
+    {
+      "artifact_id": "C01-DOC",
+      "path": "work/source/2017年中国研究生数学建模竞赛F题.doc",
+      "sha256": "7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719",
+      "bytes": 2579456,
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "classification": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL"
+    },
+    {
+      "artifact_id": "C01-XLS",
+      "path": "work/source/现状OD数据及其他数据.xls",
+      "sha256": "15f306257b78632d74576bcc3ccda03e69c8affc098a92dba183ae8f94a207ab",
+      "bytes": 259072,
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "classification": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL"
+    },
+    {
+      "artifact_id": "C01-MAP",
+      "path": "work/source/地图.jpg",
+      "sha256": "30ee09fb69ae9e79506280a8e32e108bda35b6ddc53f1892e52dc28c6cf23d96",
+      "bytes": 404751,
+      "source_url": "https://lxy.usst.edu.cn/_upload/article/files/e2/01/9e3482374298a63f4622c0c1e50f/bca064b7-2489-4dba-88b9-f2d5fcdbd0d1.rar",
+      "classification": "HIGH_TRUSTED_INSTITUTIONAL_MIRROR_NOT_ORGANIZER_OFFICIAL"
+    }
+  ],
+  "retention": "Local byte-preserved originals in ignored work/source; no change to prior metadata-only delivery policy"
+}

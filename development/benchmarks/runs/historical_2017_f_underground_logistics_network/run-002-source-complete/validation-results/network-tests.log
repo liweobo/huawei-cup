@@ -1,0 +1,78 @@
+....FF                                                                   [100%]
+================================== FAILURES ===================================
+____________________ test_six_node_precedence_oracle[0-13] ____________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-network/test_six_node_precedence_oracl0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001FB3D844CB0>
+handling = 0, expected = 13
+
+    @pytest.mark.parametrize("handling,expected",[(0,13),(12,25)])
+    def test_six_node_precedence_oracle(tmp_path,monkeypatch,handling,expected):
+        monkeypatch.setattr(op,"RUN",tmp_path)
+        (tmp_path/"results").mkdir()
+        d={"nodes":[{"id":str(i)} for i in range(6)],"edges":[
+            {"u":"4","v":"5","length_km":.81,"vehicle_tonnes":5},
+            {"u":"5","v":"0","length_km":.81,"vehicle_tonnes":10}],
+            "station_local_t_day":0,"original_diagonal_surface_t_day":0}
+>       r=op.simulate(d,[{"path":[4,5,0],"tonnes_day":40}],handling)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete\code\test_operation.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete\code\operational_simulation.py:82: in simulate
+    folder=RUN/"results"/f"operation-handling-{handling}"; folder.mkdir(exist_ok=True)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...e-complete/work/test-temp-20260921T020934/pytest-network/test_six_node_precedence_oracl0/results/operation-handling-0')
+mode = 511, parents = False, exist_ok = True
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 206] 文件名或扩展名太长。: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-network\\test_six_node_precedence_oracl0\\results\\operation-handling-0'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+___________________ test_six_node_precedence_oracle[12-25] ____________________
+
+tmp_path = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/work/test-temp-20260921T020934/pytest-network/test_six_node_precedence_oracl1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001FB4C39A150>
+handling = 12, expected = 25
+
+    @pytest.mark.parametrize("handling,expected",[(0,13),(12,25)])
+    def test_six_node_precedence_oracle(tmp_path,monkeypatch,handling,expected):
+        monkeypatch.setattr(op,"RUN",tmp_path)
+        (tmp_path/"results").mkdir()
+        d={"nodes":[{"id":str(i)} for i in range(6)],"edges":[
+            {"u":"4","v":"5","length_km":.81,"vehicle_tonnes":5},
+            {"u":"5","v":"0","length_km":.81,"vehicle_tonnes":10}],
+            "station_local_t_day":0,"original_diagonal_surface_t_day":0}
+>       r=op.simulate(d,[{"path":[4,5,0],"tonnes_day":40}],handling)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete\code\test_operation.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete\code\operational_simulation.py:82: in simulate
+    folder=RUN/"results"/f"operation-handling-{handling}"; folder.mkdir(exist_ok=True)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/aaa/Desktop/test/huawei-cup-2026/development/benchmarks/runs/historical_2017_f_underground_logis...-complete/work/test-temp-20260921T020934/pytest-network/test_six_node_precedence_oracl1/results/operation-handling-12')
+mode = 511, parents = False, exist_ok = True
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 206] 文件名或扩展名太长。: 'C:\\Users\\aaa\\Desktop\\test\\huawei-cup-2026\\development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-002-source-complete\\work\\test-temp-20260921T020934\\pytest-network\\test_six_node_precedence_oracl1\\results\\operation-handling-12'
+
+..\..\..\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+=========================== short test summary info ===========================
+FAILED development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/code/test_operation.py::test_six_node_precedence_oracle[0-13]
+FAILED development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete/code/test_operation.py::test_six_node_precedence_oracle[12-25]
+2 failed, 4 passed in 3.36s

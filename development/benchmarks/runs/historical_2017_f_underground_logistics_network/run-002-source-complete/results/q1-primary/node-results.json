@@ -1,0 +1,4410 @@
+[
+  {
+    "id": "K1",
+    "type": "park",
+    "x_km": 139.3823437,
+    "y_km": 146.0470951,
+    "source_id": 1,
+    "ground_capacity_t_day": null,
+    "underground_out_t_day": 19299.366000000005,
+    "underground_in_t_day": 18441.364999999994,
+    "rounded_departures_day": 296.0
+  },
+  {
+    "id": "K2",
+    "type": "park",
+    "x_km": 157.6884185,
+    "y_km": 148.48903099999998,
+    "source_id": 2,
+    "ground_capacity_t_day": null,
+    "underground_out_t_day": 18981.111999999994,
+    "underground_in_t_day": 18168.524,
+    "rounded_departures_day": 296.0
+  },
+  {
+    "id": "K3",
+    "type": "park",
+    "x_km": 149.44116219999998,
+    "y_km": 167.27863939999997,
+    "source_id": 3,
+    "ground_capacity_t_day": null,
+    "underground_out_t_day": 18684.817999999996,
+    "underground_in_t_day": 17912.878,
+    "rounded_departures_day": 293.0
+  },
+  {
+    "id": "K4",
+    "type": "park",
+    "x_km": 131.764713,
+    "y_km": 162.1030925,
+    "source_id": 4,
+    "ground_capacity_t_day": null,
+    "underground_out_t_day": 8923.678,
+    "underground_in_t_day": 8453.796999999999,
+    "rounded_departures_day": 182.0
+  },
+  {
+    "id": "P000",
+    "type": "primary",
+    "x_km": 154.83008999999998,
+    "y_km": 160.50504999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 886,
+    "underground_out_t_day": 2707.7089050148834,
+    "underground_in_t_day": 2707.7089050148843,
+    "rounded_departures_day": 68.0
+  },
+  {
+    "id": "P001",
+    "type": "primary",
+    "x_km": 150.21194,
+    "y_km": 158.79764,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 874,
+    "underground_out_t_day": 2048.158157695967,
+    "underground_in_t_day": 2048.158157695967,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P002",
+    "type": "primary",
+    "x_km": 149.9519,
+    "y_km": 157.98828,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 839,
+    "underground_out_t_day": 2917.5337260766773,
+    "underground_in_t_day": 2917.5337260766773,
+    "rounded_departures_day": 77.0
+  },
+  {
+    "id": "P003",
+    "type": "primary",
+    "x_km": 164.42987,
+    "y_km": 163.73997,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 892,
+    "underground_out_t_day": 2101.379842193549,
+    "underground_in_t_day": 2101.379842193549,
+    "rounded_departures_day": 52.0
+  },
+  {
+    "id": "P004",
+    "type": "primary",
+    "x_km": 158.43125,
+    "y_km": 162.5724,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 893,
+    "underground_out_t_day": 2058.109960053056,
+    "underground_in_t_day": 2058.109960053056,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P005",
+    "type": "primary",
+    "x_km": 146.98767999999998,
+    "y_km": 159.66821,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 880,
+    "underground_out_t_day": 1804.77165990914,
+    "underground_in_t_day": 1804.771659909139,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P006",
+    "type": "primary",
+    "x_km": 157.3547,
+    "y_km": 167.20666,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 898,
+    "underground_out_t_day": 1805.347702503622,
+    "underground_in_t_day": 1805.3477025036218,
+    "rounded_departures_day": 43.0
+  },
+  {
+    "id": "P007",
+    "type": "primary",
+    "x_km": 153.14697,
+    "y_km": 160.46647000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 890,
+    "underground_out_t_day": 3331.539335879357,
+    "underground_in_t_day": 3331.539335879357,
+    "rounded_departures_day": 81.0
+  },
+  {
+    "id": "P008",
+    "type": "primary",
+    "x_km": 154.98009,
+    "y_km": 160.50504999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 886,
+    "underground_out_t_day": 1799.9999999999995,
+    "underground_in_t_day": 1800.0000000000002,
+    "rounded_departures_day": 46.0
+  },
+  {
+    "id": "P009",
+    "type": "primary",
+    "x_km": 163.42802,
+    "y_km": 166.54335,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 899,
+    "underground_out_t_day": 1998.058045642237,
+    "underground_in_t_day": 1998.058045642237,
+    "rounded_departures_day": 51.0
+  },
+  {
+    "id": "P010",
+    "type": "primary",
+    "x_km": 150.36194,
+    "y_km": 158.79764,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 874,
+    "underground_out_t_day": 1858.7805429671416,
+    "underground_in_t_day": 1858.780542967142,
+    "rounded_departures_day": 47.0
+  },
+  {
+    "id": "P011",
+    "type": "primary",
+    "x_km": 149.36689,
+    "y_km": 153.89804999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 826,
+    "underground_out_t_day": 2774.7150985268095,
+    "underground_in_t_day": 2774.7150985268095,
+    "rounded_departures_day": 72.0
+  },
+  {
+    "id": "P012",
+    "type": "primary",
+    "x_km": 147.18879,
+    "y_km": 153.07315,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 822,
+    "underground_out_t_day": 2601.709365611626,
+    "underground_in_t_day": 2601.7093656116253,
+    "rounded_departures_day": 65.0
+  },
+  {
+    "id": "P013",
+    "type": "primary",
+    "x_km": 158.48734,
+    "y_km": 164.66338000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 894,
+    "underground_out_t_day": 1805.160536198252,
+    "underground_in_t_day": 1805.160536198252,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P014",
+    "type": "primary",
+    "x_km": 146.277,
+    "y_km": 149.62705,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 791,
+    "underground_out_t_day": 1801.8012949361855,
+    "underground_in_t_day": 1801.8012949361855,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P015",
+    "type": "primary",
+    "x_km": 146.01329,
+    "y_km": 155.93312,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 835,
+    "underground_out_t_day": 2347.1951436495233,
+    "underground_in_t_day": 2347.1951436495237,
+    "rounded_departures_day": 76.0
+  },
+  {
+    "id": "P016",
+    "type": "primary",
+    "x_km": 140.52299,
+    "y_km": 160.64675,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 867,
+    "underground_out_t_day": 2329.4497297198136,
+    "underground_in_t_day": 2329.4497297198145,
+    "rounded_departures_day": 65.0
+  },
+  {
+    "id": "P017",
+    "type": "primary",
+    "x_km": 150.1019,
+    "y_km": 157.98828,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 839,
+    "underground_out_t_day": 2588.5053232066643,
+    "underground_in_t_day": 2588.505323206664,
+    "rounded_departures_day": 68.0
+  },
+  {
+    "id": "P018",
+    "type": "primary",
+    "x_km": 151.50072,
+    "y_km": 152.37832,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 812,
+    "underground_out_t_day": 1850.5186100672843,
+    "underground_in_t_day": 1850.5186100672838,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P019",
+    "type": "primary",
+    "x_km": 141.61202,
+    "y_km": 152.67478,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 815,
+    "underground_out_t_day": 2816.4399332320972,
+    "underground_in_t_day": 2816.4399332320972,
+    "rounded_departures_day": 72.0
+  },
+  {
+    "id": "P020",
+    "type": "primary",
+    "x_km": 164.57987,
+    "y_km": 163.73997,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 892,
+    "underground_out_t_day": 1800.0860230714675,
+    "underground_in_t_day": 1800.0860230714675,
+    "rounded_departures_day": 46.0
+  },
+  {
+    "id": "P021",
+    "type": "primary",
+    "x_km": 151.44944,
+    "y_km": 154.01425,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 825,
+    "underground_out_t_day": 2030.1152477854696,
+    "underground_in_t_day": 2030.11524778547,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P022",
+    "type": "primary",
+    "x_km": 145.03599,
+    "y_km": 153.56570000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 821,
+    "underground_out_t_day": 3235.301253865352,
+    "underground_in_t_day": 3235.301253865352,
+    "rounded_departures_day": 83.0
+  },
+  {
+    "id": "P023",
+    "type": "primary",
+    "x_km": 142.14479,
+    "y_km": 154.84726,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 830,
+    "underground_out_t_day": 2819.054590266966,
+    "underground_in_t_day": 2819.054590266966,
+    "rounded_departures_day": 78.0
+  },
+  {
+    "id": "P024",
+    "type": "primary",
+    "x_km": 158.58125,
+    "y_km": 162.5724,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 893,
+    "underground_out_t_day": 1799.9999999999998,
+    "underground_in_t_day": 1799.9999999999998,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P025",
+    "type": "primary",
+    "x_km": 147.13768,
+    "y_km": 159.66821,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 880,
+    "underground_out_t_day": 2009.9197374506377,
+    "underground_in_t_day": 2009.9197374506366,
+    "rounded_departures_day": 51.0
+  },
+  {
+    "id": "P026",
+    "type": "primary",
+    "x_km": 149.21481,
+    "y_km": 151.72223000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 808,
+    "underground_out_t_day": 2375.605036807593,
+    "underground_in_t_day": 2375.605036807592,
+    "rounded_departures_day": 60.0
+  },
+  {
+    "id": "P027",
+    "type": "primary",
+    "x_km": 142.99054999999998,
+    "y_km": 159.64709,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 863,
+    "underground_out_t_day": 2727.7805242901586,
+    "underground_in_t_day": 2727.7805242901586,
+    "rounded_departures_day": 73.0
+  },
+  {
+    "id": "P028",
+    "type": "primary",
+    "x_km": 157.5047,
+    "y_km": 167.20666,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 898,
+    "underground_out_t_day": 1800.0000000000014,
+    "underground_in_t_day": 1799.9999999999973,
+    "rounded_departures_day": 43.0
+  },
+  {
+    "id": "P029",
+    "type": "primary",
+    "x_km": 161.44273,
+    "y_km": 166.08317000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 900,
+    "underground_out_t_day": 1862.107216173455,
+    "underground_in_t_day": 1862.1072161734555,
+    "rounded_departures_day": 46.0
+  },
+  {
+    "id": "P030",
+    "type": "primary",
+    "x_km": 141.33945,
+    "y_km": 154.20972,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 827,
+    "underground_out_t_day": 2944.6541014909153,
+    "underground_in_t_day": 2944.6541014909158,
+    "rounded_departures_day": 75.0
+  },
+  {
+    "id": "P031",
+    "type": "primary",
+    "x_km": 140.8082,
+    "y_km": 152.68247,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 810,
+    "underground_out_t_day": 2515.1103027095187,
+    "underground_in_t_day": 2515.1103027095187,
+    "rounded_departures_day": 59.0
+  },
+  {
+    "id": "P032",
+    "type": "primary",
+    "x_km": 139.36674,
+    "y_km": 151.90259,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 813,
+    "underground_out_t_day": 1972.5196109523145,
+    "underground_in_t_day": 1972.5196109523142,
+    "rounded_departures_day": 52.0
+  },
+  {
+    "id": "P033",
+    "type": "primary",
+    "x_km": 139.71381,
+    "y_km": 158.44805,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 859,
+    "underground_out_t_day": 2543.9317490045005,
+    "underground_in_t_day": 2543.9317490045005,
+    "rounded_departures_day": 65.0
+  },
+  {
+    "id": "P034",
+    "type": "primary",
+    "x_km": 143.67806,
+    "y_km": 153.69464000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 820,
+    "underground_out_t_day": 3179.2919395889294,
+    "underground_in_t_day": 3179.29193958893,
+    "rounded_departures_day": 82.0
+  },
+  {
+    "id": "P035",
+    "type": "primary",
+    "x_km": 140.30915,
+    "y_km": 153.72378,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 823,
+    "underground_out_t_day": 3120.745120051737,
+    "underground_in_t_day": 3120.745120051736,
+    "rounded_departures_day": 79.0
+  },
+  {
+    "id": "P036",
+    "type": "primary",
+    "x_km": 149.10078,
+    "y_km": 159.49167,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 877,
+    "underground_out_t_day": 2581.247638989109,
+    "underground_in_t_day": 2581.2476389891094,
+    "rounded_departures_day": 63.0
+  },
+  {
+    "id": "P037",
+    "type": "primary",
+    "x_km": 153.29697000000002,
+    "y_km": 160.46647000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 890,
+    "underground_out_t_day": 1804.6153439239047,
+    "underground_in_t_day": 1804.6153439239042,
+    "rounded_departures_day": 43.0
+  },
+  {
+    "id": "P038",
+    "type": "primary",
+    "x_km": 147.77144,
+    "y_km": 156.41304,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 837,
+    "underground_out_t_day": 2255.0057743816824,
+    "underground_in_t_day": 2255.005774381683,
+    "rounded_departures_day": 54.0
+  },
+  {
+    "id": "P039",
+    "type": "primary",
+    "x_km": 150.87025,
+    "y_km": 157.14084,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 840,
+    "underground_out_t_day": 2557.544411715402,
+    "underground_in_t_day": 2557.544411715402,
+    "rounded_departures_day": 66.0
+  },
+  {
+    "id": "P040",
+    "type": "primary",
+    "x_km": 144.40329,
+    "y_km": 156.18001,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 834,
+    "underground_out_t_day": 2583.3183638744335,
+    "underground_in_t_day": 2583.3183638744326,
+    "rounded_departures_day": 81.0
+  },
+  {
+    "id": "P041",
+    "type": "primary",
+    "x_km": 155.13009,
+    "y_km": 160.50504999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 886,
+    "underground_out_t_day": 1972.8425339523742,
+    "underground_in_t_day": 1972.8425339523749,
+    "rounded_departures_day": 51.0
+  },
+  {
+    "id": "P042",
+    "type": "primary",
+    "x_km": 163.57802,
+    "y_km": 166.54335,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 899,
+    "underground_out_t_day": 1850.8642889000828,
+    "underground_in_t_day": 1850.864288900083,
+    "rounded_departures_day": 51.0
+  },
+  {
+    "id": "P043",
+    "type": "primary",
+    "x_km": 150.51194,
+    "y_km": 158.79764,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 874,
+    "underground_out_t_day": 3425.5259581665596,
+    "underground_in_t_day": 3425.5259581665596,
+    "rounded_departures_day": 84.0
+  },
+  {
+    "id": "P044",
+    "type": "primary",
+    "x_km": 165.29595999999998,
+    "y_km": 166.55748,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 897,
+    "underground_out_t_day": 1801.569,
+    "underground_in_t_day": 1801.5690000000004,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P045",
+    "type": "primary",
+    "x_km": 138.79352,
+    "y_km": 155.88819,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 848,
+    "underground_out_t_day": 2978.6422720860573,
+    "underground_in_t_day": 2978.6422720860573,
+    "rounded_departures_day": 82.0
+  },
+  {
+    "id": "P046",
+    "type": "primary",
+    "x_km": 142.73335,
+    "y_km": 153.34959,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 819,
+    "underground_out_t_day": 3221.828783399037,
+    "underground_in_t_day": 3221.828783399037,
+    "rounded_departures_day": 81.0
+  },
+  {
+    "id": "P047",
+    "type": "primary",
+    "x_km": 137.4048,
+    "y_km": 160.64203,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 868,
+    "underground_out_t_day": 1874.2902169167237,
+    "underground_in_t_day": 1874.2902169167241,
+    "rounded_departures_day": 50.0
+  },
+  {
+    "id": "P048",
+    "type": "primary",
+    "x_km": 148.88618,
+    "y_km": 157.00798,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 838,
+    "underground_out_t_day": 2707.382133643811,
+    "underground_in_t_day": 2707.3821336438114,
+    "rounded_departures_day": 64.0
+  },
+  {
+    "id": "P049",
+    "type": "primary",
+    "x_km": 141.73223000000002,
+    "y_km": 150.15802,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 793,
+    "underground_out_t_day": 1799.999999999999,
+    "underground_in_t_day": 1800.0,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P050",
+    "type": "primary",
+    "x_km": 143.19186,
+    "y_km": 155.27521,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 833,
+    "underground_out_t_day": 3068.8277171841173,
+    "underground_in_t_day": 3068.8277171841173,
+    "rounded_departures_day": 82.0
+  },
+  {
+    "id": "P051",
+    "type": "primary",
+    "x_km": 139.46551000000002,
+    "y_km": 154.55973,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 843,
+    "underground_out_t_day": 2669.268868685219,
+    "underground_in_t_day": 2669.26886868522,
+    "rounded_departures_day": 66.0
+  },
+  {
+    "id": "P052",
+    "type": "primary",
+    "x_km": 142.86327,
+    "y_km": 150.28094000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 797,
+    "underground_out_t_day": 2006.2363947121958,
+    "underground_in_t_day": 2006.2363947121958,
+    "rounded_departures_day": 46.0
+  },
+  {
+    "id": "P053",
+    "type": "primary",
+    "x_km": 142.19994,
+    "y_km": 152.14776999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 807,
+    "underground_out_t_day": 2447.2978964064127,
+    "underground_in_t_day": 2447.2978964064127,
+    "rounded_departures_day": 61.0
+  },
+  {
+    "id": "P054",
+    "type": "primary",
+    "x_km": 137.34814,
+    "y_km": 156.18846,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 852,
+    "underground_out_t_day": 2120.12348023468,
+    "underground_in_t_day": 2120.1234802346808,
+    "rounded_departures_day": 52.0
+  },
+  {
+    "id": "P055",
+    "type": "primary",
+    "x_km": 149.51689000000002,
+    "y_km": 153.89804999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 826,
+    "underground_out_t_day": 2551.276745751671,
+    "underground_in_t_day": 2551.276745751671,
+    "rounded_departures_day": 65.0
+  },
+  {
+    "id": "P056",
+    "type": "primary",
+    "x_km": 147.33879000000002,
+    "y_km": 153.07315,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 822,
+    "underground_out_t_day": 1943.9804859585604,
+    "underground_in_t_day": 1943.9804859585597,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P057",
+    "type": "primary",
+    "x_km": 149.87722,
+    "y_km": 161.34104000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 884,
+    "underground_out_t_day": 1798.9673381685648,
+    "underground_in_t_day": 1798.967338168567,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P058",
+    "type": "primary",
+    "x_km": 145.48859,
+    "y_km": 159.08325,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 875,
+    "underground_out_t_day": 2842.414644948189,
+    "underground_in_t_day": 2842.4146449481896,
+    "rounded_departures_day": 76.0
+  },
+  {
+    "id": "P059",
+    "type": "primary",
+    "x_km": 140.50083999999998,
+    "y_km": 155.25768,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 847,
+    "underground_out_t_day": 2970.5540884090606,
+    "underground_in_t_day": 2970.5540884090606,
+    "rounded_departures_day": 72.0
+  },
+  {
+    "id": "P060",
+    "type": "primary",
+    "x_km": 139.99881,
+    "y_km": 150.33272,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 798,
+    "underground_out_t_day": 1804.739953347069,
+    "underground_in_t_day": 1804.7399533470689,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P061",
+    "type": "primary",
+    "x_km": 145.06268,
+    "y_km": 150.34255,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 796,
+    "underground_out_t_day": 2254.6947003558935,
+    "underground_in_t_day": 2254.694700355894,
+    "rounded_departures_day": 54.0
+  },
+  {
+    "id": "P062",
+    "type": "primary",
+    "x_km": 149.19845999999998,
+    "y_km": 150.16892,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 799,
+    "underground_out_t_day": 1901.9951979223642,
+    "underground_in_t_day": 1901.995197922364,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P063",
+    "type": "primary",
+    "x_km": 158.63734,
+    "y_km": 164.66338000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 894,
+    "underground_out_t_day": 1934.7960810563932,
+    "underground_in_t_day": 1934.7960810563936,
+    "rounded_departures_day": 48.0
+  },
+  {
+    "id": "P064",
+    "type": "primary",
+    "x_km": 141.54686999999998,
+    "y_km": 151.3579,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 801,
+    "underground_out_t_day": 2544.8769820784537,
+    "underground_in_t_day": 2544.8769820784537,
+    "rounded_departures_day": 62.0
+  },
+  {
+    "id": "P065",
+    "type": "primary",
+    "x_km": 146.427,
+    "y_km": 149.62705,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 791,
+    "underground_out_t_day": 1957.4279643265413,
+    "underground_in_t_day": 1957.4279643265409,
+    "rounded_departures_day": 47.0
+  },
+  {
+    "id": "P066",
+    "type": "primary",
+    "x_km": 139.35685,
+    "y_km": 160.65517000000003,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 869,
+    "underground_out_t_day": 1866.9977960154165,
+    "underground_in_t_day": 1866.9977960154165,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P067",
+    "type": "primary",
+    "x_km": 149.02656,
+    "y_km": 154.96668,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 829,
+    "underground_out_t_day": 2041.9620619967154,
+    "underground_in_t_day": 2041.9620619967152,
+    "rounded_departures_day": 47.0
+  },
+  {
+    "id": "P068",
+    "type": "primary",
+    "x_km": 137.87261999999998,
+    "y_km": 155.26621,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 844,
+    "underground_out_t_day": 2134.9344045166454,
+    "underground_in_t_day": 2134.9344045166454,
+    "rounded_departures_day": 53.0
+  },
+  {
+    "id": "P069",
+    "type": "primary",
+    "x_km": 147.0664,
+    "y_km": 155.39929,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 831,
+    "underground_out_t_day": 2398.079898294414,
+    "underground_in_t_day": 2398.079898294414,
+    "rounded_departures_day": 61.0
+  },
+  {
+    "id": "P070",
+    "type": "primary",
+    "x_km": 143.42575,
+    "y_km": 157.58939999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 855,
+    "underground_out_t_day": 3140.570303233429,
+    "underground_in_t_day": 3140.570303233429,
+    "rounded_departures_day": 77.0
+  },
+  {
+    "id": "P071",
+    "type": "primary",
+    "x_km": 141.52117,
+    "y_km": 156.7561,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 854,
+    "underground_out_t_day": 3057.9955699651928,
+    "underground_in_t_day": 3057.9955699651937,
+    "rounded_departures_day": 71.0
+  },
+  {
+    "id": "P072",
+    "type": "primary",
+    "x_km": 144.51267,
+    "y_km": 159.07003,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 861,
+    "underground_out_t_day": 2392.067993783462,
+    "underground_in_t_day": 2392.0679937834625,
+    "rounded_departures_day": 59.0
+  },
+  {
+    "id": "P073",
+    "type": "primary",
+    "x_km": 138.39368,
+    "y_km": 154.49089,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 842,
+    "underground_out_t_day": 1965.1718927370264,
+    "underground_in_t_day": 1965.1718927370266,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P074",
+    "type": "primary",
+    "x_km": 143.38522,
+    "y_km": 160.71348,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 865,
+    "underground_out_t_day": 1811.824370135696,
+    "underground_in_t_day": 1811.8243701356964,
+    "rounded_departures_day": 47.0
+  },
+  {
+    "id": "P075",
+    "type": "primary",
+    "x_km": 142.52776,
+    "y_km": 158.56297,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 860,
+    "underground_out_t_day": 1920.3179915737542,
+    "underground_in_t_day": 1920.3179915737542,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P076",
+    "type": "primary",
+    "x_km": 154.68075,
+    "y_km": 164.90033,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 895,
+    "underground_out_t_day": 1980.587741007043,
+    "underground_in_t_day": 1980.587741007043,
+    "rounded_departures_day": 48.0
+  },
+  {
+    "id": "P077",
+    "type": "primary",
+    "x_km": 147.95167999999998,
+    "y_km": 151.42307,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 805,
+    "underground_out_t_day": 2276.4870784575833,
+    "underground_in_t_day": 2276.4870784575824,
+    "rounded_departures_day": 56.0
+  },
+  {
+    "id": "P078",
+    "type": "primary",
+    "x_km": 136.65623000000002,
+    "y_km": 157.80355,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 858,
+    "underground_out_t_day": 2186.5292375358604,
+    "underground_in_t_day": 2186.5292375358595,
+    "rounded_departures_day": 56.0
+  },
+  {
+    "id": "P079",
+    "type": "primary",
+    "x_km": 140.41657,
+    "y_km": 152.39607999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 814,
+    "underground_out_t_day": 2352.4045827043997,
+    "underground_in_t_day": 2352.404582704399,
+    "rounded_departures_day": 59.0
+  },
+  {
+    "id": "P080",
+    "type": "primary",
+    "x_km": 148.03742000000003,
+    "y_km": 149.69389999999999,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 792,
+    "underground_out_t_day": 1799.5689539046102,
+    "underground_in_t_day": 1799.5689539046102,
+    "rounded_departures_day": 42.0
+  },
+  {
+    "id": "P081",
+    "type": "primary",
+    "x_km": 139.20245,
+    "y_km": 156.85101,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 853,
+    "underground_out_t_day": 2483.704545251797,
+    "underground_in_t_day": 2483.7045452517964,
+    "rounded_departures_day": 62.0
+  },
+  {
+    "id": "P082",
+    "type": "primary",
+    "x_km": 148.37572,
+    "y_km": 159.54426,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 876,
+    "underground_out_t_day": 2017.047052019485,
+    "underground_in_t_day": 2017.0470520194847,
+    "rounded_departures_day": 50.0
+  },
+  {
+    "id": "P083",
+    "type": "primary",
+    "x_km": 155.78061,
+    "y_km": 161.40506,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 887,
+    "underground_out_t_day": 2512.328086872053,
+    "underground_in_t_day": 2512.328086872053,
+    "rounded_departures_day": 63.0
+  },
+  {
+    "id": "P084",
+    "type": "primary",
+    "x_km": 138.76028,
+    "y_km": 153.32401000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 841,
+    "underground_out_t_day": 2056.7345870796153,
+    "underground_in_t_day": 2056.7345870796153,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P085",
+    "type": "primary",
+    "x_km": 143.90327,
+    "y_km": 150.37784,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 795,
+    "underground_out_t_day": 2210.392209795168,
+    "underground_in_t_day": 2210.3922097951677,
+    "rounded_departures_day": 51.0
+  },
+  {
+    "id": "P086",
+    "type": "primary",
+    "x_km": 155.75762,
+    "y_km": 161.94863,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 889,
+    "underground_out_t_day": 2062.026485059225,
+    "underground_in_t_day": 2062.026485059225,
+    "rounded_departures_day": 56.0
+  },
+  {
+    "id": "P087",
+    "type": "primary",
+    "x_km": 150.2519,
+    "y_km": 157.98828,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 839,
+    "underground_out_t_day": 1905.159334191103,
+    "underground_in_t_day": 1905.1593341911025,
+    "rounded_departures_day": 48.0
+  },
+  {
+    "id": "P088",
+    "type": "primary",
+    "x_km": 151.65072,
+    "y_km": 152.37832,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 812,
+    "underground_out_t_day": 1797.9394118155062,
+    "underground_in_t_day": 1797.939411815506,
+    "rounded_departures_day": 43.0
+  },
+  {
+    "id": "P089",
+    "type": "primary",
+    "x_km": 147.22106,
+    "y_km": 158.15441,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 871,
+    "underground_out_t_day": 1889.6520204337858,
+    "underground_in_t_day": 1889.6520204337855,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P090",
+    "type": "primary",
+    "x_km": 141.76202,
+    "y_km": 152.67478,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 815,
+    "underground_out_t_day": 1928.2882761886372,
+    "underground_in_t_day": 1928.2882761886367,
+    "rounded_departures_day": 49.0
+  },
+  {
+    "id": "P091",
+    "type": "primary",
+    "x_km": 135.6071,
+    "y_km": 159.39892,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 862,
+    "underground_out_t_day": 1605.8368226079574,
+    "underground_in_t_day": 1605.8368226079579,
+    "rounded_departures_day": 43.0
+  },
+  {
+    "id": "P092",
+    "type": "primary",
+    "x_km": 164.72987,
+    "y_km": 163.73997,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 892,
+    "underground_out_t_day": 1271.735421402794,
+    "underground_in_t_day": 1271.735421402794,
+    "rounded_departures_day": 34.0
+  },
+  {
+    "id": "P093",
+    "type": "primary",
+    "x_km": 142.6466,
+    "y_km": 151.49295999999998,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 802,
+    "underground_out_t_day": 2503.50287362227,
+    "underground_in_t_day": 2503.50287362227,
+    "rounded_departures_day": 63.0
+  },
+  {
+    "id": "P094",
+    "type": "primary",
+    "x_km": 146.54368,
+    "y_km": 154.16378,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 824,
+    "underground_out_t_day": 2504.737852103238,
+    "underground_in_t_day": 2504.737852103238,
+    "rounded_departures_day": 62.0
+  },
+  {
+    "id": "P095",
+    "type": "primary",
+    "x_km": 143.8398,
+    "y_km": 153.27083,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 818,
+    "underground_out_t_day": 2706.487611969656,
+    "underground_in_t_day": 2706.4876119696555,
+    "rounded_departures_day": 66.0
+  },
+  {
+    "id": "P096",
+    "type": "primary",
+    "x_km": 140.67299,
+    "y_km": 160.64675,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 867,
+    "underground_out_t_day": 1450.0358586286466,
+    "underground_in_t_day": 1450.0358586286466,
+    "rounded_departures_day": 37.0
+  },
+  {
+    "id": "P097",
+    "type": "primary",
+    "x_km": 138.01518,
+    "y_km": 155.76496,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 846,
+    "underground_out_t_day": 1831.3324620773456,
+    "underground_in_t_day": 1831.3324620773394,
+    "rounded_departures_day": 45.0
+  },
+  {
+    "id": "P098",
+    "type": "primary",
+    "x_km": 146.16329000000002,
+    "y_km": 155.93312,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 835,
+    "underground_out_t_day": 1948.1599782501416,
+    "underground_in_t_day": 1948.1599782501416,
+    "rounded_departures_day": 47.0
+  },
+  {
+    "id": "P099",
+    "type": "primary",
+    "x_km": 146.44433999999998,
+    "y_km": 161.29458,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 883,
+    "underground_out_t_day": 1806.1237669150319,
+    "underground_in_t_day": 1806.123766915032,
+    "rounded_departures_day": 48.0
+  },
+  {
+    "id": "P100",
+    "type": "primary",
+    "x_km": 142.29479,
+    "y_km": 154.84726,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 830,
+    "underground_out_t_day": 3159.72426783217,
+    "underground_in_t_day": 3159.72426783217,
+    "rounded_departures_day": 82.0
+  },
+  {
+    "id": "P101",
+    "type": "primary",
+    "x_km": 156.65053,
+    "y_km": 160.65273000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 885,
+    "underground_out_t_day": 3343.7974661819303,
+    "underground_in_t_day": 3343.7974661819303,
+    "rounded_departures_day": 83.0
+  },
+  {
+    "id": "P102",
+    "type": "primary",
+    "x_km": 149.36481,
+    "y_km": 151.72223000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 808,
+    "underground_out_t_day": 1625.715575959492,
+    "underground_in_t_day": 1625.7155759594925,
+    "rounded_departures_day": 42.0
+  },
+  {
+    "id": "P103",
+    "type": "primary",
+    "x_km": 145.96177,
+    "y_km": 158.06467,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 870,
+    "underground_out_t_day": 2365.230877644254,
+    "underground_in_t_day": 2365.2308776442546,
+    "rounded_departures_day": 59.0
+  },
+  {
+    "id": "P104",
+    "type": "primary",
+    "x_km": 139.84282000000002,
+    "y_km": 156.02870000000001,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 849,
+    "underground_out_t_day": 3393.8708411861594,
+    "underground_in_t_day": 3393.870841186159,
+    "rounded_departures_day": 82.0
+  },
+  {
+    "id": "P105",
+    "type": "primary",
+    "x_km": 148.72384,
+    "y_km": 160.58669,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 882,
+    "underground_out_t_day": 1831.5793521674382,
+    "underground_in_t_day": 1831.5793521674384,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P106",
+    "type": "primary",
+    "x_km": 143.80010000000001,
+    "y_km": 152.08839,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 806,
+    "underground_out_t_day": 2407.547414095684,
+    "underground_in_t_day": 2407.5474140956835,
+    "rounded_departures_day": 57.0
+  },
+  {
+    "id": "P107",
+    "type": "primary",
+    "x_km": 157.65470000000002,
+    "y_km": 167.20666,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 898,
+    "underground_out_t_day": 667.455480937407,
+    "underground_in_t_day": 667.4554809374068,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "P108",
+    "type": "primary",
+    "x_km": 149.08816000000002,
+    "y_km": 155.92819,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 832,
+    "underground_out_t_day": 1734.4590246749553,
+    "underground_in_t_day": 1734.4590246749553,
+    "rounded_departures_day": 44.0
+  },
+  {
+    "id": "P109",
+    "type": "primary",
+    "x_km": 144.69098000000002,
+    "y_km": 154.56699,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 828,
+    "underground_out_t_day": 2577.2410965113495,
+    "underground_in_t_day": 2577.2410965113495,
+    "rounded_departures_day": 64.0
+  },
+  {
+    "id": "P110",
+    "type": "primary",
+    "x_km": 161.59273000000002,
+    "y_km": 166.08317000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 900,
+    "underground_out_t_day": 1049.4406480241557,
+    "underground_in_t_day": 1049.4406480241555,
+    "rounded_departures_day": 28.0
+  },
+  {
+    "id": "P111",
+    "type": "primary",
+    "x_km": 146.34398000000002,
+    "y_km": 150.48709,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 794,
+    "underground_out_t_day": 895.4151302181428,
+    "underground_in_t_day": 895.4151302181427,
+    "rounded_departures_day": 27.0
+  },
+  {
+    "id": "P112",
+    "type": "primary",
+    "x_km": 169.25106,
+    "y_km": 165.58316,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 896,
+    "underground_out_t_day": 405.668,
+    "underground_in_t_day": 405.668,
+    "rounded_departures_day": 15.0
+  },
+  {
+    "id": "P113",
+    "type": "primary",
+    "x_km": 158.73125000000002,
+    "y_km": 162.5724,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 893,
+    "underground_out_t_day": 366.05899999999895,
+    "underground_in_t_day": 366.05899999999906,
+    "rounded_departures_day": 15.0
+  },
+  {
+    "id": "P114",
+    "type": "primary",
+    "x_km": 153.44697000000002,
+    "y_km": 160.46647000000002,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 890,
+    "underground_out_t_day": 953.7057236072178,
+    "underground_in_t_day": 953.705723607218,
+    "rounded_departures_day": 28.0
+  },
+  {
+    "id": "P115",
+    "type": "primary",
+    "x_km": 151.59944000000002,
+    "y_km": 154.01425,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 825,
+    "underground_out_t_day": 203.07700000000105,
+    "underground_in_t_day": 203.07700000000057,
+    "rounded_departures_day": 13.0
+  },
+  {
+    "id": "P116",
+    "type": "primary",
+    "x_km": 144.34885999999997,
+    "y_km": 160.07882,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 864,
+    "underground_out_t_day": 481.14132923113675,
+    "underground_in_t_day": 481.1413292311367,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "P117",
+    "type": "primary",
+    "x_km": 141.88223000000002,
+    "y_km": 150.15802,
+    "ground_capacity_t_day": 4000.0,
+    "ground_exchange_t_day": 0.0,
+    "source_seed_id": 793,
+    "underground_out_t_day": 132.7632961978224,
+    "underground_in_t_day": 132.76329619782246,
+    "rounded_departures_day": 13.0
+  },
+  {
+    "id": "S000",
+    "type": "secondary",
+    "x_km": 154.83008999999998,
+    "y_km": 160.25504999999998,
+    "source_seed_id": 886,
+    "parent_primary": "P000",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 886,
+        "fraction": 0.31848745354064273,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 750.1408245357072,
+    "underground_in_t_day": 1049.8591754642923,
+    "rounded_departures_day": 19.0
+  },
+  {
+    "id": "S001",
+    "type": "secondary",
+    "x_km": 150.21194,
+    "y_km": 158.54764,
+    "source_seed_id": 874,
+    "parent_primary": "P001",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 874,
+        "fraction": 0.3219029759393621,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 882.7938030815774,
+    "underground_in_t_day": 917.2061969184228,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S002",
+    "type": "secondary",
+    "x_km": 149.9519,
+    "y_km": 157.73828,
+    "source_seed_id": 839,
+    "parent_primary": "P002",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 839,
+        "fraction": 0.38423328595879225,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 744.9668641483447,
+    "underground_in_t_day": 1055.0331358516555,
+    "rounded_departures_day": 19.0
+  },
+  {
+    "id": "S003",
+    "type": "secondary",
+    "x_km": 164.42987,
+    "y_km": 163.48997,
+    "source_seed_id": 892,
+    "parent_primary": "P003",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 892,
+        "fraction": 0.3880175858192506,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 767.2803308496614,
+    "underground_in_t_day": 1032.7196691503384,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "S004",
+    "type": "secondary",
+    "x_km": 158.43125,
+    "y_km": 162.3224,
+    "source_seed_id": 893,
+    "parent_primary": "P004",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 893,
+        "fraction": 0.40308620715137633,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 844.456736085576,
+    "underground_in_t_day": 955.5432639144237,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S005",
+    "type": "secondary",
+    "x_km": 146.98767999999998,
+    "y_km": 159.41821,
+    "source_seed_id": 880,
+    "parent_primary": "P005",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 880,
+        "fraction": 0.4052058141631588,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 840.6124280675263,
+    "underground_in_t_day": 959.3875719324744,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S006",
+    "type": "secondary",
+    "x_km": 157.3547,
+    "y_km": 166.95666,
+    "source_seed_id": 898,
+    "parent_primary": "P006",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 898,
+        "fraction": 0.42265784157093494,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 794.851604831825,
+    "underground_in_t_day": 1005.1483951681765,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "S007",
+    "type": "secondary",
+    "x_km": 153.14697,
+    "y_km": 160.21647000000002,
+    "source_seed_id": 890,
+    "parent_primary": "P007",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 890,
+        "fraction": 0.45419162092157994,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 855.179235368406,
+    "underground_in_t_day": 944.8207646315936,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S008",
+    "type": "secondary",
+    "x_km": 154.98009,
+    "y_km": 160.25504999999998,
+    "source_seed_id": 886,
+    "parent_primary": "P008",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 886,
+        "fraction": 0.31848745354064273,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 750.1408245357072,
+    "underground_in_t_day": 1049.8591754642923,
+    "rounded_departures_day": 19.0
+  },
+  {
+    "id": "S009",
+    "type": "secondary",
+    "x_km": 163.42802,
+    "y_km": 166.29335,
+    "source_seed_id": 899,
+    "parent_primary": "P009",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 899,
+        "fraction": 0.47339643532484194,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 952.7013315589732,
+    "underground_in_t_day": 847.2986684410264,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S010",
+    "type": "secondary",
+    "x_km": 150.36194,
+    "y_km": 158.54764,
+    "source_seed_id": 874,
+    "parent_primary": "P010",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 874,
+        "fraction": 0.3219029759393621,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 882.7938030815774,
+    "underground_in_t_day": 917.2061969184228,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S011",
+    "type": "secondary",
+    "x_km": 149.36689,
+    "y_km": 153.64804999999998,
+    "source_seed_id": 826,
+    "parent_primary": "P011",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 826,
+        "fraction": 0.5013649661202624,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 895.7642180837329,
+    "underground_in_t_day": 904.2357819162669,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S012",
+    "type": "secondary",
+    "x_km": 147.18879,
+    "y_km": 152.82315,
+    "source_seed_id": 822,
+    "parent_primary": "P012",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 822,
+        "fraction": 0.506487970207252,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 859.4574106928051,
+    "underground_in_t_day": 940.5425893071952,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S013",
+    "type": "secondary",
+    "x_km": 158.48734,
+    "y_km": 164.41338000000002,
+    "source_seed_id": 894,
+    "parent_primary": "P013",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 894,
+        "fraction": 0.5383876367055941,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 888.360059294425,
+    "underground_in_t_day": 911.6399407055749,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S014",
+    "type": "secondary",
+    "x_km": 146.277,
+    "y_km": 149.37705,
+    "source_seed_id": 791,
+    "parent_primary": "P014",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 791,
+        "fraction": 0.5481466097284451,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 874.8929667613031,
+    "underground_in_t_day": 925.1070332386968,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S015",
+    "type": "secondary",
+    "x_km": 146.01329,
+    "y_km": 155.68312,
+    "source_seed_id": 835,
+    "parent_primary": "P015",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 835,
+        "fraction": 0.5801937331340905,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1122.3470641552442,
+    "underground_in_t_day": 677.6529358447552,
+    "rounded_departures_day": 29.0
+  },
+  {
+    "id": "S016",
+    "type": "secondary",
+    "x_km": 140.52299,
+    "y_km": 160.39675,
+    "source_seed_id": 867,
+    "parent_primary": "P016",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1799.9999999999998,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 867,
+        "fraction": 0.5852798222830334,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 836.8254812625917,
+    "underground_in_t_day": 963.1745187374075,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S017",
+    "type": "secondary",
+    "x_km": 150.1019,
+    "y_km": 157.73828,
+    "source_seed_id": 839,
+    "parent_primary": "P017",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 839,
+        "fraction": 0.38423328595879225,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 744.9668641483447,
+    "underground_in_t_day": 1055.0331358516555,
+    "rounded_departures_day": 19.0
+  },
+  {
+    "id": "S018",
+    "type": "secondary",
+    "x_km": 151.50072,
+    "y_km": 152.12832,
+    "source_seed_id": 812,
+    "parent_primary": "P018",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 812,
+        "fraction": 0.6249529115340964,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 871.0431193205237,
+    "underground_in_t_day": 928.9568806794772,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S019",
+    "type": "secondary",
+    "x_km": 141.61202,
+    "y_km": 152.42478,
+    "source_seed_id": 815,
+    "parent_primary": "P019",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 815,
+        "fraction": 0.6277549286608834,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 788.4953446740747,
+    "underground_in_t_day": 1011.5046553259247,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "S020",
+    "type": "secondary",
+    "x_km": 164.57987,
+    "y_km": 163.48997,
+    "source_seed_id": 892,
+    "parent_primary": "P020",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 892,
+        "fraction": 0.3880175858192506,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 767.2803308496614,
+    "underground_in_t_day": 1032.7196691503384,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "S021",
+    "type": "secondary",
+    "x_km": 151.44944,
+    "y_km": 153.76425,
+    "source_seed_id": 825,
+    "parent_primary": "P021",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 825,
+        "fraction": 0.6610696106299989,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 849.9517419184235,
+    "underground_in_t_day": 950.0482580815751,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S022",
+    "type": "secondary",
+    "x_km": 145.03599,
+    "y_km": 153.31570000000002,
+    "source_seed_id": 821,
+    "parent_primary": "P022",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 821,
+        "fraction": 0.6619226425717017,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 878.0258230732259,
+    "underground_in_t_day": 921.9741769267739,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S023",
+    "type": "secondary",
+    "x_km": 142.14479,
+    "y_km": 154.59726,
+    "source_seed_id": 830,
+    "parent_primary": "P023",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 830,
+        "fraction": 0.6717791548421095,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1007.2112506587167,
+    "underground_in_t_day": 792.7887493412833,
+    "rounded_departures_day": 26.0
+  },
+  {
+    "id": "S024",
+    "type": "secondary",
+    "x_km": 158.58125,
+    "y_km": 162.3224,
+    "source_seed_id": 893,
+    "parent_primary": "P024",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 893,
+        "fraction": 0.40308620715137633,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 844.456736085576,
+    "underground_in_t_day": 955.5432639144237,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S025",
+    "type": "secondary",
+    "x_km": 147.13768,
+    "y_km": 159.41821,
+    "source_seed_id": 880,
+    "parent_primary": "P025",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 880,
+        "fraction": 0.4052058141631588,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 840.6124280675263,
+    "underground_in_t_day": 959.3875719324744,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S026",
+    "type": "secondary",
+    "x_km": 149.21481,
+    "y_km": 151.47223000000002,
+    "source_seed_id": 808,
+    "parent_primary": "P026",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 808,
+        "fraction": 0.6868352007619289,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 877.0569569537481,
+    "underground_in_t_day": 922.9430430462514,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S027",
+    "type": "secondary",
+    "x_km": 142.99054999999998,
+    "y_km": 159.39709,
+    "source_seed_id": 863,
+    "parent_primary": "P027",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 863,
+        "fraction": 0.7249508342371723,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 808.8936162843288,
+    "underground_in_t_day": 991.1063837156709,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S028",
+    "type": "secondary",
+    "x_km": 157.5047,
+    "y_km": 166.95666,
+    "source_seed_id": 898,
+    "parent_primary": "P028",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 898,
+        "fraction": 0.42265784157093494,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 794.851604831825,
+    "underground_in_t_day": 1005.1483951681765,
+    "rounded_departures_day": 20.0
+  },
+  {
+    "id": "S029",
+    "type": "secondary",
+    "x_km": 161.44273,
+    "y_km": 165.83317000000002,
+    "source_seed_id": 900,
+    "parent_primary": "P029",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 900,
+        "fraction": 0.744713773398493,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 903.8531490635637,
+    "underground_in_t_day": 896.1468509364358,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S030",
+    "type": "secondary",
+    "x_km": 141.33945,
+    "y_km": 153.95972,
+    "source_seed_id": 827,
+    "parent_primary": "P030",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 827,
+        "fraction": 0.7568593532468636,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 846.4699869525857,
+    "underground_in_t_day": 953.5300130474142,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S031",
+    "type": "secondary",
+    "x_km": 140.8082,
+    "y_km": 152.43247,
+    "source_seed_id": 810,
+    "parent_primary": "P031",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 810,
+        "fraction": 0.7698242576755756,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 880.948389271045,
+    "underground_in_t_day": 919.051610728955,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S032",
+    "type": "secondary",
+    "x_km": 139.36674,
+    "y_km": 151.65259,
+    "source_seed_id": 813,
+    "parent_primary": "P032",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 813,
+        "fraction": 0.7755414895308359,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1090.7215508761674,
+    "underground_in_t_day": 709.278449123832,
+    "rounded_departures_day": 28.0
+  },
+  {
+    "id": "S033",
+    "type": "secondary",
+    "x_km": 139.71381,
+    "y_km": 158.19805,
+    "source_seed_id": 859,
+    "parent_primary": "P033",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 859,
+        "fraction": 0.7822536205305071,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 855.8018881864059,
+    "underground_in_t_day": 944.1981118135947,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S034",
+    "type": "secondary",
+    "x_km": 143.67806,
+    "y_km": 153.44464000000002,
+    "source_seed_id": 820,
+    "parent_primary": "P034",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 820,
+        "fraction": 0.7876965302843058,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 861.314648004677,
+    "underground_in_t_day": 938.6853519953227,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S035",
+    "type": "secondary",
+    "x_km": 140.30915,
+    "y_km": 153.47378,
+    "source_seed_id": 823,
+    "parent_primary": "P035",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 823,
+        "fraction": 0.7879527280893329,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 851.2993997113467,
+    "underground_in_t_day": 948.7006002886538,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S036",
+    "type": "secondary",
+    "x_km": 149.10078,
+    "y_km": 159.24167,
+    "source_seed_id": 877,
+    "parent_primary": "P036",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 877,
+        "fraction": 0.8301744427108148,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 853.7538874071299,
+    "underground_in_t_day": 946.24611259287,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S037",
+    "type": "secondary",
+    "x_km": 153.29697000000002,
+    "y_km": 160.21647000000002,
+    "source_seed_id": 890,
+    "parent_primary": "P037",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 890,
+        "fraction": 0.45419162092157994,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 855.179235368406,
+    "underground_in_t_day": 944.8207646315936,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S038",
+    "type": "secondary",
+    "x_km": 147.77144,
+    "y_km": 156.16304,
+    "source_seed_id": 837,
+    "parent_primary": "P038",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 837,
+        "fraction": 0.8341531977957967,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 866.7335533953049,
+    "underground_in_t_day": 933.2664466046954,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S039",
+    "type": "secondary",
+    "x_km": 150.87025,
+    "y_km": 156.89084,
+    "source_seed_id": 840,
+    "parent_primary": "P039",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 840,
+        "fraction": 0.8355300811717471,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 973.7392895487715,
+    "underground_in_t_day": 826.2607104512279,
+    "rounded_departures_day": 25.0
+  },
+  {
+    "id": "S040",
+    "type": "secondary",
+    "x_km": 144.40329,
+    "y_km": 155.93001,
+    "source_seed_id": 834,
+    "parent_primary": "P040",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 834,
+        "fraction": 0.8671430814989242,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1256.8614623308226,
+    "underground_in_t_day": 543.1385376691774,
+    "rounded_departures_day": 32.0
+  },
+  {
+    "id": "S041",
+    "type": "secondary",
+    "x_km": 155.13009,
+    "y_km": 160.25504999999998,
+    "source_seed_id": 886,
+    "parent_primary": "P041",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.30000000000001137,
+    "served_regions": [
+      {
+        "id": 886,
+        "fraction": 0.31848745354064273,
+        "centre_distance_km": 0.30000000000001137
+      }
+    ],
+    "underground_out_t_day": 750.1408245357072,
+    "underground_in_t_day": 1049.8591754642923,
+    "rounded_departures_day": 19.0
+  },
+  {
+    "id": "S042",
+    "type": "secondary",
+    "x_km": 163.57802,
+    "y_km": 166.29335,
+    "source_seed_id": 899,
+    "parent_primary": "P042",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 899,
+        "fraction": 0.47339643532484194,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 952.7013315589732,
+    "underground_in_t_day": 847.2986684410264,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S043",
+    "type": "secondary",
+    "x_km": 150.51194,
+    "y_km": 158.54764,
+    "source_seed_id": 874,
+    "parent_primary": "P043",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0000000000002,
+    "service_radius_km": 0.30000000000001137,
+    "served_regions": [
+      {
+        "id": 874,
+        "fraction": 0.3219029759393621,
+        "centre_distance_km": 0.30000000000001137
+      }
+    ],
+    "underground_out_t_day": 882.7938030815774,
+    "underground_in_t_day": 917.2061969184228,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S044",
+    "type": "secondary",
+    "x_km": 165.29595999999998,
+    "y_km": 166.30748,
+    "source_seed_id": 897,
+    "parent_primary": "P044",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 897,
+        "fraction": 0.904797689749899,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 924.452609964336,
+    "underground_in_t_day": 875.5473900356643,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S045",
+    "type": "secondary",
+    "x_km": 138.79352,
+    "y_km": 155.63819,
+    "source_seed_id": 848,
+    "parent_primary": "P045",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 848,
+        "fraction": 0.907511472457531,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 815.1685500890875,
+    "underground_in_t_day": 984.8314499109127,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S046",
+    "type": "secondary",
+    "x_km": 142.73335,
+    "y_km": 153.09959,
+    "source_seed_id": 819,
+    "parent_primary": "P046",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 819,
+        "fraction": 0.9212292678632747,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 847.5051320147126,
+    "underground_in_t_day": 952.4948679852868,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S047",
+    "type": "secondary",
+    "x_km": 137.4048,
+    "y_km": 160.39203,
+    "source_seed_id": 868,
+    "parent_primary": "P047",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 868,
+        "fraction": 0.9479641416764009,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1195.6159818327938,
+    "underground_in_t_day": 604.3840181672056,
+    "rounded_departures_day": 30.0
+  },
+  {
+    "id": "S048",
+    "type": "secondary",
+    "x_km": 148.88618,
+    "y_km": 156.75798,
+    "source_seed_id": 838,
+    "parent_primary": "P048",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 838,
+        "fraction": 0.9539056873446922,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 865.2525544799386,
+    "underground_in_t_day": 934.7474455200609,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S049",
+    "type": "secondary",
+    "x_km": 141.73223000000002,
+    "y_km": 149.90802,
+    "source_seed_id": 793,
+    "parent_primary": "P049",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 793,
+        "fraction": 0.9543588484706134,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 898.2387307451474,
+    "underground_in_t_day": 901.7612692548514,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S050",
+    "type": "secondary",
+    "x_km": 143.19186,
+    "y_km": 155.02521,
+    "source_seed_id": 833,
+    "parent_primary": "P050",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 833,
+        "fraction": 0.9624170784118623,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1156.814741663196,
+    "underground_in_t_day": 643.1852583368047,
+    "rounded_departures_day": 29.0
+  },
+  {
+    "id": "S051",
+    "type": "secondary",
+    "x_km": 139.46551000000002,
+    "y_km": 154.30973,
+    "source_seed_id": 843,
+    "parent_primary": "P051",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 843,
+        "fraction": 0.9691440681114453,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 856.1418697696508,
+    "underground_in_t_day": 943.8581302303489,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S052",
+    "type": "secondary",
+    "x_km": 142.86327,
+    "y_km": 150.03094000000002,
+    "source_seed_id": 797,
+    "parent_primary": "P052",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 797,
+        "fraction": 0.9835915078894971,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 851.4627098601774,
+    "underground_in_t_day": 948.5372901398232,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S053",
+    "type": "secondary",
+    "x_km": 142.19994,
+    "y_km": 151.89776999999998,
+    "source_seed_id": 807,
+    "parent_primary": "P053",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 807,
+        "fraction": 0.9985570850121573,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 868.6218414391203,
+    "underground_in_t_day": 931.3781585608798,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S054",
+    "type": "secondary",
+    "x_km": 137.34814,
+    "y_km": 155.93846,
+    "source_seed_id": 852,
+    "parent_primary": "P054",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.7901231622981145,
+    "served_regions": [
+      {
+        "id": 846,
+        "fraction": 0.003477998464999908,
+        "centre_distance_km": 0.7901231622981145
+      },
+      {
+        "id": 852,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 839.1792445684177,
+    "underground_in_t_day": 960.7859058869622,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S055",
+    "type": "secondary",
+    "x_km": 149.51689000000002,
+    "y_km": 153.64804999999998,
+    "source_seed_id": 826,
+    "parent_primary": "P055",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.1757523488388428,
+    "served_regions": [
+      {
+        "id": 826,
+        "fraction": 0.4986350338797377,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 829,
+        "fraction": 0.006725829628785451,
+        "centre_distance_km": 1.1757523488388428
+      }
+    ],
+    "underground_out_t_day": 895.5263915208054,
+    "underground_in_t_day": 904.462923481763,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S056",
+    "type": "secondary",
+    "x_km": 147.33879000000002,
+    "y_km": 152.82315,
+    "source_seed_id": 822,
+    "parent_primary": "P056",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.3496939316008076,
+    "served_regions": [
+      {
+        "id": 822,
+        "fraction": 0.49351202979274794,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 824,
+        "fraction": 0.04296545992561267,
+        "centre_distance_km": 1.3496939316008076
+      }
+    ],
+    "underground_out_t_day": 862.707753415636,
+    "underground_in_t_day": 936.8517128758281,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S057",
+    "type": "secondary",
+    "x_km": 149.87722,
+    "y_km": 161.09104000000002,
+    "source_seed_id": 884,
+    "parent_primary": "P057",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.37816158228998,
+    "served_regions": [
+      {
+        "id": 882,
+        "fraction": 0.05603156980111936,
+        "centre_distance_km": 1.37816158228998
+      },
+      {
+        "id": 884,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 911.8683325448926,
+    "underground_in_t_day": 887.0990056236722,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S058",
+    "type": "secondary",
+    "x_km": 145.48859,
+    "y_km": 158.83325,
+    "source_seed_id": 875,
+    "parent_primary": "P058",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.6595138768820727,
+    "served_regions": [
+      {
+        "id": 875,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 878,
+        "fraction": 0.1409874351333186,
+        "centre_distance_km": 0.6595138768820727
+      }
+    ],
+    "underground_out_t_day": 918.5020896787167,
+    "underground_in_t_day": 877.0934628477181,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S059",
+    "type": "secondary",
+    "x_km": 140.50083999999998,
+    "y_km": 155.00768,
+    "source_seed_id": 847,
+    "parent_primary": "P059",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.0136380817629076,
+    "served_regions": [
+      {
+        "id": 847,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 849,
+        "fraction": 0.16018930850346097,
+        "centre_distance_km": 1.0136380817629076
+      }
+    ],
+    "underground_out_t_day": 853.0638137277585,
+    "underground_in_t_day": 945.8065312686757,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S060",
+    "type": "secondary",
+    "x_km": 139.99881,
+    "y_km": 150.08272,
+    "source_seed_id": 798,
+    "parent_primary": "P060",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.6923369350693809,
+    "served_regions": [
+      {
+        "id": 798,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 813,
+        "fraction": 0.07811813995852553,
+        "centre_distance_km": 1.6923369350693809
+      }
+    ],
+    "underground_out_t_day": 1005.3070230072997,
+    "underground_in_t_day": 787.9523189319589,
+    "rounded_departures_day": 26.0
+  },
+  {
+    "id": "S061",
+    "type": "secondary",
+    "x_km": 145.06268,
+    "y_km": 150.09255,
+    "source_seed_id": 796,
+    "parent_primary": "P061",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.1599469523215358,
+    "served_regions": [
+      {
+        "id": 795,
+        "fraction": 0.14235951183355228,
+        "centre_distance_km": 1.1599469523215358
+      },
+      {
+        "id": 796,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 850.288341603653,
+    "underground_in_t_day": 949.5180494602528,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S062",
+    "type": "secondary",
+    "x_km": 149.19845999999998,
+    "y_km": 149.91892,
+    "source_seed_id": 799,
+    "parent_primary": "P062",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.2544552132300015,
+    "served_regions": [
+      {
+        "id": 792,
+        "fraction": 0.1555631072665232,
+        "centre_distance_km": 1.2544552132300015
+      },
+      {
+        "id": 799,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 895.922507097539,
+    "underground_in_t_day": 902.8236542578929,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S063",
+    "type": "secondary",
+    "x_km": 158.63734,
+    "y_km": 164.41338000000002,
+    "source_seed_id": 894,
+    "parent_primary": "P063",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 2.101111717282097,
+    "served_regions": [
+      {
+        "id": 893,
+        "fraction": 0.05748098888691331,
+        "centre_distance_km": 2.101111717282097
+      },
+      {
+        "id": 894,
+        "fraction": 0.46161236329440586,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 881.8499288517316,
+    "underground_in_t_day": 917.6512331679257,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S064",
+    "type": "secondary",
+    "x_km": 141.54686999999998,
+    "y_km": 151.1079,
+    "source_seed_id": 801,
+    "parent_primary": "P064",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.1079924532685428,
+    "served_regions": [
+      {
+        "id": 801,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 802,
+        "fraction": 0.22978310798130444,
+        "centre_distance_km": 1.1079924532685428
+      },
+      {
+        "id": 807,
+        "fraction": 0.00144291498784263,
+        "centre_distance_km": 1.0248878191294817
+      }
+    ],
+    "underground_out_t_day": 890.3026294759804,
+    "underground_in_t_day": 909.4513198163077,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S065",
+    "type": "secondary",
+    "x_km": 146.427,
+    "y_km": 149.37705,
+    "source_seed_id": 791,
+    "parent_primary": "P065",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.8640376855207141,
+    "served_regions": [
+      {
+        "id": 791,
+        "fraction": 0.4518533902715549,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 794,
+        "fraction": 0.2339823325790615,
+        "centre_distance_km": 0.8640376855207141
+      }
+    ],
+    "underground_out_t_day": 872.8968629903496,
+    "underground_in_t_day": 927.1031370096513,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S066",
+    "type": "secondary",
+    "x_km": 139.35685,
+    "y_km": 160.40517000000003,
+    "source_seed_id": 869,
+    "parent_primary": "P066",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.166170397497709,
+    "served_regions": [
+      {
+        "id": 867,
+        "fraction": 0.10418533600914609,
+        "centre_distance_km": 1.166170397497709
+      },
+      {
+        "id": 869,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 985.212534404699,
+    "underground_in_t_day": 808.3648563716812,
+    "rounded_departures_day": 25.0
+  },
+  {
+    "id": "S067",
+    "type": "secondary",
+    "x_km": 149.02656,
+    "y_km": 154.71668,
+    "source_seed_id": 829,
+    "parent_primary": "P067",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.9634812090020288,
+    "served_regions": [
+      {
+        "id": 829,
+        "fraction": 0.9932741703712146,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 832,
+        "fraction": 0.34887757131506236,
+        "centre_distance_km": 0.9634812090020288
+      }
+    ],
+    "underground_out_t_day": 857.9608914923567,
+    "underground_in_t_day": 941.9108920079661,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S068",
+    "type": "secondary",
+    "x_km": 137.87261999999998,
+    "y_km": 155.01621,
+    "source_seed_id": 844,
+    "parent_primary": "P068",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.5187243160870734,
+    "served_regions": [
+      {
+        "id": 844,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 846,
+        "fraction": 0.2758942682308163,
+        "centre_distance_km": 0.5187243160870734
+      }
+    ],
+    "underground_out_t_day": 830.4090847860275,
+    "underground_in_t_day": 965.0364526340177,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S069",
+    "type": "secondary",
+    "x_km": 147.0664,
+    "y_km": 155.14929,
+    "source_seed_id": 831,
+    "parent_primary": "P069",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.1806841834292279,
+    "served_regions": [
+      {
+        "id": 831,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 835,
+        "fraction": 0.12370278351166777,
+        "centre_distance_km": 1.1806841834292279
+      }
+    ],
+    "underground_out_t_day": 963.624657774016,
+    "underground_in_t_day": 835.3666697292302,
+    "rounded_departures_day": 25.0
+  },
+  {
+    "id": "S070",
+    "type": "secondary",
+    "x_km": 143.42575,
+    "y_km": 157.33939999999998,
+    "source_seed_id": 855,
+    "parent_primary": "P070",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.3194397184032498,
+    "served_regions": [
+      {
+        "id": 855,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 856,
+        "fraction": 0.38646483157724104,
+        "centre_distance_km": 1.3194397184032498
+      }
+    ],
+    "underground_out_t_day": 844.9826925896333,
+    "underground_in_t_day": 944.0262476003105,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S071",
+    "type": "secondary",
+    "x_km": 141.52117,
+    "y_km": 156.5061,
+    "source_seed_id": 854,
+    "parent_primary": "P071",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.667670664279993,
+    "served_regions": [
+      {
+        "id": 851,
+        "fraction": 0.5322096626414239,
+        "centre_distance_km": 1.667670664279993
+      },
+      {
+        "id": 854,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 864.8917912432954,
+    "underground_in_t_day": 933.9799242719042,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S072",
+    "type": "secondary",
+    "x_km": 144.51267,
+    "y_km": 158.82003,
+    "source_seed_id": 861,
+    "parent_primary": "P072",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.0220034149649515,
+    "served_regions": [
+      {
+        "id": 861,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 864,
+        "fraction": 0.8285394587218551,
+        "centre_distance_km": 1.0220034149649515
+      }
+    ],
+    "underground_out_t_day": 895.8514347327722,
+    "underground_in_t_day": 902.7367340295648,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S073",
+    "type": "secondary",
+    "x_km": 138.39368,
+    "y_km": 154.24089,
+    "source_seed_id": 842,
+    "parent_primary": "P073",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.1845337332469525,
+    "served_regions": [
+      {
+        "id": 842,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 843,
+        "fraction": 0.030855931888554757,
+        "centre_distance_km": 1.0740384045740974
+      },
+      {
+        "id": 845,
+        "fraction": 0.35600159819587646,
+        "centre_distance_km": 1.1845337332469525
+      }
+    ],
+    "underground_out_t_day": 904.4332365155163,
+    "underground_in_t_day": 887.7158134262531,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S074",
+    "type": "secondary",
+    "x_km": 143.38522,
+    "y_km": 160.46348,
+    "source_seed_id": 865,
+    "parent_primary": "P074",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.1370804901149443,
+    "served_regions": [
+      {
+        "id": 863,
+        "fraction": 0.19592682346279205,
+        "centre_distance_km": 1.1370804901149443
+      },
+      {
+        "id": 865,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 694.378229705102,
+    "underground_in_t_day": 1043.8934571483576,
+    "rounded_departures_day": 18.0
+  },
+  {
+    "id": "S075",
+    "type": "secondary",
+    "x_km": 142.52776,
+    "y_km": 158.31297,
+    "source_seed_id": 860,
+    "parent_primary": "P075",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 2.303217925967931,
+    "served_regions": [
+      {
+        "id": 856,
+        "fraction": 0.09956978491199303,
+        "centre_distance_km": 2.303217925967931
+      },
+      {
+        "id": 860,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 863,
+        "fraction": 0.07912234230003563,
+        "centre_distance_km": 1.1787666259696834
+      },
+      {
+        "id": 866,
+        "fraction": 1.0,
+        "centre_distance_km": 2.057063505315273
+      }
+    ],
+    "underground_out_t_day": 830.1547731028062,
+    "underground_in_t_day": 943.53724712358,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S076",
+    "type": "secondary",
+    "x_km": 154.68075,
+    "y_km": 164.65033,
+    "source_seed_id": 895,
+    "parent_primary": "P076",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 2.152069716435794,
+    "served_regions": [
+      {
+        "id": 891,
+        "fraction": 0.405254639019784,
+        "centre_distance_km": 2.152069716435794
+      },
+      {
+        "id": 895,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 868.8112531793084,
+    "underground_in_t_day": 927.6062958117569,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S077",
+    "type": "secondary",
+    "x_km": 147.95167999999998,
+    "y_km": 151.17307,
+    "source_seed_id": 805,
+    "parent_primary": "P077",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.168231335181511,
+    "served_regions": [
+      {
+        "id": 803,
+        "fraction": 0.4362736176902372,
+        "centre_distance_km": 1.168231335181511
+      },
+      {
+        "id": 805,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 871.851311273401,
+    "underground_in_t_day": 927.8755814419249,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S078",
+    "type": "secondary",
+    "x_km": 136.65623000000002,
+    "y_km": 157.55355,
+    "source_seed_id": 858,
+    "parent_primary": "P078",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.254365606432171,
+    "served_regions": [
+      {
+        "id": 857,
+        "fraction": 0.5121466310249301,
+        "centre_distance_km": 1.254365606432171
+      },
+      {
+        "id": 858,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1011.6776167797193,
+    "underground_in_t_day": 770.2436071451014,
+    "rounded_departures_day": 26.0
+  },
+  {
+    "id": "S079",
+    "type": "secondary",
+    "x_km": 140.41657,
+    "y_km": 152.14607999999998,
+    "source_seed_id": 814,
+    "parent_primary": "P079",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.4851734627944942,
+    "served_regions": [
+      {
+        "id": 810,
+        "fraction": 0.2230497357792075,
+        "centre_distance_km": 0.4851734627944942
+      },
+      {
+        "id": 814,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1021.1707764199408,
+    "underground_in_t_day": 776.7508461420688,
+    "rounded_departures_day": 26.0
+  },
+  {
+    "id": "S080",
+    "type": "secondary",
+    "x_km": 148.03742000000003,
+    "y_km": 149.44389999999999,
+    "source_seed_id": 792,
+    "parent_primary": "P080",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.8699971683668528,
+    "served_regions": [
+      {
+        "id": 792,
+        "fraction": 0.8444368927334768,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 794,
+        "fraction": 0.3905020963228144,
+        "centre_distance_km": 1.8699971683668528
+      }
+    ],
+    "underground_out_t_day": 884.4933095140248,
+    "underground_in_t_day": 914.8788381525009,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S081",
+    "type": "secondary",
+    "x_km": 139.20245,
+    "y_km": 156.60101,
+    "source_seed_id": 853,
+    "parent_primary": "P081",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.5156655801001188,
+    "served_regions": [
+      {
+        "id": 850,
+        "fraction": 0.5503284357523414,
+        "centre_distance_km": 0.5156655801001188
+      },
+      {
+        "id": 853,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 846.3285045252986,
+    "underground_in_t_day": 950.970483512029,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S082",
+    "type": "secondary",
+    "x_km": 148.37572,
+    "y_km": 159.29426,
+    "source_seed_id": 876,
+    "parent_primary": "P082",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.0990213097569983,
+    "served_regions": [
+      {
+        "id": 876,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 877,
+        "fraction": 0.1698255572891853,
+        "centre_distance_km": 0.7269647252102258
+      },
+      {
+        "id": 882,
+        "fraction": 0.18210360751753904,
+        "centre_distance_km": 1.0990213097569983
+      }
+    ],
+    "underground_out_t_day": 820.6651474835569,
+    "underground_in_t_day": 969.6961185028434,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S083",
+    "type": "secondary",
+    "x_km": 155.78061,
+    "y_km": 161.15506,
+    "source_seed_id": 887,
+    "parent_primary": "P083",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.4135854795565458,
+    "served_regions": [
+      {
+        "id": 887,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 888,
+        "fraction": 0.5857958066539687,
+        "centre_distance_km": 0.4135854795565458
+      }
+    ],
+    "underground_out_t_day": 947.4757948604795,
+    "underground_in_t_day": 851.4697726875436,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S084",
+    "type": "secondary",
+    "x_km": 138.76028,
+    "y_km": 153.07401000000002,
+    "source_seed_id": 841,
+    "parent_primary": "P084",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.5996294351505203,
+    "served_regions": [
+      {
+        "id": 813,
+        "fraction": 0.14634037051063853,
+        "centre_distance_km": 1.5453894486504145
+      },
+      {
+        "id": 823,
+        "fraction": 0.12617311934288236,
+        "centre_distance_km": 1.5996294351505203
+      },
+      {
+        "id": 841,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 911.894600692891,
+    "underground_in_t_day": 885.9470443218997,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S085",
+    "type": "secondary",
+    "x_km": 143.90327,
+    "y_km": 150.12784,
+    "source_seed_id": 795,
+    "parent_primary": "P085",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.03390247281842,
+    "served_regions": [
+      {
+        "id": 795,
+        "fraction": 0.8576404881664478,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 800,
+        "fraction": 0.7732474128830298,
+        "centre_distance_km": 1.03390247281842
+      }
+    ],
+    "underground_out_t_day": 879.9440586274044,
+    "underground_in_t_day": 919.4909219906597,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S086",
+    "type": "secondary",
+    "x_km": 155.75762,
+    "y_km": 161.69863,
+    "source_seed_id": 889,
+    "parent_primary": "P086",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.9928727574568512,
+    "served_regions": [
+      {
+        "id": 888,
+        "fraction": 0.41420419334603126,
+        "centre_distance_km": 0.2798324450452445
+      },
+      {
+        "id": 889,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 891,
+        "fraction": 0.20868068688703195,
+        "centre_distance_km": 0.9928727574568512
+      }
+    ],
+    "underground_out_t_day": 930.8647812969147,
+    "underground_in_t_day": 836.7952506254696,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S087",
+    "type": "secondary",
+    "x_km": 150.2519,
+    "y_km": 157.73828,
+    "source_seed_id": 839,
+    "parent_primary": "P087",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.3471536894133587,
+    "served_regions": [
+      {
+        "id": 839,
+        "fraction": 0.23153342808241556,
+        "centre_distance_km": 0.30000000000001137
+      },
+      {
+        "id": 840,
+        "fraction": 0.16446991882825293,
+        "centre_distance_km": 1.0490525611712698
+      },
+      {
+        "id": 872,
+        "fraction": 0.2706356527675401,
+        "centre_distance_km": 1.3471536894133587
+      },
+      {
+        "id": 874,
+        "fraction": 0.034291072181913705,
+        "centre_distance_km": 0.8103458590009561
+      }
+    ],
+    "underground_out_t_day": 811.4209734552948,
+    "underground_in_t_day": 981.6380060418088,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S088",
+    "type": "secondary",
+    "x_km": 151.65072,
+    "y_km": 152.12832,
+    "source_seed_id": 812,
+    "parent_primary": "P088",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.6482659382818068,
+    "served_regions": [
+      {
+        "id": 812,
+        "fraction": 0.3750470884659036,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 825,
+        "fraction": 0.26434814863782946,
+        "centre_distance_km": 1.6482659382818068
+      }
+    ],
+    "underground_out_t_day": 861.5788169501567,
+    "underground_in_t_day": 936.3605948653494,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S089",
+    "type": "secondary",
+    "x_km": 147.22106,
+    "y_km": 157.90441,
+    "source_seed_id": 871,
+    "parent_primary": "P089",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.2624834936346627,
+    "served_regions": [
+      {
+        "id": 870,
+        "fraction": 0.12731003910371538,
+        "centre_distance_km": 1.2624834936346627
+      },
+      {
+        "id": 871,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 873,
+        "fraction": 1.0,
+        "centre_distance_km": 0.7782461846999393
+      }
+    ],
+    "underground_out_t_day": 861.3344211784583,
+    "underground_in_t_day": 936.6662934301596,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S090",
+    "type": "secondary",
+    "x_km": 141.76202,
+    "y_km": 152.42478,
+    "source_seed_id": 815,
+    "parent_primary": "P090",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.5296628479513876,
+    "served_regions": [
+      {
+        "id": 815,
+        "fraction": 0.3722450713391165,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 817,
+        "fraction": 0.9314245612964482,
+        "centre_distance_km": 0.5296628479513876
+      }
+    ],
+    "underground_out_t_day": 811.7099680602878,
+    "underground_in_t_day": 979.4993386394393,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S091",
+    "type": "secondary",
+    "x_km": 135.6071,
+    "y_km": 159.14892,
+    "source_seed_id": 862,
+    "parent_primary": "P091",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1621.3849999999998,
+    "service_radius_km": 2.6607463922741577,
+    "served_regions": [
+      {
+        "id": 857,
+        "fraction": 0.48785336897506987,
+        "centre_distance_km": 2.6607463922741577
+      },
+      {
+        "id": 862,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 868,
+        "fraction": 0.052035858323599166,
+        "centre_distance_km": 2.1856458455339864
+      }
+    ],
+    "underground_out_t_day": 916.9959246538759,
+    "underground_in_t_day": 688.8408979540817,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S092",
+    "type": "secondary",
+    "x_km": 164.72987,
+    "y_km": 163.48997,
+    "source_seed_id": 892,
+    "parent_primary": "P092",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1228.3599999999997,
+    "service_radius_km": 2.8738163629918954,
+    "served_regions": [
+      {
+        "id": 892,
+        "fraction": 0.22396482836149875,
+        "centre_distance_km": 0.30000000000001137
+      },
+      {
+        "id": 897,
+        "fraction": 0.09520231025010095,
+        "centre_distance_km": 2.8738163629918954
+      }
+    ],
+    "underground_out_t_day": 538.5704804505185,
+    "underground_in_t_day": 686.6370237778364,
+    "rounded_departures_day": 14.0
+  },
+  {
+    "id": "S093",
+    "type": "secondary",
+    "x_km": 142.6466,
+    "y_km": 151.24295999999998,
+    "source_seed_id": 802,
+    "parent_primary": "P093",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.2044965146483644,
+    "served_regions": [
+      {
+        "id": 802,
+        "fraction": 0.7702168920186956,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 811,
+        "fraction": 0.8924996241245602,
+        "centre_distance_km": 1.2044965146483644
+      }
+    ],
+    "underground_out_t_day": 873.5453717125265,
+    "underground_in_t_day": 925.1182871382827,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S094",
+    "type": "secondary",
+    "x_km": 146.54368,
+    "y_km": 153.91378,
+    "source_seed_id": 824,
+    "parent_primary": "P094",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.6219829908170948,
+    "served_regions": [
+      {
+        "id": 821,
+        "fraction": 0.28418949962693285,
+        "centre_distance_km": 1.6219829908170948
+      },
+      {
+        "id": 824,
+        "fraction": 0.9570345400743874,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 936.109052902317,
+    "underground_in_t_day": 846.6376766554663,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S095",
+    "type": "secondary",
+    "x_km": 143.8398,
+    "y_km": 153.02083,
+    "source_seed_id": 818,
+    "parent_primary": "P095",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 0.907827974563452,
+    "served_regions": [
+      {
+        "id": 809,
+        "fraction": 0.4375999259085937,
+        "centre_distance_km": 0.907827974563452
+      },
+      {
+        "id": 818,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 820,
+        "fraction": 0.2123034697156943,
+        "centre_distance_km": 0.453624011379501
+      }
+    ],
+    "underground_out_t_day": 874.6118383789818,
+    "underground_in_t_day": 921.2342183845929,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S096",
+    "type": "secondary",
+    "x_km": 140.67299,
+    "y_km": 160.39675,
+    "source_seed_id": 867,
+    "parent_primary": "P096",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1456.0789999999997,
+    "service_radius_km": 2.398813865726146,
+    "served_regions": [
+      {
+        "id": 859,
+        "fraction": 0.21774637946949293,
+        "centre_distance_km": 2.398813865726146
+      },
+      {
+        "id": 867,
+        "fraction": 0.3105348417078204,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 679.1962208488171,
+    "underground_in_t_day": 770.8396377798294,
+    "rounded_departures_day": 17.0
+  },
+  {
+    "id": "S097",
+    "type": "secondary",
+    "x_km": 138.01518,
+    "y_km": 155.51496,
+    "source_seed_id": 846,
+    "parent_primary": "P097",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.0903206980058882,
+    "served_regions": [
+      {
+        "id": 845,
+        "fraction": 0.5897394784715903,
+        "centre_distance_km": 1.0903206980058882
+      },
+      {
+        "id": 846,
+        "fraction": 0.7206277333041838,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 848,
+        "fraction": 0.09248852754246897,
+        "centre_distance_km": 0.7880347635098491
+      }
+    ],
+    "underground_out_t_day": 829.8034235094478,
+    "underground_in_t_day": 962.7210794018425,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S098",
+    "type": "secondary",
+    "x_km": 146.16329000000002,
+    "y_km": 155.68312,
+    "source_seed_id": 835,
+    "parent_primary": "P098",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.6782340804845957,
+    "served_regions": [
+      {
+        "id": 835,
+        "fraction": 0.29610348335424175,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 836,
+        "fraction": 1.0,
+        "centre_distance_km": 1.164724561173126
+      },
+      {
+        "id": 837,
+        "fraction": 0.05334270674371147,
+        "centre_distance_km": 1.6782340804845957
+      }
+    ],
+    "underground_out_t_day": 1002.4460789052898,
+    "underground_in_t_day": 796.4158628931497,
+    "rounded_departures_day": 26.0
+  },
+  {
+    "id": "S099",
+    "type": "secondary",
+    "x_km": 146.44433999999998,
+    "y_km": 161.04458,
+    "source_seed_id": 883,
+    "parent_primary": "P099",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.7147296383103747,
+    "served_regions": [
+      {
+        "id": 880,
+        "fraction": 0.043976536782445244,
+        "centre_distance_km": 1.7147296383103747
+      },
+      {
+        "id": 881,
+        "fraction": 1.0,
+        "centre_distance_km": 1.2356768817939259
+      },
+      {
+        "id": 883,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 1042.4662188183433,
+    "underground_in_t_day": 751.2847532096239,
+    "rounded_departures_day": 27.0
+  },
+  {
+    "id": "S100",
+    "type": "secondary",
+    "x_km": 142.29479,
+    "y_km": 154.59726,
+    "source_seed_id": 830,
+    "parent_primary": "P100",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 2.2814411059679083,
+    "served_regions": [
+      {
+        "id": 817,
+        "fraction": 0.06857543870355179,
+        "centre_distance_km": 1.8151606296413794
+      },
+      {
+        "id": 819,
+        "fraction": 0.07877073213672521,
+        "centre_distance_km": 1.5605608935571833
+      },
+      {
+        "id": 823,
+        "fraction": 0.028084823986681072,
+        "centre_distance_km": 2.2814411059679083
+      },
+      {
+        "id": 827,
+        "fraction": 0.24314064675313637,
+        "centre_distance_km": 1.148534617327669
+      },
+      {
+        "id": 830,
+        "fraction": 0.3282208451578906,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 833,
+        "fraction": 0.03758292158813774,
+        "centre_distance_km": 0.9939194068937167
+      }
+    ],
+    "underground_out_t_day": 934.3274431416719,
+    "underground_in_t_day": 858.9656338365585,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S101",
+    "type": "secondary",
+    "x_km": 156.65053,
+    "y_km": 160.40273000000002,
+    "source_seed_id": 885,
+    "parent_primary": "P101",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 2.618414907401019,
+    "served_regions": [
+      {
+        "id": 885,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 886,
+        "fraction": 0.04453763937807185,
+        "centre_distance_km": 1.8264203174516211
+      },
+      {
+        "id": 891,
+        "fraction": 0.38606467409318407,
+        "centre_distance_km": 2.5360613055681203
+      },
+      {
+        "id": 893,
+        "fraction": 0.05437252241943113,
+        "centre_distance_km": 2.618414907401019
+      }
+    ],
+    "underground_out_t_day": 855.5540623322785,
+    "underground_in_t_day": 942.1610432120252,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S102",
+    "type": "secondary",
+    "x_km": 149.36481,
+    "y_km": 151.47223000000002,
+    "source_seed_id": 808,
+    "parent_primary": "P102",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1471.2010000000005,
+    "service_radius_km": 2.5516897799301654,
+    "served_regions": [
+      {
+        "id": 803,
+        "fraction": 0.5637263823097628,
+        "centre_distance_km": 2.5516897799301654
+      },
+      {
+        "id": 808,
+        "fraction": 0.313164799238071,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 707.7486184206372,
+    "underground_in_t_day": 762.3892621596101,
+    "rounded_departures_day": 18.0
+  },
+  {
+    "id": "S103",
+    "type": "secondary",
+    "x_km": 145.96177,
+    "y_km": 157.81467,
+    "source_seed_id": 870,
+    "parent_primary": "P103",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.7018673626931096,
+    "served_regions": [
+      {
+        "id": 856,
+        "fraction": 0.5139653835107659,
+        "centre_distance_km": 1.2610564619397444
+      },
+      {
+        "id": 870,
+        "fraction": 0.8726899608962846,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 878,
+        "fraction": 0.7344177652783834,
+        "centre_distance_km": 1.7018673626931096
+      }
+    ],
+    "underground_out_t_day": 922.4283619698006,
+    "underground_in_t_day": 859.197801546458,
+    "rounded_departures_day": 24.0
+  },
+  {
+    "id": "S104",
+    "type": "secondary",
+    "x_km": 139.84282000000002,
+    "y_km": 155.77870000000001,
+    "source_seed_id": 849,
+    "parent_primary": "P104",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1777.1150000000016,
+    "service_radius_km": 2.3516206912042636,
+    "served_regions": [
+      {
+        "id": 823,
+        "fraction": 0.05778932858110369,
+        "centre_distance_km": 2.3516206912042636
+      },
+      {
+        "id": 845,
+        "fraction": 0.05425892333253329,
+        "centre_distance_km": 0.9598946311445143
+      },
+      {
+        "id": 849,
+        "fraction": 0.839810691496539,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 850,
+        "fraction": 0.4496715642476587,
+        "centre_distance_km": 0.9235230438380976
+      },
+      {
+        "id": 851,
+        "fraction": 0.46779033735857606,
+        "centre_distance_km": 0.4233764022710512
+      }
+    ],
+    "underground_out_t_day": 838.0888256347162,
+    "underground_in_t_day": 934.0750861001648,
+    "rounded_departures_day": 21.0
+  },
+  {
+    "id": "S105",
+    "type": "secondary",
+    "x_km": 148.72384,
+    "y_km": 160.33669,
+    "source_seed_id": 882,
+    "parent_primary": "P105",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 2.1007509260262083,
+    "served_regions": [
+      {
+        "id": 872,
+        "fraction": 0.07758963872719189,
+        "centre_distance_km": 2.1007509260262083
+      },
+      {
+        "id": 879,
+        "fraction": 1.0,
+        "centre_distance_km": 1.9490631352780696
+      },
+      {
+        "id": 880,
+        "fraction": 0.14561183489123708,
+        "centre_distance_km": 1.9641428298369936
+      },
+      {
+        "id": 882,
+        "fraction": 0.7618648226813416,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 865.349618804095,
+    "underground_in_t_day": 928.9496847818074,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S106",
+    "type": "secondary",
+    "x_km": 143.80010000000001,
+    "y_km": 151.83839,
+    "source_seed_id": 806,
+    "parent_primary": "P106",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1800.0,
+    "service_radius_km": 1.3911155443743575,
+    "served_regions": [
+      {
+        "id": 800,
+        "fraction": 0.22675258711697024,
+        "centre_distance_km": 0.7017120726480157
+      },
+      {
+        "id": 804,
+        "fraction": 0.6441345721332071,
+        "centre_distance_km": 1.3911155443743575
+      },
+      {
+        "id": 806,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 809,
+        "fraction": 0.5624000740914064,
+        "centre_distance_km": 0.6425286255101448
+      },
+      {
+        "id": 811,
+        "fraction": 0.10750037587543976,
+        "centre_distance_km": 0.8653900117866005
+      }
+    ],
+    "underground_out_t_day": 873.5911239834214,
+    "underground_in_t_day": 921.5079065997913,
+    "rounded_departures_day": 22.0
+  },
+  {
+    "id": "S107",
+    "type": "secondary",
+    "x_km": 157.65470000000002,
+    "y_km": 166.95666,
+    "source_seed_id": 898,
+    "parent_primary": "P107",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 658.7639999999974,
+    "service_radius_km": 0.30000000000001137,
+    "served_regions": [
+      {
+        "id": 898,
+        "fraction": 0.15468431685813014,
+        "centre_distance_km": 0.30000000000001137
+      }
+    ],
+    "underground_out_t_day": 290.8997903363501,
+    "underground_in_t_day": 367.8642096636477,
+    "rounded_departures_day": 8.0
+  },
+  {
+    "id": "S108",
+    "type": "secondary",
+    "x_km": 149.08816000000002,
+    "y_km": 155.67819,
+    "source_seed_id": 832,
+    "parent_primary": "P108",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1395.4610000000007,
+    "service_radius_km": 2.5782901388323345,
+    "served_regions": [
+      {
+        "id": 832,
+        "fraction": 0.6511224286849376,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 837,
+        "fraction": 0.11250409546049181,
+        "centre_distance_km": 1.403150412785459
+      },
+      {
+        "id": 838,
+        "fraction": 0.04609431265530779,
+        "centre_distance_km": 1.0985182586102127
+      },
+      {
+        "id": 872,
+        "fraction": 0.651774708505268,
+        "centre_distance_km": 2.5782901388323345
+      }
+    ],
+    "underground_out_t_day": 672.9190021839207,
+    "underground_in_t_day": 722.1095182038988,
+    "rounded_departures_day": 17.0
+  },
+  {
+    "id": "S109",
+    "type": "secondary",
+    "x_km": 144.69098000000002,
+    "y_km": 154.31699,
+    "source_seed_id": 828,
+    "parent_primary": "P109",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 1759.4280000000008,
+    "service_radius_km": 2.863931725617763,
+    "served_regions": [
+      {
+        "id": 804,
+        "fraction": 0.35586542786679287,
+        "centre_distance_km": 2.863931725617763
+      },
+      {
+        "id": 816,
+        "fraction": 1.0,
+        "centre_distance_km": 1.7214306766466012
+      },
+      {
+        "id": 821,
+        "fraction": 0.053887857801365416,
+        "centre_distance_km": 1.0590625874800546
+      },
+      {
+        "id": 828,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 834,
+        "fraction": 0.1328569185010758,
+        "centre_distance_km": 1.63847461271148
+      }
+    ],
+    "underground_out_t_day": 899.3741039252005,
+    "underground_in_t_day": 853.5265521852439,
+    "rounded_departures_day": 23.0
+  },
+  {
+    "id": "S110",
+    "type": "secondary",
+    "x_km": 161.59273000000002,
+    "y_km": 165.83317000000002,
+    "source_seed_id": 900,
+    "parent_primary": "P110",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 819.3460000000003,
+    "service_radius_km": 1.8921033313484577,
+    "served_regions": [
+      {
+        "id": 899,
+        "fraction": 0.053207129350316094,
+        "centre_distance_km": 1.8921033313484577
+      },
+      {
+        "id": 900,
+        "fraction": 0.25528622660150696,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 413.96344552304487,
+    "underground_in_t_day": 399.4750698860661,
+    "rounded_departures_day": 11.0
+  },
+  {
+    "id": "S111",
+    "type": "secondary",
+    "x_km": 146.34398000000002,
+    "y_km": 150.23709,
+    "source_seed_id": 794,
+    "parent_primary": "P111",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 507.4770000000003,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 794,
+        "fraction": 0.37551557109812406,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 243.45650814776238,
+    "underground_in_t_day": 264.02049185223785,
+    "rounded_departures_day": 7.0
+  },
+  {
+    "id": "S112",
+    "type": "secondary",
+    "x_km": 169.25106,
+    "y_km": 165.33316,
+    "source_seed_id": 896,
+    "parent_primary": "P112",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 405.668,
+    "service_radius_km": 0.0,
+    "served_regions": [
+      {
+        "id": 896,
+        "fraction": 1.0,
+        "centre_distance_km": 0.0
+      }
+    ],
+    "underground_out_t_day": 252.24900000000002,
+    "underground_in_t_day": 153.41899999999998,
+    "rounded_departures_day": 7.0
+  },
+  {
+    "id": "S113",
+    "type": "secondary",
+    "x_km": 158.73125000000002,
+    "y_km": 162.3224,
+    "source_seed_id": 893,
+    "parent_primary": "P113",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 366.05899999999906,
+    "service_radius_km": 0.30000000000001137,
+    "served_regions": [
+      {
+        "id": 893,
+        "fraction": 0.08197407439090293,
+        "centre_distance_km": 0.30000000000001137
+      }
+    ],
+    "underground_out_t_day": 171.73388241930505,
+    "underground_in_t_day": 194.32511758069393,
+    "rounded_departures_day": 5.0
+  },
+  {
+    "id": "S114",
+    "type": "secondary",
+    "x_km": 153.44697000000002,
+    "y_km": 160.21647000000002,
+    "source_seed_id": 890,
+    "parent_primary": "P114",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 363.08500000000095,
+    "service_radius_km": 0.30000000000001137,
+    "served_regions": [
+      {
+        "id": 890,
+        "fraction": 0.09161675815684016,
+        "centre_distance_km": 0.30000000000001137
+      }
+    ],
+    "underground_out_t_day": 172.50152926318805,
+    "underground_in_t_day": 190.58347073681276,
+    "rounded_departures_day": 5.0
+  },
+  {
+    "id": "S115",
+    "type": "secondary",
+    "x_km": 151.59944000000002,
+    "y_km": 153.76425,
+    "source_seed_id": 825,
+    "parent_primary": "P115",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 203.07700000000114,
+    "service_radius_km": 0.15000000000000568,
+    "served_regions": [
+      {
+        "id": 825,
+        "fraction": 0.07458224073217168,
+        "centre_distance_km": 0.15000000000000568
+      }
+    ],
+    "underground_out_t_day": 95.89202771864923,
+    "underground_in_t_day": 107.1849722813518,
+    "rounded_departures_day": 3.0
+  },
+  {
+    "id": "S116",
+    "type": "secondary",
+    "x_km": 144.34885999999997,
+    "y_km": 159.82882,
+    "source_seed_id": 864,
+    "parent_primary": "P116",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 175.22399999999936,
+    "service_radius_km": 1.3124170905623225,
+    "served_regions": [
+      {
+        "id": 864,
+        "fraction": 0.17146054127814492,
+        "centre_distance_km": 0.0
+      },
+      {
+        "id": 878,
+        "fraction": 0.12459479958829793,
+        "centre_distance_km": 1.3124170905623225
+      }
+    ],
+    "underground_out_t_day": 101.56292885140864,
+    "underground_in_t_day": 73.64492065120677,
+    "rounded_departures_day": 3.0
+  },
+  {
+    "id": "S117",
+    "type": "secondary",
+    "x_km": 141.88223000000002,
+    "y_km": 149.90802,
+    "source_seed_id": 793,
+    "parent_primary": "P117",
+    "ground_capacity_t_day": 3000.0,
+    "ground_exchange_t_day": 132.77299999999946,
+    "service_radius_km": 2.7434263692324703,
+    "served_regions": [
+      {
+        "id": 793,
+        "fraction": 0.04564115152938661,
+        "centre_distance_km": 0.15000000000000568
+      },
+      {
+        "id": 797,
+        "fraction": 0.01640849211050287,
+        "centre_distance_km": 0.9887106796226911
+      },
+      {
+        "id": 810,
+        "fraction": 0.007126006545216926,
+        "centre_distance_km": 2.7434263692324703
+      }
+    ],
+    "underground_out_t_day": 65.31135308360572,
+    "underground_in_t_day": 67.45194311421668,
+    "rounded_departures_day": 2.0
+  }
+]

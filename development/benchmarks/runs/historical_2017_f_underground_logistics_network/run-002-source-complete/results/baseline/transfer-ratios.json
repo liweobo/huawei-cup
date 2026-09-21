@@ -1,0 +1,824 @@
+{
+  "by_park": [
+    {
+      "park": "K1",
+      "nearest_primary": "P057",
+      "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+      "numerator_t_day": 0.0,
+      "denominator_t_day": 19299.366,
+      "ratio": 0.0
+    },
+    {
+      "park": "K2",
+      "nearest_primary": "P108",
+      "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+      "numerator_t_day": 0.0,
+      "denominator_t_day": 18981.112,
+      "ratio": 0.0
+    },
+    {
+      "park": "K3",
+      "nearest_primary": "P080",
+      "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+      "numerator_t_day": 0.0,
+      "denominator_t_day": 18684.818,
+      "ratio": 0.0
+    },
+    {
+      "park": "K4",
+      "nearest_primary": "P098",
+      "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+      "numerator_t_day": 0.0,
+      "denominator_t_day": 8923.678,
+      "ratio": 0.0
+    }
+  ],
+  "by_primary": [
+    {
+      "primary": "P000",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P001",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P002",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P003",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P004",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P005",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P006",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P007",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P008",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P009",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P010",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P011",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P012",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P013",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P014",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P015",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P016",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P017",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P018",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P019",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P020",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P021",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P022",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P023",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P024",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P025",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P026",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P027",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P028",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P029",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P030",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P031",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P032",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P033",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P034",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P035",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P036",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P037",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P038",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P039",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P040",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P041",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P042",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P043",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P044",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P045",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P046",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P047",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P048",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P049",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P050",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P051",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P052",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P053",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P054",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P055",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P056",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P057",
+      "ratios": [
+        {
+          "park": "K1",
+          "nearest_primary": "P057",
+          "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+          "numerator_t_day": 0.0,
+          "denominator_t_day": 19299.366,
+          "ratio": 0.0
+        }
+      ],
+      "status": "DEFINED_BY_NEAREST_PARK"
+    },
+    {
+      "primary": "P058",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P059",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P060",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P061",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P062",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P063",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P064",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P065",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P066",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P067",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P068",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P069",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P070",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P071",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P072",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P073",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P074",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P075",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P076",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P077",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P078",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P079",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P080",
+      "ratios": [
+        {
+          "park": "K3",
+          "nearest_primary": "P080",
+          "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+          "numerator_t_day": 0.0,
+          "denominator_t_day": 18684.818,
+          "ratio": 0.0
+        }
+      ],
+      "status": "DEFINED_BY_NEAREST_PARK"
+    },
+    {
+      "primary": "P081",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P082",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P083",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P084",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P085",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P086",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P087",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P088",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P089",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P090",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P091",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P092",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P093",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P094",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P095",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P096",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P097",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P098",
+      "ratios": [
+        {
+          "park": "K4",
+          "nearest_primary": "P098",
+          "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+          "numerator_t_day": 0.0,
+          "denominator_t_day": 8923.678,
+          "ratio": 0.0
+        }
+      ],
+      "status": "DEFINED_BY_NEAREST_PARK"
+    },
+    {
+      "primary": "P099",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P100",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P101",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P102",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P103",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P104",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P105",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P106",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P107",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P108",
+      "ratios": [
+        {
+          "park": "K2",
+          "nearest_primary": "P108",
+          "nearest_metric": "ASSUMED_EUCLIDEAN_KM",
+          "numerator_t_day": 0.0,
+          "denominator_t_day": 18981.112,
+          "ratio": 0.0
+        }
+      ],
+      "status": "DEFINED_BY_NEAREST_PARK"
+    },
+    {
+      "primary": "P109",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P110",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P111",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P112",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P113",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P114",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P115",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P116",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P117",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P118",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P119",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P120",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P121",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P122",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P123",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P124",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P125",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P126",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P127",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P128",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P129",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P130",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P131",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P132",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P133",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P134",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P135",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P136",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P137",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P138",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P139",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P140",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P141",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P142",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P143",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P144",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P145",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P146",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P147",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P148",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    },
+    {
+      "primary": "P149",
+      "ratios": [],
+      "status": "NOT_APPLICABLE_NO_ASSOCIATED_PARK_DENOMINATOR"
+    }
+  ]
+}

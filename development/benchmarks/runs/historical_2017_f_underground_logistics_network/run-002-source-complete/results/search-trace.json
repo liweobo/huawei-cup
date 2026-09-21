@@ -1,0 +1,136 @@
+{
+  "contract": {
+    "status": "PASS",
+    "objective_direction": "MINIMIZE",
+    "incumbent_source": "q1-primary",
+    "incumbent_feasible": "STATIC_FEASIBLE_ONLY",
+    "move_families": [
+      {
+        "name": "delete_park_tunnel",
+        "decision_component": "physical_build_selection",
+        "rationale": "Reduce large construction depreciation with capacity-aware rerouting"
+      }
+    ],
+    "candidate_realization": "fixed-design multicommodity LP",
+    "feasibility_check": "flow, line, reserved station calls, hierarchy and connectivity",
+    "acceptance_rule": "strictly lower realized total daily cost and static feasibility",
+    "incumbent_update_rule": "monotone minimum",
+    "search_budget": "8 candidate LPs, 60 seconds each",
+    "stopping_rule": "budgeted candidate list exhausted",
+    "deterministic": true
+  },
+  "trace": [
+    {
+      "iteration": 1,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T003_116",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 95779118.88557537,
+      "incumbent_before": 96191691.81286265,
+      "incumbent_after": 95779118.88557537,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 33.423819900002854
+    },
+    {
+      "iteration": 2,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T000_116",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 95388005.36316994,
+      "incumbent_before": 95779118.88557537,
+      "incumbent_after": 95388005.36316994,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 30.11131580000074
+    },
+    {
+      "iteration": 3,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T003_048",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 95017311.4711493,
+      "incumbent_before": 95388005.36316994,
+      "incumbent_after": 95017311.4711493,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 25.4292282000024
+    },
+    {
+      "iteration": 4,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T000_048",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 94655243.08683272,
+      "incumbent_before": 95017311.4711493,
+      "incumbent_after": 94655243.08683272,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 27.488335599999118
+    },
+    {
+      "iteration": 5,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T003_096",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 94293536.03048135,
+      "incumbent_before": 94655243.08683272,
+      "incumbent_after": 94293536.03048135,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 25.9157883999942
+    },
+    {
+      "iteration": 6,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T003_024",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 93933470.82132557,
+      "incumbent_before": 94293536.03048135,
+      "incumbent_after": 93933470.82132557,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 22.721969800004445
+    },
+    {
+      "iteration": 7,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T003_007",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 93575168.1307874,
+      "incumbent_before": 93933470.82132557,
+      "incumbent_after": 93575168.1307874,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 20.36289779999788
+    },
+    {
+      "iteration": 8,
+      "move_family": "delete_physical_park_tunnel_and_resolve_all_flows",
+      "candidate_id": "T003_046",
+      "feasible": true,
+      "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+      "objective": 93223150.21248569,
+      "incumbent_before": 93575168.1307874,
+      "incumbent_after": 93223150.21248569,
+      "accepted": true,
+      "reason": "feasible_realized_cost_improvement",
+      "seconds": 25.852753099999973
+    }
+  ],
+  "evaluated_moves": 8,
+  "feasible_moves": 8,
+  "accepted_moves": 8,
+  "incumbent_updates": 8,
+  "objective_before": 96191691.81286265,
+  "objective_after": 93223150.21248569,
+  "termination_reason": "MAX_CANDIDATE_EVALUATIONS",
+  "runtime_seconds": 214.8342141999965
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "policy": "largest ready train-equivalent arc, FIFO within arc; fixed departure slots",
+    "handling_min": 0,
+    "horizon_min": 1080,
+    "initial_routed_t": 163228.2037394569,
+    "delivered_t": 163200.72563803164,
+    "queued_t": 27.362390489389,
+    "in_transit_or_handling_t": 0.11571093640503285,
+    "mass_residual_t": 5.428084648428921e-10,
+    "delivered_fraction": 0.9998316583727828,
+    "mean_delivery_time_delivered_min": 292.23553022487897,
+    "train_departures": 11872,
+    "max_station_departures": 89,
+    "station_local_t": 174.81626054308057,
+    "original_diagonal_surface_t": 3.44,
+    "daily_clearing": "FAILED_POLICY_NOT_INFEASIBILITY_PROOF",
+    "scope": "routed freight only; station-local freight is separately accounted without underground train movement"
+  },
+  {
+    "policy": "largest ready train-equivalent arc, FIFO within arc; fixed departure slots",
+    "handling_min": 12,
+    "horizon_min": 1080,
+    "initial_routed_t": 163228.2037394569,
+    "delivered_t": 163084.68200666216,
+    "queued_t": 89.16089719638201,
+    "in_transit_or_handling_t": 54.36083559875716,
+    "mass_residual_t": 4.070841441716766e-10,
+    "delivered_fraction": 0.9991207295705844,
+    "mean_delivery_time_delivered_min": 304.11206807130054,
+    "train_departures": 11933,
+    "max_station_departures": 88,
+    "station_local_t": 174.81626054308057,
+    "original_diagonal_surface_t": 3.44,
+    "daily_clearing": "FAILED_POLICY_NOT_INFEASIBILITY_PROOF",
+    "scope": "routed freight only; station-local freight is separately accounted without underground train movement"
+  }
+]

@@ -1,0 +1,172 @@
+schema_version: 1
+experiment_id: EXP-2017F-SC-001
+run_id: run-002-source-complete
+created_at: '2026-09-20T12:47:37.453039+00:00'
+problem: historical_2017_f_underground_logistics_network
+question: Q1-Q4
+status: OBSERVED
+updated_by_workflow: validate_model
+planned_protocol:
+  stages:
+  - independent_original_input_audit
+  - problem_facts_and_semantic_contracts
+  - real_data_q1_baseline
+  - q1_primary
+  - q2_design_flow_realization
+  - q3_failure_surge_improvement
+  - q4_phasing_growth
+  - independent_audit
+  - reviewer
+  data_scope: complete original 114-ID directed OD, no train/test prediction split
+  validation:
+  - source_hashes
+  - dual_xls_readers
+  - coverage_and_exchange
+  - directed_demand_accounting
+  - physical_graph_connectivity
+  - commodity_flow_balance
+  - capacity_by_resource
+  - physical_cost_reconstruction
+  - small_graph_oracle
+  - single_physical_tunnel_failures
+  - yearly_build_dependencies
+  claim_gate: Partial if daily time-feasibility or any required hard constraint remains
+    unverified; no global optimum claim without proof
+  search_policy: deterministic baseline plus bounded feasibility-preserving design
+    improvement; exact subproblem status separately reported
+executed_protocol:
+  stages:
+  - independent_original_input_audit
+  - problem_facts_and_semantic_contracts
+  - rejected_initial_layouts
+  - real_data_q1_baseline_2000
+  - q1_primary_1800
+  - q2_eight_tunnel_deletions_with_rerouting
+  - independent_static_audit
+  - q3_failure_surge_location_diagnostics
+  - q4_phasing_growth
+  - q3_queue_operations_0_12min
+  - independent_operation_phase_audit
+  - regressions_and_reviewer
+  data_scope: complete original 114-ID directed OD, no train/test prediction split
+  validation:
+  - source_hashes
+  - dual_xls_readers
+  - coverage_and_exchange
+  - directed_demand_accounting
+  - physical_graph_connectivity
+  - commodity_flow_balance
+  - capacity_by_resource
+  - physical_cost_reconstruction
+  - small_graph_oracle
+  - single_physical_tunnel_failures
+  - yearly_build_dependencies
+  claim_gate: Partial if daily time-feasibility or any required hard constraint remains
+    unverified; no global optimum claim without proof
+  search_policy: deterministic baseline plus bounded feasibility-preserving design
+    improvement; exact subproblem status separately reported
+  design_search:
+    baseline_fill: 2000
+    consolidation_fill: 1800
+    evaluated_deletions: 8
+    candidate_addition: two top aggregate-demand primary peers
+  limitations:
+  - no fully clearing timetable
+  - no full Q4 expansion
+  - undefined ratios for nonassociated primaries
+  - logical not physical blind isolation
+  - one residual regression path-guard failure
+change_reason: Initial layouts were LP-INFEASIBLE; lower constructive fill and demand-peer
+  shortcuts restored static feasibility. Actual audit/order and queue scenarios explicitly
+  recorded.
+comparable_to_original_plan: false
+protocol_change_disclosure:
+  planned_summary: baseline/primary design plus bounded improvement and Q3/Q4 execution
+  executed_summary: rejected3000/2400 fill; feasible2000/1800; eight deletions; independent
+    audits; static and queue/scenario limitations retained
+  reason: feasibility refinement and explicit executed ordering; no source capacity
+    weakened
+  comparable_to_original_plan: false
+input_artifacts:
+- C01
+- C01-ZIP
+- C01-DOC
+- C01-XLS
+- C01-MAP
+code_artifacts:
+- ART-d6233ef4bc19cf55
+- ART-b2028904e42b6d31
+- ART-a7d48d25f9a8f4c4
+- ART-b25bed6508a5fe46
+- ART-6e3cced233ddd8df
+- ART-b5ee92329b1175e0
+- ART-2fe9616d26cb84cb
+- ART-bf592fccbb682071
+- ART-bc767327a81b2de1
+- ART-141ac272cc794fd7
+- ART-b717316309a41b7b
+- ART-1fbd35774abb460d
+- ART-48b196d322940b83
+- ART-3dbb1449a2e20cda
+- ART-3d8d0f4fbb77d76f
+- ART-611f0600a44a4272
+- ART-cee18979a2f9f744
+- ART-30d868af92b5e485
+output_artifacts:
+- ART-ba75428d57157ff1
+- ART-5c58d726c978fb79
+- ART-30d4ac03eed5958f
+- ART-e472fced0025c9d3
+- ART-1639eaff539437f7
+- ART-130ee263b9d5f08f
+- ART-e18174567c7df441
+- ART-cdf4ae8c60df2931
+- ART-7f13661de01145ae
+- ART-30fbb0ca556e7652
+- ART-c4d13910199b8b42
+- ART-c45611233be37a4a
+- ART-8b0c75d58b9a50ff
+- ART-79b446b6a3c84009
+- ART-6da81160cf79be68
+- ART-a8f62f38d04e4b26
+- ART-c8de92653c1dd202
+- ART-9a1e188360e3d999
+- ART-e5ef4bae4daeb24e
+- ART-c7a7fe5a99e0c8d3
+- ART-d9682d93ec69b656
+- ART-5237474b16fe090e
+- ART-0ee24dbf9c3ab468
+- ART-dfeef51f2a7ad982
+- ART-ce676872b7930e15
+- ART-27da1bbff84e0f25
+- ART-6fa4e094bb8aebd0
+- ART-52837585dd3d3d84
+- ART-2fffb14cb581e9a2
+- ART-ccc6c9bf63969860
+- ART-14e5bef2d4853140
+- ART-ad9dce6e174e8c13
+- ART-c25db204424be953
+- ART-205f1bf38fab1210
+- ART-8240ed8afda93b24
+- ART-0c34f0adc3fd6a94
+- ART-9254bc7cfb3f877d
+- ART-5b412e1300c86cc1
+- ART-e23282ce4fffde75
+- ART-ee4060eaec3a2ebe
+- ART-e71fda753e1fca0a
+- ART-6d26cadf8c39a859
+- ART-958b2668aefb2bbe
+- ART-78680043a3027f2e
+- ART-a325bd7fa91a9c13
+- ART-c3749eb0c8a52d69
+random_seed: null
+metrics:
+  primary_daily_yuan: 93223150.21248569
+  full_task_status: PARTIAL
+  final_decision: BLIND_RUN_PARTIAL
+evidence_ids:
+- EV-2017F-Q1
+- EV-2017F-Q2
+- EV-2017F-Q3
+- EV-2017F-Q4
+protocol_changed: true

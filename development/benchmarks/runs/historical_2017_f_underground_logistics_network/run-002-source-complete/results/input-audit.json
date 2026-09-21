@@ -1,0 +1,119 @@
+{
+  "run_id": "run-002-source-complete",
+  "experiment_id": "EXP-2017F-SC-001",
+  "source_hashes": "PASS",
+  "reader_checks": [
+    {
+      "sheet": "现状全天OD",
+      "dimensions": [
+        115,
+        115
+      ],
+      "mismatches": []
+    },
+    {
+      "sheet": "各区域中心点及面积",
+      "dimensions": [
+        115,
+        8
+      ],
+      "mismatches": []
+    }
+  ],
+  "canonical_summary": {
+    "source_od_rows": 114,
+    "source_od_columns": 114,
+    "location_rows": 114,
+    "region_rows": 110,
+    "park_rows": 4,
+    "missing_od_cells": 0,
+    "blank_park_attribute_cells": 12,
+    "duplicate_ids": 0,
+    "invalid_rows": 0,
+    "negative_or_nonfinite_od": 0
+  },
+  "orientation": {
+    "original": "COLUMN_ORIGIN_ROW_DESTINATION",
+    "derived_csv": "explicit origin and destination columns; D[origin,destination] is original transpose"
+  },
+  "daily_tonnes": 163406.46000000002,
+  "park_outbound": [
+    19299.365999999998,
+    18981.112000000005,
+    18684.818,
+    8923.678
+  ],
+  "park_inbound": [
+    18441.364999999998,
+    18168.523999999994,
+    17912.878,
+    8453.797
+  ],
+  "park_related_tonnes": 128865.538,
+  "region_region_tonnes": 34540.922,
+  "asymmetric_pairs": 5607,
+  "nonzero_diagonal": [
+    {
+      "id": 895,
+      "tonnes": 2.92
+    },
+    {
+      "id": 896,
+      "tonnes": 0.52
+    }
+  ],
+  "region_exchange_min_max": [
+    193.42399999999992,
+    5651.714
+  ],
+  "regions_over_4000": [
+    {
+      "id": 839,
+      "in_plus_out": 4684.654
+    },
+    {
+      "id": 874,
+      "in_plus_out": 5591.746999999999
+    },
+    {
+      "id": 880,
+      "in_plus_out": 4442.187
+    },
+    {
+      "id": 886,
+      "in_plus_out": 5651.714
+    },
+    {
+      "id": 892,
+      "in_plus_out": 4638.965
+    },
+    {
+      "id": 893,
+      "in_plus_out": 4465.546
+    },
+    {
+      "id": 898,
+      "in_plus_out": 4258.763999999997
+    }
+  ],
+  "congestion_min_max": [
+    1.33,
+    11.54
+  ],
+  "units": {
+    "od": "tonnes/day; DOC tonnes and worksheet full-day title",
+    "coordinates": "metres",
+    "area": [
+      "km2",
+      "m2"
+    ],
+    "congestion": "dimensionless original index"
+  },
+  "crs": "NOT_GIVEN",
+  "origin": "NOT_GIVEN",
+  "projection": "NOT_GIVEN",
+  "park_semantics": "SOURCE_CROSS_REFERENCE_INFERENCE",
+  "diagonal_handling": "PRESERVED; routing policy declared separately",
+  "map_geometry": "No pixel distances used",
+  "full_day_dispatch_sensitivity": "station scope not inferred from OD data"
+}

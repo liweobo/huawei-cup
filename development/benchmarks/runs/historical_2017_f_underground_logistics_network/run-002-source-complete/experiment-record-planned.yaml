@@ -1,0 +1,52 @@
+schema_version: 1
+experiment_id: EXP-2017F-SC-001
+run_id: run-002-source-complete
+created_at: '2026-09-20T12:47:37.453039+00:00'
+problem: historical_2017_f_underground_logistics_network
+question: Q1-Q4
+status: PLANNED
+updated_by_workflow: design_model
+planned_protocol: &id001
+  stages:
+  - independent_original_input_audit
+  - problem_facts_and_semantic_contracts
+  - real_data_q1_baseline
+  - q1_primary
+  - q2_design_flow_realization
+  - q3_failure_surge_improvement
+  - q4_phasing_growth
+  - independent_audit
+  - reviewer
+  data_scope: complete original 114-ID directed OD, no train/test prediction split
+  validation:
+  - source_hashes
+  - dual_xls_readers
+  - coverage_and_exchange
+  - directed_demand_accounting
+  - physical_graph_connectivity
+  - commodity_flow_balance
+  - capacity_by_resource
+  - physical_cost_reconstruction
+  - small_graph_oracle
+  - single_physical_tunnel_failures
+  - yearly_build_dependencies
+  claim_gate: Partial if daily time-feasibility or any required hard constraint remains
+    unverified; no global optimum claim without proof
+  search_policy: deterministic baseline plus bounded feasibility-preserving design
+    improvement; exact subproblem status separately reported
+executed_protocol: *id001
+change_reason: ''
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+- C01
+- C01-ZIP
+- C01-DOC
+- C01-XLS
+- C01-MAP
+code_artifacts: []
+output_artifacts: []
+random_seed: null
+metrics: {}
+evidence_ids: []
+protocol_changed: false

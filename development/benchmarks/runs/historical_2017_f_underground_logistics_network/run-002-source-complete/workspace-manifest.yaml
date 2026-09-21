@@ -1,0 +1,35 @@
+schema_version: 2
+isolation_mode: repository_visible_logical_read_boundary
+run_id: run-002-source-complete
+benchmark_id: historical_2017_f_underground_logistics_network
+created_at: '2026-09-20T12:47:37.449742+00:00'
+active_run_id: run-002-source-complete
+immutable_inputs:
+- source_artifact_id: C01
+  path: work/source/F.rar
+  sha256: 8f8dc68c9049b4c565009dd3af3f959b7ae00f9579c0936baa344794b259f022
+- source_artifact_id: C01-ZIP
+  path: work/source/2017年中国研究生数学建模竞赛F题.zip
+  sha256: 34beef8fad48cc340c437d6c110e4f5326946d130282a22953ddad0666ad352d
+- source_artifact_id: C01-DOC
+  path: work/source/2017年中国研究生数学建模竞赛F题.doc
+  sha256: 7cd51bdf0c6a0392eef93fc84efaf16090262fe94e7bae97d385fee67be28719
+- source_artifact_id: C01-XLS
+  path: work/source/现状OD数据及其他数据.xls
+  sha256: 15f306257b78632d74576bcc3ccda03e69c8affc098a92dba183ae8f94a207ab
+- source_artifact_id: C01-MAP
+  path: work/source/地图.jpg
+  sha256: 30ee09fb69ae9e79506280a8e32e108bda35b6ddc53f1892e52dc28c6cf23d96
+writable_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete
+allowed_write_root: C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete
+prior_run_artifacts_visible: true
+developer_repository_visible: true
+evaluator_files_visible: true
+allowed_read_roots:
+- C:\Users\aaa\Desktop\test\huawei-cup-2026\development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-002-source-complete
+- C:\Users\aaa\Desktop\test\huawei-cup-2026\skill
+- source-recovery original bytes/provenance only
+- repository test tooling for required regression
+- historical bytes for hashing only
+prohibited_content: All run-001 solution/model/results/code and all 2017F solution
+  sources; visibility is not permission

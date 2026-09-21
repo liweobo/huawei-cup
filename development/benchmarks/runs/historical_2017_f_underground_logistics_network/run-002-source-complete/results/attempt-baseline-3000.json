@@ -1,0 +1,19 @@
+{
+  "target": 3000,
+  "od_shortcuts": true,
+  "feasible": false,
+  "meta": {
+    "solver_status": "INFEASIBLE",
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "seconds": 4.729501800000435,
+    "variables": 307794,
+    "equality_rows": 32766,
+    "inequality_rows": 2636,
+    "commodities": 129,
+    "physical_edges": 1193,
+    "directed_arcs": 2386,
+    "nodes": 254,
+    "cars": 8,
+    "dispatch_limit": 90
+  }
+}

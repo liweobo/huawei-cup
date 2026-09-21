@@ -1,0 +1,22 @@
+{
+  "status": "REJECTED_BEFORE_FORMAL_RESULT",
+  "settings": {
+    "consolidate": false,
+    "target": 3000,
+    "k_nearest": 5,
+    "od_shortcuts": false
+  },
+  "solver": {
+    "solver_status": "INFEASIBLE",
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "seconds": 4.381281400004809,
+    "variables": 261612,
+    "equality_rows": 32766,
+    "inequality_rows": 2278,
+    "commodities": 129,
+    "physical_edges": 1014,
+    "directed_arcs": 2028,
+    "nodes": 254,
+    "cars": 8
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "target": 2000,
+  "od_shortcuts": true,
+  "feasible": true,
+  "meta": {
+    "solver_status": "OPTIMAL_FIXED_DESIGN_LP",
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "seconds": 17.258896699997422,
+    "variables": 447216,
+    "equality_rows": 46816,
+    "inequality_rows": 3204,
+    "commodities": 154,
+    "physical_edges": 1452,
+    "directed_arcs": 2904,
+    "nodes": 304,
+    "cars": 8,
+    "dispatch_limit": 90,
+    "max_flow_balance": 8.768097359279636e-12,
+    "max_lp_capacity_violation": 9.947598300641403e-14,
+    "max_station_departures": 84.0,
+    "max_directional_line_departures": 35.0,
+    "static_feasible": true,
+    "daily_clearing": "STATIC_ONLY"
+  }
+}
