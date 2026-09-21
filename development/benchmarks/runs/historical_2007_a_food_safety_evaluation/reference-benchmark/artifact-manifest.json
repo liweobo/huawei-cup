@@ -1,0 +1,27 @@
+{
+  "algorithm": "SHA256",
+  "scope": "committed reference-benchmark files except this self-referential manifest",
+  "files": {
+    ".gitignore": "159fe18bda2a9d923b7212d9ffce8bc169a0e5a1e35177a942f58c2b5db77433",
+    "completion.json": "1bd298ff7ef1389283f21e8d47af92f2c23d7c1ef395fb6a446ada0291467059",
+    "current-skill-solution.md": "8c82f180a7cdc3619e9bc349adfd841b3311c899a73fe273ec7c4b5dbd428d6e",
+    "existing-skill-coverage.md": "9703b87dc0f6f7792c97a989f90e3273844559406998d2fe46c415f6ab7a492b",
+    "generalizable-gaps.md": "e040322a4243d608de8c897b46c8a83527eb2dedb5b9fa9c2a4f12c035801573",
+    "hard-soft-comparison.md": "4813ff4d623cade647f213462b45f556cf27babe8d21b7f6cc0e7342754d4d07",
+    "integrity.json": "221e1d18e749b94719aa0e3b465c3268056579b1bff140c5048cb0c5d3b191d4",
+    "numerical-comparability.md": "f1360695cd25ad95083d86b2463baf4ad182b28e399c3484d831b06c7a1dac44",
+    "output-semantics-comparison.md": "d5cb61502f92146f6cb717f6ea97e71a38b29b00a9f39d9158c29288cba381ff",
+    "pre-reference-freeze.json": "10d915836df6724496e3443408bb8821cc4f468c151326add3d6f185af1c72d3",
+    "problem-interpretation-comparison.md": "0cfb751ea04d2806d76e4e272da6fce9716c88dd966426fa0a8e4fbe3f7d04e7",
+    "reference-consensus.md": "1128cbb35e8c95d533d09de3110a1ef614a54a343bc0d0c1abe01ae4dae88dd4",
+    "reference-weaknesses.md": "97943f7ad7bfa28632dc293eec8ebd82ef1415a0acf8037822a098e76cf91d2d",
+    "REPORT.md": "a289353f59fa85aa5373d07a4bd7c4873645132af3e664a7b1b632df96604a68",
+    "risk-semantics-comparison.md": "266077f0309f721f0423003232ee24f684f408a71c018a288ca746ae9ca9551a",
+    "source-ledger.md": "adef1ccff19915ba01c26725b254ccbec84fa32846353937a0303f0d9d23d73a",
+    "tail-risk-comparison.md": "05e7998de52e219478dea17f9784f3c8389494a0587355410aa74870eff504da",
+    "threshold-provenance-comparison.md": "90641e301484400d48aad8e61854b366d337980bb2f0d71c4a3165974ea8ed5c",
+    "uncertainty-comparison.md": "d7b20875a0d4ffa85bc681eb068f67950ffbab6ef1fc1af7ad994de126aedee7",
+    "validation.md": "bf12150dd81184faa8f18d53c7f706a84751cebfd8943c0666aa965aed4651b2",
+    "weight-normalization-comparison.md": "7b82513e797567880592e5cef4595cbdb03e19a1c69d92ffa8e12fd28f42f257"
+  }
+}

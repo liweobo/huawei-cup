@@ -1,0 +1,9 @@
+{
+  "phase": "PRE_REFERENCE_SNAPSHOT",
+  "git_head": "94f48edfb845eea245e9b76002609cd559cc1be7",
+  "skill_tree": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+  "run_001_tree": "75eadfc90829d2db17b563e51dad2e6b7f458ba6",
+  "current_skill_solution": "current-skill-solution.md",
+  "current_skill_solution_sha256": "8c82f180a7cdc3619e9bc349adfd841b3311c899a73fe273ec7c4b5dbd428d6e",
+  "excellent_solution_pdf_opened_before_snapshot": false
+}

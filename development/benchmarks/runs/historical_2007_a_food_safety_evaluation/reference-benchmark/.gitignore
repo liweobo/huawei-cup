@@ -1,0 +1,6 @@
+.tmp/
+__pycache__/
+*.pyc
+*.pdf
+renders/
+extraction-cache/

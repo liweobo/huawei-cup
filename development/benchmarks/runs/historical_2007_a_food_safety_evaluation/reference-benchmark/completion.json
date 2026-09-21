@@ -1,0 +1,28 @@
+{
+  "completion": "2007A_REFERENCE_BENCHMARK_COMPLETE",
+  "papers_discovered": 6,
+  "papers_fully_reviewed": 6,
+  "unique_paper_contents": 5,
+  "duplicate_reference_files": [
+    ["10052A.pdf", "9005210.pdf"]
+  ],
+  "award_levels_verified": 0,
+  "award_level_default": "UNKNOWN",
+  "evaluation_target_definition_level": "WEAK",
+  "output_semantics_level": "WEAK",
+  "indicator_provenance_level": "ADEQUATE",
+  "normalization_discipline_level": "STRONG",
+  "weight_discipline_level": "STRONG",
+  "hard_soft_separation_level": "STRONG",
+  "ranking_stability_level": "STRONG",
+  "claim_semantics_level": "WEAK",
+  "solution_quality_level": "STRONG",
+  "overall_skill_level": "NEEDS_EVALUATION_IMPROVEMENT",
+  "top_generalizable_gap": "EVALUATION_TARGET_AND_OUTPUT_SEMANTICS_CONTRACT",
+  "failure_level": "P0",
+  "failure_level_semantics": "MISSING_GUARD_SEVERITY; FROZEN_RUN_REMAINS_VALID",
+  "final_decision": "GENERALIZABLE_EVALUATION_GAP_FOUND",
+  "skill_modified": false,
+  "run_001_modified": false,
+  "recommended_next_action": "Human review. If accepted, add only the lightweight target/output-semantics contract in a separate non-blind change; do not auto-fix and do not begin problem nine."
+}
