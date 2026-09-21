@@ -1,0 +1,65 @@
+{
+  "run_type": "POST_FIX_TARGETED_REGRESSION",
+  "risk_model_rerun": false,
+  "quantile_reestimated": false,
+  "ranking_recomputed": false,
+  "cases": [
+    {
+      "case_id": "2007A_VALID_PRIMARY_QUANTILE",
+      "expected": "PASS",
+      "observed": "PASS",
+      "reviewer_codes": [],
+      "passed": true
+    },
+    {
+      "case_id": "2007A_VALID_SYNTHETIC_THRESHOLD_CLASS",
+      "expected": "PASS",
+      "observed": "PASS",
+      "reviewer_codes": [],
+      "passed": true
+    },
+    {
+      "case_id": "2007A_VALID_SECONDARY_RELATIVE_TRIAGE",
+      "expected": "PASS",
+      "observed": "PASS",
+      "reviewer_codes": [],
+      "passed": true
+    },
+    {
+      "case_id": "2007A_QUANTILE_AS_PROBABILITY",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "reviewer_codes": [
+        "QUANTILE_PROBABILITY_CONFLATION",
+        "EVALUATION_CLAIM_SCOPE_EXCEEDED"
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "2007A_DIETARY_QUANTILE_VS_BLOOD_CONCENTRATION",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "reviewer_codes": [
+        "COMPARATOR_SCOPE_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "2007A_DAILY_INTAKE_VS_FOOD_CONTENT_LIMIT",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "reviewer_codes": [
+        "COMPARATOR_SCOPE_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "FROZEN_HISTORICAL_STATUS",
+      "expected": "PASS",
+      "observed": "PASS",
+      "reviewer_codes": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,22 @@
+{
+  "baseline_main": "5247406aa9819c6e1bf012140f557f632377472a",
+  "capability_commit": "78c88e3a6e6987ca8c374b0ed2b7471e707594da",
+  "skill_tree_before": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+  "skill_tree_after_capability_commit": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+  "frozen_trees": {
+    "historical_2007_a_run_001": "75eadfc90829d2db17b563e51dad2e6b7f458ba6",
+    "historical_2007_a_reference_benchmark": "9002a4f5509dcd450d963435c7038151ec1ebad9",
+    "historical_2017_f": "e2cc3eda04f300698edd078996a17be6584f1fcc",
+    "historical_2005_d": "1cb175c3339d2db9627945c25ecc27d02e894ebc",
+    "historical_2020_a": "6e7bd05c50aa614b1e741c08117765a17dd0a6ff",
+    "historical_2011_b": "e04effd94bce8c3dca97c72155853aafc65df037",
+    "historical_2022_c": "92bd2ef04f834c8011d179e9dd4691f08209685d",
+    "problem_2023_e": "1d86b7ece9f07b6c9d67d9f82d7553758a13fade",
+    "historical_2024_c": "56dece647c5ab8ef7fff8a1713e1a8a4a1b6ac1a"
+  },
+  "frozen_working_tree_diffs": false,
+  "risk_model_rerun": false,
+  "quantile_reestimated": false,
+  "synthetic_results_changed": false,
+  "ranking_recomputed": false
+}

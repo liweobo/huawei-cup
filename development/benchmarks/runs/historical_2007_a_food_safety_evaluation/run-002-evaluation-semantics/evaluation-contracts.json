@@ -1,0 +1,75 @@
+{
+  "primary_quantile_contract": {
+    "evaluation_contract": {
+      "evaluation_object": "declared population x geography x time x food taxonomy x contaminant assessment cell",
+      "decision_question": "whether the high-exposure quantile is below the applicable threshold with adequate uncertainty margin",
+      "output_semantics": "QUANTILE",
+      "output_method": "Q_0.99999 of daily exposure distribution",
+      "absolute_or_relative": "ABSOLUTE",
+      "output_unit": "physical daily-exposure unit",
+      "output_scope": {
+        "object": "daily dietary contaminant intake",
+        "population": "declared synthetic population",
+        "geography": "declared synthetic geography",
+        "time": "declared synthetic assessment window",
+        "category": "declared food taxonomy and contaminant"
+      },
+      "comparator": {
+        "used": true,
+        "value": 1.0,
+        "unit": "physical daily-exposure unit",
+        "provenance": "ASSUMED",
+        "source": "frozen run-001 synthetic scenario threshold; not a real authority standard",
+        "scope": {
+          "object": "daily dietary contaminant intake",
+          "population": "declared synthetic population",
+          "geography": "declared synthetic geography",
+          "time": "declared synthetic assessment window",
+          "category": "declared food taxonomy and contaminant"
+        },
+        "version_or_date": "frozen run-001 synthetic fixture"
+      },
+      "output_conversion": null,
+      "hard_gate": "LINK_TO_EXISTING_HARD_CONSTRAINT_RULE",
+      "allowed_claim": "synthetic threshold-comparison behavior for the frozen benchmark only; no real safety, exceedance-probability, or legal-compliance claim",
+      "allowed_claim_semantics": [
+        "QUANTILE",
+        "COMPLIANCE"
+      ],
+      "status": "EVALUATION_SEMANTICS_VERIFIED"
+    }
+  },
+  "secondary_triage_contract": {
+    "evaluation_contract": {
+      "evaluation_object": "frozen synthetic assessment cell",
+      "decision_question": "which declared cells require monitoring attention first after the hard class gate",
+      "output_semantics": "RANK",
+      "output_method": "noncompensatory lexicographic triage order",
+      "absolute_or_relative": "RELATIVE",
+      "output_unit": "ordinal position",
+      "output_scope": {
+        "object": "synthetic assessment cell",
+        "population": "declared synthetic cells only",
+        "geography": "current frozen comparison set",
+        "time": "frozen run-001 synthetic period",
+        "category": "declared food-contaminant cells"
+      },
+      "comparator": {
+        "used": false,
+        "value": null,
+        "unit": "",
+        "provenance": "",
+        "source": "",
+        "scope": {},
+        "version_or_date": ""
+      },
+      "output_conversion": null,
+      "hard_gate": "LINK_TO_EXISTING_HARD_CONSTRAINT_RULE",
+      "allowed_claim": "relative monitoring-priority ranking among the current frozen synthetic cells",
+      "allowed_claim_semantics": [
+        "RANK"
+      ],
+      "status": "EVALUATION_SEMANTICS_VERIFIED"
+    }
+  }
+}

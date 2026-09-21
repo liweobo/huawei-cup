@@ -1,0 +1,15 @@
+{
+  "algorithm": "SHA256",
+  "scope": "tracked run-002 files except this self-referential manifest",
+  "files": {
+    ".gitignore": "7a4856ba09c2bc6354b4bcddb8e30009d9062a9dd6ed07819d18b501536a16ea",
+    "code/run_targeted_regression.py": "39342da89250d44a60f5dddde1c601ffd8bd27d5cf1d8beb2cb6db1bcdfa80b2",
+    "code/test_targeted_regression.py": "adf796d051df46ba997cd7960909373d0b1b8084b2777e47ee394be627cce9f5",
+    "completion.json": "40c28ae51e36964059d42e32bde7e675ed7b61e44aa2561b7ea7e3457e744bf6",
+    "evaluation-contracts.json": "dc8858dfc54e6410262422fa94c3a67193a35cf3456c4b27f8c045863d503bc5",
+    "integrity.json": "9b2972abc8f4fb9ec3e121a2b594c7c1017fdaeefee91e799545ac83272905dd",
+    "outputs/results.json": "44327352831f1b57da42a1292ad76e89a1397920ad4201732968dff00daab6e5",
+    "REPORT.md": "1536c6a7e27d32a4408db088070c0454f615f11dc0c62de298b53a834368d087",
+    "validation.md": "14aeb6df59ea78d31b9f504b059dc71b411fc27a2d9f7161589c1f19aff0d3e5"
+  }
+}
