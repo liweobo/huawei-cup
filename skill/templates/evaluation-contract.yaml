@@ -1,0 +1,31 @@
+evaluation_contract:
+  evaluation_object: ""
+  decision_question: ""
+  output_semantics: PHYSICAL_ESTIMATE  # PROBABILITY | QUANTILE | PHYSICAL_ESTIMATE | COMPLIANCE | RELATIVE_SCORE | RANK | CLASS
+  output_method: ""
+  absolute_or_relative: ABSOLUTE  # ABSOLUTE | RELATIVE
+  output_unit: ""
+  output_scope:
+    object: ""
+    population: ""
+    geography: ""
+    time: ""
+    category: ""
+  comparator:
+    used: false
+    value: null
+    unit: ""
+    provenance: ""  # PROBLEM_GIVEN | OFFICIAL_STANDARD | EXTERNAL_REFERENCE | DERIVED | ASSUMED
+    source: ""
+    scope:
+      object: ""
+      population: ""
+      geography: ""
+      time: ""
+      category: ""
+    version_or_date: ""
+  output_conversion: null  # if used: from_semantics, to_semantics, model, evidence, status: VERIFIED
+  hard_gate: NONE  # NONE | LINK_TO_EXISTING_HARD_CONSTRAINT_RULE
+  allowed_claim: ""
+  allowed_claim_semantics: []
+  status: EVALUATION_SEMANTICS_UNVERIFIED

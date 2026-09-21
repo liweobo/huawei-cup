@@ -1,5 +1,9 @@
 # Evaluation Model Family
 
+## Required Semantic Precondition
+
+在选择或计算任何评价算法前，先完成 [`../evaluation-semantics.md`](../evaluation-semantics.md) 的 Evaluation Target & Output Semantics Contract，冻结评价对象、决策问题、数学输出类型、绝对/相对属性、comparator/threshold provenance 与适用范围、hard-gate 链接和 allowed claim。Contract 未闭合时不进入 weighting、normalization、thresholding、ranking 或 classification。
+
 ## Candidates
 
 等权/简单加权、AHP、熵权、TOPSIS、组合权重、稳健排序和非补偿决策规则。
@@ -18,4 +22,4 @@
 
 ## Common Misuse
 
-看到“评价”就套 TOPSIS；双重计权；把离散度等同重要性；不检查排名逆转或硬约束。
+看到“评价”就套 TOPSIS；先算分再定义分数含义；把相对分数/排名/分位值写成概率或合规；comparator 对象/单位/范围不匹配；双重计权；把离散度等同重要性；不检查排名逆转或硬约束。

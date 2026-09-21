@@ -4,6 +4,12 @@
 
 `问题结构 -> 数据可得性 -> 假设 -> 约束 -> Baseline -> 候选模型族 -> 验证 -> 复杂度/解释性`
 
+评价语义激活时，算法选择前先完成 [Evaluation Target & Output Semantics Contract](evaluation-semantics.md)。顺序固定为：
+
+`evaluation target -> output semantics -> hard/comparator semantics -> indicator system -> normalization -> weighting -> method selection -> validation`
+
+不能从“评价”一词直接跳到 AHP、TOPSIS、熵权或模糊评价；Contract 未闭合时不得发布正式 score、rank、class、probability 或 compliance 结论。
+
 | 问题结构 | 保底 Baseline | 可比较模型族 | 首要验证 |
 |---|---|---|---|
 | 连续/时序预测 | 均值、Naive、线性 | prediction | 时间/留出回测、MAE/RMSE |

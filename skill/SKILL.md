@@ -3,7 +3,7 @@ name: huawei-cup-2026
 description: 协助 2026 华为杯及研究生数学建模竞赛完成选题、赛题拆解、附件审计、模型设计与比较、实验验证、论文审稿和提交检查。不要用于普通算法概念、一般 Python 调试、翻译或单道数学题。
 metadata:
   short-description: 薄入口、精确路由的华为杯数学建模 Skill
-  version: V2.8 Phase 2
+  version: V2.9 Phase 3
 ---
 
 # Mission
@@ -40,6 +40,11 @@ metadata:
 10. **不平衡二分类不能只看 Accuracy。** 先比较多数类基线，再按题目代价检查少数类指标、概率质量和验证波动；预处理/重采样只在训练 fold 内拟合，调阈值不得读取 held-out/test 标签。
 11. **等级目标必须有明确顺序来源。** 区分 nominal、ordinal 和 continuous；有序任务使用距离感知指标并与同协议 baseline 比较，不能因标签是整数就自动当作 ordinal 或连续量。
 12. **重复实体必须按正确独立单位验证。** 面向新实体泛化时同一 entity 不得跨 train/validation；组泄漏、伪重复和把拟合残差当泛化误差都必须显式区分。
+13. **评价输出先冻结语义，再进入算法。** 评价、排序、分级、阈值/标准比较或用于决策的分位数/物理估计，必须先建立 Evaluation Target & Output Semantics Contract；相对分数、排名、模糊隶属度和分位值不得冒充概率或合规结论，comparator 必须在对象、单位和适用范围上匹配。
+
+## Evaluation Semantics Activation Boundary
+
+当任务涉及综合评价、相对分数、排序/分级、风险指数、阈值或法规比较、概率样评价输出、用于决策的分位数/物理估计、AHP/熵权/TOPSIS/模糊评价或多准则决策时，激活 [`references/evaluation-semantics.md`](references/evaluation-semantics.md) 和 [`scripts/evaluation_semantics.py`](scripts/evaluation_semantics.py)。在 weighting、normalization、thresholding、ranking、classification 或算法选择前声明评价对象、决策问题、输出语义、绝对/相对属性、comparator provenance/scope 和 allowed claim。普通回归、预测分类、优化目标值和机理参数估计若没有“评价输出 -> 决策/声明”转换，不填写该 Contract。
 
 ## Spectral Activation Boundary
 

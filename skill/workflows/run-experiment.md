@@ -17,6 +17,7 @@
 - [`../references/group-validation.md`](../references/group-validation.md)（存在重复实体或 group-aware validation 时）
 - [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（运行机制、物理或动态模拟时）
 - [`../references/spectral-conventions.md`](../references/spectral-conventions.md)（运行实际使用采样或频域量时）
+- [`../references/evaluation-semantics.md`](../references/evaluation-semantics.md)（运行评价/排序/阈值决策时）
 
 ## Inputs
 
@@ -31,6 +32,7 @@
 1. 确认 `workspace-manifest.yaml` 中的 `ACTIVE_RUN_ID` 和唯一 `allowed_write_root`；没有 run-scoped workspace 时不得生成实验文件。
 2. 从 [`../templates/experiment-record.yaml`](../templates/experiment-record.yaml) 创建结构化记录，先写 `planned_protocol` 和 `status: PLANNED`。机制实验同时从 [`../templates/mechanism-closure.yaml`](../templates/mechanism-closure.yaml) 创建 Closure Contract，并在正式运行前保存 `closure_status`、`allowed_claim_level`、`identifiability_status` 和 `numerical_termination_verified`。
    频域实验同时保存 Spectral Convention Contract；调用实际 FFT 库前完成采样恒等式、频率轴、归一化、复功率和变换 axis 记录。
+   评价语义激活时同时保存 Evaluation Target & Output Semantics Contract；在 contract 为 `UNVERIFIED` 时不得把 score、rank、class、quantile 或 physical estimate 发布为 probability/compliance 结论。
 3. 对涉及时间可得性、未来预测或纵向聚合的任务，先建立并通过 Temporal Availability Contract；必须在聚合前调用 temporal availability gate，确认 `feature_cutoff <= target_horizon`，并记录被排除的未来行。契约不是 `PASS` 时禁止生成 longitudinal features 或相应 OBSERVED metrics。重复实体必须明确 prediction setting；面向新实体时，先检查 group/类别可行性，再选择 splitter 并验证每 fold `overlap_count = 0`。任何 group leakage 都使 validation result `INVALIDATED`。二分类不平衡时先运行多数类基线，再按同一 split/metric 比较无权重与 `class_weight="balanced"` 等候选。ordinal 任务先验证等级顺序和最少类别样本数，再按同一 repeated CV 协议运行中位等级 baseline、nominal baseline 与 ordinal candidate，报告 MAE、RMSE、QWK、Accuracy、Within-One-Level Accuracy 和 fold 波动。预处理、特征选择、PCA、聚类、subgroup boundary、插补和重采样必须在训练 fold 内拟合，阈值只能用 validation 选择，不能读取 test labels。然后运行 Baseline，再运行主模型；每次改进尽量只改变一个可解释因素。全部产物写入 active run 的 `work/`、`outputs/` 或 `experiment-records/`，并在 Evidence Ledger 中登记稳定 `artifact_id`、路径和 SHA256。
    Stateful scheduling 先读 [`stateful-scheduling.md`](../references/stateful-scheduling.md)，把 Contract 写入 planned/executed protocol。正式 search 必须调用同一组 legal actions、transition 与 hard-invariant checks 来产生 candidate，或调用经验证的 feasible decoder。surrogate 只作为搜索优先级；incumbent 只比较真实 realized/decoded feasible objective，且候选记录 feasibility、components、runtime、termination 和 provenance。
    Structured improvement 另读 [`structured-improvement.md`](../references/structured-improvement.md)，把 move families、budget、acceptance 和 incumbent rule 写入 protocol。每个 candidate 必须经真实 realization/decoder 和 hard feasibility gate；surrogate 不能更新 incumbent；working solution 与 best feasible incumbent 分开记录。达到停止规则后保留 `evaluated_moves / feasible_moves / accepted_moves / incumbent_updates / termination_reason`，无改善时允许 `NO_IMPROVING_MOVE_FOUND`。

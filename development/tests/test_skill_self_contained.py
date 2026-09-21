@@ -64,7 +64,7 @@ def test_skill_self_contained(tmp_path: Path) -> None:
     )
     assert compile_result.returncode == 0, compile_result.stderr
     import_result = subprocess.run(
-        [sys.executable, "-B", "-c", "import scripts.data_audit, scripts.metrics, scripts.temporal_availability, scripts.runtime_provenance, scripts.group_validation, scripts.stateful_scheduling, scripts.structured_improvement, scripts.mechanism_closure, scripts.spectral_conventions"],
+        [sys.executable, "-B", "-c", "import scripts.data_audit, scripts.metrics, scripts.temporal_availability, scripts.runtime_provenance, scripts.group_validation, scripts.stateful_scheduling, scripts.structured_improvement, scripts.mechanism_closure, scripts.spectral_conventions, scripts.evaluation_semantics"],
         cwd=isolated,
         env={**__import__("os").environ, "PYTHONPATH": str(isolated), "PYTHONDONTWRITEBYTECODE": "1"},
         capture_output=True,
@@ -94,3 +94,30 @@ def test_skill_self_contained(tmp_path: Path) -> None:
         text=True,
     )
     assert behavior_result.returncode == 0, behavior_result.stderr
+
+    evaluation_result = subprocess.run(
+        [
+            sys.executable,
+            "-B",
+            "-c",
+            (
+                "from scripts.evaluation_semantics import should_activate, reviewer_codes; "
+                "assert should_activate('TOPSIS multi-criteria decision'); "
+                "assert not should_activate('ordinary regression prediction'); "
+                "c={'evaluation_object':'city','decision_question':'relative order',"
+                "'output_semantics':'RELATIVE_SCORE','output_method':'TOPSIS closeness',"
+                "'absolute_or_relative':'RELATIVE','output_unit':'score',"
+                "'output_scope':{'object':'city','population':'N/A','geography':'six cities','time':'2026','category':'city'},"
+                "'comparator':{'used':False},'hard_gate':'NONE',"
+                "'allowed_claim':'relative ranking','allowed_claim_semantics':['RELATIVE_SCORE','PROBABILITY'],"
+                "'status':'EVALUATION_SEMANTICS_VERIFIED'}; "
+                "assert 'RELATIVE_OUTPUT_AS_PROBABILITY' in reviewer_codes(c, 'PROBABILITY'); "
+                "print('ok')"
+            ),
+        ],
+        cwd=isolated,
+        env={**__import__("os").environ, "PYTHONPATH": str(isolated), "PYTHONDONTWRITEBYTECODE": "1"},
+        capture_output=True,
+        text=True,
+    )
+    assert evaluation_result.returncode == 0, evaluation_result.stderr

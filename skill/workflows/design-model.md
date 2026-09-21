@@ -19,6 +19,7 @@
 - [`../references/group-validation.md`](../references/group-validation.md)（存在重复实体或纵向预测时）
 - [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（候选包含机制、物理或动态模拟时）
 - [`../references/spectral-conventions.md`](../references/spectral-conventions.md)（候选实际使用采样或频域量时）
+- [`../references/evaluation-semantics.md`](../references/evaluation-semantics.md)（评价输出将支持决策/声明时）
 - 只有在模型族确定后，读取对应模型族文件。
 
 ## Inputs
@@ -31,7 +32,7 @@
 
 ## Steps
 
-1. 先写 Baseline，再提出最多三个有实质差异的候选模型族。
+1. 若任务命中 Evaluation Semantics Activation Boundary，先检查 `evaluation_object`、`decision_question`、`output_semantics`、`absolute_or_relative`、comparator/threshold provenance 与 scope、`hard_gate` 链接和 `allowed_claim`；Contract 未闭合时停止算法选择。然后写 Baseline，再提出最多三个有实质差异的候选模型族。
 2. 为每个候选记录目标、适用理由、假设、数据、数学形式、优势、缺点、最大风险、指标、实现/解释成本。机制候选必须先填写 Mechanism Closure Contract。只有 `CLOSED_FOR_UNIQUE_NUMERICAL` 才能声明模型内唯一数值；`PARAMETRIC`、`SCENARIO_ASSUMED`、`PARTIAL` 和 `UNVERIFIED` 必须携带对应 claim level。
 3. 检查模型是否能在现有数据与时间内验证；不能验证的只作为探索方案。
 4. 如果任务涉及时间可得性、未来预测或纵向聚合，先建立并通过 Temporal Availability Contract；在 cutoff 过滤前不得设计或生成 longitudinal aggregate，边界不确定时只能停在 `UNVERIFIED`。重复实体依赖另由 group gate 检查；仅以已知 time 为坐标的描述曲线要明确其不声称日历未来预测。

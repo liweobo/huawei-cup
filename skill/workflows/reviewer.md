@@ -18,6 +18,7 @@
 - [`../references/group-validation.md`](../references/group-validation.md)（审查重复实体或纵向验证时）
 - [`../references/mechanism-closure.md`](../references/mechanism-closure.md)（审查机制、物理或动态模拟时）
 - [`../references/spectral-conventions.md`](../references/spectral-conventions.md)（审查实际使用采样或频域量时）
+- [`../references/evaluation-semantics.md`](../references/evaluation-semantics.md)（审查评价/排序/阈值决策时）
 
 ## Inputs
 
@@ -33,6 +34,7 @@
 2. P1：无 Baseline、验证不足、选择理由弱、假设不合理、结论缺数字、创新不成立。
 3. P2：图表解释、符号一致、章节逻辑、公式说明。
 4. P3：语言、排版、图表美化和术语统一。机制模型逐项检查 Closure Contract 和 allowed claim level；按需报告 `MECHANISM_CLOSURE_UNVERIFIED`、`SILENT_CLOSURE_ASSUMPTION`、`UNSUPPORTED_UNIQUE_NUMERICAL_CLAIM`、`TERMINATION_RULE_UNVERIFIED`、`MODEL_FORM_UNCERTAINTY_IGNORED`。
+   评价语义激活时先读取 `evaluation-semantics.md` 并按需报告 `EVALUATION_TARGET_UNDECLARED`、`OUTPUT_SEMANTICS_UNDECLARED`、`RELATIVE_OUTPUT_AS_PROBABILITY`、`QUANTILE_PROBABILITY_CONFLATION`、`RELATIVE_OUTPUT_AS_COMPLIANCE`、`COMPARATOR_SCOPE_MISMATCH`、`THRESHOLD_PROVENANCE_MISSING`、`EVALUATION_CLAIM_SCOPE_EXCEEDED`。输出与 comparator 单位可换算仍不能替代对象、population、geography、time、category 和 standard applicability 核验；hard violation 继续交由既有 hard-constraint rule，软分数不得补偿。
    Stateful scheduling 另查三类错误：动态状态决定可行性却先优化理想排列再映射，报告 `STATE_FEASIBILITY_DECOUPLED`；硬约束非法动作只加大 penalty，报告 `HARD_CONSTRAINT_AS_PENALTY`；用抽象排列 surrogate 证明最佳调度，报告 `SURROGATE_OBJECTIVE_AS_FINAL`。合法 `SEQUENCE_WITH_FEASIBLE_DECODER` 不应被仅因使用排列而否定。
    Structured improvement 另查：有可行解却只重复随机生成完整解，报告 `UNSTRUCTURED_OPTIMIZATION_SEARCH`；非法 neighbor 仅靠 penalty 留下，报告 `INFEASIBLE_NEIGHBOR_AS_VALID`；surrogate 更新 incumbent，报告 `SURROGATE_IMPROVEMENT_CLAIM`；声称提高却没有 baseline/incumbent 对比，报告 `IMPROVEMENT_EVIDENCE_MISSING`；没有 stopping rule 或 budget，报告 `SEARCH_BUDGET_UNSPECIFIED`。
 5. 对时间数据、分类不平衡指标和创新声明逐条激活 Gotchas；对纵向预测沿 `target_time -> feature availability -> aggregation window` 复核 Temporal Availability Contract。任何 `feature time > allowed cutoff` 或先聚合后过滤都报告 `P0 FUTURE_INFORMATION_LEAKAGE`，给出证据位置、影响、最小修复和复核标准。

@@ -12,6 +12,7 @@
 
 - [`../rules/modeling.md`](../rules/modeling.md)
 - [`../rules/experiment.md`](../rules/experiment.md)
+- [`../references/evaluation-semantics.md`](../references/evaluation-semantics.md)（评价 Baseline 时）
 
 ## Inputs
 
@@ -23,7 +24,7 @@
 
 ## Steps
 
-1. 选择最少假设且可复核的方法：预测可用 Naive/线性，优化可用规则/贪心，评价可用等权分数，聚类可用业务规则。
+1. 选择最少假设且可复核的方法：预测可用 Naive/线性，优化可用规则/贪心，评价可用等权分数，聚类可用业务规则。评价 Baseline 在计算等权分数前也必须通过 Evaluation Target & Output Semantics Contract；简单方法不豁免语义 gate。
 2. 按与主模型相同的切分和指标真实运行，记录配置和产物。
 3. 检查结果是否足以发现数据/指标/代码错误。
 4. 写明主模型预期改善的具体指标或约束表现。
