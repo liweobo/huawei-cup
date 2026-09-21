@@ -1,0 +1,38 @@
+{
+  "scope": "Printed-number arithmetic only; no network, routing, dispatch or expansion solve.",
+  "frozen_cost_sum_yuan_per_day": "93223150.212486",
+  "F10256001_pp23_24_primary_ground_t": {
+    "817": "4146.554",
+    "870": "6313.291",
+    "832": "4139.420",
+    "853": "4762.069"
+  },
+  "F10256001_p24_row894_898_sum": "4909.916",
+  "F10256001_p24_printed_sum": "4099.405",
+  "F10294003_p16_secondary_ground_t": "3576.821117",
+  "F10703002_p14_secondary834_ground_t": "3200",
+  "F90005027_p16_secondary_ground_t": [
+    "3040.832",
+    "3064.49",
+    "3354.1796",
+    "3212.684"
+  ],
+  "F90005027_p50_tolerance_relative_to_annual_mean": "0.8",
+  "F10710008_p31_probability_bound_violations": [
+    "1.003",
+    "1.087",
+    "1.045",
+    "1.176"
+  ],
+  "FK0263_p32_rounded_cost_sum_wan_yuan_per_day": "248.13",
+  "FK0263_reported_physical_length_sum_km": "119.44",
+  "FK0263_p22_park2_single_trip_departures": 89,
+  "nominal_train_payload_10t_8vehicles_t": 80,
+  "nominal_train_payload_5t_8vehicles_t": 40,
+  "nominal_node_departures_5_per_hour_18hours": 90,
+  "line_headway_only_2min_18hours_not_station_capacity": 540,
+  "twenty_percent_reserve_first_exceeded_growth_step": 4,
+  "F10703002_growth_29step_rounded_t": "313818.1847",
+  "status": "PASS",
+  "note": "PASS validates these reviewer arithmetic checks, not the reference solutions."
+}

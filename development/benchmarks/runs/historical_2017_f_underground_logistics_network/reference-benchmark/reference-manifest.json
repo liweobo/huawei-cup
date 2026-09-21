@@ -1,0 +1,100 @@
+{
+  "repository_commit": "cd5be91735ebf11d5ee52eb170e86a6d07131977",
+  "listing_url": "https://api.github.com/repos/zhanwen/MathModel/contents/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F?ref=cd5be91735ebf11d5ee52eb170e86a6d07131977",
+  "reference_set_url": "https://github.com/zhanwen/MathModel/tree/master/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F",
+  "files": [
+    {
+      "reference_id": "F10256001",
+      "filename": "F10256001.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F10256001.pdf",
+      "path": "work/pdfs/F10256001.pdf",
+      "git_blob_sha": "65a87c60c12039cf85ce98671d2b8168f160fa52",
+      "sha256": "2f92fcfd13be4035a19c2c8b0dc723366fc54fc58672493553c12ef96690772b",
+      "bytes": 2240590,
+      "download_date": "2026-09-21T02:34:19.755579+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    },
+    {
+      "reference_id": "F10294003",
+      "filename": "F10294003.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F10294003.pdf",
+      "path": "work/pdfs/F10294003.pdf",
+      "git_blob_sha": "e51a341ffbae0f9f4c9d6b4bc49b8b338d2eb523",
+      "sha256": "9ae63510cf1979885d9aa8464c664c26d2cdd3c579480ac458081d93c515beb6",
+      "bytes": 2914858,
+      "download_date": "2026-09-21T02:35:24.201043+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    },
+    {
+      "reference_id": "F10486024",
+      "filename": "F10486024.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F10486024.pdf",
+      "path": "work/pdfs/F10486024.pdf",
+      "git_blob_sha": "005d1d324793866c842134bde69647c6f4e100ac",
+      "sha256": "dce94f07503feba9b32e751eb7ae686dee7ef1cb1a5a6944f869ea43b883e6e3",
+      "bytes": 1676596,
+      "download_date": "2026-09-21T02:35:49.761497+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    },
+    {
+      "reference_id": "F10703002",
+      "filename": "F10703002.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F10703002.pdf",
+      "path": "work/pdfs/F10703002.pdf",
+      "git_blob_sha": "1e8d691bfaa25e7073a3276488173c03bb068478",
+      "sha256": "9b934cde189d873db7925db2992ce0db2f6f935b88a2808681cf4f50974a956b",
+      "bytes": 2425025,
+      "download_date": "2026-09-21T02:36:48.680441+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    },
+    {
+      "reference_id": "F10710008",
+      "filename": "F10710008.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F10710008.pdf",
+      "path": "work/pdfs/F10710008.pdf",
+      "git_blob_sha": "4f8a9ee00111621d7e3350950db1ec1debea8482",
+      "sha256": "233a111d85170dee9a658bed985f6747726a8ffa7a0b4c940779ca7460dea925",
+      "bytes": 1888922,
+      "download_date": "2026-09-21T02:37:33.978269+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    },
+    {
+      "reference_id": "F90005027",
+      "filename": "F90005027.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F90005027.pdf",
+      "path": "work/pdfs/F90005027.pdf",
+      "git_blob_sha": "3aa6166870982833625b8ac1780c91885179ca80",
+      "sha256": "80aebf0e1709e99056cd0da192cec068a49a437cc42f4f2efe5e52daa3d275a7",
+      "bytes": 2223205,
+      "download_date": "2026-09-21T02:38:43.517742+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    },
+    {
+      "reference_id": "FK0263",
+      "filename": "FK0263.pdf",
+      "url": "https://raw.githubusercontent.com/zhanwen/MathModel/cd5be91735ebf11d5ee52eb170e86a6d07131977/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2017%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/FK0263.pdf",
+      "path": "work/pdfs/FK0263.pdf",
+      "git_blob_sha": "55608a9198e4a4a6b05c153dfb794366a19487da",
+      "sha256": "8264250eddab48e6cb12d92adb00c6405bb2436d4d30975b5cc20ed3385e790f",
+      "bytes": 2518314,
+      "download_date": "2026-09-21T02:38:56.783827+00:00",
+      "source_type": "PUBLIC_REPOSITORY_EXCELLENT_PAPER_REFERENCE_SET",
+      "award_level": "UNKNOWN",
+      "award_verified": false
+    }
+  ],
+  "reference_count": 7,
+  "ground_truth": false
+}

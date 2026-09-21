@@ -1,0 +1,39 @@
+{
+  "stage": "2017F_POSTHOC_REFERENCE_BENCHMARK",
+  "date": "2026-09-21",
+  "fresh_tests": [
+    {
+      "name": "historical_artifact_test",
+      "cwd": "repository root",
+      "command": "C:/Users/aaa/AppData/Local/Programs/Python/Python312/python.exe -X utf8 -B development/harness/historical_artifact_test.py",
+      "environment": {"PYTHONDONTWRITEBYTECODE":"1"},
+      "exit_code": 0,
+      "result": "Historical Artifact Test: PASS (27/27 checks)"
+    },
+    {
+      "name": "local_reference_archive_tests",
+      "cwd": "reference-benchmark",
+      "command": "C:/Users/aaa/AppData/Local/Programs/Python/Python312/python.exe -X utf8 -B -m pytest code/test_reference_integrity.py -q -p no:cacheprovider --basetemp work/pytest-posthoc-20260921-01",
+      "environment": {"PYTHONDONTWRITEBYTECODE":"1"},
+      "exit_code": 0,
+      "result": "6 passed in 5.73s",
+      "checks": ["seven PDF bytes", "hash tamper rejection", "review/page consistency", "incomplete page-range rejection", "printed arithmetic", "protected history and pre-reading summary hashes"]
+    }
+  ],
+  "runtime_attempt": {
+    "command": "C:/Users/aaa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 -B -m pytest -q -p no:cacheprovider",
+    "cwd": "repository root",
+    "exit_code": 1,
+    "result": "No module named pytest",
+    "disposition": "Bundled document runtime lacks pytest; used existing Python312 for scoped tests. No package or repository repair. Not a network Skill gap."
+  },
+  "inherited_not_rerun": {
+    "development_tests": "304 passed;1 existing enclosing-path/path-guard failure",
+    "failure": "test_2023e_feature_sets::test_real_q3_preserves_baseline_and_uses_controlled_folds",
+    "source": "../run-002-source-complete/validation.md and validation-results/summary.json",
+    "default_collection": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING; .tmp checkout and frozen smoke duplicates not collected or repaired by this stage",
+    "reason": "No Skill or model changes; posthoc comparison does not require rerunning expensive solves"
+  },
+  "archive_validation": "code/verify_benchmark.py; exact outcome in integrity-verification.json and read-only index/HEAD checks",
+  "model_search_executed": false
+}

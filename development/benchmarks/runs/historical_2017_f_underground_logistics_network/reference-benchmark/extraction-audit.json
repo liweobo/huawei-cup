@@ -1,0 +1,2248 @@
+[
+  {
+    "reference_id": "F10256001",
+    "page_count": 68,
+    "metadata": {
+      "/Author": "",
+      "/CreationDate": "D:20170920094037+08'00'",
+      "/Creator": "",
+      "/Keywords": "",
+      "/ModDate": "D:20170920094037+08'00'",
+      "/Producer": "福昕PDF打印机 版本 7.3.4.0308",
+      "/Subject": "",
+      "/Title": ""
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 1774,
+        "fitz_characters": 184,
+        "images": 4
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 2070,
+        "fitz_characters": 847,
+        "images": 4
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 602,
+        "fitz_characters": 538,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 1359,
+        "fitz_characters": 1233,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 2292,
+        "fitz_characters": 879,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 2953,
+        "fitz_characters": 876,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 1186,
+        "fitz_characters": 1142,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 3433,
+        "fitz_characters": 1096,
+        "images": 0
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 4982,
+        "fitz_characters": 714,
+        "images": 1
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 19134,
+        "fitz_characters": 1129,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 1612,
+        "fitz_characters": 791,
+        "images": 33
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 14790,
+        "fitz_characters": 1459,
+        "images": 0
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 4862,
+        "fitz_characters": 740,
+        "images": 1
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 1599,
+        "fitz_characters": 919,
+        "images": 1
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 4823,
+        "fitz_characters": 1337,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 12188,
+        "fitz_characters": 924,
+        "images": 15
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 4533,
+        "fitz_characters": 2456,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 5806,
+        "fitz_characters": 1337,
+        "images": 0
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 12547,
+        "fitz_characters": 948,
+        "images": 15
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 20410,
+        "fitz_characters": 1358,
+        "images": 0
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 19617,
+        "fitz_characters": 1554,
+        "images": 0
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 5112,
+        "fitz_characters": 758,
+        "images": 35
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 1011,
+        "fitz_characters": 733,
+        "images": 3
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 4651,
+        "fitz_characters": 2122,
+        "images": 0
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 2794,
+        "fitz_characters": 1196,
+        "images": 0
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 8449,
+        "fitz_characters": 1043,
+        "images": 0
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 17684,
+        "fitz_characters": 1485,
+        "images": 0
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 9835,
+        "fitz_characters": 1156,
+        "images": 0
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 600,
+        "fitz_characters": 321,
+        "images": 105
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 18655,
+        "fitz_characters": 1521,
+        "images": 0
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 1609,
+        "fitz_characters": 664,
+        "images": 23
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 713,
+        "fitz_characters": 637,
+        "images": 3
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 18148,
+        "fitz_characters": 1126,
+        "images": 0
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 17797,
+        "fitz_characters": 1246,
+        "images": 0
+      },
+      {
+        "page": 35,
+        "pypdf_characters": 25446,
+        "fitz_characters": 1557,
+        "images": 0
+      },
+      {
+        "page": 36,
+        "pypdf_characters": 5581,
+        "fitz_characters": 645,
+        "images": 3
+      },
+      {
+        "page": 37,
+        "pypdf_characters": 450,
+        "fitz_characters": 335,
+        "images": 6
+      },
+      {
+        "page": 38,
+        "pypdf_characters": 676,
+        "fitz_characters": 582,
+        "images": 6
+      },
+      {
+        "page": 39,
+        "pypdf_characters": 657,
+        "fitz_characters": 513,
+        "images": 6
+      },
+      {
+        "page": 40,
+        "pypdf_characters": 559,
+        "fitz_characters": 435,
+        "images": 6
+      },
+      {
+        "page": 41,
+        "pypdf_characters": 4162,
+        "fitz_characters": 691,
+        "images": 3
+      },
+      {
+        "page": 42,
+        "pypdf_characters": 226,
+        "fitz_characters": 126,
+        "images": 28
+      },
+      {
+        "page": 43,
+        "pypdf_characters": 1510,
+        "fitz_characters": 1454,
+        "images": 0
+      },
+      {
+        "page": 44,
+        "pypdf_characters": 1434,
+        "fitz_characters": 1304,
+        "images": 0
+      },
+      {
+        "page": 45,
+        "pypdf_characters": 1948,
+        "fitz_characters": 1521,
+        "images": 0
+      },
+      {
+        "page": 46,
+        "pypdf_characters": 272,
+        "fitz_characters": 148,
+        "images": 0
+      },
+      {
+        "page": 47,
+        "pypdf_characters": 1812,
+        "fitz_characters": 1016,
+        "images": 0
+      },
+      {
+        "page": 48,
+        "pypdf_characters": 3411,
+        "fitz_characters": 1402,
+        "images": 0
+      },
+      {
+        "page": 49,
+        "pypdf_characters": 5175,
+        "fitz_characters": 1441,
+        "images": 0
+      },
+      {
+        "page": 50,
+        "pypdf_characters": 1908,
+        "fitz_characters": 999,
+        "images": 0
+      },
+      {
+        "page": 51,
+        "pypdf_characters": 2156,
+        "fitz_characters": 1119,
+        "images": 0
+      },
+      {
+        "page": 52,
+        "pypdf_characters": 1271,
+        "fitz_characters": 985,
+        "images": 0
+      },
+      {
+        "page": 53,
+        "pypdf_characters": 3016,
+        "fitz_characters": 1007,
+        "images": 0
+      },
+      {
+        "page": 54,
+        "pypdf_characters": 3016,
+        "fitz_characters": 2326,
+        "images": 0
+      },
+      {
+        "page": 55,
+        "pypdf_characters": 3388,
+        "fitz_characters": 2376,
+        "images": 0
+      },
+      {
+        "page": 56,
+        "pypdf_characters": 1807,
+        "fitz_characters": 1089,
+        "images": 0
+      },
+      {
+        "page": 57,
+        "pypdf_characters": 3030,
+        "fitz_characters": 1027,
+        "images": 0
+      },
+      {
+        "page": 58,
+        "pypdf_characters": 1058,
+        "fitz_characters": 959,
+        "images": 0
+      },
+      {
+        "page": 59,
+        "pypdf_characters": 2623,
+        "fitz_characters": 1156,
+        "images": 0
+      },
+      {
+        "page": 60,
+        "pypdf_characters": 1957,
+        "fitz_characters": 1220,
+        "images": 0
+      },
+      {
+        "page": 61,
+        "pypdf_characters": 3427,
+        "fitz_characters": 1189,
+        "images": 0
+      },
+      {
+        "page": 62,
+        "pypdf_characters": 3208,
+        "fitz_characters": 1008,
+        "images": 0
+      },
+      {
+        "page": 63,
+        "pypdf_characters": 2324,
+        "fitz_characters": 1078,
+        "images": 0
+      },
+      {
+        "page": 64,
+        "pypdf_characters": 3888,
+        "fitz_characters": 1099,
+        "images": 0
+      },
+      {
+        "page": 65,
+        "pypdf_characters": 1761,
+        "fitz_characters": 1204,
+        "images": 0
+      },
+      {
+        "page": 66,
+        "pypdf_characters": 2589,
+        "fitz_characters": 1315,
+        "images": 0
+      },
+      {
+        "page": 67,
+        "pypdf_characters": 2733,
+        "fitz_characters": 826,
+        "images": 0
+      },
+      {
+        "page": 68,
+        "pypdf_characters": 4250,
+        "fitz_characters": 660,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  },
+  {
+    "reference_id": "F10294003",
+    "page_count": 50,
+    "metadata": {
+      "/Author": "hp2",
+      "/Creator": "Microsoft® Word 2013",
+      "/CreationDate": "D:20170920113929+08'00'",
+      "/ModDate": "D:20170920113929+08'00'",
+      "/Producer": "Microsoft® Word 2013"
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 444,
+        "fitz_characters": 243,
+        "images": 7
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 1338,
+        "fitz_characters": 766,
+        "images": 5
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 1643,
+        "fitz_characters": 841,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 5616,
+        "fitz_characters": 4340,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 2282,
+        "fitz_characters": 1350,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 2009,
+        "fitz_characters": 1151,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 1453,
+        "fitz_characters": 887,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 2348,
+        "fitz_characters": 988,
+        "images": 0
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 792,
+        "fitz_characters": 352,
+        "images": 2
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 1818,
+        "fitz_characters": 986,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 1889,
+        "fitz_characters": 1004,
+        "images": 0
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 1244,
+        "fitz_characters": 717,
+        "images": 1
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 1615,
+        "fitz_characters": 917,
+        "images": 1
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 2131,
+        "fitz_characters": 1027,
+        "images": 0
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 1156,
+        "fitz_characters": 635,
+        "images": 1
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 3556,
+        "fitz_characters": 1909,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 1924,
+        "fitz_characters": 778,
+        "images": 4
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 2686,
+        "fitz_characters": 1256,
+        "images": 0
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 1861,
+        "fitz_characters": 987,
+        "images": 0
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 1147,
+        "fitz_characters": 577,
+        "images": 0
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 1249,
+        "fitz_characters": 503,
+        "images": 1
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 2568,
+        "fitz_characters": 789,
+        "images": 1
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 2241,
+        "fitz_characters": 714,
+        "images": 0
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 2696,
+        "fitz_characters": 695,
+        "images": 0
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 1896,
+        "fitz_characters": 932,
+        "images": 0
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 2288,
+        "fitz_characters": 1093,
+        "images": 0
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 3451,
+        "fitz_characters": 1228,
+        "images": 0
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 2815,
+        "fitz_characters": 1103,
+        "images": 0
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 2870,
+        "fitz_characters": 1079,
+        "images": 0
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 2382,
+        "fitz_characters": 656,
+        "images": 0
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 2209,
+        "fitz_characters": 1231,
+        "images": 0
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 1982,
+        "fitz_characters": 1229,
+        "images": 0
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 2503,
+        "fitz_characters": 1392,
+        "images": 0
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 1427,
+        "fitz_characters": 968,
+        "images": 0
+      },
+      {
+        "page": 35,
+        "pypdf_characters": 1213,
+        "fitz_characters": 866,
+        "images": 0
+      },
+      {
+        "page": 36,
+        "pypdf_characters": 3616,
+        "fitz_characters": 2265,
+        "images": 0
+      },
+      {
+        "page": 37,
+        "pypdf_characters": 3924,
+        "fitz_characters": 2564,
+        "images": 0
+      },
+      {
+        "page": 38,
+        "pypdf_characters": 2888,
+        "fitz_characters": 1904,
+        "images": 0
+      },
+      {
+        "page": 39,
+        "pypdf_characters": 154,
+        "fitz_characters": 34,
+        "images": 1
+      },
+      {
+        "page": 40,
+        "pypdf_characters": 977,
+        "fitz_characters": 884,
+        "images": 0
+      },
+      {
+        "page": 41,
+        "pypdf_characters": 947,
+        "fitz_characters": 860,
+        "images": 0
+      },
+      {
+        "page": 42,
+        "pypdf_characters": 916,
+        "fitz_characters": 777,
+        "images": 0
+      },
+      {
+        "page": 43,
+        "pypdf_characters": 458,
+        "fitz_characters": 372,
+        "images": 1
+      },
+      {
+        "page": 44,
+        "pypdf_characters": 1131,
+        "fitz_characters": 1004,
+        "images": 0
+      },
+      {
+        "page": 45,
+        "pypdf_characters": 1467,
+        "fitz_characters": 1254,
+        "images": 0
+      },
+      {
+        "page": 46,
+        "pypdf_characters": 1413,
+        "fitz_characters": 1188,
+        "images": 0
+      },
+      {
+        "page": 47,
+        "pypdf_characters": 1577,
+        "fitz_characters": 1503,
+        "images": 0
+      },
+      {
+        "page": 48,
+        "pypdf_characters": 166,
+        "fitz_characters": 38,
+        "images": 1
+      },
+      {
+        "page": 49,
+        "pypdf_characters": 1096,
+        "fitz_characters": 1093,
+        "images": 0
+      },
+      {
+        "page": 50,
+        "pypdf_characters": 611,
+        "fitz_characters": 593,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  },
+  {
+    "reference_id": "F10486024",
+    "page_count": 49,
+    "metadata": {
+      "/Author": "hp2",
+      "/Creator": "Microsoft® Word 2016",
+      "/CreationDate": "D:20170920115737+08'00'",
+      "/ModDate": "D:20170920115737+08'00'",
+      "/Producer": "Microsoft® Word 2016"
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 393,
+        "fitz_characters": 189,
+        "images": 3
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 1278,
+        "fitz_characters": 757,
+        "images": 3
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 1139,
+        "fitz_characters": 793,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 1305,
+        "fitz_characters": 764,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 1694,
+        "fitz_characters": 1154,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 1052,
+        "fitz_characters": 741,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 1808,
+        "fitz_characters": 754,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 807,
+        "fitz_characters": 420,
+        "images": 0
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 2075,
+        "fitz_characters": 1127,
+        "images": 0
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 3145,
+        "fitz_characters": 1407,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 1819,
+        "fitz_characters": 837,
+        "images": 1
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 1129,
+        "fitz_characters": 717,
+        "images": 1
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 1919,
+        "fitz_characters": 860,
+        "images": 0
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 1220,
+        "fitz_characters": 554,
+        "images": 1
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 1139,
+        "fitz_characters": 773,
+        "images": 12
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 2903,
+        "fitz_characters": 1111,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 2536,
+        "fitz_characters": 1084,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 1435,
+        "fitz_characters": 1072,
+        "images": 16
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 2457,
+        "fitz_characters": 1300,
+        "images": 0
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 1580,
+        "fitz_characters": 1212,
+        "images": 3
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 2663,
+        "fitz_characters": 1088,
+        "images": 0
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 1170,
+        "fitz_characters": 452,
+        "images": 0
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 930,
+        "fitz_characters": 689,
+        "images": 19
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 2422,
+        "fitz_characters": 1106,
+        "images": 0
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 332,
+        "fitz_characters": 122,
+        "images": 0
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 734,
+        "fitz_characters": 569,
+        "images": 0
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 3516,
+        "fitz_characters": 1004,
+        "images": 0
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 2416,
+        "fitz_characters": 1213,
+        "images": 1
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 1952,
+        "fitz_characters": 1252,
+        "images": 1
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 1866,
+        "fitz_characters": 1053,
+        "images": 0
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 1558,
+        "fitz_characters": 898,
+        "images": 8
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 2083,
+        "fitz_characters": 1189,
+        "images": 0
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 1896,
+        "fitz_characters": 1175,
+        "images": 0
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 1680,
+        "fitz_characters": 1218,
+        "images": 2
+      },
+      {
+        "page": 35,
+        "pypdf_characters": 1243,
+        "fitz_characters": 721,
+        "images": 0
+      },
+      {
+        "page": 36,
+        "pypdf_characters": 256,
+        "fitz_characters": 130,
+        "images": 0
+      },
+      {
+        "page": 37,
+        "pypdf_characters": 256,
+        "fitz_characters": 132,
+        "images": 0
+      },
+      {
+        "page": 38,
+        "pypdf_characters": 258,
+        "fitz_characters": 134,
+        "images": 0
+      },
+      {
+        "page": 39,
+        "pypdf_characters": 242,
+        "fitz_characters": 128,
+        "images": 0
+      },
+      {
+        "page": 40,
+        "pypdf_characters": 1625,
+        "fitz_characters": 1007,
+        "images": 0
+      },
+      {
+        "page": 41,
+        "pypdf_characters": 742,
+        "fitz_characters": 366,
+        "images": 0
+      },
+      {
+        "page": 42,
+        "pypdf_characters": 914,
+        "fitz_characters": 686,
+        "images": 0
+      },
+      {
+        "page": 43,
+        "pypdf_characters": 830,
+        "fitz_characters": 759,
+        "images": 0
+      },
+      {
+        "page": 44,
+        "pypdf_characters": 911,
+        "fitz_characters": 858,
+        "images": 0
+      },
+      {
+        "page": 45,
+        "pypdf_characters": 1004,
+        "fitz_characters": 957,
+        "images": 0
+      },
+      {
+        "page": 46,
+        "pypdf_characters": 883,
+        "fitz_characters": 719,
+        "images": 0
+      },
+      {
+        "page": 47,
+        "pypdf_characters": 793,
+        "fitz_characters": 726,
+        "images": 0
+      },
+      {
+        "page": 48,
+        "pypdf_characters": 952,
+        "fitz_characters": 905,
+        "images": 0
+      },
+      {
+        "page": 49,
+        "pypdf_characters": 827,
+        "fitz_characters": 770,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  },
+  {
+    "reference_id": "F10703002",
+    "page_count": 36,
+    "metadata": {
+      "/Author": "hp2",
+      "/Comments": "",
+      "/Company": "",
+      "/CreationDate": "D:20170919193548+11'35'",
+      "/Creator": "WPS Office",
+      "/Keywords": "",
+      "/ModDate": "D:20170919193548+11'35'",
+      "/Producer": "",
+      "/SourceModified": "D:20170919193548+11'35'",
+      "/Subject": "",
+      "/Title": "",
+      "/Trapped": "False"
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 281,
+        "fitz_characters": 126,
+        "images": 4
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 1219,
+        "fitz_characters": 831,
+        "images": 3
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 1271,
+        "fitz_characters": 996,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 986,
+        "fitz_characters": 781,
+        "images": 1
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 509,
+        "fitz_characters": 232,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 1554,
+        "fitz_characters": 1230,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 1946,
+        "fitz_characters": 1064,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 1588,
+        "fitz_characters": 1079,
+        "images": 1
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 1141,
+        "fitz_characters": 735,
+        "images": 1
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 1910,
+        "fitz_characters": 966,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 2323,
+        "fitz_characters": 1306,
+        "images": 0
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 1454,
+        "fitz_characters": 922,
+        "images": 1
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 1737,
+        "fitz_characters": 799,
+        "images": 1
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 2024,
+        "fitz_characters": 751,
+        "images": 0
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 2312,
+        "fitz_characters": 943,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 2361,
+        "fitz_characters": 1068,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 1890,
+        "fitz_characters": 1347,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 1430,
+        "fitz_characters": 1087,
+        "images": 5
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 1933,
+        "fitz_characters": 997,
+        "images": 0
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 962,
+        "fitz_characters": 694,
+        "images": 4
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 277,
+        "fitz_characters": 131,
+        "images": 2
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 441,
+        "fitz_characters": 238,
+        "images": 6
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 1350,
+        "fitz_characters": 812,
+        "images": 0
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 956,
+        "fitz_characters": 284,
+        "images": 1
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 1554,
+        "fitz_characters": 1213,
+        "images": 0
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 1384,
+        "fitz_characters": 727,
+        "images": 0
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 1068,
+        "fitz_characters": 356,
+        "images": 1
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 1260,
+        "fitz_characters": 904,
+        "images": 1
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 1243,
+        "fitz_characters": 945,
+        "images": 1
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 798,
+        "fitz_characters": 450,
+        "images": 2
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 779,
+        "fitz_characters": 396,
+        "images": 1
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 1185,
+        "fitz_characters": 861,
+        "images": 1
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 1213,
+        "fitz_characters": 871,
+        "images": 0
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 995,
+        "fitz_characters": 899,
+        "images": 0
+      },
+      {
+        "page": 35,
+        "pypdf_characters": 1001,
+        "fitz_characters": 823,
+        "images": 0
+      },
+      {
+        "page": 36,
+        "pypdf_characters": 332,
+        "fitz_characters": 180,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  },
+  {
+    "reference_id": "F10710008",
+    "page_count": 34,
+    "metadata": {
+      "/Author": "yangfei",
+      "/Comments": "",
+      "/Company": "",
+      "/CreationDate": "D:20170920113426+03'34'",
+      "/Creator": "WPS Office",
+      "/Keywords": "",
+      "/ModDate": "D:20170920113426+03'34'",
+      "/Producer": "",
+      "/SourceModified": "D:20170920113426+03'34'",
+      "/Subject": "",
+      "/Title": "",
+      "/Trapped": "False"
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 245,
+        "fitz_characters": 106,
+        "images": 3
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 1054,
+        "fitz_characters": 736,
+        "images": 3
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 1497,
+        "fitz_characters": 1223,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 1654,
+        "fitz_characters": 1260,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 1661,
+        "fitz_characters": 1372,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 1455,
+        "fitz_characters": 967,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 962,
+        "fitz_characters": 729,
+        "images": 2
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 1851,
+        "fitz_characters": 905,
+        "images": 1
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 2768,
+        "fitz_characters": 1217,
+        "images": 1
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 1182,
+        "fitz_characters": 754,
+        "images": 2
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 1398,
+        "fitz_characters": 1027,
+        "images": 1
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 1785,
+        "fitz_characters": 1010,
+        "images": 0
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 587,
+        "fitz_characters": 314,
+        "images": 2
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 1266,
+        "fitz_characters": 981,
+        "images": 1
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 1893,
+        "fitz_characters": 1130,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 2470,
+        "fitz_characters": 1057,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 2500,
+        "fitz_characters": 1024,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 2154,
+        "fitz_characters": 1161,
+        "images": 0
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 1306,
+        "fitz_characters": 979,
+        "images": 1
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 2676,
+        "fitz_characters": 1000,
+        "images": 2
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 2038,
+        "fitz_characters": 1075,
+        "images": 0
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 1604,
+        "fitz_characters": 744,
+        "images": 1
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 1717,
+        "fitz_characters": 1264,
+        "images": 0
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 1280,
+        "fitz_characters": 933,
+        "images": 0
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 2269,
+        "fitz_characters": 538,
+        "images": 0
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 1529,
+        "fitz_characters": 533,
+        "images": 0
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 1645,
+        "fitz_characters": 602,
+        "images": 0
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 1701,
+        "fitz_characters": 642,
+        "images": 0
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 2167,
+        "fitz_characters": 747,
+        "images": 0
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 1787,
+        "fitz_characters": 639,
+        "images": 0
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 1467,
+        "fitz_characters": 512,
+        "images": 0
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 3342,
+        "fitz_characters": 2457,
+        "images": 0
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 1869,
+        "fitz_characters": 1401,
+        "images": 0
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 678,
+        "fitz_characters": 454,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  },
+  {
+    "reference_id": "F90005027",
+    "page_count": 54,
+    "metadata": {
+      "/Author": "tongzhou qu",
+      "/Creator": "Microsoft® Word 2013",
+      "/CreationDate": "D:20170920083110+08'00'",
+      "/ModDate": "D:20170920083110+08'00'",
+      "/Producer": "Microsoft® Word 2013"
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 562,
+        "fitz_characters": 250,
+        "images": 11
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 1118,
+        "fitz_characters": 683,
+        "images": 9
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 1530,
+        "fitz_characters": 935,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 2293,
+        "fitz_characters": 1276,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 2403,
+        "fitz_characters": 1272,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 1264,
+        "fitz_characters": 1093,
+        "images": 12
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 1591,
+        "fitz_characters": 939,
+        "images": 1
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 154,
+        "fitz_characters": 356,
+        "images": 20
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 1376,
+        "fitz_characters": 1078,
+        "images": 6
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 1759,
+        "fitz_characters": 1064,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 1726,
+        "fitz_characters": 1199,
+        "images": 0
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 3942,
+        "fitz_characters": 1616,
+        "images": 0
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 1110,
+        "fitz_characters": 713,
+        "images": 3
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 1757,
+        "fitz_characters": 767,
+        "images": 0
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 1698,
+        "fitz_characters": 1047,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 2595,
+        "fitz_characters": 1238,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 2008,
+        "fitz_characters": 1044,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 2109,
+        "fitz_characters": 782,
+        "images": 5
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 1913,
+        "fitz_characters": 1147,
+        "images": 0
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 1563,
+        "fitz_characters": 776,
+        "images": 6
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 963,
+        "fitz_characters": 701,
+        "images": 3
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 677,
+        "fitz_characters": 897,
+        "images": 13
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 778,
+        "fitz_characters": 934,
+        "images": 0
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 1656,
+        "fitz_characters": 1023,
+        "images": 4
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 590,
+        "fitz_characters": 583,
+        "images": 14
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 999,
+        "fitz_characters": 1360,
+        "images": 12
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 385,
+        "fitz_characters": 1222,
+        "images": 17
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 219,
+        "fitz_characters": 1259,
+        "images": 0
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 2023,
+        "fitz_characters": 1133,
+        "images": 0
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 1384,
+        "fitz_characters": 896,
+        "images": 0
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 199,
+        "fitz_characters": 340,
+        "images": 23
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 520,
+        "fitz_characters": 570,
+        "images": 2
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 597,
+        "fitz_characters": 638,
+        "images": 2
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 2639,
+        "fitz_characters": 1374,
+        "images": 0
+      },
+      {
+        "page": 35,
+        "pypdf_characters": 2617,
+        "fitz_characters": 1494,
+        "images": 3
+      },
+      {
+        "page": 36,
+        "pypdf_characters": 2310,
+        "fitz_characters": 1357,
+        "images": 0
+      },
+      {
+        "page": 37,
+        "pypdf_characters": 2189,
+        "fitz_characters": 1246,
+        "images": 0
+      },
+      {
+        "page": 38,
+        "pypdf_characters": 2571,
+        "fitz_characters": 1285,
+        "images": 0
+      },
+      {
+        "page": 39,
+        "pypdf_characters": 1016,
+        "fitz_characters": 643,
+        "images": 1
+      },
+      {
+        "page": 40,
+        "pypdf_characters": 2588,
+        "fitz_characters": 1162,
+        "images": 0
+      },
+      {
+        "page": 41,
+        "pypdf_characters": 2044,
+        "fitz_characters": 1056,
+        "images": 0
+      },
+      {
+        "page": 42,
+        "pypdf_characters": 1295,
+        "fitz_characters": 969,
+        "images": 0
+      },
+      {
+        "page": 43,
+        "pypdf_characters": 1639,
+        "fitz_characters": 983,
+        "images": 0
+      },
+      {
+        "page": 44,
+        "pypdf_characters": 1756,
+        "fitz_characters": 1400,
+        "images": 0
+      },
+      {
+        "page": 45,
+        "pypdf_characters": 1357,
+        "fitz_characters": 1466,
+        "images": 0
+      },
+      {
+        "page": 46,
+        "pypdf_characters": 454,
+        "fitz_characters": 616,
+        "images": 3
+      },
+      {
+        "page": 47,
+        "pypdf_characters": 581,
+        "fitz_characters": 545,
+        "images": 2
+      },
+      {
+        "page": 48,
+        "pypdf_characters": 2059,
+        "fitz_characters": 1247,
+        "images": 0
+      },
+      {
+        "page": 49,
+        "pypdf_characters": 3462,
+        "fitz_characters": 1436,
+        "images": 0
+      },
+      {
+        "page": 50,
+        "pypdf_characters": 1755,
+        "fitz_characters": 1412,
+        "images": 1
+      },
+      {
+        "page": 51,
+        "pypdf_characters": 718,
+        "fitz_characters": 660,
+        "images": 0
+      },
+      {
+        "page": 52,
+        "pypdf_characters": 1102,
+        "fitz_characters": 568,
+        "images": 0
+      },
+      {
+        "page": 53,
+        "pypdf_characters": 784,
+        "fitz_characters": 453,
+        "images": 0
+      },
+      {
+        "page": 54,
+        "pypdf_characters": 1419,
+        "fitz_characters": 686,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  },
+  {
+    "reference_id": "FK0263",
+    "page_count": 63,
+    "metadata": {
+      "/Author": "hp2",
+      "/Creator": "Microsoft® Word 2013",
+      "/CreationDate": "D:20170920070126+08'00'",
+      "/ModDate": "D:20170920070126+08'00'",
+      "/Producer": "Microsoft® Word 2013"
+    },
+    "pages": [
+      {
+        "page": 1,
+        "pypdf_characters": 432,
+        "fitz_characters": 234,
+        "images": 7
+      },
+      {
+        "page": 2,
+        "pypdf_characters": 1332,
+        "fitz_characters": 760,
+        "images": 5
+      },
+      {
+        "page": 3,
+        "pypdf_characters": 1213,
+        "fitz_characters": 700,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "pypdf_characters": 5014,
+        "fitz_characters": 3535,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "pypdf_characters": 2133,
+        "fitz_characters": 1145,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "pypdf_characters": 1861,
+        "fitz_characters": 831,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "pypdf_characters": 2387,
+        "fitz_characters": 1264,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "pypdf_characters": 2328,
+        "fitz_characters": 1237,
+        "images": 0
+      },
+      {
+        "page": 9,
+        "pypdf_characters": 3051,
+        "fitz_characters": 1623,
+        "images": 0
+      },
+      {
+        "page": 10,
+        "pypdf_characters": 2942,
+        "fitz_characters": 1425,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "pypdf_characters": 2078,
+        "fitz_characters": 977,
+        "images": 1
+      },
+      {
+        "page": 12,
+        "pypdf_characters": 3091,
+        "fitz_characters": 1537,
+        "images": 0
+      },
+      {
+        "page": 13,
+        "pypdf_characters": 2857,
+        "fitz_characters": 1192,
+        "images": 0
+      },
+      {
+        "page": 14,
+        "pypdf_characters": 2246,
+        "fitz_characters": 992,
+        "images": 1
+      },
+      {
+        "page": 15,
+        "pypdf_characters": 3327,
+        "fitz_characters": 1384,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "pypdf_characters": 2630,
+        "fitz_characters": 892,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "pypdf_characters": 3109,
+        "fitz_characters": 1475,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "pypdf_characters": 2326,
+        "fitz_characters": 1270,
+        "images": 0
+      },
+      {
+        "page": 19,
+        "pypdf_characters": 1757,
+        "fitz_characters": 745,
+        "images": 1
+      },
+      {
+        "page": 20,
+        "pypdf_characters": 2637,
+        "fitz_characters": 1074,
+        "images": 0
+      },
+      {
+        "page": 21,
+        "pypdf_characters": 1957,
+        "fitz_characters": 967,
+        "images": 0
+      },
+      {
+        "page": 22,
+        "pypdf_characters": 3064,
+        "fitz_characters": 1525,
+        "images": 0
+      },
+      {
+        "page": 23,
+        "pypdf_characters": 2044,
+        "fitz_characters": 1108,
+        "images": 1
+      },
+      {
+        "page": 24,
+        "pypdf_characters": 1671,
+        "fitz_characters": 860,
+        "images": 2
+      },
+      {
+        "page": 25,
+        "pypdf_characters": 2755,
+        "fitz_characters": 1199,
+        "images": 1
+      },
+      {
+        "page": 26,
+        "pypdf_characters": 2741,
+        "fitz_characters": 1273,
+        "images": 0
+      },
+      {
+        "page": 27,
+        "pypdf_characters": 2379,
+        "fitz_characters": 1010,
+        "images": 0
+      },
+      {
+        "page": 28,
+        "pypdf_characters": 1620,
+        "fitz_characters": 724,
+        "images": 1
+      },
+      {
+        "page": 29,
+        "pypdf_characters": 2378,
+        "fitz_characters": 1197,
+        "images": 0
+      },
+      {
+        "page": 30,
+        "pypdf_characters": 3333,
+        "fitz_characters": 1632,
+        "images": 0
+      },
+      {
+        "page": 31,
+        "pypdf_characters": 3093,
+        "fitz_characters": 1156,
+        "images": 0
+      },
+      {
+        "page": 32,
+        "pypdf_characters": 1953,
+        "fitz_characters": 545,
+        "images": 1
+      },
+      {
+        "page": 33,
+        "pypdf_characters": 2015,
+        "fitz_characters": 1164,
+        "images": 0
+      },
+      {
+        "page": 34,
+        "pypdf_characters": 1750,
+        "fitz_characters": 910,
+        "images": 0
+      },
+      {
+        "page": 35,
+        "pypdf_characters": 1481,
+        "fitz_characters": 537,
+        "images": 1
+      },
+      {
+        "page": 36,
+        "pypdf_characters": 1699,
+        "fitz_characters": 839,
+        "images": 1
+      },
+      {
+        "page": 37,
+        "pypdf_characters": 1908,
+        "fitz_characters": 838,
+        "images": 1
+      },
+      {
+        "page": 38,
+        "pypdf_characters": 1142,
+        "fitz_characters": 602,
+        "images": 1
+      },
+      {
+        "page": 39,
+        "pypdf_characters": 1296,
+        "fitz_characters": 680,
+        "images": 1
+      },
+      {
+        "page": 40,
+        "pypdf_characters": 1596,
+        "fitz_characters": 809,
+        "images": 1
+      },
+      {
+        "page": 41,
+        "pypdf_characters": 1604,
+        "fitz_characters": 865,
+        "images": 0
+      },
+      {
+        "page": 42,
+        "pypdf_characters": 1257,
+        "fitz_characters": 1005,
+        "images": 0
+      },
+      {
+        "page": 43,
+        "pypdf_characters": 1357,
+        "fitz_characters": 1331,
+        "images": 0
+      },
+      {
+        "page": 44,
+        "pypdf_characters": 1874,
+        "fitz_characters": 1524,
+        "images": 0
+      },
+      {
+        "page": 45,
+        "pypdf_characters": 1377,
+        "fitz_characters": 1122,
+        "images": 0
+      },
+      {
+        "page": 46,
+        "pypdf_characters": 1497,
+        "fitz_characters": 1181,
+        "images": 0
+      },
+      {
+        "page": 47,
+        "pypdf_characters": 1005,
+        "fitz_characters": 915,
+        "images": 0
+      },
+      {
+        "page": 48,
+        "pypdf_characters": 1092,
+        "fitz_characters": 1089,
+        "images": 0
+      },
+      {
+        "page": 49,
+        "pypdf_characters": 1218,
+        "fitz_characters": 1245,
+        "images": 0
+      },
+      {
+        "page": 50,
+        "pypdf_characters": 1188,
+        "fitz_characters": 1169,
+        "images": 0
+      },
+      {
+        "page": 51,
+        "pypdf_characters": 1003,
+        "fitz_characters": 987,
+        "images": 0
+      },
+      {
+        "page": 52,
+        "pypdf_characters": 1050,
+        "fitz_characters": 1049,
+        "images": 0
+      },
+      {
+        "page": 53,
+        "pypdf_characters": 1136,
+        "fitz_characters": 1133,
+        "images": 0
+      },
+      {
+        "page": 54,
+        "pypdf_characters": 1029,
+        "fitz_characters": 996,
+        "images": 0
+      },
+      {
+        "page": 55,
+        "pypdf_characters": 1921,
+        "fitz_characters": 1664,
+        "images": 0
+      },
+      {
+        "page": 56,
+        "pypdf_characters": 1605,
+        "fitz_characters": 1324,
+        "images": 0
+      },
+      {
+        "page": 57,
+        "pypdf_characters": 1577,
+        "fitz_characters": 1402,
+        "images": 0
+      },
+      {
+        "page": 58,
+        "pypdf_characters": 1147,
+        "fitz_characters": 1124,
+        "images": 0
+      },
+      {
+        "page": 59,
+        "pypdf_characters": 1077,
+        "fitz_characters": 1060,
+        "images": 0
+      },
+      {
+        "page": 60,
+        "pypdf_characters": 1051,
+        "fitz_characters": 971,
+        "images": 0
+      },
+      {
+        "page": 61,
+        "pypdf_characters": 1186,
+        "fitz_characters": 1168,
+        "images": 0
+      },
+      {
+        "page": 62,
+        "pypdf_characters": 1150,
+        "fitz_characters": 1146,
+        "images": 0
+      },
+      {
+        "page": 63,
+        "pypdf_characters": 808,
+        "fitz_characters": 759,
+        "images": 0
+      }
+    ],
+    "text_quality": "NATIVE_TEXT_AVAILABLE_FORMULAS_TABLES_REQUIRE_VISUAL_CHECK",
+    "visual_verification": "PENDING"
+  }
+]

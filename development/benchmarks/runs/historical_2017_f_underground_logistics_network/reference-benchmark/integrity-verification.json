@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-21T03:33:21.849859+00:00",
+  "baseline_head": "33548fd4a53ec3b05d4fc0d19cb9cdc319e8a8bc",
+  "head_at_archive_check": "33548fd4a53ec3b05d4fc0d19cb9cdc319e8a8bc",
+  "protected_file_count": 1102,
+  "protected_file_sha256_mismatches": [],
+  "protected_tree_hashes": {
+    "skill": "2b29e8ffa7c15d33bf81e675e8f1dcb240c226a6",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-001": "fc2d5b6f7ba6da3dfe2826e72a60aadd89a12d73",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/source-recovery": "7657511669a362289c5a3e8e59c46bbb3d6bb4cc",
+    "development/benchmarks/runs/historical_2017_f_underground_logistics_network/run-002-source-complete": "40708a8a45a15e014d40b3ef92b5cc2ef1ac92e3"
+  },
+  "frozen_summary_sha256": "a31cbd4e4618c53eec75798bea32ab39c3c0c1eaf673c7f172c19236398535f1",
+  "nonignored_new_files_outside_scope": [],
+  "tracked_diff_outside_reference_benchmark": [],
+  "reference_pdf_hashes_verified": 7,
+  "reference_page_count": 354,
+  "visual_review_pages": 33,
+  "original_sources": "Original bytes included in pre-reference snapshot; no re-extraction or revision",
+  "historical_tests": "test-record.json",
+  "status": "PASS"
+}
