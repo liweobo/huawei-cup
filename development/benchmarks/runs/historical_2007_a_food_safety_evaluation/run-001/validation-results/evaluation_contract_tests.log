@@ -1,0 +1,16 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe -m unittest discover -s C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\code -p test_*.py -v
+
+STDOUT
+
+STDERR
+test_benefit_monotonicity (test_evaluation.EvaluationContractTests.test_benefit_monotonicity) ... ok
+test_censored_em_recovers_synthetic_parameters (test_evaluation.EvaluationContractTests.test_censored_em_recovers_synthetic_parameters) ... ok
+test_cost_direction (test_evaluation.EvaluationContractTests.test_cost_direction) ... ok
+test_hard_gate_cannot_be_compensated (test_evaluation.EvaluationContractTests.test_hard_gate_cannot_be_compensated) ... ok
+test_threshold_boundary_is_not_called_compliant (test_evaluation.EvaluationContractTests.test_threshold_boundary_is_not_called_compliant) ... ok
+test_unit_rescale_invariance_of_ratios (test_evaluation.EvaluationContractTests.test_unit_rescale_invariance_of_ratios) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.017s
+
+OK

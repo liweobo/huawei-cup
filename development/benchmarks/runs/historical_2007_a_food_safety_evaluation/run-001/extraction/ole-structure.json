@@ -1,0 +1,60 @@
+{
+  "extractor": "OLE WordDocument/0Table-or-1Table piece-table parser",
+  "source": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\source-provenance\\original\\2007年A题  建立食品卫生安全保障体系数学模型及改进模型的若干理论问题（终）.doc",
+  "ole_valid": true,
+  "table_stream": "1Table",
+  "fib_flags": 21232,
+  "fcClx": 2142,
+  "lcbClx": 21,
+  "ccpText": 3577,
+  "piece_count": 1,
+  "pieces": [
+    {
+      "index": 0,
+      "cp_start": 0,
+      "cp_end": 3577,
+      "file_offset": 1024,
+      "compressed": false,
+      "bytes": 7154,
+      "replacement_characters": 0
+    }
+  ],
+  "control_character_counts": {
+    "inline_object_0x01": 0,
+    "table_cell_0x07": 0,
+    "line_break_0x0b": 0,
+    "page_break_0x0c": 0,
+    "field_begin_0x13": 0,
+    "field_separator_0x14": 0,
+    "field_end_0x15": 0
+  },
+  "streams": [
+    {
+      "path": "\u0001CompObj",
+      "bytes": 102,
+      "sha256": "0754a31a60ff44df54312be28ab466784e7dd18b143589ed4d24b8418696b2d9"
+    },
+    {
+      "path": "\u0005DocumentSummaryInformation",
+      "bytes": 4096,
+      "sha256": "98b46f1233b4ab841da9c822f89afa53a496c2492ad66da1266611c74938f0b5"
+    },
+    {
+      "path": "\u0005SummaryInformation",
+      "bytes": 4096,
+      "sha256": "b275ecf190b28b53aa6d75c68c6d336cdc177b8a831ef723ebad062847157418"
+    },
+    {
+      "path": "1Table",
+      "bytes": 4096,
+      "sha256": "5f186a54d06b7d5452bf6d70c54c562c8fa90dd87a53eb03100027639cf414cb"
+    },
+    {
+      "path": "WordDocument",
+      "bytes": 9778,
+      "sha256": "9e25ed307b299ef1e4f89530ef1bb920505272162ba095a705dfa643fd45fb4e"
+    }
+  ],
+  "object_pool_stream_count": 0,
+  "data_stream_present": false
+}

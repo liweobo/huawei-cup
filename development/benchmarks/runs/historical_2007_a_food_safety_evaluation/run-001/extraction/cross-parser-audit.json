@@ -1,0 +1,23 @@
+{
+  "piece_table_characters_normalized": 3564,
+  "parser_characters_normalized": 3814,
+  "sequence_similarity": 0.9661154784494443,
+  "piece_text_contained_in_parser": true,
+  "parser_text_contained_in_piece": false,
+  "piece_replacement_characters": 0,
+  "parser_replacement_characters": 0,
+  "piece_control_character_counts": {
+    "inline_object_0x01": 0,
+    "table_cell_0x07": 0,
+    "line_break_0x0b": 0,
+    "page_break_0x0c": 0,
+    "field_begin_0x13": 0,
+    "field_separator_0x14": 0,
+    "field_end_0x15": 0
+  },
+  "ole_object_pool_stream_count": 0,
+  "aspose_table_count": 0,
+  "aspose_field_count": 1,
+  "aspose_shape_count": 1,
+  "status": "PENDING_VISUAL_AND_SEMANTIC_REVIEW"
+}

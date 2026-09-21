@@ -1,0 +1,32 @@
+{
+  "status": "OBSERVED_SYNTHETIC_SCENARIO",
+  "command": "python code/run_model.py",
+  "random_seed": 2007,
+  "artifacts": [
+    {
+      "path": "outputs/exposure-results.json",
+      "sha256": "9bad680a209f5fff6bfcab241c203efc5205e3ceebc1daa18dfa560b7cf3a9e3",
+      "bytes": 2931
+    },
+    {
+      "path": "outputs/ranking-results.json",
+      "sha256": "77990363360be5060054707b84ec285aae2eba542d6b311e8531ce7bf4f1b804",
+      "bytes": 5768
+    },
+    {
+      "path": "outputs/sensitivity-results.json",
+      "sha256": "7a8161a2d5194aef63a608ff87914e698ec1d2bc9873aa2a49b32bbe320dd487",
+      "bytes": 11129
+    },
+    {
+      "path": "outputs/synthetic-tests.json",
+      "sha256": "ded7a8c8d7637a5d9d6137b5dc7067851302c9b9734167f777d38805e819ea7e",
+      "bytes": 507
+    },
+    {
+      "path": "outputs/ranking-results.csv",
+      "sha256": "a38386021bde90c12f6e332b672ab11de396929032f1f258fecede090bba8dce",
+      "bytes": 567
+    }
+  ]
+}

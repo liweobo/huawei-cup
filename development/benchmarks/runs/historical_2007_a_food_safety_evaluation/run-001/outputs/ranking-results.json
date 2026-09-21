@@ -1,0 +1,217 @@
+{
+  "evidence_scope": "SYNTHETIC_SCENARIO_ONLY",
+  "units": [
+    {
+      "name": "North-A",
+      "point_ratio": 1.2,
+      "upper_ratio": 1.35,
+      "population_millions": 10.0,
+      "coverage": 0.9
+    },
+    {
+      "name": "South-A",
+      "point_ratio": 0.95,
+      "upper_ratio": 1.1,
+      "population_millions": 20.0,
+      "coverage": 0.75
+    },
+    {
+      "name": "East-B",
+      "point_ratio": 0.8,
+      "upper_ratio": 0.9,
+      "population_millions": 50.0,
+      "coverage": 0.95
+    },
+    {
+      "name": "West-B",
+      "point_ratio": 1.05,
+      "upper_ratio": 1.07,
+      "population_millions": 5.0,
+      "coverage": 0.65
+    },
+    {
+      "name": "Central-C",
+      "point_ratio": 0.6,
+      "upper_ratio": 0.75,
+      "population_millions": 30.0,
+      "coverage": 0.8
+    },
+    {
+      "name": "Coast-C",
+      "point_ratio": 1.21,
+      "upper_ratio": 1.36,
+      "population_millions": 1.0,
+      "coverage": 0.98
+    }
+  ],
+  "baseline": [
+    {
+      "name": "North-A",
+      "risk_class": "VIOLATION",
+      "safety_score": 0.4016722933584761,
+      "contributions": {
+        "point_ratio": 0.0040983606557377095,
+        "upper_ratio": 0.0040983606557377095,
+        "population_millions": 0.20408163265306123,
+        "coverage": 0.18939393939393942
+      },
+      "normalization": "current_minmax",
+      "score_semantics": "RELATIVE_COMPOSITE_SCORE_NOT_PROBABILITY",
+      "rank": 1
+    },
+    {
+      "name": "West-B",
+      "risk_class": "VIOLATION",
+      "safety_score": 0.41401806624289056,
+      "contributions": {
+        "point_ratio": 0.06557377049180324,
+        "upper_ratio": 0.11885245901639344,
+        "population_millions": 0.22959183673469388,
+        "coverage": 0.0
+      },
+      "normalization": "current_minmax",
+      "score_semantics": "RELATIVE_COMPOSITE_SCORE_NOT_PROBABILITY",
+      "rank": 2
+    },
+    {
+      "name": "Coast-C",
+      "risk_class": "VIOLATION",
+      "safety_score": 0.5,
+      "contributions": {
+        "point_ratio": 0.0,
+        "upper_ratio": 0.0,
+        "population_millions": 0.25,
+        "coverage": 0.25
+      },
+      "normalization": "current_minmax",
+      "score_semantics": "RELATIVE_COMPOSITE_SCORE_NOT_PROBABILITY",
+      "rank": 3
+    },
+    {
+      "name": "South-A",
+      "risk_class": "UNCERTAIN",
+      "safety_score": 0.44193355434573234,
+      "contributions": {
+        "point_ratio": 0.10655737704918034,
+        "upper_ratio": 0.10655737704918031,
+        "population_millions": 0.15306122448979592,
+        "coverage": 0.07575757575757575
+      },
+      "normalization": "current_minmax",
+      "score_semantics": "RELATIVE_COMPOSITE_SCORE_NOT_PROBABILITY",
+      "rank": 4
+    },
+    {
+      "name": "East-B",
+      "risk_class": "COMPLIANT",
+      "safety_score": 0.5838301043219075,
+      "contributions": {
+        "point_ratio": 0.16803278688524587,
+        "upper_ratio": 0.1885245901639344,
+        "population_millions": 0.0,
+        "coverage": 0.22727272727272724
+      },
+      "normalization": "current_minmax",
+      "score_semantics": "RELATIVE_COMPOSITE_SCORE_NOT_PROBABILITY",
+      "rank": 5
+    },
+    {
+      "name": "Central-C",
+      "risk_class": "COMPLIANT",
+      "safety_score": 0.7156771799628943,
+      "contributions": {
+        "point_ratio": 0.25,
+        "upper_ratio": 0.25,
+        "population_millions": 0.10204081632653061,
+        "coverage": 0.11363636363636366
+      },
+      "normalization": "current_minmax",
+      "score_semantics": "RELATIVE_COMPOSITE_SCORE_NOT_PROBABILITY",
+      "rank": 6
+    }
+  ],
+  "primary": [
+    {
+      "rank": 1,
+      "name": "Coast-C",
+      "risk_class": "VIOLATION",
+      "point_ratio": 1.21,
+      "upper_ratio": 1.36,
+      "population_millions": 1.0,
+      "score_semantics": "LEXICOGRAPHIC_TRIAGE_PRIORITY_NOT_PROBABILITY"
+    },
+    {
+      "rank": 2,
+      "name": "North-A",
+      "risk_class": "VIOLATION",
+      "point_ratio": 1.2,
+      "upper_ratio": 1.35,
+      "population_millions": 10.0,
+      "score_semantics": "LEXICOGRAPHIC_TRIAGE_PRIORITY_NOT_PROBABILITY"
+    },
+    {
+      "rank": 3,
+      "name": "West-B",
+      "risk_class": "VIOLATION",
+      "point_ratio": 1.05,
+      "upper_ratio": 1.07,
+      "population_millions": 5.0,
+      "score_semantics": "LEXICOGRAPHIC_TRIAGE_PRIORITY_NOT_PROBABILITY"
+    },
+    {
+      "rank": 4,
+      "name": "South-A",
+      "risk_class": "UNCERTAIN",
+      "point_ratio": 0.95,
+      "upper_ratio": 1.1,
+      "population_millions": 20.0,
+      "score_semantics": "LEXICOGRAPHIC_TRIAGE_PRIORITY_NOT_PROBABILITY"
+    },
+    {
+      "rank": 5,
+      "name": "East-B",
+      "risk_class": "COMPLIANT",
+      "point_ratio": 0.8,
+      "upper_ratio": 0.9,
+      "population_millions": 50.0,
+      "score_semantics": "LEXICOGRAPHIC_TRIAGE_PRIORITY_NOT_PROBABILITY"
+    },
+    {
+      "rank": 6,
+      "name": "Central-C",
+      "risk_class": "COMPLIANT",
+      "point_ratio": 0.6,
+      "upper_ratio": 0.75,
+      "population_millions": 30.0,
+      "score_semantics": "LEXICOGRAPHIC_TRIAGE_PRIORITY_NOT_PROBABILITY"
+    }
+  ],
+  "baseline_order": [
+    "North-A",
+    "West-B",
+    "Coast-C",
+    "South-A",
+    "East-B",
+    "Central-C"
+  ],
+  "primary_order": [
+    "Coast-C",
+    "North-A",
+    "West-B",
+    "South-A",
+    "East-B",
+    "Central-C"
+  ],
+  "spearman": 0.8285714285714285,
+  "top_3_overlap": 1.0,
+  "near_ties": [
+    {
+      "pair": [
+        "Coast-C",
+        "North-A"
+      ],
+      "upper_ratio_gap": 0.01,
+      "status": "NEAR_TIE_FOR_TRIAGE_WITHIN_VIOLATION_CLASS"
+    }
+  ]
+}

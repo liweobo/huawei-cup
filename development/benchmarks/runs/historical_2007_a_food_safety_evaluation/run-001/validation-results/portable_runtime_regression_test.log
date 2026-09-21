@@ -1,0 +1,7 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/portable_runtime_regression_test.py
+
+STDOUT
+................................                                         [100%]
+32 passed in 16.17s
+
+STDERR

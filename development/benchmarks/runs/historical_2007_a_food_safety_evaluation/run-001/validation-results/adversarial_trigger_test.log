@@ -1,0 +1,7 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/adversarial_trigger_test.py
+
+STDOUT
+Adversarial Trigger Test: 25/25 passed
+false positives=0, false negatives=0
+
+STDERR

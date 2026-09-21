@@ -1,0 +1,17 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/behavior_contract_test.py
+
+STDOUT
+PASS | select_problem
+PASS | analyze_problem
+PASS | audit_data
+PASS | design_model
+PASS | build_baseline
+PASS | run_experiment
+PASS | validate_model
+PASS | write_paper
+PASS | reviewer
+PASS | final_check
+
+Static Behavior Contract: PASS (10 contracts)
+
+STDERR

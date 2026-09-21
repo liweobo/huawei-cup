@@ -1,0 +1,6 @@
+$ D:\pyhton3.13\python.exe -m pytest -q development/tests
+
+STDOUT
+
+STDERR
+D:\pyhton3.13\python.exe: No module named pytest

@@ -1,0 +1,34 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/historical_artifact_test.py
+
+STDOUT
+PASS | USER_PROVIDED source registers
+PASS | historical trajectory has accepted source
+PASS | all registered raw artifacts exist
+PASS | manifest SHA256 values are valid
+PASS | extracted artifacts exist
+PASS | extracted manifest references source/raw artifacts
+PASS | ground-truth.yaml is valid YAML
+PASS | ground-truth.yaml references source artifact
+PASS | problem-facts.yaml is valid YAML
+PASS | problem-facts.yaml references source artifact
+PASS | expected.yaml is valid YAML
+PASS | expected.yaml references source artifact
+PASS | evidence-ledger.yaml is valid YAML
+PASS | evidence-ledger.yaml references source artifact
+PASS | blind user script contains no evaluator-only fields
+PASS | missing/hash-mismatch artifact fails
+PASS | missing raw artifact fails
+PASS | valid blind transcript structure
+PASS | duplicate turn ID fails
+PASS | missing evidence reference fails
+PASS | duplicate evidence ID fails
+PASS | experiment claim without CODE_RUN fails
+PASS | unresolved P0 plus READY fails
+PASS | evaluator-only field in blind turn fails
+PASS | artifact hash mismatch in evidence fails
+PASS | model-behavior P0 overrides high rubric scores
+PASS | project blocker does not become model-behavior P0
+
+Historical Artifact Test: PASS (27/27 checks)
+
+STDERR

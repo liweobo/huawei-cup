@@ -1,0 +1,37 @@
+{
+  "extractor": "Aspose.Words 26.9 evaluation parser",
+  "page_count": 3,
+  "section_count": 1,
+  "paragraph_count": 16,
+  "table_count": 0,
+  "tables": [],
+  "field_count": 1,
+  "fields": [
+    {
+      "field": 1,
+      "type": "88",
+      "code": " HYPERLINK \"https://products.aspose.com/words/temporary-license/\" ",
+      "result": "https://products.aspose.com/words/temporary-license/"
+    }
+  ],
+  "shape_count": 1,
+  "shapes": [
+    {
+      "shape": 1,
+      "shape_type": "75",
+      "width_points": 415.29998779296875,
+      "height_points": 225.70651510487434,
+      "has_image": true,
+      "extracted_file": "extraction/images/shape-001.png",
+      "bytes": 8818,
+      "sha256": "ff0ba8e6f56b061fac6f1112c43c2c14d9b54153204b140af9e1fa40c6104b34",
+      "ole_present": false
+    }
+  ],
+  "rendered_pages": [
+    "extraction/pages/page-1.png",
+    "extraction/pages/page-2.png",
+    "extraction/pages/page-3.png"
+  ],
+  "evaluation_parser_warning": "Rendered pages may contain an Aspose evaluation watermark; compare source body with the independent piece table."
+}

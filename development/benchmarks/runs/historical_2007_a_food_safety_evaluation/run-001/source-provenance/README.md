@@ -1,0 +1,9 @@
+# Source provenance and legacy extraction audit
+
+The only problem-specific network access was the user-authorized 2007 problem directory listing and the exact 2007A DOC. `source.json` records the page URL, raw URL, directory API URL, expected and recomputed Git blob SHA, SHA256, byte count, and retrieval time. The original 25,600-byte file is retained unchanged under `original/`.
+
+The legacy DOC is an OLE Compound File. Microsoft Word 16.0 opened it read-only with macros disabled, extracted its text, reported three pages, zero tables, zero fields, zero inline shapes, and zero shapes, and exported a PDF. An independent parser decoded the `WordDocument`/`1Table` piece table with no replacement characters; its whitespace-normalized body is fully contained in the Word extraction. OLE inspection found no `ObjectPool` or `Data` stream. A secondary Aspose parse reported one field and one image, both created by the evaluation parser itself and therefore excluded from source counts.
+
+All three Word-rendered pages were visually inspected. The body is complete and readable. Page 2 continues normally on page 3. The source contains no table, source image, or equation object; its mathematical requirements are inline prose, notably the `99.999%` right quantile and the approximately `2%` spot-check sample. Therefore the extraction status is `VERIFIED`, not `EXTRACTION_UNVERIFIED`.
+
+The statement supplies no 2007A attachment or numeric dataset. It refers to external inputs that an operational implementation would need: authority safety standards, dietary survey data, pollutant monitoring/spot-check data, food circulation volumes, import/export test data, and pollutant emission data. These references are preserved as problem facts; none was silently supplied or replaced in this blind run.

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "legacy_doc_extraction": "VERIFIED",
+  "verification_routes": [
+    "Microsoft Word 16.0 read-only COM extraction and PDF export",
+    "independent OLE WordDocument/1Table piece-table extraction",
+    "Aspose.Words secondary parser (watermark objects excluded)",
+    "manual visual inspection of all three Word-rendered pages"
+  ],
+  "word_com": {
+    "status": "PASS",
+    "pages": 3,
+    "tables": 0,
+    "fields": 0,
+    "inline_shapes": 0,
+    "shapes": 0
+  },
+  "piece_table": {
+    "characters": 3577,
+    "replacement_characters": 0,
+    "fully_contained_in_word_text_after_whitespace_normalization": true,
+    "control_character_counts": {
+      "inline_object_0x01": 0,
+      "table_cell_0x07": 0,
+      "line_break_0x0b": 0,
+      "page_break_0x0c": 0,
+      "field_begin_0x13": 0,
+      "field_separator_0x14": 0,
+      "field_end_0x15": 0
+    },
+    "object_pool_stream_count": 0,
+    "data_stream_present": false
+  },
+  "visual_review": {
+    "status": "PASS",
+    "reviewed_utc": "2026-09-21T06:44:00Z",
+    "renderer": "Microsoft Word 16.0 PDF export rendered with Poppler at 150 dpi",
+    "page_count": 3,
+    "pages_reviewed": [
+      1,
+      2,
+      3
+    ],
+    "findings": {
+      "missing_or_clipped_text": false,
+      "overlap": false,
+      "broken_tables": false,
+      "missing_glyphs": false,
+      "source_figures_present": false,
+      "source_equation_objects_present": false
+    },
+    "notes": "All pages were inspected at original image detail. Page 2 continues normally onto page 3; the large blank lower area on page 3 is source layout, not extraction loss."
+  },
+  "content_inventory": {
+    "body_text": "VERIFIED_COMPLETE",
+    "formula_objects": 0,
+    "inline_mathematical_expressions": [
+      "99.999% right quantile",
+      "about 2% spot-check data"
+    ],
+    "tables": 0,
+    "source_images": 0,
+    "attachments_referenced": false,
+    "external_inputs_referenced": [
+      "authority safety standards",
+      "dietary survey data",
+      "routine and spot-check monitoring data",
+      "food circulation volumes",
+      "import/export port test data",
+      "pollutant emission data"
+    ],
+    "external_files_supplied_with_2007A": 0
+  },
+  "transcription_sha256": "6f69e261e9bfd1cdb239e256431c9dbc3ba5d2af13542d901b9dc43f2633dd5d",
+  "limitations": [
+    "The source contains no numeric dataset, tables, equation objects, or source images to extract.",
+    "Aspose-added evaluation field/image are parser watermarks and are not counted as source content."
+  ]
+}

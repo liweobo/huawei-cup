@@ -1,0 +1,14 @@
+{
+  "tests": {
+    "A_benefit_improves_score_not_worse": true,
+    "B_cost_direction_reversal_detected": true,
+    "C_unit_rescale_invariance": true,
+    "D_dominated_alternative_gets_higher_triage_priority": true,
+    "D2_dominant_alternative_gets_higher_safety_score": true,
+    "E_weight_perturbation_executed": true,
+    "F_rank_reversal_probe_executed": true,
+    "G_hard_constraint_violation_not_compensated": true,
+    "H_relative_score_not_probability": true
+  },
+  "all_pass": true
+}

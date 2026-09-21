@@ -1,0 +1,23 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/run002_integrity_test.py
+
+STDOUT
+PASS | result_txt original metadata is retained
+PASS | result_txt transfer artifact is explicitly absent after canonicalization
+PASS | desktop_zip original metadata is retained
+PASS | desktop_zip transfer artifact is explicitly absent after canonicalization
+PASS | canonical structured transcript exists
+PASS | canonical transcript byte count matches manifest
+PASS | canonical transcript SHA256 matches manifest
+PASS | manifest points to the canonical structured transcript
+PASS | archive removal is marked and raw metadata remains immutable
+PASS | retained evidence ledger entries resolve with SHA256
+PASS | selected active evidence run is retained
+PASS | run-002 outcome remains NEEDS_REVIEW
+PASS | transcript uses schema version 3
+PASS | transcript binds active run to run-002
+PASS | Run-003 archive is retained as a separate sibling
+PASS | reconstructed manifest immutable input hashes match source manifest
+
+Run-002 Integrity Test: PASS (15/15 checks)
+
+STDERR

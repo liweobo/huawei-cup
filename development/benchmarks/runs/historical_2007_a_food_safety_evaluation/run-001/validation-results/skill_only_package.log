@@ -1,0 +1,6 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/tooling/package_repository.py --skill-only --developer-repo . --output C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\huawei-cup-2026-skill-validation-24216.zip
+
+STDOUT
+C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\huawei-cup-2026-skill-validation-24216.zip
+
+STDERR

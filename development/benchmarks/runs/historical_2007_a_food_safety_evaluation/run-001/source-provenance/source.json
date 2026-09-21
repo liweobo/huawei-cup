@@ -1,0 +1,18 @@
+{
+  "benchmark_id": "historical_2007_a_food_safety_evaluation",
+  "source_status": "USER_DESIGNATED_HISTORICAL_MIRROR",
+  "official_origin_independently_verified": false,
+  "source_tree_url": "https://github.com/zhanwen/MathModel/tree/master/国赛试题/2007年研究生数学建模竞赛试题",
+  "directory_api_url": "https://api.github.com/repos/zhanwen/MathModel/contents/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2007%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98?ref=master",
+  "file_url": "https://github.com/zhanwen/MathModel/blob/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2007%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/2007%E5%B9%B4A%E9%A2%98%20%20%E5%BB%BA%E7%AB%8B%E9%A3%9F%E5%93%81%E5%8D%AB%E7%94%9F%E5%AE%89%E5%85%A8%E4%BF%9D%E9%9A%9C%E4%BD%93%E7%B3%BB%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%8F%8A%E6%94%B9%E8%BF%9B%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%8B%A5%E5%B9%B2%E7%90%86%E8%AE%BA%E9%97%AE%E9%A2%98%EF%BC%88%E7%BB%88%EF%BC%89.doc",
+  "raw_url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/国赛试题/2007年研究生数学建模竞赛试题/2007年A题  建立食品卫生安全保障体系数学模型及改进模型的若干理论问题（终）.doc",
+  "blob_api_url": "https://api.github.com/repos/zhanwen/MathModel/git/blobs/42ab94a3cd6fd90ed59bc13aaa2c0678c4304d44",
+  "git_blob_sha_expected": "42ab94a3cd6fd90ed59bc13aaa2c0678c4304d44",
+  "git_blob_sha_computed": "42ab94a3cd6fd90ed59bc13aaa2c0678c4304d44",
+  "sha256": "894369f3e70e648dc552c4b2309f0bb56bcf854f1bf6554c5e38cfa8370b8c4a",
+  "bytes": 25600,
+  "original_file": "2007年A题  建立食品卫生安全保障体系数学模型及改进模型的若干理论问题（终）.doc",
+  "retrieved_utc": "2026-09-21T06:34:41.392391+00:00",
+  "scope": "Only the designated 2007 problem directory listing and exact 2007A DOC were requested.",
+  "excellent_solutions_accessed": false
+}

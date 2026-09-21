@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "historical_2007_a_food_safety_evaluation",
+  "run_id": "run-001",
+  "allowed_write_root": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001",
+  "allowed_read_roots": [
+    "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\skill",
+    "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001"
+  ],
+  "immutable_inputs": [
+    {
+      "path": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\source-provenance\\original\\2007年A题  建立食品卫生安全保障体系数学模型及改进模型的若干理论问题（终）.doc",
+      "sha256": "894369f3e70e648dc552c4b2309f0bb56bcf854f1bf6554c5e38cfa8370b8c4a"
+    }
+  ],
+  "status": "COMPLETE",
+  "excellent_solutions_accessed": false,
+  "note": "JSON is valid YAML; protected history is read only.",
+  "active_evidence_set": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\active-evidence-set.yaml",
+  "prior_run_artifacts_visible": false
+}

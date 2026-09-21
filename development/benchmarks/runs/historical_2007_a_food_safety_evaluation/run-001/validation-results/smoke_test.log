@@ -1,0 +1,10 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/smoke_test.py
+
+STDOUT
+FAIL
+- unfinished placeholder in: development\benchmarks\runs\historical_2022_c_buffer_scheduling\run-002\REPORT.md
+- unfinished placeholder in: development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-001\REPORT.md
+- unfinished placeholder in: development\benchmarks\runs\historical_2017_f_underground_logistics_network\run-001\validation.md
+- unfinished placeholder in: development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\validation-results\README.md
+
+STDERR

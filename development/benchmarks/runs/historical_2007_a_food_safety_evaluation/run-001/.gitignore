@@ -1,0 +1,7 @@
+.tmp/
+__pycache__/
+*.pyc
+extraction/images/
+extraction/pages/
+extraction/word-pages/
+extraction/*.pdf

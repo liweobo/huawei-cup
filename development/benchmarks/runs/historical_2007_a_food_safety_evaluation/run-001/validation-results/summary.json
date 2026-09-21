@@ -1,0 +1,321 @@
+{
+  "default_pytest_environment": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING",
+  "default_issue_is_infrastructure_only": true,
+  "valid_environment": {
+    "python": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+    "dependency_root": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\deps",
+    "all_checks_pass": false,
+    "failures": [
+      "smoke_test"
+    ],
+    "acknowledged_existing_smoke_issue_only": true,
+    "all_actionable_checks_pass": true,
+    "actionable_failures": []
+  },
+  "results": [
+    {
+      "label": "default_pytest_environment_issue_existing",
+      "command": [
+        "D:\\pyhton3.13\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "development/tests"
+      ],
+      "exit_code": 1,
+      "seconds": 0.032,
+      "log": "validation-results/default_pytest_environment_issue_existing.log"
+    },
+    {
+      "label": "development_tests",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "development/tests",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "exit_code": 0,
+      "seconds": 37.146,
+      "log": "validation-results/development_tests.log"
+    },
+    {
+      "label": "smoke_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/smoke_test.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.585,
+      "log": "validation-results/smoke_test.log"
+    },
+    {
+      "label": "routing_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/routing_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.33,
+      "log": "validation-results/routing_test.log"
+    },
+    {
+      "label": "trigger_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/trigger_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.158,
+      "log": "validation-results/trigger_test.log"
+    },
+    {
+      "label": "adversarial_trigger_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/adversarial_trigger_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.09,
+      "log": "validation-results/adversarial_trigger_test.log"
+    },
+    {
+      "label": "behavior_contract_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/behavior_contract_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.119,
+      "log": "validation-results/behavior_contract_test.log"
+    },
+    {
+      "label": "trajectory_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/trajectory_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.77,
+      "log": "validation-results/trajectory_test.log"
+    },
+    {
+      "label": "trajectory_safety_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/trajectory_safety_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.098,
+      "log": "validation-results/trajectory_safety_test.log"
+    },
+    {
+      "label": "historical_artifact_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/historical_artifact_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.851,
+      "log": "validation-results/historical_artifact_test.log"
+    },
+    {
+      "label": "postmortem_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/postmortem_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.097,
+      "log": "validation-results/postmortem_regression_test.log"
+    },
+    {
+      "label": "problem_facts_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/problem_facts_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 22.768,
+      "log": "validation-results/problem_facts_test.log"
+    },
+    {
+      "label": "run001_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/run001_integrity_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.321,
+      "log": "validation-results/run001_integrity_test.log"
+    },
+    {
+      "label": "run002_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/run002_integrity_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.233,
+      "log": "validation-results/run002_integrity_test.log"
+    },
+    {
+      "label": "run003_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/run003_integrity_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.295,
+      "log": "validation-results/run003_integrity_test.log"
+    },
+    {
+      "label": "run_attempt_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/run_attempt_integrity_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.101,
+      "log": "validation-results/run_attempt_integrity_test.log"
+    },
+    {
+      "label": "clean_room_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/clean_room_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.197,
+      "log": "validation-results/clean_room_regression_test.log"
+    },
+    {
+      "label": "temporal_availability_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/temporal_availability_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.605,
+      "log": "validation-results/temporal_availability_regression_test.log"
+    },
+    {
+      "label": "runtime_binding_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/runtime_binding_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.458,
+      "log": "validation-results/runtime_binding_regression_test.log"
+    },
+    {
+      "label": "portable_runtime_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/portable_runtime_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 16.436,
+      "log": "validation-results/portable_runtime_regression_test.log"
+    },
+    {
+      "label": "repository_packaging_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/repository_packaging_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.38,
+      "log": "validation-results/repository_packaging_regression_test.log"
+    },
+    {
+      "label": "phase5_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/harness/phase5_regression_test.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.115,
+      "log": "validation-results/phase5_regression_test.log"
+    },
+    {
+      "label": "skill_self_contained",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "development/tests/test_skill_self_contained.py",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "exit_code": 0,
+      "seconds": 2.581,
+      "log": "validation-results/skill_self_contained.log"
+    },
+    {
+      "label": "evaluation_contract_tests",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\code",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.208,
+      "log": "validation-results/evaluation_contract_tests.log"
+    },
+    {
+      "label": "experiment_record_validation",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "skill/scripts/runtime_provenance.py",
+        "validate-experiment",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\experiment-record.yaml"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11,
+      "log": "validation-results/experiment_record_validation.log"
+    },
+    {
+      "label": "compileall",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "development/harness",
+        "development/tooling",
+        "development/tests",
+        "skill/scripts",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\code"
+      ],
+      "exit_code": 0,
+      "seconds": 0.095,
+      "log": "validation-results/compileall.log"
+    },
+    {
+      "label": "skill_only_package",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\venv\\Scripts\\python.exe",
+        "development/tooling/package_repository.py",
+        "--skill-only",
+        "--developer-repo",
+        ".",
+        "--output",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\.tmp\\huawei-cup-2026-skill-validation-24216.zip"
+      ],
+      "exit_code": 0,
+      "seconds": 0.117,
+      "log": "validation-results/skill_only_package.log"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/problem_facts_test.py
+
+STDOUT
+PASS | source manifest hashes and raw files are valid
+PASS | facts and extracted manifest cover all XLSX source artifacts
+PASS | ART-002 raw workbook exists
+PASS | ART-002 sheet names match raw workbook
+PASS | ART-002 row dimensions match raw workbook
+PASS | ART-002 column dimensions match raw workbook
+PASS | ART-002 role is consistent across source/facts/manifest
+PASS | ART-002 filename is consistent across source/facts/manifest
+PASS | ART-002 manifest dimensions match raw workbook
+PASS | ART-002 headers expose target, waveform, and flux samples
+PASS | ART-003 raw workbook exists
+PASS | ART-003 sheet names match raw workbook
+PASS | ART-003 row dimensions match raw workbook
+PASS | ART-003 column dimensions match raw workbook
+PASS | ART-003 role is consistent across source/facts/manifest
+PASS | ART-003 filename is consistent across source/facts/manifest
+PASS | ART-003 manifest dimensions match raw workbook
+PASS | ART-003 has no excitation-waveform label column
+PASS | ART-003 has flux-density sample columns
+PASS | ART-004 raw workbook exists
+PASS | ART-004 sheet names match raw workbook
+PASS | ART-004 row dimensions match raw workbook
+PASS | ART-004 column dimensions match raw workbook
+PASS | ART-004 role is consistent across source/facts/manifest
+PASS | ART-004 filename is consistent across source/facts/manifest
+PASS | ART-004 manifest dimensions match raw workbook
+PASS | ART-004 contains excitation-waveform label column
+PASS | ART-004 has flux-density sample columns
+PASS | ART-005 raw workbook exists
+PASS | ART-005 sheet names match raw workbook
+PASS | ART-005 row dimensions match raw workbook
+PASS | ART-005 column dimensions match raw workbook
+PASS | ART-005 role is consistent across source/facts/manifest
+PASS | ART-005 filename is consistent across source/facts/manifest
+PASS | ART-005 manifest dimensions match raw workbook
+PASS | ART-005 Sheet1 has the two required output columns
+PASS | problem-facts attachment_1 dimensions match all four sheets
+PASS | problem-facts attachment_2 dimensions are 81x1028
+PASS | problem-facts attachment_3 dimensions are 401x1029
+PASS | problem-facts attachment_4 Sheet1 dimensions are 401x3
+PASS | problem-facts attachment_2 omits waveform label
+PASS | problem-facts attachment_3 includes waveform label
+
+Problem Facts Regression: PASS (42/42 checks)
+
+STDERR

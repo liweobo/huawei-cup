@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-09-21T06:44:00Z",
+  "renderer": "Microsoft Word 16.0 PDF export rendered with Poppler at 150 dpi",
+  "page_count": 3,
+  "pages_reviewed": [1, 2, 3],
+  "findings": {
+    "missing_or_clipped_text": false,
+    "overlap": false,
+    "broken_tables": false,
+    "missing_glyphs": false,
+    "source_figures_present": false,
+    "source_equation_objects_present": false
+  },
+  "notes": "All pages were inspected at original image detail. Page 2 continues normally onto page 3; the large blank lower area on page 3 is source layout, not extraction loss."
+}

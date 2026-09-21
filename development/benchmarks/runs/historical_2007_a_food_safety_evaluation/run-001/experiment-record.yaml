@@ -1,0 +1,112 @@
+schema_version: 1
+experiment_id: EXP-2007A-EVAL-001
+run_id: run-001
+created_at: 2026-09-21T06:45:00Z
+problem: historical_2007_a_food_safety_evaluation
+question: integrated_food_exposure_risk_and_evaluation
+status: OBSERVED
+updated_by_workflow: validate_model
+planned_protocol:
+  evidence_scope: SYNTHETIC_SCENARIO_ONLY
+  target_probability: 0.99999
+  exposure_baseline:
+    intake: empirical_resampling
+    nondetect_handling: substitute_zero
+    dependence: independent_conditional_on_declared_stratum
+    draws: 2000000
+  exposure_primary:
+    intake: fitted_lognormal_per_food
+    contamination: left_censored_lognormal_em_per_food
+    dependence: independent_conditional_on_declared_stratum
+    draws: 2000000
+  synthetic_oracle:
+    known_generating_parameters: true
+    draws: 3000000
+  evaluation_baseline:
+    hard_gate: point_and_upper_ratio_to_assumed_threshold
+    secondary_score: equal_weight_normalized_score
+    normalization: current_alternative_minmax
+    weights: [0.25, 0.25, 0.25, 0.25]
+  evaluation_primary:
+    rule: hard_gate_then_lexicographic_triage
+    ordering: [risk_class, upper_ratio, point_ratio, population]
+    compensatory: false_for_hard_gate
+  validation:
+    - benefit_indicator_monotonicity
+    - cost_direction_reversal_detection
+    - unit_rescale_invariance
+    - dominated_alternative_sanity
+    - weight_perturbation_10_and_20_percent
+    - rank_reversal_probe
+    - hard_constraint_violation
+    - relative_score_not_probability
+    - normalization_sensitivity
+    - indicator_deletion_sensitivity
+executed_protocol:
+  evidence_scope: SYNTHETIC_SCENARIO_ONLY
+  target_probability: 0.99999
+  exposure_baseline:
+    intake: empirical_resampling
+    nondetect_handling: substitute_zero
+    dependence: independent_conditional_on_declared_stratum
+    draws: 2000000
+  exposure_primary:
+    intake: fitted_lognormal_per_food
+    contamination: left_censored_lognormal_em_per_food
+    dependence: independent_conditional_on_declared_stratum
+    draws: 2000000
+  synthetic_oracle:
+    known_generating_parameters: true
+    draws: 3000000
+  evaluation_baseline:
+    hard_gate: point_and_upper_ratio_to_assumed_threshold
+    secondary_score: equal_weight_normalized_score
+    normalization: current_alternative_minmax
+    weights: [0.25, 0.25, 0.25, 0.25]
+  evaluation_primary:
+    rule: hard_gate_then_lexicographic_triage
+    ordering: [risk_class, upper_ratio, point_ratio, population]
+    compensatory: false_for_hard_gate
+  validation:
+    - benefit_indicator_monotonicity
+    - cost_direction_reversal_detection
+    - unit_rescale_invariance
+    - dominated_alternative_sanity
+    - weight_perturbation_10_and_20_percent
+    - rank_reversal_probe
+    - hard_constraint_violation
+    - relative_score_not_probability
+    - normalization_sensitivity
+    - indicator_deletion_sensitivity
+protocol_changed: false
+change_reason: ""
+comparable_to_original_plan: true
+protocol_change_disclosure: null
+input_artifacts:
+  - SRC-2007A-DOC
+code_artifacts:
+  - CODE-EVALUATION-MODEL
+  - CODE-RUN-MODEL
+  - CODE-EVALUATION-TESTS
+output_artifacts:
+  - OUT-EXPOSURE-RESULTS
+  - OUT-RANKING-RESULTS
+  - OUT-SENSITIVITY-RESULTS
+  - OUT-SYNTHETIC-TESTS
+random_seed: 2007
+metrics:
+  evidence_scope: SYNTHETIC_SCENARIO_ONLY
+  baseline_q_0_99999: 5305.273019251778
+  primary_q_0_99999: 11158.495805328903
+  oracle_q_0_99999: 13162.022682627092
+  baseline_relative_error: -0.5969257045686184
+  primary_relative_error: -0.1522202875354939
+  baseline_primary_spearman: 0.8285714285714285
+  top_3_overlap: 1.0
+  synthetic_contracts_all_pass: true
+evidence_ids:
+  - EVID-EXTRACTION-VERIFIED
+  - EVID-EXPOSURE-SYNTHETIC
+  - EVID-RANKING-SYNTHETIC
+  - EVID-SENSITIVITY-SYNTHETIC
+  - EVID-VALIDATION-SYNTHETIC

@@ -1,0 +1,21 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/run_attempt_integrity_test.py
+
+STDOUT
+PASS | attempt manifest exists
+PASS | platform error exists
+PASS | prepared clean-room evidence is retained
+PASS | attempt is distinct from behavioral archive
+PASS | execution stopped before Turn 1
+PASS | failure is infrastructure-owned
+PASS | transport and binding are separate failures
+PASS | model behavior is not evaluated
+PASS | Turn 1 submission and response are distinguished
+PASS | retry retains Run-004 id
+PASS | transport error preserves missing call_id diagnosis
+PASS | prepared clean room passed its own gate
+PASS | retained visibility report has no forbidden match
+PASS | retained manifest and report hashes are reproducible
+
+Run Attempt Integrity: PASS (14/14 checks)
+
+STDERR

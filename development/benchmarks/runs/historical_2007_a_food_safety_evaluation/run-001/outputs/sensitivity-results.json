@@ -1,0 +1,454 @@
+{
+  "normalization": {
+    "current_minmax": {
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "spearman_vs_minmax": 1.0,
+      "top_3_overlap_vs_minmax": 1.0
+    },
+    "fixed_bounds": {
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "spearman_vs_minmax": 1.0,
+      "top_3_overlap_vs_minmax": 1.0
+    },
+    "vector": {
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "spearman_vs_minmax": 1.0,
+      "top_3_overlap_vs_minmax": 1.0
+    }
+  },
+  "weight_perturbations": [
+    {
+      "criterion": "point_ratio",
+      "delta": -0.1,
+      "normalized_weights": {
+        "point_ratio": 0.23076923076923078,
+        "upper_ratio": 0.25641025641025644,
+        "population_millions": 0.25641025641025644,
+        "coverage": 0.25641025641025644
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "point_ratio",
+      "delta": 0.1,
+      "normalized_weights": {
+        "point_ratio": 0.26829268292682934,
+        "upper_ratio": 0.24390243902439027,
+        "population_millions": 0.24390243902439027,
+        "coverage": 0.24390243902439027
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "upper_ratio",
+      "delta": -0.1,
+      "normalized_weights": {
+        "point_ratio": 0.25641025641025644,
+        "upper_ratio": 0.23076923076923078,
+        "population_millions": 0.25641025641025644,
+        "coverage": 0.25641025641025644
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "upper_ratio",
+      "delta": 0.1,
+      "normalized_weights": {
+        "point_ratio": 0.24390243902439027,
+        "upper_ratio": 0.26829268292682934,
+        "population_millions": 0.24390243902439027,
+        "coverage": 0.24390243902439027
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "population_millions",
+      "delta": -0.1,
+      "normalized_weights": {
+        "point_ratio": 0.25641025641025644,
+        "upper_ratio": 0.25641025641025644,
+        "population_millions": 0.23076923076923078,
+        "coverage": 0.25641025641025644
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "population_millions",
+      "delta": 0.1,
+      "normalized_weights": {
+        "point_ratio": 0.24390243902439027,
+        "upper_ratio": 0.24390243902439027,
+        "population_millions": 0.26829268292682934,
+        "coverage": 0.24390243902439027
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "coverage",
+      "delta": -0.1,
+      "normalized_weights": {
+        "point_ratio": 0.25641025641025644,
+        "upper_ratio": 0.25641025641025644,
+        "population_millions": 0.25641025641025644,
+        "coverage": 0.23076923076923078
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "coverage",
+      "delta": 0.1,
+      "normalized_weights": {
+        "point_ratio": 0.24390243902439027,
+        "upper_ratio": 0.24390243902439027,
+        "population_millions": 0.24390243902439027,
+        "coverage": 0.26829268292682934
+      },
+      "order": [
+        "West-B",
+        "North-A",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "West-B",
+      "spearman_vs_equal": 0.9428571428571428,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "point_ratio",
+      "delta": -0.2,
+      "normalized_weights": {
+        "point_ratio": 0.2105263157894737,
+        "upper_ratio": 0.2631578947368421,
+        "population_millions": 0.2631578947368421,
+        "coverage": 0.2631578947368421
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "point_ratio",
+      "delta": 0.2,
+      "normalized_weights": {
+        "point_ratio": 0.2857142857142857,
+        "upper_ratio": 0.23809523809523808,
+        "population_millions": 0.23809523809523808,
+        "coverage": 0.23809523809523808
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "upper_ratio",
+      "delta": -0.2,
+      "normalized_weights": {
+        "point_ratio": 0.2631578947368421,
+        "upper_ratio": 0.2105263157894737,
+        "population_millions": 0.2631578947368421,
+        "coverage": 0.2631578947368421
+      },
+      "order": [
+        "West-B",
+        "North-A",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "West-B",
+      "spearman_vs_equal": 0.9428571428571428,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "upper_ratio",
+      "delta": 0.2,
+      "normalized_weights": {
+        "point_ratio": 0.23809523809523808,
+        "upper_ratio": 0.2857142857142857,
+        "population_millions": 0.23809523809523808,
+        "coverage": 0.23809523809523808
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "population_millions",
+      "delta": -0.2,
+      "normalized_weights": {
+        "point_ratio": 0.2631578947368421,
+        "upper_ratio": 0.2631578947368421,
+        "population_millions": 0.2105263157894737,
+        "coverage": 0.2631578947368421
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "population_millions",
+      "delta": 0.2,
+      "normalized_weights": {
+        "point_ratio": 0.23809523809523808,
+        "upper_ratio": 0.23809523809523808,
+        "population_millions": 0.2857142857142857,
+        "coverage": 0.23809523809523808
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "coverage",
+      "delta": -0.2,
+      "normalized_weights": {
+        "point_ratio": 0.2631578947368421,
+        "upper_ratio": 0.2631578947368421,
+        "population_millions": 0.2631578947368421,
+        "coverage": 0.2105263157894737
+      },
+      "order": [
+        "North-A",
+        "West-B",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "North-A",
+      "spearman_vs_equal": 1.0,
+      "top_3_overlap": 1.0
+    },
+    {
+      "criterion": "coverage",
+      "delta": 0.2,
+      "normalized_weights": {
+        "point_ratio": 0.23809523809523808,
+        "upper_ratio": 0.23809523809523808,
+        "population_millions": 0.23809523809523808,
+        "coverage": 0.2857142857142857
+      },
+      "order": [
+        "West-B",
+        "North-A",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "winner": "West-B",
+      "spearman_vs_equal": 0.9428571428571428,
+      "top_3_overlap": 1.0
+    }
+  ],
+  "weight_summary": {
+    "winner_set": [
+      "North-A",
+      "West-B"
+    ],
+    "minimum_spearman": 0.9428571428571428,
+    "minimum_top_3_overlap": 1.0
+  },
+  "indicator_deletion": {
+    "coverage": {
+      "order": [
+        "North-A",
+        "Coast-C",
+        "West-B",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "spearman_vs_full": 0.9428571428571428,
+      "top_3_overlap": 1.0
+    },
+    "population_millions": {
+      "order": [
+        "West-B",
+        "North-A",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "spearman_vs_full": 0.9428571428571428,
+      "top_3_overlap": 1.0
+    },
+    "upper_ratio": {
+      "order": [
+        "West-B",
+        "North-A",
+        "Coast-C",
+        "South-A",
+        "East-B",
+        "Central-C"
+      ],
+      "spearman_vs_full": 0.9428571428571428,
+      "top_3_overlap": 1.0
+    }
+  },
+  "rank_reversal_probe": {
+    "added_alternative": {
+      "name": "Dominated-Z",
+      "point_ratio": 1.5,
+      "upper_ratio": 1.6,
+      "population_millions": 60.0,
+      "coverage": 0.5
+    },
+    "baseline_existing_pair_order_unchanged": true,
+    "primary_existing_pair_order_unchanged": true,
+    "baseline_extended_order": [
+      "Dominated-Z",
+      "North-A",
+      "West-B",
+      "Coast-C",
+      "South-A",
+      "East-B",
+      "Central-C"
+    ],
+    "primary_extended_order": [
+      "Dominated-Z",
+      "Coast-C",
+      "North-A",
+      "West-B",
+      "South-A",
+      "East-B",
+      "Central-C"
+    ],
+    "note": "Rank numbers shift when the inserted alternative enters a risk class; reversal means an existing pair changes order."
+  }
+}

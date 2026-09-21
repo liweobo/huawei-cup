@@ -1,0 +1,23 @@
+{
+  "active_run_id": "run-001",
+  "active_evidence_set": {
+    "integrated_2007A": {
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "artifact_ids": [
+        "SRC-2007A-DOC",
+        "EVID-EXTRACTION-VERIFIED",
+        "CODE-EVALUATION-MODEL",
+        "CODE-RUN-MODEL",
+        "CODE-EVALUATION-TESTS",
+        "OUT-EXPOSURE-RESULTS",
+        "OUT-RANKING-RESULTS",
+        "OUT-SENSITIVITY-RESULTS",
+        "OUT-SYNTHETIC-TESTS",
+        "EVID-VALIDATION-SUMMARY",
+        "REPORT-2007A-BLIND",
+        "COMPLETION-2007A-BLIND"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/trigger_test.py
+
+STDOUT
+PASS | 2026��Ϊ����ģ -> trigger=True
+PASS | �о�����ѧ��ģѡ�� -> trigger=True
+PASS | ��ģ�������� -> trigger=True
+PASS | ��Ϊ��ģ��ѡ�� -> trigger=True
+PASS | ��ѧ��ģ������� -> trigger=True
+PASS | ��ģ�ύ��� -> trigger=True
+PASS | �о�����ѧ��ģģ����֤ -> trigger=True
+PASS | ��Ϊ���ȷ������� -> trigger=True
+PASS | ��ģ������� -> trigger=True
+PASS | ��ѧ��ģ���������ȷ��� -> trigger=True
+PASS | ��Ϊ��³���Լ�� -> trigger=True
+PASS | ��ģ������©�� -> trigger=True
+PASS | ������������� -> trigger=False
+PASS | ���ɭ����ʲô -> trigger=False
+PASS | Python������ô��� -> trigger=False
+PASS | ������һ������ -> trigger=False
+PASS | ��ͨ���Դ������� -> trigger=False
+PASS | һ��ͳ��ѧ֪ʶ�ʴ� -> trigger=False
+PASS | XGBoost ��ԭ����ʲô -> trigger=False
+PASS | �����޸� pandas KeyError -> trigger=False
+PASS | ����ƪӢ�����ķ�������� -> trigger=False
+PASS | ����һ�� TOPSIS -> trigger=False
+PASS | ��ͨ�ع���ҵ��ô�� -> trigger=False
+PASS | ֤����������������� -> trigger=False
+PASS | ���ҿ�һ�¸��� -> trigger=False, route=audit_data
+PASS | ����һ����� CSV -> trigger=False, route=audit_data
+PASS | ģ��ѡ����ô���� -> trigger=False, route=design_model
+PASS | ����ѧϰģ��ѡ����ô���� -> trigger=False
+PASS | ��ô��������֤�� -> trigger=False, route=validate_model
+PASS | ����дһƪ����ѧϰ���� -> trigger=False, route=write_paper
+PASS | ���ɭ�ֺ� XGBoost �ĸ��ã� -> trigger=False
+PASS | ��һ�������Է��� -> trigger=False, route=validate_model
+PASS | ����һ���Ż����� -> trigger=False
+PASS | ��������ѧ��ģ���������ҷ��������� -> trigger=True, route=analyze_problem
+PASS | ��������ѧ��ģ����������������Ҫ��ʲô�� -> trigger=True, route=analyze_problem
+PASS | ��ģ���������Ӧ����ô�� -> trigger=True, route=analyze_problem
+PASS | MCM Problem C ��ô��ģ�� -> trigger=True, route=design_model
+PASS | �����ڲμ���ѧ��ģ�������ȷ������� -> trigger=True, route=analyze_problem
+PASS | �������ǵ���ģ���⸽�� -> trigger=True, route=audit_data
+PASS | ��ѧ��ģ��������ģ����֤�׶��� -> trigger=True, route=validate_model
+PASS | �����Ѿ����� baseline����һ����ʲô�� -> trigger=True
+PASS | ��������ѧ��ģ�������ȷ������⣬��Ҫ��ģ -> trigger=True, route=analyze_problem
+PASS | �Ҳ���������ѧ��ģ��ֻ�����˽����ɭ�� -> trigger=False
+PASS | �Ҳ���������ģ��ֻ����дһƪ����ѧϰ���� -> trigger=False
+
+Trigger Boundary Test: 44/44 passed
+
+STDERR

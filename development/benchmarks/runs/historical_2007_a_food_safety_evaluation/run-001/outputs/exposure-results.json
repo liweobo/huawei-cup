@@ -1,0 +1,105 @@
+{
+  "evidence_scope": "SYNTHETIC_SCENARIO_ONLY",
+  "random_seed": 2007,
+  "units": "synthetic mass per person-day; not a real-world regulatory unit",
+  "tail_probability": 0.99999,
+  "sample_sizes": {
+    "survey_persons": 3000,
+    "monitoring_per_food": 600,
+    "baseline_draws": 2000000,
+    "primary_draws": 2000000,
+    "oracle_draws": 3000000
+  },
+  "censored_fits": [
+    {
+      "food": 1,
+      "lod": 0.05,
+      "n": 600,
+      "detected": 437,
+      "censored": 163,
+      "censored_fraction": 0.27166666666666667,
+      "true_mu_log": -2.5257286443082556,
+      "true_sigma_log": 0.8,
+      "fitted_mu_log": -2.5047504720722986,
+      "fitted_sigma_log": 0.7990522301663219,
+      "em_iterations": 27
+    },
+    {
+      "food": 2,
+      "lod": 0.1,
+      "n": 600,
+      "detected": 450,
+      "censored": 150,
+      "censored_fraction": 0.25,
+      "true_mu_log": -1.6094379124341003,
+      "true_sigma_log": 1.0,
+      "fitted_mu_log": -1.6494410371225356,
+      "fitted_sigma_log": 0.9848232523404428,
+      "em_iterations": 25
+    },
+    {
+      "food": 3,
+      "lod": 0.3,
+      "n": 600,
+      "detected": 426,
+      "censored": 174,
+      "censored_fraction": 0.29,
+      "true_mu_log": -0.5108256237659907,
+      "true_sigma_log": 1.2,
+      "fitted_mu_log": -0.5426883228046715,
+      "fitted_sigma_log": 1.1631319418484296,
+      "em_iterations": 29
+    }
+  ],
+  "fitted_intake_log_parameters": [
+    {
+      "food": 1,
+      "mu": 5.530312433279733,
+      "sigma": 0.34374677577008755
+    },
+    {
+      "food": 2,
+      "mu": 4.763913470009568,
+      "sigma": 0.5529308730158728
+    },
+    {
+      "food": 3,
+      "mu": 3.926679337099031,
+      "sigma": 0.7605491972012456
+    }
+  ],
+  "quantiles": {
+    "zero_substitution_empirical_baseline": 5305.273019251778,
+    "censored_parametric_primary": 11158.495805328903,
+    "known_parameter_monte_carlo_oracle": 13162.022682627092
+  },
+  "relative_error_vs_oracle": {
+    "baseline": -0.5969257045686184,
+    "primary": -0.1522202875354939
+  },
+  "illustrative_threshold": {
+    "value": 12503.921548495737,
+    "provenance": "ASSUMED_SYNTHETIC_0.95_TIMES_ORACLE",
+    "baseline_ratio": 0.4242887320330333,
+    "primary_ratio": 0.8923996973310591,
+    "oracle_ratio": 1.0526315789473684,
+    "real_world_claim_allowed": false
+  },
+  "primary_tail_monte_carlo_replicates": {
+    "draws_each": 400000,
+    "values": [
+      9301.1760357404,
+      10273.742974051816,
+      9997.029146385958,
+      9820.160265581517,
+      11725.596440589134
+    ],
+    "min": 9301.1760357404,
+    "max": 11725.596440589134
+  },
+  "parameter_scenarios": {
+    "contamination_sigma_x_0.9": 6918.17845463053,
+    "contamination_sigma_x_1.1": 18833.975069576347
+  },
+  "interpretation": "The 99.999th percentile is an exposure quantile, not the probability of safety."
+}

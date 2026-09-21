@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "historical_2007_a_food_safety_evaluation",
+  "run_id": "run-001",
+  "experiment_id": "EXP-2007A-EVAL-001",
+  "generated_utc": "2026-09-21T07:18:20.801432+00:00",
+  "artifacts": [
+    {
+      "artifact_id": "SRC-2007A-DOC",
+      "run_id": "run-001",
+      "experiment_id": null,
+      "type": "SOURCE",
+      "path": "source-provenance/original/2007年A题  建立食品卫生安全保障体系数学模型及改进模型的若干理论问题（终）.doc",
+      "sha256": "894369f3e70e648dc552c4b2309f0bb56bcf854f1bf6554c5e38cfa8370b8c4a",
+      "bytes": 25600,
+      "claim_scope": "exact user-designated legacy DOC"
+    },
+    {
+      "artifact_id": "EVID-EXTRACTION-VERIFIED",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "VALIDATION_RESULT",
+      "path": "extraction/extraction-audit.json",
+      "sha256": "3b947f08273289cb903669183a98fff2dae7765cca67a43d37c7e2805b472b2f",
+      "bytes": 2538,
+      "claim_scope": "legacy DOC body/structure extraction verified"
+    },
+    {
+      "artifact_id": "CODE-EVALUATION-MODEL",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "CODE",
+      "path": "code/evaluation_model.py",
+      "sha256": "0e85cd17b8d0c2c36986bdfd6de679871f1d3cff247fd33b9505d559f65abb2c",
+      "bytes": 9073,
+      "claim_scope": "synthetic evaluation helpers"
+    },
+    {
+      "artifact_id": "CODE-RUN-MODEL",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "CODE",
+      "path": "code/run_model.py",
+      "sha256": "29d3179343f67bdf1a451b61dd69259d27ef0e0a76726afa85dac88bd8de68ac",
+      "bytes": 15696,
+      "claim_scope": "declared synthetic experiment runner"
+    },
+    {
+      "artifact_id": "CODE-EVALUATION-TESTS",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "CODE",
+      "path": "code/test_evaluation.py",
+      "sha256": "749337bb5244208c49b33958d802b16405b59ac4a2f5ac2217472b3757441dbc",
+      "bytes": 2581,
+      "claim_scope": "focused evaluation contract tests"
+    },
+    {
+      "artifact_id": "OUT-EXPOSURE-RESULTS",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "EXPERIMENT_RESULT",
+      "path": "outputs/exposure-results.json",
+      "sha256": "5b88f10ae860a24fd5129f5317d8571b9d25abbccbbd9e459cc970fdeac9402b",
+      "bytes": 2826,
+      "claim_scope": "synthetic scenario only"
+    },
+    {
+      "artifact_id": "OUT-RANKING-RESULTS",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "EXPERIMENT_RESULT",
+      "path": "outputs/ranking-results.json",
+      "sha256": "e5ab3ca642f286fdfa101183a49e33170ee9c646801887549e002c719cfbd9ac",
+      "bytes": 5551,
+      "claim_scope": "synthetic triage only"
+    },
+    {
+      "artifact_id": "OUT-SENSITIVITY-RESULTS",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "VALIDATION_RESULT",
+      "path": "outputs/sensitivity-results.json",
+      "sha256": "bf7c23e682e4961c5eadd2dd929808ea803e7de1ecc4a5824927019ad9af018e",
+      "bytes": 10675,
+      "claim_scope": "simulated perturbations only"
+    },
+    {
+      "artifact_id": "OUT-SYNTHETIC-TESTS",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "VALIDATION_RESULT",
+      "path": "outputs/synthetic-tests.json",
+      "sha256": "612b69b47786e0b7a5f84625bb315500ff39f50c2fdfc9349a6279350e26bdab",
+      "bytes": 493,
+      "claim_scope": "synthetic contracts"
+    },
+    {
+      "artifact_id": "EVID-VALIDATION-SUMMARY",
+      "run_id": "run-001",
+      "experiment_id": "EXP-2007A-EVAL-001",
+      "type": "VALIDATION_RESULT",
+      "path": "validation-results/summary.json",
+      "sha256": "057fd8e7e0e2d9f3955b0e78060e335942e33a88a8c31542c6832e2bdf1aeead",
+      "bytes": 12856,
+      "claim_scope": "repository and run validation"
+    },
+    {
+      "artifact_id": "REPORT-2007A-BLIND",
+      "run_id": "run-001",
+      "experiment_id": null,
+      "type": "REPORT",
+      "path": "REPORT.md",
+      "sha256": "a3804c201458ae3c429ec6ad9c340b93e2a8d787b2871a8caac7829aa9daaaf7",
+      "bytes": 11129,
+      "claim_scope": "conditional model and synthetic benchmark"
+    },
+    {
+      "artifact_id": "COMPLETION-2007A-BLIND",
+      "run_id": "run-001",
+      "experiment_id": null,
+      "type": "REPORT",
+      "path": "completion.json",
+      "sha256": "9b5fc8c21136a3a2abc3f15cdfe0b370f281096e67ef262bc52d06cf76d988d2",
+      "bytes": 1926,
+      "claim_scope": "blind-run completion decision"
+    }
+  ]
+}

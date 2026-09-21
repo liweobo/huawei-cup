@@ -1,0 +1,16 @@
+$ C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2007_a_food_safety_evaluation\run-001\.tmp\venv\Scripts\python.exe development/harness/temporal_availability_regression_test.py
+
+STDOUT
+PASS | target horizon is identified before feature generation
+PASS | post-horizon row is found
+PASS | affected entity count is reported
+PASS | filter precedes aggregation
+PASS | future row is absent from allowed input
+PASS | aggregation-before-filter is rejected
+PASS | future aggregation invalidates experiment
+PASS | invalidated record remains provenance-valid
+PASS | unknown horizon blocks observed feature generation
+
+Temporal Availability Regression: PASS (10/10 checks)
+
+STDERR
