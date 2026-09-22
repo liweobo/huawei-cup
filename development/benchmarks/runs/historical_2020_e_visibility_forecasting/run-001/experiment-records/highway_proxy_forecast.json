@@ -1,0 +1,41 @@
+{
+  "run_id": "historical_2020_e_visibility_forecasting_run-001",
+  "experiment_id": "highway_proxy_forecast",
+  "status": "OBSERVED",
+  "purpose": "rolling-origin forecast of a fixed-ROI relative contrast proxy",
+  "target": "dimensionless relative contrast proxy",
+  "prediction_setting": "SAME_SITE_FUTURE",
+  "temporal_scope": {
+    "target_horizon": [
+      1,
+      3,
+      6
+    ],
+    "feature_cutoff": "forecast origin; contemporaneous-only for association",
+    "post_horizon_records_excluded": "verified by train_max_target_time/frame <= origin",
+    "temporal_gate_status": "PASS"
+  },
+  "features": [
+    "proxy_lag0",
+    "proxy_lag1",
+    "proxy_lag2",
+    "proxy_lag3",
+    "proxy_lag6",
+    "proxy_lag12",
+    "proxy_roll6_mean",
+    "proxy_roll12_mean",
+    "proxy_slope6",
+    "proxy_slope12"
+  ],
+  "result_paths": [
+    "outputs/highway_relative_visibility_proxy.csv",
+    "outputs/highway_forecast_predictions.csv",
+    "outputs/highway_horizon_metrics.csv"
+  ],
+  "limitations": [
+    "no MOR labels",
+    "no calibrated object distances",
+    "cannot identify 150 m crossing",
+    "single scene and single episode"
+  ]
+}

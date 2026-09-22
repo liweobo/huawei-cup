@@ -1,0 +1,24 @@
+{
+  "frames": 100,
+  "image_size": [
+    1280,
+    720
+  ],
+  "fixed_roi_xyxy": [
+    120,
+    220,
+    850,
+    650
+  ],
+  "overlay_excluded": true,
+  "timestamp_basis": "linear interpolation between visually verified frame 1 (06:30:26) and frame 100 (07:39:11); anchor frames 25/50/75 agree within display rounding",
+  "seconds_per_frame_sample": 41.666666666666664,
+  "proxy_definition": "90th percentile Sobel gradient magnitude divided by mean luminance in a fixed ROI",
+  "semantics": "dimensionless relative scene-contrast proxy; not MOR, metres, or probability",
+  "theil_sen_slope_per_minute": 1.1565690971346987e-06,
+  "theil_sen_95pct_slope_interval": [
+    3.9163615014369415e-07,
+    1.968030130222101e-06
+  ],
+  "overall_direction": "improving_contrast"
+}

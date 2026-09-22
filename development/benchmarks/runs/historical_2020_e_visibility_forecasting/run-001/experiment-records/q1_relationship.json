@@ -1,0 +1,32 @@
+{
+  "run_id": "historical_2020_e_visibility_forecasting_run-001",
+  "experiment_id": "q1_relationship",
+  "status": "OBSERVED",
+  "purpose": "contemporaneous visibility-meteorology relationship with whole-event holdout",
+  "target": "MOR_1A metres",
+  "prediction_setting": "TWO_EVENT_ASSOCIATION",
+  "temporal_scope": {
+    "target_horizon": "same_time",
+    "feature_cutoff": "forecast origin; contemporaneous-only for association",
+    "post_horizon_records_excluded": "verified by train_max_target_time/frame <= origin",
+    "temporal_gate_status": "PASS"
+  },
+  "features": [
+    "temperature_c",
+    "relative_humidity_pct",
+    "dewpoint_spread_c",
+    "pressure_hpa",
+    "wind_speed_mps",
+    "wind_dir_sin",
+    "wind_dir_cos"
+  ],
+  "result_paths": [
+    "outputs/q1_event_holdout_metrics.csv",
+    "outputs/q1_relationship_formula.json"
+  ],
+  "limitations": [
+    "two fog episodes only",
+    "censored-like MOR floor/ceiling",
+    "association is not causal"
+  ]
+}

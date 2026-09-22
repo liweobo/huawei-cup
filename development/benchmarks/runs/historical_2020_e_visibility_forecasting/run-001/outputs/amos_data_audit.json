@@ -1,0 +1,62 @@
+{
+  "source": "机场AMOS观测.zip",
+  "events": [
+    {
+      "event": "AMOS20191216",
+      "raw_rows": {
+        "PTU": 1440,
+        "VIS": 5755,
+        "WIND": 5755
+      },
+      "raw_start": "2019-12-15T08:00:00",
+      "raw_end": "2019-12-16T07:59:45"
+    },
+    {
+      "event": "AMOS20200313",
+      "raw_rows": {
+        "PTU": 1440,
+        "VIS": 5755,
+        "WIND": 5755
+      },
+      "raw_start": "2020-03-12T08:00:00",
+      "raw_end": "2020-03-13T07:59:45"
+    }
+  ],
+  "merged": {
+    "AMOS20191216": {
+      "rows": 1440,
+      "start": "2019-12-15T08:00:00",
+      "end": "2019-12-16T07:59:00",
+      "median_step_minutes": 1.0,
+      "non_one_minute_steps": 0
+    },
+    "AMOS20200313": {
+      "rows": 1440,
+      "start": "2020-03-12T08:00:00",
+      "end": "2020-03-13T07:59:00",
+      "median_step_minutes": 1.0,
+      "non_one_minute_steps": 0
+    }
+  },
+  "missing_by_column": {
+    "minute": 0,
+    "mor_m": 0,
+    "rvr_m": 0,
+    "mor_raw_m": 0,
+    "pressure_hpa": 0,
+    "temperature_c": 0,
+    "relative_humidity_pct": 0,
+    "dewpoint_c": 0,
+    "wind_speed_mps": 0,
+    "wind_dir_sin": 0,
+    "wind_dir_cos": 0,
+    "event": 0,
+    "dewpoint_spread_c": 0
+  },
+  "duplicate_event_minutes": 0,
+  "mor_min_m": 0.0,
+  "mor_max_m": 10000.0,
+  "mor_at_lower_50_count": 518,
+  "mor_at_upper_10000_count": 225,
+  "note": "MOR_1A is an instrument field with evident floor/ceiling values; treat tail values as censored-like, not precise continuous truth."
+}

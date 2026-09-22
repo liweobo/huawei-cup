@@ -1,0 +1,21 @@
+{
+  "phase": "POST_ANALYSIS_PRE_COMMIT_FREEZE",
+  "starting_git_head": "3bd9d3cd5bd2c0eab05cec1bf89fc69e5a342fbc",
+  "branch": "main",
+  "skill_tree_before": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+  "skill_tree_after": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+  "skill_modified": false,
+  "frozen_trees": {
+    "historical_2007_a_all": "8b04b32b5966d5bae2085cb28d492246de78ecc9",
+    "historical_2017_f_all": "e2cc3eda04f300698edd078996a17be6584f1fcc",
+    "historical_2005_d_all": "1cb175c3339d2db9627945c25ecc27d02e894ebc",
+    "historical_2020_a_all": "6e7bd05c50aa614b1e741c08117765a17dd0a6ff",
+    "historical_2011_b_all": "e04effd94bce8c3dca97c72155853aafc65df037",
+    "historical_2022_c_all": "92bd2ef04f834c8011d179e9dd4691f08209685d",
+    "problem_2023_e": "1d86b7ece9f07b6c9d67d9f82d7553758a13fade",
+    "historical_2024_c_all": "56dece647c5ab8ef7fff8a1713e1a8a4a1b6ac1a"
+  },
+  "frozen_assets_modified": false,
+  "excellent_solutions_accessed": false,
+  "routes": 10
+}

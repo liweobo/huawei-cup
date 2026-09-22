@@ -1,0 +1,13 @@
+series,horizon_minutes,method,nominal_coverage,n_intervals,empirical_coverage,average_width,median_radius,calibration,horizon_frames
+amos_mor_m,5.0,direct_ridge,0.8,33,0.9393939393939394,3958.354612182943,2989.77759343071,sequential absolute-error conformal-style radius; only prior held-out origins,
+amos_mor_m,5.0,persistence,0.8,33,0.9393939393939394,1295.4545454545455,950.0,sequential absolute-error conformal-style radius; only prior held-out origins,
+amos_mor_m,15.0,direct_ridge,0.8,33,0.9696969696969697,4724.380875282758,3000.0,sequential absolute-error conformal-style radius; only prior held-out origins,
+amos_mor_m,15.0,persistence,0.8,33,0.9696969696969697,2498.4848484848485,950.0,sequential absolute-error conformal-style radius; only prior held-out origins,
+amos_mor_m,30.0,direct_ridge,0.8,33,0.9696969696969697,4664.168457677793,3178.746691981354,sequential absolute-error conformal-style radius; only prior held-out origins,
+amos_mor_m,30.0,persistence,0.8,33,0.9393939393939394,2440.909090909091,1050.0,sequential absolute-error conformal-style radius; only prior held-out origins,
+highway_relative_contrast_proxy,,direct_ridge,0.8,20,1.0,0.0002448973023413983,9.645329998628563e-05,sequential absolute-error conformal-style radius; only prior held-out origins,1.0
+highway_relative_contrast_proxy,,persistence,0.8,20,0.9,0.00020265967550408756,7.978573928822848e-05,sequential absolute-error conformal-style radius; only prior held-out origins,1.0
+highway_relative_contrast_proxy,,direct_ridge,0.8,20,1.0,0.00044531909524567583,0.00020854075885802514,sequential absolute-error conformal-style radius; only prior held-out origins,3.0
+highway_relative_contrast_proxy,,persistence,0.8,20,0.95,0.0004455092677620873,0.00021505288059066666,sequential absolute-error conformal-style radius; only prior held-out origins,3.0
+highway_relative_contrast_proxy,,direct_ridge,0.8,20,0.95,0.0004852668870768052,0.00020182600075817694,sequential absolute-error conformal-style radius; only prior held-out origins,6.0
+highway_relative_contrast_proxy,,persistence,0.8,20,0.95,0.0005626290924133132,0.00023529059901469286,sequential absolute-error conformal-style radius; only prior held-out origins,6.0

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "tests": {
+    "future_target_as_feature": {
+      "available_at": "2020-01-01T12:05:00",
+      "forecast_origin": "2020-01-01T12:00:00",
+      "blocked": true,
+      "code": "FUTURE_INFORMATION_LEAKAGE"
+    },
+    "realized_future_weather_as_exogenous_feature": {
+      "available_at": "2020-01-01T12:15:00",
+      "forecast_origin": "2020-01-01T12:00:00",
+      "blocked": true,
+      "code": "FUTURE_EXOGENOUS_LEAKAGE"
+    },
+    "rolling_window_includes_post_origin": {
+      "max_input_time": "2020-01-01T12:01:00",
+      "forecast_origin": "2020-01-01T12:00:00",
+      "blocked": true,
+      "code": "FUTURE_INFORMATION_LEAKAGE"
+    },
+    "random_shuffle_for_time_forecast": {
+      "split": "random_shuffle",
+      "blocked": true,
+      "code": "TEMPORAL_SPLIT_INVALID"
+    },
+    "recursive_h2_uses_observed_h1_target": {
+      "strategy": "RECURSIVE",
+      "h2_input": "observed_y_t_plus_1",
+      "blocked": true,
+      "code": "RECURSIVE_TARGET_LEAKAGE"
+    },
+    "scaler_fit_on_full_series": {
+      "fit_scope": "includes_post_origin_rows",
+      "blocked": true,
+      "code": "PREPROCESSING_FUTURE_FIT"
+    },
+    "time_reversal_claims_same_forecast_protocol": {
+      "time_order": "reversed_without_redefining_origin",
+      "blocked": true,
+      "code": "FORECAST_DIRECTION_INVALID"
+    },
+    "current_and_lagged_features_only": {
+      "max_input_time": "2020-01-01T12:00:00",
+      "forecast_origin": "2020-01-01T12:00:00",
+      "blocked": false,
+      "status": "PASS"
+    },
+    "relative_proxy_as_mor_150m": {
+      "blocked": true,
+      "code": "OUTPUT_SEMANTICS_MISMATCH"
+    }
+  }
+}

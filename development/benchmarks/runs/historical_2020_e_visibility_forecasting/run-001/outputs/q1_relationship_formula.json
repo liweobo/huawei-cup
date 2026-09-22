@@ -1,0 +1,55 @@
+{
+  "claim": "descriptive contemporaneous association on the two supplied fog episodes; not a causal equation and not a future forecast",
+  "response": "log1p(MOR_1A metres)",
+  "formula": "log1p(MOR) = intercept + sum_j beta_j * ((x_j - mean_j) / scale_j)",
+  "alpha": 10.0,
+  "intercept": 7.390271452930114,
+  "terms": [
+    {
+      "feature": "temperature_c",
+      "beta_standardized": 1.5435140466811876,
+      "mean": 12.87611111111111,
+      "scale": 3.555741466493762
+    },
+    {
+      "feature": "relative_humidity_pct",
+      "beta_standardized": -1.3636977875517093,
+      "mean": 79.471875,
+      "scale": 20.50538311668799
+    },
+    {
+      "feature": "dewpoint_spread_c",
+      "beta_standardized": -1.416296590659977,
+      "mean": 4.070170138888889,
+      "scale": 4.571667085028232
+    },
+    {
+      "feature": "pressure_hpa",
+      "beta_standardized": 0.27993327706882304,
+      "mean": 1017.8859722222221,
+      "scale": 2.36029462598435
+    },
+    {
+      "feature": "wind_speed_mps",
+      "beta_standardized": -0.020219081848062127,
+      "mean": 2.5898836805555554,
+      "scale": 1.5008445018465013
+    },
+    {
+      "feature": "wind_dir_sin",
+      "beta_standardized": 0.5372609444706666,
+      "mean": 0.4931956021336811,
+      "scale": 0.6511490068765755
+    },
+    {
+      "feature": "wind_dir_cos",
+      "beta_standardized": -0.024797777784454064,
+      "mean": -0.24876301406174453,
+      "scale": 0.5181187280362515
+    }
+  ],
+  "sensor_output_clip_for_predictions_m": [
+    50,
+    10000
+  ]
+}

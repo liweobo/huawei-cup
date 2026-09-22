@@ -1,0 +1,471 @@
+{
+  "q1_metrics": [
+    {
+      "held_out_event": "AMOS20191216",
+      "method": "training_event_median",
+      "n": 1440,
+      "mae": 2713.107638888889,
+      "rmse": 2900.678425793027,
+      "median_absolute_error": 2800.0000000000014,
+      "log1p_mae": 1.1848219454445696,
+      "spearman_rho": null,
+      "bias": -1226.5451388888896
+    },
+    {
+      "held_out_event": "AMOS20191216",
+      "method": "ridge_contemporaneous",
+      "n": 1440,
+      "mae": 3508.5294328721693,
+      "rmse": 4095.29992614334,
+      "median_absolute_error": 3773.6131240160003,
+      "log1p_mae": 1.7504931253273535,
+      "spearman_rho": 0.41488886601366676,
+      "bias": -3385.4268076436465
+    },
+    {
+      "held_out_event": "AMOS20200313",
+      "method": "training_event_median",
+      "n": 1440,
+      "mae": 3339.739583333335,
+      "rmse": 3759.6944712783666,
+      "median_absolute_error": 3800.0000000000027,
+      "log1p_mae": 1.7698516464695087,
+      "spearman_rho": null,
+      "bias": 1339.0451388888914
+    },
+    {
+      "held_out_event": "AMOS20200313",
+      "method": "ridge_contemporaneous",
+      "n": 1440,
+      "mae": 3219.756916366591,
+      "rmse": 4688.151469332637,
+      "median_absolute_error": 2208.9954985675204,
+      "log1p_mae": 2.0474068574356417,
+      "spearman_rho": -0.14472678251635376,
+      "bias": -2913.107387146049
+    }
+  ],
+  "amos_forecast_metrics": [
+    {
+      "horizon_minutes": 5,
+      "method": "direct_ridge",
+      "n": 43,
+      "mae": 972.2780477536386,
+      "rmse": 1535.6567118317146,
+      "median_absolute_error": 344.54936056306224,
+      "log1p_mae": 0.5224701545115802,
+      "spearman_rho": 0.9342084326214009,
+      "bias": -384.2189378772074,
+      "direction_accuracy_non_tie": 0.4090909090909091,
+      "actual_tie_rate": 0.4883720930232558
+    },
+    {
+      "horizon_minutes": 5,
+      "method": "persistence",
+      "n": 43,
+      "mae": 266.86046511627904,
+      "rmse": 820.3888045906492,
+      "median_absolute_error": 50.0,
+      "log1p_mae": 0.23001173451784693,
+      "spearman_rho": 0.9851682443522423,
+      "bias": 58.72093023255814,
+      "direction_accuracy_non_tie": 0.0,
+      "actual_tie_rate": 0.4883720930232558
+    },
+    {
+      "horizon_minutes": 15,
+      "method": "direct_ridge",
+      "n": 43,
+      "mae": 1103.6652100375966,
+      "rmse": 1718.471425283822,
+      "median_absolute_error": 523.7790768277448,
+      "log1p_mae": 0.5079724436331766,
+      "spearman_rho": 0.9242798207674354,
+      "bias": -455.2013432545691,
+      "direction_accuracy_non_tie": 0.5,
+      "actual_tie_rate": 0.4883720930232558
+    },
+    {
+      "horizon_minutes": 15,
+      "method": "persistence",
+      "n": 43,
+      "mae": 360.4651162790698,
+      "rmse": 971.9914824011912,
+      "median_absolute_error": 50.0,
+      "log1p_mae": 0.14740814054060145,
+      "spearman_rho": 0.9790742026879935,
+      "bias": 53.48837209302326,
+      "direction_accuracy_non_tie": 0.0,
+      "actual_tie_rate": 0.4883720930232558
+    },
+    {
+      "horizon_minutes": 30,
+      "method": "direct_ridge",
+      "n": 43,
+      "mae": 1049.704344291491,
+      "rmse": 1706.7648846723594,
+      "median_absolute_error": 453.10704197663927,
+      "log1p_mae": 0.5322372258538309,
+      "spearman_rho": 0.9250929734004762,
+      "bias": -481.7468456230048,
+      "direction_accuracy_non_tie": 0.5652173913043478,
+      "actual_tie_rate": 0.46511627906976744
+    },
+    {
+      "horizon_minutes": 30,
+      "method": "persistence",
+      "n": 43,
+      "mae": 410.4651162790698,
+      "rmse": 997.642570099341,
+      "median_absolute_error": 50.0,
+      "log1p_mae": 0.25069084544405523,
+      "spearman_rho": 0.963103926512505,
+      "bias": 98.83720930232558,
+      "direction_accuracy_non_tie": 0.0,
+      "actual_tie_rate": 0.46511627906976744
+    }
+  ],
+  "amos_low_visibility_metrics": [
+    {
+      "horizon_minutes": 5,
+      "method": "direct_ridge",
+      "threshold_m": 150,
+      "threshold_provenance": "PROBLEM_GIVEN_EXAMPLE",
+      "n": 12,
+      "mae": 42.229716500573794,
+      "rmse": 55.457219328531224,
+      "bias": 42.229716500573794
+    },
+    {
+      "horizon_minutes": 5,
+      "method": "persistence",
+      "threshold_m": 150,
+      "threshold_provenance": "PROBLEM_GIVEN_EXAMPLE",
+      "n": 12,
+      "mae": 12.5,
+      "rmse": 25.0,
+      "bias": 4.166666666666667
+    },
+    {
+      "horizon_minutes": 15,
+      "method": "direct_ridge",
+      "threshold_m": 150,
+      "threshold_provenance": "PROBLEM_GIVEN_EXAMPLE",
+      "n": 12,
+      "mae": 75.24085350453369,
+      "rmse": 153.75518717574997,
+      "bias": 75.24085350453369
+    },
+    {
+      "horizon_minutes": 15,
+      "method": "persistence",
+      "threshold_m": 150,
+      "threshold_provenance": "PROBLEM_GIVEN_EXAMPLE",
+      "n": 12,
+      "mae": 4.166666666666667,
+      "rmse": 14.433756729740644,
+      "bias": 4.166666666666667
+    },
+    {
+      "horizon_minutes": 30,
+      "method": "direct_ridge",
+      "threshold_m": 150,
+      "threshold_provenance": "PROBLEM_GIVEN_EXAMPLE",
+      "n": 14,
+      "mae": 112.31049608768834,
+      "rmse": 239.79248776782723,
+      "bias": 110.72091087583237
+    },
+    {
+      "horizon_minutes": 30,
+      "method": "persistence",
+      "threshold_m": 150,
+      "threshold_provenance": "PROBLEM_GIVEN_EXAMPLE",
+      "n": 14,
+      "mae": 92.85714285714286,
+      "rmse": 271.2405363721075,
+      "bias": 85.71428571428571
+    }
+  ],
+  "amos_distribution_shift": {
+    "events": [
+      {
+        "event": "AMOS20191216",
+        "n": 1440,
+        "mean_m": 4426.545138888889,
+        "median_m": 5000.0,
+        "p10_m": 72.50000000000014,
+        "p90_m": 7000.0,
+        "at_or_below_150m": 223,
+        "at_lower_50m": 144,
+        "at_upper_10000m": 0
+      },
+      {
+        "event": "AMOS20200313",
+        "n": 1440,
+        "mean_m": 3660.9548611111113,
+        "median_m": 3200.0,
+        "p10_m": 50.0,
+        "p90_m": 10000.0,
+        "at_or_below_150m": 421,
+        "at_lower_50m": 369,
+        "at_upper_10000m": 225
+      }
+    ],
+    "two_sample_ks_statistic": 0.37500000000000006,
+    "two_sample_ks_pvalue": 1.5943087650523235e-90,
+    "interpretation": "The held-out later event has a materially different target distribution; this is an event/regime transfer test, not an IID sample claim."
+  },
+  "highway_proxy_audit": {
+    "frames": 100,
+    "image_size": [
+      1280,
+      720
+    ],
+    "fixed_roi_xyxy": [
+      120,
+      220,
+      850,
+      650
+    ],
+    "overlay_excluded": true,
+    "timestamp_basis": "linear interpolation between visually verified frame 1 (06:30:26) and frame 100 (07:39:11); anchor frames 25/50/75 agree within display rounding",
+    "seconds_per_frame_sample": 41.666666666666664,
+    "proxy_definition": "90th percentile Sobel gradient magnitude divided by mean luminance in a fixed ROI",
+    "semantics": "dimensionless relative scene-contrast proxy; not MOR, metres, or probability",
+    "theil_sen_slope_per_minute": 1.1565690971346987e-06,
+    "theil_sen_95pct_slope_interval": [
+      3.9163615014369415e-07,
+      1.968030130222101e-06
+    ],
+    "overall_direction": "improving_contrast"
+  },
+  "highway_forecast_metrics": [
+    {
+      "horizon_frames": 1,
+      "horizon_minutes": 0.6944444444444444,
+      "method": "direct_ridge",
+      "n": 30,
+      "mae": 4.529912277081924e-05,
+      "rmse": 6.318962275356538e-05,
+      "median_absolute_error": 3.919708773965792e-05,
+      "log1p_mae": 4.491463645389764e-05,
+      "spearman_rho": 0.7339265850945496,
+      "bias": 2.1311318755509965e-06,
+      "direction_accuracy_non_tie": 0.6
+    },
+    {
+      "horizon_frames": 1,
+      "horizon_minutes": 0.6944444444444444,
+      "method": "persistence",
+      "n": 30,
+      "mae": 4.663681350013296e-05,
+      "rmse": 5.697949545816474e-05,
+      "median_absolute_error": 3.7617307568965294e-05,
+      "log1p_mae": 4.6241278552191024e-05,
+      "spearman_rho": 0.7317018909899888,
+      "bias": -5.483093422377465e-07,
+      "direction_accuracy_non_tie": 0.0
+    },
+    {
+      "horizon_frames": 3,
+      "horizon_minutes": 2.083333333333333,
+      "method": "direct_ridge",
+      "n": 30,
+      "mae": 8.883376658973888e-05,
+      "rmse": 0.00011548304578076958,
+      "median_absolute_error": 6.0349580806098e-05,
+      "log1p_mae": 8.807764620385496e-05,
+      "spearman_rho": 0.029143492769744164,
+      "bias": 2.0044599994436045e-05,
+      "direction_accuracy_non_tie": 0.5666666666666667
+    },
+    {
+      "horizon_frames": 3,
+      "horizon_minutes": 2.083333333333333,
+      "method": "persistence",
+      "n": 30,
+      "mae": 8.341443424480007e-05,
+      "rmse": 0.00011109769909850676,
+      "median_absolute_error": 6.599524388723171e-05,
+      "log1p_mae": 8.270533145328165e-05,
+      "spearman_rho": 0.24449388209121245,
+      "bias": 7.217294824690053e-06,
+      "direction_accuracy_non_tie": 0.0
+    },
+    {
+      "horizon_frames": 6,
+      "horizon_minutes": 4.166666666666666,
+      "method": "direct_ridge",
+      "n": 30,
+      "mae": 0.00010028215640944342,
+      "rmse": 0.00013044255691543581,
+      "median_absolute_error": 7.97096247505567e-05,
+      "log1p_mae": 9.942969447229183e-05,
+      "spearman_rho": 0.09010011123470522,
+      "bias": 4.588274116060891e-05,
+      "direction_accuracy_non_tie": 0.8
+    },
+    {
+      "horizon_frames": 6,
+      "horizon_minutes": 4.166666666666666,
+      "method": "persistence",
+      "n": 30,
+      "mae": 0.00011635308832978706,
+      "rmse": 0.00014901239854472266,
+      "median_absolute_error": 8.294760688540553e-05,
+      "log1p_mae": 0.00011536487269782561,
+      "spearman_rho": -0.2453837597330367,
+      "bias": 2.5970897998452495e-05,
+      "direction_accuracy_non_tie": 0.0
+    }
+  ],
+  "interval_metrics": [
+    {
+      "series": "amos_mor_m",
+      "horizon_minutes": 5.0,
+      "method": "direct_ridge",
+      "nominal_coverage": 0.8,
+      "n_intervals": 33,
+      "empirical_coverage": 0.9393939393939394,
+      "average_width": 3958.354612182943,
+      "median_radius": 2989.77759343071,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": null
+    },
+    {
+      "series": "amos_mor_m",
+      "horizon_minutes": 5.0,
+      "method": "persistence",
+      "nominal_coverage": 0.8,
+      "n_intervals": 33,
+      "empirical_coverage": 0.9393939393939394,
+      "average_width": 1295.4545454545455,
+      "median_radius": 950.0,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": null
+    },
+    {
+      "series": "amos_mor_m",
+      "horizon_minutes": 15.0,
+      "method": "direct_ridge",
+      "nominal_coverage": 0.8,
+      "n_intervals": 33,
+      "empirical_coverage": 0.9696969696969697,
+      "average_width": 4724.380875282758,
+      "median_radius": 3000.0,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": null
+    },
+    {
+      "series": "amos_mor_m",
+      "horizon_minutes": 15.0,
+      "method": "persistence",
+      "nominal_coverage": 0.8,
+      "n_intervals": 33,
+      "empirical_coverage": 0.9696969696969697,
+      "average_width": 2498.4848484848485,
+      "median_radius": 950.0,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": null
+    },
+    {
+      "series": "amos_mor_m",
+      "horizon_minutes": 30.0,
+      "method": "direct_ridge",
+      "nominal_coverage": 0.8,
+      "n_intervals": 33,
+      "empirical_coverage": 0.9696969696969697,
+      "average_width": 4664.168457677793,
+      "median_radius": 3178.746691981354,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": null
+    },
+    {
+      "series": "amos_mor_m",
+      "horizon_minutes": 30.0,
+      "method": "persistence",
+      "nominal_coverage": 0.8,
+      "n_intervals": 33,
+      "empirical_coverage": 0.9393939393939394,
+      "average_width": 2440.909090909091,
+      "median_radius": 1050.0,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": null
+    },
+    {
+      "series": "highway_relative_contrast_proxy",
+      "horizon_minutes": null,
+      "method": "direct_ridge",
+      "nominal_coverage": 0.8,
+      "n_intervals": 20,
+      "empirical_coverage": 1.0,
+      "average_width": 0.0002448973023413983,
+      "median_radius": 9.645329998628563e-05,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": 1.0
+    },
+    {
+      "series": "highway_relative_contrast_proxy",
+      "horizon_minutes": null,
+      "method": "persistence",
+      "nominal_coverage": 0.8,
+      "n_intervals": 20,
+      "empirical_coverage": 0.9,
+      "average_width": 0.00020265967550408756,
+      "median_radius": 7.978573928822848e-05,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": 1.0
+    },
+    {
+      "series": "highway_relative_contrast_proxy",
+      "horizon_minutes": null,
+      "method": "direct_ridge",
+      "nominal_coverage": 0.8,
+      "n_intervals": 20,
+      "empirical_coverage": 1.0,
+      "average_width": 0.00044531909524567583,
+      "median_radius": 0.00020854075885802514,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": 3.0
+    },
+    {
+      "series": "highway_relative_contrast_proxy",
+      "horizon_minutes": null,
+      "method": "persistence",
+      "nominal_coverage": 0.8,
+      "n_intervals": 20,
+      "empirical_coverage": 0.95,
+      "average_width": 0.0004455092677620873,
+      "median_radius": 0.00021505288059066666,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": 3.0
+    },
+    {
+      "series": "highway_relative_contrast_proxy",
+      "horizon_minutes": null,
+      "method": "direct_ridge",
+      "nominal_coverage": 0.8,
+      "n_intervals": 20,
+      "empirical_coverage": 0.95,
+      "average_width": 0.0004852668870768052,
+      "median_radius": 0.00020182600075817694,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": 6.0
+    },
+    {
+      "series": "highway_relative_contrast_proxy",
+      "horizon_minutes": null,
+      "method": "persistence",
+      "nominal_coverage": 0.8,
+      "n_intervals": 20,
+      "empirical_coverage": 0.95,
+      "average_width": 0.0005626290924133132,
+      "median_radius": 0.00023529059901469286,
+      "calibration": "sequential absolute-error conformal-style radius; only prior held-out origins",
+      "horizon_frames": 6.0
+    }
+  ],
+  "absolute_highway_mor_status": "UNVERIFIED",
+  "mor_150_crossing_status": "NOT_IDENTIFIABLE_FROM_AVAILABLE_ATTACHMENTS"
+}

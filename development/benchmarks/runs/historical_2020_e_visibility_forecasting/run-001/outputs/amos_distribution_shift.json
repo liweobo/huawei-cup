@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "AMOS20191216",
+      "n": 1440,
+      "mean_m": 4426.545138888889,
+      "median_m": 5000.0,
+      "p10_m": 72.50000000000014,
+      "p90_m": 7000.0,
+      "at_or_below_150m": 223,
+      "at_lower_50m": 144,
+      "at_upper_10000m": 0
+    },
+    {
+      "event": "AMOS20200313",
+      "n": 1440,
+      "mean_m": 3660.9548611111113,
+      "median_m": 3200.0,
+      "p10_m": 50.0,
+      "p90_m": 10000.0,
+      "at_or_below_150m": 421,
+      "at_lower_50m": 369,
+      "at_upper_10000m": 225
+    }
+  ],
+  "two_sample_ks_statistic": 0.37500000000000006,
+  "two_sample_ks_pvalue": 1.5943087650523235e-90,
+  "interpretation": "The held-out later event has a materially different target distribution; this is an event/regime transfer test, not an IID sample claim."
+}

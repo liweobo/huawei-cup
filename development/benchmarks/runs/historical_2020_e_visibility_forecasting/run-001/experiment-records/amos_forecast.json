@@ -1,0 +1,51 @@
+{
+  "run_id": "historical_2020_e_visibility_forecasting_run-001",
+  "experiment_id": "amos_forecast",
+  "status": "OBSERVED",
+  "purpose": "methodological rolling-origin forecast validation on labelled airport data",
+  "target": "future MOR_1A metres",
+  "prediction_setting": "SAME_SITE_FUTURE",
+  "temporal_scope": {
+    "target_horizon": [
+      5,
+      15,
+      30
+    ],
+    "feature_cutoff": "forecast origin; contemporaneous-only for association",
+    "post_horizon_records_excluded": "verified by train_max_target_time/frame <= origin",
+    "temporal_gate_status": "PASS"
+  },
+  "features": [
+    "mor_lag0",
+    "mor_lag1",
+    "mor_lag5",
+    "mor_lag15",
+    "mor_roll5_mean",
+    "mor_roll15_mean",
+    "mor_roll30_mean",
+    "mor_roll15_min",
+    "mor_roll15_max",
+    "mor_slope15",
+    "temperature_c",
+    "relative_humidity_pct",
+    "dewpoint_spread_c",
+    "pressure_hpa",
+    "wind_speed_mps",
+    "wind_dir_sin",
+    "wind_dir_cos"
+  ],
+  "result_paths": [
+    "outputs/amos_forecast_predictions.csv",
+    "outputs/amos_horizon_metrics.csv",
+    "outputs/amos_low_visibility_metrics.csv",
+    "outputs/amos_distribution_shift.json",
+    "outputs/amos_residual_audit.csv",
+    "outputs/amos_largest_errors.csv",
+    "outputs/interval_metrics.csv"
+  ],
+  "limitations": [
+    "surrogate validation for forecasting protocol, not an answer to highway question 4",
+    "one held-out later event",
+    "sensor floor/ceiling"
+  ]
+}

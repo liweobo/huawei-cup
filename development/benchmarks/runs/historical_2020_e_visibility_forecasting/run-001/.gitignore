@@ -1,0 +1,7 @@
+.tmp/
+__pycache__/
+*.pyc
+renders/
+extraction-cache/
+browser-cache/
+*.pdf.rendered/
