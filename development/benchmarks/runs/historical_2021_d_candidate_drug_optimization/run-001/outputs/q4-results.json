@@ -1,0 +1,443 @@
+{
+  "evaluation_contract": {
+    "evaluation_object": "the 50 source-provided prediction compounds",
+    "decision_question": "which in-domain compound satisfying at least three predicted favorable ADMET endpoints has the highest uncertainty-penalized predicted pIC50",
+    "output_semantics": "RANK",
+    "absolute_or_relative": "RELATIVE_TO_FIXED_50_COMPOUND_SET",
+    "threshold_provenance": "endpoint-specific validation thresholds from Q3",
+    "allowed_claim": "surrogate ranking within the fixed observed candidate set; requires experimental verification",
+    "status": "EVALUATION_SEMANTICS_VERIFIED"
+  },
+  "design_variable": "choice among 50 source-provided compounds; descriptors are observed attributes, not independently editable coordinates",
+  "optimization_domain": "finite observed candidate set of 50 prediction compounds",
+  "hard_constraints": [
+    "source descriptor row is finite",
+    "at least three of five endpoint classes are favorable under the declared direction map",
+    "candidate passes every target-specific q95 nearest-neighbor and selected-feature range applicability gate"
+  ],
+  "soft_objective": "maximize predicted pIC50 minus one outer-fold prediction standard deviation",
+  "weight_provenance": "DERIVED one-standard-deviation uncertainty penalty; sensitivity at 0, 1, and 2",
+  "favorable_direction_primary": {
+    "Caco-2": 1,
+    "CYP3A4": 1,
+    "hERG": 0,
+    "HOB": 1,
+    "MN": 0
+  },
+  "favorable_direction_note": "CYP3A4=1 is ASSUMED because the problem defines metabolizability but no monotone desirable state; alternate direction is reported.",
+  "applicability_domain": {
+    "activity": {
+      "features": [
+        "AMR",
+        "nC",
+        "BCUTp-1h",
+        "C2SP2",
+        "SP-5",
+        "CrippenLogP",
+        "SwHBa",
+        "SaaCH",
+        "minsssN",
+        "minsOH",
+        "maxHsOH",
+        "maxsssN",
+        "maxsOH",
+        "hmin",
+        "LipoaffinityIndex",
+        "MLogP",
+        "MDEC-22",
+        "MDEC-23",
+        "n6Ring",
+        "nT6Ring"
+      ],
+      "dimension": 20,
+      "distance": "nearest training compound RMS standardized Euclidean distance",
+      "training_reference": "leave-one-out nearest-neighbor distribution",
+      "thresholds": {
+        "q90": 0.3343018055780972,
+        "q95": 0.40239287059753165,
+        "q99": 0.5513855828387252
+      },
+      "range_gate": "all selected descriptors within training min/max",
+      "test_pass_counts": {
+        "pass_q90": 21,
+        "pass_q95": 32,
+        "pass_q99": 39
+      }
+    },
+    "Caco-2": {
+      "features": [
+        "AMR",
+        "nHeavyAtom",
+        "nC",
+        "ATSm2",
+        "ATSm3",
+        "ATSp1",
+        "nBonds",
+        "SP-0",
+        "SP-1",
+        "SP-2",
+        "SP-3",
+        "SP-4",
+        "SP-5",
+        "VP-0",
+        "VP-1",
+        "CrippenMR",
+        "nwHBa",
+        "ETA_Alpha",
+        "ETA_Beta",
+        "ETA_Beta_s",
+        "ETA_Beta_ns",
+        "ETA_Eta_F",
+        "ETA_Eta_R_L",
+        "ETA_Eta_F_L",
+        "MLFER_E",
+        "MLFER_L",
+        "VAdjMat",
+        "MW",
+        "WTPT-1",
+        "Zagreb"
+      ],
+      "dimension": 30,
+      "distance": "nearest training compound RMS standardized Euclidean distance",
+      "training_reference": "leave-one-out nearest-neighbor distribution",
+      "thresholds": {
+        "q90": 0.17882608672068986,
+        "q95": 0.2169032589223316,
+        "q99": 0.36026628252071147
+      },
+      "range_gate": "all selected descriptors within training min/max",
+      "test_pass_counts": {
+        "pass_q90": 29,
+        "pass_q95": 34,
+        "pass_q99": 41
+      }
+    },
+    "CYP3A4": {
+      "features": [
+        "AMR",
+        "apol",
+        "nC",
+        "ATSp1",
+        "ATSp2",
+        "ATSp3",
+        "ATSp4",
+        "ATSp5",
+        "nBonds",
+        "nBonds2",
+        "SP-1",
+        "SP-2",
+        "SP-3",
+        "SP-4",
+        "SP-5",
+        "SP-6",
+        "SP-7",
+        "VP-0",
+        "VP-1",
+        "VP-2",
+        "VP-3",
+        "VP-4",
+        "VP-5",
+        "ETA_Alpha",
+        "ETA_Beta_s",
+        "ETA_Eta_R_L",
+        "VAdjMat",
+        "WTPT-1",
+        "WPOL",
+        "Zagreb"
+      ],
+      "dimension": 30,
+      "distance": "nearest training compound RMS standardized Euclidean distance",
+      "training_reference": "leave-one-out nearest-neighbor distribution",
+      "thresholds": {
+        "q90": 0.1599072200969582,
+        "q95": 0.1916936246513426,
+        "q99": 0.27233922261582233
+      },
+      "range_gate": "all selected descriptors within training min/max",
+      "test_pass_counts": {
+        "pass_q90": 31,
+        "pass_q95": 37,
+        "pass_q99": 41
+      }
+    },
+    "hERG": {
+      "features": [
+        "AMR",
+        "apol",
+        "nAtom",
+        "nHeavyAtom",
+        "nH",
+        "nC",
+        "ATSp1",
+        "nBonds",
+        "nBonds2",
+        "nBondsS",
+        "bpol",
+        "C1SP3",
+        "SP-1",
+        "VP-0",
+        "VP-1",
+        "VP-2",
+        "CrippenMR",
+        "minsssN",
+        "maxsssN",
+        "hmin",
+        "LipoaffinityIndex",
+        "ETA_Alpha",
+        "ETA_Beta_s",
+        "ETA_Eta_R_L",
+        "MLogP",
+        "McGowan_Volume",
+        "VABC",
+        "VAdjMat",
+        "WTPT-1",
+        "Zagreb"
+      ],
+      "dimension": 30,
+      "distance": "nearest training compound RMS standardized Euclidean distance",
+      "training_reference": "leave-one-out nearest-neighbor distribution",
+      "thresholds": {
+        "q90": 0.1998122885041907,
+        "q95": 0.2476199068108194,
+        "q99": 0.3572476602978621
+      },
+      "range_gate": "all selected descriptors within training min/max",
+      "test_pass_counts": {
+        "pass_q90": 30,
+        "pass_q95": 35,
+        "pass_q99": 41
+      }
+    },
+    "HOB": {
+      "features": [
+        "nC",
+        "ATSc3",
+        "BCUTc-1l",
+        "nBondsS",
+        "C1SP2",
+        "nHsOH",
+        "naaN",
+        "SHBd",
+        "SHBint10",
+        "SHsOH",
+        "SaaN",
+        "SsOH",
+        "minHBint10",
+        "minHsOH",
+        "minaaN",
+        "minsOH",
+        "mindO",
+        "maxHBd",
+        "maxHBint10",
+        "maxHsOH",
+        "maxHCsats",
+        "maxaaN",
+        "maxsOH",
+        "maxdO",
+        "hmin",
+        "ETA_Beta_ns_d",
+        "MLogP",
+        "MDEC-23",
+        "MLFER_A",
+        "nT6Ring"
+      ],
+      "dimension": 30,
+      "distance": "nearest training compound RMS standardized Euclidean distance",
+      "training_reference": "leave-one-out nearest-neighbor distribution",
+      "thresholds": {
+        "q90": 0.42912625535375876,
+        "q95": 0.5288509744166026,
+        "q99": 0.7157923358482966
+      },
+      "range_gate": "all selected descriptors within training min/max",
+      "test_pass_counts": {
+        "pass_q90": 30,
+        "pass_q95": 36,
+        "pass_q99": 40
+      }
+    },
+    "MN": {
+      "features": [
+        "nBondsM",
+        "C4SP3",
+        "minHBa",
+        "minHaaCH",
+        "minHother",
+        "mindssC",
+        "maxHaaCH",
+        "maxHother",
+        "ETA_Epsilon_1",
+        "ETA_Epsilon_2",
+        "ETA_Epsilon_4",
+        "ETA_Epsilon_5",
+        "ETA_dEpsilon_A",
+        "ETA_dEpsilon_B",
+        "ETA_dEpsilon_C",
+        "ETA_Psi_1",
+        "ETA_dPsi_A",
+        "ETA_BetaP",
+        "ETA_BetaP_s",
+        "ETA_Beta_ns",
+        "ETA_BetaP_ns",
+        "ETA_EtaP",
+        "ETA_EtaP_F",
+        "ETA_EtaP_L",
+        "ETA_EtaP_F_L",
+        "FMF",
+        "HybRatio",
+        "MLFER_E",
+        "WTPT-3",
+        "XLogP"
+      ],
+      "dimension": 30,
+      "distance": "nearest training compound RMS standardized Euclidean distance",
+      "training_reference": "leave-one-out nearest-neighbor distribution",
+      "thresholds": {
+        "q90": 0.3897424793353463,
+        "q95": 0.4739357042715676,
+        "q99": 0.7854596253968458
+      },
+      "range_gate": "all selected descriptors within training min/max",
+      "test_pass_counts": {
+        "pass_q90": 32,
+        "pass_q95": 37,
+        "pass_q99": 43
+      }
+    }
+  },
+  "baseline_existing_compound": {
+    "candidate_id": "TRAIN1570",
+    "source_design_type": "OBSERVED_TRAINING_COMPOUND",
+    "SMILES": "C[C@@H]1Cc2c([nH]c3ccccc23)[C@H](N1CC(C)(C)F)c4c(F)cc(\\C=C\\C(=O)O)cc4F",
+    "observed_pIC50": 9.86012091359876,
+    "observed_IC50_nM": 0.13800000000000126,
+    "observed_favorable_count_primary": 3,
+    "observed_favorable_count_cyp3a4_alternate": 2,
+    "scope": "best observed training compound satisfying at least three primary favorable labels"
+  },
+  "elite_profile_definition": {
+    "observed_admet_gate": "at least 3 primary favorable labels",
+    "activity_cutoff": 6.95860731484177,
+    "elite_count": 160,
+    "range": "10th-90th percentile for each final Q1 descriptor"
+  },
+  "search_budget": {
+    "candidate_count": 50,
+    "evaluated_candidates": 50,
+    "method": "exhaustive enumeration"
+  },
+  "solver_status": "OPTIMAL",
+  "solver_status_scope": "exact only within the fixed 50-compound surrogate-ranking domain",
+  "selected_candidate": "TEST026",
+  "feasible_candidate_count": 1,
+  "sensitivity": [
+    {
+      "cyp3a4_direction": "CYP3A4_1_ASSUMED_FAVORABLE",
+      "uncertainty_penalty": 0.0,
+      "feasible_count": 1,
+      "top_candidate": "TEST026",
+      "objective": 6.413679377515274
+    },
+    {
+      "cyp3a4_direction": "CYP3A4_1_ASSUMED_FAVORABLE",
+      "uncertainty_penalty": 1.0,
+      "feasible_count": 1,
+      "top_candidate": "TEST026",
+      "objective": 6.298183180028471
+    },
+    {
+      "cyp3a4_direction": "CYP3A4_1_ASSUMED_FAVORABLE",
+      "uncertainty_penalty": 2.0,
+      "feasible_count": 1,
+      "top_candidate": "TEST026",
+      "objective": 6.182686982541669
+    },
+    {
+      "cyp3a4_direction": "CYP3A4_0_ALTERNATE_FAVORABLE",
+      "uncertainty_penalty": 0.0,
+      "feasible_count": 1,
+      "top_candidate": "TEST019",
+      "objective": 7.13898144933505
+    },
+    {
+      "cyp3a4_direction": "CYP3A4_0_ALTERNATE_FAVORABLE",
+      "uncertainty_penalty": 1.0,
+      "feasible_count": 1,
+      "top_candidate": "TEST019",
+      "objective": 6.9927662489924955
+    },
+    {
+      "cyp3a4_direction": "CYP3A4_0_ALTERNATE_FAVORABLE",
+      "uncertainty_penalty": 2.0,
+      "feasible_count": 1,
+      "top_candidate": "TEST019",
+      "objective": 6.84655104864994
+    }
+  ],
+  "synthetic_optimization_check": {
+    "checks": {
+      "hard_gate_excludes_high_infeasible": true,
+      "surrogate_boundary_excludes_ood": true,
+      "candidate_update_keeps_best_feasible": true,
+      "objective_order_correct": true
+    },
+    "trace": [
+      {
+        "iteration": 1,
+        "candidate_id": "FEASIBLE_BEST",
+        "source_design_type": "SYNTHETIC",
+        "feasible": true,
+        "objective": 7.0,
+        "incumbent_before": null,
+        "incumbent_after": 7.0,
+        "accepted": true,
+        "reason": "FEASIBLE_OBJECTIVE_IMPROVEMENT"
+      },
+      {
+        "iteration": 2,
+        "candidate_id": "FEASIBLE_LOWER",
+        "source_design_type": "SYNTHETIC",
+        "feasible": true,
+        "objective": 6.0,
+        "incumbent_before": 7.0,
+        "incumbent_after": 7.0,
+        "accepted": false,
+        "reason": "NO_IMPROVEMENT"
+      },
+      {
+        "iteration": 3,
+        "candidate_id": "HIGH_BUT_ADMET_FAIL",
+        "source_design_type": "SYNTHETIC",
+        "feasible": false,
+        "objective": 10.0,
+        "incumbent_before": 7.0,
+        "incumbent_after": 7.0,
+        "accepted": false,
+        "reason": "HARD_GATE_FAILED"
+      },
+      {
+        "iteration": 4,
+        "candidate_id": "HIGH_BUT_OOD",
+        "source_design_type": "SYNTHETIC",
+        "feasible": false,
+        "objective": 9.0,
+        "incumbent_before": 7.0,
+        "incumbent_after": 7.0,
+        "accepted": false,
+        "reason": "HARD_GATE_FAILED"
+      }
+    ],
+    "status": "PASS"
+  },
+  "claim_boundary": "SURROGATE; no new molecule, structure reconstruction, synthesis feasibility, true activity, or true ADMET is claimed",
+  "direction_robust_baseline_existing_compound": {
+    "candidate_id": "TRAIN1423",
+    "source_design_type": "OBSERVED_TRAINING_COMPOUND",
+    "SMILES": "C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1C[C@@H](O)[C@@H]2O",
+    "observed_pIC50": 8.77185639240226,
+    "observed_IC50_nM": 1.6909999999999945,
+    "observed_favorable_count_primary": 4,
+    "observed_favorable_count_cyp3a4_alternate": 3,
+    "scope": "best observed training compound satisfying at least three favorable labels under both CYP3A4 direction assumptions"
+  }
+}

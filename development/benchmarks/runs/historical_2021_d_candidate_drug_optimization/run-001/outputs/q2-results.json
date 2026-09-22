@@ -1,0 +1,3322 @@
+{
+  "target": "pIC50",
+  "target_type": "continuous; provided transformation verified against IC50_nM",
+  "outer_protocol": "5-fold shuffled KFold, fixed seed; same rows and folds for every model",
+  "inner_protocol": "3-fold KFold grid search inside each outer training fold",
+  "selection_rule": "lowest mean outer-fold RMSE; choose Ridge when candidate means differ by <=0.02",
+  "selected_model": "extra_trees",
+  "fold_metrics": [
+    {
+      "model": "mean",
+      "fold": 1,
+      "mae": 1.1933975359127984,
+      "rmse": 1.4297289303852305,
+      "r2": -0.00315016591588968,
+      "train_mae": 1.188629841593109,
+      "train_rmse": 1.4210026964666165,
+      "train_r2": 0.0,
+      "search_candidates": 1
+    },
+    {
+      "model": "median",
+      "fold": 1,
+      "mae": 1.1935785282332592,
+      "rmse": 1.4299237453573592,
+      "r2": -0.0034235631760595187,
+      "train_mae": 1.188623488691445,
+      "train_rmse": 1.4210067744962473,
+      "train_r2": -5.73965903472029e-06,
+      "search_candidates": 1
+    },
+    {
+      "model": "ridge",
+      "fold": 1,
+      "mae": 0.8092712735291047,
+      "rmse": 1.0010017945286522,
+      "r2": 0.5082682494270576,
+      "train_mae": 0.8263346756897892,
+      "train_rmse": 1.0281745967111509,
+      "train_r2": 0.4764671531042428,
+      "best_inner_rmse": 1.033818034756041,
+      "best_params": "{\"model__alpha\": 0.1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C2SP2\", \"SP-5\", \"SP-6\", \"CrippenLogP\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "extra_trees",
+      "fold": 1,
+      "mae": 0.6008486484689076,
+      "rmse": 0.801026588484801,
+      "r2": 0.6851146883419459,
+      "train_mae": 0.01905265150877406,
+      "train_rmse": 0.1051405360839684,
+      "train_r2": 0.9945254229810409,
+      "best_inner_rmse": 0.7577058826300519,
+      "best_params": "{\"model__max_features\": 0.5, \"model__min_samples_leaf\": 1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C2SP2\", \"SP-5\", \"SP-6\", \"CrippenLogP\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "mean",
+      "fold": 2,
+      "mae": 1.172866023574701,
+      "rmse": 1.4178787917915405,
+      "r2": -0.0051696937251783925,
+      "train_mae": 1.1937210075448994,
+      "train_rmse": 1.4240387601673654,
+      "train_r2": 0.0,
+      "search_candidates": 1
+    },
+    {
+      "model": "median",
+      "fold": 2,
+      "mae": 1.172958740380294,
+      "rmse": 1.4180183290514599,
+      "r2": -0.005367546358622688,
+      "train_mae": 1.193716922565839,
+      "train_rmse": 1.4240400646908595,
+      "train_r2": -1.8321468884252567e-06,
+      "search_candidates": 1
+    },
+    {
+      "model": "ridge",
+      "fold": 2,
+      "mae": 0.8330984516725125,
+      "rmse": 1.0281457760734238,
+      "r2": 0.4714688793857237,
+      "train_mae": 0.8241758326098859,
+      "train_rmse": 1.0281795256613502,
+      "train_r2": 0.47869212892645585,
+      "best_inner_rmse": 1.0314764510585077,
+      "best_params": "{\"model__alpha\": 0.1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C2SP2\", \"SP-5\", \"CrippenLogP\", \"nHaaCH\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "extra_trees",
+      "fold": 2,
+      "mae": 0.5601334778648615,
+      "rmse": 0.7733474919005543,
+      "r2": 0.7009729091773779,
+      "train_mae": 0.01795592738407546,
+      "train_rmse": 0.10250448407911339,
+      "train_r2": 0.9948186598096618,
+      "best_inner_rmse": 0.7681064275299151,
+      "best_params": "{\"model__max_features\": 0.5, \"model__min_samples_leaf\": 1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C2SP2\", \"SP-5\", \"CrippenLogP\", \"nHaaCH\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "mean",
+      "fold": 3,
+      "mae": 1.213758918959126,
+      "rmse": 1.4476932275045995,
+      "r2": -0.0007077878088814771,
+      "train_mae": 1.1834225729275447,
+      "train_rmse": 1.4163582325044952,
+      "train_r2": 0.0,
+      "search_candidates": 1
+    },
+    {
+      "model": "median",
+      "fold": 3,
+      "mae": 1.2139815029474477,
+      "rmse": 1.4479860494283014,
+      "r2": -0.0011126509513288418,
+      "train_mae": 1.1834122031187504,
+      "train_rmse": 1.416391939539935,
+      "train_r2": -4.7597332020643535e-05,
+      "search_candidates": 1
+    },
+    {
+      "model": "ridge",
+      "fold": 3,
+      "mae": 0.8260989963496884,
+      "rmse": 1.0601793344189254,
+      "r2": 0.4633231486700947,
+      "train_mae": 0.7832794109712199,
+      "train_rmse": 0.9814592893286413,
+      "train_r2": 0.5198263131586259,
+      "best_inner_rmse": 1.0143260411260757,
+      "best_params": "{\"model__alpha\": 0.1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C1SP2\", \"C2SP2\", \"SP-5\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxHsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "extra_trees",
+      "fold": 3,
+      "mae": 0.49791978298601264,
+      "rmse": 0.7057695868533926,
+      "r2": 0.7621626410457696,
+      "train_mae": 0.024681823882641635,
+      "train_rmse": 0.13010473121079477,
+      "train_r2": 0.9915619915259076,
+      "best_inner_rmse": 0.7688688796700468,
+      "best_params": "{\"model__max_features\": 0.5, \"model__min_samples_leaf\": 1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C1SP2\", \"C2SP2\", \"SP-5\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxHsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "mean",
+      "fold": 4,
+      "mae": 1.1790632350875925,
+      "rmse": 1.4221339731053775,
+      "r2": -0.002397636778939116,
+      "train_mae": 1.1921968324085293,
+      "train_rmse": 1.4228801313255794,
+      "train_r2": 0.0,
+      "search_candidates": 1
+    },
+    {
+      "model": "median",
+      "fold": 4,
+      "mae": 1.1794485701137931,
+      "rmse": 1.4225082531843427,
+      "r2": -0.002925332261536573,
+      "train_mae": 1.1921826637792559,
+      "train_rmse": 1.4228987219363338,
+      "train_r2": -2.6131129098994066e-05,
+      "search_candidates": 1
+    },
+    {
+      "model": "ridge",
+      "fold": 4,
+      "mae": 0.8097463701927529,
+      "rmse": 1.0227574990674266,
+      "r2": 0.4815530110855053,
+      "train_mae": 0.7844551849249033,
+      "train_rmse": 0.993279671436618,
+      "train_r2": 0.5126887198998946,
+      "best_inner_rmse": 1.0256038609780325,
+      "best_params": "{\"model__alpha\": 10.0}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C1SP2\", \"C2SP2\", \"SwHBa\", \"SaaCH\", \"minHsOH\", \"minsssN\", \"minsOH\", \"maxHsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "extra_trees",
+      "fold": 4,
+      "mae": 0.5266829706542454,
+      "rmse": 0.6957115832892639,
+      "r2": 0.76010705284891,
+      "train_mae": 0.025873470703186987,
+      "train_rmse": 0.1310351683953513,
+      "train_r2": 0.9915191552677174,
+      "best_inner_rmse": 0.770576522897742,
+      "best_params": "{\"model__max_features\": 0.5, \"model__min_samples_leaf\": 1}",
+      "selected_features": "[\"AMR\", \"nC\", \"BCUTp-1h\", \"C1SP2\", \"C2SP2\", \"SwHBa\", \"SaaCH\", \"minHsOH\", \"minsssN\", \"minsOH\", \"maxHsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-22\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "mean",
+      "fold": 5,
+      "mae": 1.1908931600654342,
+      "rmse": 1.3982959418835286,
+      "r2": -4.6206974967155645e-05,
+      "train_mae": 1.1891448544038248,
+      "train_rmse": 1.428675905470134,
+      "train_r2": 0.0,
+      "search_candidates": 1
+    },
+    {
+      "model": "median",
+      "fold": 5,
+      "mae": 1.1913130058568484,
+      "rmse": 1.398503233329313,
+      "r2": -0.0003427341744450807,
+      "train_mae": 1.1890904248363563,
+      "train_rmse": 1.4287698177815285,
+      "train_r2": -0.00013147194215545888,
+      "search_candidates": 1
+    },
+    {
+      "model": "ridge",
+      "fold": 5,
+      "mae": 0.7947757322351322,
+      "rmse": 1.0013697187530748,
+      "r2": 0.4871258844768783,
+      "train_mae": 0.8020836095780667,
+      "train_rmse": 1.0075753776245862,
+      "train_r2": 0.5026207637746645,
+      "best_inner_rmse": 1.015752595232819,
+      "best_params": "{\"model__alpha\": 0.1}",
+      "selected_features": "[\"AMR\", \"nC\", \"ATSp1\", \"BCUTp-1h\", \"C1SP2\", \"C2SP2\", \"SP-5\", \"CrippenLogP\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    },
+    {
+      "model": "extra_trees",
+      "fold": 5,
+      "mae": 0.5049720654363015,
+      "rmse": 0.7142817706824203,
+      "r2": 0.7390477741719409,
+      "train_mae": 0.02180655239162712,
+      "train_rmse": 0.12445774647720463,
+      "train_r2": 0.9924111420225639,
+      "best_inner_rmse": 0.7516136434996813,
+      "best_params": "{\"model__max_features\": 1.0, \"model__min_samples_leaf\": 1}",
+      "selected_features": "[\"AMR\", \"nC\", \"ATSp1\", \"BCUTp-1h\", \"C1SP2\", \"C2SP2\", \"SP-5\", \"CrippenLogP\", \"SwHBa\", \"SaaCH\", \"minsssN\", \"minsOH\", \"maxsssN\", \"maxsOH\", \"hmin\", \"LipoaffinityIndex\", \"MLogP\", \"MDEC-23\", \"n6Ring\", \"nT6Ring\"]",
+      "search_candidates": 4
+    }
+  ],
+  "summary": [
+    {
+      "model": "extra_trees",
+      "fold_count": 5,
+      "mae_mean": 0.5381113890820657,
+      "mae_std": 0.042617850807406876,
+      "mae_median": 0.5266829706542454,
+      "mae_min": 0.49791978298601264,
+      "mae_max": 0.6008486484689076,
+      "rmse_mean": 0.7380274042420865,
+      "rmse_std": 0.04639896660000346,
+      "rmse_median": 0.7142817706824203,
+      "rmse_min": 0.6957115832892639,
+      "rmse_max": 0.801026588484801,
+      "r2_mean": 0.7294810131171887,
+      "r2_std": 0.034923662447885084,
+      "r2_median": 0.7390477741719409,
+      "r2_min": 0.6851146883419459,
+      "r2_max": 0.7621626410457696,
+      "train_mae_mean": 0.021874085174061052,
+      "train_mae_std": 0.0034349487018653763,
+      "train_mae_median": 0.02180655239162712,
+      "train_mae_min": 0.01795592738407546,
+      "train_mae_max": 0.025873470703186987,
+      "train_rmse_mean": 0.11864853324928648,
+      "train_rmse_std": 0.013797793948034064,
+      "train_rmse_median": 0.12445774647720463,
+      "train_rmse_min": 0.10250448407911339,
+      "train_rmse_max": 0.1310351683953513,
+      "train_r2_mean": 0.9929672743213784,
+      "train_r2_std": 0.0015997349104180608,
+      "train_r2_median": 0.9924111420225639,
+      "train_r2_min": 0.9915191552677174,
+      "train_r2_max": 0.9948186598096618,
+      "search_candidates_mean": 4.0,
+      "search_candidates_std": 0.0,
+      "search_candidates_median": 4.0,
+      "search_candidates_min": 4.0,
+      "search_candidates_max": 4.0,
+      "best_inner_rmse_mean": 0.7633742712454874,
+      "best_inner_rmse_std": 0.00829004596146661,
+      "best_inner_rmse_median": 0.7681064275299151,
+      "best_inner_rmse_min": 0.7516136434996813,
+      "best_inner_rmse_max": 0.770576522897742
+    },
+    {
+      "model": "mean",
+      "fold_count": 5,
+      "mae_mean": 1.1899957747199306,
+      "mae_std": 0.015732236815807293,
+      "mae_median": 1.1908931600654342,
+      "mae_min": 1.172866023574701,
+      "mae_max": 1.213758918959126,
+      "rmse_mean": 1.423146172934055,
+      "rmse_std": 0.01797355292929403,
+      "rmse_median": 1.4221339731053775,
+      "rmse_min": 1.3982959418835286,
+      "rmse_max": 1.4476932275045995,
+      "r2_mean": -0.0022942982407711645,
+      "r2_std": 0.0020360511543433784,
+      "r2_median": -0.002397636778939116,
+      "r2_min": -0.0051696937251783925,
+      "r2_max": -4.6206974967155645e-05,
+      "train_mae_mean": 1.1894230217755815,
+      "train_mae_std": 0.003964801551376705,
+      "train_mae_median": 1.1891448544038248,
+      "train_mae_min": 1.1834225729275447,
+      "train_mae_max": 1.1937210075448994,
+      "train_rmse_mean": 1.4225911451868378,
+      "train_rmse_std": 0.004488200632433062,
+      "train_rmse_median": 1.4228801313255794,
+      "train_rmse_min": 1.4163582325044952,
+      "train_rmse_max": 1.428675905470134,
+      "train_r2_mean": 0.0,
+      "train_r2_std": 0.0,
+      "train_r2_median": 0.0,
+      "train_r2_min": 0.0,
+      "train_r2_max": 0.0,
+      "search_candidates_mean": 1.0,
+      "search_candidates_std": 0.0,
+      "search_candidates_median": 1.0,
+      "search_candidates_min": 1.0,
+      "search_candidates_max": 1.0,
+      "best_inner_rmse_mean": null,
+      "best_inner_rmse_std": null,
+      "best_inner_rmse_median": null,
+      "best_inner_rmse_min": null,
+      "best_inner_rmse_max": null
+    },
+    {
+      "model": "median",
+      "fold_count": 5,
+      "mae_mean": 1.1902560695063285,
+      "mae_std": 0.015740486622276017,
+      "mae_median": 1.1913130058568484,
+      "mae_min": 1.172958740380294,
+      "mae_max": 1.2139815029474477,
+      "rmse_mean": 1.4233879220701553,
+      "rmse_std": 0.018004436507655736,
+      "rmse_median": 1.4225082531843427,
+      "rmse_min": 1.398503233329313,
+      "rmse_max": 1.4479860494283014,
+      "r2_mean": -0.0026343653843985404,
+      "r2_std": 0.001983996064390015,
+      "r2_median": -0.002925332261536573,
+      "r2_min": -0.005367546358622688,
+      "r2_max": -0.0003427341744450807,
+      "train_mae_mean": 1.1894051405983295,
+      "train_mae_std": 0.003966466440814742,
+      "train_mae_median": 1.1890904248363563,
+      "train_mae_min": 1.1834122031187504,
+      "train_mae_max": 1.193716922565839,
+      "train_rmse_mean": 1.422621463688981,
+      "train_rmse_std": 0.004508485091976019,
+      "train_rmse_median": 1.4228987219363338,
+      "train_rmse_min": 1.416391939539935,
+      "train_rmse_max": 1.4287698177815285,
+      "train_r2_mean": -4.2554441839648405e-05,
+      "train_r2_std": 5.2950711383879246e-05,
+      "train_r2_median": -2.6131129098994066e-05,
+      "train_r2_min": -0.00013147194215545888,
+      "train_r2_max": -1.8321468884252567e-06,
+      "search_candidates_mean": 1.0,
+      "search_candidates_std": 0.0,
+      "search_candidates_median": 1.0,
+      "search_candidates_min": 1.0,
+      "search_candidates_max": 1.0,
+      "best_inner_rmse_mean": null,
+      "best_inner_rmse_std": null,
+      "best_inner_rmse_median": null,
+      "best_inner_rmse_min": null,
+      "best_inner_rmse_max": null
+    },
+    {
+      "model": "ridge",
+      "fold_count": 5,
+      "mae_mean": 0.8145981647958381,
+      "mae_std": 0.015160592460480822,
+      "mae_median": 0.8097463701927529,
+      "mae_min": 0.7947757322351322,
+      "mae_max": 0.8330984516725125,
+      "rmse_mean": 1.0226908245683006,
+      "rmse_std": 0.024290702385261008,
+      "rmse_median": 1.0227574990674266,
+      "rmse_min": 1.0010017945286522,
+      "rmse_max": 1.0601793344189254,
+      "r2_mean": 0.48234783460905195,
+      "r2_std": 0.01714365590486496,
+      "r2_median": 0.4815530110855053,
+      "r2_min": 0.4633231486700947,
+      "r2_max": 0.5082682494270576,
+      "train_mae_mean": 0.804065742754773,
+      "train_mae_std": 0.020741838801018708,
+      "train_mae_median": 0.8020836095780667,
+      "train_mae_min": 0.7832794109712199,
+      "train_mae_max": 0.8263346756897892,
+      "train_rmse_mean": 1.007733692152469,
+      "train_rmse_std": 0.020827570124373487,
+      "train_rmse_median": 1.0075753776245862,
+      "train_rmse_min": 0.9814592893286413,
+      "train_rmse_max": 1.0281795256613502,
+      "train_r2_mean": 0.4980590157727768,
+      "train_r2_std": 0.01968462510932555,
+      "train_r2_median": 0.5026207637746645,
+      "train_r2_min": 0.4764671531042428,
+      "train_r2_max": 0.5198263131586259,
+      "search_candidates_mean": 4.0,
+      "search_candidates_std": 0.0,
+      "search_candidates_median": 4.0,
+      "search_candidates_min": 4.0,
+      "search_candidates_max": 4.0,
+      "best_inner_rmse_mean": 1.024195396630295,
+      "best_inner_rmse_std": 0.008892099912427757,
+      "best_inner_rmse_median": 1.0256038609780325,
+      "best_inner_rmse_min": 1.0143260411260757,
+      "best_inner_rmse_max": 1.033818034756041
+    }
+  ],
+  "final_best_params": {
+    "model__max_features": 0.5,
+    "model__min_samples_leaf": 1
+  },
+  "final_inner_best_rmse": 0.7410768358534936,
+  "final_selected_features": [
+    "AMR",
+    "nC",
+    "BCUTp-1h",
+    "C2SP2",
+    "SP-5",
+    "CrippenLogP",
+    "SwHBa",
+    "SaaCH",
+    "minsssN",
+    "minsOH",
+    "maxHsOH",
+    "maxsssN",
+    "maxsOH",
+    "hmin",
+    "LipoaffinityIndex",
+    "MLogP",
+    "MDEC-22",
+    "MDEC-23",
+    "n6Ring",
+    "nT6Ring"
+  ],
+  "final_feature_ranking": [
+    {
+      "descriptor": "MDEC-23",
+      "f_score": 803.4923642505134,
+      "p_value": 1.472346067143801e-148,
+      "selected": true
+    },
+    {
+      "descriptor": "MLogP",
+      "f_score": 767.5771002099807,
+      "p_value": 5.654638003134699e-143,
+      "selected": true
+    },
+    {
+      "descriptor": "LipoaffinityIndex",
+      "f_score": 629.3129754266023,
+      "p_value": 9.1245393078319e-121,
+      "selected": true
+    },
+    {
+      "descriptor": "maxsOH",
+      "f_score": 548.8840074183162,
+      "p_value": 2.7025371365102327e-107,
+      "selected": true
+    },
+    {
+      "descriptor": "minsOH",
+      "f_score": 547.4022174841839,
+      "p_value": 4.8306961659331186e-107,
+      "selected": true
+    },
+    {
+      "descriptor": "nC",
+      "f_score": 527.953228992769,
+      "p_value": 1.0201368437970244e-103,
+      "selected": true
+    },
+    {
+      "descriptor": "nT6Ring",
+      "f_score": 474.6204600710827,
+      "p_value": 1.8246321947307805e-94,
+      "selected": true
+    },
+    {
+      "descriptor": "n6Ring",
+      "f_score": 452.7417726112279,
+      "p_value": 1.3059373110175448e-90,
+      "selected": true
+    },
+    {
+      "descriptor": "minsssN",
+      "f_score": 449.09920943954427,
+      "p_value": 5.769127100199874e-90,
+      "selected": true
+    },
+    {
+      "descriptor": "BCUTp-1h",
+      "f_score": 443.58359179479595,
+      "p_value": 5.494575342526729e-89,
+      "selected": true
+    },
+    {
+      "descriptor": "C2SP2",
+      "f_score": 438.80161362034886,
+      "p_value": 3.894000595243642e-88,
+      "selected": true
+    },
+    {
+      "descriptor": "hmin",
+      "f_score": 438.13077403253766,
+      "p_value": 5.126719845085648e-88,
+      "selected": true
+    },
+    {
+      "descriptor": "AMR",
+      "f_score": 435.0846430840812,
+      "p_value": 1.789079421280804e-87,
+      "selected": true
+    },
+    {
+      "descriptor": "SwHBa",
+      "f_score": 430.17711396070143,
+      "p_value": 1.344518589673833e-86,
+      "selected": true
+    },
+    {
+      "descriptor": "maxsssN",
+      "f_score": 424.015764270589,
+      "p_value": 1.7016344592082862e-85,
+      "selected": true
+    },
+    {
+      "descriptor": "MDEC-22",
+      "f_score": 422.5991881920839,
+      "p_value": 3.0528505677940904e-85,
+      "selected": true
+    },
+    {
+      "descriptor": "SP-5",
+      "f_score": 420.7036689254356,
+      "p_value": 6.67737529905559e-85,
+      "selected": true
+    },
+    {
+      "descriptor": "SaaCH",
+      "f_score": 419.51246885805534,
+      "p_value": 1.0923171219138463e-84,
+      "selected": true
+    },
+    {
+      "descriptor": "CrippenLogP",
+      "f_score": 403.87905227901473,
+      "p_value": 7.137997416161035e-82,
+      "selected": true
+    },
+    {
+      "descriptor": "maxHsOH",
+      "f_score": 395.5895573016714,
+      "p_value": 2.259229551758088e-80,
+      "selected": true
+    },
+    {
+      "descriptor": "C1SP2",
+      "f_score": 391.34917617638285,
+      "p_value": 1.3289976122204944e-79,
+      "selected": false
+    },
+    {
+      "descriptor": "nHaaCH",
+      "f_score": 387.87048701568074,
+      "p_value": 5.700331321687991e-79,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSp4",
+      "f_score": 377.23327566757246,
+      "p_value": 4.960016649214827e-77,
+      "selected": false
+    },
+    {
+      "descriptor": "minHsOH",
+      "f_score": 373.6773179834513,
+      "p_value": 2.2175078669430904e-76,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSp2",
+      "f_score": 373.67047048061403,
+      "p_value": 2.2239168172883665e-76,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSp1",
+      "f_score": 367.8882951023271,
+      "p_value": 2.551645702121152e-75,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-6",
+      "f_score": 362.60959260488016,
+      "p_value": 2.3800090345705973e-74,
+      "selected": false
+    },
+    {
+      "descriptor": "nHother",
+      "f_score": 362.0660661870355,
+      "p_value": 2.996106802486148e-74,
+      "selected": false
+    },
+    {
+      "descriptor": "VAdjMat",
+      "f_score": 354.0325016219678,
+      "p_value": 9.058511855376396e-73,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-3",
+      "f_score": 347.674321761609,
+      "p_value": 1.3567404898784135e-71,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSp3",
+      "f_score": 346.6373185415353,
+      "p_value": 2.1111513223736725e-71,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-7",
+      "f_score": 341.3245192115479,
+      "p_value": 2.040181729599667e-70,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSp5",
+      "f_score": 340.3026083799902,
+      "p_value": 3.158098609631555e-70,
+      "selected": false
+    },
+    {
+      "descriptor": "apol",
+      "f_score": 339.523357624568,
+      "p_value": 4.407383756298371e-70,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-4",
+      "f_score": 335.95261498469443,
+      "p_value": 2.032948193356746e-69,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-1",
+      "f_score": 329.2293275280726,
+      "p_value": 3.640043620431289e-68,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-5",
+      "f_score": 328.04985208027307,
+      "p_value": 6.043712664724998e-68,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-2",
+      "f_score": 321.7096406069967,
+      "p_value": 9.267071257442103e-67,
+      "selected": false
+    },
+    {
+      "descriptor": "nBonds2",
+      "f_score": 320.80853591340605,
+      "p_value": 1.3668582747456247e-66,
+      "selected": false
+    },
+    {
+      "descriptor": "nBonds",
+      "f_score": 316.8258317160092,
+      "p_value": 7.629830607177534e-66,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-3",
+      "f_score": 315.15840527265914,
+      "p_value": 1.568795560895174e-65,
+      "selected": false
+    },
+    {
+      "descriptor": "Zagreb",
+      "f_score": 314.25604162486877,
+      "p_value": 2.317812042601052e-65,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-4",
+      "f_score": 313.6217312802582,
+      "p_value": 3.049835246554272e-65,
+      "selected": false
+    },
+    {
+      "descriptor": "CrippenMR",
+      "f_score": 305.8970188598202,
+      "p_value": 8.681782244487503e-64,
+      "selected": false
+    },
+    {
+      "descriptor": "nwHBa",
+      "f_score": 304.95219392509335,
+      "p_value": 1.308692436612458e-63,
+      "selected": false
+    },
+    {
+      "descriptor": "WTPT-1",
+      "f_score": 303.59677266777305,
+      "p_value": 2.358588386882968e-63,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Alpha",
+      "f_score": 303.23031742645094,
+      "p_value": 2.765932975317952e-63,
+      "selected": false
+    },
+    {
+      "descriptor": "WPOL",
+      "f_score": 297.8258845349471,
+      "p_value": 2.907816864496109e-62,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsS",
+      "f_score": 297.64826105698825,
+      "p_value": 3.1418803656150526e-62,
+      "selected": false
+    },
+    {
+      "descriptor": "nAtom",
+      "f_score": 297.368384494499,
+      "p_value": 3.549550336194495e-62,
+      "selected": false
+    },
+    {
+      "descriptor": "nRing",
+      "f_score": 294.7676785345215,
+      "p_value": 1.103661927081701e-61,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-1",
+      "f_score": 291.94577221768674,
+      "p_value": 3.784930661080305e-61,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_R_L",
+      "f_score": 291.9456452418013,
+      "p_value": 3.785140688368428e-61,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dEpsilon_C",
+      "f_score": 291.3666180861981,
+      "p_value": 4.8751599942950885e-61,
+      "selected": false
+    },
+    {
+      "descriptor": "MLFER_A",
+      "f_score": 289.9430626519834,
+      "p_value": 9.084914336907549e-61,
+      "selected": false
+    },
+    {
+      "descriptor": "McGowan_Volume",
+      "f_score": 286.12373270726846,
+      "p_value": 4.8358422426959426e-60,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-2",
+      "f_score": 286.00500046812,
+      "p_value": 5.094086749575991e-60,
+      "selected": false
+    },
+    {
+      "descriptor": "C3SP2",
+      "f_score": 284.3210491288281,
+      "p_value": 1.0657275013205622e-59,
+      "selected": false
+    },
+    {
+      "descriptor": "VABC",
+      "f_score": 279.27139852070627,
+      "p_value": 9.782330217264667e-59,
+      "selected": false
+    },
+    {
+      "descriptor": "SsOH",
+      "f_score": 279.12019449594516,
+      "p_value": 1.0454565616635633e-58,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSc3",
+      "f_score": 278.6405621945213,
+      "p_value": 1.2908544251590798e-58,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Epsilon_4",
+      "f_score": 278.0873119216939,
+      "p_value": 1.6463743740134926e-58,
+      "selected": false
+    },
+    {
+      "descriptor": "SaasC",
+      "f_score": 276.7106335728415,
+      "p_value": 3.0167666790796383e-58,
+      "selected": false
+    },
+    {
+      "descriptor": "nHeavyAtom",
+      "f_score": 276.5678613643265,
+      "p_value": 3.212385822917148e-58,
+      "selected": false
+    },
+    {
+      "descriptor": "SHaaCH",
+      "f_score": 274.92853485119986,
+      "p_value": 6.610832750464298e-58,
+      "selected": false
+    },
+    {
+      "descriptor": "nHsOH",
+      "f_score": 271.1316034825176,
+      "p_value": 3.5245963289081213e-57,
+      "selected": false
+    },
+    {
+      "descriptor": "maxssCH2",
+      "f_score": 271.11084858165736,
+      "p_value": 3.557017582956053e-57,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-0",
+      "f_score": 270.9235912109253,
+      "p_value": 3.8633684903512625e-57,
+      "selected": false
+    },
+    {
+      "descriptor": "naasC",
+      "f_score": 268.7003109207974,
+      "p_value": 1.0308647985614376e-56,
+      "selected": false
+    },
+    {
+      "descriptor": "nH",
+      "f_score": 266.2573083105103,
+      "p_value": 3.034339133522479e-56,
+      "selected": false
+    },
+    {
+      "descriptor": "mindO",
+      "f_score": 249.7434752464949,
+      "p_value": 4.627287402869839e-53,
+      "selected": false
+    },
+    {
+      "descriptor": "SHother",
+      "f_score": 246.78047051238363,
+      "p_value": 1.734093955973063e-52,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_L",
+      "f_score": 246.32098319362498,
+      "p_value": 2.1287135959637027e-52,
+      "selected": false
+    },
+    {
+      "descriptor": "maxdO",
+      "f_score": 239.19725392002064,
+      "p_value": 5.1414339479892363e-51,
+      "selected": false
+    },
+    {
+      "descriptor": "SaaN",
+      "f_score": 238.80257466842676,
+      "p_value": 6.135365935110033e-51,
+      "selected": false
+    },
+    {
+      "descriptor": "XLogP",
+      "f_score": 238.5428318998359,
+      "p_value": 6.892270905839128e-51,
+      "selected": false
+    },
+    {
+      "descriptor": "naaN",
+      "f_score": 237.5747262287701,
+      "p_value": 1.0634578432724858e-50,
+      "selected": false
+    },
+    {
+      "descriptor": "SP-0",
+      "f_score": 235.83892268861476,
+      "p_value": 2.3155747478563505e-50,
+      "selected": false
+    },
+    {
+      "descriptor": "naAromAtom",
+      "f_score": 233.64341590272136,
+      "p_value": 6.201420516054409e-50,
+      "selected": false
+    },
+    {
+      "descriptor": "SssCH2",
+      "f_score": 231.19536020844973,
+      "p_value": 1.862341882066389e-49,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaaN",
+      "f_score": 230.72293558750104,
+      "p_value": 2.302946396758414e-49,
+      "selected": false
+    },
+    {
+      "descriptor": "SsssN",
+      "f_score": 229.79758769071228,
+      "p_value": 3.491285486130391e-49,
+      "selected": false
+    },
+    {
+      "descriptor": "minHssNH",
+      "f_score": 229.04819018544455,
+      "p_value": 4.890860936249283e-49,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-6",
+      "f_score": 227.65124825783005,
+      "p_value": 9.171198611852204e-49,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHssNH",
+      "f_score": 226.31760183157866,
+      "p_value": 1.672106566840676e-48,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint10",
+      "f_score": 225.8607552266143,
+      "p_value": 2.0542488352780003e-48,
+      "selected": false
+    },
+    {
+      "descriptor": "minaaN",
+      "f_score": 225.3194305119591,
+      "p_value": 2.6217825114579498e-48,
+      "selected": false
+    },
+    {
+      "descriptor": "BCUTc-1l",
+      "f_score": 223.80771046379184,
+      "p_value": 5.183250486793757e-48,
+      "selected": false
+    },
+    {
+      "descriptor": "MW",
+      "f_score": 222.77106171846876,
+      "p_value": 8.273861492411192e-48,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSc4",
+      "f_score": 222.6714834038967,
+      "p_value": 8.654130843280244e-48,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsS2",
+      "f_score": 221.54516163132982,
+      "p_value": 1.4388737076799324e-47,
+      "selected": false
+    },
+    {
+      "descriptor": "C1SP3",
+      "f_score": 220.62184022441568,
+      "p_value": 2.1833072765082027e-47,
+      "selected": false
+    },
+    {
+      "descriptor": "SHsOH",
+      "f_score": 216.71228169902062,
+      "p_value": 1.2787482945570705e-46,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Beta_s",
+      "f_score": 210.44455160279526,
+      "p_value": 2.1902662705087147e-45,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Beta",
+      "f_score": 205.5607415973534,
+      "p_value": 2.015489677719095e-44,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSm2",
+      "f_score": 193.33360717980037,
+      "p_value": 5.3403448217785164e-42,
+      "selected": false
+    },
+    {
+      "descriptor": "Kier1",
+      "f_score": 192.97513160384693,
+      "p_value": 6.292597481618123e-42,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint10",
+      "f_score": 192.5778742343267,
+      "p_value": 7.547698190263714e-42,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSm4",
+      "f_score": 192.34884698925626,
+      "p_value": 8.382194984074904e-42,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHCsats",
+      "f_score": 189.03879706103712,
+      "p_value": 3.820742325602337e-41,
+      "selected": false
+    },
+    {
+      "descriptor": "MLFER_L",
+      "f_score": 187.10698868531787,
+      "p_value": 9.270944770427636e-41,
+      "selected": false
+    },
+    {
+      "descriptor": "bpol",
+      "f_score": 184.86243579108864,
+      "p_value": 2.5994634788286923e-40,
+      "selected": false
+    },
+    {
+      "descriptor": "nHCsats",
+      "f_score": 176.29586114702232,
+      "p_value": 1.3439090309002717e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSm3",
+      "f_score": 176.28827577751213,
+      "p_value": 1.3486222514275928e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "nAromBond",
+      "f_score": 175.64542479595556,
+      "p_value": 1.8145433436301185e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Shape_P",
+      "f_score": 174.62338537841958,
+      "p_value": 2.909027768090106e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "VP-7",
+      "f_score": 173.65879365503807,
+      "p_value": 4.5425772879788976e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_R",
+      "f_score": 173.01447812866508,
+      "p_value": 6.118460489457795e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dEpsilon_A",
+      "f_score": 172.8046047915906,
+      "p_value": 6.741881027512218e-38,
+      "selected": false
+    },
+    {
+      "descriptor": "BCUTc-1h",
+      "f_score": 170.08489931858503,
+      "p_value": 2.3727407672601763e-37,
+      "selected": false
+    },
+    {
+      "descriptor": "naaO",
+      "f_score": 168.908849261483,
+      "p_value": 4.090569613974027e-37,
+      "selected": false
+    },
+    {
+      "descriptor": "nssCH2",
+      "f_score": 168.53810546056113,
+      "p_value": 4.857118105019223e-37,
+      "selected": false
+    },
+    {
+      "descriptor": "SaaO",
+      "f_score": 166.98741919938448,
+      "p_value": 9.966260812904724e-37,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaaO",
+      "f_score": 165.0741682499063,
+      "p_value": 2.4210595696331935e-36,
+      "selected": false
+    },
+    {
+      "descriptor": "minaaO",
+      "f_score": 164.6347031086864,
+      "p_value": 2.968925964419406e-36,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Epsilon_1",
+      "f_score": 163.81582558257,
+      "p_value": 4.342433482931361e-36,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta",
+      "f_score": 161.57961701014096,
+      "p_value": 1.227529549894411e-35,
+      "selected": false
+    },
+    {
+      "descriptor": "Kier2",
+      "f_score": 160.9996884600967,
+      "p_value": 1.60750795137945e-35,
+      "selected": false
+    },
+    {
+      "descriptor": "SHCsats",
+      "f_score": 158.5066238872612,
+      "p_value": 5.129079765037336e-35,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Beta_ns_d",
+      "f_score": 158.40088607137943,
+      "p_value": 5.38796504331459e-35,
+      "selected": false
+    },
+    {
+      "descriptor": "ECCEN",
+      "f_score": 156.99267236046802,
+      "p_value": 1.0383494074569282e-34,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsssCH",
+      "f_score": 155.5791813521474,
+      "p_value": 2.0069449373131996e-34,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Epsilon_2",
+      "f_score": 154.91718629290145,
+      "p_value": 2.733012765321793e-34,
+      "selected": false
+    },
+    {
+      "descriptor": "MLFER_E",
+      "f_score": 152.46399414557268,
+      "p_value": 8.59017917918639e-34,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Epsilon_5",
+      "f_score": 147.74532995360812,
+      "p_value": 7.805960546067383e-33,
+      "selected": false
+    },
+    {
+      "descriptor": "ndO",
+      "f_score": 144.97675641375596,
+      "p_value": 2.856584663345102e-32,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsS3",
+      "f_score": 144.23682909170736,
+      "p_value": 4.041693895955023e-32,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBAcc",
+      "f_score": 142.35358752240055,
+      "p_value": 9.781908532239437e-32,
+      "selected": false
+    },
+    {
+      "descriptor": "maxssNH",
+      "f_score": 136.34717439124964,
+      "p_value": 1.6490399107982372e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_F_L",
+      "f_score": 134.9064506650337,
+      "p_value": 3.2514257723616216e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "minssNH",
+      "f_score": 134.56287051884567,
+      "p_value": 3.823140498384401e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "maxdsN",
+      "f_score": 133.35293645101953,
+      "p_value": 6.764726171507139e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "mindsN",
+      "f_score": 133.350569726577,
+      "p_value": 6.772283832139115e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "WTPT-2",
+      "f_score": 133.2813901822412,
+      "p_value": 6.99696916996284e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-33",
+      "f_score": 133.06005983548877,
+      "p_value": 7.76718733496856e-30,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSm5",
+      "f_score": 132.1472352877488,
+      "p_value": 1.1950086653377914e-29,
+      "selected": false
+    },
+    {
+      "descriptor": "SdO",
+      "f_score": 131.24547841059953,
+      "p_value": 1.829357951863277e-29,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_F",
+      "f_score": 130.59629119607305,
+      "p_value": 2.4859106184772254e-29,
+      "selected": false
+    },
+    {
+      "descriptor": "SdsN",
+      "f_score": 128.51350519621028,
+      "p_value": 6.65425578798075e-29,
+      "selected": false
+    },
+    {
+      "descriptor": "SssO",
+      "f_score": 124.32612052495048,
+      "p_value": 4.833363786374961e-28,
+      "selected": false
+    },
+    {
+      "descriptor": "nsssN",
+      "f_score": 124.30862579768112,
+      "p_value": 4.8736170628987815e-28,
+      "selected": false
+    },
+    {
+      "descriptor": "ndsN",
+      "f_score": 123.4391524428428,
+      "p_value": 7.36048753509831e-28,
+      "selected": false
+    },
+    {
+      "descriptor": "sumI",
+      "f_score": 120.9105288175206,
+      "p_value": 2.4440951473056712e-27,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Beta_ns",
+      "f_score": 118.47094322917413,
+      "p_value": 7.792126910453417e-27,
+      "selected": false
+    },
+    {
+      "descriptor": "VPC-4",
+      "f_score": 112.73616339104925,
+      "p_value": 1.1967072396250936e-25,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsM",
+      "f_score": 111.84244820553717,
+      "p_value": 1.8331845408995877e-25,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_EtaP",
+      "f_score": 110.20190705468796,
+      "p_value": 4.01273604021071e-25,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEN-23",
+      "f_score": 107.90685562307077,
+      "p_value": 1.202096019584461e-24,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBd",
+      "f_score": 107.51950498316502,
+      "p_value": 1.446843341801417e-24,
+      "selected": false
+    },
+    {
+      "descriptor": "minssCH2",
+      "f_score": 106.56423939619792,
+      "p_value": 2.2854849979225575e-24,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaaCH",
+      "f_score": 105.55318096686574,
+      "p_value": 3.708932173655787e-24,
+      "selected": false
+    },
+    {
+      "descriptor": "maxssO",
+      "f_score": 104.72790299215613,
+      "p_value": 5.507720361783997e-24,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsD2",
+      "f_score": 103.50570406132297,
+      "p_value": 9.895412671085248e-24,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsD",
+      "f_score": 103.36662305052936,
+      "p_value": 1.0577958041022958e-23,
+      "selected": false
+    },
+    {
+      "descriptor": "fragC",
+      "f_score": 102.80497153488112,
+      "p_value": 1.384862296799216e-23,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dPsi_A",
+      "f_score": 101.40581220354672,
+      "p_value": 2.7104846204619385e-23,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Psi_1",
+      "f_score": 99.38703914822005,
+      "p_value": 7.149133604952092e-23,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaasC",
+      "f_score": 95.81119289614642,
+      "p_value": 3.9952807163626457e-22,
+      "selected": false
+    },
+    {
+      "descriptor": "VPC-5",
+      "f_score": 94.7199939843687,
+      "p_value": 6.759301228044155e-22,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEN-22",
+      "f_score": 94.52910587323069,
+      "p_value": 7.4107800016937265e-22,
+      "selected": false
+    },
+    {
+      "descriptor": "minssO",
+      "f_score": 92.04345858849919,
+      "p_value": 2.458344485955403e-21,
+      "selected": false
+    },
+    {
+      "descriptor": "VPC-6",
+      "f_score": 91.67690882881597,
+      "p_value": 2.9343055191426983e-21,
+      "selected": false
+    },
+    {
+      "descriptor": "nT7Ring",
+      "f_score": 88.29708320146528,
+      "p_value": 1.5032298548764933e-20,
+      "selected": false
+    },
+    {
+      "descriptor": "nAtomLAC",
+      "f_score": 87.52755567835895,
+      "p_value": 2.18159143720492e-20,
+      "selected": false
+    },
+    {
+      "descriptor": "SHssNH",
+      "f_score": 86.73389540336406,
+      "p_value": 3.2038589057460893e-20,
+      "selected": false
+    },
+    {
+      "descriptor": "nsssCH",
+      "f_score": 85.1295965659996,
+      "p_value": 6.970942158762587e-20,
+      "selected": false
+    },
+    {
+      "descriptor": "VCH-6",
+      "f_score": 84.94002663847948,
+      "p_value": 7.642011777293423e-20,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint10",
+      "f_score": 84.78124698119338,
+      "p_value": 8.253615987933394e-20,
+      "selected": false
+    },
+    {
+      "descriptor": "n7Ring",
+      "f_score": 83.94314373061981,
+      "p_value": 1.239339625862655e-19,
+      "selected": false
+    },
+    {
+      "descriptor": "SPC-6",
+      "f_score": 83.77871378040903,
+      "p_value": 1.3422647707082207e-19,
+      "selected": false
+    },
+    {
+      "descriptor": "nssO",
+      "f_score": 83.053118256404,
+      "p_value": 1.9088611908046032e-19,
+      "selected": false
+    },
+    {
+      "descriptor": "Kier3",
+      "f_score": 80.8996827799426,
+      "p_value": 5.433374891820281e-19,
+      "selected": false
+    },
+    {
+      "descriptor": "VC-3",
+      "f_score": 79.5174829920681,
+      "p_value": 1.0641130852135978e-18,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_BetaP_s",
+      "f_score": 78.86210239325163,
+      "p_value": 1.4638366596876135e-18,
+      "selected": false
+    },
+    {
+      "descriptor": "C2SP3",
+      "f_score": 77.54561354774536,
+      "p_value": 2.778998469520965e-18,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_B_RC",
+      "f_score": 75.27151688506342,
+      "p_value": 8.420647389737624e-18,
+      "selected": false
+    },
+    {
+      "descriptor": "ALogP",
+      "f_score": 72.25907111441596,
+      "p_value": 3.666291165955443e-17,
+      "selected": false
+    },
+    {
+      "descriptor": "SC-3",
+      "f_score": 71.89139853899746,
+      "p_value": 4.3882438749835365e-17,
+      "selected": false
+    },
+    {
+      "descriptor": "nN",
+      "f_score": 70.84219690215899,
+      "p_value": 7.330979480243151e-17,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint4",
+      "f_score": 70.24639790058521,
+      "p_value": 9.812774584394544e-17,
+      "selected": false
+    },
+    {
+      "descriptor": "WTPT-5",
+      "f_score": 69.12741344990569,
+      "p_value": 1.6972938737404594e-16,
+      "selected": false
+    },
+    {
+      "descriptor": "SPC-4",
+      "f_score": 68.25056436003347,
+      "p_value": 2.608295631835106e-16,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint10",
+      "f_score": 68.19696242145001,
+      "p_value": 2.677733466423278e-16,
+      "selected": false
+    },
+    {
+      "descriptor": "nBase",
+      "f_score": 65.13654430544668,
+      "p_value": 1.2021602754891282e-15,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint4",
+      "f_score": 62.668399519568155,
+      "p_value": 4.04549675588636e-15,
+      "selected": false
+    },
+    {
+      "descriptor": "nF11Ring",
+      "f_score": 61.29339458955838,
+      "p_value": 7.961198849437227e-15,
+      "selected": false
+    },
+    {
+      "descriptor": "SPC-5",
+      "f_score": 59.885577259969956,
+      "p_value": 1.5933477789434047e-14,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_EtaP_B_RC",
+      "f_score": 57.08792519567216,
+      "p_value": 6.339809096393321e-14,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_EtaP_B",
+      "f_score": 56.65322707597289,
+      "p_value": 7.859289317638184e-14,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Epsilon_3",
+      "f_score": 56.4721974493909,
+      "p_value": 8.595086457089574e-14,
+      "selected": false
+    },
+    {
+      "descriptor": "mindssC",
+      "f_score": 56.311621977083256,
+      "p_value": 9.305298912549728e-14,
+      "selected": false
+    },
+    {
+      "descriptor": "BCUTw-1l",
+      "f_score": 54.39059577796486,
+      "p_value": 2.4075087772858764e-13,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint6",
+      "f_score": 52.67014939801694,
+      "p_value": 5.647301560481616e-13,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBd",
+      "f_score": 50.34440457321823,
+      "p_value": 1.791528893239303e-12,
+      "selected": false
+    },
+    {
+      "descriptor": "ndssC",
+      "f_score": 47.80930258308547,
+      "p_value": 6.322337180143417e-12,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_EtaP_L",
+      "f_score": 47.25867012533585,
+      "p_value": 8.317481666402336e-12,
+      "selected": false
+    },
+    {
+      "descriptor": "SCH-6",
+      "f_score": 46.98679743541842,
+      "p_value": 9.524140793645507e-12,
+      "selected": false
+    },
+    {
+      "descriptor": "SssNH",
+      "f_score": 45.539797447081654,
+      "p_value": 1.9597746592751336e-11,
+      "selected": false
+    },
+    {
+      "descriptor": "n5Ring",
+      "f_score": 45.37893395213675,
+      "p_value": 2.1235897637112062e-11,
+      "selected": false
+    },
+    {
+      "descriptor": "nTRing",
+      "f_score": 43.62862926815596,
+      "p_value": 5.090527123629192e-11,
+      "selected": false
+    },
+    {
+      "descriptor": "nHssNH",
+      "f_score": 42.68467510953364,
+      "p_value": 8.162064253706346e-11,
+      "selected": false
+    },
+    {
+      "descriptor": "nRotB",
+      "f_score": 40.81440167713399,
+      "p_value": 2.0826405706800895e-10,
+      "selected": false
+    },
+    {
+      "descriptor": "MLFER_BO",
+      "f_score": 40.81166713477854,
+      "p_value": 2.0854976204915888e-10,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint7",
+      "f_score": 40.01019799568886,
+      "p_value": 3.117320601550462e-10,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_BetaP",
+      "f_score": 39.46491970098448,
+      "p_value": 4.098598025688751e-10,
+      "selected": false
+    },
+    {
+      "descriptor": "BCUTp-1l",
+      "f_score": 38.766381912035556,
+      "p_value": 5.820985315468409e-10,
+      "selected": false
+    },
+    {
+      "descriptor": "SCH-5",
+      "f_score": 37.629513783195584,
+      "p_value": 1.0308915358677386e-09,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dAlpha_B",
+      "f_score": 36.08049629066698,
+      "p_value": 2.248685469412112e-09,
+      "selected": false
+    },
+    {
+      "descriptor": "minssS",
+      "f_score": 35.59877349590698,
+      "p_value": 2.866745651019362e-09,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint4",
+      "f_score": 34.931455865991474,
+      "p_value": 4.014034963488607e-09,
+      "selected": false
+    },
+    {
+      "descriptor": "MLFER_BH",
+      "f_score": 34.56216241202265,
+      "p_value": 4.836539820856671e-09,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_EtaP_F_L",
+      "f_score": 32.191990611941065,
+      "p_value": 1.603263325882386e-08,
+      "selected": false
+    },
+    {
+      "descriptor": "minHCsats",
+      "f_score": 30.668589131596114,
+      "p_value": 3.470539502595055e-08,
+      "selected": false
+    },
+    {
+      "descriptor": "mindsCH",
+      "f_score": 29.849598198177862,
+      "p_value": 5.2602171611377934e-08,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBd",
+      "f_score": 28.1914263015727,
+      "p_value": 1.2227666077564378e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "SssS",
+      "f_score": 27.32007193927055,
+      "p_value": 1.906480102042313e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "VCH-7",
+      "f_score": 27.169825195818525,
+      "p_value": 2.0583513232818645e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dEpsilon_B",
+      "f_score": 27.14203276378991,
+      "p_value": 2.087746831145379e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_BetaP_ns",
+      "f_score": 26.23474144471293,
+      "p_value": 3.317999508199815e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dAlpha_A",
+      "f_score": 25.809831622907037,
+      "p_value": 4.1229796389208353e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "minHsNH2",
+      "f_score": 25.682631143942103,
+      "p_value": 4.4001239021540357e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint6",
+      "f_score": 25.274980759015843,
+      "p_value": 5.42070092067099e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsF",
+      "f_score": 25.241435976177005,
+      "p_value": 5.514586441928718e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint6",
+      "f_score": 25.19496596151446,
+      "p_value": 5.64734963615819e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBa",
+      "f_score": 24.751805554808055,
+      "p_value": 7.086266360995232e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "minsF",
+      "f_score": 24.470090673630377,
+      "p_value": 8.186950745899085e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "minsNH2",
+      "f_score": 24.10980371751082,
+      "p_value": 9.848378472847012e-07,
+      "selected": false
+    },
+    {
+      "descriptor": "LipinskiFailures",
+      "f_score": 23.745777778757933,
+      "p_value": 1.1871267974586662e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "nssS",
+      "f_score": 23.739778725067342,
+      "p_value": 1.1907885138414974e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "minaaCH",
+      "f_score": 23.668464081798067,
+      "p_value": 1.2351961374960288e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHsNH2",
+      "f_score": 23.011434911248458,
+      "p_value": 1.7311861784483164e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsNH2",
+      "f_score": 22.864293012516253,
+      "p_value": 1.8672555263096021e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint2",
+      "f_score": 22.552457388963553,
+      "p_value": 2.192183814359969e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint4",
+      "f_score": 22.527761886300283,
+      "p_value": 2.220223188733018e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBDon",
+      "f_score": 22.135888927675623,
+      "p_value": 2.716583468566935e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint5",
+      "f_score": 22.05576594258144,
+      "p_value": 2.8310562217819632e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBd",
+      "f_score": 21.779424799969448,
+      "p_value": 3.2643523002338436e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "SdssC",
+      "f_score": 21.40637019460197,
+      "p_value": 3.9568730830466995e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "VC-5",
+      "f_score": 21.227715889292604,
+      "p_value": 4.33901913906853e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEN-13",
+      "f_score": 20.85544989100856,
+      "p_value": 5.2586752457954554e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHother",
+      "f_score": 20.20089199847422,
+      "p_value": 7.376482865407899e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "SCH-7",
+      "f_score": 19.640493150354803,
+      "p_value": 9.859861615492558e-06,
+      "selected": false
+    },
+    {
+      "descriptor": "HybRatio",
+      "f_score": 19.56553982451978,
+      "p_value": 1.0250380096002997e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Shape_X",
+      "f_score": 19.504256599163845,
+      "p_value": 1.0581200866155529e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsBr",
+      "f_score": 19.027253221354187,
+      "p_value": 1.3551468130618941e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "TopoPSA",
+      "f_score": 17.662554388008658,
+      "p_value": 2.75547075698702e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBAcc_Lipinski",
+      "f_score": 17.44395983214888,
+      "p_value": 3.0880179576291604e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "maxdsCH",
+      "f_score": 17.34741013393659,
+      "p_value": 3.247482238561258e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "nBr",
+      "f_score": 17.024278540975207,
+      "p_value": 3.843965200260401e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "minaasC",
+      "f_score": 17.01805286178043,
+      "p_value": 3.856480520700115e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "SsF",
+      "f_score": 16.717831222339534,
+      "p_value": 4.511297373431151e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "nF9Ring",
+      "f_score": 16.7123891944228,
+      "p_value": 4.524146832537128e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "minHCsatu",
+      "f_score": 16.675654474914843,
+      "p_value": 4.611851906642599e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEO-12",
+      "f_score": 16.457618357724865,
+      "p_value": 5.1688028359976006e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "PetitjeanNumber",
+      "f_score": 16.277059753856292,
+      "p_value": 5.680956087476646e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "WPATH",
+      "f_score": 16.060647516004146,
+      "p_value": 6.362595933696925e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "minwHBa",
+      "f_score": 16.045958858543493,
+      "p_value": 6.411740695118718e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "VCH-4",
+      "f_score": 15.363276095288379,
+      "p_value": 9.172318943478961e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSm1",
+      "f_score": 15.343226126985638,
+      "p_value": 9.269410555984113e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint7",
+      "f_score": 15.253330344919714,
+      "p_value": 9.717615483700985e-05,
+      "selected": false
+    },
+    {
+      "descriptor": "WTPT-4",
+      "f_score": 15.133860072693775,
+      "p_value": 0.00010347250031000178,
+      "selected": false
+    },
+    {
+      "descriptor": "SCH-4",
+      "f_score": 15.098411968894618,
+      "p_value": 0.00010541860079665025,
+      "selected": false
+    },
+    {
+      "descriptor": "nF",
+      "f_score": 15.061545102823471,
+      "p_value": 0.00010748172240948021,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEO-11",
+      "f_score": 14.57448435007509,
+      "p_value": 0.00013888484014923675,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dBetaP",
+      "f_score": 14.33147371279918,
+      "p_value": 0.00015786241661204704,
+      "selected": false
+    },
+    {
+      "descriptor": "nwHBd",
+      "f_score": 14.133268972419048,
+      "p_value": 0.0001752624769260243,
+      "selected": false
+    },
+    {
+      "descriptor": "StN",
+      "f_score": 13.767117205505155,
+      "p_value": 0.00021265704429074085,
+      "selected": false
+    },
+    {
+      "descriptor": "ntN",
+      "f_score": 13.6764877048113,
+      "p_value": 0.00022309518764936922,
+      "selected": false
+    },
+    {
+      "descriptor": "minHdsCH",
+      "f_score": 13.589367897431758,
+      "p_value": 0.00023361611604229152,
+      "selected": false
+    },
+    {
+      "descriptor": "SdCH2",
+      "f_score": 13.135494605753543,
+      "p_value": 0.00029709467375060975,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint2",
+      "f_score": 12.968991641207326,
+      "p_value": 0.0003245247565424746,
+      "selected": false
+    },
+    {
+      "descriptor": "nHdCH2",
+      "f_score": 12.882826020832084,
+      "p_value": 0.0003397096697117093,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint2",
+      "f_score": 12.776186606394171,
+      "p_value": 0.0003594998930908823,
+      "selected": false
+    },
+    {
+      "descriptor": "nF6Ring",
+      "f_score": 12.508715075091471,
+      "p_value": 0.0004144154692895299,
+      "selected": false
+    },
+    {
+      "descriptor": "C4SP3",
+      "f_score": 12.252691682297042,
+      "p_value": 0.00047491031435528295,
+      "selected": false
+    },
+    {
+      "descriptor": "C1SP1",
+      "f_score": 12.214117629360196,
+      "p_value": 0.00048476850705824094,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBDon_Lipinski",
+      "f_score": 11.995305212764272,
+      "p_value": 0.0005447344988235033,
+      "selected": false
+    },
+    {
+      "descriptor": "maxtN",
+      "f_score": 11.977246483819618,
+      "p_value": 0.0005500065236645938,
+      "selected": false
+    },
+    {
+      "descriptor": "nBondsT",
+      "f_score": 11.967400328010095,
+      "p_value": 0.0005529026775531763,
+      "selected": false
+    },
+    {
+      "descriptor": "mintN",
+      "f_score": 11.961786243519196,
+      "p_value": 0.0005545609010727115,
+      "selected": false
+    },
+    {
+      "descriptor": "SHdCH2",
+      "f_score": 11.640017073669025,
+      "p_value": 0.0006585056709386274,
+      "selected": false
+    },
+    {
+      "descriptor": "minHother",
+      "f_score": 11.63257077194725,
+      "p_value": 0.0006611313865910277,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSc5",
+      "f_score": 11.309996203646904,
+      "p_value": 0.0007856509611848145,
+      "selected": false
+    },
+    {
+      "descriptor": "VC-4",
+      "f_score": 11.111401317876853,
+      "p_value": 0.0008738592992953497,
+      "selected": false
+    },
+    {
+      "descriptor": "WTPT-3",
+      "f_score": 11.08012823472638,
+      "p_value": 0.0008886358282796642,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint3",
+      "f_score": 11.0427201813412,
+      "p_value": 0.0009066436540162067,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-12",
+      "f_score": 10.781637476918744,
+      "p_value": 0.0010430488929569065,
+      "selected": false
+    },
+    {
+      "descriptor": "ntsC",
+      "f_score": 10.648861836118165,
+      "p_value": 0.0011202108648371944,
+      "selected": false
+    },
+    {
+      "descriptor": "MAXDP",
+      "f_score": 10.406616200319105,
+      "p_value": 0.001276208807303924,
+      "selected": false
+    },
+    {
+      "descriptor": "nHCHnX",
+      "f_score": 10.274397847278056,
+      "p_value": 0.001370460693133134,
+      "selected": false
+    },
+    {
+      "descriptor": "nO",
+      "f_score": 10.2713921959527,
+      "p_value": 0.0013726833806735179,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHdsCH",
+      "f_score": 10.24428980984998,
+      "p_value": 0.0013928913853032364,
+      "selected": false
+    },
+    {
+      "descriptor": "MAXDP2",
+      "f_score": 10.07945573150828,
+      "p_value": 0.0015224576499882514,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dBeta",
+      "f_score": 10.044059889324556,
+      "p_value": 0.0015518371394656868,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint9",
+      "f_score": 9.897281478249353,
+      "p_value": 0.0016799316232916982,
+      "selected": false
+    },
+    {
+      "descriptor": "SsssCH",
+      "f_score": 9.8604083634097,
+      "p_value": 0.001713763457899161,
+      "selected": false
+    },
+    {
+      "descriptor": "n4Ring",
+      "f_score": 9.726581719667049,
+      "p_value": 0.0018424654456540544,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_BetaP_ns_d",
+      "f_score": 9.440617237583744,
+      "p_value": 0.0021513486551743835,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBa",
+      "f_score": 9.10641504619974,
+      "p_value": 0.002579751658533892,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_dEpsilon_D",
+      "f_score": 8.759883864600715,
+      "p_value": 0.003116000158103296,
+      "selected": false
+    },
+    {
+      "descriptor": "maxtsC",
+      "f_score": 8.545167910838078,
+      "p_value": 0.003503881163237549,
+      "selected": false
+    },
+    {
+      "descriptor": "mintsC",
+      "f_score": 8.540590475260988,
+      "p_value": 0.003512664924061482,
+      "selected": false
+    },
+    {
+      "descriptor": "gmax",
+      "f_score": 8.530196521576068,
+      "p_value": 0.0035326934601225134,
+      "selected": false
+    },
+    {
+      "descriptor": "nFG12Ring",
+      "f_score": 8.528226056489249,
+      "p_value": 0.003536503515235015,
+      "selected": false
+    },
+    {
+      "descriptor": "StsC",
+      "f_score": 8.500139138436289,
+      "p_value": 0.003591268769451787,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Shape_Y",
+      "f_score": 8.359448868044582,
+      "p_value": 0.003878871546546211,
+      "selected": false
+    },
+    {
+      "descriptor": "ndS",
+      "f_score": 8.353580469627843,
+      "p_value": 0.0038913650369702645,
+      "selected": false
+    },
+    {
+      "descriptor": "nAcid",
+      "f_score": 8.347713153714988,
+      "p_value": 0.003903897189126677,
+      "selected": false
+    },
+    {
+      "descriptor": "nTG12Ring",
+      "f_score": 8.344408115682302,
+      "p_value": 0.003910974593058167,
+      "selected": false
+    },
+    {
+      "descriptor": "SsBr",
+      "f_score": 8.256452974711046,
+      "p_value": 0.00410420063223499,
+      "selected": false
+    },
+    {
+      "descriptor": "SdsCH",
+      "f_score": 8.152125698507604,
+      "p_value": 0.004346053277276937,
+      "selected": false
+    },
+    {
+      "descriptor": "SwHBd",
+      "f_score": 7.948867783082805,
+      "p_value": 0.0048598159983666315,
+      "selected": false
+    },
+    {
+      "descriptor": "SsOm",
+      "f_score": 7.6347614124040595,
+      "p_value": 0.005778569149894071,
+      "selected": false
+    },
+    {
+      "descriptor": "nsOm",
+      "f_score": 7.519747215968595,
+      "p_value": 0.006157770003766586,
+      "selected": false
+    },
+    {
+      "descriptor": "MAXDN2",
+      "f_score": 7.4780086911682915,
+      "p_value": 0.006301586173839979,
+      "selected": false
+    },
+    {
+      "descriptor": "nCl",
+      "f_score": 7.397023265052961,
+      "p_value": 0.00659050207311233,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSc2",
+      "f_score": 7.331024173071922,
+      "p_value": 0.006835946337478788,
+      "selected": false
+    },
+    {
+      "descriptor": "minsBr",
+      "f_score": 7.329814162695578,
+      "p_value": 0.006840532452339514,
+      "selected": false
+    },
+    {
+      "descriptor": "minHdNH",
+      "f_score": 7.319956184341767,
+      "p_value": 0.006878013015695207,
+      "selected": false
+    },
+    {
+      "descriptor": "nHCsatu",
+      "f_score": 7.121601008195285,
+      "p_value": 0.007678475226730687,
+      "selected": false
+    },
+    {
+      "descriptor": "maxwHBd",
+      "f_score": 7.02320874114833,
+      "p_value": 0.00811030017135545,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint3",
+      "f_score": 6.992174631113249,
+      "p_value": 0.00825159908334395,
+      "selected": false
+    },
+    {
+      "descriptor": "nsCH3",
+      "f_score": 6.966439677263146,
+      "p_value": 0.008370681431461385,
+      "selected": false
+    },
+    {
+      "descriptor": "SdS",
+      "f_score": 6.850551874843232,
+      "p_value": 0.008929131345292978,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHdNH",
+      "f_score": 6.83808417925492,
+      "p_value": 0.008991443551411248,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint3",
+      "f_score": 6.83121286432349,
+      "p_value": 0.009025975941511338,
+      "selected": false
+    },
+    {
+      "descriptor": "SHCHnX",
+      "f_score": 6.816185531680247,
+      "p_value": 0.00910197155829105,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-34",
+      "f_score": 6.6780463731718065,
+      "p_value": 0.009832052903675071,
+      "selected": false
+    },
+    {
+      "descriptor": "MLFER_S",
+      "f_score": 6.648490552152091,
+      "p_value": 0.009995906481601036,
+      "selected": false
+    },
+    {
+      "descriptor": "SsCl",
+      "f_score": 6.580979215591932,
+      "p_value": 0.010380771739664698,
+      "selected": false
+    },
+    {
+      "descriptor": "mindNH",
+      "f_score": 6.559794152388894,
+      "p_value": 0.010504651403524285,
+      "selected": false
+    },
+    {
+      "descriptor": "maxdNH",
+      "f_score": 6.366240191466159,
+      "p_value": 0.011709217139767289,
+      "selected": false
+    },
+    {
+      "descriptor": "SC-6",
+      "f_score": 6.2774784487349375,
+      "p_value": 0.012308227355921776,
+      "selected": false
+    },
+    {
+      "descriptor": "BCUTw-1h",
+      "f_score": 6.2079425800169385,
+      "p_value": 0.012799446414811767,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHCHnX",
+      "f_score": 5.922645704813939,
+      "p_value": 0.01503577912772356,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBa",
+      "f_score": 5.8837005063762335,
+      "p_value": 0.015370886436718311,
+      "selected": false
+    },
+    {
+      "descriptor": "minwHBd",
+      "f_score": 5.844865903984955,
+      "p_value": 0.015712714791532644,
+      "selected": false
+    },
+    {
+      "descriptor": "nddssS",
+      "f_score": 5.7377166492958,
+      "p_value": 0.016697120247134645,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_EtaP_F",
+      "f_score": 5.737675094138021,
+      "p_value": 0.016697514127666152,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_AlphaP",
+      "f_score": 5.461402597171188,
+      "p_value": 0.01954066243270084,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsOm",
+      "f_score": 5.446803669878911,
+      "p_value": 0.01970415849300803,
+      "selected": false
+    },
+    {
+      "descriptor": "minsOm",
+      "f_score": 5.37489184494242,
+      "p_value": 0.02053042534777012,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHaaNH",
+      "f_score": 5.2558561696277275,
+      "p_value": 0.02197789490814524,
+      "selected": false
+    },
+    {
+      "descriptor": "SC-4",
+      "f_score": 5.2460116281474996,
+      "p_value": 0.02210224468357236,
+      "selected": false
+    },
+    {
+      "descriptor": "hmax",
+      "f_score": 5.207527454837565,
+      "p_value": 0.022595394151517106,
+      "selected": false
+    },
+    {
+      "descriptor": "SddssS",
+      "f_score": 5.206111874045763,
+      "p_value": 0.02261374999470467,
+      "selected": false
+    },
+    {
+      "descriptor": "minHaaNH",
+      "f_score": 5.152955684385517,
+      "p_value": 0.023314343368259875,
+      "selected": false
+    },
+    {
+      "descriptor": "nssssC",
+      "f_score": 5.1286261581950825,
+      "p_value": 0.02364248121064337,
+      "selected": false
+    },
+    {
+      "descriptor": "nHAvin",
+      "f_score": 4.98752433216356,
+      "p_value": 0.02564249847390584,
+      "selected": false
+    },
+    {
+      "descriptor": "SHaaNH",
+      "f_score": 4.9064290169845854,
+      "p_value": 0.02687079979108308,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsCl",
+      "f_score": 4.880871359057665,
+      "p_value": 0.02727046801460152,
+      "selected": false
+    },
+    {
+      "descriptor": "minHCHnX",
+      "f_score": 4.829330238972968,
+      "p_value": 0.028095400058774478,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHCsatu",
+      "f_score": 4.81040807554606,
+      "p_value": 0.0284047401833816,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-44",
+      "f_score": 4.800437548652626,
+      "p_value": 0.028569163926276682,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBAcc2",
+      "f_score": 4.798029382078217,
+      "p_value": 0.028609025420132345,
+      "selected": false
+    },
+    {
+      "descriptor": "naaS",
+      "f_score": 4.616936269602703,
+      "p_value": 0.03177915501686484,
+      "selected": false
+    },
+    {
+      "descriptor": "minsCl",
+      "f_score": 4.594213388225937,
+      "p_value": 0.032202068732766966,
+      "selected": false
+    },
+    {
+      "descriptor": "SC-5",
+      "f_score": 4.507061109647748,
+      "p_value": 0.033879448996530316,
+      "selected": false
+    },
+    {
+      "descriptor": "VC-6",
+      "f_score": 4.421092319070176,
+      "p_value": 0.03562376804202422,
+      "selected": false
+    },
+    {
+      "descriptor": "minHAvin",
+      "f_score": 4.166179962888784,
+      "p_value": 0.04137156056762451,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHAvin",
+      "f_score": 4.105737049376578,
+      "p_value": 0.04287232751823539,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-14",
+      "f_score": 4.105240400472126,
+      "p_value": 0.04288489365019215,
+      "selected": false
+    },
+    {
+      "descriptor": "ETA_Eta_B",
+      "f_score": 4.034960447236995,
+      "p_value": 0.044702807244040965,
+      "selected": false
+    },
+    {
+      "descriptor": "maxdssC",
+      "f_score": 3.9416023120733716,
+      "p_value": 0.04724420342821663,
+      "selected": false
+    },
+    {
+      "descriptor": "SHsNH2",
+      "f_score": 3.574910925877542,
+      "p_value": 0.05880506838574575,
+      "selected": false
+    },
+    {
+      "descriptor": "SsNH2",
+      "f_score": 3.4840096733072516,
+      "p_value": 0.06211273995758389,
+      "selected": false
+    },
+    {
+      "descriptor": "SHAvin",
+      "f_score": 3.455167522782183,
+      "p_value": 0.06320322375707452,
+      "selected": false
+    },
+    {
+      "descriptor": "naasN",
+      "f_score": 3.344276359752749,
+      "p_value": 0.06759008883786118,
+      "selected": false
+    },
+    {
+      "descriptor": "nHsNH2",
+      "f_score": 3.161869378256905,
+      "p_value": 0.07553087140614875,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint5",
+      "f_score": 3.129599004874063,
+      "p_value": 0.07703719315678159,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-24",
+      "f_score": 2.9291606211449106,
+      "p_value": 0.08714995703183899,
+      "selected": false
+    },
+    {
+      "descriptor": "maxssssC",
+      "f_score": 2.89633877484793,
+      "p_value": 0.08893861359914605,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-13",
+      "f_score": 2.8694646677482036,
+      "p_value": 0.09043280630515178,
+      "selected": false
+    },
+    {
+      "descriptor": "nAtomLC",
+      "f_score": 2.8067653538225388,
+      "p_value": 0.09402600832388684,
+      "selected": false
+    },
+    {
+      "descriptor": "minsssCH",
+      "f_score": 2.7548774700847196,
+      "p_value": 0.09711724125587304,
+      "selected": false
+    },
+    {
+      "descriptor": "naaaC",
+      "f_score": 2.622861202271262,
+      "p_value": 0.10549425027310474,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint9",
+      "f_score": 2.55107677635896,
+      "p_value": 0.11037933021020624,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBa",
+      "f_score": 2.4906263936392894,
+      "p_value": 0.11468652051483165,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEN-12",
+      "f_score": 2.4507676066795017,
+      "p_value": 0.1176278572956173,
+      "selected": false
+    },
+    {
+      "descriptor": "maxwHBa",
+      "f_score": 2.4501580216010046,
+      "p_value": 0.11767348353884106,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHaaCH",
+      "f_score": 2.4057523396510745,
+      "p_value": 0.12105045473652046,
+      "selected": false
+    },
+    {
+      "descriptor": "maxsCH3",
+      "f_score": 2.3273197176062457,
+      "p_value": 0.12728094630164088,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint8",
+      "f_score": 2.316127726889273,
+      "p_value": 0.1281987368741393,
+      "selected": false
+    },
+    {
+      "descriptor": "VCH-5",
+      "f_score": 2.2281409003750965,
+      "p_value": 0.13567678251162577,
+      "selected": false
+    },
+    {
+      "descriptor": "ALogp2",
+      "f_score": 2.156123340469638,
+      "p_value": 0.14216204018838313,
+      "selected": false
+    },
+    {
+      "descriptor": "nHdsCH",
+      "f_score": 2.0083354320998925,
+      "p_value": 0.15659484411470875,
+      "selected": false
+    },
+    {
+      "descriptor": "nHaaNH",
+      "f_score": 1.9807832543157529,
+      "p_value": 0.15946551386350397,
+      "selected": false
+    },
+    {
+      "descriptor": "n3Ring",
+      "f_score": 1.9696616397391977,
+      "p_value": 0.16064122211121495,
+      "selected": false
+    },
+    {
+      "descriptor": "nF8Ring",
+      "f_score": 1.9028488213708745,
+      "p_value": 0.16791619532812407,
+      "selected": false
+    },
+    {
+      "descriptor": "minHaaCH",
+      "f_score": 1.8579621457412299,
+      "p_value": 0.17301579361569627,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEN-11",
+      "f_score": 1.8344393587618715,
+      "p_value": 0.17575925394469008,
+      "selected": false
+    },
+    {
+      "descriptor": "SHdNH",
+      "f_score": 1.7433025014080386,
+      "p_value": 0.1868741440091151,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEC-11",
+      "f_score": 1.70133666745204,
+      "p_value": 0.19226547484006506,
+      "selected": false
+    },
+    {
+      "descriptor": "ATSc1",
+      "f_score": 1.561299537734023,
+      "p_value": 0.21162332547712898,
+      "selected": false
+    },
+    {
+      "descriptor": "minsCH3",
+      "f_score": 1.5554616166357595,
+      "p_value": 0.2124790639777244,
+      "selected": false
+    },
+    {
+      "descriptor": "nT8Ring",
+      "f_score": 1.5334553292115405,
+      "p_value": 0.21574199445271716,
+      "selected": false
+    },
+    {
+      "descriptor": "nHdNH",
+      "f_score": 1.4506540035129893,
+      "p_value": 0.22856757586677728,
+      "selected": false
+    },
+    {
+      "descriptor": "SCH-3",
+      "f_score": 1.425729791716023,
+      "p_value": 0.2326062139091229,
+      "selected": false
+    },
+    {
+      "descriptor": "SdNH",
+      "f_score": 1.423768816893071,
+      "p_value": 0.23292760391274484,
+      "selected": false
+    },
+    {
+      "descriptor": "SaasN",
+      "f_score": 1.392757236867391,
+      "p_value": 0.23808235641410308,
+      "selected": false
+    },
+    {
+      "descriptor": "SHCsatu",
+      "f_score": 1.3842333064337955,
+      "p_value": 0.23952337424541778,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaasN",
+      "f_score": 1.374543968093938,
+      "p_value": 0.24117430916017257,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint3",
+      "f_score": 1.326967242766351,
+      "p_value": 0.24948509861425905,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaaNH",
+      "f_score": 1.3204182307875978,
+      "p_value": 0.2506563564539377,
+      "selected": false
+    },
+    {
+      "descriptor": "minaasN",
+      "f_score": 1.3078918427408535,
+      "p_value": 0.25291551043499705,
+      "selected": false
+    },
+    {
+      "descriptor": "minaaNH",
+      "f_score": 1.3001972687035748,
+      "p_value": 0.2543156614773183,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEO-22",
+      "f_score": 1.2489901872686808,
+      "p_value": 0.2638815678376152,
+      "selected": false
+    },
+    {
+      "descriptor": "SsCH3",
+      "f_score": 1.2051979369002037,
+      "p_value": 0.2724192729989169,
+      "selected": false
+    },
+    {
+      "descriptor": "SaaNH",
+      "f_score": 1.1808200916318312,
+      "p_value": 0.2773219096976791,
+      "selected": false
+    },
+    {
+      "descriptor": "DELS",
+      "f_score": 1.0815928098475893,
+      "p_value": 0.29846899767039897,
+      "selected": false
+    },
+    {
+      "descriptor": "gmin",
+      "f_score": 0.9820444604333182,
+      "p_value": 0.321816158893678,
+      "selected": false
+    },
+    {
+      "descriptor": "minaaS",
+      "f_score": 0.9547647155143278,
+      "p_value": 0.32862928786772,
+      "selected": false
+    },
+    {
+      "descriptor": "minHBint2",
+      "f_score": 0.9462392860165506,
+      "p_value": 0.3307977061999869,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBAcc3",
+      "f_score": 0.8540920607825848,
+      "p_value": 0.35551035358733735,
+      "selected": false
+    },
+    {
+      "descriptor": "C3SP3",
+      "f_score": 0.851865237235319,
+      "p_value": 0.3561381171171928,
+      "selected": false
+    },
+    {
+      "descriptor": "nAtomP",
+      "f_score": 0.8432132761751958,
+      "p_value": 0.3585916824401381,
+      "selected": false
+    },
+    {
+      "descriptor": "nX",
+      "f_score": 0.8420086533935731,
+      "p_value": 0.3589351361769556,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint7",
+      "f_score": 0.839382524841713,
+      "p_value": 0.35968545089193366,
+      "selected": false
+    },
+    {
+      "descriptor": "minssssC",
+      "f_score": 0.8133312132611272,
+      "p_value": 0.3672473394528858,
+      "selected": false
+    },
+    {
+      "descriptor": "DELS2",
+      "f_score": 0.8039108180030876,
+      "p_value": 0.3700361049912894,
+      "selected": false
+    },
+    {
+      "descriptor": "FMF",
+      "f_score": 0.6746776680211782,
+      "p_value": 0.4115247860706349,
+      "selected": false
+    },
+    {
+      "descriptor": "nFRing",
+      "f_score": 0.5540355014763555,
+      "p_value": 0.45676214788193886,
+      "selected": false
+    },
+    {
+      "descriptor": "SssssC",
+      "f_score": 0.5014123827853254,
+      "p_value": 0.47896387512109057,
+      "selected": false
+    },
+    {
+      "descriptor": "MAXDN",
+      "f_score": 0.4565016607063524,
+      "p_value": 0.49934270152022364,
+      "selected": false
+    },
+    {
+      "descriptor": "maxHBint8",
+      "f_score": 0.4501213439826182,
+      "p_value": 0.5023559061208206,
+      "selected": false
+    },
+    {
+      "descriptor": "SHdsCH",
+      "f_score": 0.4133320070998923,
+      "p_value": 0.520357880212131,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint6",
+      "f_score": 0.2776275247195065,
+      "p_value": 0.5983197175626684,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint7",
+      "f_score": 0.1991268440544231,
+      "p_value": 0.6554755499387586,
+      "selected": false
+    },
+    {
+      "descriptor": "MDEN-33",
+      "f_score": 0.16820397549907012,
+      "p_value": 0.6817574995336255,
+      "selected": false
+    },
+    {
+      "descriptor": "C2SP1",
+      "f_score": 0.08446111529726803,
+      "p_value": 0.7713710334474382,
+      "selected": false
+    },
+    {
+      "descriptor": "nS",
+      "f_score": 0.08353745986136817,
+      "p_value": 0.7725899665172423,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint9",
+      "f_score": 0.07949069215826308,
+      "p_value": 0.7780183830164181,
+      "selected": false
+    },
+    {
+      "descriptor": "SaaS",
+      "f_score": 0.07554469669785063,
+      "p_value": 0.7834572354166717,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint5",
+      "f_score": 0.0657141161426395,
+      "p_value": 0.7977091479829815,
+      "selected": false
+    },
+    {
+      "descriptor": "SHtCH",
+      "f_score": 0.0409853111462148,
+      "p_value": 0.8395871614590347,
+      "selected": false
+    },
+    {
+      "descriptor": "nHtCH",
+      "f_score": 0.03770086356264129,
+      "p_value": 0.8460650401965338,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint5",
+      "f_score": 0.0364467674500802,
+      "p_value": 0.8486154714794572,
+      "selected": false
+    },
+    {
+      "descriptor": "StCH",
+      "f_score": 0.03612712631318322,
+      "p_value": 0.8492727659908853,
+      "selected": false
+    },
+    {
+      "descriptor": "SaaaC",
+      "f_score": 0.033178892616201446,
+      "p_value": 0.8554831505764557,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint9",
+      "f_score": 0.033127131103176076,
+      "p_value": 0.8555946821514033,
+      "selected": false
+    },
+    {
+      "descriptor": "nHBint8",
+      "f_score": 0.02478723500722907,
+      "p_value": 0.8749145058594577,
+      "selected": false
+    },
+    {
+      "descriptor": "SHBint8",
+      "f_score": 0.02392247201141047,
+      "p_value": 0.8770981682789417,
+      "selected": false
+    },
+    {
+      "descriptor": "maxaaaC",
+      "f_score": 0.014942954479495828,
+      "p_value": 0.9027203127847173,
+      "selected": false
+    },
+    {
+      "descriptor": "nF10Ring",
+      "f_score": 0.013603730355015609,
+      "p_value": 0.9071611532928856,
+      "selected": false
+    },
+    {
+      "descriptor": "nT12Ring",
+      "f_score": 0.0040786798903356195,
+      "p_value": 0.9490845576998221,
+      "selected": false
+    },
+    {
+      "descriptor": "minaaaC",
+      "f_score": 0.0020170615657164226,
+      "p_value": 0.9641822313632432,
+      "selected": false
+    },
+    {
+      "descriptor": "nF12Ring",
+      "f_score": 0.0010030254451051412,
+      "p_value": 0.9747379642285946,
+      "selected": false
+    }
+  ],
+  "feature_stability": {
+    "fold_selected_features": [
+      [
+        "AMR",
+        "nC",
+        "BCUTp-1h",
+        "C2SP2",
+        "SP-5",
+        "SP-6",
+        "CrippenLogP",
+        "SwHBa",
+        "SaaCH",
+        "minsssN",
+        "minsOH",
+        "maxsssN",
+        "maxsOH",
+        "hmin",
+        "LipoaffinityIndex",
+        "MLogP",
+        "MDEC-22",
+        "MDEC-23",
+        "n6Ring",
+        "nT6Ring"
+      ],
+      [
+        "AMR",
+        "nC",
+        "BCUTp-1h",
+        "C2SP2",
+        "SP-5",
+        "CrippenLogP",
+        "nHaaCH",
+        "SwHBa",
+        "SaaCH",
+        "minsssN",
+        "minsOH",
+        "maxsssN",
+        "maxsOH",
+        "hmin",
+        "LipoaffinityIndex",
+        "MLogP",
+        "MDEC-22",
+        "MDEC-23",
+        "n6Ring",
+        "nT6Ring"
+      ],
+      [
+        "AMR",
+        "nC",
+        "BCUTp-1h",
+        "C1SP2",
+        "C2SP2",
+        "SP-5",
+        "SwHBa",
+        "SaaCH",
+        "minsssN",
+        "minsOH",
+        "maxHsOH",
+        "maxsssN",
+        "maxsOH",
+        "hmin",
+        "LipoaffinityIndex",
+        "MLogP",
+        "MDEC-22",
+        "MDEC-23",
+        "n6Ring",
+        "nT6Ring"
+      ],
+      [
+        "AMR",
+        "nC",
+        "BCUTp-1h",
+        "C1SP2",
+        "C2SP2",
+        "SwHBa",
+        "SaaCH",
+        "minHsOH",
+        "minsssN",
+        "minsOH",
+        "maxHsOH",
+        "maxsssN",
+        "maxsOH",
+        "hmin",
+        "LipoaffinityIndex",
+        "MLogP",
+        "MDEC-22",
+        "MDEC-23",
+        "n6Ring",
+        "nT6Ring"
+      ],
+      [
+        "AMR",
+        "nC",
+        "ATSp1",
+        "BCUTp-1h",
+        "C1SP2",
+        "C2SP2",
+        "SP-5",
+        "CrippenLogP",
+        "SwHBa",
+        "SaaCH",
+        "minsssN",
+        "minsOH",
+        "maxsssN",
+        "maxsOH",
+        "hmin",
+        "LipoaffinityIndex",
+        "MLogP",
+        "MDEC-23",
+        "n6Ring",
+        "nT6Ring"
+      ]
+    ],
+    "selection_frequency": {
+      "AMR": 1.0,
+      "nC": 1.0,
+      "BCUTp-1h": 1.0,
+      "C2SP2": 1.0,
+      "SwHBa": 1.0,
+      "SaaCH": 1.0,
+      "minsssN": 1.0,
+      "minsOH": 1.0,
+      "maxsssN": 1.0,
+      "maxsOH": 1.0,
+      "hmin": 1.0,
+      "LipoaffinityIndex": 1.0,
+      "MLogP": 1.0,
+      "MDEC-23": 1.0,
+      "n6Ring": 1.0,
+      "nT6Ring": 1.0,
+      "SP-5": 0.8,
+      "MDEC-22": 0.8,
+      "CrippenLogP": 0.6,
+      "C1SP2": 0.6,
+      "maxHsOH": 0.4,
+      "SP-6": 0.2,
+      "nHaaCH": 0.2,
+      "minHsOH": 0.2,
+      "ATSp1": 0.2
+    },
+    "pairwise_jaccard_mean": 0.8117824204780726,
+    "pairwise_jaccard_min": 0.7391304347826086,
+    "pairwise_jaccard_max": 0.9047619047619048,
+    "stable_at_60pct": [
+      "AMR",
+      "nC",
+      "BCUTp-1h",
+      "C2SP2",
+      "SwHBa",
+      "SaaCH",
+      "minsssN",
+      "minsOH",
+      "maxsssN",
+      "maxsOH",
+      "hmin",
+      "LipoaffinityIndex",
+      "MLogP",
+      "MDEC-23",
+      "n6Ring",
+      "nT6Ring",
+      "SP-5",
+      "MDEC-22",
+      "CrippenLogP",
+      "C1SP2"
+    ]
+  },
+  "search_budget": {
+    "mean_baseline_candidates": 1,
+    "median_baseline_candidates": 1,
+    "ridge_candidates_per_inner_search": 4,
+    "extra_trees_candidates_per_inner_search": 4,
+    "outer_folds": 5
+  }
+}

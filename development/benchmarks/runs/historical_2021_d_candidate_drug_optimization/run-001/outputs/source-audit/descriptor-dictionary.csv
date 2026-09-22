@@ -1,0 +1,730 @@
+﻿descriptor,java_class,description,class
+nAcid,AcidicGroupCountDescriptor,"Number of acidic groups. The list of acidic groups is defined by these SMARTS ""$([O;H1]-[C,S,P]=O)"", ""$([*;-;!$(*~[*;+])])"", ""$([NH](S(=O)=O)C(F)(F)F)"", and ""$(n1nnnc1)"" originally presented in JOELib",2D
+ALogP,ALOGPDescriptor,Ghose-Crippen LogKow,2D
+ALogp2,,Square of ALogP,2D
+AMR,,Molar refractivity,2D
+apol,APolDescriptor,Sum of the atomic polarizabilities (including implicit hydrogens),2D
+naAromAtom,AromaticAtomsCountDescriptor,Number of aromatic atoms,2D
+nAromBond,AromaticBondsCountDescriptor,Number of aromatic bonds,2D
+nAtom,AtomCountDescriptor,Number of atoms,2D
+nHeavyAtom,,Number of heavy atoms (i.e. not hydrogen),2D
+nH,,Number of hydrogen atoms,2D
+nB,,Number of boron atoms,2D
+nC,,Number of carbon atoms,2D
+nN,,Number of nitrogen atoms,2D
+nO,,Number of oxygen atoms,2D
+nS,,Number of sulphur atoms,2D
+nP,,Number of phosphorus atoms,2D
+nF,,Number of fluorine atoms,2D
+nCl,,Number of chlorine atoms,2D
+nBr,,Number of bromine atoms,2D
+nI,,Number of iodine atoms,2D
+nX,,"Number of halogen atoms (F, Cl, Br, I, At, Uus)",2D
+ATSc1,AutocorrelationDescriptorCharge,"ATS autocorrelation descriptor, weighted by charges",2D
+ATSc2,,"ATS autocorrelation descriptor, weighted by charges",2D
+ATSc3,,"ATS autocorrelation descriptor, weighted by charges",2D
+ATSc4,,"ATS autocorrelation descriptor, weighted by charges",2D
+ATSc5,,"ATS autocorrelation descriptor, weighted by charges",2D
+ATSm1,AutocorrelationDescriptorMass,"ATS autocorrelation descriptor, weighted by scaled atomic mass",2D
+ATSm2,,"ATS autocorrelation descriptor, weighted by scaled atomic mass",2D
+ATSm3,,"ATS autocorrelation descriptor, weighted by scaled atomic mass",2D
+ATSm4,,"ATS autocorrelation descriptor, weighted by scaled atomic mass",2D
+ATSm5,,"ATS autocorrelation descriptor, weighted by scaled atomic mass",2D
+ATSp1,AutocorrelationDescriptorPolarizability,"ATS autocorrelation descriptor, weighted by polarizability",2D
+ATSp2,,"ATS autocorrelation descriptor, weighted by polarizability",2D
+ATSp3,,"ATS autocorrelation descriptor, weighted by polarizability",2D
+ATSp4,,"ATS autocorrelation descriptor, weighted by polarizability",2D
+ATSp5,,"ATS autocorrelation descriptor, weighted by polarizability",2D
+nBase,BasicGroupCountDescriptor,"Number of basic groups. The list of basic groups is defined by this SMARTS ""[$([NH2]-[CX4])]"", ""[$([NH](-[CX4])-[CX4])]"", ""[$(N(-[CX4])(-[CX4])-[CX4])]"", ""[$([*;+;!$(*~[*;-])])]"", ""[$(N=C-N)]"", and ""[$(N-C=N)]"" originally presented in JOELib",2D
+BCUTw-1l,BCUTDescriptor,nhigh lowest atom weighted BCUTS ,2D
+BCUTw-1h,,nlow highest atom weighted BCUTS ,2D
+BCUTc-1l,,nhigh lowest partial charge weighted BCUTS ,2D
+BCUTc-1h,,nlow highest partial charge weighted BCUTS ,2D
+BCUTp-1l,,nhigh lowest polarizability weighted BCUTS ,2D
+BCUTp-1h,,nlow highest polarizability weighted BCUTS ,2D
+nBonds,BondCountDescriptor,Number of bonds (excluding bonds with hydrogen),2D
+nBonds2,,Total number of bonds (including bonds to hydrogens),2D
+nBondsS,,Number of single bonds (including bonds with hydrogen),2D
+nBondsS2,,"Total number of single bonds (including bonds to hydrogens, excluding aromatic bonds)",2D
+nBondsS3,,Total number of single bonds (excluding bonds to hydrogens and aromatic bonds),2D
+nBondsD,,Number of double bonds,2D
+nBondsD2,,Total number of double bonds (excluding bonds to aromatic bonds),2D
+nBondsT,,Number of triple bonds,2D
+nBondsQ,,Number of quadruple bonds,2D
+nBondsM,,Total number of bonds that have bond order greater than one (aromatic bonds have bond order 1.5).,2D
+bpol,BPolDescriptor,Sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens),2D
+C1SP1,CarbonTypesDescriptor,Triply bound carbon bound to one other carbon ,2D
+C2SP1,,Triply bound carbon bound to two other carbons ,2D
+C1SP2,,Doubly hound carbon bound to one other carbon ,2D
+C2SP2,,Doubly bound carbon bound to two other carbons ,2D
+C3SP2,,Doubly bound carbon bound to three other carbons ,2D
+C1SP3,,Singly bound carbon bound to one other carbon ,2D
+C2SP3,,Singly bound carbon bound to two other carbons ,2D
+C3SP3,,Singly bound carbon bound to three other carbons ,2D
+C4SP3,,Singly bound carbon bound to four other carbons ,2D
+SCH-3,ChiChainDescriptor,"Simple chain, order 3",2D
+SCH-4,,"Simple chain, order 4",2D
+SCH-5,,"Simple chain, order 5",2D
+SCH-6,,"Simple chain, order 6",2D
+SCH-7,,"Simple chain, order 7",2D
+VCH-3,,"Valence chain, order 3",2D
+VCH-4,,"Valence chain, order 4",2D
+VCH-5,,"Valence chain, order 5",2D
+VCH-6,,"Valence chain, order 6",2D
+VCH-7,,"Valence chain, order 7",2D
+SC-3,ChiClusterDescriptor,"Simple cluster, order 3",2D
+SC-4,,"Simple cluster, order 4",2D
+SC-5,,"Simple cluster, order 5",2D
+SC-6,,"Simple cluster, order 6",2D
+VC-3,,"Valence cluster, order 3",2D
+VC-4,,"Valence cluster, order 4",2D
+VC-5,,"Valence cluster, order 5",2D
+VC-6,,"Valence cluster, order 6",2D
+SPC-4,ChiPathClusterDescriptor,"Simple path cluster, order 4",2D
+SPC-5,,"Simple path cluster, order 5",2D
+SPC-6,,"Simple path cluster, order 6",2D
+VPC-4,,"Valence path cluster, order 4",2D
+VPC-5,,"Valence path cluster, order 5",2D
+VPC-6,,"Valence path cluster, order 6",2D
+SP-0,ChiPathDescriptor,"Simple path, order 0",2D
+SP-1,,"Simple path, order 1",2D
+SP-2,,"Simple path, order 2",2D
+SP-3,,"Simple path, order 3",2D
+SP-4,,"Simple path, order 4",2D
+SP-5,,"Simple path, order 5",2D
+SP-6,,"Simple path, order 6",2D
+SP-7,,"Simple path, order 7",2D
+VP-0,,"Valence path, order 0",2D
+VP-1,,"Valence path, order 1",2D
+VP-2,,"Valence path, order 2",2D
+VP-3,,"Valence path, order 3",2D
+VP-4,,"Valence path, order 4",2D
+VP-5,,"Valence path, order 5",2D
+VP-6,,"Valence path, order 6",2D
+VP-7,,"Valence path, order 7",2D
+CrippenLogP,CrippenDescriptor,Crippen's LogP,2D
+CrippenMR,,Crippen's molar refractivity,2D
+ECCEN,EccentricConnectivityIndexDescriptor,A topological descriptor combining distance and adjacency information,2D
+nHBd,ElectrotopologicalStateAtomTypeDescriptor,Count of E-States for (strong) Hydrogen Bond donors,2D
+nwHBd,,Count of E-States for weak Hydrogen Bond donors,2D
+nHBa,,Count of E-States for (strong) Hydrogen Bond acceptors,2D
+nwHBa,,Count of E-States for weak Hydrogen Bond acceptors,2D
+nHBint2,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 2,2D
+nHBint3,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 3,2D
+nHBint4,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 4,2D
+nHBint5,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 5,2D
+nHBint6,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 6,2D
+nHBint7,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 7,2D
+nHBint8,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 8,2D
+nHBint9,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 9,2D
+nHBint10,,Count of E-State descriptors of strength for potential Hydrogen Bonds of path length 10,2D
+nHsOH,,Count of atom-type H E-State: -OH,2D
+nHdNH,,Count of atom-type H E-State: =NH,2D
+nHsSH,,Count of atom-type H E-State: -SH,2D
+nHsNH2,,Count of atom-type H E-State: -NH2,2D
+nHssNH,,Count of atom-type H E-State: -NH-,2D
+nHaaNH,,Count of atom-type H E-State: :NH:,2D
+nHsNH3p,,Count of atom-type H E-State: -NH3+,2D
+nHssNH2p,,Count of atom-type H E-State: -NH2-+,2D
+nHsssNHp,,Count of atom-type H E-State: >NH-+,2D
+nHtCH,,Count of atom-type H E-State: #CH,2D
+nHdCH2,,Count of atom-type H E-State: =CH2,2D
+nHdsCH,,Count of atom-type H E-State: =CH-,2D
+nHaaCH,,Count of atom-type H E-State: :CH:,2D
+nHCHnX,,Count of atom-type H E-State: CHnX,2D
+nHCsats,,"Count of atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+nHCsatu,,Count of atom-type H E-State: H on C sp3 bonded to unsaturated C,2D
+nHAvin,,Count of atom-type H E-State: H on C vinyl bonded to C aromatic,2D
+nHother,,"Count of atom-type H E-State: H on aaCH, dCH2 or dsCH",2D
+nHmisc,,"Count of atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+nsLi,,Count of atom-type E-State: -Li,2D
+nssBe,,Count of atom-type E-State: -Be-,2D
+nssssBem,,Count of atom-type E-State: >Be<-2,2D
+nsBH2,,Count of atom-type E-State: -BH2,2D
+nssBH,,Count of atom-type E-State: -BH-,2D
+nsssB,,Count of atom-type E-State: -B<,2D
+nssssBm,,Count of atom-type E-State: >B<-,2D
+nsCH3,,Count of atom-type E-State: -CH3,2D
+ndCH2,,Count of atom-type E-State: =CH2,2D
+nssCH2,,Count of atom-type E-State: -CH2-,2D
+ntCH,,Count of atom-type E-State: #CH,2D
+ndsCH,,Count of atom-type E-State: =CH-,2D
+naaCH,,Count of atom-type E-State: :CH:,2D
+nsssCH,,Count of atom-type E-State: >CH-,2D
+nddC,,Count of atom-type E-State: =C=,2D
+ntsC,,Count of atom-type E-State: #C-,2D
+ndssC,,Count of atom-type E-State: =C<,2D
+naasC,,Count of atom-type E-State: :C:-,2D
+naaaC,,Count of atom-type E-State: ::C:,2D
+nssssC,,Count of atom-type E-State: >C<,2D
+nsNH3p,,Count of atom-type E-State: -NH3+,2D
+nsNH2,,Count of atom-type E-State: -NH2,2D
+nssNH2p,,Count of atom-type E-State: -NH2-+,2D
+ndNH,,Count of atom-type E-State: =NH,2D
+nssNH,,Count of atom-type E-State: -NH-,2D
+naaNH,,Count of atom-type E-State: :NH:,2D
+ntN,,Count of atom-type E-State: #N,2D
+nsssNHp,,Count of atom-type E-State: >NH-+,2D
+ndsN,,Count of atom-type E-State: =N-,2D
+naaN,,Count of atom-type E-State: :N:,2D
+nsssN,,Count of atom-type E-State: >N-,2D
+nddsN,,Count of atom-type E-State: -N<<,2D
+naasN,,Count of atom-type E-State: :N:-,2D
+nssssNp,,Count of atom-type E-State: >N<+,2D
+nsOH,,Count of atom-type E-State: -OH,2D
+ndO,,Count of atom-type E-State: =O,2D
+nssO,,Count of atom-type E-State: -O-,2D
+naaO,,Count of atom-type E-State: :O:,2D
+naOm,,Count of atom-type E-State: :O-0.5,2D
+nsOm,,Count of atom-type E-State: -O-,2D
+nsF,,Count of atom-type E-State: -F,2D
+nsSiH3,,Count of atom-type E-State: -SiH3,2D
+nssSiH2,,Count of atom-type E-State: -SiH2-,2D
+nsssSiH,,Count of atom-type E-State: >SiH-,2D
+nssssSi,,Count of atom-type E-State: >Si<,2D
+nsPH2,,Count of atom-type E-State: -PH2,2D
+nssPH,,Count of atom-type E-State: -PH-,2D
+nsssP,,Count of atom-type E-State: >P-,2D
+ndsssP,,Count of atom-type E-State: ->P=,2D
+nddsP,,Count of atom-type E-State: -=P=,2D
+nsssssP,,Count of atom-type E-State: ->P<,2D
+nsSH,,Count of atom-type E-State: -SH,2D
+ndS,,Count of atom-type E-State: =S,2D
+nssS,,Count of atom-type E-State: -S-,2D
+naaS,,Count of atom-type E-State: aSa,2D
+ndssS,,Count of atom-type E-State: >S=,2D
+nddssS,,Count of atom-type E-State: >S==,2D
+nssssssS,,Count of atom-type E-State: >S<<,2D
+nSm,,Count of atom-type E-State: -S-,2D
+nsCl,,Count of atom-type E-State: -Cl,2D
+nsGeH3,,Count of atom-type E-State: -GeH3,2D
+nssGeH2,,Count of atom-type E-State: -GeH2-,2D
+nsssGeH,,Count of atom-type E-State: >GeH-,2D
+nssssGe,,Count of atom-type E-State: >Ge<,2D
+nsAsH2,,Count of atom-type E-State: -AsH2,2D
+nssAsH,,Count of atom-type E-State: -AsH-,2D
+nsssAs,,Count of atom-type E-State: >As-,2D
+ndsssAs,,Count of atom-type E-State: ->As=,2D
+nddsAs,,Count of atom-type E-State: -=As=,2D
+nsssssAs,,Count of atom-type E-State: ->As<,2D
+nsSeH,,Count of atom-type E-State: -SeH,2D
+ndSe,,Count of atom-type E-State: =Se,2D
+nssSe,,Count of atom-type E-State: -Se-,2D
+naaSe,,Count of atom-type E-State: aSea,2D
+ndssSe,,Count of atom-type E-State: >Se=,2D
+nssssssSe,,Count of atom-type E-State: >Se<<,2D
+nddssSe,,Count of atom-type E-State: -=Se=-,2D
+nsBr,,Count of atom-type E-State: -Br,2D
+nsSnH3,,Count of atom-type E-State: -SnH3,2D
+nssSnH2,,Count of atom-type E-State: -SnH2-,2D
+nsssSnH,,Count of atom-type E-State: >SnH-,2D
+nssssSn,,Count of atom-type E-State: >Sn<,2D
+nsI,,Count of atom-type E-State: -I,2D
+nsPbH3,,Count of atom-type E-State: -PbH3,2D
+nssPbH2,,Count of atom-type E-State: -PbH2-,2D
+nsssPbH,,Count of atom-type E-State: >PbH-,2D
+nssssPb,,Count of atom-type E-State: >Pb<,2D
+SHBd,,Sum of E-States for (strong) Hydrogen Bond donors,2D
+SwHBd,,Sum of E-States for weak Hydrogen Bond donors,2D
+SHBa,,Sum of E-States for (strong) Hydrogen Bond acceptors,2D
+SwHBa,,Sum of E-States for weak Hydrogen Bond acceptors,2D
+SHBint2,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 2,2D
+SHBint3,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 3,2D
+SHBint4,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 4,2D
+SHBint5,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 5,2D
+SHBint6,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 6,2D
+SHBint7,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 7,2D
+SHBint8,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 8,2D
+SHBint9,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 9,2D
+SHBint10,,Sum of E-State descriptors of strength for potential Hydrogen Bonds of path length 10,2D
+SHsOH,,Sum of atom-type H E-State: -OH,2D
+SHdNH,,Sum of atom-type H E-State: =NH,2D
+SHsSH,,Sum of atom-type H E-State: -SH,2D
+SHsNH2,,Sum of atom-type H E-State: -NH2,2D
+SHssNH,,Sum of atom-type H E-State: -NH-,2D
+SHaaNH,,Sum of atom-type H E-State: :NH:,2D
+SHsNH3p,,Sum of atom-type H E-State: -NH3+,2D
+SHssNH2p,,Sum of atom-type H E-State: -NH2-+,2D
+SHsssNHp,,Sum of atom-type H E-State: >NH-+,2D
+SHtCH,,Sum of atom-type H E-State: #CH,2D
+SHdCH2,,Sum of atom-type H E-State: =CH2,2D
+SHdsCH,,Sum of atom-type H E-State: =CH-,2D
+SHaaCH,,Sum of atom-type H E-State: :CH:,2D
+SHCHnX,,Sum of atom-type H E-State: CHnX,2D
+SHCsats,,Sum of atom-type H E-State: H on C sp3 bonded to saturated C,2D
+SHCsatu,,Sum of atom-type H E-State: H on C sp3 bonded to unsaturated C,2D
+SHAvin,,Sum of atom-type H E-State: H on C vinyl bonded to C aromatic,2D
+SHother,,"Sum of atom-type H E-State: H on aaCH, dCH2 or dsCH",2D
+SHmisc,,"Sum of atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+SsLi,,Sum of atom-type E-State: -Li,2D
+SssBe,,Sum of atom-type E-State: -Be-,2D
+SssssBem,,Sum of atom-type E-State: >Be<-2,2D
+SsBH2,,Sum of atom-type E-State: -BH2,2D
+SssBH,,Sum of atom-type E-State: -BH-,2D
+SsssB,,Sum of atom-type E-State: -B<,2D
+SssssBm,,Sum of atom-type E-State: >B<-,2D
+SsCH3,,Sum of atom-type E-State: -CH3,2D
+SdCH2,,Sum of atom-type E-State: =CH2,2D
+SssCH2,,Sum of atom-type E-State: -CH2-,2D
+StCH,,Sum of atom-type E-State: #CH,2D
+SdsCH,,Sum of atom-type E-State: =CH-,2D
+SaaCH,,Sum of atom-type E-State: :CH:,2D
+SsssCH,,Sum of atom-type E-State: >CH-,2D
+SddC,,Sum of atom-type E-State: =C=,2D
+StsC,,Sum of atom-type E-State: #C-,2D
+SdssC,,Sum of atom-type E-State: =C<,2D
+SaasC,,Sum of atom-type E-State: :C:-,2D
+SaaaC,,Sum of atom-type E-State: ::C:,2D
+SssssC,,Sum of atom-type E-State: >C<,2D
+SsNH3p,,Sum of atom-type E-State: -NH3+,2D
+SsNH2,,Sum of atom-type E-State: -NH2,2D
+SssNH2p,,Sum of atom-type E-State: -NH2-+,2D
+SdNH,,Sum of atom-type E-State: =NH,2D
+SssNH,,Sum of atom-type E-State: -NH-,2D
+SaaNH,,Sum of atom-type E-State: :NH:,2D
+StN,,Sum of atom-type E-State: #N,2D
+SsssNHp,,Sum of atom-type E-State: >NH-+,2D
+SdsN,,Sum of atom-type E-State: =N-,2D
+SaaN,,Sum of atom-type E-State: :N:,2D
+SsssN,,Sum of atom-type E-State: >N-,2D
+SddsN,,Sum of atom-type E-State: -N<<,2D
+SaasN,,Sum of atom-type E-State: :N:-,2D
+SssssNp,,Sum of atom-type E-State: >N<+,2D
+SsOH,,Sum of atom-type E-State: -OH,2D
+SdO,,Sum of atom-type E-State: =O,2D
+SssO,,Sum of atom-type E-State: -O-,2D
+SaaO,,Sum of atom-type E-State: :O:,2D
+SaOm,,Sum of atom-type E-State: :O-0.5,2D
+SsOm,,Sum of atom-type E-State: -O-,2D
+SsF,,Sum of atom-type E-State: -F,2D
+SsSiH3,,Sum of atom-type E-State: -SiH3,2D
+SssSiH2,,Sum of atom-type E-State: -SiH2-,2D
+SsssSiH,,Sum of atom-type E-State: >SiH-,2D
+SssssSi,,Sum of atom-type E-State: >Si<,2D
+SsPH2,,Sum of atom-type E-State: -PH2,2D
+SssPH,,Sum of atom-type E-State: -PH-,2D
+SsssP,,Sum of atom-type E-State: >P-,2D
+SdsssP,,Sum of atom-type E-State: ->P=,2D
+SddsP,,Sum of atom-type E-State: -=P=,2D
+SsssssP,,Sum of atom-type E-State: ->P<,2D
+SsSH,,Sum of atom-type E-State: -SH,2D
+SdS,,Sum of atom-type E-State: =S,2D
+SssS,,Sum of atom-type E-State: -S-,2D
+SaaS,,Sum of atom-type E-State: aSa,2D
+SdssS,,Sum of atom-type E-State: >S=,2D
+SddssS,,Sum of atom-type E-State: >S==,2D
+SssssssS,,Sum of atom-type E-State: >S<<,2D
+SSm,,Sum of atom-type E-State: -S-,2D
+SsCl,,Sum of atom-type E-State: -Cl,2D
+SsGeH3,,Sum of atom-type E-State: -GeH3,2D
+SssGeH2,,Sum of atom-type E-State: -GeH2-,2D
+SsssGeH,,Sum of atom-type E-State: >GeH-,2D
+SssssGe,,Sum of atom-type E-State: >Ge<,2D
+SsAsH2,,Sum of atom-type E-State: -AsH2,2D
+SssAsH,,Sum of atom-type E-State: -AsH-,2D
+SsssAs,,Sum of atom-type E-State: >As-,2D
+SdsssAs,,Sum of atom-type E-State: ->As=,2D
+SddsAs,,Sum of atom-type E-State: -=As=,2D
+SsssssAs,,Sum of atom-type E-State: ->As<,2D
+SsSeH,,Sum of atom-type E-State: -SeH,2D
+SdSe,,Sum of atom-type E-State: =Se,2D
+SssSe,,Sum of atom-type E-State: -Se-,2D
+SaaSe,,Sum of atom-type E-State: aSea,2D
+SdssSe,,Sum of atom-type E-State: >Se=,2D
+SssssssSe,,Sum of atom-type E-State: >Se<<,2D
+SddssSe,,Sum of atom-type E-State: -=Se=-,2D
+SsBr,,Sum of atom-type E-State: -Br,2D
+SsSnH3,,Sum of atom-type E-State: -SnH3,2D
+SssSnH2,,Sum of atom-type E-State: -SnH2-,2D
+SsssSnH,,Sum of atom-type E-State: >SnH-,2D
+SssssSn,,Sum of atom-type E-State: >Sn<,2D
+SsI,,Sum of atom-type E-State: -I,2D
+SsPbH3,,Sum of atom-type E-State: -PbH3,2D
+SssPbH2,,Sum of atom-type E-State: -PbH2-,2D
+SsssPbH,,Sum of atom-type E-State: >PbH-,2D
+SssssPb,,Sum of atom-type E-State: >Pb<,2D
+minHBd,,Minimum E-States for (strong) Hydrogen Bond donors,2D
+minwHBd,,Minimum E-States for weak Hydrogen Bond donors,2D
+minHBa,,Minimum E-States for (strong) Hydrogen Bond acceptors,2D
+minwHBa,,Minimum E-States for weak Hydrogen Bond acceptors,2D
+minHBint2,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 2,2D
+minHBint3,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 3,2D
+minHBint4,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 4,2D
+minHBint5,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 5,2D
+minHBint6,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 6,2D
+minHBint7,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 7,2D
+minHBint8,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 8,2D
+minHBint9,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 9,2D
+minHBint10,,Minimum E-State descriptors of strength for potential Hydrogen Bonds of path length 10,2D
+minHsOH,,Minimum atom-type H E-State: -OH,2D
+minHdNH,,Minimum atom-type H E-State: =NH,2D
+minHsSH,,Minimum atom-type H E-State: -SH,2D
+minHsNH2,,Minimum atom-type H E-State: -NH2,2D
+minHssNH,,Minimum atom-type H E-State: -NH-,2D
+minHaaNH,,Minimum atom-type H E-State: :NH:,2D
+minHsNH3p,,Minimum atom-type H E-State: -NH3+,2D
+minHssNH2p,,Minimum atom-type H E-State: -NH2-+,2D
+minHsssNHp,,Minimum atom-type H E-State: >NH-+,2D
+minHtCH,,Minimum atom-type H E-State: #CH,2D
+minHdCH2,,Minimum atom-type H E-State: =CH2,2D
+minHdsCH,,Minimum atom-type H E-State: =CH-,2D
+minHaaCH,,Minimum atom-type H E-State: :CH:,2D
+minHCHnX,,Minimum atom-type H E-State: CHnX,2D
+minHCsats,,"Minimum atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+minHCsatu,,Minimum atom-type H E-State: H on C sp3 bonded to unsaturated C,2D
+minHAvin,,Minimum atom-type H E-State: H on C vinyl bonded to C aromatic,2D
+minHother,,"Minimum atom-type H E-State: H on aaCH, dCH2 or dsCH",2D
+minHmisc,,"Minimum atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+minsLi,,Minimum atom-type E-State: -Li,2D
+minssBe,,Minimum atom-type E-State: -Be-,2D
+minssssBem,,Minimum atom-type E-State: >Be<-2,2D
+minsBH2,,Minimum atom-type E-State: -BH2,2D
+minssBH,,Minimum atom-type E-State: -BH-,2D
+minsssB,,Minimum atom-type E-State: -B<,2D
+minssssBm,,Minimum atom-type E-State: >B<-,2D
+minsCH3,,Minimum atom-type E-State: -CH3,2D
+mindCH2,,Minimum atom-type E-State: =CH2,2D
+minssCH2,,Minimum atom-type E-State: -CH2-,2D
+mintCH,,Minimum atom-type E-State: #CH,2D
+mindsCH,,Minimum atom-type E-State: =CH-,2D
+minaaCH,,Minimum atom-type E-State: :CH:,2D
+minsssCH,,Minimum atom-type E-State: >CH-,2D
+minddC,,Minimum atom-type E-State: =C=,2D
+mintsC,,Minimum atom-type E-State: #C-,2D
+mindssC,,Minimum atom-type E-State: =C<,2D
+minaasC,,Minimum atom-type E-State: :C:-,2D
+minaaaC,,Minimum atom-type E-State: ::C:,2D
+minssssC,,Minimum atom-type E-State: >C<,2D
+minsNH3p,,Minimum atom-type E-State: -NH3+,2D
+minsNH2,,Minimum atom-type E-State: -NH2,2D
+minssNH2p,,Minimum atom-type E-State: -NH2-+,2D
+mindNH,,Minimum atom-type E-State: =NH,2D
+minssNH,,Minimum atom-type E-State: -NH-,2D
+minaaNH,,Minimum atom-type E-State: :NH:,2D
+mintN,,Minimum atom-type E-State: #N,2D
+minsssNHp,,Minimum atom-type E-State: >NH-+,2D
+mindsN,,Minimum atom-type E-State: =N-,2D
+minaaN,,Minimum atom-type E-State: :N:,2D
+minsssN,,Minimum atom-type E-State: >N-,2D
+minddsN,,Minimum atom-type E-State: -N<<,2D
+minaasN,,Minimum atom-type E-State: :N:-,2D
+minssssNp,,Minimum atom-type E-State: >N<+,2D
+minsOH,,Minimum atom-type E-State: -OH,2D
+mindO,,Minimum atom-type E-State: =O,2D
+minssO,,Minimum atom-type E-State: -O-,2D
+minaaO,,Minimum atom-type E-State: :O:,2D
+minaOm,,Minimum atom-type E-State: :O-0.5,2D
+minsOm,,Minimum atom-type E-State: -O-,2D
+minsF,,Minimum atom-type E-State: -F,2D
+minsSiH3,,Minimum atom-type E-State: -SiH3,2D
+minssSiH2,,Minimum atom-type E-State: -SiH2-,2D
+minsssSiH,,Minimum atom-type E-State: >SiH-,2D
+minssssSi,,Minimum atom-type E-State: >Si<,2D
+minsPH2,,Minimum atom-type E-State: -PH2,2D
+minssPH,,Minimum atom-type E-State: -PH-,2D
+minsssP,,Minimum atom-type E-State: >P-,2D
+mindsssP,,Minimum atom-type E-State: ->P=,2D
+minddsP,,Minimum atom-type E-State: -=P=,2D
+minsssssP,,Minimum atom-type E-State: ->P<,2D
+minsSH,,Minimum atom-type E-State: -SH,2D
+mindS,,Minimum atom-type E-State: =S,2D
+minssS,,Minimum atom-type E-State: -S-,2D
+minaaS,,Minimum atom-type E-State: aSa,2D
+mindssS,,Minimum atom-type E-State: >S=,2D
+minddssS,,Minimum atom-type E-State: >S==,2D
+minssssssS,,Minimum atom-type E-State: >S<<,2D
+minSm,,Minimum atom-type E-State: -S-,2D
+minsCl,,Minimum atom-type E-State: -Cl,2D
+minsGeH3,,Minimum atom-type E-State: -GeH3,2D
+minssGeH2,,Minimum atom-type E-State: -GeH2-,2D
+minsssGeH,,Minimum atom-type E-State: >GeH-,2D
+minssssGe,,Minimum atom-type E-State: >Ge<,2D
+minsAsH2,,Minimum atom-type E-State: -AsH2,2D
+minssAsH,,Minimum atom-type E-State: -AsH-,2D
+minsssAs,,Minimum atom-type E-State: >As-,2D
+mindsssAs,,Minimum atom-type E-State: ->As=,2D
+minddsAs,,Minimum atom-type E-State: -=As=,2D
+minsssssAs,,Minimum atom-type E-State: ->As<,2D
+minsSeH,,Minimum atom-type E-State: -SeH,2D
+mindSe,,Minimum atom-type E-State: =Se,2D
+minssSe,,Minimum atom-type E-State: -Se-,2D
+minaaSe,,Minimum atom-type E-State: aSea,2D
+mindssSe,,Minimum atom-type E-State: >Se=,2D
+minssssssSe,,Minimum atom-type E-State: >Se<<,2D
+minddssSe,,Minimum atom-type E-State: -=Se=-,2D
+minsBr,,Minimum atom-type E-State: -Br,2D
+minsSnH3,,Minimum atom-type E-State: -SnH3,2D
+minssSnH2,,Minimum atom-type E-State: -SnH2-,2D
+minsssSnH,,Minimum atom-type E-State: >SnH-,2D
+minssssSn,,Minimum atom-type E-State: >Sn<,2D
+minsI,,Minimum atom-type E-State: -I,2D
+minsPbH3,,Minimum atom-type E-State: -PbH3,2D
+minssPbH2,,Minimum atom-type E-State: -PbH2-,2D
+minsssPbH,,Minimum atom-type E-State: >PbH-,2D
+minssssPb,,Minimum atom-type E-State: >Pb<,2D
+maxHBd,,Maximum E-States for (strong) Hydrogen Bond donors,2D
+maxwHBd,,Maximum E-States for weak Hydrogen Bond donors,2D
+maxHBa,,Maximum E-States for (strong) Hydrogen Bond acceptors,2D
+maxwHBa,,Maximum E-States for weak Hydrogen Bond acceptors,2D
+maxHBint2,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 2,2D
+maxHBint3,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 3,2D
+maxHBint4,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 4,2D
+maxHBint5,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 5,2D
+maxHBint6,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 6,2D
+maxHBint7,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 7,2D
+maxHBint8,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 8,2D
+maxHBint9,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 9,2D
+maxHBint10,,Maximum E-State descriptors of strength for potential Hydrogen Bonds of path length 10,2D
+maxHsOH,,Maximum atom-type H E-State: -OH,2D
+maxHdNH,,Maximum atom-type H E-State: =NH,2D
+maxHsSH,,Maximum atom-type H E-State: -SH,2D
+maxHsNH2,,Maximum atom-type H E-State: -NH2,2D
+maxHssNH,,Maximum atom-type H E-State: -NH-,2D
+maxHaaNH,,Maximum atom-type H E-State: :NH:,2D
+maxHsNH3p,,Maximum atom-type H E-State: -NH3+,2D
+maxHssNH2p,,Maximum atom-type H E-State: -NH2-+,2D
+maxHsssNHp,,Maximum atom-type H E-State: >NH-+,2D
+maxHtCH,,Maximum atom-type H E-State: #CH,2D
+maxHdCH2,,Maximum atom-type H E-State: =CH2,2D
+maxHdsCH,,Maximum atom-type H E-State: =CH-,2D
+maxHaaCH,,Maximum atom-type H E-State: :CH:,2D
+maxHCHnX,,Maximum atom-type H E-State: CHnX,2D
+maxHCsats,,"Maximum atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+maxHCsatu,,Maximum atom-type H E-State: H on C sp3 bonded to unsaturated C,2D
+maxHAvin,,Maximum atom-type H E-State: H on C vinyl bonded to C aromatic,2D
+maxHother,,"Maximum atom-type H E-State: H on aaCH, dCH2 or dsCH",2D
+maxHmisc,,"Maximum atom-type H E-State: H bonded to B, Si, P, Ge, As, Se, Sn or Pb",2D
+maxsLi,,Maximum atom-type E-State: -Li,2D
+maxssBe,,Maximum atom-type E-State: -Be-,2D
+maxssssBem,,Maximum atom-type E-State: >Be<-2,2D
+maxsBH2,,Maximum atom-type E-State: -BH2,2D
+maxssBH,,Maximum atom-type E-State: -BH-,2D
+maxsssB,,Maximum atom-type E-State: -B<,2D
+maxssssBm,,Maximum atom-type E-State: >B<-,2D
+maxsCH3,,Maximum atom-type E-State: -CH3,2D
+maxdCH2,,Maximum atom-type E-State: =CH2,2D
+maxssCH2,,Maximum atom-type E-State: -CH2-,2D
+maxtCH,,Maximum atom-type E-State: #CH,2D
+maxdsCH,,Maximum atom-type E-State: =CH-,2D
+maxaaCH,,Maximum atom-type E-State: :CH:,2D
+maxsssCH,,Maximum atom-type E-State: >CH-,2D
+maxddC,,Maximum atom-type E-State: =C=,2D
+maxtsC,,Maximum atom-type E-State: #C-,2D
+maxdssC,,Maximum atom-type E-State: =C<,2D
+maxaasC,,Maximum atom-type E-State: :C:-,2D
+maxaaaC,,Maximum atom-type E-State: ::C:,2D
+maxssssC,,Maximum atom-type E-State: >C<,2D
+maxsNH3p,,Maximum atom-type E-State: -NH3+,2D
+maxsNH2,,Maximum atom-type E-State: -NH2,2D
+maxssNH2p,,Maximum atom-type E-State: -NH2-+,2D
+maxdNH,,Maximum atom-type E-State: =NH,2D
+maxssNH,,Maximum atom-type E-State: -NH-,2D
+maxaaNH,,Maximum atom-type E-State: :NH:,2D
+maxtN,,Maximum atom-type E-State: #N,2D
+maxsssNHp,,Maximum atom-type E-State: >NH-+,2D
+maxdsN,,Maximum atom-type E-State: =N-,2D
+maxaaN,,Maximum atom-type E-State: :N:,2D
+maxsssN,,Maximum atom-type E-State: >N-,2D
+maxddsN,,Maximum atom-type E-State: -N<<,2D
+maxaasN,,Maximum atom-type E-State: :N:-,2D
+maxssssNp,,Maximum atom-type E-State: >N<+,2D
+maxsOH,,Maximum atom-type E-State: -OH,2D
+maxdO,,Maximum atom-type E-State: =O,2D
+maxssO,,Maximum atom-type E-State: -O-,2D
+maxaaO,,Maximum atom-type E-State: :O:,2D
+maxaOm,,Maximum atom-type E-State: :O-0.5,2D
+maxsOm,,Maximum atom-type E-State: -O-,2D
+maxsF,,Maximum atom-type E-State: -F,2D
+maxsSiH3,,Maximum atom-type E-State: -SiH3,2D
+maxssSiH2,,Maximum atom-type E-State: -SiH2-,2D
+maxsssSiH,,Maximum atom-type E-State: >SiH-,2D
+maxssssSi,,Maximum atom-type E-State: >Si<,2D
+maxsPH2,,Maximum atom-type E-State: -PH2,2D
+maxssPH,,Maximum atom-type E-State: -PH-,2D
+maxsssP,,Maximum atom-type E-State: >P-,2D
+maxdsssP,,Maximum atom-type E-State: ->P=,2D
+maxddsP,,Maximum atom-type E-State: -=P=,2D
+maxsssssP,,Maximum atom-type E-State: ->P<,2D
+maxsSH,,Maximum atom-type E-State: -SH,2D
+maxdS,,Maximum atom-type E-State: =S,2D
+maxssS,,Maximum atom-type E-State: -S-,2D
+maxaaS,,Maximum atom-type E-State: aSa,2D
+maxdssS,,Maximum atom-type E-State: >S=,2D
+maxddssS,,Maximum atom-type E-State: >S==,2D
+maxssssssS,,Maximum atom-type E-State: >S<<,2D
+maxSm,,Maximum atom-type E-State: -S-,2D
+maxsCl,,Maximum atom-type E-State: -Cl,2D
+maxsGeH3,,Maximum atom-type E-State: -GeH3,2D
+maxssGeH2,,Maximum atom-type E-State: -GeH2-,2D
+maxsssGeH,,Maximum atom-type E-State: >GeH-,2D
+maxssssGe,,Maximum atom-type E-State: >Ge<,2D
+maxsAsH2,,Maximum atom-type E-State: -AsH2,2D
+maxssAsH,,Maximum atom-type E-State: -AsH-,2D
+maxsssAs,,Maximum atom-type E-State: >As-,2D
+maxdsssAs,,Maximum atom-type E-State: ->As=,2D
+maxddsAs,,Maximum atom-type E-State: -=As=,2D
+maxsssssAs,,Maximum atom-type E-State: ->As<,2D
+maxsSeH,,Maximum atom-type E-State: -SeH,2D
+maxdSe,,Maximum atom-type E-State: =Se,2D
+maxssSe,,Maximum atom-type E-State: -Se-,2D
+maxaaSe,,Maximum atom-type E-State: aSea,2D
+maxdssSe,,Maximum atom-type E-State: >Se=,2D
+maxssssssSe,,Maximum atom-type E-State: >Se<<,2D
+maxddssSe,,Maximum atom-type E-State: -=Se=-,2D
+maxsBr,,Maximum atom-type E-State: -Br,2D
+maxsSnH3,,Maximum atom-type E-State: -SnH3,2D
+maxssSnH2,,Maximum atom-type E-State: -SnH2-,2D
+maxsssSnH,,Maximum atom-type E-State: >SnH-,2D
+maxssssSn,,Maximum atom-type E-State: >Sn<,2D
+maxsI,,Maximum atom-type E-State: -I,2D
+maxsPbH3,,Maximum atom-type E-State: -PbH3,2D
+maxssPbH2,,Maximum atom-type E-State: -PbH2-,2D
+maxsssPbH,,Maximum atom-type E-State: >PbH-,2D
+maxssssPb,,Maximum atom-type E-State: >Pb<,2D
+sumI,,Sum of the intrinsic state values I,2D
+hmax,,Maximum H E-State,2D
+gmax,,Maximum E-State,2D
+hmin,,Minimum H E-State,2D
+gmin,,Minimum E-State,2D
+LipoaffinityIndex,,Lipoaffinity index,2D
+MAXDN,,"Maximum negative intrinsic state difference in the molecule (related to the nucleophilicity of the molecule). Using deltaV = (Zv-maxBondedHydrogens) /(atomicNumber-Zv-1). Gramatica, P., Corradi, M., and Consonni, V. (2000). Modelling and prediction of soil sorption coefficients of non-ionic organic pesticides by molecular descriptors. Chemosphere 41, 763-777.",2D
+MAXDP,,"Maximum positive intrinsic state difference in the molecule (related to the electrophilicity of the molecule).  Using deltaV = (Zv-maxBondedHydrogens) /(atomicNumber-Zv-1). Gramatica, P., Corradi, M., and Consonni, V. (2000). Modelling and prediction of soil sorption coefficients of non-ionic organic pesticides by molecular descriptors. Chemosphere 41, 763-777.",2D
+DELS,,"Sum of all atoms intrinsic state differences (measure of total charge transfer in the molecule).  Using deltaV = (Zv-maxBondedHydrogens) /(atomicNumber-Zv-1). Gramatica, P., Corradi, M., and Consonni, V. (2000). Modelling and prediction of soil sorption coefficients of non-ionic organic pesticides by molecular descriptors. Chemosphere 41, 763-777.",2D
+MAXDN2,,"Maximum negative intrinsic state difference in the molecule (related to the nucleophilicity of the molecule). Using deltaV = Zv-maxBondedHydrogens. Gramatica, P., Corradi, M., and Consonni, V. (2000). Modelling and prediction of soil sorption coefficients of non-ionic organic pesticides by molecular descriptors. Chemosphere 41, 763-777.",2D
+MAXDP2,,"Maximum positive intrinsic state difference in the molecule (related to the electrophilicity of the molecule). Using deltaV = Zv-maxBondedHydrogens. Gramatica, P., Corradi, M., and Consonni, V. (2000). Modelling and prediction of soil sorption coefficients of non-ionic organic pesticides by molecular descriptors. Chemosphere 41, 763-777.",2D
+DELS2,,"Sum of all atoms intrinsic state differences (measure of total charge transfer in the molecule). Using deltaV = Zv-maxBondedHydrogens. Gramatica, P., Corradi, M., and Consonni, V. (2000). Modelling and prediction of soil sorption coefficients of non-ionic organic pesticides by molecular descriptors. Chemosphere 41, 763-777.",2D
+ETA_Alpha,ExtendedTopochemicalAtomDescriptor,Sum of alpha values of all non-hydrogen vertices of a molecule,2D
+ETA_AlphaP,,Sum of alpha values of all non-hydrogen vertices of a molecule relative to molecular size,2D
+ETA_dAlpha_A,,A measure of count of non-hydrogen heteroatoms,2D
+ETA_dAlpha_B,,A measure of count of hydrogen bond acceptor atoms and/or polar surface area,2D
+ETA_Epsilon_1,,A measure of electronegative atom count,2D
+ETA_Epsilon_2,,A measure of electronegative atom count,2D
+ETA_Epsilon_3,,A measure of electronegative atom count,2D
+ETA_Epsilon_4,,A measure of electronegative atom count,2D
+ETA_Epsilon_5,,A measure of electronegative atom count,2D
+ETA_dEpsilon_A,,A measure of contribution of unsaturation and electronegative atom count,2D
+ETA_dEpsilon_B,,A measure of contribution of unsaturation,2D
+ETA_dEpsilon_C,,A measure of contribution of electronegativity,2D
+ETA_dEpsilon_D,,A measure of contribution of hydrogen bond donor atoms,2D
+ETA_Psi_1,,A measure of hydrogen bonding propensity of the molecules and/or polar surface area,2D
+ETA_dPsi_A,,A measure of hydrogen bonding propensity of the molecules,2D
+ETA_dPsi_B,,A measure of hydrogen bonding propensity of the molecules,2D
+ETA_Shape_P,,Shape index P,2D
+ETA_Shape_Y,,Shape index Y,2D
+ETA_Shape_X,,Shape index X,2D
+ETA_Beta,,A measure of electronic features of the molecule,2D
+ETA_BetaP,,A measure of electronic features of the molecule relative to molecular size,2D
+ETA_Beta_s,,A measure of electronegative atom count of the molecule,2D
+ETA_BetaP_s,,A measure of electronegative atom count of the molecule relative to molecular size,2D
+ETA_Beta_ns,,A measure of electron-richness of the molecule,2D
+ETA_BetaP_ns,,A measure of electron-richness of the molecule relative to molecular size,2D
+ETA_dBeta,,A measure of relative unsaturation content,2D
+ETA_dBetaP,,A measure of relative unsaturation content relative to molecular size,2D
+ETA_Beta_ns_d,,A measure of lone electrons entering into resonance,2D
+ETA_BetaP_ns_d,,A measure of lone electrons entering into resonance relative to molecular size,2D
+ETA_Eta,,Composite index Eta,2D
+ETA_EtaP,,Composite index Eta relative to molecular size,2D
+ETA_Eta_R,,Composite index Eta for reference alkane,2D
+ETA_Eta_F,,Functionality index EtaF,2D
+ETA_EtaP_F,,Functionality index EtaF relative to molecular size,2D
+ETA_Eta_L,,Local index Eta_local,2D
+ETA_EtaP_L,,Local index Eta_local relative to molecular size,2D
+ETA_Eta_R_L,,Local index Eta_local for reference alkane,2D
+ETA_Eta_F_L,,Local functionality contribution EtaF_local,2D
+ETA_EtaP_F_L,,Local functionality contribution EtaF_local relative to molecular size,2D
+ETA_Eta_B,,Branching index EtaB,2D
+ETA_EtaP_B,,Branching index EtaB relative to molecular size,2D
+ETA_Eta_B_RC,,Branching index EtaB (with ring correction),2D
+ETA_EtaP_B_RC,,Branching index EtaB (with ring correction) relative to molecular size,2D
+FMF,FMFDescriptor,Complexity of a molecule,2D
+fragC,FragmentComplexityDescriptor,Complexity of a system,2D
+nHBAcc,PaDELHBondAcceptorCountDescriptor,Number of hydrogen bond acceptors (using CDK HBondAcceptorCountDescriptor algorithm),2D
+nHBAcc2,,"Number of hydrogen bond acceptors (any oxygen; any nitrogen where the formal charge of the nitrogen is non-positive (i.e. formal charge <= 0) except a non-aromatic nitrogen that is adjacent to an oxygen and aromatic ring, or an aromatic nitrogen with a hydrogen atom in a ring, or an aromatic nitrogen with 3 neighouring atoms in a ring, or a nitrogen with total bond order >=4; any fluorine)",2D
+nHBAcc3,,"Number of hydrogen bond acceptors (any oxygen; any nitrogen where the formal charge of the nitrogen is non-positive (i.e. formal charge <= 0) except a non-aromatic nitrogen that is adjacent to an oxygen and aromatic ring, or an aromatic nitrogen with a hydrogen atom in a ring, or an aromatic nitrogen with 3 neighouring atoms in a ring, or a nitrogen with total bond order >=4, or a nitrogen in an amide bond; any fluorine)",2D
+nHBAcc_Lipinski,,Number of hydrogen bond acceptors (using Lipinski's definition: any nitrogen; any oxygen),2D
+nHBDon,PaDELHBondDonorCountDescriptor,Number of hydrogen bond donors (using CDK HBondDonorCountDescriptor algorithm),2D
+nHBDon_Lipinski,,Number of hydrogen bond donors (using Lipinski's definition: Any OH or NH. Each available hydrogen atom is counted as one hydrogen bond donor),2D
+HybRatio,HybridizationRatioDescriptor,Fraction of sp3 carbons to sp2 carbons,2D
+Kier1,KappaShapeIndicesDescriptor,First kappa shape index ,2D
+Kier2,,Second kappa shape index ,2D
+Kier3,,Third kappa (κ) shape index ,2D
+nAtomLC,LargestChainDescriptor,Number of atoms in the largest chain,2D
+nAtomP,LargestPiSystemDescriptor,Number of atoms in the largest pi system,2D
+nAtomLAC,LongestAliphaticChainDescriptor,Number of atoms in the longest aliphatic chain,2D
+MLogP,MannholdLogPDescriptor,Mannhold LogP,2D
+McGowan_Volume,McGowanVolumeDescriptor,McGowan characteristic volume,2D
+MDEC-11,MDEDescriptor,Molecular distance edge between all primary carbons,2D
+MDEC-12,,Molecular distance edge between all primary and secondary carbons,2D
+MDEC-13,,Molecular distance edge between all primary and tertiary carbons,2D
+MDEC-14,,Molecular distance edge between all primary and quaternary carbons ,2D
+MDEC-22,,Molecular distance edge between all secondary carbons ,2D
+MDEC-23,,Molecular distance edge between all secondary and tertiary carbons,2D
+MDEC-24,,Molecular distance edge between all secondary and quaternary carbons ,2D
+MDEC-33,,Molecular distance edge between all tertiary carbons,2D
+MDEC-34,,Molecular distance edge between all tertiary and quaternary carbons ,2D
+MDEC-44,,Molecular distance edge between all quaternary carbons ,2D
+MDEO-11,,Molecular distance edge between all primary oxygens ,2D
+MDEO-12,,Molecular distance edge between all primary and secondary oxygens ,2D
+MDEO-22,,Molecular distance edge between all secondary oxygens ,2D
+MDEN-11,,Molecular distance edge between all primary nitrogens,2D
+MDEN-12,,Molecular distance edge between all primary and secondary nitrogens ,2D
+MDEN-13,,Molecular distance edge between all primary and tertiary niroqens ,2D
+MDEN-22,,Molecular distance edge between all secondary nitroqens ,2D
+MDEN-23,,Molecular distance edge between all secondary and tertiary nitrogens ,2D
+MDEN-33,,Molecular distance edge between all tertiary nitrogens,2D
+MLFER_A,MLFERDescriptor,Overall or summation solute hydrogen bond acidity,2D
+MLFER_BH,,Overall or summation solute hydrogen bond basicity,2D
+MLFER_BO,,Overall or summation solute hydrogen bond basicity,2D
+MLFER_S,,Combined dipolarity/polarizability,2D
+MLFER_E,,Excessive molar refraction,2D
+MLFER_L,,Solute gas-hexadecane partition coefficient,2D
+PetitjeanNumber,PetitjeanNumberDescriptor,Petitjean number,2D
+nRing,RingCountDescriptor,Number of rings,2D
+n3Ring,,Number of 3-membered rings,2D
+n4Ring,,Number of 4-membered rings,2D
+n5Ring,,Number of 5-membered rings,2D
+n6Ring,,Number of 6-membered rings,2D
+n7Ring,,Number of 7-membered rings,2D
+n8Ring,,Number of 8-membered rings,2D
+n9Ring,,Number of 9-membered rings,2D
+n10Ring,,Number of 10-membered rings,2D
+n11Ring,,Number of 11-membered rings,2D
+n12Ring,,Number of 12-membered rings,2D
+nG12Ring,,Number of >12-membered rings,2D
+nFRing,,Number of fused rings,2D
+nF4Ring,,Number of 4-membered fused rings,2D
+nF5Ring,,Number of 5-membered fused rings,2D
+nF6Ring,,Number of 6-membered fused rings,2D
+nF7Ring,,Number of 7-membered fused rings,2D
+nF8Ring,,Number of 8-membered fused rings,2D
+nF9Ring,,Number of 9-membered fused rings,2D
+nF10Ring,,Number of 10-membered fused rings,2D
+nF11Ring,,Number of 11-membered fused rings,2D
+nF12Ring,,Number of 12-membered fused rings,2D
+nFG12Ring,,Number of >12-membered fused rings,2D
+nTRing,,Number of rings (includes counts from fused rings),2D
+nT4Ring,,Number of 4-membered rings (includes counts from fused rings),2D
+nT5Ring,,Number of 5-membered rings (includes counts from fused rings),2D
+nT6Ring,,Number of 6-membered rings (includes counts from fused rings),2D
+nT7Ring,,Number of 7-membered rings (includes counts from fused rings),2D
+nT8Ring,,Number of 8-membered rings (includes counts from fused rings),2D
+nT9Ring,,Number of 9-membered rings (includes counts from fused rings),2D
+nT10Ring,,Number of 10-membered rings (includes counts from fused rings),2D
+nT11Ring,,Number of 11-membered rings (includes counts from fused rings),2D
+nT12Ring,,Number of 12-membered rings (includes counts from fused rings),2D
+nTG12Ring,,Number of >12-membered rings (includes counts from fused rings),2D
+nRotB,RotatableBondsCountDescriptor,"Number of rotatable bonds, excluding terminal bonds",2D
+LipinskiFailures,RuleOfFiveDescriptor,Number failures of the Lipinski's Rule Of 5,2D
+TopoPSA,TPSADescriptor,Topological polar surface area,2D
+VABC,VABCDescriptor,"Van der Waals volume calculated using the method proposed in [Zhao, Yuan H. and Abraham, Michael H. and Zissimos, Andreas M., Fast Calculation of van der Waals Volume as a Sum of Atomic and Bond Contributions and Its Application to Drug Compounds, The Journal of Organic Chemistry, 2003, 68:7368-7373]",2D
+VAdjMat,VAdjMaDescriptor,Vertex adjacency information (magnitude),2D
+MW,WeightDescriptor,Molecular weight,2D
+WTPT-1,WeightedPathDescriptor,Molecular ID,2D
+WTPT-2,,Molecular ID / number of atoms,2D
+WTPT-3,,Sum of path lengths starting from heteroatoms,2D
+WTPT-4,,Sum of path lengths starting from oxygens,2D
+WTPT-5,,Sum of path lengths starting from nitrogens,2D
+WPATH,WienerNumbersDescriptor,Weiner path number ,2D
+WPOL,,Weiner polarity number ,2D
+XLogP,XLogPDescriptor,XLogP,2D
+Zagreb,ZagrebIndexDescriptor,Sum of the squares of atom degree over all heavy atoms i,2D

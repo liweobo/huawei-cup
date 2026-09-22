@@ -1,0 +1,9 @@
+evaluation_object: the 50 source-provided prediction compounds
+decision_question: which in-domain compound satisfying at least three predicted favorable
+  ADMET endpoints has the highest uncertainty-penalized predicted pIC50
+output_semantics: RANK
+absolute_or_relative: RELATIVE_TO_FIXED_50_COMPOUND_SET
+threshold_provenance: endpoint-specific validation thresholds from Q3
+allowed_claim: surrogate ranking within the fixed observed candidate set; requires
+  experimental verification
+status: EVALUATION_SEMANTICS_VERIFIED

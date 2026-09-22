@@ -1,0 +1,17 @@
+{
+  "git_head": "4ff6213a729567ab916932bb0ce5a65bebd246b6",
+  "skill_tree": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+  "working_tree_before": "CLEAN",
+  "protected_tree_hashes": {
+    "historical_2020_e_visibility_forecasting": "101065189e56c1e9b9dc70c955045c44276aa54d",
+    "historical_2007_a_food_safety_evaluation": "8b04b32b5966d5bae2085cb28d492246de78ecc9",
+    "historical_2017_f_underground_logistics_network": "e2cc3eda04f300698edd078996a17be6584f1fcc",
+    "historical_2005_d_stochastic_inventory": "1cb175c3339d2db9627945c25ecc27d02e894ebc",
+    "historical_2020_a_chip_phase_noise": "6e7bd05c50aa614b1e741c08117765a17dd0a6ff",
+    "historical_2011_b_absorbing_material_anechoic_chamber": "e04effd94bce8c3dca97c72155853aafc65df037",
+    "historical_2022_c_buffer_scheduling": "92bd2ef04f834c8011d179e9dd4691f08209685d",
+    "historical_2024_c_core_loss": "56dece647c5ab8ef7fff8a1713e1a8a4a1b6ac1a"
+  },
+  "protected_2023_assets": "tracked at HEAD; final diff must contain no paths outside the new 2021D run",
+  "excellent_solutions_accessed": false
+}

@@ -1,0 +1,66 @@
+{
+  "key": "SMILES",
+  "splits": {
+    "training": {
+      "row_counts": {
+        "activity": 1974,
+        "admet": 1974,
+        "descriptor": 1974
+      },
+      "unique_counts": {
+        "activity": 1974,
+        "admet": 1974,
+        "descriptor": 1974
+      },
+      "duplicate_counts": {
+        "activity": 0,
+        "admet": 0,
+        "descriptor": 0
+      },
+      "set_equality": true,
+      "row_order_equality": true,
+      "missing_from_activity": {
+        "activity": [],
+        "admet": [],
+        "descriptor": []
+      },
+      "missing_from_source": {
+        "activity": [],
+        "admet": [],
+        "descriptor": []
+      }
+    },
+    "test": {
+      "row_counts": {
+        "activity": 50,
+        "admet": 50,
+        "descriptor": 50
+      },
+      "unique_counts": {
+        "activity": 50,
+        "admet": 50,
+        "descriptor": 50
+      },
+      "duplicate_counts": {
+        "activity": 0,
+        "admet": 0,
+        "descriptor": 0
+      },
+      "set_equality": true,
+      "row_order_equality": true,
+      "missing_from_activity": {
+        "activity": [],
+        "admet": [],
+        "descriptor": []
+      },
+      "missing_from_source": {
+        "activity": [],
+        "admet": [],
+        "descriptor": []
+      }
+    }
+  },
+  "train_test_overlap_count": 0,
+  "train_test_overlap_examples": [],
+  "status": "PASS"
+}

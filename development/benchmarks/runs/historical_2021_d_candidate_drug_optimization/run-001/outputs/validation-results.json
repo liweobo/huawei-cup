@@ -1,0 +1,641 @@
+{
+  "effective_python": "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+  "default_pytest_environment": "DEFAULT_PYTEST_ENVIRONMENT_ISSUE_EXISTING: default interpreter lacks pytest; run-scoped isolated environment used",
+  "smoke_finding_policy": "EXISTING_SMOKE_FAILURES_PRESERVED; frozen historical paths were not edited",
+  "results": [
+    {
+      "name": "smoke_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/smoke_test.py"
+      ],
+      "return_code": 1,
+      "classification": "EXISTING_SMOKE_FAILURES_PRESERVED",
+      "duration_seconds": 0.8461892604827881,
+      "log_sha256": "ce46c2cba9461b162754bfc0cce9bf8260681f1e7a503659b24219bab063307e",
+      "log_bytes": 632,
+      "representative_lines": [
+        "FAIL",
+        "- unfinished placeholder in: development\\benchmarks\\runs\\historical_2022_c_buffer_scheduling\\run-002\\REPORT.md",
+        "- unfinished placeholder in: development\\benchmarks\\runs\\historical_2021_d_candidate_drug_optimization\\run-001\\validation.md",
+        "- unfinished placeholder in: development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-001\\REPORT.md",
+        "- unfinished placeholder in: development\\benchmarks\\runs\\historical_2017_f_underground_logistics_network\\run-001\\validation.md",
+        "- unfinished placeholder in: development\\benchmarks\\runs\\historical_2007_a_food_safety_evaluation\\run-001\\validation-results\\README.md"
+      ],
+      "local_log": ".tmp\\2021d-validation\\smoke_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "routing_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/routing_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.323136568069458,
+      "log_sha256": "8dc5d829e954a011a25db17e0e138e254961085f58406b44e74cca7f8834fb96",
+      "log_bytes": 5046,
+      "representative_lines": [
+        "PASS | risk | 最优解不满足约束 -> validate_model (expected validate_model)",
+        "PASS | risk | 论文中的结果和代码结果对不上 -> reviewer (expected reviewer)",
+        "PASS | risk | 摘要和正文不一致，提交前怎么处理 -> final_check (expected final_check)",
+        "PASS | non_trigger | 我只想知道随机森林是什么 -> None (expected None)",
+        "PASS | non_trigger | 我只是求一个积分 -> None (expected None)",
+        "PASS | ambiguous | 模型 -> None (expected None)",
+        "PASS | ambiguous | 帮我理解一个算法 -> None (expected None)",
+        "PASS | non_trigger | Python pandas 报错怎么解决 -> None (expected None)",
+        "PASS | non_trigger | 翻译这一段论文 -> None (expected None)",
+        "PASS | trigger_boundary | 我在做数学建模竞赛，问题三到底要求什么？ -> analyze_problem (expected analyze_problem)",
+        "PASS | trigger_boundary | 我在做数学建模竞赛，先分析题意，不要建模 -> analyze_problem (expected analyze_problem)",
+        "Routing Heuristic Test: 50/50 passed | {'normal': 12, 'adversarial': 20, 'risk': 10, 'non_trigger': 4, 'ambiguous': 2, 'trigger_boundary': 2}"
+      ],
+      "local_log": ".tmp\\2021d-validation\\routing_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "trigger_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/trigger_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.15761065483093262,
+      "log_sha256": "accd58e3e241c2459149d44d6babef2d1ddde9a9ee19f55c6e450d02f7cff99b",
+      "log_bytes": 2820,
+      "representative_lines": [
+        "PASS | 我在做数学建模竞赛，帮我分析问题三 -> trigger=True, route=analyze_problem",
+        "PASS | 我在做数学建模竞赛，问题三到底要求什么？ -> trigger=True, route=analyze_problem",
+        "PASS | 数模国赛这道题应该怎么拆？ -> trigger=True, route=analyze_problem",
+        "PASS | MCM Problem C 怎么建模？ -> trigger=True, route=design_model",
+        "PASS | 我正在参加数学建模比赛，先分析题意 -> trigger=True, route=analyze_problem",
+        "PASS | 这是我们的数模赛题附件 -> trigger=True, route=audit_data",
+        "PASS | 数学建模比赛进入模型验证阶段了 -> trigger=True, route=validate_model",
+        "PASS | 我们已经做完 baseline，下一步做什么？ -> trigger=True",
+        "PASS | 我在做数学建模竞赛，先分析题意，不要建模 -> trigger=True, route=analyze_problem",
+        "PASS | 我不是在做数学建模，只是想了解随机森林 -> trigger=False",
+        "PASS | 我不是在做数模，只是想写一篇机器学习论文 -> trigger=False",
+        "Trigger Boundary Test: 44/44 passed"
+      ],
+      "local_log": ".tmp\\2021d-validation\\trigger_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "adversarial_trigger_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/adversarial_trigger_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.08861017227172852,
+      "log_sha256": "a5196f679dbd3fe39ad8d31d0861021da0dc4085d9d7def0ff3b8a7deaaf59ca",
+      "log_bytes": 78,
+      "representative_lines": [
+        "Adversarial Trigger Test: 25/25 passed",
+        "false positives=0, false negatives=0"
+      ],
+      "local_log": ".tmp\\2021d-validation\\adversarial_trigger_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "behavior_contract_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/behavior_contract_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.11461305618286133,
+      "log_sha256": "853c566106fcbb8b94589f342e554408ea7c5899ee3281f6fe86296f65e5e96d",
+      "log_bytes": 262,
+      "representative_lines": [
+        "PASS | select_problem",
+        "PASS | analyze_problem",
+        "PASS | audit_data",
+        "PASS | design_model",
+        "PASS | build_baseline",
+        "PASS | run_experiment",
+        "PASS | validate_model",
+        "PASS | write_paper",
+        "PASS | reviewer",
+        "PASS | final_check",
+        "Static Behavior Contract: PASS (10 contracts)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\behavior_contract_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "trajectory_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/trajectory_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.7888460159301758,
+      "log_sha256": "dc206ec5374c2e9f2418e9e23794a794189cee03e0c19a460e2ebbd6303e839a",
+      "log_bytes": 5973,
+      "representative_lines": [
+        "PASS | trajectory=optimization_recovery_01 | turn=14",
+        "  trigger=True route=final_check phase=submission",
+        "Trajectory Benchmark Metrics (Layer A)",
+        "Trigger Accuracy: 52/52 (100.0%)",
+        "Route Accuracy: 52/52 (100.0%)",
+        "Context Retention: 48/48 (100.0%)",
+        "Transition Accuracy: 48/48 (100.0%)",
+        "Risk Detection: 4/4 (100.0%)",
+        "Route Coverage: 10/10 (analyze_problem, audit_data, build_baseline, design_model, final_check, reviewer, run_experiment, select_problem, validate_model, write_paper)",
+        "Longest Stable Trajectory: 14 turns",
+        "Historical Benchmark Coverage: 1 ACCEPTED/VERIFIED historical trajectories",
+        "Trajectory Benchmark: PASS (4 trajectories, 52 turns)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\trajectory_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "trajectory_safety_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/trajectory_safety_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.09955143928527832,
+      "log_sha256": "8b26f21171619b05e3ed59159211fec82792965cd4801411346fb1860c9a917c",
+      "log_bytes": 343,
+      "representative_lines": [
+        "PASS | COMPLETE is not allowed",
+        "PASS | blocked=true requires",
+        "PASS | BLOCKED status must",
+        "PASS | experiment COMPLETE requires",
+        "PASS | historical coverage requires",
+        "PASS | experiment numbers require",
+        "PASS | final_check to select_problem requires a new risk",
+        "PASS | new P0 risk permits problem reselection",
+        "Trajectory Safety Test: 8/8 passed"
+      ],
+      "local_log": ".tmp\\2021d-validation\\trajectory_safety_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "historical_artifact_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/historical_artifact_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 4.013237237930298,
+      "log_sha256": "27bfcc8209648c2e9a27b8b60a86ff35bbcbdceb13f993beae5be72b8b0dac37",
+      "log_bytes": 1275,
+      "representative_lines": [
+        "PASS | missing raw artifact fails",
+        "PASS | valid blind transcript structure",
+        "PASS | duplicate turn ID fails",
+        "PASS | missing evidence reference fails",
+        "PASS | duplicate evidence ID fails",
+        "PASS | experiment claim without CODE_RUN fails",
+        "PASS | unresolved P0 plus READY fails",
+        "PASS | evaluator-only field in blind turn fails",
+        "PASS | artifact hash mismatch in evidence fails",
+        "PASS | model-behavior P0 overrides high rubric scores",
+        "PASS | project blocker does not become model-behavior P0",
+        "Historical Artifact Test: PASS (27/27 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\historical_artifact_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "postmortem_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/postmortem_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.0930023193359375,
+      "log_sha256": "92b10d7957697f4bdfc86ba980fe589c94cc4f496f67859a304084aff4fbb70d",
+      "log_bytes": 397,
+      "representative_lines": [
+        "PASS | canonical audit summary preserves duplicate_full_rows=1",
+        "PASS | contradictory duplicate count is rejected",
+        "PASS | consistent canonical duplicate count is accepted",
+        "PASS | unchanged protocol is valid",
+        "PASS | undeclared protocol drift is rejected",
+        "PASS | declared protocol drift is accepted",
+        "PASS | sensitivity perturbation remains simulated",
+        "Postmortem Regression Test: PASS (7/7 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\postmortem_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "problem_facts_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/problem_facts_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 24.834036827087402,
+      "log_sha256": "f47e7dc9977e5ed2805f124c42229e1143be3f99af35df53ff7598c6d3b0370d",
+      "log_bytes": 2363,
+      "representative_lines": [
+        "PASS | ART-005 column dimensions match raw workbook",
+        "PASS | ART-005 role is consistent across source/facts/manifest",
+        "PASS | ART-005 filename is consistent across source/facts/manifest",
+        "PASS | ART-005 manifest dimensions match raw workbook",
+        "PASS | ART-005 Sheet1 has the two required output columns",
+        "PASS | problem-facts attachment_1 dimensions match all four sheets",
+        "PASS | problem-facts attachment_2 dimensions are 81x1028",
+        "PASS | problem-facts attachment_3 dimensions are 401x1029",
+        "PASS | problem-facts attachment_4 Sheet1 dimensions are 401x3",
+        "PASS | problem-facts attachment_2 omits waveform label",
+        "PASS | problem-facts attachment_3 includes waveform label",
+        "Problem Facts Regression: PASS (42/42 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\problem_facts_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "run001_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/run001_integrity_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.3080615997314453,
+      "log_sha256": "40e15ff663b65390a3b0a82ebb82ee86c0115a83d40a67c7e55ae6624ea68610",
+      "log_bytes": 560,
+      "representative_lines": [
+        "PASS | result.txt exists",
+        "PASS | result.txt byte count matches manifest",
+        "PASS | result.txt SHA256 matches manifest",
+        "PASS | original transfer archive metadata is retained",
+        "PASS | transfer archive is marked removed after canonicalization",
+        "PASS | canonical problem raw inputs match source manifest",
+        "PASS | all retained evidence ledger entries resolve with SHA256",
+        "PASS | curated evidence projection retains required run artifacts",
+        "PASS | raw archive is marked immutable",
+        "PASS | run-001 outcome remains NEEDS_REVIEW",
+        "Run-001 Integrity Test: PASS (10/10 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\run001_integrity_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "run002_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/run002_integrity_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.23434710502624512,
+      "log_sha256": "e6f4f5389d11b48d6dd5449eae20be5b3ec20c49ec506c44da383bb815bf999f",
+      "log_bytes": 975,
+      "representative_lines": [
+        "PASS | canonical transcript byte count matches manifest",
+        "PASS | canonical transcript SHA256 matches manifest",
+        "PASS | manifest points to the canonical structured transcript",
+        "PASS | archive removal is marked and raw metadata remains immutable",
+        "PASS | retained evidence ledger entries resolve with SHA256",
+        "PASS | selected active evidence run is retained",
+        "PASS | run-002 outcome remains NEEDS_REVIEW",
+        "PASS | transcript uses schema version 3",
+        "PASS | transcript binds active run to run-002",
+        "PASS | Run-003 archive is retained as a separate sibling",
+        "PASS | reconstructed manifest immutable input hashes match source manifest",
+        "Run-002 Integrity Test: PASS (15/15 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\run002_integrity_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "run003_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/run003_integrity_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 5.228037595748901,
+      "log_sha256": "de23fd772834e603529385688449528870cf7f0198616a1c7719ffeb42183244",
+      "log_bytes": 857,
+      "representative_lines": [
+        "PASS | retained raw JSONL turn logs parse, allowing documented Turn-001 tail",
+        "PASS | manifest binds benchmark and active run",
+        "PASS | manifest retains NEEDS_REVIEW / NOT_READY outcome",
+        "PASS | workspace isolation regression is explicitly retained",
+        "PASS | transcript uses schema version 3 and active run-003",
+        "PASS | transcript contains exactly 14 captured turns",
+        "PASS | evaluation has all eight dimensions",
+        "PASS | 21 evidence entries resolve and match SHA256",
+        "PASS | all transcript and claim evidence refs resolve",
+        "PASS | Active Evidence Set is non-empty and run-003-only",
+        "PASS | no consumed evidence entry belongs to an older run",
+        "Run-003 Integrity Test: PASS (11/11 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\run003_integrity_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "run_attempt_integrity_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/run_attempt_integrity_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.08717465400695801,
+      "log_sha256": "e002d4759ea1fa6c0ab9d10a9da19410a6c3e51903f2587b16417a3c6160bba0",
+      "log_bytes": 698,
+      "representative_lines": [
+        "PASS | attempt is distinct from behavioral archive",
+        "PASS | execution stopped before Turn 1",
+        "PASS | failure is infrastructure-owned",
+        "PASS | transport and binding are separate failures",
+        "PASS | model behavior is not evaluated",
+        "PASS | Turn 1 submission and response are distinguished",
+        "PASS | retry retains Run-004 id",
+        "PASS | transport error preserves missing call_id diagnosis",
+        "PASS | prepared clean room passed its own gate",
+        "PASS | retained visibility report has no forbidden match",
+        "PASS | retained manifest and report hashes are reproducible",
+        "Run Attempt Integrity: PASS (14/14 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\run_attempt_integrity_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "clean_room_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/clean_room_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.19415545463562012,
+      "log_sha256": "6c08c584163d65d8d2aaeea1683187cec59b707d99f366dacd6fdafc4d804dd5",
+      "log_bytes": 638,
+      "representative_lines": [
+        "PASS | evaluator files are excluded",
+        "PASS | raw input hash matches canonical source",
+        "PASS | runtime skill identity is hash-verifiable",
+        "PASS | pre-run visibility report passes",
+        "PASS | generated path inside workspace is accepted",
+        "PASS | developer repository path is rejected for writes",
+        "PASS | previous run output is rejected by visibility gate",
+        "PASS | active evidence set is bound to current run",
+        "PASS | canonicalization preserves selected output",
+        "PASS | clean room can be removed after canonicalization",
+        "PASS | canonicalization manifest is retained",
+        "Clean-room Regression Test: PASS (13/13 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\clean_room_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "temporal_availability_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/temporal_availability_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.5796823501586914,
+      "log_sha256": "5319db5c54a2b2d264b135f45dd88f62fe5bdb17f831afc39ceac13bc1e9fcdc",
+      "log_bytes": 487,
+      "representative_lines": [
+        "PASS | target horizon is identified before feature generation",
+        "PASS | post-horizon row is found",
+        "PASS | affected entity count is reported",
+        "PASS | filter precedes aggregation",
+        "PASS | future row is absent from allowed input",
+        "PASS | aggregation-before-filter is rejected",
+        "PASS | future aggregation invalidates experiment",
+        "PASS | invalidated record remains provenance-valid",
+        "PASS | unknown horizon blocks observed feature generation",
+        "Temporal Availability Regression: PASS (10/10 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\temporal_availability_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "runtime_binding_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/runtime_binding_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.45873045921325684,
+      "log_sha256": "7a366f1058d8edc2ee1e27e154a6abe71848aae2a80be12bfe2482746b02730f",
+      "log_bytes": 730,
+      "representative_lines": [
+        "PASS | missing input fails",
+        "PASS | evaluator artifact fails actual-root scan",
+        "PASS | runtime hash mismatch fails",
+        "PASS | developer repository root is rejected",
+        "PASS | valid function call pair passes",
+        "PASS | orphan function output fails",
+        "PASS | missing call_id fails",
+        "PASS | wrong call_id fails",
+        "PASS | unknown provider capability is not guessed",
+        "PASS | known transport capability preflight passes",
+        "PASS | failed preflight blocks Turn 1",
+        "Runtime Binding Regression: PASS (17/17 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\runtime_binding_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "portable_runtime_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/portable_runtime_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 17.077598810195923,
+      "log_sha256": "99c38f9cd1a7fdbde28ebfd90007998483fec36b6a586ae1f07db4c3345a4353",
+      "log_bytes": 102,
+      "representative_lines": [
+        "................................                                         [100%]",
+        "32 passed in 16.82s"
+      ],
+      "local_log": ".tmp\\2021d-validation\\portable_runtime_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "repository_packaging_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/repository_packaging_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.3795313835144043,
+      "log_sha256": "52a484a872d7ea5509c7564fc4984aeca3bcc15a03bd32ad47a76b10510cf7c1",
+      "log_bytes": 100,
+      "representative_lines": [
+        "......                                                                   [100%]",
+        "6 passed in 0.13s"
+      ],
+      "local_log": ".tmp\\2021d-validation\\repository_packaging_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "phase5_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/phase5_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.10525131225585938,
+      "log_sha256": "8bf21ced34acdc1a79f991ccce36c906f5316c0f82b47239ced33af06db7cbbc",
+      "log_bytes": 961,
+      "representative_lines": [
+        "PASS | C changed protocol requires reason",
+        "PASS | D observed changed protocol requires user disclosure",
+        "PASS | E workspace initializer creates an isolated valid manifest",
+        "PASS | E current-run artifact path is accepted",
+        "PASS | E artifact outside ACTIVE_RUN_ID is rejected",
+        "PASS | F stale paper evidence from another run is rejected",
+        "PASS | G active evidence set is structurally valid",
+        "PASS | G paper claim from active evidence set is accepted",
+        "PASS | run-produced evidence binds run_id and experiment_id",
+        "PASS | run-produced evidence without run_id is rejected",
+        "PASS | H incomplete Q3/Q4/Q5 block final READY",
+        "Phase 5 Regression Test: PASS (15/15 checks)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\phase5_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "protocol_order_regression_test",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/harness/protocol_order_regression_test.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.08964204788208008,
+      "log_sha256": "a513c2676889408d4b71bb40c20fb2c186a04df9a911e140eed73b7118d916f6",
+      "log_bytes": 1069,
+      "representative_lines": [
+        "PASS | I mixed sequence with nested key reorder is unchanged",
+        "PASS | Non-inventory signal pipeline reorder is detected",
+        "PASS | Non-inventory ML preprocessing reorder is detected",
+        "PASS | normalize_protocol preserves sequence order",
+        "PASS | normalize_protocol canonicalizes mapping keys",
+        "PASS | normalize_protocol represents tuples as ordered lists",
+        "PASS | J unchanged protocol computes protocol_changed=false",
+        "PASS | J unchanged record validates",
+        "PASS | J reordered validation stages compute protocol_changed=true",
+        "PASS | J parameter change is detected",
+        "PASS | J OBSERVED sequence reorder without declaration is rejected",
+        "Protocol Order Regression Test: PASS (0 failures)"
+      ],
+      "local_log": ".tmp\\2021d-validation\\protocol_order_regression_test.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "development_tests",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "development/tests"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 37.356319427490234,
+      "log_sha256": "c5f0e6e8b78501fdfe0a5a5d10d6ae6131458d1688cee27e30465aaf5824cbf7",
+      "log_bytes": 427,
+      "representative_lines": [
+        "........................................................................ [ 22%]",
+        "........................................................................ [ 44%]",
+        "........................................................................ [ 67%]",
+        "........................................................................ [ 89%]",
+        ".................................                                        [100%]",
+        "321 passed in 36.66s"
+      ],
+      "local_log": ".tmp\\2021d-validation\\development_tests.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "graduation_artifact_tests",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2021_d_candidate_drug_optimization\\run-001\\code\\test_run_artifacts.py"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.7854528427124023,
+      "log_sha256": "f0b523eca25378b2c15cd248e7e3b4c17be0870a85152bcac81df59dc44f125a",
+      "log_bytes": 100,
+      "representative_lines": [
+        ".....                                                                    [100%]",
+        "5 passed in 0.42s"
+      ],
+      "local_log": ".tmp\\2021d-validation\\graduation_artifact_tests.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "compileall",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "development/harness",
+        "development/tooling",
+        "development/tests",
+        "skill/scripts",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\development\\benchmarks\\runs\\historical_2021_d_candidate_drug_optimization\\run-001\\code"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.09527063369750977,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_bytes": 0,
+      "representative_lines": [],
+      "local_log": ".tmp\\2021d-validation\\compileall.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    },
+    {
+      "name": "skill_only_package",
+      "command": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\graduation-venv\\Scripts\\python.exe",
+        "development/tooling/package_repository.py",
+        "--skill-only",
+        "--developer-repo",
+        ".",
+        "--output",
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\2021d-validation\\huawei-cup-2026-skill.zip"
+      ],
+      "return_code": 0,
+      "classification": "PASS",
+      "duration_seconds": 0.11907148361206055,
+      "log_sha256": "0b3284d3a593a3c4052a84a80f705a0b850fd92c2cbc0d862a19fd9ca05a6ec3",
+      "log_bytes": 86,
+      "representative_lines": [
+        "C:\\Users\\lwb\\Desktop\\test\\huawei-cup\\.tmp\\2021d-validation\\huawei-cup-2026-skill.zip"
+      ],
+      "local_log": ".tmp\\2021d-validation\\skill_only_package.log",
+      "local_log_commit_policy": "EXCLUDED_LOCAL_CACHE"
+    }
+  ],
+  "effective_failure_count": 0,
+  "effective_failures": [],
+  "status": "PASS"
+}

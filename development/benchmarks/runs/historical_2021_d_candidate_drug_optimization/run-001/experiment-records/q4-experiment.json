@@ -1,0 +1,8 @@
+{
+  "status": "OBSERVED",
+  "domain": "50 observed prediction compounds",
+  "surrogate": true,
+  "search_budget": 50,
+  "solver_status": "OPTIMAL",
+  "synthetic_check": "PASS"
+}

@@ -1,0 +1,5 @@
+# Q3 ADMET Models
+
+Each endpoint is audited and modeled separately. All are binary exactly as stated in the source. Endpoint-specific stratified five-fold outer validation preserves class ratios. Majority prior is the simple baseline; regularized Logistic and Extra Trees are the two candidates. Feature selection is target-specific and fold-local, so Q2 descriptors are not imposed on Q3. Logistic searches six C/class-weight settings; Extra Trees searches four capacity settings. The primary selection metric is PR-AUC, with Logistic preferred within 0.01. Every deployment threshold is selected from out-of-fold probabilities on legal training data after family freeze; test labels are absent.
+
+Probability quality is reported with Brier score and ten-bin expected calibration error. Threshold metrics include Balanced Accuracy, positive-class Recall, Precision, F1, and Specificity. Because positive labels are harmful for hERG and MN, Q4 separately maps class semantics to favorable states.

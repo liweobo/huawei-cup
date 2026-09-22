@@ -1,0 +1,5 @@
+run_id: historical_2021_d_candidate_drug_optimization/run-001
+allowed_write_root: C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2021_d_candidate_drug_optimization\run-001
+source_root: C:\Users\lwb\Desktop\test\huawei-cup\development\benchmarks\runs\historical_2021_d_candidate_drug_optimization\run-001\source-provenance\original
+seed: 20210922
+status: COMPLETE

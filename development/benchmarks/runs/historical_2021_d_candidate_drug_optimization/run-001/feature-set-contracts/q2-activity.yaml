@@ -1,0 +1,43 @@
+task: Q2 activity prediction
+prediction_setting: new source-provided compounds
+unit_of_analysis: compound keyed by SMILES
+target: pIC50
+feature_groups:
+- name: supplied_2d_descriptors
+  source: Molecular_Descriptor.xlsx
+  dimension: 729
+  availability: VERIFIED
+baseline_feature_groups:
+- supplied_2d_descriptors
+selection_method: fold-local near-constant and duplicate filter plus SelectKBest(f_regression,k=20)
+selection_scope: TRAIN_FOLD
+comparison_protocol:
+  models:
+  - mean
+  - median
+  - ridge
+  - extra_trees
+  outer_folds: 5
+  seed: 20210922
+final_feature_columns:
+- AMR
+- nC
+- BCUTp-1h
+- C2SP2
+- SP-5
+- CrippenLogP
+- SwHBa
+- SaaCH
+- minsssN
+- minsOH
+- maxHsOH
+- maxsssN
+- maxsOH
+- hmin
+- LipoaffinityIndex
+- MLogP
+- MDEC-22
+- MDEC-23
+- n6Ring
+- nT6Ring
+status: PASS

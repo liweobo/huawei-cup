@@ -1,0 +1,20 @@
+{
+  "random_seed": 20210922,
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "libraries": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "runtime_seconds": 391.85704350471497,
+  "output_sha256": {
+    "q2-test-predictions.csv": "df106b98d34029829ea343dd26db188c2446f4527baf797db4532280af2a5c81",
+    "q3-test-predictions.csv": "d170e7e2ee114f3e7b1bcb91f3d61e1556730304f4b831d61fd2f4d195822120",
+    "candidate-ledger.csv": "366d58daeb6cfc03fa4743c1ec5e764f5a9c7bbfe35976ad72eb659f11c24c83",
+    "q2-oof-predictions.csv": "3776f1e2dc46306e0f7ee8dd60856d7b3c763cddf79dc0b9e0cae38aa55f621a",
+    "q3-oof-predictions.csv": "152e62f337757686e8fa01e3b8593240f1649be4e2e3e70735089d317713af8c"
+  }
+}

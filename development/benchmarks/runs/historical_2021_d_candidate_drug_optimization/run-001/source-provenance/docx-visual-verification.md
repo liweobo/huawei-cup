@@ -1,0 +1,3 @@
+# DOCX Visual Verification
+
+The source DOCX was first passed to the packaged document renderer; that path could not start because bundled LibreOffice was unavailable in this Windows session. A read-only Microsoft Word COM export produced a three-page PDF, which was rasterized with PyMuPDF. All three page images were inspected: page 1 contains the breast-cancer title and ERα background, page 2 defines the datasets and targets, and page 3 contains Questions 1–4. No clipping, missing glyphs, or omitted question text was observed. Render products remain in `.tmp` and are excluded from the commit.

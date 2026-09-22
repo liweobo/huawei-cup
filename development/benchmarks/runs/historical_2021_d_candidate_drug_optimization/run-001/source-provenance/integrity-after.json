@@ -1,0 +1,68 @@
+{
+  "pre_commit_head": "4ff6213a729567ab916932bb0ce5a65bebd246b6",
+  "expected_pre_commit_head": "4ff6213a729567ab916932bb0ce5a65bebd246b6",
+  "skill_tree": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+  "expected_skill_tree": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+  "skill_worktree_diff_empty": true,
+  "changed_path_count_before_integrity_record": 74,
+  "changed_paths_only_in_new_run": true,
+  "outside_new_run_paths": [],
+  "protected_historical_trees": {
+    "historical_2020_e_visibility_forecasting": {
+      "expected_tree": "101065189e56c1e9b9dc70c955045c44276aa54d",
+      "actual_head_tree": "101065189e56c1e9b9dc70c955045c44276aa54d",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2007_a_food_safety_evaluation": {
+      "expected_tree": "8b04b32b5966d5bae2085cb28d492246de78ecc9",
+      "actual_head_tree": "8b04b32b5966d5bae2085cb28d492246de78ecc9",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2017_f_underground_logistics_network": {
+      "expected_tree": "e2cc3eda04f300698edd078996a17be6584f1fcc",
+      "actual_head_tree": "e2cc3eda04f300698edd078996a17be6584f1fcc",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2005_d_stochastic_inventory": {
+      "expected_tree": "1cb175c3339d2db9627945c25ecc27d02e894ebc",
+      "actual_head_tree": "1cb175c3339d2db9627945c25ecc27d02e894ebc",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2020_a_chip_phase_noise": {
+      "expected_tree": "6e7bd05c50aa614b1e741c08117765a17dd0a6ff",
+      "actual_head_tree": "6e7bd05c50aa614b1e741c08117765a17dd0a6ff",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2011_b_absorbing_material_anechoic_chamber": {
+      "expected_tree": "e04effd94bce8c3dca97c72155853aafc65df037",
+      "actual_head_tree": "e04effd94bce8c3dca97c72155853aafc65df037",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2022_c_buffer_scheduling": {
+      "expected_tree": "92bd2ef04f834c8011d179e9dd4691f08209685d",
+      "actual_head_tree": "92bd2ef04f834c8011d179e9dd4691f08209685d",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    },
+    "historical_2024_c_core_loss": {
+      "expected_tree": "56dece647c5ab8ef7fff8a1713e1a8a4a1b6ac1a",
+      "actual_head_tree": "56dece647c5ab8ef7fff8a1713e1a8a4a1b6ac1a",
+      "worktree_diff_empty": true,
+      "status": "PASS"
+    }
+  },
+  "protected_2023_worktree_diffs_empty": {
+    "development/artifacts/2023e-reference-benchmark": true,
+    "development/benchmarks/problems/2023/E": true,
+    "development/benchmarks/runtime/historical_2023_e_hemorrhagic_stroke": true
+  },
+  "forbidden_reference_files_in_run": [],
+  "excellent_solutions_accessed": false,
+  "status": "PASS"
+}

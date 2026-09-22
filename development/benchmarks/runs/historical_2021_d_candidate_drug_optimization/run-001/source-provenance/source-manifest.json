@@ -1,0 +1,58 @@
+{
+  "benchmark_id": "historical_2021_d_candidate_drug_optimization",
+  "retrieval_method": "canonical GitHub raw URL transported by gh-proxy.com; immutable Git blob verification",
+  "allowlist_only": true,
+  "forbidden_reference_paths_accessed": false,
+  "files": [
+    {
+      "filename": "抗胰腺癌候选药物的优化建模.docx",
+      "canonical_source": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/%E6%8A%97%E8%83%B0%E8%85%BA%E7%99%8C%E5%80%99%E9%80%89%E8%8D%AF%E7%89%A9%E7%9A%84%E4%BC%98%E5%8C%96%E5%BB%BA%E6%A8%A1.docx",
+      "transport_url": "https://gh-proxy.com/https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/%E6%8A%97%E8%83%B0%E8%85%BA%E7%99%8C%E5%80%99%E9%80%89%E8%8D%AF%E7%89%A9%E7%9A%84%E4%BC%98%E5%8C%96%E5%BB%BA%E6%A8%A1.docx",
+      "expected_git_blob": "b970fb60d85c0dd650d1152463cabbabf3cfe619",
+      "actual_git_blob": "b970fb60d85c0dd650d1152463cabbabf3cfe619",
+      "sha256": "0659b4322a79a24e1a9c6df2010f38112959c808b7fd37bd5511fff5179a298e",
+      "size_bytes": 25749,
+      "verification": "PASS"
+    },
+    {
+      "filename": "ERα_activity.xlsx",
+      "canonical_source": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/ER%CE%B1_activity.xlsx",
+      "transport_url": "https://gh-proxy.com/https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/ER%CE%B1_activity.xlsx",
+      "expected_git_blob": "a8cbbe3620d7794d475cf85b2351f6dba2a931e3",
+      "actual_git_blob": "a8cbbe3620d7794d475cf85b2351f6dba2a931e3",
+      "sha256": "16141c97ee795c0c2706df180ebabf28182286f6ebdb0ef2ad0e30b8193e6956",
+      "size_bytes": 93695,
+      "verification": "PASS"
+    },
+    {
+      "filename": "ADMET.xlsx",
+      "canonical_source": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/ADMET.xlsx",
+      "transport_url": "https://gh-proxy.com/https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/ADMET.xlsx",
+      "expected_git_blob": "08cee79e5e3beffe574e327b877c6028add92dc6",
+      "actual_git_blob": "08cee79e5e3beffe574e327b877c6028add92dc6",
+      "sha256": "269339467b982e295ae3e93a62ae689db1c5595cae60378aada4450ed1a4dcd4",
+      "size_bytes": 87227,
+      "verification": "PASS"
+    },
+    {
+      "filename": "Molecular_Descriptor.xlsx",
+      "canonical_source": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/Molecular_Descriptor.xlsx",
+      "transport_url": "https://gh-proxy.com/https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/Molecular_Descriptor.xlsx",
+      "expected_git_blob": "21ee480d930e3befc65e55bdb283a01294a48bde",
+      "actual_git_blob": "21ee480d930e3befc65e55bdb283a01294a48bde",
+      "sha256": "714e26121180052c50b82cb99ef16185b0e111b23bcd54f464a0cb6f5ea2585d",
+      "size_bytes": 8804984,
+      "verification": "PASS"
+    },
+    {
+      "filename": "分子描述符含义解释.xlsx",
+      "canonical_source": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/%E5%88%86%E5%AD%90%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%90%AB%E4%B9%89%E8%A7%A3%E9%87%8A.xlsx",
+      "transport_url": "https://gh-proxy.com/https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AF%95%E9%A2%98/2021%E5%B9%B4%E7%A0%94%E7%A9%B6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AF%95%E9%A2%98/D/%E5%88%86%E5%AD%90%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%90%AB%E4%B9%89%E8%A7%A3%E9%87%8A.xlsx",
+      "expected_git_blob": "29e813b8da02985a8043e1cee03120e65378cbd8",
+      "actual_git_blob": "29e813b8da02985a8043e1cee03120e65378cbd8",
+      "sha256": "9617582cc34f44d064a74edfdfb0e9482c7b85e4e9acdea976a29f900b397305",
+      "size_bytes": 49477,
+      "verification": "PASS"
+    }
+  ]
+}

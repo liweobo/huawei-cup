@@ -1,0 +1,169 @@
+task: Q3 target-specific ADMET classification
+prediction_setting: new source-provided compounds
+unit_of_analysis: compound keyed by SMILES
+targets:
+- Caco-2
+- CYP3A4
+- hERG
+- HOB
+- MN
+selection_method: fold-local near-constant and duplicate filter plus SelectKBest(f_classif,k=30)
+selection_scope: TRAIN_FOLD
+threshold_scope: INNER_VALIDATION
+target_specific_feature_columns:
+  Caco-2:
+  - AMR
+  - nHeavyAtom
+  - nC
+  - ATSm2
+  - ATSm3
+  - ATSp1
+  - nBonds
+  - SP-0
+  - SP-1
+  - SP-2
+  - SP-3
+  - SP-4
+  - SP-5
+  - VP-0
+  - VP-1
+  - CrippenMR
+  - nwHBa
+  - ETA_Alpha
+  - ETA_Beta
+  - ETA_Beta_s
+  - ETA_Beta_ns
+  - ETA_Eta_F
+  - ETA_Eta_R_L
+  - ETA_Eta_F_L
+  - MLFER_E
+  - MLFER_L
+  - VAdjMat
+  - MW
+  - WTPT-1
+  - Zagreb
+  CYP3A4:
+  - AMR
+  - apol
+  - nC
+  - ATSp1
+  - ATSp2
+  - ATSp3
+  - ATSp4
+  - ATSp5
+  - nBonds
+  - nBonds2
+  - SP-1
+  - SP-2
+  - SP-3
+  - SP-4
+  - SP-5
+  - SP-6
+  - SP-7
+  - VP-0
+  - VP-1
+  - VP-2
+  - VP-3
+  - VP-4
+  - VP-5
+  - ETA_Alpha
+  - ETA_Beta_s
+  - ETA_Eta_R_L
+  - VAdjMat
+  - WTPT-1
+  - WPOL
+  - Zagreb
+  hERG:
+  - AMR
+  - apol
+  - nAtom
+  - nHeavyAtom
+  - nH
+  - nC
+  - ATSp1
+  - nBonds
+  - nBonds2
+  - nBondsS
+  - bpol
+  - C1SP3
+  - SP-1
+  - VP-0
+  - VP-1
+  - VP-2
+  - CrippenMR
+  - minsssN
+  - maxsssN
+  - hmin
+  - LipoaffinityIndex
+  - ETA_Alpha
+  - ETA_Beta_s
+  - ETA_Eta_R_L
+  - MLogP
+  - McGowan_Volume
+  - VABC
+  - VAdjMat
+  - WTPT-1
+  - Zagreb
+  HOB:
+  - nC
+  - ATSc3
+  - BCUTc-1l
+  - nBondsS
+  - C1SP2
+  - nHsOH
+  - naaN
+  - SHBd
+  - SHBint10
+  - SHsOH
+  - SaaN
+  - SsOH
+  - minHBint10
+  - minHsOH
+  - minaaN
+  - minsOH
+  - mindO
+  - maxHBd
+  - maxHBint10
+  - maxHsOH
+  - maxHCsats
+  - maxaaN
+  - maxsOH
+  - maxdO
+  - hmin
+  - ETA_Beta_ns_d
+  - MLogP
+  - MDEC-23
+  - MLFER_A
+  - nT6Ring
+  MN:
+  - nBondsM
+  - C4SP3
+  - minHBa
+  - minHaaCH
+  - minHother
+  - mindssC
+  - maxHaaCH
+  - maxHother
+  - ETA_Epsilon_1
+  - ETA_Epsilon_2
+  - ETA_Epsilon_4
+  - ETA_Epsilon_5
+  - ETA_dEpsilon_A
+  - ETA_dEpsilon_B
+  - ETA_dEpsilon_C
+  - ETA_Psi_1
+  - ETA_dPsi_A
+  - ETA_BetaP
+  - ETA_BetaP_s
+  - ETA_Beta_ns
+  - ETA_BetaP_ns
+  - ETA_EtaP
+  - ETA_EtaP_F
+  - ETA_EtaP_L
+  - ETA_EtaP_F_L
+  - FMF
+  - HybRatio
+  - MLFER_E
+  - WTPT-3
+  - XLogP
+status: PASS
