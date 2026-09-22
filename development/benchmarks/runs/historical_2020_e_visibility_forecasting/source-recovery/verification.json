@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-22T12:18:48.332354+00:00",
+  "base_commit": "a65aaac1d2986b8dcb3b6d9ae9c754f14d45623b",
+  "metadata_semantic_consistency": "PASS",
+  "required_reports_present": "PASS",
+  "json_parse": "PASS",
+  "local_markdown_targets": "PASS",
+  "frozen_tree_consistency": "PASS",
+  "frozen_payload_hashes": "PASS; see integrity-after.json",
+  "mirror_hash_archive_safety_crc": "PASS; see mirror-archive-verification.json",
+  "browser_cache_and_download_exclusion": "PASS",
+  "sensitive_token_scan": "PASS",
+  "tracked_changes_outside_stage": "NONE",
+  "staged_path_allowlist": "PASS",
+  "expected_staged_file_count": 16,
+  "scope_note": "Checks validate an unsuccessful bounded source-recovery report; they do not validate unavailable media or an uninspected official package."
+}

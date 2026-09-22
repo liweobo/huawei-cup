@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-09-22T12:16:21.269671+00:00",
+  "scope": "Existing frozen GitHub-mirror archives, opened read-only without extraction; not the official full package.",
+  "archives": [
+    {
+      "filename": "机场AMOS观测.zip",
+      "url": "https://api.github.com/repos/zhanwen/MathModel/git/blobs/ecb627cb3b3e99b25f4e04c31dfe0d911f478c4f",
+      "git_blob_sha1": "ecb627cb3b3e99b25f4e04c31dfe0d911f478c4f",
+      "sha256": "06e9983053a059db4f92c3d0257d3063332586ccde00bb3d098f4f582e720002",
+      "bytes": 641088,
+      "sha256_recomputed": "06e9983053a059db4f92c3d0257d3063332586ccde00bb3d098f4f582e720002",
+      "git_blob_recomputed": "ecb627cb3b3e99b25f4e04c31dfe0d911f478c4f",
+      "archive_type_verified": "ZIP",
+      "member_count": 10,
+      "file_count": 7,
+      "total_uncompressed_bytes": 5616746,
+      "unsafe_member_paths": [],
+      "crc_integrity": "PASS",
+      "extracted": false,
+      "official_package_equivalence": "UNVERIFIED"
+    },
+    {
+      "filename": "高速公路视频截图.zip",
+      "url": "https://api.github.com/repos/zhanwen/MathModel/git/blobs/80b3c261a5c0b0fcec6923111ad578f1f3500651",
+      "git_blob_sha1": "80b3c261a5c0b0fcec6923111ad578f1f3500651",
+      "sha256": "80fe0717d9389050ecae381b72d7a994eb7795ced907e30d0409e94b7104cbf8",
+      "bytes": 12352504,
+      "sha256_recomputed": "80fe0717d9389050ecae381b72d7a994eb7795ced907e30d0409e94b7104cbf8",
+      "git_blob_recomputed": "80b3c261a5c0b0fcec6923111ad578f1f3500651",
+      "archive_type_verified": "ZIP",
+      "member_count": 101,
+      "file_count": 100,
+      "total_uncompressed_bytes": 276485400,
+      "unsafe_member_paths": [],
+      "crc_integrity": "PASS",
+      "extracted": false,
+      "official_package_equivalence": "UNVERIFIED"
+    }
+  ]
+}

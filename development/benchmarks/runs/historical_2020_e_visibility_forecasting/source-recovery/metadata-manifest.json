@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "hash_algorithm": "SHA256",
+  "scope": "Every committed report/metadata file in this directory except this manifest itself. Exact bytes are preserved by repository * -text attributes.",
+  "self_excluded": "metadata-manifest.json",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 64,
+      "sha256": "1541a31daeaba4ed3f2c0bb5b732208b3f5308d312a5c8a5761ae1fe0b65fa39"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 3768,
+      "sha256": "c67c2bd0d12c9bd96773a8947b361c29335478c28aa512b088e5b487bb57e605"
+    },
+    {
+      "path": "airport-video-verification.md",
+      "bytes": 1716,
+      "sha256": "e5ffaba5cc0e3780302b94cbc1c831fbc645cf2b5f628e95f8b62428c0547e0e"
+    },
+    {
+      "path": "attachment-comparison.md",
+      "bytes": 1378,
+      "sha256": "5923486d1250e9ecb15dfad552d47c6e0fca6420e5743bb37cec366a13f90ac9"
+    },
+    {
+      "path": "completion.json",
+      "bytes": 2029,
+      "sha256": "e534ac5aaa171dca0fcdde87d506c467a97c5e5f80c4e4e8e5ce414a2dd68c56"
+    },
+    {
+      "path": "integrity-after.json",
+      "bytes": 4174,
+      "sha256": "63a8c61c794232a5634e403c67f21f426982a4075a672d42522c9623c183a6fd"
+    },
+    {
+      "path": "integrity-before.json",
+      "bytes": 991,
+      "sha256": "78e7146e7827a6d1f6654c5fff882aebc447275f83754184730a4a029203c2e9"
+    },
+    {
+      "path": "mirror-archive-verification.json",
+      "bytes": 1780,
+      "sha256": "d6113fc07683ec10989ebde19aa0cd0f5538a4baa7218d9efa797c939ac9e8d2"
+    },
+    {
+      "path": "official-package-manifest.json",
+      "bytes": 1529,
+      "sha256": "c16eb086b376184bfaf28baac0d2f796d4ea03f4fb681a0334e7a53944dc252f"
+    },
+    {
+      "path": "q3-q4-calibration-audit.md",
+      "bytes": 1752,
+      "sha256": "0944a78b60c7bd4d8e514c8d5ed5563abe4b75b613dc2159f3c19148c10a0fb7"
+    },
+    {
+      "path": "search-log.md",
+      "bytes": 3910,
+      "sha256": "45439217318816bc693ed5dd488e98ea660e5368e69a59fa1300ed8c637502b0"
+    },
+    {
+      "path": "source-ledger.md",
+      "bytes": 2896,
+      "sha256": "ed56cb24049509dadb793aba3b1e2a2f88222555b98380ec27daed3e5e0ca47c"
+    },
+    {
+      "path": "source-observations.json",
+      "bytes": 5269,
+      "sha256": "aab733172d8294cebcbcd4c8f4b6ccea2966e529e0b8e0568f751700848a6212"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 797,
+      "sha256": "1f7591ae9b099db27af51dc9c059dae32597120c7b3cf67277131cab7d8075a4"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2220,
+      "sha256": "649f70943ebe0d448d15cb063be1150769e18d3bb1e0afc7f53a9bf3fbe794d6"
+    }
+  ]
+}

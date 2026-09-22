@@ -1,0 +1,97 @@
+{
+  "recorded_at_utc": "2026-09-22T12:16:21.269671+00:00",
+  "official_page": {
+    "url": "https://cpipc.acge.org.cn/cw/contestNews/detail/4/2c9088a674924b7f01749981b29502e9",
+    "http_status": 200,
+    "capture_completed_at_utc": "2026-09-22T12:08:33.626016+00:00",
+    "html_bytes": 67054,
+    "html_sha256": "21bccd6cfe1c5fc2a3879c8b623a7c600224b95c624735c4de85cff19a8048f6",
+    "retention": "Raw HTML retained locally in ignored .tmp; only metadata and relevant observations committed.",
+    "classification": "OFFICIAL_COMPETITION_PLATFORM_SOURCE",
+    "title": "2020年第十七届中国研究生数学建模竞赛赛题",
+    "publication_date": "2020-09-17",
+    "publisher": "中国研究生数学建模竞赛",
+    "relevant_excerpt": "E题：能见度估计与预测；百度网盘链接：https://pan.baidu.com/s/1C_AGvMxrojaU-rCvl5w9Iw；百度网盘文件提取码：2020；赛题解压码：2020HDligong16520",
+    "claim_limit": "Verifies the published package link and passwords, not the archive contents."
+  },
+  "university_page": {
+    "url": "https://ge.sues.edu.cn/03/da/c19717a197594/page.htm",
+    "http_status": 200,
+    "capture_completed_at_utc": "2026-09-22T12:08:33.361601+00:00",
+    "html_bytes": 75781,
+    "html_sha256": "718c9795db17130657c1dc0b0e8e7ffc742b2f088e07d6190420f175553d3809",
+    "retention": "Raw HTML retained locally in ignored .tmp; only metadata and relevant observations committed.",
+    "classification": "UNIVERSITY_OFFICIAL_NOTICE",
+    "observed_attachment_titles": [
+      "“华为杯”第十七届中国研究生数学建模竞赛开赛公告.pdf",
+      "“华为杯”第十七届中国研究生数学建模竞赛论文模板.doc",
+      "“华为杯”第十七届中国研究生数学建模竞赛论文格式规范.doc",
+      "“华为杯”第十七届中国研究生数学建模竞赛下载试题及论文上传操作手册.pdf"
+    ],
+    "independent_original_problem_archive_link_found": false,
+    "attachments_opened": false
+  },
+  "share_observations": [
+    {
+      "id": "official_full_package",
+      "url": "https://pan.baidu.com/s/1C_AGvMxrojaU-rCvl5w9Iw",
+      "observed_at_utc": "2026-09-22T12:11:51.057Z",
+      "share_title": "2020年中国研究生数学建模竞赛赛题.rar_免费高速下载|百度网盘-分享无限制",
+      "share_code_accepted": true,
+      "earlier_page_metadata": {
+        "observed_at": "2026-09-22T08:45:23.183Z",
+        "metadata": {
+          "server_filename": "2020年中国研究生数学建模竞赛赛题.rar",
+          "size": 1129044568,
+          "category": 6,
+          "isdir": 0
+        }
+      },
+      "earlier_evidence_origin": "Sanitized file fields recovered from the original task tool response; not inferred from a model or solution.",
+      "visible_download_attempted": true,
+      "download_wait_seconds": 18,
+      "complete_file_downloaded": false,
+      "final_observation": "No browser download appeared during the bounded observation. Earlier same-stage native workflow offered a desktop-client handoff."
+    },
+    {
+      "id": "airport_video_mirror",
+      "url": "https://pan.baidu.com/s/15XKUMDUG-mlF3OZ9iRTrYg",
+      "observed_at_utc": "2026-09-22T12:12:22.611Z",
+      "share_title": "Fog20200313000026.mp4_免费高速下载|百度网盘-分享无限制",
+      "share_code_accepted": true,
+      "earlier_page_metadata": {
+        "observed_at": "2026-09-22T08:49:29.704Z",
+        "metadata": {
+          "server_filename": "Fog20200313000026.mp4",
+          "size": 1042173258,
+          "duration": 41609,
+          "resolution": "width:1280,height:720",
+          "category": 1,
+          "isdir": 0
+        }
+      },
+      "earlier_evidence_origin": "Sanitized file fields recovered from the original task tool response; not inferred from a model or solution.",
+      "visible_download_attempted": true,
+      "download_wait_seconds": 18,
+      "complete_file_downloaded": false,
+      "final_observation": "Page limits playback to a 90-second preview; visible download ended at an image verification-code prompt; no file downloaded."
+    }
+  ],
+  "archive_lookup": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=pan.baidu.com/s/1C_AGvMxrojaU-rCvl5w9Iw&output=json&filter=statuscode:200&fl=timestamp,original,statuscode,mimetype,digest,length&collapse=digest",
+    "result": "TRANSPORT_UNAVAILABLE",
+    "curl_exit_code": 35,
+    "http_status": null,
+    "observed_error": "schannel: failed to receive handshake, SSL/TLS connection failed",
+    "claim_limit": "Does not establish that no archived copy exists."
+  },
+  "local_download_files_at_check": [],
+  "solution_sources_used": false,
+  "excellent_solutions_accessed": false,
+  "incidental_search_snippet_exposure": {
+    "status": "UNINTENDED_SEARCH_SNIPPET_EXPOSURE",
+    "description": "The earlier exact-video-filename search returned aggregator/blog snippets containing generic frame-extraction code. Some excerpts were also encountered when recovering the original task record. Their pages were not opened for solution content; no fragments, labels, modelling choices or recovered frames were used.",
+    "disposition": "SOLUTION_SOURCE_EXCLUDED",
+    "claim_limit": "No claim of zero incidental snippet exposure is made."
+  }
+}

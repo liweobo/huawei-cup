@@ -1,0 +1,105 @@
+{
+  "phase": "SOURCE_RECOVERY_POST_AUDIT_FREEZE",
+  "recorded_at_utc": "2026-09-22T12:16:21.269671+00:00",
+  "baseline_git_head": "a65aaac1d2986b8dcb3b6d9ae9c754f14d45623b",
+  "checked_git_head": "a65aaac1d2986b8dcb3b6d9ae9c754f14d45623b",
+  "branch": "main",
+  "method": "Match frozen Git trees; verify each working-tree file against its Git blob. For three hydrated Git LFS files verify payload SHA256 and size against the stored pointer.",
+  "frozen_assets": {
+    "skill": {
+      "path": "skill",
+      "git_tree": "8deb5278e19862738d8f04f21d8a7b6d3f5eb45e",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 73,
+      "bytes_verified": 425982,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2020_e_run_001": {
+      "path": "development/benchmarks/runs/historical_2020_e_visibility_forecasting/run-001",
+      "git_tree": "006d87ab6874a37ababd03ca26c8714b18f1b19b",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 53,
+      "bytes_verified": 14547526,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2007_a_all": {
+      "path": "development/benchmarks/runs/historical_2007_a_food_safety_evaluation",
+      "git_tree": "8b04b32b5966d5bae2085cb28d492246de78ecc9",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 117,
+      "bytes_verified": 435390,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2017_f_all": {
+      "path": "development/benchmarks/runs/historical_2017_f_underground_logistics_network",
+      "git_tree": "e2cc3eda04f300698edd078996a17be6584f1fcc",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 233,
+      "bytes_verified": 16707955,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2005_d_all": {
+      "path": "development/benchmarks/runs/historical_2005_d_stochastic_inventory",
+      "git_tree": "1cb175c3339d2db9627945c25ecc27d02e894ebc",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 101,
+      "bytes_verified": 1099072,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2020_a_all": {
+      "path": "development/benchmarks/runs/historical_2020_a_chip_phase_noise",
+      "git_tree": "6e7bd05c50aa614b1e741c08117765a17dd0a6ff",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 105,
+      "bytes_verified": 1701255,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2011_b_all": {
+      "path": "development/benchmarks/runs/historical_2011_b_absorbing_material_anechoic_chamber",
+      "git_tree": "e04effd94bce8c3dca97c72155853aafc65df037",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 84,
+      "bytes_verified": 4633463,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2022_c_all": {
+      "path": "development/benchmarks/runs/historical_2022_c_buffer_scheduling",
+      "git_tree": "92bd2ef04f834c8011d179e9dd4691f08209685d",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 115,
+      "bytes_verified": 8401099,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "problem_2023_e": {
+      "path": "development/benchmarks/problems/2023/E",
+      "git_tree": "1d86b7ece9f07b6c9d67d9f82d7553758a13fade",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 13,
+      "bytes_verified": 2414581,
+      "lfs_payloads_sha256_verified": 0,
+      "other_clean_filter_matches": 0
+    },
+    "historical_2024_c_all": {
+      "path": "development/benchmarks/runs/historical_2024_c_core_loss",
+      "git_tree": "56dece647c5ab8ef7fff8a1713e1a8a4a1b6ac1a",
+      "tree_unchanged": true,
+      "worktree_blobs_verified": 115,
+      "bytes_verified": 348941516,
+      "lfs_payloads_sha256_verified": 3,
+      "other_clean_filter_matches": 0
+    }
+  },
+  "tracked_files_checked": 1009,
+  "lfs_payloads_checked": 3,
+  "skill_modified": false,
+  "run_001_modified": false,
+  "historical_assets_unchanged": true
+}
