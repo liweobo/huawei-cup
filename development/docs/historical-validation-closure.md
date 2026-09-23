@@ -50,11 +50,13 @@ new model family. The final report above supplies the integration verdict.
 
 ## Remaining P2 Items
 
-Predictive-surrogate applicability wording remains terse; a universal
-uncertainty-to-objective recipe is not prescribed. Existing [validation](../../skill/workflows/validate-model.md),
+The retained P2 item is terse predictive-surrogate applicability wording.
+Existing [validation](../../skill/workflows/validate-model.md),
 [hard feasibility](../../skill/rules/modeling.md), and [claim review](../../skill/workflows/reviewer.md)
 already provide navigation. Keep applicability `ADEQUATE` at the generic
-level; do not add a dedicated contract. CYP3A4 desirability, unavailable final
+level; do not add a dedicated contract. A universal uncertainty-to-objective
+recipe is not prescribed; that partial coverage is not promoted to a new P2
+item. CYP3A4 desirability, unavailable final
 labels, training/validation gaps and empirical chemical support remain the
 2021D source/model limitations recorded in its report, not release blockers.
 

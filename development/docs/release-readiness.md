@@ -113,11 +113,12 @@ skill_only_package: PASS
 portable_docs: PASS
 stale_current_status_removed: YES
 release_blockers: 0
-remaining_p2_items: terse predictive-surrogate applicability wording; no universal uncertainty recipe
+remaining_p2_items: terse predictive-surrogate applicability wording
 final_status: READY_FOR_RELEASE
 ```
 
-These P2 limits and the source/model limitations remain bounded as recorded
-in the closure. No new guard, helper, contract, modeling capability or
+The retained P2 item and source/model limitations remain bounded as recorded
+in the closure; partial uncertainty coverage is not a new P2 finding.
+No new guard, helper, contract, modeling capability or
 historical benchmark was added. Readiness work ends here; await human release
 review, with no problem 11 or new benchmark scheduled.
