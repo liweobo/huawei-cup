@@ -14,6 +14,19 @@ ROOT = Path(__file__).resolve().parents[2]
 SKILL = ROOT / "skill"
 
 
+def live_markdown_files(root: Path) -> list[Path]:
+    """Select live docs; immutable evidence is checked by integrity harnesses."""
+    frozen_roots = (
+        root / "development/benchmarks/runs",
+        root / "development/benchmarks/run-attempts",
+    )
+    return [
+        path for path in root.rglob("*.md")
+        if not any(path.is_relative_to(frozen) for frozen in frozen_roots)
+        and not set(path.relative_to(root).parts) & {"dist", ".tmp", ".pytest_cache", "artifacts"}
+    ]
+
+
 def markdown_targets(path: Path, text: str) -> list[Path]:
     """Resolve local Markdown links from one file."""
     targets: list[Path] = []
@@ -37,6 +50,36 @@ def workflow_required_reads(workflow: Path) -> set[Path]:
 def fail(message: str, errors: list[str]) -> None:
     """Append one structural failure."""
     errors.append(message)
+
+
+def check_live_markdown(root: Path, errors: list[str]) -> list[Path]:
+    """Check live content without rewriting or interpreting frozen evidence."""
+    markdown_files = live_markdown_files(root)
+    hashes: dict[str, list[str]] = {}
+    paragraphs: dict[str, list[str]] = {}
+    for path in markdown_files:
+        if path.stat().st_size == 0:
+            fail(f"empty markdown: {path.relative_to(root)}", errors)
+        content = path.read_text(encoding="utf-8")
+        if re.search(r"\b(?:TODO|FIXME|PLACEHOLDER)\b", content, re.IGNORECASE):
+            fail(f"unfinished placeholder in: {path.relative_to(root)}", errors)
+        for resolved in markdown_targets(path, content):
+            if not resolved.exists():
+                fail(f"broken markdown link {path.relative_to(root)} -> {resolved}", errors)
+        digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        hashes.setdefault(digest, []).append(str(path.relative_to(root)))
+        for paragraph in re.split(r"\n\s*\n", content):
+            normalized = re.sub(r"\s+", " ", paragraph.strip().lower())
+            if len(normalized) >= 120 and not normalized.startswith(("|", "```")):
+                paragraphs.setdefault(normalized, []).append(str(path.relative_to(root)))
+    for duplicate_paths in hashes.values():
+        if len(duplicate_paths) > 1:
+            fail(f"duplicate markdown content: {duplicate_paths}", errors)
+    for duplicate_paths in paragraphs.values():
+        unique_paths = sorted(set(duplicate_paths))
+        if len(unique_paths) > 1:
+            fail(f"duplicate long paragraph: {unique_paths}", errors)
+    return markdown_files
 
 
 def main() -> int:
@@ -114,26 +157,9 @@ def main() -> int:
                 extra = sorted(str(path.relative_to(ROOT)) for path in declared_reads - expected_reads)
                 fail(f"route/workflow Required Reads mismatch for {name}: missing={missing}, extra={extra}", errors)
 
-    # Frozen run archives and observed evidence snapshots contain copied or
-    # generated Markdown. They are evidence, not live Skill documentation, so
-    # do not treat their intentionally duplicated content as structural errors.
-    def is_archived_artifact(path: Path) -> bool:
-        parts = path.relative_to(ROOT).parts
-        return "benchmarks" in parts and "runs" in parts and (
-            "raw" in parts or "observed-artifacts" in parts
-        )
-
-    markdown_files = [path for path in ROOT.rglob("*.md") if not is_archived_artifact(path)
-                      and not set(path.relative_to(ROOT).parts) & {"dist", ".tmp", ".pytest_cache", "artifacts"}]
-    for path in markdown_files:
-        if path.stat().st_size == 0:
-            fail(f"empty markdown: {path.relative_to(ROOT)}", errors)
-        text = path.read_text(encoding="utf-8")
-        if re.search(r"\b(?:TODO|FIXME|PLACEHOLDER)\b", text, re.IGNORECASE):
-            fail(f"unfinished placeholder in: {path.relative_to(ROOT)}", errors)
-        for resolved in markdown_targets(path, text):
-            if not resolved.exists():
-                fail(f"broken markdown link {path.relative_to(ROOT)} -> {resolved}", errors)
+    # Historical source/manifests remain required above. Content integrity is
+    # enforced separately by historical_artifact_test and run integrity tests.
+    markdown_files = check_live_markdown(ROOT, errors)
 
     agents = ROOT / "AGENTS.md"
     if agents.exists():
@@ -149,24 +175,6 @@ def main() -> int:
         for activation in re.findall(r"`([a-z]+(?:-[a-z]+)+)`", gotcha_text):
             if activation in {"design-model", "write-paper", "final-check", "audit-data", "validate-model", "reviewer"} and activation not in workflow_names:
                 fail(f"gotcha activation points to missing workflow: {activation}", errors)
-
-    hashes: dict[str, list[str]] = {}
-    paragraphs: dict[str, list[str]] = {}
-    for path in markdown_files:
-        content = path.read_text(encoding="utf-8")
-        digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
-        hashes.setdefault(digest, []).append(str(path.relative_to(ROOT)))
-        for paragraph in re.split(r"\n\s*\n", content):
-            normalized = re.sub(r"\s+", " ", paragraph.strip().lower())
-            if len(normalized) >= 120 and not normalized.startswith(("|", "```")):
-                paragraphs.setdefault(normalized, []).append(str(path.relative_to(ROOT)))
-    for duplicate_paths in hashes.values():
-        if len(duplicate_paths) > 1:
-            fail(f"duplicate markdown content: {duplicate_paths}", errors)
-    for duplicate_paths in paragraphs.values():
-        unique_paths = sorted(set(duplicate_paths))
-        if len(unique_paths) > 1:
-            fail(f"duplicate long paragraph: {unique_paths}", errors)
 
     if errors:
         print("FAIL")

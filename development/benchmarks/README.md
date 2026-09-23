@@ -1,5 +1,15 @@
 # Historical Problem End-to-End Trajectory Benchmark
 
+## Current Status
+
+Historical development is complete: `HISTORICAL_PROBLEM_DEVELOPMENT_COMPLETE`.
+Maintenance is limited to final release/readiness hardening; no new benchmark
+is scheduled and problem 11 is prohibited. See the [closure and capability
+inventory](../docs/historical-validation-closure.md) and [release checks](../docs/release-readiness.md).
+All completed runs, source recoveries, reference benchmarks, and targeted
+regressions under `runs/`, together with `run-attempts/`, are immutable evidence.
+Keep their bytes, original decisions, manifests, and historical findings intact.
+
 ## What This Benchmark Tests
 
 The deterministic Layer A runner tests the control plane of the math-modeling
@@ -20,7 +30,7 @@ LLM behavior pass.
 Layer A is deterministic Python and can report PASS/FAIL. Layer B uses real
 Skill/ChatGPT transcripts evaluated with [model-behavior-rubric.md](model-behavior-rubric.md).
 The transcript format is defined in [transcripts/README.md](transcripts/README.md);
-the read-only evaluator is `harness/model_behavior_evaluator.py`. No assistant
+the read-only evaluator is `development/harness/model_behavior_evaluator.py`. No assistant
 transcript is fabricated in this repository.
 
 ## Fixture Format and Source Gate
@@ -41,9 +51,9 @@ not live workspaces. All three evaluator-only outcomes are `NEEDS_REVIEW` with
 zero `MODEL_BEHAVIOR_P0` findings. Run-003 retains a P1 filesystem-visibility
 finding. The first Run-004 launch attempt is recorded separately under
 `run-attempts/`; it aborted before Turn 1 because platform transport and
-runtime-root binding could not be verified. Run-004 remains the next
-behavioral run id, but the project is currently `BLOCKED_BY_PLATFORM` pending
-a platform-compatible launch adapter/session binding.
+runtime-root binding could not be verified. This is the archived
+behavioral-platform track: `BLOCKED_BY_PLATFORM` describes that attempt,
+not current release readiness. Historical completion does not require Run-004.
 
 ## Runtime Provenance
 
@@ -104,29 +114,32 @@ regressions are deterministic.
 From the repository root:
 
 ```bash
-python harness/trajectory_test.py
-python harness/postmortem_regression_test.py
-python harness/problem_facts_test.py
-python harness/run001_integrity_test.py
-python harness/run002_integrity_test.py
-python harness/phase5_regression_test.py
+python development/harness/trajectory_test.py
+python development/harness/postmortem_regression_test.py
+python development/harness/problem_facts_test.py
+python development/harness/run001_integrity_test.py
+python development/harness/run002_integrity_test.py
+python development/harness/phase5_regression_test.py
 ```
 
-The complete verification sequence is listed in the root README.
+The complete active verification sequence is in [development/README.md](../README.md).
+Live documentation smoke excludes frozen run/attempt Markdown; source,
+manifest, evidence hashes, and run integrity remain independently checked.
 
-## Portable Runtime Handoff
+## Archived Behavioral-Platform Track: Portable Runtime Handoff
 
 V2.8 exports the shared clean-room allowlist into an independently validated
 runtime directory and optional ZIP. The developer/evaluator tree is not an
 execution dependency. Infrastructure reports and transport evidence remain
 host-side; model tools read only the exported project and write under its
-workspace. The current platform has no verified usable binding/transport
-backend, so selection of an external runner is still required.
+workspace. At the archived attempt, no usable binding/transport backend had
+been verified; a compatible external runner was required for that track.
 
-The next valid behavioral run is still `run-004`, with launch attempt
-`run-004-attempt-002`. The aborted first attempt and all earlier frozen runs
-retain their original outcomes. No retry or model response is produced by
-exporting, validating, packaging, or running deterministic regression tests.
+The archived plan reserved `run-004` / `run-004-attempt-002` for a possible
+retry. That reservation is not an active schedule or release requirement.
+The aborted `run-004-attempt-001` and earlier runs retain their outcomes.
+Exporting, validating, packaging, and deterministic regressions create no
+retry or model response.
 
 ## Metrics
 
@@ -146,14 +159,10 @@ and evaluator-only field separation.
 Passing the deterministic trajectory benchmark does not prove that an LLM will
 produce high-quality mathematical modeling answers.
 
-## Adding a New Historical Problem
+## Closed Historical Development Policy
 
-1. Add the official artifact or traceable source metadata under `benchmarks/problems/`.
-2. Record `source_status: VERIFIED` only after checking provenance.
-3. Add a trajectory with the source reference and problem family.
-4. Keep observed experiment evidence explicit; never add invented metrics.
-5. Run Layer A, then collect a real Layer B transcript and score it separately.
-   For this benchmark, the next run must use the exact same 14-turn blind script
-   in a fresh conversation and a fresh run-scoped workspace after transport and
-   actual-root preflight pass; do not modify `user-turns.yaml`. The next
-   behavioral run id remains `run-004`.
+Do not add a historical problem, reopen excellent papers, reinterpret prior
+decisions, or start another reference benchmark. Retained source gates,
+blind scripts, and runtime adapters document the completed work and archived
+platform attempt. Maintain active documentation, reproducible tests, and
+distribution checks only; await human release review after readiness closes.

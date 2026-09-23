@@ -4,10 +4,13 @@ import re
 import shutil
 import subprocess
 import sys
+import zipfile
 from pathlib import Path
 
+import pytest
 import yaml
 
+from development.tooling.package_repository import package_skill
 
 PROJECT = Path(__file__).resolve().parents[2]
 SKILL_SOURCE = PROJECT / "skill"
@@ -23,21 +26,36 @@ def _markdown_targets(path: Path) -> list[Path]:
     return targets
 
 
-def test_skill_self_contained(tmp_path: Path) -> None:
+@pytest.mark.parametrize("source_kind", ["copy", "zip"])
+def test_skill_self_contained(tmp_path: Path, source_kind: str) -> None:
     isolated = tmp_path / "skill"
-    shutil.copytree(SKILL_SOURCE, isolated)
+    if source_kind == "copy":
+        shutil.copytree(SKILL_SOURCE, isolated)
+    else:
+        package = package_skill(SKILL_SOURCE, tmp_path / "skill-only.zip")
+        with zipfile.ZipFile(package) as archive:
+            assert archive.testzip() is None
+            archive.extractall(tmp_path)
+
+    for directory in ("rules", "workflows", "references", "templates", "scripts"):
+        assert any((isolated / directory).iterdir()), directory
 
     assert (isolated / "SKILL.md").is_file()
     assert (isolated / "routing.yaml").is_file()
     routing = yaml.safe_load((isolated / "routing.yaml").read_text(encoding="utf-8"))
     assert isinstance(routing, dict)
+    assert len(routing["routes"]) == 10
+    for key in ("task_anchor", "competition_state"):
+        target = (isolated / routing["defaults"][key]).resolve()
+        assert target.is_relative_to(isolated.resolve()) and target.is_file()
 
     for config in routing.get("routes", {}).values():
         workflow = isolated / config["workflow"]
+        assert workflow.resolve().is_relative_to(isolated.resolve())
         assert workflow.is_file()
         for reference in config.get("required_reads", []):
+            assert (isolated / reference).resolve().is_relative_to(isolated.resolve())
             assert (isolated / reference).is_file(), reference
-        workflow_text = workflow.read_text(encoding="utf-8")
         for link in _markdown_targets(workflow):
             assert link.is_file(), link
 
@@ -52,6 +70,14 @@ def test_skill_self_contained(tmp_path: Path) -> None:
             target = match.group(1).split("#", 1)[0]
             if target and not target.startswith(("http://", "https://")):
                 assert (path.parent / target).resolve().is_relative_to(isolated.resolve())
+        # Root-relative resource mentions in inline commands must also survive
+        # distribution, even when they are not Markdown links.
+        for reference in re.findall(
+            r"`((?:scripts|templates|workflows|references|rules)/[^`\s]+)",
+            path.read_text(encoding="utf-8"),
+        ):
+            target = (isolated / reference).resolve()
+            assert target.is_relative_to(isolated.resolve()) and target.exists(), reference
 
     scripts = isolated / "scripts"
     assert scripts.is_dir()
@@ -64,7 +90,7 @@ def test_skill_self_contained(tmp_path: Path) -> None:
     )
     assert compile_result.returncode == 0, compile_result.stderr
     import_result = subprocess.run(
-        [sys.executable, "-B", "-c", "import scripts.data_audit, scripts.metrics, scripts.temporal_availability, scripts.runtime_provenance, scripts.group_validation, scripts.stateful_scheduling, scripts.structured_improvement, scripts.mechanism_closure, scripts.spectral_conventions, scripts.evaluation_semantics"],
+        [sys.executable, "-B", "-c", "import importlib, pkgutil, scripts; [importlib.import_module('scripts.' + item.name) for item in pkgutil.iter_modules(scripts.__path__)]"],
         cwd=isolated,
         env={**__import__("os").environ, "PYTHONPATH": str(isolated), "PYTHONDONTWRITEBYTECODE": "1"},
         capture_output=True,

@@ -85,4 +85,4 @@ metadata:
 
 跨成员或跨会话交接使用 [`templates/handoff.md`](templates/handoff.md)，至少保留当前目标、已完成、关键方程、数据版本、最佳真实结果、文件、开放问题、风险和下一动作。
 
-真实赛题结束后执行 README 中的 After Action Review。单次踩坑进入 `references/gotchas.md`；重复稳定经验再升级到 `rules/`；只有高风险且所有任务都必须知道的原则才进入 Iron Rules。
+真实赛题结束后执行 [`references/gotchas.md` 中的 AAR maintenance](references/gotchas.md#aar-maintenance)。单次踩坑进入 `references/gotchas.md`；重复稳定经验再升级到 `rules/`；只有高风险且所有任务都必须知道的原则才进入 Iron Rules。
